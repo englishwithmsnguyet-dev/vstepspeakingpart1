@@ -1,0 +1,1922 @@
+/**
+ * VSTEP SPEAKING PART 01 - ACADEMIC SCRIPT
+ * Handles slide navigation, interactive formula presentation, speech synthesis, and random practice.
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+    try {
+    // App State
+    const state = {
+        studentName: 'Khách',
+        isAudio: true,
+        isDark: false,
+        ynIndex: 0,
+        selectedVoiceURI: null,
+        unlockedTabs: {}
+    };
+
+    // DOM References
+    const welcomeModal = document.getElementById('welcome-modal');
+    const studentInput = document.getElementById('student-name');
+    const studentClassInput = document.getElementById('student-class');
+    const loginError = document.getElementById('login-error');
+    const trackingForm = document.getElementById('tracking-form');
+    const entryInput = document.getElementById('entry_388968236');
+    const startBtn = document.getElementById('start-btn');
+    const userProfile = document.getElementById('user-profile');
+    const displayName = document.getElementById('display-name');
+    
+    const sidebar = document.getElementById('sidebar');
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const navItems = document.querySelectorAll('.nav-item');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+    const topTitle = document.getElementById('top-title');
+    const themeToggle = document.getElementById('theme-toggle');
+    const audioToggle = document.getElementById('audio-toggle');
+    const voiceSelect = document.getElementById('voice-select');
+
+    // Tab Titles Mapping
+    const titles = {
+        'overview': 'OVERVIEW',
+        'yes-no': 'YES/NO QUESTIONS',
+        'choice': 'CHOICE QUESTIONS',
+        'wh-questions': 'WH- QUESTIONS',
+        'benefits': 'COMMON BENEFITS'
+    };
+
+    // Quản lý danh sách giọng đọc AI
+    const populateVoices = () => {
+        if (!voiceSelect || !('speechSynthesis' in window)) return;
+        const voices = window.speechSynthesis.getVoices();
+        const enVoices = voices.filter(v => v.lang.startsWith('en'));
+        if (enVoices.length === 0) return;
+        
+        const currentSelection = state.selectedVoiceURI || voiceSelect.value;
+        
+        voiceSelect.innerHTML = '';
+        enVoices.forEach(v => {
+            const opt = document.createElement('option');
+            opt.value = v.voiceURI;
+            opt.textContent = `${v.name.replace('Microsoft ', '').replace('Online (Natural) - English (United States)', 'US').replace(' - English (United States)', ' US')} (${v.lang})`;
+            voiceSelect.appendChild(opt);
+        });
+
+        const usVoices = enVoices.filter(v => v.lang === 'en-US' || v.lang.replace('_', '-') === 'en-US' || v.lang.startsWith('en-US'));
+        const defaultVoice = voices.find(v => v.name.includes('Guy'))
+                          || usVoices.find(v => v.name.includes('Evan') || v.name.includes('Eric') || v.name.includes('Alex') || v.name.includes('Jenny') || v.name.includes('Aria') || v.name.includes('Ava'))
+                          || usVoices.find(v => v.name.includes('Natural') || v.name.includes('Online') || v.name.includes('Premium') || v.name.includes('Enhanced') || v.name.includes('Siri'))
+                          || usVoices.find(v => v.name.includes('Google US English') || v.name.includes('Samantha'))
+                          || usVoices[0] || enVoices[0];
+
+        if (currentSelection && voices.some(v => v.voiceURI === currentSelection)) {
+            voiceSelect.value = currentSelection;
+            state.selectedVoiceURI = currentSelection;
+        } else if (defaultVoice) {
+            voiceSelect.value = defaultVoice.voiceURI;
+            state.selectedVoiceURI = defaultVoice.voiceURI;
+        }
+    };
+
+    if (voiceSelect) {
+        voiceSelect.addEventListener('change', (e) => {
+            state.selectedVoiceURI = e.target.value;
+            window.speakText("Hello! I am your AI speaking partner.");
+        });
+    }
+
+    if ('speechSynthesis' in window) {
+        populateVoices();
+        window.speechSynthesis.onvoiceschanged = () => populateVoices();
+    }
+
+    // Global AI Speech
+    window.speakText = (txt) => {
+        if (!state.isAudio) return;
+        if ('speechSynthesis' in window) {
+            window.speechSynthesis.cancel();
+            const utt = new SpeechSynthesisUtterance(txt);
+            
+            const voices = window.speechSynthesis.getVoices();
+            
+            let bestVoice = null;
+            if (state.selectedVoiceURI) {
+                bestVoice = voices.find(v => v.voiceURI === state.selectedVoiceURI);
+            }
+            if (!bestVoice) {
+                const preferredNames = [
+                    "Microsoft Guy",
+                    "Google UK English Male",
+                    "Google US English Male",
+                    "Alex",
+                    "Daniel",
+                    "Google US English",
+                    "Samantha"
+                ];
+                for (let name of preferredNames) {
+                    bestVoice = voices.find(v => v.name.includes(name));
+                    if (bestVoice) break;
+                }
+                if (!bestVoice) {
+                    bestVoice = voices.find(v => (v.lang.startsWith("en-US") || v.lang.startsWith("en-GB")) && v.name.includes("Male"));
+                }
+                if (!bestVoice) {
+                    bestVoice = voices.find(v => v.lang.startsWith("en-US") || v.lang.startsWith("en-GB"));
+                }
+                if (!bestVoice) {
+                    bestVoice = voices[0];
+                }
+            }
+            
+            if (bestVoice) {
+                utt.voice = bestVoice;
+                utt.lang = bestVoice.lang;
+            } else {
+                utt.lang = 'en-US';
+            }
+            utt.rate = 1.0; // Normal speed
+            utt.pitch = 1.25; // Slightly higher pitch for energetic Gen-Z vibe
+            
+            window.speechSynthesis.speak(utt);
+        }
+    };
+
+    // 1. WELCOME MODAL
+    window.finishLogin = () => {
+        const val = studentInput.value.trim();
+        state.studentName = val;
+        displayName.textContent = val;
+        userProfile.classList.remove('hidden');
+        welcomeModal.style.opacity = '0';
+        setTimeout(() => welcomeModal.classList.add('hidden'), 300);
+    };
+
+    const enterRoom = () => {
+        const nameVal = studentInput.value.trim();
+        const classVal = studentClassInput.value.trim();
+        
+        if (!nameVal || !classVal) {
+            loginError.textContent = 'Vui lòng nhập đầy đủ Họ tên và Lớp!';
+            loginError.style.display = 'block';
+            return;
+        }
+
+        const validClasses = ['CB210', 'CB206', 'CB211', 'CB213', 'ONB103', 'B212'];
+        const formattedClass = classVal.toUpperCase().replace(/\s+/g, '');
+        
+        if (!validClasses.includes(formattedClass)) {
+            loginError.textContent = 'Mã lớp không hợp lệ. Vui lòng nhập lại!';
+            loginError.style.display = 'block';
+            return;
+        }
+        
+        loginError.style.display = 'none';
+        startBtn.disabled = true;
+        startBtn.innerHTML = `<span>Đang vào lớp...</span> <i class="fa-solid fa-spinner fa-spin"></i>`;
+        
+        entryInput.value = `${nameVal} - ${classVal}`;
+        window.submitted = true;
+        trackingForm.submit();
+        
+        // Fallback timeout in case iframe block prevents onload
+        setTimeout(() => {
+            if (!welcomeModal.classList.contains('hidden')) {
+                window.finishLogin();
+            }
+        }, 1500);
+    };
+
+    startBtn?.addEventListener('click', enterRoom);
+    studentInput?.addEventListener('keypress', (e) => { if (e.key === 'Enter') enterRoom(); });
+    studentClassInput?.addEventListener('keypress', (e) => { if (e.key === 'Enter') enterRoom(); });
+
+    // Sidebar & Navigation
+    mobileToggle?.addEventListener('click', () => sidebar.classList.toggle('open'));
+
+    let currentTargetTab = null;
+    let currentTargetItem = null;
+
+    navItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = item.getAttribute('data-target');
+            
+            if ((target === 'choice' || target === 'wh-questions') && !state.unlockedTabs[target]) {
+                currentTargetTab = target;
+                currentTargetItem = item;
+                document.getElementById('lock-pass').value = '';
+                document.getElementById('lock-error').style.display = 'none';
+                document.getElementById('lock-modal').classList.remove('hidden');
+                setTimeout(() => document.getElementById('lock-pass').focus(), 100);
+                return;
+            }
+
+            activateTab(target, item);
+        });
+    });
+
+    function activateTab(target, item) {
+        navItems.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+        
+        tabPanes.forEach(pane => {
+            if (pane.id === target) {
+                pane.classList.remove('hidden');
+                pane.classList.remove('fade-in');
+                void pane.offsetWidth;
+                pane.classList.add('fade-in');
+            } else {
+                pane.classList.add('hidden');
+            }
+        });
+
+        if (topTitle) topTitle.textContent = titles[target] || target.toUpperCase();
+        if (window.innerWidth <= 768) sidebar.classList.remove('open');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Xử lý nút Mở khóa
+    document.getElementById('unlock-btn').addEventListener('click', () => {
+        const pass = document.getElementById('lock-pass').value;
+        if (pass === 'missnguyet2026') {
+            document.getElementById('lock-modal').classList.add('hidden');
+            state.unlockedTabs[currentTargetTab] = true;
+            activateTab(currentTargetTab, currentTargetItem);
+        } else {
+            document.getElementById('lock-error').style.display = 'block';
+        }
+    });
+
+    document.getElementById('lock-pass').addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') document.getElementById('unlock-btn').click();
+    });
+
+    // Theme & Audio toggles
+    themeToggle?.addEventListener('click', () => {
+        state.isDark = !state.isDark;
+        document.body.classList.toggle('dark-theme', state.isDark);
+        themeToggle.innerHTML = state.isDark ? '<i class="fa-solid fa-sun" style="color:#f59e0b"></i>' : '<i class="fa-solid fa-moon"></i>';
+    });
+
+    audioToggle?.addEventListener('click', () => {
+        state.isAudio = !state.isAudio;
+        audioToggle.innerHTML = state.isAudio ? '<i class="fa-solid fa-volume-high"></i>' : '<i class="fa-solid fa-volume-xmark" style="color:var(--danger)"></i>';
+        audioToggle.classList.toggle('active', state.isAudio);
+        if (!state.isAudio && 'speechSynthesis' in window) window.speechSynthesis.cancel();
+    });
+    // 3. YES/NO PRACTICE ROOM SLIDER (7 Formulas)
+    // 3. YES/NO PRACTICE ROOM SLIDER (7 Formulas from PowerPoint)
+    window.toggleSampleAnswer = (btn) => {
+        const ansEl = btn.nextElementSibling;
+        if (ansEl.style.display === 'none') {
+            ansEl.style.display = 'block';
+            btn.innerHTML = '<i class="fa-solid fa-eye-slash"></i> Ẩn câu trả lời mẫu';
+        } else {
+            ansEl.style.display = 'none';
+            btn.innerHTML = '<i class="fa-solid fa-eye"></i> Nhấn xem câu trả lời mẫu';
+        }
+    };
+
+    const ynFormulas = [
+        {
+            title: "1. Do you often [hoạt động – Vo]?",
+            formula: "→ Sure. I often <strong>[hoạt động – Vo]</strong> <strong>[thời gian]</strong> when I have free time because it helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.",
+            examples: [
+                "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>read books</span>?",
+                "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watch movies</span>?",
+                "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>listen to music</span>?",
+                "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go shopping</span>?",
+                "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go for a walk</span>?"
+            ],
+            exQ: "Do you often play sports?",
+            exA: "→ Sure. I often play sports in the afternoon when I have free time because it helps me relax after a busy day and stay healthy.",
+            exAFormatted: "→ Sure. I often <span class=\"sub-hl\">play sports</span> <span class=\"sub-hl\">in the afternoon</span> when I have free time because it helps me <span class=\"sub-hl\">relax after a busy day</span> and <span class=\"sub-hl\">stay healthy</span>.",
+            vocab: [
+                {
+                    type: 'time',
+                    title: 'Cụm Thời gian:',
+                    items: [
+                        { en: 'in the morning', vn: 'vào buổi sáng' },
+                        { en: 'in the afternoon', vn: 'vào buổi chiều' },
+                        { en: 'in the evening', vn: 'vào buổi tối' },
+                        { en: 'at weekends', vn: 'vào cuối tuần' },
+                        { en: 'on Sundays', vn: 'vào Chủ nhật' },
+                        { en: 'after school', vn: 'sau giờ học' },
+                        { en: 'after work', vn: 'sau giờ làm' }
+                    ]
+                },
+                {
+                    type: 'benefit',
+                    title: 'Cụm Lợi ích:',
+                    items: [
+                        { en: 'relax after a busy day', vn: 'thư giãn sau ngày bận rộn' },
+                        { en: 'reduce stress', vn: 'giảm căng thẳng' },
+                        { en: 'clear my mind', vn: 'thư giãn đầu óc' },
+                        { en: 'stay healthy', vn: 'duy trì sức khỏe' },
+                        { en: 'stay in good shape', vn: 'giữ vóc dáng cân đối' }
+                    ]
+                }
+            ]
+        },
+        {
+            title: "2. Do you often [hoạt động – Vo] while [hoạt động – Ving]?",
+            formula: "→ Not really. I don’t often <strong>[hoạt động – Vo]</strong> while <strong>[hoạt động – Ving]</strong> because it’s hard for me to focus. I prefer to do one thing at a time <strong>[to focus better / do it better / do it more carefully]</strong>.",
+            examples: [
+                "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>listen to music</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>doing homework</span>?",
+                "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eat snacks</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching TV</span>?",
+                "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>talk</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating</span>?",
+                "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>sing</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>taking a shower</span>?",
+                "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>use your phone</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>walking</span>?"
+            ],
+            exQ: "Do you often listen to music while doing your homework?",
+            exA: "→ Not really. I don’t often listen to music while doing my homework because it’s hard for me to focus. I prefer to do one thing at a time to do it better.",
+            exAFormatted: "→ Not really. I don’t often <span class=\"sub-hl\">listen to music</span> while <span class=\"sub-hl\">doing my homework</span> because it’s hard for me to focus. I prefer to do one thing at a time <span class=\"sub-hl\">to do it better</span>.",
+            vocab: [
+                {
+                    type: 'note',
+                    title: 'Ghi chú từ vựng trong câu:',
+                    items: [
+                        { en: 'hard', vn: 'khó khăn' },
+                        { en: 'prefer', vn: 'thích hơn / ưu tiên hơn' },
+                        { en: 'focus better', vn: 'tập trung tốt hơn' },
+                        { en: 'do it better', vn: 'làm tốt hơn' },
+                        { en: 'do it more carefully', vn: 'làm cẩn thận hơn' }
+                    ]
+                }
+            ]
+        },
+        {
+            title: "3. Do you like/love/enjoy [hoạt động – Ving]?",
+            formula: "→ Yes, I do. I’m really into <strong>[hoạt động – Ving]</strong> because it’s very <strong>[tính từ mô tả hoạt động]</strong>. It helps me <strong>[lợi ích]</strong> and makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.",
+            examples: [
+                "Do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span>?",
+                "Do you enjoy <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>playing sports</span>?",
+                "Do you love <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>listening to music</span>?",
+                "Do you enjoy <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>learning English</span>?",
+                "Do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>cooking</span>?"
+            ],
+            exQ: "Do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span>?",
+            exA: "→ Yes, I do. I’m really into reading books because it’s very interesting. It helps me reduce stress and makes me feel relaxed.",
+            exAFormatted: "→ Yes, I do. I’m really into <span class=\"sub-hl\">reading books</span> because it’s very <span class=\"sub-hl\">interesting</span>. It helps me <span class=\"sub-hl\">reduce stress</span> and makes me feel <span class=\"sub-hl\">relaxed</span>.",
+            vocab: [
+                {
+                    type: 'note',
+                    title: 'Ghi chú từ vựng trong câu:',
+                    items: [
+                        { en: 'really into', vn: 'rất thích / đam mê' }
+                    ]
+                },
+                {
+                    type: 'activity',
+                    title: 'Tính từ mô tả hoạt động:',
+                    items: [
+                        { en: 'interesting', vn: 'thú vị' },
+                        { en: 'exciting', vn: 'hào hứng / tuyệt vời' },
+                        { en: 'entertaining', vn: 'mang tính giải trí' }
+                    ]
+                },
+                {
+                    type: 'emotion',
+                    title: 'Tính từ mô tả cảm xúc:',
+                    items: [
+                        { en: 'relaxed', vn: 'thư thái / thoải mái' },
+                        { en: 'happy', vn: 'vui vẻ / hạnh phúc' },
+                        { en: 'comfortable', vn: 'dễ chịu / thoải mái' },
+                        { en: 'refreshed', vn: 'sảng khoái / tươi mới' }
+                    ]
+                },
+                {
+                    type: 'benefit',
+                    title: 'Cụm Lợi ích:',
+                    items: [
+                        { en: 'reduce stress', vn: 'giảm căng thẳng' },
+                        { en: 'improve my mood', vn: 'cải thiện tâm trạng' },
+                        { en: 'widen my knowledge', vn: 'mở rộng kiến thức' },
+                        { en: 'clear my mind', vn: 'thư giãn đầu óc' },
+                        { en: 'stay healthy', vn: 'duy trì sức khỏe' }
+                    ]
+                }
+            ]
+        },
+        {
+            title: "4. Did you often [hoạt động – Vo] when you were a child?",
+            formula: "→ Yes, I did. I used to <strong>[hoạt động – Vo]</strong> every day when I was a child because it was <strong>[tính từ mô tả hoạt động]</strong>. It was a good way for me to <strong>[lợi ích]</strong>.",
+            examples: [
+                "Did you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watch cartoons</span> when you were a child?",
+                "Did you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>play outside</span> when you were a child?",
+                "Did you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eat candy</span> when you were a child?",
+                "Did you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>cry</span> when you were a child?",
+                "Did you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>play video games</span> when you were a child?"
+            ],
+            exQ: "Did you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watch cartoons</span> when you were a child?",
+            exA: "→ Yes, I did. I used to watch cartoons every day when I was a child because it was very entertaining. It was a good way for me to enjoy my free time.",
+            exAFormatted: "→ Yes, I did. I used to <span class=\"sub-hl\">watch cartoons</span> every day when I was a child because it was <span class=\"sub-hl\">very entertaining</span>. It was a good way for me to <span class=\"sub-hl\">enjoy my free time</span>.",
+            vocab: [
+                {
+                    type: 'note',
+                    title: 'Ghi chú từ vựng trong câu:',
+                    items: [
+                        { en: 'used to', vn: 'đã từng / thường làm trong quá khứ' }
+                    ]
+                },
+                {
+                    type: 'activity',
+                    title: 'Tính từ mô tả hoạt động:',
+                    items: [
+                        { en: 'entertaining', vn: 'giải trí / thú vị' },
+                        { en: 'interesting', vn: 'thú vị' },
+                        { en: 'relaxing', vn: 'mang lại cảm giác thư giãn' }
+                    ]
+                },
+                {
+                    type: 'benefit',
+                    title: 'Cụm Lợi ích:',
+                    items: [
+                        { en: 'enjoy my free time', vn: 'tận hưởng thời gian rảnh rỗi' },
+                        { en: 'have fun', vn: 'vui vẻ / giải trí' }
+                    ]
+                }
+            ]
+        },
+        {
+            title: "5. Are you good at [hoạt động – Ving]?",
+            formula: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I am. I’m quite good at <strong>[hoạt động – Ving]</strong> because I practice it a lot. It helps me <strong>[lợi ích]</strong>.</div><div style='margin-bottom: 4px;'><strong>- Trả lời không:</strong></div><div style='margin-left: 15px; margin-bottom: 8px;'><strong>+ Cách 1:</strong> → No, I’m not. I’m not very good at <strong>[hoạt động – Ving]</strong> because I rarely do it. I prefer to spend time on other things.</div><div style='margin-left: 15px;'><strong>+ Cách 2:</strong> → Not really. I’m not very good at <strong>[hoạt động – Ving]</strong> because I don't practice it much. However, I would like to try it in the future because I think it's <strong>[tính từ mô tả hoạt động]</strong>.</div>",
+            examples: [
+                "Are you good at <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>cooking</span>?",
+                "Are you good at <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>playing sports</span>?",
+                "Are you good at <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>learning languages</span>?",
+                "Are you good at <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>drawing</span>?",
+                "Are you good at <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>swimming</span>?"
+            ],
+            exQ: "Are you good at <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>cooking</span>?",
+            exA: "→ Yes, I am. I’m quite good at cooking because I practice it a lot. It helps me save money and stay healthy.",
+            exAFormatted: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I am. I’m quite good at <span class=\"sub-hl\">cooking</span> because I practice it a lot. It helps me <span class=\"sub-hl\">save money</span> and <span class=\"sub-hl\">stay healthy</span>.</div><div style='margin-bottom: 4px;'><strong>- Trả lời không:</strong></div><div style='margin-left: 15px; margin-bottom: 8px;'><strong>+ Cách 1:</strong> → No, I’m not. I’m not very good at <span class=\"sub-hl\">cooking</span> because I rarely do it. I prefer to spend time on other things.</div><div style='margin-left: 15px;'><strong>+ Cách 2:</strong> → Not really. I’m not very good at <span class=\"sub-hl\">cooking</span> because I don't practice it much. However, I would like to try it in the future because I think it's <span class=\"sub-hl\">interesting</span>.</div>",
+            vocab: [
+                {
+                    type: 'note',
+                    title: 'Cụm từ hay:',
+                    items: [
+                        { en: 'quite good at', vn: 'khá giỏi về...' },
+                        { en: 'practice a lot', vn: 'luyện tập rất nhiều' },
+                        { en: 'rarely do it', vn: 'hiếm khi làm' },
+                        { en: 'spend time on other things', vn: 'dành thời gian cho việc khác' }
+                    ]
+                },
+                {
+                    type: 'activity',
+                    title: 'Tính từ mô tả hoạt động:',
+                    items: [
+                        { en: 'interesting', vn: 'thú vị' },
+                        { en: 'exciting', vn: 'hào hứng / tuyệt vời' },
+                        { en: 'relaxing', vn: 'mang lại cảm giác thư giãn' }
+                    ]
+                },
+                {
+                    type: 'benefit',
+                    title: 'Cụm Lợi ích:',
+                    items: [
+                        { en: 'save money', vn: 'tiết kiệm tiền' },
+                        { en: 'stay healthy', vn: 'duy trì sức khỏe' }
+                    ]
+                }
+            ]
+        },
+        {
+            title: "6. Are/Is [...] important to you?",
+            formula: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, it is. <strong>[chủ đề]</strong> is very important to me because it helps me <strong>[lợi ích 1]</strong>. It’s also a good way to <strong>[lợi ích 2]</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. <strong>[chủ đề]</strong> is not very important to me because it doesn't affect my daily life much.</div>",
+            examples: [
+                "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating healthy</span> important to you?",
+                "Are <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>friends</span> important to you?",
+                "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>family</span> important to you?",
+                "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>money</span> important to you?",
+                "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>education</span> important to you?"
+            ],
+            exQ: "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating healthy</span> important to you?",
+            exA: "→ Yes, it is. Eating healthy is very important to me because it helps me improve my health. It is also a good way to have a better life.",
+            exAFormatted: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, it is. <span class=\"sub-hl\">Eating healthy</span> is very important to me because it helps me <span class=\"sub-hl\">improve my health</span>. It is also a good way to <span class=\"sub-hl\">have a better life</span>.</div><div><strong>- Trả lời không:</strong> → Not really. <span class=\"sub-hl\">Eating healthy</span> is not very important to me because it doesn't affect my daily life much.</div>",
+            vocab: [
+                {
+                    type: 'note',
+                    title: 'Ghi chú từ vựng:',
+                    items: [
+                        { en: 'important to me', vn: 'quan trọng đối với tôi' },
+                        { en: 'improve my health', vn: 'cải thiện sức khỏe' },
+                        { en: 'have a better life', vn: 'có cuộc sống tốt đẹp hơn' }
+                    ]
+                }
+            ]
+        },
+        {
+            title: "7. Have you ever [hoạt động – V3/ed]?",
+            formula: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Sure. I have <strong>[hoạt động – V3/ed]</strong> before, and it was a/an <strong>[tính từ]</strong> experience. It helped me <strong>[lợi ích]</strong>.</div><div><strong>- Trả lời không:</strong> → No, I have never <strong>[hoạt động – V3/ed]</strong> before because I don't have the chance. But I would like to try it in the future if possible.</div>",
+            examples: [
+                "Have you ever <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveled abroad</span>?",
+                "Have you ever <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eaten traditional food</span>?",
+                "Have you ever <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>met a famous person</span>?",
+                "Have you ever <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>lost your wallet</span>?",
+                "Have you ever <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>won a competition</span>?"
+            ],
+            exQ: "Have you ever <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveled abroad</span>?",
+            exA: "→ Sure. I have traveled abroad before, and it was an exciting experience. It helped me learn new things.",
+            exAFormatted: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Sure. I have <span class=\"sub-hl\">traveled abroad</span> before, and it was an <span class=\"sub-hl\">exciting</span> experience. It helped me <span class=\"sub-hl\">learn new things</span>.</div><div><strong>- Trả lời không:</strong> → No, I have never <span class=\"sub-hl\">traveled abroad</span> before because I don't have the chance. But I would like to try it in the future if possible.</div>",
+            vocab: [
+                {
+                    type: 'activity',
+                    title: 'Tính từ mô tả trải nghiệm:',
+                    items: [
+                        { en: 'exciting', vn: 'hào hứng / thú vị' },
+                        { en: 'amazing', vn: 'tuyệt vời' },
+                        { en: 'unforgettable', vn: 'không thể nào quên' },
+                        { en: 'interesting', vn: 'thú vị' },
+                        { en: 'memorable', vn: 'đáng nhớ' },
+                        { en: 'wonderful', vn: 'tuyệt vời' },
+                        { en: 'incredible', vn: 'đáng kinh ngạc / tuyệt vời' }
+                    ]
+                }
+            ]
+        }
+    ];
+
+    window.getExamplesBlockHTML = (item) => {
+        if (!item || !item.examples || !item.examples.length) return '';
+        
+        return `
+            <div class="accordion-box" onclick="this.classList.toggle('open')" style="margin-bottom: 1.25rem; border: 2px solid #f59e0b; box-shadow: 0 4px 6px -1px rgba(245, 158, 11, 0.1);">
+                <div class="accordion-header" style="padding: 1rem 1.25rem; background: rgba(245, 158, 11, 0.08);">
+                    <div class="acc-title" style="color:#d97706; font-size:1.05rem;"><i class="fa-solid fa-list-ul"></i> CÁC CÂU HỎI VÍ DỤ</div>
+                    <div class="acc-toggle" style="background:#d97706;"><span class="txt-close"><i class="fa-solid fa-hand-pointer"></i> Nhấn để xem ví dụ ▼</span><span class="txt-open"><i class="fa-solid fa-chevron-up"></i> Thu gọn ▲</span></div>
+                </div>
+                <div class="accordion-content" onclick="event.stopPropagation()">
+                    <ul style="margin: 0; padding-left: 1.5rem; color: var(--text-main); font-size: 1.05rem; line-height: 1.8;">
+                        ${item.examples.map(ex => `<li style="margin-bottom: 0.5rem;">${ex}</li>`).join('')}
+                    </ul>
+                </div>
+            </div>
+        `;
+    };
+
+    window.getSuggestionsHTML = (item) => {
+        if (!item || !item.vocab || !item.vocab.length) return '';
+
+        let html = `
+            <div class="sugg-container mt-3 pt-3 fade-in" style="border-top: 1px dashed var(--border); text-align: left;">
+                <div style="font-weight: 700; color: #059669; font-size: 0.95rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fa-solid fa-list-check"></i> GỢI Ý TỪ VỰNG:
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 1rem; font-size: 0.92rem; line-height: 1.6;">`;
+
+        item.vocab.forEach(group => {
+            const isBlue = group.type === 'benefit';
+            const col = isBlue ? '#2563eb' : '#059669';
+            const bg = isBlue ? 'rgba(59, 130, 246, 0.06)' : 'rgba(16, 185, 129, 0.06)';
+            const border = isBlue ? 'rgba(59, 130, 246, 0.25)' : 'rgba(16, 185, 129, 0.25)';
+            let icon = 'fa-solid fa-lightbulb';
+            if (group.type === 'benefit') icon = 'fa-solid fa-star';
+            else if (group.type === 'time') icon = 'fa-regular fa-clock';
+            else if (group.type === 'emotion') icon = 'fa-solid fa-face-smile';
+            else if (group.type === 'activity') icon = 'fa-solid fa-wand-magic-sparkles';
+            if (group.icon) icon = group.icon;
+
+            html += `
+                    <div style="background: ${bg}; padding: 0.85rem 1rem; border-radius: 10px; border: 1px solid ${border};">
+                        <div style="color: ${col}; font-weight: 700; margin-bottom: 0.5rem; font-size: 0.95rem;"><i class="${icon}"></i> ${group.title}</div>
+                        <div style="color: var(--text-main); display: flex; flex-direction: column; gap: 0.5rem;">`;
+            group.items.forEach(pair => {
+                html += `
+                            <div>
+                                <button type="button" onclick="event.stopPropagation(); speakText('${pair.en}')" title="Nghe phát âm" style="background: none; border: none; color: ${col}; cursor: pointer; padding: 0 0.4rem 0 0; font-size: 1rem;"><i class="fa-solid fa-volume-high"></i></button>
+                                <strong>${pair.en}</strong>: ${pair.vn}
+                            </div>`;
+            });
+            html += `
+                        </div>
+                    </div>`;
+        });
+
+        html += `
+                </div>
+            </div>`;
+        return html;
+    };
+
+    const ynStage = document.getElementById('yn-stage');
+    const ynNumEl = document.getElementById('yn-current-num');
+
+    const renderYnSlide = () => {
+        if (!ynStage) return;
+        const d = ynFormulas[state.ynIndex];
+        if (ynNumEl) ynNumEl.textContent = state.ynIndex + 1;
+        ynStage.innerHTML = `
+            <div class="f-card-clean fade-in">
+                <div class="f-title" style="margin-bottom:1.5rem;">${d.title}</div>
+                
+                ${getExamplesBlockHTML(d)}
+                
+                <div class="accordion-box" onclick="this.classList.toggle('open')" style="margin-bottom: 1.25rem; border: 2px solid #3b82f6; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);">
+                    <div class="accordion-header" style="padding: 1rem 1.25rem; background: rgba(59, 130, 246, 0.08);">
+                        <div class="acc-title" style="color:#2563eb; font-size:1.05rem;"><i class="fa-solid fa-lightbulb"></i> GỢI Ý CÂU TRẢ LỜI</div>
+                        <div class="acc-toggle" style="background:#2563eb;"><span class="txt-close"><i class="fa-solid fa-hand-pointer"></i> Nhấn để xem gợi ý câu trả lời ▼</span><span class="txt-open"><i class="fa-solid fa-chevron-up"></i> Thu gọn ▲</span></div>
+                    </div>
+                    <div class="accordion-content" onclick="event.stopPropagation()">
+                        <div class="f-formula-box" style="margin: 0; border: none; background: transparent; padding: 0.5rem 0;">${d.formula}</div>
+                        ${getSuggestionsHTML(d)}
+                    </div>
+                </div>
+
+                <div class="accordion-box" onclick="this.classList.toggle('open')" style="margin-bottom: 0; border: 2px solid #8b5cf6; box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.1);">
+                    <div class="accordion-header" style="padding: 1rem 1.25rem; background: rgba(139, 92, 246, 0.08);">
+                        <div class="acc-title" style="color:#7c3aed; font-size:1.05rem;"><i class="fa-solid fa-desktop"></i> VÍ DỤ THỰC HÀNH</div>
+                        <div class="acc-toggle" style="background:#7c3aed;"><span class="txt-close"><i class="fa-solid fa-hand-pointer"></i> Nhấn vào hiện câu hỏi ▼</span><span class="txt-open"><i class="fa-solid fa-chevron-up"></i> Thu gọn ▲</span></div>
+                    </div>
+                    <div class="accordion-content" onclick="event.stopPropagation()">
+                        <div class="f-example-box" style="margin: 0; border: none; background: transparent; padding: 0.5rem 0;">
+                            <div class="ex-label" style="font-size:1.1rem; color:var(--text-main); margin-bottom:0.75rem; text-transform:none;">
+                                ❓ Câu hỏi: <strong>${d.exQ}</strong>
+                            </div>
+                            <div style="margin-top:0.75rem;">
+                                <button class="btn-audio-sample" style="background:#8b5cf6; margin-bottom:0.5rem; cursor:pointer;" onclick="toggleSampleAnswer(this)">
+                                    <i class="fa-solid fa-eye"></i> Nhấn xem câu trả lời mẫu
+                                </button>
+                                <div class="fade-in" style="display:none; margin-top:0.75rem; padding-top:0.75rem; border-top:1px dashed var(--border);">
+                                    <div class="ex-text" style="color:var(--secondary); font-weight:500; font-size:1.05rem; line-height:1.8;">${d.exAFormatted || d.exA}</div>
+                                    <button class="btn-audio-sample mt-2" onclick="speakText('${d.exA.replace(/<[^>]*>/g, '').replace(/→/g, '').replace(/'/g, "\\'").trim()}')">
+                                        <i class="fa-solid fa-volume-high"></i> Nghe Audio phát âm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    };
+
+    document.getElementById('yn-prev')?.addEventListener('click', () => {
+        state.ynIndex = (state.ynIndex - 1 + ynFormulas.length) % ynFormulas.length;
+        renderYnSlide();
+    });
+    document.getElementById('yn-next')?.addEventListener('click', () => {
+        state.ynIndex = (state.ynIndex + 1) % ynFormulas.length;
+        renderYnSlide();
+    });
+    renderYnSlide();
+
+    // 4. CHOICE QUESTIONS TABS
+    const cTabs = document.querySelectorAll('.c-tab');
+    const choiceBox = document.getElementById('choice-display-box');
+
+    const choiceData = {
+        'opt1': {
+            title: "✅ PHƯƠNG ÁN 1 – CHỌN 1 TRONG 2",
+            form: "→ I prefer <strong>[lựa chọn – noun/Ving]</strong> because it’s more <strong>[tính từ mô tả lựa chọn]</strong> and helps me <strong>[lợi ích]</strong>. It also makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.",
+            examples: [
+                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in the library</span>?",
+                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching movies</span>?",
+                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating out</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>cooking at home</span>?",
+                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveling alone</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>with friends</span>?",
+                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>living in the city</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>the countryside</span>?"
+            ],
+            exQ: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in the library</span>?",
+            exA: "→ I prefer studying at home because it’s more convenient and helps me save time. It also makes me feel comfortable.",
+            exAFormatted: "→ I prefer <span class=\"sub-hl\">studying at home</span> because it’s more <span class=\"sub-hl\">convenient</span> and helps me <span class=\"sub-hl\">save time</span>. It also makes me feel <span class=\"sub-hl\">comfortable</span>.",
+            audio: "I prefer studying at home because it’s more convenient and helps me save time. It also makes me feel comfortable.",
+            vocab: [
+                {
+                    type: 'note',
+                    title: 'Ghi chú từ vựng:',
+                    items: [
+                        { en: 'prefer', vn: 'thích hơn / ưu tiên hơn' },
+                        { en: 'convenient', vn: 'tiện lợi / thuận tiện' },
+                        { en: 'save time', vn: 'tiết kiệm thời gian' },
+                        { en: 'comfortable', vn: 'dễ chịu / thoải mái' }
+                    ]
+                }
+            ]
+        },
+        'opt2': {
+            title: "✅ PHƯƠNG ÁN 2 – CÂN NHẮC CẢ 2 PHƯƠNG ÁN (Nâng cao)",
+            form: "→ It’s hard to choose because both are important. <strong>[A]</strong> helps me <strong>[lợi ích A]</strong>, while <strong>[B]</strong> allows me to <strong>[lợi ích B]</strong>.",
+            examples: [
+                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in the library</span>?",
+                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching movies</span>?",
+                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating out</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>cooking at home</span>?",
+                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveling alone</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>with friends</span>?",
+                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>living in the city</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>the countryside</span>?"
+            ],
+            exQ: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in the library</span>?",
+            exA: "→ It’s hard to choose because both are important. Studying at home helps me save time, while studying in the library allows me to focus better.",
+            exAFormatted: "→ It’s hard to choose because both are important. <span class=\"sub-hl\">Studying at home</span> helps me <span class=\"sub-hl\">save time</span>, while <span class=\"sub-hl\">studying in the library</span> allows me to <span class=\"sub-hl\">focus better</span>.",
+            audio: "It’s hard to choose because both are important. Studying at home helps me save time, while studying in the library allows me to focus better.",
+            vocab: [
+                {
+                    type: 'note',
+                    title: 'Ghi chú từ vựng:',
+                    items: [
+                        { en: 'hard to choose', vn: 'khó để lựa chọn' },
+                        { en: 'both are important', vn: 'cả hai đều quan trọng' },
+                        { en: 'save time', vn: 'tiết kiệm thời gian' },
+                        { en: 'allow me to', vn: 'cho phép tôi / giúp tôi' },
+                        { en: 'focus better', vn: 'tập trung tốt hơn' }
+                    ]
+                }
+            ]
+        }
+    };
+
+    const renderChoice = (o) => {
+        if (!choiceBox || !choiceData[o]) return;
+        const d = choiceData[o];
+        choiceBox.innerHTML = `
+            <div class="f-card-clean fade-in" style="max-width:100%;">
+                <div class="f-title" style="margin-bottom:1.5rem;">${d.title}</div>
+                
+                ${getExamplesBlockHTML(d)}
+                
+                <div class="accordion-box" onclick="this.classList.toggle('open')" style="margin-bottom: 1.25rem; border: 2px solid #3b82f6; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);">
+                    <div class="accordion-header" style="padding: 1rem 1.25rem; background: rgba(59, 130, 246, 0.08);">
+                        <div class="acc-title" style="color:#2563eb; font-size:1.05rem;"><i class="fa-solid fa-lightbulb"></i> GỢI Ý CÂU TRẢ LỜI</div>
+                        <div class="acc-toggle" style="background:#2563eb;"><span class="txt-close"><i class="fa-solid fa-hand-pointer"></i> Nhấn để xem gợi ý câu trả lời ▼</span><span class="txt-open"><i class="fa-solid fa-chevron-up"></i> Thu gọn ▲</span></div>
+                    </div>
+                    <div class="accordion-content" onclick="event.stopPropagation()">
+                        <div class="f-formula-box" style="margin: 0; border: none; background: transparent; padding: 0.5rem 0;">${d.form}</div>
+                        ${getSuggestionsHTML(d)}
+                    </div>
+                </div>
+
+                <div class="accordion-box" onclick="this.classList.toggle('open')" style="margin-bottom: 0; border: 2px solid #8b5cf6; box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.1);">
+                    <div class="accordion-header" style="padding: 1rem 1.25rem; background: rgba(139, 92, 246, 0.08);">
+                        <div class="acc-title" style="color:#7c3aed; font-size:1.05rem;"><i class="fa-solid fa-desktop"></i> VÍ DỤ THỰC HÀNH</div>
+                        <div class="acc-toggle" style="background:#7c3aed;"><span class="txt-close"><i class="fa-solid fa-hand-pointer"></i> Nhấn vào hiện câu hỏi ▼</span><span class="txt-open"><i class="fa-solid fa-chevron-up"></i> Thu gọn ▲</span></div>
+                    </div>
+                    <div class="accordion-content" onclick="event.stopPropagation()">
+                        <div class="f-example-box" style="margin: 0; border: none; background: transparent; padding: 0.5rem 0;">
+                            <div class="ex-label" style="font-size:1.1rem; color:var(--text-main); margin-bottom:0.75rem; text-transform:none;">
+                                ❓ Câu hỏi: <strong>${d.exQ}</strong>
+                            </div>
+                            <div style="margin-top:0.75rem;">
+                                <button class="btn-audio-sample" style="background:#8b5cf6; margin-bottom:0.5rem; cursor:pointer;" onclick="toggleSampleAnswer(this)">
+                                    <i class="fa-solid fa-eye"></i> Nhấn xem câu trả lời mẫu
+                                </button>
+                                <div class="fade-in" style="display:none; margin-top:0.75rem; padding-top:0.75rem; border-top:1px dashed var(--border);">
+                                    <div class="ex-text" style="color:var(--secondary); font-weight:500; font-size:1.05rem; line-height:1.8;">${d.exAFormatted || d.exA}</div>
+                                    <button class="btn-audio-sample mt-2" onclick="speakText('${d.audio.replace(/<[^>]*>/g, '').replace(/'/g, "\\'")}')">
+                                        <i class="fa-solid fa-volume-high"></i> Nghe Audio phát âm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    };
+
+    cTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            cTabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            renderChoice(tab.getAttribute('data-opt'));
+        });
+    });
+    renderChoice('opt1');
+
+    // 5. WH-QUESTIONS SHOWCASE (15 Formulas exactly from PowerPoint)
+    const whBank = {
+        'what': [
+            {
+                title: "1. What do you often do [thời gian]?",
+                formula: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I usually <strong>[hoạt động 1 – Vo]</strong> <strong>[thời gian]</strong> because it helps me <strong>[lợi ích 1]</strong>. Sometimes, I also <strong>[hoạt động 2 – Vo]</strong> to <strong>[lợi ích 2]</strong>.</div><div><strong>- Cách 2:</strong> → I usually <strong>[hoạt động – Vo]</strong> <strong>[thời gian]</strong> because it helps me <strong>[lợi ích]</strong>. It also makes me feel <strong>[cảm xúc]</strong>.</div>",
+                examples: [
+                    "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in the evening</span>?",
+                    "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in the morning</span>?",
+                    "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>at weekends</span>?",
+                    "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in your free time</span>?",
+                    "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>on Sundays</span>?"
+                ],
+                exQ: "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in the evening</span>?",
+                exA: "→ I usually watch movies in the evening because it helps me reduce stress. Sometimes, I also listen to music to clear my mind.",
+                exAFormatted: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I usually <span class=\"sub-hl\">watch movies</span> <span class=\"sub-hl\">in the evening</span> because it helps me <span class=\"sub-hl\">reduce stress</span>. Sometimes, I also <span class=\"sub-hl\">listen to music</span> to <span class=\"sub-hl\">clear my mind</span>.</div><div><strong>- Cách 2:</strong> → I usually <span class=\"sub-hl\">read books</span> <span class=\"sub-hl\">in the evening</span> because it helps me <span class=\"sub-hl\">relax after a long day</span>. It also makes me feel <span class=\"sub-hl\">happy</span>.</div>",
+                vocab: [
+                    {
+                        type: 'time',
+                        title: 'Cụm Thời gian:',
+                        items: [
+                            { en: 'in the morning', vn: 'vào buổi sáng' },
+                            { en: 'in the afternoon', vn: 'vào buổi chiều' },
+                            { en: 'in the evening', vn: 'vào buổi tối' },
+                            { en: 'at weekends', vn: 'vào cuối tuần' }
+                        ]
+                    },
+                    {
+                        type: 'benefit',
+                        title: 'Cụm Lợi ích:',
+                        items: [
+                            { en: 'reduce stress', vn: 'giảm căng thẳng' },
+                            { en: 'clear my mind', vn: 'thư giãn đầu óc' },
+                            { en: 'relax after a long day', vn: 'thư giãn sau một ngày dài' }
+                        ]
+                    },
+                    {
+                        type: 'emotion',
+                        title: 'Tính từ mô tả cảm xúc:',
+                        items: [
+                            { en: 'happy', vn: 'vui vẻ / hạnh phúc' },
+                            { en: 'relaxed', vn: 'thư thái / thoải mái' }
+                        ]
+                    }
+                ]
+            },
+            {
+                title: "2. What do you often do to [mục đích]?",
+                formula: "→ I often <strong>[hoạt động 1 – Vo]</strong> to <strong>[mục đích]</strong> because it helps me <strong>[lợi ích]</strong>. I also <strong>[hoạt động 2 – Vo]</strong> because it’s simple and easy to do.",
+                examples: [
+                    "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>keep in shape</span>?",
+                    "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>relax</span>?",
+                    "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>improve your English</span>?",
+                    "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>stay healthy</span>?",
+                    "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>save money</span>?"
+                ],
+                exQ: "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>keep in shape</span>?",
+                exA: "→ I often exercise to keep in shape because it helps me burn calories. I also go for a walk because it is simple and easy to do.",
+                exAFormatted: "→ I often <span class=\"sub-hl\">exercise</span> to <span class=\"sub-hl\">keep in shape</span> because it helps me <span class=\"sub-hl\">burn calories</span>. I also <span class=\"sub-hl\">go for a walk</span> because it is simple and easy to do.",
+                vocab: [
+                    {
+                        type: 'note',
+                        title: 'Ghi chú từ vựng:',
+                        items: [
+                            { en: 'keep in shape', vn: 'giữ vóc dáng cân đối' },
+                            { en: 'burn calories', vn: 'đốt cháy calo' },
+                            { en: 'go for a walk', vn: 'đi dạo' },
+                            { en: 'simple and easy to do', vn: 'đơn giản và dễ thực hiện' }
+                        ]
+                    }
+                ]
+            },
+            {
+                title: "3. What do you often do when [tình huống – mệnh đề]?",
+                formula: "→ I often <strong>[hoạt động – Vo]</strong> when <strong>[tình huống]</strong> because it helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>. It also makes me feel <strong>[tính từ cảm xúc]</strong>.",
+                note: "LƯU Ý: Nếu không kịp thời gian thì chỉ cần 1 lợi ích hoặc lược bỏ câu mô tả cảm xúc.",
+                examples: [
+                    "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you feel sad</span>?",
+                    "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you are stressed</span>?",
+                    "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you have free time</span>?",
+                    "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you are tired</span>?",
+                    "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you are happy</span>?"
+                ],
+                exQ: "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you feel sad</span>?",
+                exA: "→ I often listen to music when I feel sad because it helps me clear my mind and improve my mood. It also makes me feel relaxed.",
+                exAFormatted: "→ I often <span class=\"sub-hl\">listen to music</span> when <span class=\"sub-hl\">I feel sad</span> because it helps me <span class=\"sub-hl\">clear my mind</span> and <span class=\"sub-hl\">improve my mood</span>. It also makes me feel <span class=\"sub-hl\">relaxed</span>.",
+                vocab: [
+                    {
+                        type: 'emotion',
+                        title: 'Tính từ mô tả cảm xúc / tình trạng:',
+                        items: [
+                            { en: 'feel sad', vn: 'cảm thấy buồn' },
+                            { en: 'feel stressed', vn: 'cảm thấy căng thẳng' },
+                            { en: 'feel bored', vn: 'cảm thấy nhàm chán' },
+                            { en: 'relaxed', vn: 'thư thái / thoải mái' }
+                        ]
+                    },
+                    {
+                        type: 'benefit',
+                        title: 'Cụm Lợi ích:',
+                        items: [
+                            { en: 'clear my mind', vn: 'thư giãn đầu óc' },
+                            { en: 'improve my mood', vn: 'cải thiện tâm trạng' }
+                        ]
+                    }
+                ]
+            },
+            {
+                title: "4. What kinds of [danh từ] do you like?",
+                formula: "→ I’m a big fan of <strong>[1 hoặc 2 thể loại]</strong> because they are very <strong>[tính từ mô tả đối tượng / hoạt động]</strong>. They also allow me to <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.",
+                note: "LƯU Ý: Nếu không kịp thời gian thì chỉ cần 1 lợi ích.",
+                examples: [
+                    "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>movies</span> do you like?",
+                    "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>books</span> do you like?",
+                    "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>music</span> do you like?",
+                    "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>sports</span> do you like?",
+                    "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>food</span> do you like?"
+                ],
+                exQ: "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>movies</span> do you like?",
+                exA: "→ I’m a big fan of action and comedy movies because they are very interesting. They also allow me to relax and reduce stress.",
+                exAFormatted: "→ I’m a big fan of <span class=\"sub-hl\">action and comedy movies</span> because they are very <span class=\"sub-hl\">interesting</span>. They also allow me to <span class=\"sub-hl\">relax</span> and <span class=\"sub-hl\">reduce stress</span>.",
+                vocab: [
+                    {
+                        type: 'activity',
+                        title: 'Tính từ mô tả đối tượng / hoạt động:',
+                        items: [
+                            { en: 'interesting', vn: 'thú vị' },
+                            { en: 'exciting', vn: 'hào hứng / tuyệt vời' },
+                            { en: 'entertaining', vn: 'mang tính giải trí' }
+                        ]
+                    },
+                    {
+                        type: 'benefit',
+                        title: 'Cụm Lợi ích:',
+                        items: [
+                            { en: 'reduce stress', vn: 'giảm căng thẳng' },
+                            { en: 'improve my mood', vn: 'cải thiện tâm trạng' },
+                            { en: 'widen my knowledge', vn: 'mở rộng kiến thức' }
+                        ]
+                    }
+                ]
+            },
+            {
+                title: "5. What is your favorite [danh từ]?",
+                formula: "→ My favorite <strong>[danh từ]</strong> is <strong>[thứ cụ thể]</strong> because it’s <strong>[tính từ mô tả phù hợp]</strong>. It helps me <strong>[lợi ích]</strong> and makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.",
+                examples: [
+                    "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>food</span>?",
+                    "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>color</span>?",
+                    "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>animal</span>?",
+                    "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>subject</span>?",
+                    "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>season</span>?"
+                ],
+                exQ: "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>food</span>?",
+                exA: "→ My favorite food is fried chicken because it’s delicious. It helps me reduce stress and makes me feel happy whenever I eat it.",
+                exAFormatted: "→ My favorite food is <span class=\"sub-hl\">fried chicken</span> because it’s <span class=\"sub-hl\">delicious</span>. It helps me <span class=\"sub-hl\">reduce stress</span> and makes me feel <span class=\"sub-hl\">happy</span> whenever I eat it.",
+                vocab: [
+                    {
+                        type: 'activity',
+                        title: 'Tính từ mô tả hoạt động / đối tượng:',
+                        items: [
+                            { en: 'delicious', vn: 'ngon miệng' },
+                            { en: 'interesting', vn: 'thú vị' },
+                            { en: 'wonderful', vn: 'tuyệt vời' }
+                        ]
+                    },
+                    {
+                        type: 'emotion',
+                        title: 'Tính từ mô tả cảm xúc:',
+                        items: [
+                            { en: 'feel happy', vn: 'cảm thấy vui vẻ / hạnh phúc' },
+                            { en: 'feel relaxed', vn: 'cảm thấy thư thái / thoải mái' }
+                        ]
+                    },
+                    {
+                        type: 'benefit',
+                        title: 'Cụm Lợi ích:',
+                        items: [
+                            { en: 'reduce stress', vn: 'giảm căng thẳng' },
+                            { en: 'improve my mood', vn: 'cải thiện tâm trạng' }
+                        ]
+                    }
+                ]
+            },
+            {
+                title: "6. What are the benefits of [noun/Ving]?",
+                formula: "→ One benefit of <strong>[noun/Ving]</strong> is that it helps us <strong>[lợi ích 1]</strong>. It’s also a good way to <strong>[lợi ích 2]</strong> and <strong>[lợi ích 3]</strong>.",
+                note: "LƯU Ý: Nếu không kịp thời gian thì chỉ cần 2 lợi ích hoặc lược bỏ “One … that”.",
+                examples: [
+                    "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>exercise</span>?",
+                    "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span>?",
+                    "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>learning English</span>?",
+                    "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>playing sports</span>?",
+                    "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveling</span>?"
+                ],
+                exQ: "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>exercise</span>?",
+                exA: "→ One benefit of exercise is that it helps us stay healthy. It’s also a good way to improve our fitness and reduce stress.",
+                exAFormatted: "→ One benefit of exercise is that it helps us <span class=\"sub-hl\">stay healthy</span>. It’s also a good way to <span class=\"sub-hl\">improve our fitness</span> and <span class=\"sub-hl\">reduce stress</span>.",
+                vocab: [
+                    {
+                        type: 'benefit',
+                        title: 'Cụm Lợi ích:',
+                        items: [
+                            { en: 'reduce stress', vn: 'giảm căng thẳng' },
+                        { en: 'improve my mood', vn: 'cải thiện tâm trạng' },
+                        { en: 'widen my knowledge', vn: 'mở rộng kiến thức' },
+                        { en: 'clear my mind', vn: 'thư giãn đầu óc' },
+                        { en: 'stay healthy', vn: 'duy trì sức khỏe' }
+                        ]
+                    }
+                ]
+            }
+        ],
+        'who': [
+            {
+                title: "1. Who’s your favorite [noun – danh từ chỉ người]?",
+                formula: "→ My favorite <strong>[noun – danh từ chỉ người]</strong> is <strong>[tên]</strong>. I like him/her because <strong>[lý do chính]</strong>. Moreover, he/she is very <strong>[tính từ mô tả tính cách]</strong>.",
+                examples: [
+                    "Who’s your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>singer</span>?",
+                    "Who’s your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>actor</span>?",
+                    "Who’s your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>teacher</span>?",
+                    "Who’s your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>author</span>?",
+                    "Who’s your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>athlete</span>?"
+                ],
+                exQ: "Who’s your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>singer</span>?",
+                exA: "→ My favorite singer is Justin Bieber. I like him because he has a beautiful voice. Moreover, he is very talented.",
+                exAFormatted: "→ My favorite singer is <span class=\"sub-hl\">Justin Bieber</span>. I like him because <span class=\"sub-hl\">he has a beautiful voice</span>. Moreover, he is very <span class=\"sub-hl\">talented</span>.",
+                vocab: [
+                    {
+                        type: 'note',
+                        title: 'Ghi chú từ vựng:',
+                        items: [
+                            { en: 'beautiful voice', vn: 'giọng hát hay / tuyệt vời' },
+                            { en: 'talented', vn: 'tài năng' }
+                        ]
+                    }
+                ]
+            },
+            {
+                title: "2. Who do you often [hoạt động – Vo] with?",
+                formula: "→ I often <strong>[hoạt động – Vo]</strong> with my <strong>[đối tượng phù hợp]</strong> because we have the same hobbies. It's more <strong>[tính từ phù hợp]</strong> when we spend time together.",
+                examples: [
+                    "Who do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go shopping</span> with?",
+                    "Who do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>study</span> with?",
+                    "Who do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>travel</span> with?",
+                    "Who do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watch movies</span> with?",
+                    "Who do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>play sports</span> with?"
+                ],
+                exQ: "Who do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go shopping</span> with?",
+                exA: "→ I often go shopping with my mother because we have the same hobbies. It’s more fun when we spend time together.",
+                exAFormatted: "→ I often go shopping with <span class=\"sub-hl\">my mother</span> because we have the same hobbies. It’s more <span class=\"sub-hl\">fun</span> when we spend time together.",
+                vocab: [
+                    {
+                        type: 'note',
+                        title: 'Ghi chú từ vựng:',
+                        items: [
+                            { en: 'same hobbies', vn: 'cùng sở thích' },
+                            { en: 'spend time together', vn: 'dành thời gian cùng nhau' },
+                            { en: 'more fun', vn: 'vui vẻ hơn' }
+                        ]
+                    }
+                ]
+            }
+        ],
+        'when': [
+            {
+                title: "1. When do you often [hoạt động – Vo]?",
+                formula: "→ I usually <strong>[hoạt động – Vo]</strong> <strong>[thời gian]</strong> because that’s when I have free time. It helps me <strong>[lợi ích]</strong> and makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.",
+                examples: [
+                    "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>listen to music</span>?",
+                    "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>read books</span>?",
+                    "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go shopping</span>?",
+                    "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>play sports</span>?",
+                    "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watch movies</span>?"
+                ],
+                exQ: "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>listen to music</span>?",
+                exA: "→ I often listen to music in the evening because that’s when I have free time. It helps me reduce stress and makes me feel relaxed.",
+                exAFormatted: "→ I often listen to music <span class=\"sub-hl\">in the evening</span> because that’s when I have free time. It helps me <span class=\"sub-hl\">reduce stress</span> and makes me feel <span class=\"sub-hl\">relaxed</span>.",
+                vocab: [
+                    {
+                        type: 'time',
+                        title: 'Cụm Thời gian:',
+                        items: [
+                            { en: 'in the evening', vn: 'vào buổi tối' },
+                            { en: 'in the morning', vn: 'vào buổi sáng' },
+                            { en: 'at weekends', vn: 'vào cuối tuần' },
+                            { en: 'have free time', vn: 'có thời gian rảnh rỗi' }
+                        ]
+                    },
+                    {
+                        type: 'emotion',
+                        title: 'Tính từ mô tả cảm xúc:',
+                        items: [
+                            { en: 'feel relaxed', vn: 'cảm thấy thư thái / thoải mái' }
+                        ]
+                    },
+                    {
+                        type: 'benefit',
+                        title: 'Cụm Lợi ích:',
+                        items: [
+                            { en: 'reduce stress', vn: 'giảm căng thẳng' },
+                        { en: 'improve my mood', vn: 'cải thiện tâm trạng' },
+                        { en: 'widen my knowledge', vn: 'mở rộng kiến thức' },
+                        { en: 'clear my mind', vn: 'thư giãn đầu óc' },
+                        { en: 'stay healthy', vn: 'duy trì sức khỏe' }
+                        ]
+                    }
+                ]
+            }
+        ],
+        'where': [
+            {
+                title: "1. Where do you often [hoạt động – Vo]?",
+                formula: "→ I usually <strong>[hoạt động – Vo]</strong> <strong>[cụm địa điểm]</strong> because it’s very <strong>[tính từ mô tả địa điểm]</strong>. It helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.",
+                examples: [
+                    "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>read books</span>?",
+                    "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>study</span>?",
+                    "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>hang out with friends</span>?",
+                    "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>buy clothes</span>?",
+                    "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go for a walk</span>?"
+                ],
+                exQ: "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>read books</span>?",
+                exA: "→ I often read books in the school library because it’s very quiet. It helps me focus better and stay motivated.",
+                exAFormatted: "→ I often read books <span class=\"sub-hl\">in the school library</span> because it’s very <span class=\"sub-hl\">quiet</span>. It helps me <span class=\"sub-hl\">focus better</span> and <span class=\"sub-hl\">stay motivated</span>.",
+                vocab: [
+                    {
+                        type: 'activity',
+                        title: 'Tính từ mô tả địa điểm:',
+                        items: [
+                            { en: 'quiet', vn: 'yên tĩnh' },
+                            { en: 'peaceful', vn: 'thanh bình / yên ả' },
+                            { en: 'spacious', vn: 'rộng rãi' }
+                        ]
+                    },
+                    {
+                        type: 'benefit',
+                        title: 'Cụm Lợi ích:',
+                        items: [
+                            { en: 'focus better', vn: 'tập trung tốt hơn' },
+                            { en: 'stay motivated', vn: 'giữ động lực' }
+                        ]
+                    }
+                ]
+            }
+        ],
+        'why': [
+            {
+                title: "1. Why do you like [hoạt động – Ving]?",
+                formula: "→ I enjoy <strong>[hoạt động – Ving]</strong> because it’s very <strong>[tính từ mô tả hoạt động]</strong>. It helps me <strong>[lợi ích 1]</strong> makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.",
+                note: "LƯU Ý: Nếu không muốn mô tả cảm xúc thì có thể thay bằng 1 lợi ích khác.",
+                examples: [
+                    "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>swimming</span>?",
+                    "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span>?",
+                    "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>learning English</span>?",
+                    "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching movies</span>?",
+                    "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveling</span>?"
+                ],
+                exQ: "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>swimming</span>?",
+                exA: "→ I enjoy swimming because it’s very interesting. It helps me stay healthy and makes me feel relaxed.",
+                exAFormatted: "→ I enjoy swimming because it’s very <span class=\"sub-hl\">interesting</span>. It helps me <span class=\"sub-hl\">stay healthy</span> and makes me feel <span class=\"sub-hl\">relaxed</span>.",
+                vocab: [
+                    {
+                        type: 'activity',
+                        title: 'Tính từ mô tả hoạt động:',
+                        items: [
+                            { en: 'interesting', vn: 'thú vị' },
+                            { en: 'exciting', vn: 'hào hứng / tuyệt vời' },
+                            { en: 'relaxing', vn: 'mang lại cảm giác thư giãn' }
+                        ]
+                    },
+                    {
+                        type: 'emotion',
+                        title: 'Tính từ mô tả cảm xúc:',
+                        items: [
+                            { en: 'feel relaxed', vn: 'cảm thấy thư thái / thoải mái' },
+                            { en: 'feel refreshed', vn: 'cảm thấy sảng khoái' }
+                        ]
+                    },
+                    {
+                        type: 'benefit',
+                        title: 'Cụm Lợi ích:',
+                        items: [
+                            { en: 'stay healthy', vn: 'duy trì sức khỏe' }
+                        ]
+                    }
+                ]
+            }
+        ],
+        'how': [
+            {
+                title: "1. How do you [go/get/commute/travel] to [địa điểm]?",
+                formula: "→ I usually <strong>[go/get/commute/travel]</strong> there by <strong>[phương tiện]</strong> because it’s very <strong>[tính từ mô tả phương tiện]</strong>. It also helps me <strong>[lợi ích]</strong>.",
+                examples: [
+                    "How do you go to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>school</span> every day?",
+                    "How do you travel to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>work</span>?",
+                    "How do you get to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>the supermarket</span>?",
+                    "How do you commute to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>the city center</span>?",
+                    "How do you travel to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>your hometown</span>?"
+                ],
+                exQ: "How do you go to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>school</span> every day?",
+                exA: "→ I usually go to school by motorbike because it’s very fast and convenient. It also helps me save time.",
+                exAFormatted: "→ I usually go to school by <span class=\"sub-hl\">motorbike</span> because it’s very <span class=\"sub-hl\">fast and convenient</span>. It also helps me <span class=\"sub-hl\">save time</span>.",
+                vocab: [
+                    {
+                        type: 'note',
+                        title: 'Ghi chú từ vựng:',
+                        items: [
+                            { en: 'fast and convenient', vn: 'nhanh chóng và tiện lợi' },
+                            { en: 'save time', vn: 'tiết kiệm thời gian' }
+                        ]
+                    }
+                ]
+            },
+            {
+                title: "2. How often do you [hoạt động – Vo]?",
+                formula: "→ Although I'm busy, I try to <strong>[hoạt động – Vo]</strong> <strong>[tần suất]</strong> because it helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.",
+                examples: [
+                    "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go to the library</span>?",
+                    "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>play sports</span>?",
+                    "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watch movies</span>?",
+                    "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eat out</span>?",
+                    "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>travel</span>?"
+                ],
+                exQ: "How often do you go to the library every week?",
+                exA: "→ Although I’m busy, I still try to go to the library twice a week because it helps me focus better and study more effectively.",
+                exAFormatted: "→ Although I’m busy, I still try to go to the library <span class=\"sub-hl\">twice a week</span> because it helps me <span class=\"sub-hl\">focus better</span> and <span class=\"sub-hl\">study more effectively</span>.",
+                vocab: [
+                    {
+                        type: 'note',
+                        title: 'Ghi chú từ vựng:',
+                        items: [
+                            { en: 'twice a week', vn: 'hai lần một tuần' },
+                            { en: 'focus better', vn: 'tập trung tốt hơn' },
+                            { en: 'study more effectively', vn: 'học tập hiệu quả hơn' }
+                        ]
+                    }
+                ]
+            },
+            {
+                title: "3. How much time do you spend [hoạt động – Ving]?",
+                formula: "→ Although I have a busy schedule, I still spend about <strong>[lượng thời gian]</strong> <strong>[hoạt động – Ving]</strong> every day because it helps me <strong>[lợi ích]</strong>. It also makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.",
+                examples: [
+                    "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying English</span>?",
+                    "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>using your phone</span>?",
+                    "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching TV</span>?",
+                    "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>playing games</span>?",
+                    "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span>?"
+                ],
+                exQ: "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying English</span>?",
+                exA: "→ Although I have a busy schedule, I still spend about two hours studying English every day because it helps me improve my vocabulary. It also makes me feel confident.",
+                exAFormatted: "→ Although I have a busy schedule, I still spend about <span class=\"sub-hl\">two hours</span> studying English every day because it helps me <span class=\"sub-hl\">improve my vocabulary</span>. It also makes me feel <span class=\"sub-hl\">confident</span>.",
+                vocab: [
+                    {
+                        type: 'time',
+                        title: 'Cụm Thời gian:',
+                        items: [
+                            { en: 'busy schedule', vn: 'lịch trình bận rộn' },
+                            { en: 'two hours', vn: 'hai tiếng' }
+                        ]
+                    },
+                    {
+                        type: 'emotion',
+                        title: 'Tính từ mô tả cảm xúc:',
+                        items: [
+                            { en: 'feel confident', vn: 'cảm thấy tự tin' },
+                            { en: 'feel happy', vn: 'cảm thấy vui vẻ' }
+                        ]
+                    },
+                    {
+                        type: 'benefit',
+                        title: 'Cụm Lợi ích:',
+                        items: [
+                            { en: 'improve my vocabulary', vn: 'cải thiện vốn từ vựng' }
+                        ]
+                    }
+                ]
+            },
+            {
+                title: "4. How much money do you spend on [thứ gì đó – noun] every month?",
+                formula: "→ I’m still a student, so I need to save money. I only spend about <strong>[số tiền]</strong> on <strong>[thứ gì đó]</strong> every month because I think it’s reasonable for me.",
+                examples: [
+                    "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>clothes</span> every month?",
+                    "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>food</span> every month?",
+                    "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>entertainment</span> every month?",
+                    "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>books</span> every month?",
+                    "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>transportation</span> every month?"
+                ],
+                exQ: "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>clothes</span> every month?",
+                exA: "→ I’m still a student, so I need to save money. I only spend about 500,000 dong on clothes every month because I think it’s reasonable for me.",
+                exAFormatted: "→ I’m still a student, so I need to save money. I only spend about <span class=\"sub-hl\">500,000 dong</span> on <span class=\"sub-hl\">clothes</span> every month because I think it’s reasonable for me.",
+                vocab: [
+                    {
+                        type: 'note',
+                        title: 'Ghi chú từ vựng:',
+                        items: [
+                            { en: 'save money', vn: 'tiết kiệm tiền' },
+                            { en: 'reasonable for me', vn: 'hợp lý đối với tôi' }
+                        ]
+                    }
+                ]
+            }
+        ]
+    };
+
+    const whShowcase = document.getElementById('wh-showcase');
+
+    window.filterWh = (cat) => {
+        document.querySelectorAll('.w-pill').forEach(p => p.classList.remove('active'));
+        if (typeof window !== 'undefined' && window.event && window.event.currentTarget && window.event.currentTarget.classList) {
+            window.event.currentTarget.classList.add('active');
+        }
+        if (!whShowcase) return;
+        const list = whBank[cat] || [];
+        whShowcase.innerHTML = `
+            <div class="wh-grid fade-in" style="grid-template-columns: 1fr; gap: 1.5rem;">
+                ${list.map(item => `
+                    <div class="f-card-clean" style="max-width:100%; margin:0; background:var(--bg-card); padding:1.5rem; border-radius:20px; border:1px solid var(--border); box-shadow:var(--shadow-sm);">
+                        <div class="f-title" style="margin-bottom:1.5rem;">${item.title}</div>
+                        
+                        ${getExamplesBlockHTML(item)}
+                        
+                        <div class="accordion-box" onclick="this.classList.toggle('open')" style="margin-bottom: 1.25rem; border: 2px solid #3b82f6; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);">
+                            <div class="accordion-header" style="padding: 1rem 1.25rem; background: rgba(59, 130, 246, 0.08);">
+                                <div class="acc-title" style="color:#2563eb; font-size:1.05rem;"><i class="fa-solid fa-lightbulb"></i> GỢI Ý CÂU TRẢ LỜI</div>
+                                <div class="acc-toggle" style="background:#2563eb;"><span class="txt-close"><i class="fa-solid fa-hand-pointer"></i> Nhấn để xem gợi ý câu trả lời ▼</span><span class="txt-open"><i class="fa-solid fa-chevron-up"></i> Thu gọn ▲</span></div>
+                            </div>
+                            <div class="accordion-content" onclick="event.stopPropagation()">
+                                <div class="f-formula-box" style="margin: 0; border: none; background: transparent; padding: 0.5rem 0;">${item.formula}</div>
+                                ${item.note ? `<div class="tpl-note mt-2 mb-2" style="display:block;"><i class="fa-solid fa-circle-exclamation"></i> ${item.note}</div>` : ''}
+                                ${getSuggestionsHTML(item)}
+                            </div>
+                        </div>
+
+                        <div class="accordion-box" onclick="this.classList.toggle('open')" style="margin-bottom: 0; border: 2px solid #8b5cf6; box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.1);">
+                            <div class="accordion-header" style="padding: 1rem 1.25rem; background: rgba(139, 92, 246, 0.08);">
+                                <div class="acc-title" style="color:#7c3aed; font-size:1.05rem;"><i class="fa-solid fa-desktop"></i> VÍ DỤ THỰC HÀNH</div>
+                                <div class="acc-toggle" style="background:#7c3aed;"><span class="txt-close"><i class="fa-solid fa-hand-pointer"></i> Nhấn vào hiện câu hỏi ▼</span><span class="txt-open"><i class="fa-solid fa-chevron-up"></i> Thu gọn ▲</span></div>
+                            </div>
+                            <div class="accordion-content" onclick="event.stopPropagation()">
+                                <div class="f-example-box" style="margin: 0; border: none; background: transparent; padding: 0.5rem 0;">
+                                    <div class="ex-label" style="font-size:1.1rem; color:var(--text-main); margin-bottom:0.75rem; text-transform:none;">
+                                        ❓ Câu hỏi: <strong>${item.exQ}</strong>
+                                    </div>
+                                    <div style="margin-top:0.75rem;">
+                                        <button class="btn-audio-sample" style="background:#8b5cf6; margin-bottom:0.5rem; cursor:pointer;" onclick="toggleSampleAnswer(this)">
+                                            <i class="fa-solid fa-eye"></i> Nhấn xem câu trả lời mẫu
+                                        </button>
+                                        <div class="fade-in" style="display:none; margin-top:0.75rem; padding-top:0.75rem; border-top:1px dashed var(--border);">
+                                            <div class="ex-text" style="color:var(--secondary); font-weight:500; font-size:1.05rem; line-height:1.8;">${item.exAFormatted || item.exA}</div>
+                                            <button class="btn-audio-sample mt-2" onclick="speakText('${item.exA.replace(/<[^>]*>/g, '').replace(/→/g, '').replace(/'/g, "\\'").trim()}')">
+                                                <i class="fa-solid fa-volume-high"></i> Nghe Audio phát âm
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+    };
+    filterWh('what');
+
+    // =========================================
+    // AUDIO RECORDING LOGIC
+    // =========================================
+    let mediaRecorder = null;
+    let audioChunks = [];
+    let currentStream = null;
+
+    window.toggleRecording = async (type) => {
+        const btn = document.getElementById(`btn-record-${type}`);
+        const status = document.getElementById(`recording-status-${type}`);
+        const playback = document.getElementById(`audio-playback-${type}`);
+        const submitBtn = document.getElementById(`btn-submit-${type}`);
+
+        if (mediaRecorder && mediaRecorder.state === 'recording') {
+            mediaRecorder.stop();
+            btn.innerHTML = '<i class="fa-solid fa-microphone"></i> Ghi âm lại';
+            btn.style.background = '#3b82f6';
+            btn.style.boxShadow = '0 4px 10px rgba(59,130,246,0.3)';
+            status.style.display = 'none';
+            if (currentStream) currentStream.getTracks().forEach(t => t.stop());
+            return;
+        }
+
+        try {
+            playback.style.display = 'none';
+            if (submitBtn) submitBtn.style.display = 'none';
+            audioChunks = [];
+            currentStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+            mediaRecorder = new MediaRecorder(currentStream);
+
+            mediaRecorder.ondataavailable = (e) => {
+                if (e.data.size > 0) audioChunks.push(e.data);
+            };
+
+            mediaRecorder.onstop = () => {
+                const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
+                const audioUrl = URL.createObjectURL(audioBlob);
+                playback.src = audioUrl;
+                playback.style.display = 'block';
+                
+                // Attach the blob to the submit button
+                if (submitBtn) {
+                    submitBtn.style.display = 'block';
+                    submitBtn.dataset.blobUrl = audioUrl;
+                }
+            };
+
+            mediaRecorder.start();
+            btn.innerHTML = '<i class="fa-solid fa-stop"></i> Dừng ghi âm';
+            btn.style.background = '#ef4444';
+            btn.style.boxShadow = '0 4px 10px rgba(239,68,68,0.3)';
+            status.style.display = 'block';
+
+        } catch (err) {
+            alert('Không thể truy cập Micro. Vui lòng cấp quyền Microphone cho trình duyệt (hoặc bạn đang không dùng HTTPS/localhost)!');
+        }
+    };
+
+    window.submitAudio = (type) => {
+        const submitBtn = document.getElementById(`btn-submit-${type}`);
+        if (!submitBtn || !submitBtn.dataset.blobUrl) return;
+
+        // 1. Download file automatically
+        const a = document.createElement('a');
+        a.href = submitBtn.dataset.blobUrl;
+        
+        // Tạo tên file có ngày giờ để tránh trùng lặp
+        const dateStr = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
+        a.download = `VSTEP_Speaking_${type}_${dateStr}.webm`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+
+        // 2. Alert
+        alert('Đã tải xuống bản ghi âm của bạn thành công!');
+    };
+
+    // Random Practice Selector
+    
+    window.spinWheel = (type) => {
+        let pool = [];
+        let qEl, hintEl, btn;
+
+        if (type === 'wh') {
+            const safeWhBank = typeof whBank !== 'undefined' ? whBank : {};
+            const whValues = Object.values(safeWhBank);
+            // Fallback for browsers that don't support .flat()
+            pool = whValues.flat ? whValues.flat() : whValues.reduce((acc, val) => acc.concat(val), []);
+            qEl = document.getElementById('wheel-q');
+            hintEl = document.getElementById('wheel-hint');
+            btn = document.getElementById('spin-btn');
+        } else if (type === 'yn') {
+            pool = typeof ynFormulas !== 'undefined' ? ynFormulas : [];
+            qEl = document.getElementById('wheel-q-yn');
+            hintEl = document.getElementById('wheel-hint-yn');
+            btn = document.getElementById('spin-btn-yn');
+        } else if (type === 'choice') {
+            const safeChoiceData = typeof choiceData !== 'undefined' ? choiceData : {};
+            const choiceValues = Object.values(safeChoiceData);
+            pool = choiceValues.flat ? choiceValues.flat() : choiceValues.reduce((acc, val) => acc.concat(val), []);
+            qEl = document.getElementById('wheel-q-choice');
+            hintEl = document.getElementById('wheel-hint-choice');
+            btn = document.getElementById('spin-btn-choice');
+        }
+
+        if (!pool || pool.length === 0 || !qEl || !btn) return;
+
+        // Flatten the pool to include ALL examples as individual questions
+        let flattenedPool = [];
+        pool.forEach(item => {
+            if (item.examples && item.examples.length > 0) {
+                item.examples.forEach(ex => {
+                    // Create a copy of the item but replace exQ with the specific example
+                    flattenedPool.push({ ...item, exQ: ex });
+                });
+            } else {
+                flattenedPool.push(item);
+            }
+        });
+        pool = flattenedPool;
+
+        btn.disabled = true;
+        let c = 0;
+        const int = setInterval(() => {
+            const rand = pool[Math.floor(Math.random() * pool.length)];
+            if (rand) {
+                qEl.textContent = (rand.exQ || rand.title || "Câu hỏi ngẫu nhiên").replace(/<[^>]*>/g, '');
+            }
+            c++;
+            if (c > 10) {
+                clearInterval(int);
+                const final = pool[Math.floor(Math.random() * pool.length)];
+                if (final) {
+                    qEl.innerHTML = `<div style="display:flex; align-items:center; justify-content:center; gap:0.75rem; text-align:left;"><i class="fa-solid fa-microphone" style="color:#f59e0b; flex-shrink:0; font-size:1.5rem;"></i> <span>"${final.exQ || final.title || ''}"</span></div>`;
+                    if (hintEl) {
+                        hintEl.innerHTML = `
+                            <div class="hint-toggle-btn" style="cursor:pointer; display:inline-flex; align-items:center; gap:0.5rem; font-weight:600; color:#d97706; padding:0.25rem 0;" onclick="this.nextElementSibling.style.display='block'; this.style.display='none';">
+                                <i class="fa-solid fa-lightbulb"></i> GỢI Ý (Nhấp để xem)
+                            </div>
+                            <div class="hint-content fade-in" style="display:none; margin-top:0.5rem; font-size:1.05rem; line-height:1.6; text-align: left;">
+                                <div style="margin-bottom: 0.75rem;">
+                                    <strong style="color: #059669;">💡 Áp dụng Cấu trúc:</strong><br/> 
+                                    <div style="background: rgba(16, 185, 129, 0.05); padding: 0.75rem; border-left: 3px solid #10b981; margin-top: 0.5rem; border-radius: 4px;">
+                                        ${final.formula || ''}
+                                    </div>
+                                </div>
+                                <div>
+                                    <strong style="color: #64748b; font-size: 0.95em;">📝 Tham khảo câu mẫu (với từ khóa gốc):</strong><br/> 
+                                    <div style="color: #64748b; font-size: 0.95em; margin-top: 0.25rem; font-style: italic;">
+                                        "${final.exA || ''}"
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        hintEl.classList.remove('hidden');
+                    }
+                    speakText((final.exQ || final.title || '').replace(/<[^>]*>/g, ''));
+                    
+                    const recordBox = document.getElementById('record-box-' + type);
+                    if (recordBox) {
+                        recordBox.style.display = 'block';
+                        const playback = document.getElementById('audio-playback-' + type);
+                        if(playback) { playback.style.display = 'none'; playback.src = ''; }
+                        const submitBtn = document.getElementById('btn-submit-' + type);
+                        if(submitBtn) { submitBtn.style.display = 'none'; }
+                        const btnRecord = document.getElementById('btn-record-' + type);
+                        if(btnRecord) {
+                            btnRecord.innerHTML = '<i class="fa-solid fa-microphone"></i> Bắt đầu Ghi âm';
+                            btnRecord.style.background = '#ef4444';
+                            btnRecord.style.boxShadow = '0 4px 10px rgba(239,68,68,0.3)';
+                        }
+                    }
+                }
+                btn.disabled = false;
+            }
+        }, 60);
+    };
+
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+    }
+    // =========================================
+    // REVIEW GAMES LOGIC & SFX
+    // =========================================
+    let audioCtx = null;
+    
+    function playTone(freq, type, duration) {
+        if (!state.isAudio) return;
+        if (!audioCtx) {
+            const AC = window.AudioContext || window.webkitAudioContext;
+            if (!AC) return;
+            audioCtx = new AC();
+        }
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+        gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + duration);
+    }
+    
+    const sfx = {
+        flip: () => playTone(300, 'sine', 0.1),
+        correct: () => {
+            playTone(600, 'sine', 0.1);
+            setTimeout(() => playTone(800, 'sine', 0.15), 100);
+        },
+        wrong: () => {
+            playTone(250, 'sawtooth', 0.2);
+            setTimeout(() => playTone(200, 'sawtooth', 0.25), 100);
+        },
+        win: () => {
+            playTone(400, 'sine', 0.1);
+            setTimeout(() => playTone(500, 'sine', 0.1), 100);
+            setTimeout(() => playTone(600, 'sine', 0.1), 200);
+            setTimeout(() => playTone(800, 'sine', 0.4), 300);
+        }
+    };
+    
+    function shootConfetti() {
+        if (typeof confetti === 'function') {
+            const duration = 2500;
+            const end = Date.now() + duration;
+            (function frame() {
+                confetti({ particleCount: 3, angle: 60, spread: 55, origin: { x: 0 }, colors: ['#26ccff', '#a25afd', '#ff5e7e', '#88ff5a', '#fcff42', '#ffa62d', '#ff36ff'], zIndex: 9999 });
+                confetti({ particleCount: 3, angle: 120, spread: 55, origin: { x: 1 }, colors: ['#26ccff', '#a25afd', '#ff5e7e', '#88ff5a', '#fcff42', '#ffa62d', '#ff36ff'], zIndex: 9999 });
+                if (Date.now() < end) requestAnimationFrame(frame);
+            }());
+        }
+    }
+    let reviewWords = [];
+    
+    function extractReviewWords() {
+        if (reviewWords.length > 0) return reviewWords;
+        const cards = document.querySelectorAll('#benefits .icon-btn');
+        cards.forEach(btn => {
+            const container = btn.parentElement;
+            const enEl = container.querySelector('strong');
+            if (enEl && enEl.nextElementSibling) {
+                reviewWords.push({
+                    en: enEl.textContent.trim(),
+                    vn: enEl.nextElementSibling.textContent.trim()
+                });
+            }
+        });
+        return reviewWords;
+    }
+
+    window.startReviewGame = (type) => {
+        const words = extractReviewWords();
+        if (words.length === 0) return;
+        const placeholder = document.getElementById('game-placeholder');
+        const content = document.getElementById('game-content');
+        
+        if(placeholder) placeholder.style.display = 'none';
+        if(content) content.style.display = 'block';
+        
+        if (type === 'flashcards') {
+            initFlashcards(words, content);
+        } else if (type === 'matching') {
+            initMatchingGame(words, content);
+        } else if (type === 'quiz') {
+            initQuizGame(words, content);
+        } else if (type === 'spelling') {
+            initSpellingGame(words, content);
+        }
+    };
+
+    function initFlashcards(allWords, container) {
+        let words = [...allWords].sort(() => 0.5 - Math.random());
+        let currentIndex = 0;
+        
+        function renderCard() {
+            if (currentIndex >= words.length) {
+                sfx.win();
+                shootConfetti();
+                container.innerHTML = `
+                    <div class="fade-in" style="text-align:center; padding: 2rem;">
+                        <i class="fa-solid fa-trophy" style="font-size:4rem; color:#f59e0b; margin-bottom:1rem;"></i>
+                        <h3 style="font-size:1.5rem; margin-bottom:1rem;">Tuyệt vời! Bạn đã ôn xong tất cả các từ.</h3>
+                        <button class="btn btn-primary" onclick="startReviewGame('flashcards')"><i class="fa-solid fa-rotate-right"></i> Ôn tập lại</button>
+                    </div>
+                `;
+                return;
+            }
+            const word = words[currentIndex];
+            container.innerHTML = `
+                <div class="fade-in" style="display:flex; flex-direction:column; align-items:center; height:100%; justify-content:center;">
+                    <div style="margin-bottom:1rem; font-weight:bold; color:var(--text-muted);">Thẻ ${currentIndex + 1} / ${words.length}</div>
+                    <div class="flashcard-container" onclick="if(!this.querySelector('.flashcard').classList.contains('flipped')) { sfx.flip(); this.querySelector('.flashcard').classList.add('flipped'); speakText('${word.en.replace(/'/g, "\\'")}') } else { this.querySelector('.flashcard').classList.remove('flipped'); }">
+                        <div class="flashcard">
+                            <div class="flashcard-face flashcard-front">
+                                <div class="fc-word">${word.en}</div>
+                                <div class="fc-hint"><i class="fa-solid fa-hand-pointer"></i> Nhấp để lật xem nghĩa</div>
+                            </div>
+                            <div class="flashcard-face flashcard-back">
+                                <div class="fc-word">${word.vn}</div>
+                                <div class="fc-hint"><i class="fa-solid fa-volume-high"></i> Nhấp để lật & nghe lại</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display:flex; gap:1rem; margin-top:1.5rem; flex-wrap:wrap; justify-content:center;">
+                        <button class="btn" style="background:#fef2f2; color:#991b1b; border:1px solid #fecaca; box-shadow:none;" id="fc-btn-review"><i class="fa-solid fa-xmark"></i> Cần ôn lại</button>
+                        <button class="btn" style="background:#ecfdf5; color:#065f46; border:1px solid #a7f3d0; box-shadow:none;" id="fc-btn-gotit"><i class="fa-solid fa-check"></i> Đã thuộc</button>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('fc-btn-review').onclick = (e) => {
+                e.stopPropagation();
+                words.push(word); // move to end
+                currentIndex++;
+                renderCard();
+            };
+            document.getElementById('fc-btn-gotit').onclick = (e) => {
+                e.stopPropagation();
+                currentIndex++;
+                renderCard();
+            };
+        }
+        renderCard();
+    }
+
+    function initMatchingGame(allWords, container) {
+        let pool = [...allWords].sort(() => 0.5 - Math.random()).slice(0, 6);
+        let items = [];
+        pool.forEach((w, i) => {
+            items.push({ id: i, text: w.en, type: 'en', word: w });
+            items.push({ id: i, text: w.vn, type: 'vn', word: w });
+        });
+        items.sort(() => 0.5 - Math.random());
+        
+        container.innerHTML = `
+            <div class="fade-in" style="display:flex; justify-content:space-between; margin-bottom:1.5rem; align-items:center; flex-wrap:wrap; gap:1rem;">
+                <div style="font-weight:bold; color:var(--text-main); font-size:1.1rem;"><i class="fa-solid fa-link" style="color:var(--primary);"></i> Ghép các cặp từ tương ứng</div>
+                <button class="btn btn-secondary" onclick="startReviewGame('matching')" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i class="fa-solid fa-rotate-right"></i> Bài mới</button>
+            </div>
+            <div class="matching-grid fade-in" id="match-grid"></div>
+        `;
+        
+        const grid = document.getElementById('match-grid');
+        let selectedItem = null;
+        let matchedCount = 0;
+        let animating = false;
+        
+        items.forEach((item, idx) => {
+            const card = document.createElement('div');
+            card.className = 'match-card';
+            card.textContent = item.text;
+            card.onclick = () => {
+                if (animating || card.classList.contains('matched') || card.classList.contains('selected')) return;
+                
+                if (!selectedItem) {
+                    card.classList.add('selected');
+                    selectedItem = { el: card, data: item };
+                    if (item.type === 'en') speakText(item.text);
+                } else {
+                    animating = true;
+                    if (selectedItem.data.id === item.id && selectedItem.data.type !== item.type) {
+                        card.classList.add('selected');
+                        sfx.correct();
+                        if (item.type === 'en') speakText(item.text);
+                        setTimeout(() => {
+                            card.classList.remove('selected');
+                            card.classList.add('matched');
+                            selectedItem.el.classList.remove('selected');
+                            selectedItem.el.classList.add('matched');
+                            selectedItem = null;
+                            matchedCount++;
+                            animating = false;
+                            if (matchedCount === 6) {
+                                sfx.win();
+                                shootConfetti();
+                                setTimeout(() => {
+                                    container.innerHTML = `
+                                        <div class="fade-in" style="text-align:center; padding: 2rem;">
+                                            <i class="fa-solid fa-star" style="font-size:4rem; color:#f59e0b; margin-bottom:1rem;"></i>
+                                            <h3 style="font-size:1.5rem; margin-bottom:1rem;">Hoàn thành xuất sắc!</h3>
+                                            <button class="btn btn-primary" onclick="startReviewGame('matching')"><i class="fa-solid fa-play"></i> Chơi tiếp</button>
+                                        </div>
+                                    `;
+                                }, 300);
+                            }
+                        }, 400);
+                    } else {
+                        card.classList.add('error');
+                        selectedItem.el.classList.remove('selected');
+                        selectedItem.el.classList.add('error');
+                        sfx.wrong();
+                        if (item.type === 'en') speakText(item.text);
+                        setTimeout(() => {
+                            card.classList.remove('error');
+                            selectedItem.el.classList.remove('error');
+                            selectedItem = null;
+                            animating = false;
+                        }, 500);
+                    }
+                }
+            };
+            grid.appendChild(card);
+        });
+    }
+
+    function initQuizGame(allWords, container) {
+        let words = [...allWords].sort(() => 0.5 - Math.random()).slice(0, 10);
+        let currentIndex = 0;
+        let score = 0;
+        
+        function renderQuiz() {
+            if (currentIndex >= words.length) {
+                sfx.win();
+                shootConfetti();
+                container.innerHTML = `
+                    <div class="fade-in" style="text-align:center; padding: 2rem;">
+                        <i class="fa-solid fa-award" style="font-size:4rem; color:#10b981; margin-bottom:1rem;"></i>
+                        <h3 style="font-size:1.5rem; margin-bottom:0.5rem;">Hoàn thành Quiz!</h3>
+                        <p style="font-size:1.2rem; margin-bottom:1.5rem;">Bạn đạt <strong style="color:var(--primary); font-size:1.5rem;">${score} / ${words.length}</strong> điểm.</p>
+                        <button class="btn btn-primary" onclick="startReviewGame('quiz')"><i class="fa-solid fa-rotate-right"></i> Làm lại</button>
+                    </div>
+                `;
+                return;
+            }
+            
+            const currentWord = words[currentIndex];
+            let options = [currentWord];
+            let distractors = [...allWords].filter(w => w.en !== currentWord.en).sort(() => 0.5 - Math.random()).slice(0, 3);
+            options = [...options, ...distractors].sort(() => 0.5 - Math.random());
+            
+            container.innerHTML = `
+                <div class="quiz-container fade-in">
+                    <div style="display:flex; justify-content:space-between; margin-bottom:1.2rem; color:var(--text-muted); font-weight:600;">
+                        <div>Câu hỏi: <span style="color:var(--text-main);">${currentIndex + 1} / ${words.length}</span></div>
+                        <div>Điểm: <span style="color:var(--primary);">${score}</span></div>
+                    </div>
+                    <div class="quiz-question">Nghĩa tiếng Anh của:<br><span style="color:var(--text-main); font-size:1.6rem; display:block; margin-top:0.75rem;">"${currentWord.vn}"</span></div>
+                    <div class="quiz-options">
+                        ${options.map((opt, i) => `
+                            <div class="quiz-option" data-ans="${opt.en === currentWord.en}">
+                                <div style="background:var(--border); border-radius:50%; width:30px; height:30px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">${['A', 'B', 'C', 'D'][i]}</div>
+                                <div>${opt.en}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+            
+            const opts = container.querySelectorAll('.quiz-option');
+            let answered = false;
+            opts.forEach(opt => {
+                opt.onclick = () => {
+                    if (answered) return;
+                    answered = true;
+                    const isCorrect = opt.getAttribute('data-ans') === 'true';
+                    speakText(opt.querySelector('div:nth-child(2)').textContent);
+                    
+                    if (isCorrect) {
+                        opt.classList.add('correct');
+                        sfx.correct();
+                        score++;
+                    } else {
+                        opt.classList.add('wrong');
+                        sfx.wrong();
+                        opts.forEach(o => {
+                            if (o.getAttribute('data-ans') === 'true') o.classList.add('correct');
+                        });
+                    }
+                    
+                    setTimeout(() => {
+                        currentIndex++;
+                        renderQuiz();
+                    }, 1500);
+                };
+            });
+        }
+        renderQuiz();
+    }
+
+    function initSpellingGame(allWords, container) {
+        let words = [...allWords].sort(() => 0.5 - Math.random()).slice(0, 10);
+        let currentIndex = 0;
+        let score = 0;
+        
+        function renderSpelling() {
+            if (currentIndex >= words.length) {
+                sfx.win();
+                shootConfetti();
+                container.innerHTML = `
+                    <div class="fade-in" style="text-align:center; padding: 2rem;">
+                        <i class="fa-solid fa-medal" style="font-size:4rem; color:#ec4899; margin-bottom:1rem;"></i>
+                        <h3 style="font-size:1.5rem; margin-bottom:0.5rem;">Hoàn thành Thử Thách Gõ Từ!</h3>
+                        <p style="font-size:1.2rem; margin-bottom:1.5rem;">Bạn gõ đúng <strong style="color:var(--primary); font-size:1.5rem;">${score} / ${words.length}</strong> từ.</p>
+                        <button class="btn btn-primary" onclick="startReviewGame('spelling')"><i class="fa-solid fa-rotate-right"></i> Làm lại</button>
+                    </div>
+                `;
+                return;
+            }
+            
+            const currentWord = words[currentIndex];
+            
+            container.innerHTML = `
+                <div class="quiz-container fade-in" style="max-width: 500px;">
+                    <div style="display:flex; justify-content:space-between; margin-bottom:1.2rem; color:var(--text-muted); font-weight:600;">
+                        <div>Câu hỏi: <span style="color:var(--text-main);">${currentIndex + 1} / ${words.length}</span></div>
+                        <div>Điểm: <span style="color:var(--primary);">${score}</span></div>
+                    </div>
+                    <div class="quiz-question" style="margin-bottom:1.5rem; position:relative;">
+                        <div style="color:var(--text-muted); font-size:1rem; margin-bottom:0.5rem;">Nghĩa tiếng Việt:</div>
+                        <div style="color:var(--text-main); font-size:1.6rem; margin-bottom:1.5rem; line-height:1.4;">"${currentWord.vn}"</div>
+                        <button class="icon-btn" onclick="speakText('${currentWord.en.replace(/'/g, "\\'")}')" style="margin: 0 auto; background:var(--bg-body); width: 45px; height: 45px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" title="Nghe gợi ý"><i class="fa-solid fa-volume-high"></i></button>
+                    </div>
+                    <div style="display:flex; flex-direction:column; gap:1rem;">
+                        <input type="text" id="spell-input" placeholder="Gõ tiếng Anh vào đây..." autocomplete="off" spellcheck="false" style="width:100%; padding:1rem 1.5rem; font-size:1.2rem; border-radius:12px; border:2px solid var(--border); background:var(--bg-card); color:var(--text-main); outline:none; transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--primary)'" onblur="this.style.borderColor='var(--border)'">
+                        <div id="spell-error" style="color:#ef4444; font-size:0.9rem; display:none;">Chưa đúng, thử lại nhé!</div>
+                        <button class="btn btn-primary" id="spell-btn" style="width:100%; padding:1rem; font-size:1.1rem; background:linear-gradient(135deg, #ec4899, #be185d); border:none;"><i class="fa-solid fa-paper-plane"></i> Kiểm tra</button>
+                    </div>
+                </div>
+            `;
+            
+            const input = document.getElementById('spell-input');
+            const btn = document.getElementById('spell-btn');
+            const errorText = document.getElementById('spell-error');
+            setTimeout(() => input.focus(), 100);
+            
+            let attempts = 0;
+            
+            function checkAnswer() {
+                const val = input.value.trim().toLowerCase();
+                const correctVal = currentWord.en.toLowerCase();
+                
+                if (val === correctVal) {
+                    sfx.correct();
+                    speakText(currentWord.en);
+                    input.style.borderColor = '#22c55e';
+                    input.style.backgroundColor = '#dcfce7';
+                    input.style.color = '#166534';
+                    btn.disabled = true;
+                    if (attempts === 0) score++;
+                    setTimeout(() => {
+                        currentIndex++;
+                        renderSpelling();
+                    }, 1500);
+                } else {
+                    sfx.wrong();
+                    attempts++;
+                    input.style.borderColor = '#ef4444';
+                    input.classList.add('error');
+                    errorText.style.display = 'block';
+                    input.value = '';
+                    
+                    if (attempts >= 3) {
+                        errorText.innerHTML = `Đáp án đúng: <strong style="color:#111;">${currentWord.en}</strong>`;
+                    }
+                    
+                    setTimeout(() => {
+                        input.classList.remove('error');
+                    }, 500);
+                }
+            }
+            
+            btn.onclick = checkAnswer;
+            input.onkeypress = (e) => {
+                if (e.key === 'Enter') checkAnswer();
+            };
+        }
+        renderSpelling();
+    }
+
+    } catch(e) {
+        alert('JS Error: ' + e.message + '\\nLine: ' + e.lineNumber);
+    }
+});
+
+

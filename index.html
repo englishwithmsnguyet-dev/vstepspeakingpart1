@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSTEP SPEAKING PART 01 | SOCIAL INTERACTION</title>
+    <meta name="description" content="Website tương tác luyện thi VSTEP Speaking Part 01 theo chương trình giảng dạy của Ms. Nguyệt.">
+    <!-- Google Fonts: Roboto Serif Light -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        window.onerror = function(msg, url, lineNo, columnNo, error) {
+            if (lineNo === 0 || msg.toLowerCase().indexOf('script error') > -1) {
+                // Ignore cross-origin or blocked script errors
+                return false;
+            }
+            alert("Global Error: " + msg + "\nLine: " + lineNo + "\nCol: " + columnNo);
+            return false;
+        };
+    </script>
+</head>
+<body>
+    <!-- Màn hình chào mừng -->
+    <div id="welcome-modal" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h2>Welcome to Miss Nguyet's class!<br><span class="highlight-text">SPEAKING PART 01</span></h2>
+            <p class="modal-desc">Hệ thống học tập chuyên sâu và tương tác dành cho phần thi Giao tiếp xã hội (Social Interaction).</p>
+            
+            <div class="input-group">
+                <label for="student-name">Họ và tên học viên <span style="color:red">*</span></label>
+                <input type="text" id="student-name" placeholder="Nhập họ tên đầy đủ..." autocomplete="off">
+            </div>
+            
+            <div class="input-group">
+                <label for="student-class">Lớp học <span style="color:red">*</span></label>
+                <input type="text" id="student-class" placeholder="Nhập tên lớp..." autocomplete="off">
+            </div>
+            
+            <p id="login-error" style="color: var(--danger); font-size: 0.9rem; margin-top: -1rem; margin-bottom: 1rem; display: none; text-align: left;">Vui lòng nhập đầy đủ Họ tên và Lớp!</p>
+            
+            <button id="start-btn" class="btn btn-primary">
+                <span>VÀO BÀI HỌC</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            
+            <!-- Hidden Form for Logging -->
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.submitted) { window.finishLogin(); }"></iframe>
+            <form id="tracking-form" action="https://docs.google.com/forms/d/e/1FAIpQLSc8BwUzOGfw66DF-LUYd2uMkFxhj3Q6aKlzEpck2lJA1hobhQ/formResponse" method="post" target="hidden_iframe" style="display:none;">
+                <input type="text" name="entry.388968236" id="entry_388968236">
+            </form>
+        </div>
+    </div>
+
+    <!-- Màn hình khóa -->
+    <div id="lock-modal" class="modal-overlay hidden" style="z-index: 1000;" onclick="if(event.target === this) this.classList.add('hidden')">
+        <div class="modal-card" style="position: relative;">
+            <button onclick="document.getElementById('lock-modal').classList.add('hidden')" style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; font-size: 1.5rem; color: #94a3b8; cursor: pointer;"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-icon" style="background: rgba(239, 68, 68, 0.1); color: #ef4444;"><i class="fa-solid fa-lock"></i></div>
+            <h2>Yêu cầu mật khẩu</h2>
+            <p class="modal-desc">Nội dung bài học này đang được bảo mật. Vui lòng nhập mật khẩu để tiếp tục.</p>
+            
+            <div class="input-group">
+                <div class="input-icon"><i class="fa-solid fa-key"></i></div>
+                <input type="password" id="lock-pass" placeholder="Nhập mật khẩu...">
+            </div>
+            <div id="lock-error" style="display: none; color: #ef4444; font-size: 0.9rem; margin-top: -0.5rem; margin-bottom: 1rem; text-align: left; padding-left: 0.5rem;">Mật khẩu không chính xác!</div>
+            
+            <button id="unlock-btn" class="btn btn-primary" style="width: 100%;">
+                <i class="fa-solid fa-unlock"></i> MỞ KHÓA
+            </button>
+        </div>
+    </div>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="brand">
+                    <div class="brand-badge"><i class="fa-solid fa-microphone-lines"></i></div>
+                    <div>
+                        <div class="brand-title">VSTEP SPEAKING</div>
+                        <div class="brand-subtitle">PART 01</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user-profile hidden" id="user-profile">
+                <div class="avatar"><i class="fa-solid fa-user-graduate"></i></div>
+                <div class="info">
+                    <span class="label">Student</span>
+                    <strong id="display-name">Guest</strong>
+                </div>
+            </div>
+
+            <div class="menu-label">LESSON CONTENTS</div>
+            
+            <ul class="nav-list">
+                <li class="nav-item active" data-target="overview">
+                    <a href="#overview">
+                        <i class="fa-solid fa-compass"></i>
+                        <span>OVERVIEW</span>
+                    </a>
+                </li>
+
+                <li class="menu-group-label">TYPES OF QUESTIONS</li>
+
+                <li class="nav-item" data-target="yes-no">
+                    <a href="#yes-no">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Yes/No questions</span>
+                    </a>
+                </li>
+
+                <li class="nav-item" data-target="choice">
+                    <a href="#choice">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        <span>Choice questions</span>
+                    </a>
+                </li>
+
+                <li class="nav-item" data-target="wh-questions">
+                    <a href="#wh-questions">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <span>Wh-questions</span>
+                    </a>
+                </li>
+                
+                <li class="menu-group-label">EXTRA MATERIALS</li>
+
+                <li class="nav-item" data-target="benefits">
+                    <a href="#benefits">
+                        <i class="fa-solid fa-star"></i>
+                        <span>Bảng Lợi Ích</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="credit">Designed by <strong>Ms. Nguyet</strong></div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <button class="mobile-toggle" id="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
+                <div class="current-title" id="top-title">OVERVIEW</div>
+                <a href="https://www.facebook.com/nguyetpham28" target="_blank" class="galaxy-text">ENGLISH WITH MISS NGUYET</a>
+                <div class="top-actions" style="display:flex; align-items:center; gap:0.5rem;">
+                    <button class="icon-btn" id="theme-toggle" title="Đổi màu giao diện"><i class="fa-solid fa-moon"></i></button>
+                    <button class="icon-btn active" id="audio-toggle" title="Bật/Tắt âm thanh phát âm"><i class="fa-solid fa-volume-high"></i></button>
+                </div>
+            </header>
+
+            <div class="content-area">
+                
+                <!-- =========================================================
+                     TAB 1: OVERVIEW (TỔNG QUAN)
+                ========================================================== -->
+                <section id="overview" class="tab-pane active fade-in">
+                    <div class="hero-card">
+                        <div class="hero-text">
+                            <span class="badge-mini">PART 01: SOCIAL INTERACTION</span>
+                            <h1>TỔNG QUAN NỘI DUNG</h1>
+                        </div>
+                        <div class="hero-stats-row">
+                            <div class="stat-pill">
+                                <i class="fa-regular fa-clock"></i>
+                                <div><strong>3 Phút</strong><span>Tổng thời gian</span></div>
+                            </div>
+                            <div class="stat-pill">
+                                <i class="fa-regular fa-folder-open"></i>
+                                <div><strong>2 Chủ đề</strong><span>Quen thuộc hàng ngày</span></div>
+                            </div>
+                            <div class="stat-pill">
+                                <i class="fa-regular fa-comments"></i>
+                                <div><strong>6 Câu hỏi</strong><span>3 câu / 1 chủ đề</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Các Quy tắc thi trọng tâm -->
+                    <div class="section-title-clean">
+                        <i class="fa-solid fa-list-check"></i> Các quy tắc thi trọng tâm cần lưu ý:
+                    </div>
+                    
+                    <div class="rules-grid">
+                        <div class="rule-box">
+                            <div class="rule-icon"><i class="fa-solid fa-stopwatch"></i></div>
+                            <h4>Không có thời gian chuẩn bị riêng</h4>
+                            <p>Hãy tự dành ra <strong>30 - 40 giây</strong> đầu tiên để đọc nhanh yêu cầu của cả 2 chủ đề trên màn hình trước khi bắt đầu nói.</p>
+                        </div>
+
+                        <div class="rule-box">
+                            <div class="rule-icon"><i class="fa-solid fa-arrow-up-1-9"></i></div>
+                            <h4>Ưu tiên chủ đề dễ trước</h4>
+                            <p>Thí sinh hoàn toàn có quyền lựa chọn trả lời chủ đề nào mình tự tin hơn trước, không bắt buộc nói theo thứ tự 1 rồi 2.</p>
+                        </div>
+
+                        <div class="rule-box">
+                            <div class="rule-icon"><i class="fa-solid fa-comment-slash"></i></div>
+                            <h4>Không đọc lại câu hỏi</h4>
+                            <p>Chỉ cần đọc câu dẫn dắt chủ đề, sau đó trả lời thẳng vào các câu hỏi bằng cách nói: <em>"Number 1...", "Number 2..."</em>.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2 Chủ đề ví dụ -->
+                    <div class="interactive-panel mt-4">
+                        <div class="panel-header">
+                            <h3><i class="fa-solid fa-desktop"></i> VÍ DỤ MINH HOẠ</h3>
+                        </div>
+                        <div class="topics-demo-grid">
+                            <div class="topic-demo-card">
+                                <h4><i class="fa-solid fa-gamepad"></i> Topic 1: Leisure activities</h4>
+                                <ul class="topic-q-list">
+                                    <li><strong>1.</strong> Do you have a lot of spare time?</li>
+                                    <li><strong>2.</strong> How do you spend your free time?</li>
+                                    <li><strong>3.</strong> What leisure activities do people usually do in your hometown?</li>
+                                </ul>
+                            </div>
+                            <div class="topic-demo-card">
+                                <h4><i class="fa-solid fa-icons"></i> Topic 2: Hobbies</h4>
+                                <ul class="topic-q-list">
+                                    <li><strong>1.</strong> Do you have any hobbies?</li>
+                                    <li><strong>2.</strong> How much time do you spend on your hobby?</li>
+                                    <li><strong>3.</strong> Is it important to have a hobby in your life?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hướng dẫn dẫn dắt câu trả lời -->
+                    <div class="interactive-panel mt-4">
+                        <div class="panel-header">
+                            <h3><i class="fa-solid fa-headphones"></i> HƯỚNG DẪN TRẢ LỜI</h3>
+                        </div>
+                        <div class="speech-demo-box">
+                            <div class="speech-step">
+                                <div class="step-tag">Khi bắt đầu Chủ đề 1</div>
+                                <div class="speech-bubble" onclick="speakText('Let’s talk about the topic Leisure Activities. Number 1, yes I have a lot of spare time...')">
+                                    <i class="fa-solid fa-volume-high speak-icon"></i>
+                                    <strong>"Let’s talk about the topic Leisure Activities."</strong>
+                                    <span>→ Lần lượt trả lời Number 1, Number 2, Number 3...</span>
+                                </div>
+                            </div>
+                            <div class="speech-step">
+                                <div class="step-tag">Khi chuyển sang Chủ đề 2</div>
+                                <div class="speech-bubble" onclick="speakText('Now I will continue with the topic Hobbies. Number 1, my favorite hobby is reading...')">
+                                    <i class="fa-solid fa-volume-high speak-icon"></i>
+                                    <strong>"Now I will continue with the topic Hobbies."</strong>
+                                    <span>→ Tiếp tục trả lời Number 1, Number 2, Number 3...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- =========================================================
+                     TAB 2: YES/NO QUESTIONS
+                ========================================================== -->
+                <section id="yes-no" class="tab-pane hidden fade-in">
+                    <div class="section-intro">
+                        <h2>YES / NO QUESTIONS</h2>
+                        <p>Dạng câu hỏi xác nhận thông tin phổ biến nhất trong đề thi VSTEP Speaking Part 01.</p>
+                    </div>
+
+                    <!-- 1. DẤU HIỆU NHẬN BIẾT & VÍ DỤ -->
+                    <div class="section-accordion" onclick="this.classList.toggle('open')">
+                        <div class="q-section-title">
+                            <div style="display:flex; align-items:center; gap:0.6rem;"><i class="fa-solid fa-magnifying-glass"></i> Dấu hiệu nhận biết & Ví dụ</div>
+                            <span class="sec-toggle"><span class="txt-close"><i class="fa-solid fa-folder-plus"></i> Nhấn để mở nội dung</span><span class="txt-open"><i class="fa-solid fa-folder-minus"></i> Thu gọn</span></span>
+                        </div>
+                        <div class="section-accordion-body" onclick="event.stopPropagation()">
+                            <div class="q-info-box" style="background:transparent; border:none; padding:0; box-shadow:none; margin:0;">
+                                <p style="margin-bottom:1rem; font-weight:500; color:var(--text-main);"><i class="fa-solid fa-hand-pointer" style="color:var(--primary);"></i> Nhấn vào từng hộp bên dưới để hiển thị nội dung câu hỏi ví dụ chi tiết:</p>
+                                
+                                <div class="accordion-box" onclick="this.classList.toggle('open')">
+                                    <div class="accordion-header">
+                                        <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> Câu hỏi bắt đầu bằng trợ động từ: <mark class="hl-tag">Do / Does</mark> <mark class="hl-tag">Did</mark> <mark class="hl-tag">Have / Has</mark></div>
+                                        <div class="acc-toggle"><i class="fa-solid fa-lightbulb"></i> Ví dụ</div>
+                                    </div>
+                                    <div class="accordion-content" onclick="event.stopPropagation()">
+                                        <ul class="sub-ex-list" style="margin:0;">
+                                            <li><strong class="hl-keyword">Do</strong> you <strong class="hl-keyword">often listen to music</strong> in your free time?</li>
+                                            <li><strong class="hl-keyword">Did</strong> you <strong class="hl-keyword">play any sports</strong> when you were in high school?</li>
+                                            <li><strong class="hl-keyword">Have</strong> you ever <strong class="hl-keyword">traveled to another country</strong>?</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-box" onclick="this.classList.toggle('open')">
+                                    <div class="accordion-header">
+                                        <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> Câu hỏi bắt đầu bằng động từ tobe: <mark class="hl-tag">Is / Are</mark> <mark class="hl-tag">Was / Were</mark></div>
+                                        <div class="acc-toggle"><i class="fa-solid fa-lightbulb"></i> Ví dụ</div>
+                                    </div>
+                                    <div class="accordion-content" onclick="event.stopPropagation()">
+                                        <ul class="sub-ex-list" style="margin:0;">
+                                            <li><strong class="hl-keyword">Are</strong> you <strong class="hl-keyword">interested in learning</strong> foreign languages?</li>
+                                            <li><strong class="hl-keyword">Is</strong> it <strong class="hl-keyword">easy for you</strong> to make new friends?</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-box" onclick="this.classList.toggle('open')">
+                                    <div class="accordion-header">
+                                        <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> Câu hỏi bắt đầu bằng động từ khiếm khuyết: <mark class="hl-tag">Can</mark> <mark class="hl-tag">Should</mark> <mark class="hl-tag">Will</mark></div>
+                                        <div class="acc-toggle"><i class="fa-solid fa-lightbulb"></i> Ví dụ</div>
+                                    </div>
+                                    <div class="accordion-content" onclick="event.stopPropagation()">
+                                        <ul class="sub-ex-list" style="margin:0;">
+                                            <li><strong class="hl-keyword">Can</strong> you <strong class="hl-keyword">play any musical instruments</strong>?</li>
+                                            <li><strong class="hl-keyword">Should</strong> young people <strong class="hl-keyword">read more books</strong> every day?</li>
+                                            <li><strong class="hl-keyword">Will</strong> you <strong class="hl-keyword">move to another city</strong> in the future?</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. CÁCH TRẢ LỜI CHUNG -->
+                    <div class="section-accordion" onclick="this.classList.toggle('open')">
+                        <div class="q-section-title">
+                            <div style="display:flex; align-items:center; gap:0.6rem;"><i class="fa-solid fa-lightbulb"></i> Cách trả lời chung</div>
+                            <span class="sec-toggle"><span class="txt-close"><i class="fa-solid fa-folder-plus"></i> Nhấn để mở nội dung</span><span class="txt-open"><i class="fa-solid fa-folder-minus"></i> Thu gọn</span></span>
+                        </div>
+                        <div class="section-accordion-body" onclick="event.stopPropagation()">
+                            <div class="q-info-box" style="background:transparent; border:none; padding:0; box-shadow:none; margin:0;">
+                                <p>Tuân thủ chiến lược trả lời 2 bước chuẩn trình độ B1:</p>
+                                <ul>
+                                    <li><strong>Bước 1 (Trả lời trực tiếp):</strong> Thí sinh chọn 1 mẫu câu phản hồi phù hợp dưới đây:
+                                        <div style="display:flex; flex-direction:column; gap:0.5rem; align-items:flex-start; margin-top:0.6rem;">
+                                            <div style="font-weight:700; color:#065f46; margin-top:0.2rem;">🟢 CÁCH ĐỒNG Ý CƠ BẢN (THEO TỪ HỎI):</div>
+                                            <button class="vocab-chip" onclick="speakText('Yes, I do.')" style="background:#ecfdf5; border-color:#a7f3d0; color:#065f46;"><i class="fa-solid fa-volume-high"></i> Hỏi Do / Does ➝ <strong>Yes, I do.</strong></button>
+                                            <button class="vocab-chip" onclick="speakText('Yes, I did.')" style="background:#ecfdf5; border-color:#a7f3d0; color:#065f46;"><i class="fa-solid fa-volume-high"></i> Hỏi Did ➝ <strong>Yes, I did.</strong></button>
+                                            <button class="vocab-chip" onclick="speakText('Yes, I have.')" style="background:#ecfdf5; border-color:#a7f3d0; color:#065f46;"><i class="fa-solid fa-volume-high"></i> Hỏi Have / Has ➝ <strong>Yes, I have.</strong></button>
+                                            <button class="vocab-chip" onclick="speakText('Yes, I am.')" style="background:#ecfdf5; border-color:#a7f3d0; color:#065f46;"><i class="fa-solid fa-volume-high"></i> Hỏi Is / Are ➝ <strong>Yes, I am.</strong></button>
+                                            <button class="vocab-chip" onclick="speakText('Yes, I was.')" style="background:#ecfdf5; border-color:#a7f3d0; color:#065f46;"><i class="fa-solid fa-volume-high"></i> Hỏi Was / Were ➝ <strong>Yes, I was.</strong></button>
+                                            <button class="vocab-chip" onclick="speakText('Yes, I can.')" style="background:#ecfdf5; border-color:#a7f3d0; color:#065f46;"><i class="fa-solid fa-volume-high"></i> Hỏi Can ➝ <strong>Yes, I can.</strong></button>
+                                            <button class="vocab-chip" onclick="speakText('Yes, I should.')" style="background:#ecfdf5; border-color:#a7f3d0; color:#065f46;"><i class="fa-solid fa-volume-high"></i> Hỏi Should ➝ <strong>Yes, I should.</strong></button>
+                                            <button class="vocab-chip" onclick="speakText('Yes, I will.')" style="background:#ecfdf5; border-color:#a7f3d0; color:#065f46;"><i class="fa-solid fa-volume-high"></i> Hỏi Will ➝ <strong>Yes, I will.</strong></button>
+
+                                            <div style="font-weight:700; color:#991b1b; margin-top:0.4rem;">🔴 CÁCH KHÔNG ĐỒNG Ý CƠ BẢN (THEO TỪ HỎI):</div>
+                                            <button class="vocab-chip" onclick="speakText(`No, I don't.`)" style="background:#fef2f2; border-color:#fecaca; color:#991b1b;"><i class="fa-solid fa-volume-high"></i> Hỏi Do / Does ➝ <strong>No, I don't.</strong></button>
+                                            <button class="vocab-chip" onclick="speakText(`No, I didn't.`)" style="background:#fef2f2; border-color:#fecaca; color:#991b1b;"><i class="fa-solid fa-volume-high"></i> Hỏi Did ➝ <strong>No, I didn't.</strong></button>
+                                            <button class="vocab-chip" onclick="speakText(`No, I haven't.`)" style="background:#fef2f2; border-color:#fecaca; color:#991b1b;"><i class="fa-solid fa-volume-high"></i> Hỏi Have / Has ➝ <strong>No, I haven't.</strong></button>
+                                            <button class="vocab-chip" onclick="speakText(`No, I'm not.`)" style="background:#fef2f2; border-color:#fecaca; color:#991b1b;"><i class="fa-solid fa-volume-high"></i> Hỏi Is / Are ➝ <strong>No, I'm not.</strong></button>
+                                            <button class="vocab-chip" onclick="speakText(`No, I wasn't.`)" style="background:#fef2f2; border-color:#fecaca; color:#991b1b;"><i class="fa-solid fa-volume-high"></i> Hỏi Was / Were ➝ <strong>No, I wasn't.</strong></button>
+                                            <button class="vocab-chip" onclick="speakText(`No, I can't.`)" style="background:#fef2f2; border-color:#fecaca; color:#991b1b;"><i class="fa-solid fa-volume-high"></i> Hỏi Can ➝ <strong>No, I can't.</strong></button>
+                                            <button class="vocab-chip" onclick="speakText(`No, I shouldn't.`)" style="background:#fef2f2; border-color:#fecaca; color:#991b1b;"><i class="fa-solid fa-volume-high"></i> Hỏi Should ➝ <strong>No, I shouldn't.</strong></button>
+                                            <button class="vocab-chip" onclick="speakText(`No, I won't.`)" style="background:#fef2f2; border-color:#fecaca; color:#991b1b;"><i class="fa-solid fa-volume-high"></i> Hỏi Will ➝ <strong>No, I won't.</strong></button>
+
+                                            <div style="background:var(--bg-main); border-left:4px solid #eab308; border:1px solid var(--border); border-left-width:4px; padding:0.8rem 1rem; border-radius:8px; margin:0.4rem 0 0.6rem 0; font-size:0.95rem; color:var(--text-main); line-height:1.5; width:100%;">
+                                                💡 <strong style="color:#d97706;">Mẹo thực tế trong phòng thi:</strong> Để trả lời nhanh gọn và tự nhiên nhất, bạn <strong>chỉ cần nói "Yes," hoặc "No,"</strong> sau đó nối tiếp ngay vào nội dung giải thích chi tiết ở Bước 2 là được (không bắt buộc phải nhớ chính xác đuôi trợ động từ).
+                                            </div>
+
+                                            <div style="font-weight:700; color:var(--primary); margin-top:0.4rem;">🟣 CÁCH TRẢ LỜI TỰ NHIÊN (DÙNG CHUNG CHO MỌI CÂU HỎI):</div>
+                                            <div style="font-weight:600; color:var(--text-main); margin-top:0.1rem;">🔹 Đồng ý tự nhiên:</div>
+                                            <div style="display:flex; flex-direction:column; gap:0.4rem; padding-left:1rem;">
+                                                <button class="vocab-chip" onclick="speakText('Certainly.')"><i class="fa-solid fa-volume-high"></i> <strong>Certainly.</strong></button>
+                                                <button class="vocab-chip" onclick="speakText('Sure.')"><i class="fa-solid fa-volume-high"></i> <strong>Sure.</strong></button>
+                                            </div>
+                                            <div style="font-weight:600; color:var(--text-main); margin-top:0.3rem;">🔹 Từ chối tự nhiên:</div>
+                                            <div style="display:flex; flex-direction:column; gap:0.4rem; padding-left:1rem;">
+                                                <button class="vocab-chip" onclick="speakText('Not really.')"><i class="fa-solid fa-volume-high"></i> <strong>Not really.</strong></button>
+                                                <button class="vocab-chip" onclick="speakText(`I don't think so.`)"><i class="fa-solid fa-volume-high"></i> <strong>I don't think so.</strong></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mt-2"><strong>Bước 2 (Giải thích lý do / Mở rộng):</strong> Sử dụng từ nối <strong>because</strong> để nêu lợi ích hoặc cảm xúc mang lại (ví dụ: <em>...because it helps me relax and stay healthy</em> hoặc <em>...because it makes me feel happy</em>).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. CÁC CÂU HỎI THƯỜNG GẶP -->
+                    <div class="q-section-title"><i class="fa-solid fa-list-ul"></i> Các câu hỏi thường gặp ở dạng này</div>
+                            <!-- SLIDER PHÒNG LUYỆN TẬP 7 CÔNG THỨC -->
+                            <div class="practice-room-card">
+                                <div class="room-nav">
+                                    <button class="nav-arrow" id="yn-prev"><i class="fa-solid fa-chevron-left"></i> Câu trước</button>
+                                    <div class="room-indicator">Mẫu câu hỏi <span id="yn-current-num">1</span> / 7</div>
+                                    <button class="nav-arrow" id="yn-next">Câu tiếp <i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+
+                                <div class="formula-stage" id="yn-stage">
+                                    <!-- Nội dung được nạp tự động từ script.js -->
+                                </div>
+                            </div>
+                            
+                            <div class="q-section-title" style="margin-top: 2.5rem;"><i class="fa-solid fa-dice"></i> Thực Hành Luyện Nói Ngẫu Nhiên</div>
+                            <div class="interactive-panel">
+                                <div class="q-info-box" style="background:transparent; border:none; padding:0; box-shadow:none; margin-bottom:1.5rem; text-align:center;">
+                                    <p>Nhấp nút bên dưới để chọn một câu hỏi ngẫu nhiên từ bài giảng và thực hành phát âm câu trả lời của bạn.</p>
+                                </div>
+                                <div class="wheel-box">
+                                    <div class="question-screen" id="wheel-q-yn">
+                                        Nhấp "Chọn Câu Hỏi Ngẫu Nhiên" để bắt đầu thực hành
+                                    </div>
+                                    <div class="hint-screen hidden" id="wheel-hint-yn"></div>
+                                    <div class="record-box fade-in" id="record-box-yn" style="display:none; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 2px dashed var(--border); text-align:center;">
+                                        <div style="font-weight:600; color:var(--text-main); margin-bottom:1rem;">🎙️ Thực hành đọc câu trả lời của bạn</div>
+                                        <button class="btn" id="btn-record-yn" style="background:#ef4444; color:white; border-radius:50px; padding: 0.75rem 2rem; font-size:1.1rem; border:none; box-shadow:0 4px 10px rgba(239,68,68,0.3); transition:all 0.3s;" onclick="toggleRecording('yn')">
+                                            <i class="fa-solid fa-microphone"></i> Bắt đầu Ghi âm
+                                        </button>
+                                        <div id="recording-status-yn" style="display:none; color:#ef4444; font-weight:bold; margin-top:1rem; animation: pulse 1.5s infinite;">Đang ghi âm... (Bấm nút Dừng để kết thúc)</div>
+                                        <audio id="audio-playback-yn" controls style="display:none; margin-top:1.5rem; width:100%; height:40px; border-radius:50px;"></audio>
+                                        <button class="btn btn-submit-audio fade-in" id="btn-submit-yn" style="display:none; margin-top:1rem; background:linear-gradient(135deg, #10b981, #059669); color:white; border-radius:50px; padding: 0.75rem 2rem; font-size:1.1rem; border:none; box-shadow:0 4px 10px rgba(16,185,129,0.3); width: 100%;" onclick="submitAudio('yn')"><i class="fa-solid fa-download"></i> Tải xuống để lưu trữ</button>
+                                    </div>
+                                </div>
+                                <div class="arena-buttons">
+                                    <button class="btn btn-primary" id="spin-btn-yn" onclick="spinWheel('yn')">
+                                        <i class="fa-solid fa-shuffle"></i> CHỌN CÂU HỎI NGẪU NHIÊN
+                                    </button>
+                                </div>
+                            </div>
+                </section>
+
+                <!-- =========================================================
+                     TAB 3: CHOICE QUESTIONS
+                ========================================================== -->
+                <section id="choice" class="tab-pane hidden fade-in">
+                    <div class="section-intro">
+                        <h2>CHOICE QUESTIONS</h2>
+                        <p>Dạng câu hỏi yêu cầu thí sinh đưa ra sự lựa chọn giữa hai phương án hoặc ý kiến.</p>
+                    </div>
+
+                    <!-- 1. DẤU HIỆU NHẬN BIẾT & VÍ DỤ -->
+                    <div class="section-accordion" onclick="this.classList.toggle('open')">
+                        <div class="q-section-title">
+                            <div style="display:flex; align-items:center; gap:0.6rem;"><i class="fa-solid fa-magnifying-glass"></i> Dấu hiệu nhận biết & Ví dụ</div>
+                            <span class="sec-toggle"><span class="txt-close"><i class="fa-solid fa-folder-plus"></i> Nhấn để mở nội dung</span><span class="txt-open"><i class="fa-solid fa-folder-minus"></i> Thu gọn</span></span>
+                        </div>
+                        <div class="section-accordion-body" onclick="event.stopPropagation()">
+                            <div class="q-info-box" style="background:transparent; border:none; padding:0; box-shadow:none; margin:0;">
+                                <p style="margin-bottom:1rem; font-weight:500; color:var(--text-main);"><i class="fa-solid fa-hand-pointer" style="color:var(--primary);"></i> Nhấn vào hộp bên dưới để hiển thị các câu hỏi ví dụ lựa chọn chi tiết:</p>
+                                
+                                <div class="accordion-box" onclick="this.classList.toggle('open')">
+                                    <div class="accordion-header">
+                                        <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> Câu hỏi luôn chứa liên từ lựa chọn nối giữa A và B: <mark class="hl-tag">... or ...</mark></div>
+                                        <div class="acc-toggle"><i class="fa-solid fa-lightbulb"></i> Ví dụ</div>
+                                    </div>
+                                    <div class="accordion-content" onclick="event.stopPropagation()">
+                                        <ul class="sub-ex-list" style="margin:0;">
+                                            <li>Do you <strong class="hl-keyword">prefer studying at home</strong> <mark class="hl-tag">or</mark> <strong class="hl-keyword">studying in the library</strong>?</li>
+                                            <li>Do you <strong class="hl-keyword">like traveling alone</strong> <mark class="hl-tag">or</mark> <strong class="hl-keyword">with your friends</strong>?</li>
+                                            <li>Do you <strong class="hl-keyword">prefer reading books</strong> <mark class="hl-tag">or</mark> <strong class="hl-keyword">watching movies</strong>?</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. CÁCH TRẢ LỜI CHUNG -->
+                    <div class="section-accordion" onclick="this.classList.toggle('open')">
+                        <div class="q-section-title">
+                            <div style="display:flex; align-items:center; gap:0.6rem;"><i class="fa-solid fa-lightbulb"></i> Cách trả lời chung</div>
+                            <span class="sec-toggle"><span class="txt-close"><i class="fa-solid fa-folder-plus"></i> Nhấn để mở nội dung</span><span class="txt-open"><i class="fa-solid fa-folder-minus"></i> Thu gọn</span></span>
+                        </div>
+                        <div class="section-accordion-body" onclick="event.stopPropagation()">
+                            <div class="q-info-box" style="background:transparent; border:none; padding:0; box-shadow:none; margin:0;">
+                                <p>Thí sinh có thể lựa chọn 1 trong 2 phương án chiến lược trả lời sau:</p>
+                                <ul>
+                                    <li><strong>Phương án 1 (Chọn 1 trong 2 - Khuyên dùng):</strong> Khẳng định rõ lựa chọn (<em>I prefer...</em>) + Nêu tính từ mô tả (<em>because it's more...</em>) + Nêu lợi ích mang lại (<em>and helps me...</em>).</li>
+                                    <li><strong>Phương án 2 (Cả 2 đều quan trọng):</strong> Nhấn mạnh khó chọn vì cả 2 đều tốt (<em>It's hard to choose...</em>) + Chỉ ra điểm mạnh riêng của từng đối tượng A và B.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. CÁC CÂU HỎI THƯỜNG GẶP -->
+                    <div class="q-section-title"><i class="fa-solid fa-list-ul"></i> Các câu hỏi thường gặp ở dạng này</div>
+                    <div class="interactive-panel">
+                        <div class="choice-tabs">
+                            <button class="c-tab active" data-opt="opt1">Phương án 1: Chọn 1 trong 2 (Khuyên dùng)</button>
+                            <button class="c-tab" data-opt="opt2">Phương án 2: Cả 2 đều quan trọng</button>
+                        </div>
+
+                        <div class="choice-display" id="choice-display-box">
+                            <!-- Nội dung nạp động từ script.js -->
+                        </div>
+                        
+                        <div class="q-section-title" style="margin-top: 2.5rem;"><i class="fa-solid fa-dice"></i> Thực Hành Luyện Nói Ngẫu Nhiên</div>
+                        <div class="q-info-box" style="background:transparent; border:none; padding:0; box-shadow:none; margin-bottom:1.5rem; text-align:center;">
+                            <p>Nhấp nút bên dưới để chọn một câu hỏi ngẫu nhiên từ bài giảng và thực hành phát âm câu trả lời của bạn.</p>
+                        </div>
+                        <div class="wheel-box">
+                            <div class="question-screen" id="wheel-q-choice">
+                                Nhấp "Chọn Câu Hỏi Ngẫu Nhiên" để bắt đầu thực hành
+                            </div>
+                            <div class="hint-screen hidden" id="wheel-hint-choice"></div>
+                            <div class="record-box fade-in" id="record-box-choice" style="display:none; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 2px dashed var(--border); text-align:center;">
+                                <div style="font-weight:600; color:var(--text-main); margin-bottom:1rem;">🎙️ Thực hành đọc câu trả lời của bạn</div>
+                                <button class="btn" id="btn-record-choice" style="background:#ef4444; color:white; border-radius:50px; padding: 0.75rem 2rem; font-size:1.1rem; border:none; box-shadow:0 4px 10px rgba(239,68,68,0.3); transition:all 0.3s;" onclick="toggleRecording('choice')">
+                                    <i class="fa-solid fa-microphone"></i> Bắt đầu Ghi âm
+                                </button>
+                                <div id="recording-status-choice" style="display:none; color:#ef4444; font-weight:bold; margin-top:1rem; animation: pulse 1.5s infinite;">Đang ghi âm... (Bấm nút Dừng để kết thúc)</div>
+                                <audio id="audio-playback-choice" controls style="display:none; margin-top:1.5rem; width:100%; height:40px; border-radius:50px;"></audio>
+                                <button class="btn btn-submit-audio fade-in" id="btn-submit-choice" style="display:none; margin-top:1rem; background:linear-gradient(135deg, #10b981, #059669); color:white; border-radius:50px; padding: 0.75rem 2rem; font-size:1.1rem; border:none; box-shadow:0 4px 10px rgba(16,185,129,0.3); width: 100%;" onclick="submitAudio('choice')"><i class="fa-solid fa-download"></i> Tải xuống để lưu trữ</button>
+                            </div>
+                        </div>
+                        <div class="arena-buttons">
+                            <button class="btn btn-primary" id="spin-btn-choice" onclick="spinWheel('choice')">
+                                <i class="fa-solid fa-shuffle"></i> CHỌN CÂU HỎI NGẪU NHIÊN
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- =========================================================
+                     TAB 4: WH-QUESTIONS
+                ========================================================== -->
+                <section id="wh-questions" class="tab-pane hidden fade-in">
+                    <div class="section-intro">
+                        <h2>WH- QUESTIONS</h2>
+                        <p>Dạng câu hỏi khai thác thông tin chi tiết về thói quen, sở thích và trải nghiệm của thí sinh.</p>
+                    </div>
+                    <!-- 1. DẤU HIỆU NHẬN BIẾT & VÍ DỤ -->
+                    <div class="section-accordion" onclick="this.classList.toggle('open')">
+                        <div class="q-section-title">
+                            <div style="display:flex; align-items:center; gap:0.6rem;"><i class="fa-solid fa-magnifying-glass"></i> Dấu hiệu nhận biết & Ví dụ</div>
+                            <span class="sec-toggle"><span class="txt-close"><i class="fa-solid fa-folder-plus"></i> Nhấn để mở nội dung</span><span class="txt-open"><i class="fa-solid fa-folder-minus"></i> Thu gọn</span></span>
+                        </div>
+                        <div class="section-accordion-body" onclick="event.stopPropagation()">
+                            <div class="q-info-box" style="background:transparent; border:none; padding:0; box-shadow:none; margin:0;">
+                                <p style="margin-bottom:1rem; font-weight:500; color:var(--text-main);"><i class="fa-solid fa-hand-pointer" style="color:var(--primary);"></i> Nhấn vào từng hộp bên dưới để hiển thị nội dung câu hỏi ví dụ chi tiết:</p>
+                                
+                                <div class="accordion-box" onclick="this.classList.toggle('open')">
+                                    <div class="accordion-header">
+                                        <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> Câu hỏi bắt đầu bằng: <mark class="hl-tag">What</mark> (Hỏi sự vật, hoạt động)</div>
+                                        <div class="acc-toggle"><i class="fa-solid fa-lightbulb"></i> Ví dụ</div>
+                                    </div>
+                                    <div class="accordion-content" onclick="event.stopPropagation()">
+                                        <ul class="sub-ex-list" style="margin:0;">
+                                            <li><strong class="hl-keyword">What</strong> do you <strong class="hl-keyword">often do</strong> in your free time?</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-box" onclick="this.classList.toggle('open')">
+                                    <div class="accordion-header">
+                                        <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> Câu hỏi bắt đầu bằng: <mark class="hl-tag">Which</mark> (Hỏi sự lựa chọn)</div>
+                                        <div class="acc-toggle"><i class="fa-solid fa-lightbulb"></i> Ví dụ</div>
+                                    </div>
+                                    <div class="accordion-content" onclick="event.stopPropagation()">
+                                        <ul class="sub-ex-list" style="margin:0;">
+                                            <li><strong class="hl-keyword">Which</strong> subjects do you <strong class="hl-keyword">like most</strong> at school?</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-box" onclick="this.classList.toggle('open')">
+                                    <div class="accordion-header">
+                                        <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> Câu hỏi bắt đầu bằng: <mark class="hl-tag">Who</mark> (Hỏi người)</div>
+                                        <div class="acc-toggle"><i class="fa-solid fa-lightbulb"></i> Ví dụ</div>
+                                    </div>
+                                    <div class="accordion-content" onclick="event.stopPropagation()">
+                                        <ul class="sub-ex-list" style="margin:0;">
+                                            <li><strong class="hl-keyword">Who</strong> is your <strong class="hl-keyword">favorite singer</strong>?</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-box" onclick="this.classList.toggle('open')">
+                                    <div class="accordion-header">
+                                        <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> Câu hỏi bắt đầu bằng: <mark class="hl-tag">Where</mark> (Hỏi nơi chốn)</div>
+                                        <div class="acc-toggle"><i class="fa-solid fa-lightbulb"></i> Ví dụ</div>
+                                    </div>
+                                    <div class="accordion-content" onclick="event.stopPropagation()">
+                                        <ul class="sub-ex-list" style="margin:0;">
+                                            <li><strong class="hl-keyword">Where</strong> do you often <strong class="hl-keyword">read books</strong>?</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-box" onclick="this.classList.toggle('open')">
+                                    <div class="accordion-header">
+                                        <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> Câu hỏi bắt đầu bằng: <mark class="hl-tag">When</mark> (Hỏi thời gian)</div>
+                                        <div class="acc-toggle"><i class="fa-solid fa-lightbulb"></i> Ví dụ</div>
+                                    </div>
+                                    <div class="accordion-content" onclick="event.stopPropagation()">
+                                        <ul class="sub-ex-list" style="margin:0;">
+                                            <li><strong class="hl-keyword">When</strong> do you usually <strong class="hl-keyword">listen to music</strong>?</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-box" onclick="this.classList.toggle('open')">
+                                    <div class="accordion-header">
+                                        <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> Câu hỏi bắt đầu bằng: <mark class="hl-tag">Why</mark> (Hỏi lý do)</div>
+                                        <div class="acc-toggle"><i class="fa-solid fa-lightbulb"></i> Ví dụ</div>
+                                    </div>
+                                    <div class="accordion-content" onclick="event.stopPropagation()">
+                                        <ul class="sub-ex-list" style="margin:0;">
+                                            <li><strong class="hl-keyword">Why</strong> do you <strong class="hl-keyword">like traveling</strong>?</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-box" onclick="this.classList.toggle('open')">
+                                    <div class="accordion-header">
+                                        <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> Câu hỏi bắt đầu bằng: <mark class="hl-tag">How</mark> (Hỏi phương thức)</div>
+                                        <div class="acc-toggle"><i class="fa-solid fa-lightbulb"></i> Ví dụ</div>
+                                    </div>
+                                    <div class="accordion-content" onclick="event.stopPropagation()">
+                                        <ul class="sub-ex-list" style="margin:0;">
+                                            <li><strong class="hl-keyword">How</strong> do you <strong class="hl-keyword">go to school or work</strong> every day?</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-box" onclick="this.classList.toggle('open')">
+                                    <div class="accordion-header">
+                                        <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> Câu hỏi bắt đầu bằng: <mark class="hl-tag">How often</mark> (Hỏi tần suất)</div>
+                                        <div class="acc-toggle"><i class="fa-solid fa-lightbulb"></i> Ví dụ</div>
+                                    </div>
+                                    <div class="accordion-content" onclick="event.stopPropagation()">
+                                        <ul class="sub-ex-list" style="margin:0;">
+                                            <li><strong class="hl-keyword">How often</strong> do you <strong class="hl-keyword">play sports</strong>?</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. CÁCH TRẢ LỜI CHUNG -->
+                    <div class="section-accordion" onclick="this.classList.toggle('open')">
+                        <div class="q-section-title">
+                            <div style="display:flex; align-items:center; gap:0.6rem;"><i class="fa-solid fa-lightbulb"></i> Cách trả lời chung</div>
+                            <span class="sec-toggle"><span class="txt-close"><i class="fa-solid fa-folder-plus"></i> Nhấn để mở nội dung</span><span class="txt-open"><i class="fa-solid fa-folder-minus"></i> Thu gọn</span></span>
+                        </div>
+                        <div class="section-accordion-body" onclick="event.stopPropagation()">
+                            <div class="q-info-box" style="background:transparent; border:none; padding:0; box-shadow:none; margin:0;">
+                                <p>Chiến lược trả lời điểm cao cho câu hỏi Wh-:</p>
+                                <ul>
+                                    <li><strong>Bước 01:</strong> Trả lời nội dung câu hỏi.</li>
+                                    <li><strong>Bước 02:</strong> Thêm thông tin. <span style="color:var(--primary); font-weight:700;">➝ B1</span></li>
+                                    <li><strong>Bước 03:</strong> Mở rộng đáp án. <span style="color:var(--secondary); font-weight:700;">➝ B2+</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. CÁC CÂU HỎI THƯỜNG GẶP -->
+                    <div class="q-section-title"><i class="fa-solid fa-list-ul"></i> Các câu hỏi thường gặp ở dạng này</div>
+                    <!-- Phân loại nhóm từ để hỏi -->
+                    <div class="wh-quick-pills">
+                        <button class="w-pill active" onclick="filterWh('what')">WHAT (3 mẫu)</button>
+                        <button class="w-pill" onclick="filterWh('who')">WHO (2 mẫu)</button>
+                        <button class="w-pill" onclick="filterWh('when')">WHEN (1 mẫu)</button>
+                        <button class="w-pill" onclick="filterWh('where')">WHERE (1 mẫu)</button>
+                        <button class="w-pill" onclick="filterWh('why')">WHY (1 mẫu)</button>
+                        <button class="w-pill" onclick="filterWh('how')">HOW (2 mẫu)</button>
+                    </div>
+
+                    <!-- Khung hiển thị mẫu câu Wh -->
+                    <div class="wh-showcase" id="wh-showcase">
+                        <!-- Nội dung nạp động từ script.js -->
+                    </div>
+
+                    <!-- PHẦN THỰC HÀNH NGẪU NHIÊN -->
+                    <div class="arena-card mt-4">
+                        <div class="arena-header">
+                            <h3>Thực Hành Luyện Nói Ngẫu Nhiên</h3>
+                            <p>Nhấp nút bên dưới để chọn một câu hỏi ngẫu nhiên từ bài giảng và thực hành phát âm câu trả lời của bạn.</p>
+                        </div>
+
+                        <div class="wheel-box">
+                            <div class="question-screen" id="wheel-q">
+                                Nhấp "Chọn Câu Hỏi Ngẫu Nhiên" để bắt đầu thực hành
+                            </div>
+                            <div class="hint-screen hidden" id="wheel-hint"></div>
+                            <div class="record-box fade-in" id="record-box-wh" style="display:none; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 2px dashed var(--border); text-align:center;">
+                                <div style="font-weight:600; color:var(--text-main); margin-bottom:1rem;">🎙️ Thực hành đọc câu trả lời của bạn</div>
+                                <button class="btn" id="btn-record-wh" style="background:#ef4444; color:white; border-radius:50px; padding: 0.75rem 2rem; font-size:1.1rem; border:none; box-shadow:0 4px 10px rgba(239,68,68,0.3); transition:all 0.3s;" onclick="toggleRecording('wh')">
+                                    <i class="fa-solid fa-microphone"></i> Bắt đầu Ghi âm
+                                </button>
+                                <div id="recording-status-wh" style="display:none; color:#ef4444; font-weight:bold; margin-top:1rem; animation: pulse 1.5s infinite;">Đang ghi âm... (Bấm nút Dừng để kết thúc)</div>
+                                <audio id="audio-playback-wh" controls style="display:none; margin-top:1.5rem; width:100%; height:40px; border-radius:50px;"></audio>
+                                <button class="btn btn-submit-audio fade-in" id="btn-submit-wh" style="display:none; margin-top:1rem; background:linear-gradient(135deg, #10b981, #059669); color:white; border-radius:50px; padding: 0.75rem 2rem; font-size:1.1rem; border:none; box-shadow:0 4px 10px rgba(16,185,129,0.3); width: 100%;" onclick="submitAudio('wh')"><i class="fa-solid fa-download"></i> Tải xuống để lưu trữ</button>
+                            </div>
+                        </div>
+
+                        <div class="arena-buttons">
+                            <button class="btn btn-primary" id="spin-btn" onclick="spinWheel('wh')">
+                                <i class="fa-solid fa-shuffle"></i> CHỌN CÂU HỎI NGẪU NHIÊN
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- =========================================================
+                     TAB 5: BENEFITS TABLE
+                ========================================================== -->
+                                                <section id="benefits" class="tab-pane hidden fade-in">
+                    <div class="section-intro">
+                        <h2>BẢNG LỢI ÍCH</h2>
+                        <p>Danh sách đầy đủ các cụm từ chỉ lợi ích được biên soạn, phân loại theo từng nhóm chủ đề. Nhấp vào loa để nghe phát âm.</p>
+                    </div>
+
+                    <div style="padding-bottom: 2rem;">
+                        <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; display: inline-block;">LỢI ÍCH GIẢI TRÍ</h3>
+                        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">relax after a long day</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">thư giãn sau một ngày dài</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('relax after a long day')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">relax after a busy day</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">thư giãn sau một ngày bận rộn</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('relax after a busy day')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">reduce stress</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">giảm căng thẳng</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('reduce stress')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">clear my mind</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">thư giãn đầu óc</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('clear my mind')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">enjoy my free time</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">tận hưởng thời gian rảnh</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('enjoy my free time')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">pass the time</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">giết thời gian</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('pass the time')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">improve my mood</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">cải thiện tâm trạng</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('improve my mood')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">have fun</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">vui vẻ</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('have fun')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">escape from daily stress</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">thoát khỏi căng thẳng hằng ngày</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('escape from daily stress')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">escape from study pressure</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">thoát khỏi áp lực học tập</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('escape from study pressure')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">regain my energy</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">nạp lại năng lượng</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('regain my energy')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">take a mental break</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">nghỉ ngơi về mặt tinh thần</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('take a mental break')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">forget about my worries</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">quên đi những lo lắng</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('forget about my worries')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; display: inline-block;">LỢI ÍCH GIÁO DỤC / PHÁT TRIỂN BẢN THÂN</h3>
+                        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">widen my knowledge</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">mở rộng kiến thức</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('widen my knowledge')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">learn new things</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">học những điều mới</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('learn new things')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">improve my memory</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">cải thiện trí nhớ</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('improve my memory')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">remember things better</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">nhớ mọi thứ tốt hơn</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('remember things better')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">develop my imagination</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">phát triển trí tưởng tượng</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('develop my imagination')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">enhance my creativity</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">nâng cao sự sáng tạo</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('enhance my creativity')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">become more creative</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">trở nên sáng tạo hơn</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('become more creative')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">boost my concentration</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">tăng khả năng tập trung</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('boost my concentration')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">focus better</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">tập trung tốt hơn</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('focus better')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">study more effectively</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">học tập hiệu quả hơn</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('study more effectively')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">work more effectively</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">làm việc hiệu quả hơn</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('work more effectively')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">gain practical experience</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">có thêm kinh nghiệm thực tế</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('gain practical experience')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">build my confidence</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">xây dựng sự tự tin</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('build my confidence')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">become more confident</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">trở nên tự tin hơn</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('become more confident')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">build good habits</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">xây dựng thói quen tốt</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('build good habits')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">expand my vocabulary</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">mở rộng vốn từ vựng</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('expand my vocabulary')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">learn new words</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">học từ vựng mới</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('learn new words')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">discover new places</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">khám phá những nơi mới</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('discover new places')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">explore different cultures</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">tìm hiểu các nền văn hoá khác nhau</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('explore different cultures')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">have new experiences</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">có những trải nghiệm mới</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('have new experiences')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">make new friends</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">kết bạn mới</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('make new friends')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">learn to manage my time</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">học cách quản lý thời gian</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('learn to manage my time')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">learn to solve problems</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">học cách giải quyết vấn đề</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('learn to solve problems')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">learn to work with others</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">học cách làm việc với người khác</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('learn to work with others')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">learn to communicate</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">học cách giao tiếp</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('learn to communicate')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">learn to adapt to new environments</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">học cách thích nghi với môi trường mới</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('learn to adapt to new environments')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">learn to work independently</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">học cách làm việc độc lập</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('learn to work independently')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">improve my study skills</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">cải thiện kỹ năng học tập</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('improve my study skills')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">build good study habits</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">xây dựng thói quen học tập tốt</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('build good study habits')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">prepare for the future</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">chuẩn bị cho tương lai</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('prepare for the future')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">develop useful skills</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">phát triển các kỹ năng hữu ích</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('develop useful skills')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; display: inline-block;">LỢI ÍCH SỨC KHỎE</h3>
+                        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">stay healthy</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">duy trì sức khỏe, sống khoẻ mạnh</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('stay healthy')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">stay in good shape</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">giữ vóc dáng cân đối</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('stay in good shape')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">sleep better</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">ngủ ngon hơn</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('sleep better')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">create a balanced lifestyle</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">tạo lối sống cân bằng</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('create a balanced lifestyle')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">maintain a healthy lifestyle</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">duy trì lối sống lành mạnh</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('maintain a healthy lifestyle')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">lose weight</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">giảm cân</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('lose weight')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">avoid getting sick</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">tránh bị ốm</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('avoid getting sick')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">prevent some health problems</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">phòng tránh vấn đề sức khỏe</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('prevent some health problems')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">improve my physical health</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">cải thiện sức khỏe thể chất</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('improve my physical health')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">stay energetic</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">luôn tràn đầy năng lượng</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('stay energetic')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; display: inline-block;">KỸ NĂNG MỀM CẦN THIẾT</h3>
+                        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">communication skills</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">kỹ năng giao tiếp</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('communication skills')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">problem-solving skills</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">kỹ năng giải quyết vấn đề</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('problem-solving skills')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">teamwork skills</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">kỹ năng làm việc nhóm</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('teamwork skills')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">public speaking skills</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">kỹ năng nói trước đám đông</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('public speaking skills')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">time management skills</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">kỹ năng quản lý thời gian</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('time management skills')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">money management skills</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">kỹ năng quản lý tài chính</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('money management skills')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">digital skills</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">kỹ năng công nghệ</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('digital skills')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">leadership skills</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">kỹ năng lãnh đạo</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('leadership skills')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">presentation skills</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">kỹ năng thuyết trình</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('presentation skills')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #d946ef; font-weight: 800;">self-learning skills</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">kỹ năng tự học</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('self-learning skills')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Góc Ôn Tập (Review Section) -->
+                    <div id="review-section" style="margin-top: 3rem; padding-top: 2rem; border-top: 2px dashed var(--border);">
+                        <div class="section-intro">
+                            <h2 style="color: var(--primary);"><i class="fa-solid fa-gamepad"></i> GÓC ÔN TẬP TỪ VỰNG</h2>
+                            <p>Chọn một trò chơi bên dưới để kiểm tra trí nhớ của bạn!</p>
+                        </div>
+                        
+                        <div class="game-menu" style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 2rem; flex-wrap: wrap;">
+                            <button class="btn" onclick="startReviewGame('flashcards')" style="background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; border:none; box-shadow: 0 4px 10px rgba(59,130,246,0.3);"><i class="fa-solid fa-clone"></i> Lật Thẻ</button>
+                            <button class="btn" onclick="startReviewGame('matching')" style="background: linear-gradient(135deg, #10b981, #059669); color: white; border:none; box-shadow: 0 4px 10px rgba(16,185,129,0.3);"><i class="fa-solid fa-link"></i> Nối Từ</button>
+                            <button class="btn" onclick="startReviewGame('quiz')" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; border:none; box-shadow: 0 4px 10px rgba(139,92,246,0.3);"><i class="fa-solid fa-clipboard-question"></i> Trắc Nghiệm</button>
+                            <button class="btn" onclick="startReviewGame('spelling')" style="background: linear-gradient(135deg, #ec4899, #be185d); color: white; border:none; box-shadow: 0 4px 10px rgba(236,72,153,0.3);"><i class="fa-solid fa-keyboard"></i> Gõ Từ</button>
+                        </div>
+
+                        <div id="game-stage" style="background: var(--bg-card); border: 2px solid var(--border); border-radius: 20px; padding: 2rem; min-height: 400px; position: relative; overflow: hidden; box-shadow: inset 0 2px 10px rgba(0,0,0,0.02);">
+                            <div id="game-placeholder" style="color: var(--text-muted); font-size: 1.1rem; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%;">
+                                <i class="fa-solid fa-ghost" style="font-size: 3.5rem; margin-bottom: 1rem; color: var(--border);"></i><br>
+                                Hãy chọn một trò chơi để bắt đầu ôn tập
+                            </div>
+                            <div id="game-content" style="display: none; height: 100%; width: 100%;"></div>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
