@@ -58,25 +58,6 @@
         </div>
     </div>
 
-    <!-- Màn hình khóa -->
-    <div id="lock-modal" class="modal-overlay hidden" style="z-index: 1000;" onclick="if(event.target === this) this.classList.add('hidden')">
-        <div class="modal-card" style="position: relative;">
-            <button onclick="document.getElementById('lock-modal').classList.add('hidden')" style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; font-size: 1.5rem; color: #94a3b8; cursor: pointer;"><i class="fa-solid fa-xmark"></i></button>
-            <div class="modal-icon" style="background: rgba(239, 68, 68, 0.1); color: #ef4444;"><i class="fa-solid fa-lock"></i></div>
-            <h2>Yêu cầu mật khẩu</h2>
-            <p class="modal-desc">Nội dung bài học này đang được bảo mật. Vui lòng nhập mật khẩu để tiếp tục.</p>
-            
-            <div class="input-group">
-                <div class="input-icon"><i class="fa-solid fa-key"></i></div>
-                <input type="password" id="lock-pass" placeholder="Nhập mật khẩu...">
-            </div>
-            <div id="lock-error" style="display: none; color: #ef4444; font-size: 0.9rem; margin-top: -0.5rem; margin-bottom: 1rem; text-align: left; padding-left: 0.5rem;">Mật khẩu không chính xác!</div>
-            
-            <button id="unlock-btn" class="btn btn-primary" style="width: 100%;">
-                <i class="fa-solid fa-unlock"></i> MỞ KHÓA
-            </button>
-        </div>
-    </div>
 
     <div class="app-container">
         <!-- Sidebar Navigation -->
@@ -272,8 +253,23 @@
                     </div>
 
                     <!-- 1. DẤU HIỆU NHẬN BIẾT & VÍ DỤ -->
-                    <div class="section-accordion" onclick="this.classList.toggle('open')">
-                        <div class="q-section-title">
+                    <div class="locked-container" id="yesno-locked-container" style="position: relative;">
+                        <!-- Lock Overlay -->
+                        <div class="lock-overlay" id="yesno-lock-overlay" style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(255,255,255,0.9); z-index: 10; display: flex; flex-direction: column; align-items: center; justify-content: center; backdrop-filter: blur(5px); border-radius: 12px; padding: 2rem; text-align: center;">
+                            <i class="fa-solid fa-lock" style="font-size: 3.5rem; color: #ef4444; margin-bottom: 1.5rem;"></i>
+                            <h3 style="margin-bottom: 1rem; color: var(--text-main); font-size: 1.5rem;">Phần học này đang bị khóa!</h3>
+                            <p style="margin-bottom: 1.5rem; color: #4b5563; max-width: 400px;">Vui lòng nhập <strong>mã khóa</strong> do giáo viên cung cấp để mở nội dung Yes/No Questions.</p>
+                            <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 350px;">
+                                <input type="text" id="yesno-pass-input" placeholder="Nhập mã khóa..." style="flex:1; padding: 0.8rem 1rem; border-radius: 50px; border: 2px solid var(--border); font-size: 1rem; outline: none; text-align: center; text-transform: uppercase;">
+                                <button class="btn btn-primary" onclick="unlockYesNo()" style="border-radius: 50px; padding: 0.8rem 1.5rem;"><i class="fa-solid fa-key"></i> Mở Khóa</button>
+                            </div>
+                            <p id="yesno-pass-error" style="color: #ef4444; margin-top: 1rem; font-weight: 600; display: none; background: #fee2e2; padding: 0.5rem 1rem; border-radius: 50px;">Mã khóa không chính xác!</p>
+                        </div>
+                        
+                        <!-- Locked Content -->
+                        <div class="locked-content" id="yesno-locked-content" style="pointer-events: none; opacity: 0.2; user-select: none;">
+                            <div class="section-accordion" onclick="this.classList.toggle('open')">
+                                <div class="q-section-title">
                             <div style="display:flex; align-items:center; gap:0.6rem;"><i class="fa-solid fa-magnifying-glass"></i> Dấu hiệu nhận biết & Ví dụ</div>
                             <span class="sec-toggle"><span class="txt-close"><i class="fa-solid fa-folder-plus"></i> Nhấn để mở nội dung</span><span class="txt-open"><i class="fa-solid fa-folder-minus"></i> Thu gọn</span></span>
                         </div>
@@ -421,6 +417,8 @@
                                     </button>
                                 </div>
                             </div>
+                        </div> <!-- End locked-content -->
+                    </div> <!-- End locked-container -->
                 </section>
 
                 <!-- =========================================================
@@ -433,8 +431,23 @@
                     </div>
 
                     <!-- 1. DẤU HIỆU NHẬN BIẾT & VÍ DỤ -->
-                    <div class="section-accordion" onclick="this.classList.toggle('open')">
-                        <div class="q-section-title">
+                    <div class="locked-container" id="choice-locked-container" style="position: relative;">
+                        <!-- Lock Overlay -->
+                        <div class="lock-overlay" id="choice-lock-overlay" style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(255,255,255,0.9); z-index: 10; display: flex; flex-direction: column; align-items: center; justify-content: center; backdrop-filter: blur(5px); border-radius: 12px; padding: 2rem; text-align: center;">
+                            <i class="fa-solid fa-lock" style="font-size: 3.5rem; color: #ef4444; margin-bottom: 1.5rem;"></i>
+                            <h3 style="margin-bottom: 1rem; color: var(--text-main); font-size: 1.5rem;">Phần học này đang bị khóa!</h3>
+                            <p style="margin-bottom: 1.5rem; color: #4b5563; max-width: 400px;">Vui lòng nhập <strong>mã khóa</strong> do giáo viên cung cấp để mở nội dung Choice Questions.</p>
+                            <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 350px;">
+                                <input type="text" id="choice-pass-input" placeholder="Nhập mã khóa..." style="flex:1; padding: 0.8rem 1rem; border-radius: 50px; border: 2px solid var(--border); font-size: 1rem; outline: none; text-align: center; text-transform: uppercase;">
+                                <button class="btn btn-primary" onclick="unlockChoice()" style="border-radius: 50px; padding: 0.8rem 1.5rem;"><i class="fa-solid fa-key"></i> Mở Khóa</button>
+                            </div>
+                            <p id="choice-pass-error" style="color: #ef4444; margin-top: 1rem; font-weight: 600; display: none; background: #fee2e2; padding: 0.5rem 1rem; border-radius: 50px;">Mã khóa không chính xác!</p>
+                        </div>
+                        
+                        <!-- Locked Content -->
+                        <div class="locked-content" id="choice-locked-content" style="pointer-events: none; opacity: 0.2; user-select: none;">
+                            <div class="section-accordion" onclick="this.classList.toggle('open')">
+                                <div class="q-section-title">
                             <div style="display:flex; align-items:center; gap:0.6rem;"><i class="fa-solid fa-magnifying-glass"></i> Dấu hiệu nhận biết & Ví dụ</div>
                             <span class="sec-toggle"><span class="txt-close"><i class="fa-solid fa-folder-plus"></i> Nhấn để mở nội dung</span><span class="txt-open"><i class="fa-solid fa-folder-minus"></i> Thu gọn</span></span>
                         </div>
@@ -513,6 +526,8 @@
                             </button>
                         </div>
                     </div>
+                        </div> <!-- End locked-content -->
+                    </div> <!-- End locked-container -->
                 </section>
 
                 <!-- =========================================================
@@ -569,7 +584,7 @@
                                     </div>
                                 </div>
 
-                                <div class="accordion-box" onclick="this.classList.toggle('open')">
+                                <div class="accordion-box" onclick="this.classList.toggle('open')" style="display:none;">
                                     <div class="accordion-header">
                                         <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> Câu hỏi bắt đầu bằng: <mark class="hl-tag">Where</mark> (Hỏi nơi chốn)</div>
                                         <div class="acc-toggle"><i class="fa-solid fa-lightbulb"></i> Ví dụ</div>
@@ -581,7 +596,7 @@
                                     </div>
                                 </div>
 
-                                <div class="accordion-box" onclick="this.classList.toggle('open')">
+                                <div class="accordion-box" onclick="this.classList.toggle('open')" style="display:none;">
                                     <div class="accordion-header">
                                         <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> Câu hỏi bắt đầu bằng: <mark class="hl-tag">When</mark> (Hỏi thời gian)</div>
                                         <div class="acc-toggle"><i class="fa-solid fa-lightbulb"></i> Ví dụ</div>
@@ -593,7 +608,7 @@
                                     </div>
                                 </div>
 
-                                <div class="accordion-box" onclick="this.classList.toggle('open')">
+                                <div class="accordion-box" onclick="this.classList.toggle('open')" style="display:none;">
                                     <div class="accordion-header">
                                         <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> Câu hỏi bắt đầu bằng: <mark class="hl-tag">Why</mark> (Hỏi lý do)</div>
                                         <div class="acc-toggle"><i class="fa-solid fa-lightbulb"></i> Ví dụ</div>
@@ -605,7 +620,7 @@
                                     </div>
                                 </div>
 
-                                <div class="accordion-box" onclick="this.classList.toggle('open')">
+                                <div class="accordion-box" onclick="this.classList.toggle('open')" style="display:none;">
                                     <div class="accordion-header">
                                         <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> Câu hỏi bắt đầu bằng: <mark class="hl-tag">How</mark> (Hỏi phương thức)</div>
                                         <div class="acc-toggle"><i class="fa-solid fa-lightbulb"></i> Ví dụ</div>
@@ -617,7 +632,7 @@
                                     </div>
                                 </div>
 
-                                <div class="accordion-box" onclick="this.classList.toggle('open')">
+                                <div class="accordion-box" onclick="this.classList.toggle('open')" style="display:none;">
                                     <div class="accordion-header">
                                         <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> Câu hỏi bắt đầu bằng: <mark class="hl-tag">How often</mark> (Hỏi tần suất)</div>
                                         <div class="acc-toggle"><i class="fa-solid fa-lightbulb"></i> Ví dụ</div>
@@ -656,10 +671,10 @@
                     <div class="wh-quick-pills">
                         <button class="w-pill active" onclick="filterWh('what')">WHAT (3 mẫu)</button>
                         <button class="w-pill" onclick="filterWh('who')">WHO (2 mẫu)</button>
-                        <button class="w-pill" onclick="filterWh('when')">WHEN (1 mẫu)</button>
-                        <button class="w-pill" onclick="filterWh('where')">WHERE (1 mẫu)</button>
-                        <button class="w-pill" onclick="filterWh('why')">WHY (1 mẫu)</button>
-                        <button class="w-pill" onclick="filterWh('how')">HOW (2 mẫu)</button>
+                        <button class="w-pill" onclick="filterWh('when')" style="display:none;">WHEN (1 mẫu)</button>
+                        <button class="w-pill" onclick="filterWh('where')" style="display:none;">WHERE (1 mẫu)</button>
+                        <button class="w-pill" onclick="filterWh('why')" style="display:none;">WHY (1 mẫu)</button>
+                        <button class="w-pill" onclick="filterWh('how')" style="display:none;">HOW (2 mẫu)</button>
                     </div>
 
                     <!-- Khung hiển thị mẫu câu Wh -->

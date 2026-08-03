@@ -200,15 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const target = item.getAttribute('data-target');
             
-            if ((target === 'choice' || target === 'wh-questions') && !state.unlockedTabs[target]) {
-                currentTargetTab = target;
-                currentTargetItem = item;
-                document.getElementById('lock-pass').value = '';
-                document.getElementById('lock-error').style.display = 'none';
-                document.getElementById('lock-modal').classList.remove('hidden');
-                setTimeout(() => document.getElementById('lock-pass').focus(), 100);
-                return;
-            }
+
 
             activateTab(target, item);
         });
@@ -234,21 +226,6 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // Xử lý nút Mở khóa
-    document.getElementById('unlock-btn').addEventListener('click', () => {
-        const pass = document.getElementById('lock-pass').value;
-        if (pass === 'missnguyet2026') {
-            document.getElementById('lock-modal').classList.add('hidden');
-            state.unlockedTabs[currentTargetTab] = true;
-            activateTab(currentTargetTab, currentTargetItem);
-        } else {
-            document.getElementById('lock-error').style.display = 'block';
-        }
-    });
-
-    document.getElementById('lock-pass').addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') document.getElementById('unlock-btn').click();
-    });
 
     // Theme & Audio toggles
     themeToggle?.addEventListener('click', () => {
@@ -287,7 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go shopping</span>?",
                 "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go for a walk</span>?"
             ],
-            exQ: "Do you often play sports?",
+            exQ: "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>play sports</span>?",
             exA: "→ Sure. I often play sports in the afternoon when I have free time because it helps me relax after a busy day and stay healthy.",
             exAFormatted: "→ Sure. I often <span class=\"sub-hl\">play sports</span> <span class=\"sub-hl\">in the afternoon</span> when I have free time because it helps me <span class=\"sub-hl\">relax after a busy day</span> and <span class=\"sub-hl\">stay healthy</span>.",
             vocab: [
@@ -308,12 +285,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     type: 'benefit',
                     title: 'Cụm Lợi ích:',
                     items: [
-                        { en: 'relax after a busy day', vn: 'thư giãn sau ngày bận rộn' },
-                        { en: 'reduce stress', vn: 'giảm căng thẳng' },
-                        { en: 'clear my mind', vn: 'thư giãn đầu óc' },
-                        { en: 'stay healthy', vn: 'duy trì sức khỏe' },
-                        { en: 'stay in good shape', vn: 'giữ vóc dáng cân đối' }
-                    ]
+                            { isNote: true, vn: '👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)' }
+                        ]
                 }
             ]
         },
@@ -327,9 +300,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>sing</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>taking a shower</span>?",
                 "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>use your phone</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>walking</span>?"
             ],
-            exQ: "Do you often listen to music while doing your homework?",
-            exA: "→ Not really. I don’t often listen to music while doing my homework because it’s hard for me to focus. I prefer to do one thing at a time to do it better.",
-            exAFormatted: "→ Not really. I don’t often <span class=\"sub-hl\">listen to music</span> while <span class=\"sub-hl\">doing my homework</span> because it’s hard for me to focus. I prefer to do one thing at a time <span class=\"sub-hl\">to do it better</span>.",
+            exQ: "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>listen to music</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>doing homework</span>?",
+            exA: "→ Not really. I don’t often listen to music while doing homework because it’s hard for me to focus. I prefer to do one thing at a time to do it better.",
+            exAFormatted: "→ Not really. I don’t often <span class=\"sub-hl\">listen to music</span> while <span class=\"sub-hl\">doing homework</span> because it’s hard for me to focus. I prefer to do one thing at a time <span class=\"sub-hl\">to do it better</span>.",
             vocab: [
                 {
                     type: 'note',
@@ -388,12 +361,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     type: 'benefit',
                     title: 'Cụm Lợi ích:',
                     items: [
-                        { en: 'reduce stress', vn: 'giảm căng thẳng' },
-                        { en: 'improve my mood', vn: 'cải thiện tâm trạng' },
-                        { en: 'widen my knowledge', vn: 'mở rộng kiến thức' },
-                        { en: 'clear my mind', vn: 'thư giãn đầu óc' },
-                        { en: 'stay healthy', vn: 'duy trì sức khỏe' }
-                    ]
+                            { isNote: true, vn: '👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)' }
+                        ]
                 }
             ]
         },
@@ -431,9 +400,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     type: 'benefit',
                     title: 'Cụm Lợi ích:',
                     items: [
-                        { en: 'enjoy my free time', vn: 'tận hưởng thời gian rảnh rỗi' },
-                        { en: 'have fun', vn: 'vui vẻ / giải trí' }
-                    ]
+                            { isNote: true, vn: '👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)' }
+                        ]
                 }
             ]
         },
@@ -474,9 +442,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     type: 'benefit',
                     title: 'Cụm Lợi ích:',
                     items: [
-                        { en: 'save money', vn: 'tiết kiệm tiền' },
-                        { en: 'stay healthy', vn: 'duy trì sức khỏe' }
-                    ]
+                            { isNote: true, vn: '👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)' }
+                        ]
                 }
             ]
         },
@@ -494,6 +461,13 @@ document.addEventListener('DOMContentLoaded', () => {
             exA: "→ Yes, it is. Eating healthy is very important to me because it helps me improve my health. It is also a good way to have a better life.",
             exAFormatted: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, it is. <span class=\"sub-hl\">Eating healthy</span> is very important to me because it helps me <span class=\"sub-hl\">improve my health</span>. It is also a good way to <span class=\"sub-hl\">have a better life</span>.</div><div><strong>- Trả lời không:</strong> → Not really. <span class=\"sub-hl\">Eating healthy</span> is not very important to me because it doesn't affect my daily life much.</div>",
             vocab: [
+                    {
+                        type: 'benefit',
+                        title: 'Cụm Lợi ích:',
+                        items: [
+                            { isNote: true, vn: '👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)' }
+                        ]
+                    },
                 {
                     type: 'note',
                     title: 'Ghi chú từ vựng:',
@@ -519,6 +493,13 @@ document.addEventListener('DOMContentLoaded', () => {
             exA: "→ Sure. I have traveled abroad before, and it was an exciting experience. It helped me learn new things.",
             exAFormatted: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Sure. I have <span class=\"sub-hl\">traveled abroad</span> before, and it was an <span class=\"sub-hl\">exciting</span> experience. It helped me <span class=\"sub-hl\">learn new things</span>.</div><div><strong>- Trả lời không:</strong> → No, I have never <span class=\"sub-hl\">traveled abroad</span> before because I don't have the chance. But I would like to try it in the future if possible.</div>",
             vocab: [
+                    {
+                        type: 'benefit',
+                        title: 'Cụm Lợi ích:',
+                        items: [
+                            { isNote: true, vn: '👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)' }
+                        ]
+                    },
                 {
                     type: 'activity',
                     title: 'Tính từ mô tả trải nghiệm:',
@@ -581,11 +562,18 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div style="color: ${col}; font-weight: 700; margin-bottom: 0.5rem; font-size: 0.95rem;"><i class="${icon}"></i> ${group.title}</div>
                         <div style="color: var(--text-main); display: flex; flex-direction: column; gap: 0.5rem;">`;
             group.items.forEach(pair => {
-                html += `
+                if (pair.isNote) {
+                    html += `
+                            <div style="font-style: italic; color: #64748b; font-weight: 500; display: flex; align-items: center; padding: 0.25rem 0;">
+                                ${pair.vn}
+                            </div>`;
+                } else {
+                    html += `
                             <div>
                                 <button type="button" onclick="event.stopPropagation(); speakText('${pair.en}')" title="Nghe phát âm" style="background: none; border: none; color: ${col}; cursor: pointer; padding: 0 0.4rem 0 0; font-size: 1rem;"><i class="fa-solid fa-volume-high"></i></button>
                                 <strong>${pair.en}</strong>: ${pair.vn}
                             </div>`;
+                }
             });
             html += `
                         </div>
@@ -607,9 +595,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (ynNumEl) ynNumEl.textContent = state.ynIndex + 1;
         ynStage.innerHTML = `
             <div class="f-card-clean fade-in">
-                <div class="f-title" style="margin-bottom:1.5rem;">${d.title}</div>
-                
                 ${getExamplesBlockHTML(d)}
+                
+                <div class="f-title" style="margin-bottom:1.5rem;">${d.title}</div>
                 
                 <div class="accordion-box" onclick="this.classList.toggle('open')" style="margin-bottom: 1.25rem; border: 2px solid #3b82f6; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);">
                     <div class="accordion-header" style="padding: 1rem 1.25rem; background: rgba(59, 130, 246, 0.08);">
@@ -667,27 +655,46 @@ document.addEventListener('DOMContentLoaded', () => {
     const choiceData = {
         'opt1': {
             title: "✅ PHƯƠNG ÁN 1 – CHỌN 1 TRONG 2",
-            form: "→ I prefer <strong>[lựa chọn – noun/Ving]</strong> because it’s more <strong>[tính từ mô tả lựa chọn]</strong> and helps me <strong>[lợi ích]</strong>. It also makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.",
+            form: "→ I prefer <strong>[lựa chọn – noun/Ving]</strong> because it’s more <strong>[tính từ mô tả lựa chọn]</strong> and helps me <strong>[lợi ích]</strong>. It also makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.<br/><br/><span style='color: #ef4444; font-size: 0.95em;'><i class='fa-solid fa-circle-exclamation'></i> <strong>LƯU Ý:</strong> Nếu không kịp nói câu mô tả cảm xúc thì tăng lợi ích.</span>",
             examples: [
-                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in the library</span>?",
+                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying in the library</span>?",
                 "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching movies</span>?",
                 "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating out</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>cooking at home</span>?",
                 "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveling alone</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>with friends</span>?",
                 "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>living in the city</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>the countryside</span>?"
             ],
-            exQ: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in the library</span>?",
+            exQ: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying in the library</span>?",
             exA: "→ I prefer studying at home because it’s more convenient and helps me save time. It also makes me feel comfortable.",
             exAFormatted: "→ I prefer <span class=\"sub-hl\">studying at home</span> because it’s more <span class=\"sub-hl\">convenient</span> and helps me <span class=\"sub-hl\">save time</span>. It also makes me feel <span class=\"sub-hl\">comfortable</span>.",
             audio: "I prefer studying at home because it’s more convenient and helps me save time. It also makes me feel comfortable.",
             vocab: [
                 {
-                    type: 'note',
-                    title: 'Ghi chú từ vựng:',
+                    type: 'benefit',
+                    title: 'Tính từ mô tả lựa chọn:',
                     items: [
-                        { en: 'prefer', vn: 'thích hơn / ưu tiên hơn' },
-                        { en: 'convenient', vn: 'tiện lợi / thuận tiện' },
-                        { en: 'save time', vn: 'tiết kiệm thời gian' },
-                        { en: 'comfortable', vn: 'dễ chịu / thoải mái' }
+                        { en: 'convenient', vn: 'tiện lợi, thuận tiện' },
+                        { en: 'comfortable', vn: 'thoải mái' },
+                        { en: 'interesting', vn: 'thú vị' },
+                        { en: 'relaxing', vn: 'thư giãn' },
+                        { en: 'useful', vn: 'hữu ích' }
+                    ]
+                },
+                {
+                    type: 'benefit',
+                    title: 'Cụm Lợi ích:',
+                    items: [
+                        { isNote: true, vn: '👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)' }
+                    ]
+                },
+                {
+                    type: 'emotion',
+                    title: 'Tính từ mô tả cảm xúc:',
+                    items: [
+                        { en: 'happy', vn: 'vui vẻ' },
+                        { en: 'confident', vn: 'tự tin' },
+                        { en: 'relaxed', vn: 'thư giãn, dễ chịu' },
+                        { en: 'excited', vn: 'hào hứng' },
+                        { en: 'energetic', vn: 'tràn đầy năng lượng' }
                     ]
                 }
             ]
@@ -696,26 +703,31 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "✅ PHƯƠNG ÁN 2 – CÂN NHẮC CẢ 2 PHƯƠNG ÁN (Nâng cao)",
             form: "→ It’s hard to choose because both are important. <strong>[A]</strong> helps me <strong>[lợi ích A]</strong>, while <strong>[B]</strong> allows me to <strong>[lợi ích B]</strong>.",
             examples: [
-                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in the library</span>?",
+                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying in the library</span>?",
                 "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching movies</span>?",
                 "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating out</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>cooking at home</span>?",
                 "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveling alone</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>with friends</span>?",
                 "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>living in the city</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>the countryside</span>?"
             ],
-            exQ: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in the library</span>?",
+            exQ: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying in the library</span>?",
             exA: "→ It’s hard to choose because both are important. Studying at home helps me save time, while studying in the library allows me to focus better.",
             exAFormatted: "→ It’s hard to choose because both are important. <span class=\"sub-hl\">Studying at home</span> helps me <span class=\"sub-hl\">save time</span>, while <span class=\"sub-hl\">studying in the library</span> allows me to <span class=\"sub-hl\">focus better</span>.",
             audio: "It’s hard to choose because both are important. Studying at home helps me save time, while studying in the library allows me to focus better.",
             vocab: [
                 {
                     type: 'note',
-                    title: 'Ghi chú từ vựng:',
+                    title: 'Cụm từ cố định:',
                     items: [
                         { en: 'hard to choose', vn: 'khó để lựa chọn' },
                         { en: 'both are important', vn: 'cả hai đều quan trọng' },
-                        { en: 'save time', vn: 'tiết kiệm thời gian' },
-                        { en: 'allow me to', vn: 'cho phép tôi / giúp tôi' },
-                        { en: 'focus better', vn: 'tập trung tốt hơn' }
+                        { en: 'allow me to', vn: 'cho phép tôi / giúp tôi' }
+                    ]
+                },
+                {
+                    type: 'benefit',
+                    title: 'Cụm Lợi ích:',
+                    items: [
+                        { isNote: true, vn: '👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)' }
                     ]
                 }
             ]
@@ -727,9 +739,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const d = choiceData[o];
         choiceBox.innerHTML = `
             <div class="f-card-clean fade-in" style="max-width:100%;">
-                <div class="f-title" style="margin-bottom:1.5rem;">${d.title}</div>
-                
                 ${getExamplesBlockHTML(d)}
+                
+                <div class="f-title" style="margin-bottom:1.5rem;">${d.title}</div>
                 
                 <div class="accordion-box" onclick="this.classList.toggle('open')" style="margin-bottom: 1.25rem; border: 2px solid #3b82f6; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);">
                     <div class="accordion-header" style="padding: 1rem 1.25rem; background: rgba(59, 130, 246, 0.08);">
@@ -810,9 +822,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         type: 'benefit',
                         title: 'Cụm Lợi ích:',
                         items: [
-                            { en: 'reduce stress', vn: 'giảm căng thẳng' },
-                            { en: 'clear my mind', vn: 'thư giãn đầu óc' },
-                            { en: 'relax after a long day', vn: 'thư giãn sau một ngày dài' }
+                            { isNote: true, vn: '👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)' }
                         ]
                     },
                     {
@@ -820,7 +830,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         title: 'Tính từ mô tả cảm xúc:',
                         items: [
                             { en: 'happy', vn: 'vui vẻ / hạnh phúc' },
-                            { en: 'relaxed', vn: 'thư thái / thoải mái' }
+                            { en: 'relaxed', vn: 'thư thái / thoải mái' },
+                            { en: 'comfortable', vn: 'dễ chịu / thoải mái' },
+                            { en: 'excited', vn: 'hào hứng / phấn khích' }
                         ]
                     }
                 ]
@@ -839,6 +851,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 exA: "→ I often exercise to keep in shape because it helps me burn calories. I also go for a walk because it is simple and easy to do.",
                 exAFormatted: "→ I often <span class=\"sub-hl\">exercise</span> to <span class=\"sub-hl\">keep in shape</span> because it helps me <span class=\"sub-hl\">burn calories</span>. I also <span class=\"sub-hl\">go for a walk</span> because it is simple and easy to do.",
                 vocab: [
+                    {
+                        type: 'benefit',
+                        title: 'Cụm Lợi ích:',
+                        items: [
+                            { isNote: true, vn: '👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)' }
+                        ]
+                    },
                     {
                         type: 'note',
                         title: 'Ghi chú từ vựng:',
@@ -880,15 +899,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         type: 'benefit',
                         title: 'Cụm Lợi ích:',
                         items: [
-                            { en: 'clear my mind', vn: 'thư giãn đầu óc' },
-                            { en: 'improve my mood', vn: 'cải thiện tâm trạng' }
+                            { isNote: true, vn: '👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)' }
                         ]
                     }
                 ]
             },
             {
                 title: "4. What kinds of [danh từ] do you like?",
-                formula: "→ I’m a big fan of <strong>[1 hoặc 2 thể loại]</strong> because they are very <strong>[tính từ mô tả đối tượng / hoạt động]</strong>. They also allow me to <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.",
+                formula: "→ I’m a big fan of <strong>[1 hoặc 2 thể loại]</strong> because they are very <strong>[tính từ mô tả]</strong>. They also allow me to <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.",
                 note: "LƯU Ý: Nếu không kịp thời gian thì chỉ cần 1 lợi ích.",
                 examples: [
                     "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>movies</span> do you like?",
@@ -903,7 +921,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 vocab: [
                     {
                         type: 'activity',
-                        title: 'Tính từ mô tả đối tượng / hoạt động:',
+                        title: 'Tính từ mô tả:',
                         items: [
                             { en: 'interesting', vn: 'thú vị' },
                             { en: 'exciting', vn: 'hào hứng / tuyệt vời' },
@@ -914,9 +932,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         type: 'benefit',
                         title: 'Cụm Lợi ích:',
                         items: [
-                            { en: 'reduce stress', vn: 'giảm căng thẳng' },
-                            { en: 'improve my mood', vn: 'cải thiện tâm trạng' },
-                            { en: 'widen my knowledge', vn: 'mở rộng kiến thức' }
+                            { isNote: true, vn: '👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)' }
                         ]
                     }
                 ]
@@ -956,8 +972,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         type: 'benefit',
                         title: 'Cụm Lợi ích:',
                         items: [
-                            { en: 'reduce stress', vn: 'giảm căng thẳng' },
-                            { en: 'improve my mood', vn: 'cải thiện tâm trạng' }
+                            { isNote: true, vn: '👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)' }
                         ]
                     }
                 ]
@@ -981,11 +996,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         type: 'benefit',
                         title: 'Cụm Lợi ích:',
                         items: [
-                            { en: 'reduce stress', vn: 'giảm căng thẳng' },
-                        { en: 'improve my mood', vn: 'cải thiện tâm trạng' },
-                        { en: 'widen my knowledge', vn: 'mở rộng kiến thức' },
-                        { en: 'clear my mind', vn: 'thư giãn đầu óc' },
-                        { en: 'stay healthy', vn: 'duy trì sức khỏe' }
+                            { isNote: true, vn: '👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)' }
                         ]
                     }
                 ]
@@ -1078,11 +1089,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         type: 'benefit',
                         title: 'Cụm Lợi ích:',
                         items: [
-                            { en: 'reduce stress', vn: 'giảm căng thẳng' },
-                        { en: 'improve my mood', vn: 'cải thiện tâm trạng' },
-                        { en: 'widen my knowledge', vn: 'mở rộng kiến thức' },
-                        { en: 'clear my mind', vn: 'thư giãn đầu óc' },
-                        { en: 'stay healthy', vn: 'duy trì sức khỏe' }
+                            { isNote: true, vn: '👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)' }
                         ]
                     }
                 ]
@@ -1116,8 +1123,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         type: 'benefit',
                         title: 'Cụm Lợi ích:',
                         items: [
-                            { en: 'focus better', vn: 'tập trung tốt hơn' },
-                            { en: 'stay motivated', vn: 'giữ động lực' }
+                            { isNote: true, vn: '👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)' }
                         ]
                     }
                 ]
@@ -1160,7 +1166,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         type: 'benefit',
                         title: 'Cụm Lợi ích:',
                         items: [
-                            { en: 'stay healthy', vn: 'duy trì sức khỏe' }
+                            { isNote: true, vn: '👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)' }
                         ]
                     }
                 ]
@@ -1182,6 +1188,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 exAFormatted: "→ I usually go to school by <span class=\"sub-hl\">motorbike</span> because it’s very <span class=\"sub-hl\">fast and convenient</span>. It also helps me <span class=\"sub-hl\">save time</span>.",
                 vocab: [
                     {
+                        type: 'benefit',
+                        title: 'Cụm Lợi ích:',
+                        items: [
+                            { isNote: true, vn: '👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)' }
+                        ]
+                    },
+                    {
                         type: 'note',
                         title: 'Ghi chú từ vựng:',
                         items: [
@@ -1201,10 +1214,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eat out</span>?",
                     "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>travel</span>?"
                 ],
-                exQ: "How often do you go to the library every week?",
+                exQ: "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go to the library</span> every week?",
                 exA: "→ Although I’m busy, I still try to go to the library twice a week because it helps me focus better and study more effectively.",
                 exAFormatted: "→ Although I’m busy, I still try to go to the library <span class=\"sub-hl\">twice a week</span> because it helps me <span class=\"sub-hl\">focus better</span> and <span class=\"sub-hl\">study more effectively</span>.",
                 vocab: [
+                    {
+                        type: 'benefit',
+                        title: 'Cụm Lợi ích:',
+                        items: [
+                            { isNote: true, vn: '👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)' }
+                        ]
+                    },
                     {
                         type: 'note',
                         title: 'Ghi chú từ vựng:',
@@ -1250,7 +1270,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         type: 'benefit',
                         title: 'Cụm Lợi ích:',
                         items: [
-                            { en: 'improve my vocabulary', vn: 'cải thiện vốn từ vựng' }
+                            { isNote: true, vn: '👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)' }
                         ]
                     }
                 ]
@@ -1295,9 +1315,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="wh-grid fade-in" style="grid-template-columns: 1fr; gap: 1.5rem;">
                 ${list.map(item => `
                     <div class="f-card-clean" style="max-width:100%; margin:0; background:var(--bg-card); padding:1.5rem; border-radius:20px; border:1px solid var(--border); box-shadow:var(--shadow-sm);">
-                        <div class="f-title" style="margin-bottom:1.5rem;">${item.title}</div>
-                        
                         ${getExamplesBlockHTML(item)}
+                        
+                        <div class="f-title" style="margin-bottom:1.5rem;">${item.title}</div>
                         
                         <div class="accordion-box" onclick="this.classList.toggle('open')" style="margin-bottom: 1.25rem; border: 2px solid #3b82f6; box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);">
                             <div class="accordion-header" style="padding: 1rem 1.25rem; background: rgba(59, 130, 246, 0.08);">
@@ -1453,9 +1473,41 @@ document.addEventListener('DOMContentLoaded', () => {
         let flattenedPool = [];
         pool.forEach(item => {
             if (item.examples && item.examples.length > 0) {
+                // Extract old keywords from original exQ
+                const keywordRegex = /<span class='sub-hl'[^>]*>(.*?)<\/span>/g;
+                const oldKeywords = [];
+                let match;
+                while ((match = keywordRegex.exec(item.exQ || '')) !== null) {
+                    oldKeywords.push(match[1]);
+                }
+
                 item.examples.forEach(ex => {
-                    // Create a copy of the item but replace exQ with the specific example
-                    flattenedPool.push({ ...item, exQ: ex });
+                    const newKeywords = [];
+                    const keywordRegex2 = /<span class='sub-hl'[^>]*>(.*?)<\/span>/g;
+                    let match2;
+                    while ((match2 = keywordRegex2.exec(ex)) !== null) {
+                        newKeywords.push(match2[1]);
+                    }
+
+                    let newExAFormatted = item.exAFormatted;
+                    if (oldKeywords.length > 0 && oldKeywords.length === newKeywords.length && newExAFormatted) {
+                        for (let i = 0; i < oldKeywords.length; i++) {
+                            const oldKw = oldKeywords[i];
+                            const newKw = newKeywords[i];
+                            
+                            const regex = new RegExp(oldKw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+                            newExAFormatted = newExAFormatted.replace(regex, (matchStr) => {
+                                if (matchStr && matchStr[0] === matchStr[0].toUpperCase()) {
+                                    return newKw.charAt(0).toUpperCase() + newKw.slice(1);
+                                }
+                                return newKw;
+                            });
+                        }
+                    }
+                    
+                    let newExA = newExAFormatted ? newExAFormatted.replace(/<[^>]*>/g, '') : item.exA;
+                    
+                    flattenedPool.push({ ...item, exQ: ex, exAFormatted: newExAFormatted, exA: newExA });
                 });
             } else {
                 flattenedPool.push(item);
@@ -1489,7 +1541,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <strong style="color: #64748b; font-size: 0.95em;">📝 Tham khảo câu mẫu (với từ khóa gốc):</strong><br/> 
+                                    <strong style="color: #64748b; font-size: 0.95em;">📝 Tham khảo câu mẫu:</strong><br/> 
                                     <div style="color: #64748b; font-size: 0.95em; margin-top: 0.25rem; font-style: italic;">
                                         "${final.exA || ''}"
                                     </div>
@@ -1919,4 +1971,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+window.unlockChoice = () => {
+    const input = document.getElementById('choice-pass-input').value.trim().toUpperCase();
+    const errorMsg = document.getElementById('choice-pass-error');
+    const validPasses = ['CB206', 'CB211', 'CB213', 'CB210', 'ONB103'];
+    
+    if (validPasses.includes(input)) {
+        document.getElementById('choice-lock-overlay').style.display = 'none';
+        const content = document.getElementById('choice-locked-content');
+        content.style.pointerEvents = 'auto';
+        content.style.opacity = '1';
+        content.style.userSelect = 'auto';
+        errorMsg.style.display = 'none';
+    } else {
+        errorMsg.style.display = 'block';
+    }
+};
 
+window.unlockYesNo = () => {
+    const input = document.getElementById('yesno-pass-input').value.trim().toUpperCase();
+    const errorMsg = document.getElementById('yesno-pass-error');
+    const validPasses = ['CB206', 'CB211', 'CB213', 'CB210', 'ONB103'];
+    
+    if (validPasses.includes(input)) {
+        document.getElementById('yesno-lock-overlay').style.display = 'none';
+        const content = document.getElementById('yesno-locked-content');
+        content.style.pointerEvents = 'auto';
+        content.style.opacity = '1';
+        content.style.userSelect = 'auto';
+        errorMsg.style.display = 'none';
+    } else {
+        errorMsg.style.display = 'block';
+    }
+};
