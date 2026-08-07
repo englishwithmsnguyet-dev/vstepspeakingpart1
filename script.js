@@ -442,6 +442,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     type: 'emotion',
                     title: 'Tính từ mô tả cảm xúc:',
                     items: [
+                            { en: 'excited', vn: 'hào hứng / phấn khích' },
                             { en: 'happy', vn: 'vui vẻ / hạnh phúc' },
                             { en: 'relaxed', vn: 'thư thái / thoải mái' },
                             { en: 'confident', vn: 'tự tin' },
@@ -897,6 +898,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     type: 'emotion',
                     title: 'Tính từ mô tả cảm xúc:',
                     items: [
+                            { en: 'excited', vn: 'hào hứng / phấn khích' },
                             { en: 'happy', vn: 'vui vẻ / hạnh phúc' },
                             { en: 'relaxed', vn: 'thư thái / thoải mái' },
                             { en: 'confident', vn: 'tự tin' },
@@ -1085,6 +1087,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         type: 'emotion',
                         title: 'Tính từ mô tả cảm xúc:',
                         items: [
+                            { en: 'excited', vn: 'hào hứng / phấn khích' },
                             { en: 'happy', vn: 'vui vẻ / hạnh phúc' },
                             { en: 'relaxed', vn: 'thư thái / thoải mái' },
                             { en: 'confident', vn: 'tự tin' },
@@ -1236,6 +1239,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         type: 'emotion',
                         title: 'Tính từ cảm xúc (cuối câu):',
                         items: [
+                            { en: 'excited', vn: 'hào hứng / phấn khích' },
                             { en: 'happy', vn: 'vui vẻ / hạnh phúc' },
                             { en: 'relaxed', vn: 'thư thái / thoải mái' },
                             { en: 'confident', vn: 'tự tin' },
@@ -1430,6 +1434,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         type: 'emotion',
                         title: 'Tính từ mô tả cảm xúc:',
                         items: [
+                            { en: 'excited', vn: 'hào hứng / phấn khích' },
                             { en: 'happy', vn: 'vui vẻ / hạnh phúc' },
                             { en: 'relaxed', vn: 'thư thái / thoải mái' },
                             { en: 'confident', vn: 'tự tin' },
@@ -1672,6 +1677,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         type: 'emotion',
                         title: 'Tính từ mô tả cảm xúc:',
                         items: [
+                            { en: 'excited', vn: 'hào hứng / phấn khích' },
                             { en: 'happy', vn: 'vui vẻ / hạnh phúc' },
                             { en: 'relaxed', vn: 'thư thái / thoải mái' },
                             { en: 'confident', vn: 'tự tin' },
@@ -1820,6 +1826,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         type: 'emotion',
                         title: 'Tính từ mô tả cảm xúc:',
                         items: [
+                            { en: 'excited', vn: 'hào hứng / phấn khích' },
                             { en: 'happy', vn: 'vui vẻ / hạnh phúc' },
                             { en: 'relaxed', vn: 'thư thái / thoải mái' },
                             { en: 'confident', vn: 'tự tin' },
@@ -2026,6 +2033,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         type: 'emotion',
                         title: 'Tính từ mô tả cảm xúc:',
                         items: [
+                            { en: 'excited', vn: 'hào hứng / phấn khích' },
                             { en: 'happy', vn: 'vui vẻ / hạnh phúc' },
                             { en: 'relaxed', vn: 'thư thái / thoải mái' },
                             { en: 'confident', vn: 'tự tin' },
