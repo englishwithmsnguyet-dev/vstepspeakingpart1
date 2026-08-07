@@ -319,8 +319,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     q: "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eat snacks</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching TV</span>?",
-                    a: "→ Yes, I do. I often eat snacks while watching TV because it doesn't affect my concentration. Instead, it helps me reduce stress and clear my mind.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I often <strong>eat snacks</strong> while <strong>watching TV</strong> because it doesn't affect my concentration. Instead, it helps me <strong>reduce stress</strong> and <strong>clear my mind</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. I don’t often <strong>eat snacks</strong> while <strong>watching TV</strong> because it’s hard for me to focus. I prefer to do one thing at a time <strong>to focus better</strong>.</div>"
+                    a: "→ Yes, I do. I often eat snacks while watching TV because it doesn't affect my concentration. Instead, it helps me have fun and enjoy my free time.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I often <strong>eat snacks</strong> while <strong>watching TV</strong> because it doesn't affect my concentration. Instead, it helps me <strong>have fun</strong> and <strong>enjoy my free time</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. I don’t often <strong>eat snacks</strong> while <strong>watching TV</strong> because it’s hard for me to focus. I prefer to do one thing at a time <strong>to avoid getting sick</strong>.</div>"
                 },
                 {
                     q: "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>talk</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating</span>?",
@@ -334,8 +334,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     q: "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>use your phone</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>walking</span>?",
-                    a: "→ Yes, I do. I often use your phone while walking because it doesn't affect my concentration. Instead, it helps me pass the time and learn new things.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I often <strong>use your phone</strong> while <strong>walking</strong> because it doesn't affect my concentration. Instead, it helps me <strong>pass the time</strong> and <strong>learn new things</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. I don’t often <strong>use your phone</strong> while <strong>walking</strong> because it’s hard for me to focus. I prefer to do one thing at a time <strong>to prevent some health problems</strong>.</div>"
+                    a: "→ Yes, I do. I often use my phone while walking because it doesn't affect my concentration. Instead, it helps me pass the time and learn new things.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I often <strong>use my phone</strong> while <strong>walking</strong> because it doesn't affect my concentration. Instead, it helps me <strong>pass the time</strong> and <strong>learn new things</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. I don’t often <strong>use my phone</strong> while <strong>walking</strong> because it’s hard for me to focus. I prefer to do one thing at a time <strong>to prevent some health problems</strong>.</div>"
                 }
                 ]},
                 {
