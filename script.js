@@ -1782,41 +1782,14 @@ document.addEventListener('DOMContentLoaded', () => {
         let flattenedPool = [];
         pool.forEach(item => {
             if (item.examples && item.examples.length > 0) {
-                // Extract old keywords from original exQ
-                const keywordRegex = /<span class='sub-hl'[^>]*>(.*?)<\/span>/g;
-                const oldKeywords = [];
-                let match;
-                while ((match = keywordRegex.exec(item.exQ || '')) !== null) {
-                    oldKeywords.push(match[1]);
-                }
-
                 item.examples.forEach(ex => {
-                    const newKeywords = [];
-                    const keywordRegex2 = /<span class='sub-hl'[^>]*>(.*?)<\/span>/g;
-                    let match2;
-                    while ((match2 = keywordRegex2.exec(ex)) !== null) {
-                        newKeywords.push(match2[1]);
-                    }
-
-                    let newExAFormatted = item.exAFormatted;
-                    if (oldKeywords.length > 0 && oldKeywords.length === newKeywords.length && newExAFormatted) {
-                        for (let i = 0; i < oldKeywords.length; i++) {
-                            const oldKw = oldKeywords[i];
-                            const newKw = newKeywords[i];
-                            
-                            const regex = new RegExp(oldKw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
-                            newExAFormatted = newExAFormatted.replace(regex, (matchStr) => {
-                                if (matchStr && matchStr[0] === matchStr[0].toUpperCase()) {
-                                    return newKw.charAt(0).toUpperCase() + newKw.slice(1);
-                                }
-                                return newKw;
-                            });
-                        }
-                    }
-                    
-                    let newExA = newExAFormatted ? newExAFormatted.replace(/<[^>]*>/g, '') : item.exA;
-                    
-                    flattenedPool.push({ ...item, exQ: ex, exAFormatted: newExAFormatted, exA: newExA });
+                    flattenedPool.push({ 
+                        ...item, 
+                        exQ: ex, 
+                        originalQ: item.exQ || item.title,
+                        exAFormatted: item.exAFormatted, 
+                        exA: item.exA 
+                    });
                 });
             } else {
                 flattenedPool.push(item);
@@ -1850,9 +1823,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <strong style="color: #64748b; font-size: 0.95em;">📝 Tham khảo câu mẫu:</strong><br/> 
+                                    <strong style="color: #64748b; font-size: 0.95em;">📝 Tham khảo câu mẫu${final.originalQ && final.originalQ !== final.exQ ? ` (cho câu: <i>${final.originalQ.replace(/<[^>]*>/g, '')}</i>)` : ''}:</strong><br/> 
                                     <div style="color: #64748b; font-size: 0.95em; margin-top: 0.25rem; font-style: italic;">
-                                        "${final.exA || ''}"
+                                        ${final.exAFormatted || `"${final.exA || ''}"`}
                                     </div>
                                 </div>
                             </div>
