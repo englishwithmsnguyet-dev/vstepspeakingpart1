@@ -121,6 +121,12 @@
                         <span>Bảng Lợi Ích</span>
                     </a>
                 </li>
+                <li class="nav-item" data-target="activities">
+                    <a href="#activities">
+                        <i class="fa-solid fa-person-running"></i>
+                        <span>Bảng Hoạt Động</span>
+                    </a>
+                </li>
             </ul>
 
             <div class="sidebar-footer">
@@ -428,14 +434,15 @@
                                 
                                 <div class="accordion-box" onclick="this.classList.toggle('open')">
                                     <div class="accordion-header">
-                                        <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> Câu hỏi luôn chứa liên từ lựa chọn nối giữa A và B: <mark class="hl-tag">... or ...</mark></div>
+                                        <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> 2 mẫu câu kinh điển nhất: <mark class="hl-tag">Do you prefer A or B?</mark> và <mark class="hl-tag">Which is more important, A or B?</mark></div>
                                         <div class="acc-toggle"><i class="fa-solid fa-lightbulb"></i> Ví dụ</div>
                                     </div>
                                     <div class="accordion-content" onclick="event.stopPropagation()">
+                                        <p style="margin-bottom:0.8rem;">Dấu hiệu rõ nhất là câu hỏi luôn chứa liên từ lựa chọn <mark class="hl-tag">... or ...</mark> nối giữa hai phương án A và B.</p>
                                         <ul class="sub-ex-list" style="margin:0;">
-                                            <li>Do you <strong class="hl-keyword">prefer studying at home</strong> <mark class="hl-tag">or</mark> <strong class="hl-keyword">studying in the library</strong>?</li>
-                                            <li>Do you <strong class="hl-keyword">like traveling alone</strong> <mark class="hl-tag">or</mark> <strong class="hl-keyword">with your friends</strong>?</li>
-                                            <li>Do you <strong class="hl-keyword">prefer reading books</strong> <mark class="hl-tag">or</mark> <strong class="hl-keyword">watching movies</strong>?</li>
+                                            <li><strong class="hl-keyword">Do you prefer</strong> studying at home <mark class="hl-tag">or</mark> studying in the library?</li>
+                                            <li><strong class="hl-keyword">Which is more important</strong>, earning a lot of money <mark class="hl-tag">or</mark> enjoying your job?</li>
+                                            <li><strong class="hl-keyword">Do you prefer</strong> reading books <mark class="hl-tag">or</mark> watching movies?</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1292,23 +1299,481 @@
                         </div>
                         
                         <div class="game-menu" style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 2rem; flex-wrap: wrap;">
-                            <button class="btn" onclick="startReviewGame('flashcards')" style="background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; border:none; box-shadow: 0 4px 10px rgba(59,130,246,0.3);"><i class="fa-solid fa-clone"></i> Lật Thẻ</button>
-                            <button class="btn" onclick="startReviewGame('matching')" style="background: linear-gradient(135deg, #10b981, #059669); color: white; border:none; box-shadow: 0 4px 10px rgba(16,185,129,0.3);"><i class="fa-solid fa-link"></i> Nối Từ</button>
-                            <button class="btn" onclick="startReviewGame('quiz')" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; border:none; box-shadow: 0 4px 10px rgba(139,92,246,0.3);"><i class="fa-solid fa-clipboard-question"></i> Trắc Nghiệm</button>
-                            <button class="btn" onclick="startReviewGame('spelling')" style="background: linear-gradient(135deg, #ec4899, #be185d); color: white; border:none; box-shadow: 0 4px 10px rgba(236,72,153,0.3);"><i class="fa-solid fa-keyboard"></i> Gõ Từ</button>
+                            <button class="btn" onclick="startReviewGame('flashcards', 'benefits')" style="background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; border:none; box-shadow: 0 4px 10px rgba(59,130,246,0.3);"><i class="fa-solid fa-clone"></i> Lật Thẻ</button>
+                            <button class="btn" onclick="startReviewGame('matching', 'benefits')" style="background: linear-gradient(135deg, #10b981, #059669); color: white; border:none; box-shadow: 0 4px 10px rgba(16,185,129,0.3);"><i class="fa-solid fa-link"></i> Nối Từ</button>
+                            <button class="btn" onclick="startReviewGame('quiz', 'benefits')" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; border:none; box-shadow: 0 4px 10px rgba(139,92,246,0.3);"><i class="fa-solid fa-clipboard-question"></i> Trắc Nghiệm</button>
+                            <button class="btn" onclick="startReviewGame('spelling', 'benefits')" style="background: linear-gradient(135deg, #ec4899, #be185d); color: white; border:none; box-shadow: 0 4px 10px rgba(236,72,153,0.3);"><i class="fa-solid fa-keyboard"></i> Gõ Từ</button>
                         </div>
 
-                        <div id="game-stage" style="background: var(--bg-card); border: 2px solid var(--border); border-radius: 20px; padding: 2rem; min-height: 400px; position: relative; overflow: hidden; box-shadow: inset 0 2px 10px rgba(0,0,0,0.02);">
-                            <div id="game-placeholder" style="color: var(--text-muted); font-size: 1.1rem; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%;">
+                        <div class="game-stage" style="background: var(--bg-card); border: 2px solid var(--border); border-radius: 20px; padding: 2rem; min-height: 400px; position: relative; overflow: hidden; box-shadow: inset 0 2px 10px rgba(0,0,0,0.02);">
+                            <div class="game-placeholder" style="color: var(--text-muted); font-size: 1.1rem; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%;">
                                 <i class="fa-solid fa-ghost" style="font-size: 3.5rem; margin-bottom: 1rem; color: var(--border);"></i><br>
                                 Hãy chọn một trò chơi để bắt đầu ôn tập
                             </div>
-                            <div id="game-content" style="display: none; height: 100%; width: 100%;"></div>
+                            <div class="game-content" style="display: none; height: 100%; width: 100%;"></div>
                         </div>
                     </div>
 
                 </section>
 
+                <section id="activities" class="tab-pane hidden fade-in">
+                    <div class="section-intro">
+                        <h2>BẢNG HOẠT ĐỘNG</h2>
+                        <p>Danh sách các cụm từ chỉ hoạt động thường ngày được phân loại theo chủ đề. Nhấp vào loa để nghe phát âm.</p>
+                    </div>
+
+                    <div style="padding-bottom: 2rem;">
+                        <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: #3b82f6; border-bottom: 2px solid #3b82f6; padding-bottom: 0.5rem; display: inline-block;">🏠 INDOOR ACTIVITIES</h3>
+                        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">watch movies</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">xem phim</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('watch movies')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">listen to music</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">nghe nhạc</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('listen to music')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">listen to the radio</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">nghe đài radio</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('listen to the radio')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">read books</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đọc sách</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('read books')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">play video games</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">chơi trò chơi điện tử</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('play video games')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">play cards</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">chơi bài</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('play cards')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">play with toys</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">chơi đồ chơi</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('play with toys')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">play chess</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">chơi cờ</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('play chess')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">do homework</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">làm bài tập về nhà</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('do homework')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">do household chores</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">làm việc nhà</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('do household chores')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">do yoga</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">tập yoga</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('do yoga')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">surf the Internet</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">lướt web</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('surf the Internet')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">cook meals</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">nấu ăn</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('cook meals')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">make cakes</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">làm bánh</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('make cakes')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">drink tea</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">uống trà</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('drink tea')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">draw pictures</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">vẽ tranh</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('draw pictures')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding-bottom: 2rem;">
+                        <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: #10b981; border-bottom: 2px solid #10b981; padding-bottom: 0.5rem; display: inline-block;">🌳 OUTDOOR ACTIVITIES</h3>
+                        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #10b981; font-weight: 800;">go for a coffee</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi uống cà phê</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('go for a coffee')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #10b981; font-weight: 800;">go for a walk</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi dạo</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('go for a walk')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #10b981; font-weight: 800;">go traveling</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi du lịch</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('go traveling')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #10b981; font-weight: 800;">go swimming</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi bơi</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('go swimming')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #10b981; font-weight: 800;">go fishing</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi câu cá</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('go fishing')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #10b981; font-weight: 800;">go jogging</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi bộ thể dục</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('go jogging')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #10b981; font-weight: 800;">go sightseeing</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi ngắm cảnh</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('go sightseeing')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #10b981; font-weight: 800;">go hiking</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi bộ đường dài / đi leo núi</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('go hiking')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #10b981; font-weight: 800;">go on a picnic</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi dã ngoại</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('go on a picnic')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #10b981; font-weight: 800;">go to the park</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi công viên</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('go to the park')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #10b981; font-weight: 800;">go camping</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi cắm trại</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('go camping')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #10b981; font-weight: 800;">go sailing</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi chèo thuyền</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('go sailing')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #10b981; font-weight: 800;">do gardening</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">làm vườn</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('do gardening')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #10b981; font-weight: 800;">play sports</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">chơi thể thao</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('play sports')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #10b981; font-weight: 800;">take photos</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">chụp ảnh</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('take photos')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #10b981; font-weight: 800;">fly kites</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">thả diều</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('fly kites')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding-bottom: 2rem;">
+                        <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: #f59e0b; border-bottom: 2px solid #f59e0b; padding-bottom: 0.5rem; display: inline-block;">🎲 OTHER ACTIVITIES</h3>
+                        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #f59e0b; font-weight: 800;">go to the library</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi thư viện</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('go to the library')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #f59e0b; font-weight: 800;">go to the gym</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi tập gym</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('go to the gym')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #f59e0b; font-weight: 800;">go to the cinema</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi xem phim ở rạp</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('go to the cinema')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #f59e0b; font-weight: 800;">go to parties</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi dự tiệc</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('go to parties')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #f59e0b; font-weight: 800;">go shopping</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi mua sắm</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('go shopping')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #f59e0b; font-weight: 800;">go out to eat / eat out</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi ăn ở ngoài</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('go out to eat')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #f59e0b; font-weight: 800;">visit an amusement park</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi công viên giải trí</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('visit an amusement park')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #f59e0b; font-weight: 800;">play hide and seek</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">chơi trốn tìm</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('play hide and seek')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #f59e0b; font-weight: 800;">play with pets</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">chơi với thú cưng</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('play with pets')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #f59e0b; font-weight: 800;">do a part-time job</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">làm việc bán thời gian</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('do a part-time job')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #f59e0b; font-weight: 800;">do volunteer work</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">làm công tác tình nguyện</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('do volunteer work')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #f59e0b; font-weight: 800;">hang out</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi chơi / tụ tập</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('hang out')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #f59e0b; font-weight: 800;">visit a museum</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">đi thăm bảo tàng</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('visit a museum')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                            <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                                <div>
+                                    <strong style="font-size: 1.1rem; color: #f59e0b; font-weight: 800;">chat/talk with friends</strong>
+                                    <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">trò chuyện cùng bạn bè</div>
+                                </div>
+                                <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('chat')" title="Nghe phát âm">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                <div id="review-section" style="margin-top: 3rem; padding-top: 2rem; border-top: 2px dashed var(--border);">
+                        <div class="section-intro">
+                            <h2 style="color: var(--primary);"><i class="fa-solid fa-gamepad"></i> GÓC ÔN TẬP TỪ VỰNG</h2>
+                            <p>Chọn một trò chơi bên dưới để kiểm tra trí nhớ của bạn!</p>
+                        </div>
+                        
+                        <div class="game-menu" style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 2rem; flex-wrap: wrap;">
+                            <button class="btn" onclick="startReviewGame('flashcards', 'activities')" style="background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; border:none; box-shadow: 0 4px 10px rgba(59,130,246,0.3);"><i class="fa-solid fa-clone"></i> Lật Thẻ</button>
+                            <button class="btn" onclick="startReviewGame('matching', 'activities')" style="background: linear-gradient(135deg, #10b981, #059669); color: white; border:none; box-shadow: 0 4px 10px rgba(16,185,129,0.3);"><i class="fa-solid fa-link"></i> Nối Từ</button>
+                            <button class="btn" onclick="startReviewGame('quiz', 'activities')" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; border:none; box-shadow: 0 4px 10px rgba(139,92,246,0.3);"><i class="fa-solid fa-clipboard-question"></i> Trắc Nghiệm</button>
+                            <button class="btn" onclick="startReviewGame('spelling', 'activities')" style="background: linear-gradient(135deg, #ec4899, #be185d); color: white; border:none; box-shadow: 0 4px 10px rgba(236,72,153,0.3);"><i class="fa-solid fa-keyboard"></i> Gõ Từ</button>
+                        </div>
+
+                        <div class="game-stage" style="background: var(--bg-card); border: 2px solid var(--border); border-radius: 20px; padding: 2rem; min-height: 400px; position: relative; overflow: hidden; box-shadow: inset 0 2px 10px rgba(0,0,0,0.02);">
+                            <div class="game-placeholder" style="color: var(--text-muted); font-size: 1.1rem; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%;">
+                                <i class="fa-solid fa-ghost" style="font-size: 3.5rem; margin-bottom: 1rem; color: var(--border);"></i><br>
+                                Hãy chọn một trò chơi để bắt đầu ôn tập
+                            </div>
+                            <div class="game-content" style="display: none; height: 100%; width: 100%;"></div>
+                        </div>
+                    </div>
+
+                </section>
             </div>
         </main>
     </div>

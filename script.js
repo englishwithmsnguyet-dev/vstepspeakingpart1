@@ -41,7 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'yes-no': 'YES/NO QUESTIONS',
         'choice': 'CHOICE QUESTIONS',
         'wh-questions': 'WH- QUESTIONS',
-        'benefits': 'COMMON BENEFITS'
+        'benefits': 'COMMON BENEFITS',
+        'activities': 'COMMON ACTIVITIES'
     };
 
     // Quản lý danh sách giọng đọc AI
@@ -294,8 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             { en: 'on weekdays', vn: 'vào các ngày trong tuần' },
                             { en: 'on my days off', vn: 'vào những ngày nghỉ' },
                             { en: 'in my free time', vn: 'vào thời gian rảnh rỗi' },
-                            { en: 'after school / work', vn: 'sau giờ học / làm' },
-                            { en: 'every day', vn: 'mỗi ngày' }
+                            { en: 'after school / work', vn: 'sau giờ học / làm' }
                         ]
                 },
                 {
@@ -871,8 +871,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             { en: 'on weekdays', vn: 'vào các ngày trong tuần' },
                             { en: 'on my days off', vn: 'vào những ngày nghỉ' },
                             { en: 'in my free time', vn: 'vào thời gian rảnh rỗi' },
-                            { en: 'after school / work', vn: 'sau giờ học / làm' },
-                            { en: 'every day', vn: 'mỗi ngày' }
+                            { en: 'after school / work', vn: 'sau giờ học / làm' }
                         ]
                     },
                     {
@@ -1306,8 +1305,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             { en: 'on weekdays', vn: 'vào các ngày trong tuần' },
                             { en: 'on my days off', vn: 'vào những ngày nghỉ' },
                             { en: 'in my free time', vn: 'vào thời gian rảnh rỗi' },
-                            { en: 'after school / work', vn: 'sau giờ học / làm' },
-                            { en: 'every day', vn: 'mỗi ngày' }
+                            { en: 'after school / work', vn: 'sau giờ học / làm' }
                         ]
                     },
                     {
@@ -1520,7 +1518,6 @@ document.addEventListener('DOMContentLoaded', () => {
                             { en: 'once a week', vn: 'một lần một tuần' },
                             { en: 'twice a week', vn: 'hai lần một tuần' },
                             { en: 'three times a week', vn: 'ba lần một tuần' },
-                            { en: 'at weekends', vn: 'vào cuối tuần' },
                             { en: 'whenever I have free time', vn: 'bất cứ khi nào có thời gian rảnh' }
                         ]
                     },
@@ -1598,15 +1595,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>transportation</span> every month?"
                 ],
                 exQ: "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>clothes</span> every month?",
-                exA: "→ I’m still a student, so I need to save money. I only spend about 500,000 dong on clothes every month because I think it’s reasonable for me.",
-                exAFormatted: "→ I’m still a student, so I need to save money. I only spend about <span class=\"sub-hl\">500,000 dong</span> on <span class=\"sub-hl\">clothes</span> every month because I think it’s reasonable for me.",
+                exA: "→ I’m still a student, so I need to save money. I only spend about 20 dollars on clothes every month because I think it’s reasonable for me.",
+                exAFormatted: "→ I’m still a student, so I need to save money. I only spend about <span class=\"sub-hl\">20 dollars</span> on <span class=\"sub-hl\">clothes</span> every month because I think it’s reasonable for me.",
                 vocab: [
                     {
                         type: 'note',
                         title: 'Ghi chú từ vựng:',
                         items: [
                             { en: 'save money', vn: 'tiết kiệm tiền' },
-                            { en: 'reasonable for me', vn: 'hợp lý đối với tôi' }
+                            { en: 'reasonable for me', vn: 'hợp lý đối với tôi' },
+                            { en: 'dollars', vn: 'đô la (đơn vị tiền tệ)' }
                         ]
                     }
                 ]
@@ -1942,39 +1940,40 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     let reviewWords = [];
     
-    function extractReviewWords() {
-        if (reviewWords.length > 0) return reviewWords;
-        const cards = document.querySelectorAll('#benefits .icon-btn');
+    function extractReviewWords(tabId) {
+        let currentWords = [];
+        const cards = document.querySelectorAll('#' + tabId + ' .icon-btn');
         cards.forEach(btn => {
             const container = btn.parentElement;
             const enEl = container.querySelector('strong');
             if (enEl && enEl.nextElementSibling) {
-                reviewWords.push({
+                currentWords.push({
                     en: enEl.textContent.trim(),
                     vn: enEl.nextElementSibling.textContent.trim()
                 });
             }
         });
-        return reviewWords;
+        return currentWords;
     }
 
-    window.startReviewGame = (type) => {
-        const words = extractReviewWords();
+    window.startReviewGame = (type, tabId) => {
+        const words = extractReviewWords(tabId);
         if (words.length === 0) return;
-        const placeholder = document.getElementById('game-placeholder');
-        const content = document.getElementById('game-content');
+        const tabEl = document.getElementById(tabId);
+        const placeholder = tabEl.querySelector('.game-placeholder');
+        const content = tabEl.querySelector('.game-content');
         
         if(placeholder) placeholder.style.display = 'none';
         if(content) content.style.display = 'block';
         
         if (type === 'flashcards') {
-            initFlashcards(words, content);
+            initFlashcards(words, content, tabId);
         } else if (type === 'matching') {
-            initMatchingGame(words, content);
+            initMatchingGame(words, content, tabId);
         } else if (type === 'quiz') {
-            initQuizGame(words, content);
+            initQuizGame(words, content, tabId);
         } else if (type === 'spelling') {
-            initSpellingGame(words, content);
+            initSpellingGame(words, content, tabId);
         }
     };
 
@@ -1990,7 +1989,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="fade-in" style="text-align:center; padding: 2rem;">
                         <i class="fa-solid fa-trophy" style="font-size:4rem; color:#f59e0b; margin-bottom:1rem;"></i>
                         <h3 style="font-size:1.5rem; margin-bottom:1rem;">Tuyệt vời! Bạn đã ôn xong tất cả các từ.</h3>
-                        <button class="btn btn-primary" onclick="startReviewGame('flashcards')"><i class="fa-solid fa-rotate-right"></i> Ôn tập lại</button>
+                        <button class="btn btn-primary" onclick="startReviewGame('flashcards', '${tabId}')"><i class="fa-solid fa-rotate-right"></i> Ôn tập lại</button>
                     </div>
                 `;
                 return;
@@ -2045,7 +2044,7 @@ document.addEventListener('DOMContentLoaded', () => {
         container.innerHTML = `
             <div class="fade-in" style="display:flex; justify-content:space-between; margin-bottom:1.5rem; align-items:center; flex-wrap:wrap; gap:1rem;">
                 <div style="font-weight:bold; color:var(--text-main); font-size:1.1rem;"><i class="fa-solid fa-link" style="color:var(--primary);"></i> Ghép các cặp từ tương ứng</div>
-                <button class="btn btn-secondary" onclick="startReviewGame('matching')" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i class="fa-solid fa-rotate-right"></i> Bài mới</button>
+                <button class="btn btn-secondary" onclick="startReviewGame('matching', '${tabId}')" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i class="fa-solid fa-rotate-right"></i> Bài mới</button>
             </div>
             <div class="matching-grid fade-in" id="match-grid"></div>
         `;
@@ -2088,7 +2087,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                         <div class="fade-in" style="text-align:center; padding: 2rem;">
                                             <i class="fa-solid fa-star" style="font-size:4rem; color:#f59e0b; margin-bottom:1rem;"></i>
                                             <h3 style="font-size:1.5rem; margin-bottom:1rem;">Hoàn thành xuất sắc!</h3>
-                                            <button class="btn btn-primary" onclick="startReviewGame('matching')"><i class="fa-solid fa-play"></i> Chơi tiếp</button>
+                                            <button class="btn btn-primary" onclick="startReviewGame('matching', '${tabId}')"><i class="fa-solid fa-play"></i> Chơi tiếp</button>
                                         </div>
                                     `;
                                 }, 300);
@@ -2127,7 +2126,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <i class="fa-solid fa-award" style="font-size:4rem; color:#10b981; margin-bottom:1rem;"></i>
                         <h3 style="font-size:1.5rem; margin-bottom:0.5rem;">Hoàn thành Quiz!</h3>
                         <p style="font-size:1.2rem; margin-bottom:1.5rem;">Bạn đạt <strong style="color:var(--primary); font-size:1.5rem;">${score} / ${words.length}</strong> điểm.</p>
-                        <button class="btn btn-primary" onclick="startReviewGame('quiz')"><i class="fa-solid fa-rotate-right"></i> Làm lại</button>
+                        <button class="btn btn-primary" onclick="startReviewGame('quiz', '${tabId}')"><i class="fa-solid fa-rotate-right"></i> Làm lại</button>
                     </div>
                 `;
                 return;
@@ -2201,7 +2200,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <i class="fa-solid fa-medal" style="font-size:4rem; color:#ec4899; margin-bottom:1rem;"></i>
                         <h3 style="font-size:1.5rem; margin-bottom:0.5rem;">Hoàn thành Thử Thách Gõ Từ!</h3>
                         <p style="font-size:1.2rem; margin-bottom:1.5rem;">Bạn gõ đúng <strong style="color:var(--primary); font-size:1.5rem;">${score} / ${words.length}</strong> từ.</p>
-                        <button class="btn btn-primary" onclick="startReviewGame('spelling')"><i class="fa-solid fa-rotate-right"></i> Làm lại</button>
+                        <button class="btn btn-primary" onclick="startReviewGame('spelling', '${tabId}')"><i class="fa-solid fa-rotate-right"></i> Làm lại</button>
                     </div>
                 `;
                 return;
