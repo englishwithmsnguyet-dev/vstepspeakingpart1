@@ -1063,28 +1063,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 examples: [
                 {
                     q: "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in the evening</span>?",
-                    a: "→ I usually in the evening in the evening because it helps me reduce stress. Sometimes, I also in the evening to relax after a busy day.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I usually <strong>in the evening</strong> <strong>in the evening</strong> because it helps me <strong>reduce stress</strong>. Sometimes, I also <strong>in the evening</strong> to <strong>relax after a busy day</strong>.</div><div><strong>- Cách 2:</strong> → I usually <strong>in the evening</strong> <strong>in the evening</strong> because it helps me <strong>reduce stress</strong>. It also makes me feel <strong>happy</strong>.</div>"
+                    a: "→ I usually read books in the evening because it helps me relax after a busy day. Sometimes, I also listen to music to sleep better.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I usually <strong>read books</strong> <strong>in the evening</strong> because it helps me <strong>relax after a busy day</strong>. Sometimes, I also <strong>listen to music</strong> to <strong>sleep better</strong>.</div><div><strong>- Cách 2:</strong> → I usually <strong>read books</strong> <strong>in the evening</strong> because it helps me <strong>in the evening</strong>. It also makes me feel <strong>in the evening</strong>.</div>"
                 },
                 {
                     q: "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in the morning</span>?",
-                    a: "→ I usually in the morning in the evening because it helps me reduce stress. Sometimes, I also in the morning to relax after a busy day.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I usually <strong>in the morning</strong> <strong>in the evening</strong> because it helps me <strong>reduce stress</strong>. Sometimes, I also <strong>in the morning</strong> to <strong>relax after a busy day</strong>.</div><div><strong>- Cách 2:</strong> → I usually <strong>in the morning</strong> <strong>in the evening</strong> because it helps me <strong>reduce stress</strong>. It also makes me feel <strong>happy</strong>.</div>"
+                    a: "→ I usually do exercise in the morning because it helps me stay in good shape. Sometimes, I also drink coffee to regain my energy.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I usually <strong>do exercise</strong> <strong>in the morning</strong> because it helps me <strong>stay in good shape</strong>. Sometimes, I also <strong>drink coffee</strong> to <strong>regain my energy</strong>.</div><div><strong>- Cách 2:</strong> → I usually <strong>do exercise</strong> <strong>in the morning</strong> because it helps me <strong>in the morning</strong>. It also makes me feel <strong>in the morning</strong>.</div>"
                 },
                 {
                     q: "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>at weekends</span>?",
-                    a: "→ I usually at weekends in the evening because it helps me reduce stress. Sometimes, I also at weekends to relax after a busy day.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I usually <strong>at weekends</strong> <strong>in the evening</strong> because it helps me <strong>reduce stress</strong>. Sometimes, I also <strong>at weekends</strong> to <strong>relax after a busy day</strong>.</div><div><strong>- Cách 2:</strong> → I usually <strong>at weekends</strong> <strong>in the evening</strong> because it helps me <strong>reduce stress</strong>. It also makes me feel <strong>happy</strong>.</div>"
+                    a: "→ I usually hang out with friends at weekends because it helps me have fun. Sometimes, I also go shopping to enjoy my free time.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I usually <strong>hang out with friends</strong> <strong>at weekends</strong> because it helps me <strong>have fun</strong>. Sometimes, I also <strong>go shopping</strong> to <strong>enjoy my free time</strong>.</div><div><strong>- Cách 2:</strong> → I usually <strong>hang out with friends</strong> <strong>at weekends</strong> because it helps me <strong>at weekends</strong>. It also makes me feel <strong>at weekends</strong>.</div>"
                 },
                 {
                     q: "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in your free time</span>?",
-                    a: "→ I usually in your free time in the evening because it helps me reduce stress. Sometimes, I also in your free time to relax after a busy day.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I usually <strong>in your free time</strong> <strong>in the evening</strong> because it helps me <strong>reduce stress</strong>. Sometimes, I also <strong>in your free time</strong> to <strong>relax after a busy day</strong>.</div><div><strong>- Cách 2:</strong> → I usually <strong>in your free time</strong> <strong>in the evening</strong> because it helps me <strong>reduce stress</strong>. It also makes me feel <strong>happy</strong>.</div>"
+                    a: "→ I usually listen to music in my free time because it helps me reduce stress. Sometimes, I also watch movies to forget about my worries.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I usually <strong>listen to music</strong> <strong>in my free time</strong> because it helps me <strong>reduce stress</strong>. Sometimes, I also <strong>watch movies</strong> to <strong>forget about my worries</strong>.</div><div><strong>- Cách 2:</strong> → I usually <strong>listen to music</strong> <strong>in my free time</strong> because it helps me <strong>in your free time</strong>. It also makes me feel <strong>in your free time</strong>.</div>"
                 },
                 {
                     q: "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>on Sundays</span>?",
-                    a: "→ I usually on Sundays in the evening because it helps me reduce stress. Sometimes, I also on Sundays to relax after a busy day.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I usually <strong>on Sundays</strong> <strong>in the evening</strong> because it helps me <strong>reduce stress</strong>. Sometimes, I also <strong>on Sundays</strong> to <strong>relax after a busy day</strong>.</div><div><strong>- Cách 2:</strong> → I usually <strong>on Sundays</strong> <strong>in the evening</strong> because it helps me <strong>reduce stress</strong>. It also makes me feel <strong>happy</strong>.</div>"
+                    a: "→ I usually visit my grandparents on Sundays because it helps me escape from daily stress. Sometimes, I also clean the house to create a balanced lifestyle.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I usually <strong>visit my grandparents</strong> <strong>on Sundays</strong> because it helps me <strong>escape from daily stress</strong>. Sometimes, I also <strong>clean the house</strong> to <strong>create a balanced lifestyle</strong>.</div><div><strong>- Cách 2:</strong> → I usually <strong>visit my grandparents</strong> <strong>on Sundays</strong> because it helps me <strong>on sundays</strong>. It also makes me feel <strong>on sundays</strong>.</div>"
                 }
             ],
                 exQ: "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in the evening</span>?",
@@ -1135,28 +1135,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 examples: [
                 {
                     q: "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>keep in shape</span>?",
-                    a: "→ I often keep in shape to keep in shape because it helps me reduce stress. I also keep in shape because it’s simple and easy to do.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>keep in shape</strong> to <strong>keep in shape</strong> because it helps me <strong>reduce stress</strong>. I also <strong>keep in shape</strong> because it’s simple and easy to do.</div>"
+                    a: "→ I often go to the gym to keep in shape because it helps me improve my physical health. I also eat healthy food because it’s simple and easy to do.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>go to the gym</strong> to <strong>keep in shape</strong> because it helps me <strong>improve my physical health</strong>. I also <strong>eat healthy food</strong> because it’s simple and easy to do.</div>"
                 },
                 {
                     q: "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>relax</span>?",
-                    a: "→ I often relax to relax because it helps me reduce stress. I also relax because it’s simple and easy to do.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>relax</strong> to <strong>relax</strong> because it helps me <strong>reduce stress</strong>. I also <strong>relax</strong> because it’s simple and easy to do.</div>"
+                    a: "→ I often listen to music to relax because it helps me reduce stress. I also take a hot shower because it’s simple and easy to do.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>listen to music</strong> to <strong>relax</strong> because it helps me <strong>reduce stress</strong>. I also <strong>take a hot shower</strong> because it’s simple and easy to do.</div>"
                 },
                 {
                     q: "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>improve your English</span>?",
-                    a: "→ I often improve your English to improve your English because it helps me reduce stress. I also improve your English because it’s simple and easy to do.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>improve your English</strong> to <strong>improve your English</strong> because it helps me <strong>reduce stress</strong>. I also <strong>improve your English</strong> because it’s simple and easy to do.</div>"
+                    a: "→ I often watch English movies to improve my English because it helps me learn new words. I also talk to foreigners because it’s simple and easy to do.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>watch English movies</strong> to <strong>improve my English</strong> because it helps me <strong>learn new words</strong>. I also <strong>talk to foreigners</strong> because it’s simple and easy to do.</div>"
                 },
                 {
                     q: "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>stay healthy</span>?",
-                    a: "→ I often stay healthy to stay healthy because it helps me reduce stress. I also stay healthy because it’s simple and easy to do.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>stay healthy</strong> to <strong>stay healthy</strong> because it helps me <strong>reduce stress</strong>. I also <strong>stay healthy</strong> because it’s simple and easy to do.</div>"
+                    a: "→ I often eat a lot of vegetables to stay healthy because it helps me avoid getting sick. I also drink enough water because it’s simple and easy to do.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>eat a lot of vegetables</strong> to <strong>stay healthy</strong> because it helps me <strong>avoid getting sick</strong>. I also <strong>drink enough water</strong> because it’s simple and easy to do.</div>"
                 },
                 {
                     q: "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>save money</span>?",
-                    a: "→ I often save money to save money because it helps me reduce stress. I also save money because it’s simple and easy to do.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>save money</strong> to <strong>save money</strong> because it helps me <strong>reduce stress</strong>. I also <strong>save money</strong> because it’s simple and easy to do.</div>"
+                    a: "→ I often cook at home to save money because it helps me build good habits. I also buy things on sale because it’s simple and easy to do.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>cook at home</strong> to <strong>save money</strong> because it helps me <strong>build good habits</strong>. I also <strong>buy things on sale</strong> because it’s simple and easy to do.</div>"
                 }
             ],
                 exQ: "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>keep in shape</span>?",
@@ -1209,28 +1209,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 examples: [
                 {
                     q: "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you feel sad</span>?",
-                    a: "→ I often you feel sad when you feel sad because it helps me reduce stress and relax after a busy day. It also makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>you feel sad</strong> when <strong>you feel sad</strong> because it helps me <strong>reduce stress</strong> and <strong>relax after a busy day</strong>. It also makes me feel <strong>happy</strong>.</div>"
+                    a: "→ I often listen to music when I feel sad because it helps me improve my mood and forget about my worries. It also makes me feel better.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>listen to music</strong> when <strong>I feel sad</strong> because it helps me <strong>improve my mood</strong> and <strong>forget about my worries</strong>. It also makes me feel <strong>better</strong>.</div>"
                 },
                 {
                     q: "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you are stressed</span>?",
-                    a: "→ I often you are stressed when you are stressed because it helps me reduce stress and relax after a busy day. It also makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>you are stressed</strong> when <strong>you are stressed</strong> because it helps me <strong>reduce stress</strong> and <strong>relax after a busy day</strong>. It also makes me feel <strong>happy</strong>.</div>"
+                    a: "→ I often go for a walk when I am stressed because it helps me clear my mind and relax after a busy day. It also makes me feel comfortable.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>go for a walk</strong> when <strong>I am stressed</strong> because it helps me <strong>clear my mind</strong> and <strong>relax after a busy day</strong>. It also makes me feel <strong>comfortable</strong>.</div>"
                 },
                 {
                     q: "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you have free time</span>?",
-                    a: "→ I often you have free time when you have free time because it helps me reduce stress and relax after a busy day. It also makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>you have free time</strong> when <strong>you have free time</strong> because it helps me <strong>reduce stress</strong> and <strong>relax after a busy day</strong>. It also makes me feel <strong>happy</strong>.</div>"
+                    a: "→ I often read books when I have free time because it helps me widen my knowledge and discover new places. It also makes me feel relaxed.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>read books</strong> when <strong>I have free time</strong> because it helps me <strong>widen my knowledge</strong> and <strong>discover new places</strong>. It also makes me feel <strong>relaxed</strong>.</div>"
                 },
                 {
                     q: "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you are tired</span>?",
-                    a: "→ I often you are tired when you are tired because it helps me reduce stress and relax after a busy day. It also makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>you are tired</strong> when <strong>you are tired</strong> because it helps me <strong>reduce stress</strong> and <strong>relax after a busy day</strong>. It also makes me feel <strong>happy</strong>.</div>"
+                    a: "→ I often take a nap when I am tired because it helps me regain my energy and sleep better. It also makes me feel refreshed.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>take a nap</strong> when <strong>I am tired</strong> because it helps me <strong>regain my energy</strong> and <strong>sleep better</strong>. It also makes me feel <strong>refreshed</strong>.</div>"
                 },
                 {
                     q: "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you are happy</span>?",
-                    a: "→ I often you are happy when you are happy because it helps me reduce stress and relax after a busy day. It also makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>you are happy</strong> when <strong>you are happy</strong> because it helps me <strong>reduce stress</strong> and <strong>relax after a busy day</strong>. It also makes me feel <strong>happy</strong>.</div>"
+                    a: "→ I often sing a song when I am happy because it helps me have fun and enjoy my free time. It also makes me feel excited.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>sing a song</strong> when <strong>I am happy</strong> because it helps me <strong>have fun</strong> and <strong>enjoy my free time</strong>. It also makes me feel <strong>excited</strong>.</div>"
                 }
             ],
                 exQ: "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you feel sad</span>?",
@@ -1288,28 +1288,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 examples: [
                 {
                     q: "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>movies</span> do you like?",
-                    a: "→ I’m a big fan of movies because they are very great. They also allow me to reduce stress and relax after a busy day.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m a big fan of <strong>movies</strong> because they are very <strong>great</strong>. They also allow me to <strong>reduce stress</strong> and <strong>relax after a busy day</strong>.</div>"
+                    a: "→ I’m a big fan of action and comedy movies because they are very interesting. They also allow me to reduce stress and relax after a busy day.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m a big fan of <strong>action and comedy movies</strong> because they are very <strong>interesting</strong>. They also allow me to <strong>reduce stress</strong> and <strong>relax after a busy day</strong>.</div>"
                 },
                 {
                     q: "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>books</span> do you like?",
-                    a: "→ I’m a big fan of books because they are very great. They also allow me to reduce stress and relax after a busy day.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m a big fan of <strong>books</strong> because they are very <strong>great</strong>. They also allow me to <strong>reduce stress</strong> and <strong>relax after a busy day</strong>.</div>"
+                    a: "→ I’m a big fan of comic books and novels because they are very fascinating. They also allow me to widen my knowledge and develop my imagination.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m a big fan of <strong>comic books and novels</strong> because they are very <strong>fascinating</strong>. They also allow me to <strong>widen my knowledge</strong> and <strong>develop my imagination</strong>.</div>"
                 },
                 {
                     q: "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>music</span> do you like?",
-                    a: "→ I’m a big fan of music because they are very great. They also allow me to reduce stress and relax after a busy day.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m a big fan of <strong>music</strong> because they are very <strong>great</strong>. They also allow me to <strong>reduce stress</strong> and <strong>relax after a busy day</strong>.</div>"
+                    a: "→ I’m a big fan of pop and classical music because they are very relaxing. They also allow me to improve my mood and clear my mind.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m a big fan of <strong>pop and classical music</strong> because they are very <strong>relaxing</strong>. They also allow me to <strong>improve my mood</strong> and <strong>clear my mind</strong>.</div>"
                 },
                 {
                     q: "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>sports</span> do you like?",
-                    a: "→ I’m a big fan of sports because they are very great. They also allow me to reduce stress and relax after a busy day.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m a big fan of <strong>sports</strong> because they are very <strong>great</strong>. They also allow me to <strong>reduce stress</strong> and <strong>relax after a busy day</strong>.</div>"
+                    a: "→ I’m a big fan of football and swimming because they are very exciting. They also allow me to stay in good shape and improve my physical health.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m a big fan of <strong>football and swimming</strong> because they are very <strong>exciting</strong>. They also allow me to <strong>stay in good shape</strong> and <strong>improve my physical health</strong>.</div>"
                 },
                 {
                     q: "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>food</span> do you like?",
-                    a: "→ I’m a big fan of food because they are very great. They also allow me to reduce stress and relax after a busy day.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m a big fan of <strong>food</strong> because they are very <strong>great</strong>. They also allow me to <strong>reduce stress</strong> and <strong>relax after a busy day</strong>.</div>"
+                    a: "→ I’m a big fan of traditional food and seafood because they are very great. They also allow me to explore different cultures and maintain a healthy lifestyle.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m a big fan of <strong>traditional food and seafood</strong> because they are very <strong>great</strong>. They also allow me to <strong>explore different cultures</strong> and <strong>maintain a healthy lifestyle</strong>.</div>"
                 }
             ],
                 exQ: "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>movies</span> do you like?",
@@ -1403,28 +1403,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 examples: [
                 {
                     q: "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>food</span>?",
-                    a: "→ My favorite food is food because it’s great. It helps me reduce stress and makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → My favorite <strong>food</strong> is <strong>food</strong> because it’s <strong>great</strong>. It helps me <strong>reduce stress</strong> and makes me feel <strong>happy</strong>.</div>"
+                    a: "→ My favorite food is Pho because it’s great. It helps me explore different cultures and makes me feel great.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → My favorite <strong>food</strong> is <strong>Pho</strong> because it’s <strong>great</strong>. It helps me <strong>explore different cultures</strong> and makes me feel <strong>great</strong>.</div>"
                 },
                 {
                     q: "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>color</span>?",
-                    a: "→ My favorite color is color because it’s great. It helps me reduce stress and makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → My favorite <strong>color</strong> is <strong>color</strong> because it’s <strong>great</strong>. It helps me <strong>reduce stress</strong> and makes me feel <strong>happy</strong>.</div>"
+                    a: "→ My favorite color is blue because it’s beautiful. It helps me relax after a busy day and makes me feel beautiful.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → My favorite <strong>color</strong> is <strong>blue</strong> because it’s <strong>beautiful</strong>. It helps me <strong>relax after a busy day</strong> and makes me feel <strong>beautiful</strong>.</div>"
                 },
                 {
                     q: "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>animal</span>?",
-                    a: "→ My favorite animal is animal because it’s great. It helps me reduce stress and makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → My favorite <strong>animal</strong> is <strong>animal</strong> because it’s <strong>great</strong>. It helps me <strong>reduce stress</strong> and makes me feel <strong>happy</strong>.</div>"
+                    a: "→ My favorite animal is dogs because it’s great. It helps me have fun and makes me feel great.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → My favorite <strong>animal</strong> is <strong>dogs</strong> because it’s <strong>great</strong>. It helps me <strong>have fun</strong> and makes me feel <strong>great</strong>.</div>"
                 },
                 {
                     q: "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>subject</span>?",
-                    a: "→ My favorite subject is subject because it’s great. It helps me reduce stress and makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → My favorite <strong>subject</strong> is <strong>subject</strong> because it’s <strong>great</strong>. It helps me <strong>reduce stress</strong> and makes me feel <strong>happy</strong>.</div>"
+                    a: "→ My favorite subject is English because it’s interesting. It helps me prepare for the future and makes me feel interesting.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → My favorite <strong>subject</strong> is <strong>English</strong> because it’s <strong>interesting</strong>. It helps me <strong>prepare for the future</strong> and makes me feel <strong>interesting</strong>.</div>"
                 },
                 {
                     q: "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>season</span>?",
-                    a: "→ My favorite season is season because it’s great. It helps me reduce stress and makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → My favorite <strong>season</strong> is <strong>season</strong> because it’s <strong>great</strong>. It helps me <strong>reduce stress</strong> and makes me feel <strong>happy</strong>.</div>"
+                    a: "→ My favorite season is autumn because it’s wonderful. It helps me enjoy my free time and makes me feel wonderful.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → My favorite <strong>season</strong> is <strong>autumn</strong> because it’s <strong>wonderful</strong>. It helps me <strong>enjoy my free time</strong> and makes me feel <strong>wonderful</strong>.</div>"
                 }
             ],
                 exQ: "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>food</span>?",
@@ -1490,28 +1490,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 examples: [
                 {
                     q: "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>exercise</span>?",
-                    a: "→ One benefit of exercise is that it helps us reduce stress. It’s also a good way to relax after a busy day and clear my mind.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → One benefit of <strong>exercise</strong> is that it helps us <strong>reduce stress</strong>. It’s also a good way to <strong>relax after a busy day</strong> and <strong>clear my mind</strong>.</div><div><strong>- Cách 2:</strong> → There are many benefits of <strong>exercise</strong>. First, it helps us <strong>reduce stress</strong>. Second, it allows us to <strong>relax after a busy day</strong>.</div>"
+                    a: "→ One benefit of exercise is that it helps us reduce stress. It’s also a good way to stay in good shape and improve my physical health.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → One benefit of <strong>exercise</strong> is that it helps us <strong>reduce stress</strong>. It’s also a good way to <strong>stay in good shape</strong> and <strong>improve my physical health</strong>.</div><div><strong>- Cách 2:</strong> → There are many benefits of <strong>exercise</strong>. First, it helps us <strong>reduce stress</strong>. Second, it allows us to <strong>stay in good shape</strong>.</div>"
                 },
                 {
                     q: "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span>?",
-                    a: "→ One benefit of reading books is that it helps us reduce stress. It’s also a good way to relax after a busy day and clear my mind.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → One benefit of <strong>reading books</strong> is that it helps us <strong>reduce stress</strong>. It’s also a good way to <strong>relax after a busy day</strong> and <strong>clear my mind</strong>.</div><div><strong>- Cách 2:</strong> → There are many benefits of <strong>reading books</strong>. First, it helps us <strong>reduce stress</strong>. Second, it allows us to <strong>relax after a busy day</strong>.</div>"
+                    a: "→ One benefit of reading books is that it helps us widen my knowledge. It’s also a good way to develop my imagination and learn new words.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → One benefit of <strong>reading books</strong> is that it helps us <strong>widen my knowledge</strong>. It’s also a good way to <strong>develop my imagination</strong> and <strong>learn new words</strong>.</div><div><strong>- Cách 2:</strong> → There are many benefits of <strong>reading books</strong>. First, it helps us <strong>widen my knowledge</strong>. Second, it allows us to <strong>develop my imagination</strong>.</div>"
                 },
                 {
                     q: "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>learning English</span>?",
-                    a: "→ One benefit of learning English is that it helps us reduce stress. It’s also a good way to relax after a busy day and clear my mind.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → One benefit of <strong>learning English</strong> is that it helps us <strong>reduce stress</strong>. It’s also a good way to <strong>relax after a busy day</strong> and <strong>clear my mind</strong>.</div><div><strong>- Cách 2:</strong> → There are many benefits of <strong>learning English</strong>. First, it helps us <strong>reduce stress</strong>. Second, it allows us to <strong>relax after a busy day</strong>.</div>"
+                    a: "→ One benefit of learning english is that it helps us prepare for the future. It’s also a good way to learn to communicate and discover new places.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → One benefit of <strong>learning english</strong> is that it helps us <strong>prepare for the future</strong>. It’s also a good way to <strong>learn to communicate</strong> and <strong>discover new places</strong>.</div><div><strong>- Cách 2:</strong> → There are many benefits of <strong>learning english</strong>. First, it helps us <strong>prepare for the future</strong>. Second, it allows us to <strong>learn to communicate</strong>.</div>"
                 },
                 {
                     q: "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>playing sports</span>?",
-                    a: "→ One benefit of playing sports is that it helps us reduce stress. It’s also a good way to relax after a busy day and clear my mind.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → One benefit of <strong>playing sports</strong> is that it helps us <strong>reduce stress</strong>. It’s also a good way to <strong>relax after a busy day</strong> and <strong>clear my mind</strong>.</div><div><strong>- Cách 2:</strong> → There are many benefits of <strong>playing sports</strong>. First, it helps us <strong>reduce stress</strong>. Second, it allows us to <strong>relax after a busy day</strong>.</div>"
+                    a: "→ One benefit of playing sports is that it helps us stay healthy. It’s also a good way to build my confidence and learn to work with others.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → One benefit of <strong>playing sports</strong> is that it helps us <strong>stay healthy</strong>. It’s also a good way to <strong>build my confidence</strong> and <strong>learn to work with others</strong>.</div><div><strong>- Cách 2:</strong> → There are many benefits of <strong>playing sports</strong>. First, it helps us <strong>stay healthy</strong>. Second, it allows us to <strong>build my confidence</strong>.</div>"
                 },
                 {
                     q: "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveling</span>?",
-                    a: "→ One benefit of traveling is that it helps us reduce stress. It’s also a good way to relax after a busy day and clear my mind.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → One benefit of <strong>traveling</strong> is that it helps us <strong>reduce stress</strong>. It’s also a good way to <strong>relax after a busy day</strong> and <strong>clear my mind</strong>.</div><div><strong>- Cách 2:</strong> → There are many benefits of <strong>traveling</strong>. First, it helps us <strong>reduce stress</strong>. Second, it allows us to <strong>relax after a busy day</strong>.</div>"
+                    a: "→ One benefit of traveling is that it helps us explore different cultures. It’s also a good way to discover new places and escape from daily stress.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → One benefit of <strong>traveling</strong> is that it helps us <strong>explore different cultures</strong>. It’s also a good way to <strong>discover new places</strong> and <strong>escape from daily stress</strong>.</div><div><strong>- Cách 2:</strong> → There are many benefits of <strong>traveling</strong>. First, it helps us <strong>explore different cultures</strong>. Second, it allows us to <strong>discover new places</strong>.</div>"
                 }
             ],
                 exQ: "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>exercise</span>?",
