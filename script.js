@@ -884,7 +884,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         { en: 'comfortable', vn: 'thoải mái' },
                         { en: 'interesting', vn: 'thú vị' },
                         { en: 'relaxing', vn: 'thư giãn' },
-                        { en: 'useful', vn: 'hữu ích' }
+                        { en: 'useful', vn: 'hữu ích' },
+                {
+                    q: "Which is more important, <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>money</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>happiness</span>?",
+                    a: "→ I think happiness is more important because it’s more meaningful and helps me create a balanced lifestyle. It also makes me feel relaxed.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I think <strong>happiness</strong> is more important because it’s more <strong>meaningful</strong> and helps me <strong>create a balanced lifestyle</strong>. It also makes me feel <strong>relaxed</strong>.<br/><br/><span style='color: #ef4444; font-size: 0.95em;'><i class='fa-solid fa-circle-exclamation'></i> <strong>LƯU Ý:</strong> Câu này hơi khác cấu trúc gốc một chút để phù hợp ngữ pháp.</span></div>"
+                }
                     ]
                 },
                 {
@@ -916,28 +921,28 @@ document.addEventListener('DOMContentLoaded', () => {
             examples: [
                 {
                     q: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying in the library</span>?",
-                    a: "→ It’s hard to choose because both are important. studying at home helps me save time, while studying in the library allows me to focus better.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>studying at home</strong> helps me <strong>save time</strong>, while <strong>studying in the library</strong> allows me to <strong>focus better</strong>.</div>"
+                    a: "→ It’s hard to choose because both are important. Studying at home helps me save time, while studying in the library allows me to focus better.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>Studying at home</strong> helps me <strong>save time</strong>, while <strong>studying in the library</strong> allows me to <strong>focus better</strong>.</div>"
                 },
                 {
                     q: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching movies</span>?",
-                    a: "→ It’s hard to choose because both are important. reading books helps me widen my knowledge, while watching movies allows me to relax after a busy day.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>reading books</strong> helps me <strong>widen my knowledge</strong>, while <strong>watching movies</strong> allows me to <strong>relax after a busy day</strong>.</div>"
+                    a: "→ It’s hard to choose because both are important. Reading books helps me widen my knowledge, while watching movies allows me to relax after a busy day.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>Reading books</strong> helps me <strong>widen my knowledge</strong>, while <strong>watching movies</strong> allows me to <strong>relax after a busy day</strong>.</div>"
                 },
                 {
                     q: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating out</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>cooking at home</span>?",
-                    a: "→ It’s hard to choose because both are important. eating out helps me save time, while cooking at home allows me to stay healthy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>eating out</strong> helps me <strong>save time</strong>, while <strong>cooking at home</strong> allows me to <strong>stay healthy</strong>.</div>"
+                    a: "→ It’s hard to choose because both are important. Eating out helps me save time, while cooking at home allows me to stay healthy.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>Eating out</strong> helps me <strong>save time</strong>, while <strong>cooking at home</strong> allows me to <strong>stay healthy</strong>.</div>"
                 },
                 {
                     q: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveling alone</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>with friends</span>?",
-                    a: "→ It’s hard to choose because both are important. traveling alone helps me discover new places, while traveling with friends allows me to have fun.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>traveling alone</strong> helps me <strong>discover new places</strong>, while <strong>traveling with friends</strong> allows me to <strong>have fun</strong>.</div>"
+                    a: "→ It’s hard to choose because both are important. Traveling alone helps me discover new places, while traveling with friends allows me to have fun.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>Traveling alone</strong> helps me <strong>discover new places</strong>, while <strong>traveling with friends</strong> allows me to <strong>have fun</strong>.</div>"
                 },
                 {
                     q: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>living in the city</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>the countryside</span>?",
-                    a: "→ It’s hard to choose because both are important. living in the city helps me have new experiences, while living in the countryside allows me to escape from daily stress.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>living in the city</strong> helps me <strong>have new experiences</strong>, while <strong>living in the countryside</strong> allows me to <strong>escape from daily stress</strong>.</div>"
+                    a: "→ It’s hard to choose because both are important. Living in the city helps me have new experiences, while living in the countryside allows me to escape from daily stress.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>Living in the city</strong> helps me <strong>have new experiences</strong>, while <strong>living in the countryside</strong> allows me to <strong>escape from daily stress</strong>.</div>"
                 }
             ],
             exQ: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying in the library</span>?",
@@ -951,7 +956,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     items: [
                         { en: 'hard to choose', vn: 'khó để lựa chọn' },
                         { en: 'both are important', vn: 'cả hai đều quan trọng' },
-                        { en: 'allow me to', vn: 'cho phép tôi / giúp tôi' }
+                        { en: 'allow me to', vn: 'cho phép tôi / giúp tôi' },
+                {
+                    q: "Which is more important, <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>money</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>happiness</span>?",
+                    a: "→ It’s hard to choose because both are important. Money helps me prepare for the future, while happiness allows me to create a balanced lifestyle.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>Money</strong> helps me <strong>prepare for the future</strong>, while <strong>happiness</strong> allows me to <strong>create a balanced lifestyle</strong>.</div>"
+                }
                     ]
                 },
                 {
