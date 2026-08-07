@@ -273,11 +273,31 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "1. Do you often [hoạt động – Vo]?",
             formula: "→ Sure. I often <strong>[hoạt động – Vo]</strong> <strong>[thời gian]</strong> when I have free time because it helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.",
             examples: [
-                "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>read books</span>?",
-                "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watch movies</span>?",
-                "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>listen to music</span>?",
-                "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go shopping</span>?",
-                "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go for a walk</span>?"
+                {
+                    q: "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>read books</span>?",
+                    a: "→ Yes, I do. I often read books because it helps me relax.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I often <span class=\"sub-hl\">read books</span> because it helps me relax.</div>"
+                },
+                {
+                    q: "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watch movies</span>?",
+                    a: "→ Yes, I do. I often watch movies because it helps me relax.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I often <span class=\"sub-hl\">watch movies</span> because it helps me relax.</div>"
+                },
+                {
+                    q: "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>listen to music</span>?",
+                    a: "→ Yes, I do. I often listen to music because it helps me relax.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I often <span class=\"sub-hl\">listen to music</span> because it helps me relax.</div>"
+                },
+                {
+                    q: "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go shopping</span>?",
+                    a: "→ Yes, I do. I often go shopping because it helps me relax.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I often <span class=\"sub-hl\">go shopping</span> because it helps me relax.</div>"
+                },
+                {
+                    q: "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go for a walk</span>?",
+                    a: "→ Yes, I do. I often go for a walk because it helps me relax.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I often <span class=\"sub-hl\">go for a walk</span> because it helps me relax.</div>"
+                }
             ],
             exQ: "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>play sports</span>?",
             exA: "→ Sure. I often play sports in the afternoon when I have free time because it helps me relax after a busy day and stay healthy.",
@@ -311,11 +331,31 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "2. Do you often [hoạt động – Vo] while [hoạt động – Ving]?",
             formula: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I often <strong>[hoạt động – Vo]</strong> while <strong>[hoạt động – Ving]</strong> because it doesn't affect my concentration. Instead, it helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. I don’t often <strong>[hoạt động – Vo]</strong> while <strong>[hoạt động – Ving]</strong> because it’s hard for me to focus. I prefer to do one thing at a time <strong>[to focus better / do it better / do it more carefully]</strong>.</div>",
             examples: [
-                "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>listen to music</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>doing homework</span>?",
-                "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eat snacks</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching TV</span>?",
-                "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>talk</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating</span>?",
-                "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>sing</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>taking a shower</span>?",
-                "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>use your phone</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>walking</span>?"
+                {
+                    q: "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>listen to music</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>doing homework</span>?",
+                    a: "→ Yes, I do. I often listen to music while doing homework because it helps me relax.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I often <span class=\"sub-hl\">listen to music while doing homework</span> because it helps me relax.</div>"
+                },
+                {
+                    q: "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eat snacks</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching TV</span>?",
+                    a: "→ Yes, I do. I often eat snacks while watching TV because it is enjoyable.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I often <span class=\"sub-hl\">eat snacks while watching TV</span> because it is enjoyable.</div>"
+                },
+                {
+                    q: "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>talk</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating</span>?",
+                    a: "→ Yes, I do. I often talk while eating because it is a habit.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I often <span class=\"sub-hl\">talk while eating</span> because it is a habit.</div>"
+                },
+                {
+                    q: "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>sing</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>taking a shower</span>?",
+                    a: "→ Yes, I do. I often sing while taking a shower because it helps me relax.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I often <span class=\"sub-hl\">sing while taking a shower</span> because it helps me relax.</div>"
+                },
+                {
+                    q: "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>use your phone</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>walking</span>?",
+                    a: "→ Yes, I do. I often use my phone while walking because it is convenient.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I often <span class=\"sub-hl\">use my phone while walking</span> because it is convenient.</div>"
+                }
             ],
             exQ: "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>listen to music</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>doing homework</span>?",
             exA: "→ Not really. I don’t often listen to music while doing homework because it’s hard for me to focus. I prefer to do one thing at a time to do it better.",
@@ -346,11 +386,31 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "3. Do you like/love/enjoy [hoạt động – Ving]?",
             formula: "→ Yes, I do. I’m really into <strong>[hoạt động – Ving]</strong> because it’s very <strong>[tính từ mô tả hoạt động]</strong>. It helps me <strong>[lợi ích]</strong> and makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.",
             examples: [
-                "Do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span>?",
-                "Do you enjoy <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>playing sports</span>?",
-                "Do you love <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>listening to music</span>?",
-                "Do you enjoy <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>learning English</span>?",
-                "Do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>cooking</span>?"
+                {
+                    q: "Do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span>?",
+                    a: "→ Yes, I do. I really enjoy reading books because it is very interesting.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I really enjoy <span class=\"sub-hl\">reading books</span> because it is very interesting.</div>"
+                },
+                {
+                    q: "Do you enjoy <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>playing sports</span>?",
+                    a: "→ Yes, I do. I really enjoy playing sports because it is very interesting.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I really enjoy <span class=\"sub-hl\">playing sports</span> because it is very interesting.</div>"
+                },
+                {
+                    q: "Do you love <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>listening to music</span>?",
+                    a: "→ Yes, I do. I really enjoy listening to music because it is very interesting.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I really enjoy <span class=\"sub-hl\">listening to music</span> because it is very interesting.</div>"
+                },
+                {
+                    q: "Do you enjoy <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>learning English</span>?",
+                    a: "→ Yes, I do. I really enjoy learning English because it is very interesting.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I really enjoy <span class=\"sub-hl\">learning English</span> because it is very interesting.</div>"
+                },
+                {
+                    q: "Do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>cooking</span>?",
+                    a: "→ Yes, I do. I really enjoy cooking because it is very interesting.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I really enjoy <span class=\"sub-hl\">cooking</span> because it is very interesting.</div>"
+                }
             ],
             exQ: "Do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span>?",
             exA: "→ Yes, I do. I’m really into reading books because it’s very interesting. It helps me reduce stress and makes me feel relaxed.",
@@ -404,11 +464,31 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "4. Did you often [hoạt động – Vo] when you were a child?",
             formula: "→ Yes, I did. I used to <strong>[hoạt động – Vo]</strong> every day when I was a child because it was <strong>[tính từ mô tả hoạt động]</strong>. It was a good way for me to <strong>[lợi ích]</strong>.",
             examples: [
-                "Did you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watch cartoons</span> when you were a child?",
-                "Did you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>play outside</span> when you were a child?",
-                "Did you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eat candy</span> when you were a child?",
-                "Did you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>read comic books</span> when you were a child?",
-                "Did you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>play video games</span> when you were a child?"
+                {
+                    q: "Did you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watch cartoons</span> when you were a child?",
+                    a: "→ Yes, I did. I often watched cartoons when I was a child.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I did. I often <span class=\"sub-hl\">watched cartoons</span> when I was a child.</div>"
+                },
+                {
+                    q: "Did you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>play outside</span> when you were a child?",
+                    a: "→ Yes, I did. I often played outside when I was a child.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I did. I often <span class=\"sub-hl\">played outside</span> when I was a child.</div>"
+                },
+                {
+                    q: "Did you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eat candy</span> when you were a child?",
+                    a: "→ Yes, I did. I often ate candy when I was a child.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I did. I often <span class=\"sub-hl\">ate candy</span> when I was a child.</div>"
+                },
+                {
+                    q: "Did you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>read comic books</span> when you were a child?",
+                    a: "→ Yes, I did. I often read comic books when I was a child.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I did. I often <span class=\"sub-hl\">read comic books</span> when I was a child.</div>"
+                },
+                {
+                    q: "Did you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>play video games</span> when you were a child?",
+                    a: "→ Yes, I did. I often played video games when I was a child.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I did. I often <span class=\"sub-hl\">played video games</span> when I was a child.</div>"
+                }
             ],
             exQ: "Did you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watch cartoons</span> when you were a child?",
             exA: "→ Yes, I did. I used to watch cartoons every day when I was a child because it was very entertaining. It was a good way for me to enjoy my free time.",
@@ -449,11 +529,31 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "5. Are you good at [hoạt động – Ving]?",
             formula: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I am. I’m quite good at <strong>[hoạt động – Ving]</strong> because I practice it a lot. It helps me <strong>[lợi ích]</strong>.</div><div style='margin-bottom: 4px;'><strong>- Trả lời không:</strong></div><div style='margin-left: 15px; margin-bottom: 8px;'><strong>+ Cách 1:</strong> → No, I’m not. I’m not very good at <strong>[hoạt động – Ving]</strong> because I rarely do it. I prefer to spend time on other things.</div><div style='margin-left: 15px;'><strong>+ Cách 2:</strong> → Not really. I’m not very good at <strong>[hoạt động – Ving]</strong> because I don't practice it much. However, I would like to try it in the future because I think it's <strong>[tính từ mô tả hoạt động]</strong>.</div>",
             examples: [
-                "Are you good at <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>cooking</span>?",
-                "Are you good at <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>playing sports</span>?",
-                "Are you good at <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>learning languages</span>?",
-                "Are you good at <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>drawing</span>?",
-                "Are you good at <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>swimming</span>?"
+                {
+                    q: "Are you good at <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>cooking</span>?",
+                    a: "→ Yes, I am. I think I am quite good at cooking.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I am. I think I am quite good at <span class=\"sub-hl\">cooking</span>.</div>"
+                },
+                {
+                    q: "Are you good at <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>playing sports</span>?",
+                    a: "→ Yes, I am. I think I am quite good at playing sports.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I am. I think I am quite good at <span class=\"sub-hl\">playing sports</span>.</div>"
+                },
+                {
+                    q: "Are you good at <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>learning languages</span>?",
+                    a: "→ Yes, I am. I think I am quite good at learning languages.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I am. I think I am quite good at <span class=\"sub-hl\">learning languages</span>.</div>"
+                },
+                {
+                    q: "Are you good at <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>drawing</span>?",
+                    a: "→ Yes, I am. I think I am quite good at drawing.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I am. I think I am quite good at <span class=\"sub-hl\">drawing</span>.</div>"
+                },
+                {
+                    q: "Are you good at <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>swimming</span>?",
+                    a: "→ Yes, I am. I think I am quite good at swimming.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I am. I think I am quite good at <span class=\"sub-hl\">swimming</span>.</div>"
+                }
             ],
             exQ: "Are you good at <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>cooking</span>?",
             exA: "→ Yes, I am. I’m quite good at cooking because I practice it a lot. It helps me save money and stay healthy.",
@@ -497,11 +597,31 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "6. Are/Is [...] important to you?",
             formula: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, it is. <strong>[chủ đề]</strong> is very important to me because it helps me <strong>[lợi ích 1]</strong>. It’s also a good way to <strong>[lợi ích 2]</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. <strong>[chủ đề]</strong> is not very important to me because it doesn't affect my daily life much. I prefer to focus on other things.</div>",
             examples: [
-                "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating healthy</span> important to you?",
-                "Are <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>friends</span> important to you?",
-                "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>family</span> important to you?",
-                "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>money</span> important to you?",
-                "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>education</span> important to you?"
+                {
+                    q: "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating healthy</span> important to you?",
+                    a: "→ Yes, it is. Eating healthy is very important to me.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, it is. <span class=\"sub-hl\">Eating healthy</span> is very important to me.</div>"
+                },
+                {
+                    q: "Are <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>friends</span> important to you?",
+                    a: "→ Yes, they are. Friends are very important to me.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, they are. <span class=\"sub-hl\">Friends</span> are very important to me.</div>"
+                },
+                {
+                    q: "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>family</span> important to you?",
+                    a: "→ Yes, it is. Family is very important to me.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, it is. <span class=\"sub-hl\">Family</span> is very important to me.</div>"
+                },
+                {
+                    q: "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>money</span> important to you?",
+                    a: "→ Yes, it is. Money is very important to me.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, it is. <span class=\"sub-hl\">Money</span> is very important to me.</div>"
+                },
+                {
+                    q: "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>education</span> important to you?",
+                    a: "→ Yes, it is. Education is very important to me.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, it is. <span class=\"sub-hl\">Education</span> is very important to me.</div>"
+                }
             ],
             exQ: "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating healthy</span> important to you?",
             exA: "→ Yes, it is. Eating healthy is very important to me because it helps me improve my health. It is also a good way to have a better life.",
@@ -531,11 +651,31 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "7. Have you ever [hoạt động – V3/ed]?",
             formula: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Sure. I have <strong>[hoạt động – V3/ed]</strong> before, and it was a/an <strong>[tính từ]</strong> experience. It helped me <strong>[lợi ích]</strong>.</div><div><strong>- Trả lời không:</strong> → No, I have never <strong>[hoạt động – V3/ed]</strong> before because I don't have the chance. But I would like to try it in the future if possible.</div>",
             examples: [
-                "Have you ever <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveled abroad</span>?",
-                "Have you ever <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eaten traditional food</span>?",
-                "Have you ever <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>met a famous person</span>?",
-                "Have you ever <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>lost your wallet</span>?",
-                "Have you ever <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>won a competition</span>?"
+                {
+                    q: "Have you ever <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveled abroad</span>?",
+                    a: "→ Yes, I have. I have traveled abroad a few times.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I have. I have <span class=\"sub-hl\">traveled abroad</span> a few times.</div>"
+                },
+                {
+                    q: "Have you ever <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eaten traditional food</span>?",
+                    a: "→ Yes, I have. I have eaten traditional food a few times.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I have. I have <span class=\"sub-hl\">eaten traditional food</span> a few times.</div>"
+                },
+                {
+                    q: "Have you ever <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>met a famous person</span>?",
+                    a: "→ Yes, I have. I have met a famous person a few times.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I have. I have <span class=\"sub-hl\">met a famous person</span> a few times.</div>"
+                },
+                {
+                    q: "Have you ever <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>lost your wallet</span>?",
+                    a: "→ Yes, I have. I have lost my wallet a few times.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I have. I have <span class=\"sub-hl\">lost my wallet</span> a few times.</div>"
+                },
+                {
+                    q: "Have you ever <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>won a competition</span>?",
+                    a: "→ Yes, I have. I have won a competition a few times.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I have. I have <span class=\"sub-hl\">won a competition</span> a few times.</div>"
+                }
             ],
             exQ: "Have you ever <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveled abroad</span>?",
             exA: "→ Sure. I have traveled abroad before, and it was an exciting experience. It helped me learn new things.",
@@ -576,7 +716,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div class="accordion-content" onclick="event.stopPropagation()">
                     <ul style="margin: 0; padding-left: 1.5rem; color: var(--text-main); font-size: 1.05rem; line-height: 1.8;">
-                        ${item.examples.map(ex => `<li style="margin-bottom: 0.5rem;">${ex}</li>`).join('')}
+                        ${item.examples.map(ex => `<li style="margin-bottom: 0.5rem;">${ex.q}</li>`).join('')}
                     </ul>
                 </div>
             </div>
@@ -704,11 +844,31 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "✅ PHƯƠNG ÁN 1 – CHỌN 1 TRONG 2",
             form: "→ I prefer <strong>[lựa chọn – noun/Ving]</strong> because it’s more <strong>[tính từ mô tả lựa chọn]</strong> and helps me <strong>[lợi ích]</strong>. It also makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.<br/><br/><span style='color: #ef4444; font-size: 0.95em;'><i class='fa-solid fa-circle-exclamation'></i> <strong>LƯU Ý:</strong> Nếu không kịp nói câu mô tả cảm xúc thì tăng lợi ích.</span>",
             examples: [
-                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying in the library</span>?",
-                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching movies</span>?",
-                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating out</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>cooking at home</span>?",
-                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveling alone</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>with friends</span>?",
-                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>living in the city</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>the countryside</span>?"
+                {
+                    q: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying in the library</span>?",
+                    a: "→ I prefer studying at home.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I prefer <span class=\"sub-hl\">studying at home</span>.</div>"
+                },
+                {
+                    q: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching movies</span>?",
+                    a: "→ I prefer reading books.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I prefer <span class=\"sub-hl\">reading books</span>.</div>"
+                },
+                {
+                    q: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating out</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>cooking at home</span>?",
+                    a: "→ I prefer eating out.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I prefer <span class=\"sub-hl\">eating out</span>.</div>"
+                },
+                {
+                    q: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveling alone</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>with friends</span>?",
+                    a: "→ I prefer traveling alone.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I prefer <span class=\"sub-hl\">traveling alone</span>.</div>"
+                },
+                {
+                    q: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>living in the city</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>the countryside</span>?",
+                    a: "→ I prefer living in the city.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I prefer <span class=\"sub-hl\">living in the city</span>.</div>"
+                }
             ],
             exQ: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying in the library</span>?",
             exA: "→ I prefer studying at home because it’s more convenient and helps me save time. It also makes me feel comfortable.",
@@ -752,11 +912,31 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "✅ PHƯƠNG ÁN 2 – CÂN NHẮC CẢ 2 PHƯƠNG ÁN (Nâng cao)",
             form: "→ It’s hard to choose because both are important. <strong>[A]</strong> helps me <strong>[lợi ích A]</strong>, while <strong>[B]</strong> allows me to <strong>[lợi ích B]</strong>.",
             examples: [
-                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying in the library</span>?",
-                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching movies</span>?",
-                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating out</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>cooking at home</span>?",
-                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveling alone</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>with friends</span>?",
-                "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>living in the city</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>the countryside</span>?"
+                {
+                    q: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying in the library</span>?",
+                    a: "→ I prefer studying at home.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I prefer <span class=\"sub-hl\">studying at home</span>.</div>"
+                },
+                {
+                    q: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching movies</span>?",
+                    a: "→ I prefer reading books.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I prefer <span class=\"sub-hl\">reading books</span>.</div>"
+                },
+                {
+                    q: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating out</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>cooking at home</span>?",
+                    a: "→ I prefer eating out.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I prefer <span class=\"sub-hl\">eating out</span>.</div>"
+                },
+                {
+                    q: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveling alone</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>with friends</span>?",
+                    a: "→ I prefer traveling alone.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I prefer <span class=\"sub-hl\">traveling alone</span>.</div>"
+                },
+                {
+                    q: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>living in the city</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>the countryside</span>?",
+                    a: "→ I prefer living in the city.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I prefer <span class=\"sub-hl\">living in the city</span>.</div>"
+                }
             ],
             exQ: "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying in the library</span>?",
             exA: "→ It’s hard to choose because both are important. Studying at home helps me save time, while studying in the library allows me to focus better.",
@@ -849,12 +1029,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 title: "1. What do you often do [thời gian]?",
                 formula: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I usually <strong>[hoạt động 1 – Vo]</strong> <strong>[thời gian]</strong> because it helps me <strong>[lợi ích 1]</strong>. Sometimes, I also <strong>[hoạt động 2 – Vo]</strong> to <strong>[lợi ích 2]</strong>.</div><div><strong>- Cách 2:</strong> → I usually <strong>[hoạt động – Vo]</strong> <strong>[thời gian]</strong> because it helps me <strong>[lợi ích]</strong>. It also makes me feel <strong>[cảm xúc]</strong>.</div>",
                 examples: [
-                    "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in the evening</span>?",
-                    "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in the morning</span>?",
-                    "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>at weekends</span>?",
-                    "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in your free time</span>?",
-                    "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>on Sundays</span>?"
-                ],
+                {
+                    q: "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in the evening</span>?",
+                    a: "→ I often read books or listen to music in the evening.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">read books</span> or <span class=\"sub-hl\">listen to music</span> in the evening.</div>"
+                },
+                {
+                    q: "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in the morning</span>?",
+                    a: "→ I often read books or listen to music in the morning.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">read books</span> or <span class=\"sub-hl\">listen to music</span> in the morning.</div>"
+                },
+                {
+                    q: "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>at weekends</span>?",
+                    a: "→ I often read books or listen to music at weekends.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">read books</span> or <span class=\"sub-hl\">listen to music</span> at weekends.</div>"
+                },
+                {
+                    q: "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in your free time</span>?",
+                    a: "→ I often read books or listen to music in my free time.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">read books</span> or <span class=\"sub-hl\">listen to music</span> in my free time.</div>"
+                },
+                {
+                    q: "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>on Sundays</span>?",
+                    a: "→ I often read books or listen to music on Sundays.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">read books</span> or <span class=\"sub-hl\">listen to music</span> on Sundays.</div>"
+                }
+            ],
                 exQ: "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in the evening</span>?",
                 exA: "→ I usually watch movies in the evening because it helps me reduce stress. Sometimes, I also listen to music to clear my mind.",
                 exAFormatted: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I usually <span class=\"sub-hl\">watch movies</span> <span class=\"sub-hl\">in the evening</span> because it helps me <span class=\"sub-hl\">reduce stress</span>. Sometimes, I also <span class=\"sub-hl\">listen to music</span> to <span class=\"sub-hl\">clear my mind</span>.</div><div><strong>- Cách 2:</strong> → I usually <span class=\"sub-hl\">read books</span> <span class=\"sub-hl\">in the evening</span> because it helps me <span class=\"sub-hl\">relax after a long day</span>. It also makes me feel <span class=\"sub-hl\">happy</span>.</div>",
@@ -900,12 +1100,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 title: "2. What do you often do to [mục đích]?",
                 formula: "→ I often <strong>[hoạt động 1 – Vo]</strong> to <strong>[mục đích]</strong> because it helps me <strong>[lợi ích]</strong>. I also <strong>[hoạt động 2 – Vo]</strong> because it’s simple and easy to do.",
                 examples: [
-                    "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>keep in shape</span>?",
-                    "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>relax</span>?",
-                    "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>improve your English</span>?",
-                    "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>stay healthy</span>?",
-                    "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>save money</span>?"
-                ],
+                {
+                    q: "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>keep in shape</span>?",
+                    a: "→ I often exercise or listen to music to keep in shape.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">exercise</span> or <span class=\"sub-hl\">listen to music</span> to keep in shape.</div>"
+                },
+                {
+                    q: "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>relax</span>?",
+                    a: "→ I often exercise or listen to music to relax.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">exercise</span> or <span class=\"sub-hl\">listen to music</span> to relax.</div>"
+                },
+                {
+                    q: "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>improve your English</span>?",
+                    a: "→ I often exercise or listen to music to improve my English.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">exercise</span> or <span class=\"sub-hl\">listen to music</span> to improve my English.</div>"
+                },
+                {
+                    q: "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>stay healthy</span>?",
+                    a: "→ I often exercise or listen to music to stay healthy.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">exercise</span> or <span class=\"sub-hl\">listen to music</span> to stay healthy.</div>"
+                },
+                {
+                    q: "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>save money</span>?",
+                    a: "→ I often exercise or listen to music to save money.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">exercise</span> or <span class=\"sub-hl\">listen to music</span> to save money.</div>"
+                }
+            ],
                 exQ: "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>keep in shape</span>?",
                 exA: "→ I often exercise to keep in shape because it helps me burn calories. I also go for a walk because it is simple and easy to do.",
                 exAFormatted: "→ I often <span class=\"sub-hl\">exercise</span> to <span class=\"sub-hl\">keep in shape</span> because it helps me <span class=\"sub-hl\">burn calories</span>. I also <span class=\"sub-hl\">go for a walk</span> because it is simple and easy to do.",
@@ -954,12 +1174,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 formula: "→ I often <strong>[hoạt động – Vo]</strong> when <strong>[tình huống]</strong> because it helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>. It also makes me feel <strong>[tính từ cảm xúc]</strong>.",
                 note: "LƯU Ý: Nếu không kịp thời gian thì chỉ cần 1 lợi ích hoặc lược bỏ câu mô tả cảm xúc.",
                 examples: [
-                    "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you feel sad</span>?",
-                    "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you are stressed</span>?",
-                    "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you have free time</span>?",
-                    "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you are tired</span>?",
-                    "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you are happy</span>?"
-                ],
+                {
+                    q: "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you feel sad</span>?",
+                    a: "→ I often listen to music when you feel sad.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">listen to music</span> when you feel sad.</div>"
+                },
+                {
+                    q: "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you are stressed</span>?",
+                    a: "→ I often listen to music when you are stressed.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">listen to music</span> when you are stressed.</div>"
+                },
+                {
+                    q: "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you have free time</span>?",
+                    a: "→ I often listen to music when you have free time.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">listen to music</span> when you have free time.</div>"
+                },
+                {
+                    q: "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you are tired</span>?",
+                    a: "→ I often listen to music when you are tired.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">listen to music</span> when you are tired.</div>"
+                },
+                {
+                    q: "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you are happy</span>?",
+                    a: "→ I often listen to music when you are happy.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">listen to music</span> when you are happy.</div>"
+                }
+            ],
                 exQ: "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you feel sad</span>?",
                 exA: "→ I often listen to music when I feel sad because it helps me clear my mind and improve my mood. It also makes me feel relaxed.",
                 exAFormatted: "→ I often <span class=\"sub-hl\">listen to music</span> when <span class=\"sub-hl\">I feel sad</span> because it helps me <span class=\"sub-hl\">clear my mind</span> and <span class=\"sub-hl\">improve my mood</span>. It also makes me feel <span class=\"sub-hl\">relaxed</span>.",
@@ -1012,12 +1252,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 formula: "→ I’m a big fan of <strong>[1 hoặc 2 thể loại]</strong> because they are very <strong>[tính từ mô tả]</strong>. They also allow me to <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.",
                 note: "LƯU Ý: Nếu không kịp thời gian thì chỉ cần 1 lợi ích.",
                 examples: [
-                    "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>movies</span> do you like?",
-                    "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>books</span> do you like?",
-                    "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>music</span> do you like?",
-                    "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>sports</span> do you like?",
-                    "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>food</span> do you like?"
-                ],
+                {
+                    q: "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>movies</span> do you like?",
+                    a: "→ I like many kinds of movies, but my favorite is action.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I like many kinds of <span class=\"sub-hl\">movies</span>, but my favorite is action.</div>"
+                },
+                {
+                    q: "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>books</span> do you like?",
+                    a: "→ I like many kinds of books, but my favorite is action.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I like many kinds of <span class=\"sub-hl\">books</span>, but my favorite is action.</div>"
+                },
+                {
+                    q: "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>music</span> do you like?",
+                    a: "→ I like many kinds of music, but my favorite is action.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I like many kinds of <span class=\"sub-hl\">music</span>, but my favorite is action.</div>"
+                },
+                {
+                    q: "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>sports</span> do you like?",
+                    a: "→ I like many kinds of sports, but my favorite is action.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I like many kinds of <span class=\"sub-hl\">sports</span>, but my favorite is action.</div>"
+                },
+                {
+                    q: "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>food</span> do you like?",
+                    a: "→ I like many kinds of food, but my favorite is action.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I like many kinds of <span class=\"sub-hl\">food</span>, but my favorite is action.</div>"
+                }
+            ],
                 exQ: "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>movies</span> do you like?",
                 exA: "→ I’m a big fan of action and comedy movies because they are very interesting. They also allow me to relax and reduce stress.",
                 exAFormatted: "→ I’m a big fan of <span class=\"sub-hl\">action and comedy movies</span> because they are very <span class=\"sub-hl\">interesting</span>. They also allow me to <span class=\"sub-hl\">relax</span> and <span class=\"sub-hl\">reduce stress</span>.",
@@ -1107,12 +1367,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 title: "5. What is your favorite [danh từ]?",
                 formula: "→ My favorite <strong>[danh từ]</strong> is <strong>[thứ cụ thể]</strong> because it’s <strong>[tính từ mô tả phù hợp]</strong>. It helps me <strong>[lợi ích]</strong> and makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.",
                 examples: [
-                    "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>food</span>?",
-                    "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>color</span>?",
-                    "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>animal</span>?",
-                    "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>subject</span>?",
-                    "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>season</span>?"
-                ],
+                {
+                    q: "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>food</span>?",
+                    a: "→ My favorite food is something simple.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → My favorite <span class=\"sub-hl\">food</span> is something simple.</div>"
+                },
+                {
+                    q: "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>color</span>?",
+                    a: "→ My favorite color is something simple.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → My favorite <span class=\"sub-hl\">color</span> is something simple.</div>"
+                },
+                {
+                    q: "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>animal</span>?",
+                    a: "→ My favorite animal is something simple.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → My favorite <span class=\"sub-hl\">animal</span> is something simple.</div>"
+                },
+                {
+                    q: "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>subject</span>?",
+                    a: "→ My favorite subject is something simple.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → My favorite <span class=\"sub-hl\">subject</span> is something simple.</div>"
+                },
+                {
+                    q: "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>season</span>?",
+                    a: "→ My favorite season is something simple.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → My favorite <span class=\"sub-hl\">season</span> is something simple.</div>"
+                }
+            ],
                 exQ: "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>food</span>?",
                 exA: "→ My favorite food is fried chicken because it’s delicious. It helps me reduce stress and makes me feel happy whenever I eat it.",
                 exAFormatted: "→ My favorite food is <span class=\"sub-hl\">fried chicken</span> because it’s <span class=\"sub-hl\">delicious</span>. It helps me <span class=\"sub-hl\">reduce stress</span> and makes me feel <span class=\"sub-hl\">happy</span> whenever I eat it.",
@@ -1173,12 +1453,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 formula: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → One benefit of <strong>[noun/Ving]</strong> is that it helps us <strong>[lợi ích 1]</strong>. It’s also a good way to <strong>[lợi ích 2]</strong> and <strong>[lợi ích 3]</strong>.</div><div><strong>- Cách 2:</strong> → There are many benefits of <strong>[noun/Ving]</strong>. First, it helps us <strong>[lợi ích 1]</strong>. Second, it allows us to <strong>[lợi ích 2]</strong>.</div>",
                 note: "LƯU Ý: Nếu không kịp thời gian thì chỉ cần nói 2 lợi ích.",
                 examples: [
-                    "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>exercise</span>?",
-                    "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span>?",
-                    "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>learning English</span>?",
-                    "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>playing sports</span>?",
-                    "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveling</span>?"
-                ],
+                {
+                    q: "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>exercise</span>?",
+                    a: "→ There are many benefits of exercise, such as reducing stress.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → There are many benefits of <span class=\"sub-hl\">exercise</span>, such as reducing stress.</div>"
+                },
+                {
+                    q: "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span>?",
+                    a: "→ There are many benefits of reading books, such as reducing stress.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → There are many benefits of <span class=\"sub-hl\">reading books</span>, such as reducing stress.</div>"
+                },
+                {
+                    q: "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>learning English</span>?",
+                    a: "→ There are many benefits of learning English, such as reducing stress.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → There are many benefits of <span class=\"sub-hl\">learning English</span>, such as reducing stress.</div>"
+                },
+                {
+                    q: "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>playing sports</span>?",
+                    a: "→ There are many benefits of playing sports, such as reducing stress.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → There are many benefits of <span class=\"sub-hl\">playing sports</span>, such as reducing stress.</div>"
+                },
+                {
+                    q: "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveling</span>?",
+                    a: "→ There are many benefits of traveling, such as reducing stress.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → There are many benefits of <span class=\"sub-hl\">traveling</span>, such as reducing stress.</div>"
+                }
+            ],
                 exQ: "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>exercise</span>?",
                 exA: "One benefit of exercise is that it helps us stay healthy. It’s also a good way to improve our fitness and reduce stress.",
                 exAFormatted: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → One benefit of exercise is that it helps us <span class=\"sub-hl\">stay healthy</span>. It’s also a good way to <span class=\"sub-hl\">improve our fitness</span> and <span class=\"sub-hl\">reduce stress</span>.</div><div><strong>- Cách 2:</strong> → There are many benefits of exercise. First, it helps us <span class=\"sub-hl\">stay healthy</span>. Second, it allows us to <span class=\"sub-hl\">improve our fitness</span>.</div>",
@@ -1198,12 +1498,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 title: "1. Who’s your favorite [noun – danh từ chỉ người]?",
                 formula: "→ My favorite <strong>[noun – danh từ chỉ người]</strong> is <strong>[tên]</strong>. I like him/her because <strong>[lý do chính]</strong>. Moreover, he/she is very <strong>[tính từ mô tả tính cách]</strong>.",
                 examples: [
-                    "Who’s your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>singer</span>?",
-                    "Who’s your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>actor</span>?",
-                    "Who’s your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>teacher</span>?",
-                    "Who’s your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>author</span>?",
-                    "Who’s your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>athlete</span>?"
-                ],
+                {
+                    q: "Who’s your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>singer</span>?",
+                    a: "→ My favorite singer is a well-known person.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → My favorite <span class=\"sub-hl\">singer</span> is a well-known person.</div>"
+                },
+                {
+                    q: "Who’s your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>actor</span>?",
+                    a: "→ My favorite actor is a well-known person.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → My favorite <span class=\"sub-hl\">actor</span> is a well-known person.</div>"
+                },
+                {
+                    q: "Who’s your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>teacher</span>?",
+                    a: "→ My favorite teacher is a well-known person.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → My favorite <span class=\"sub-hl\">teacher</span> is a well-known person.</div>"
+                },
+                {
+                    q: "Who’s your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>author</span>?",
+                    a: "→ My favorite author is a well-known person.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → My favorite <span class=\"sub-hl\">author</span> is a well-known person.</div>"
+                },
+                {
+                    q: "Who’s your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>athlete</span>?",
+                    a: "→ My favorite athlete is a well-known person.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → My favorite <span class=\"sub-hl\">athlete</span> is a well-known person.</div>"
+                }
+            ],
                 exQ: "Who’s your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>singer</span>?",
                 exA: "→ My favorite singer is Justin Bieber. I like him because he has a beautiful voice. Moreover, he is very talented.",
                 exAFormatted: "→ My favorite singer is <span class=\"sub-hl\">Justin Bieber</span>. I like him because <span class=\"sub-hl\">he has a beautiful voice</span>. Moreover, he is very <span class=\"sub-hl\">talented</span>.",
@@ -1236,12 +1556,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 title: "2. Who do you often [hoạt động – Vo] with?",
                 formula: "→ I often <strong>[hoạt động – Vo]</strong> with my <strong>[đối tượng phù hợp]</strong> because <strong>[lý do]</strong>. It's more <strong>[tính từ phù hợp]</strong> when we spend time together.",
                 examples: [
-                    "Who do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go shopping</span> with?",
-                    "Who do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>study</span> with?",
-                    "Who do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>travel</span> with?",
-                    "Who do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watch movies</span> with?",
-                    "Who do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>play sports</span> with?"
-                ],
+                {
+                    q: "Who do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go shopping</span> with?",
+                    a: "→ I often go shopping with my friends.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">go shopping</span> with my friends.</div>"
+                },
+                {
+                    q: "Who do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>study</span> with?",
+                    a: "→ I often study with my friends.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">study</span> with my friends.</div>"
+                },
+                {
+                    q: "Who do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>travel</span> with?",
+                    a: "→ I often travel with my friends.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">travel</span> with my friends.</div>"
+                },
+                {
+                    q: "Who do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watch movies</span> with?",
+                    a: "→ I often watch movies with my friends.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">watch movies</span> with my friends.</div>"
+                },
+                {
+                    q: "Who do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>play sports</span> with?",
+                    a: "→ I often play sports with my friends.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">play sports</span> with my friends.</div>"
+                }
+            ],
                 exQ: "Who do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go shopping</span> with?",
                 exA: "→ I often go shopping with my mother because we have the same hobbies. It’s more fun when we spend time together.",
                 exAFormatted: "→ I often go shopping with <span class=\"sub-hl\">my mother</span> because <span class=\"sub-hl\">we have the same hobbies</span>. It’s more <span class=\"sub-hl\">fun</span> when we spend time together.",
@@ -1283,12 +1623,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 title: "1. When do you often [hoạt động – Vo]?",
                 formula: "→ I usually <strong>[hoạt động – Vo]</strong> <strong>[thời gian]</strong> because that’s when I have free time. It helps me <strong>[lợi ích]</strong> and makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.",
                 examples: [
-                    "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>listen to music</span>?",
-                    "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>read books</span>?",
-                    "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go shopping</span>?",
-                    "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>play sports</span>?",
-                    "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watch movies</span>?"
-                ],
+                {
+                    q: "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>listen to music</span>?",
+                    a: "→ I often listen to music in my free time.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">listen to music</span> in my free time.</div>"
+                },
+                {
+                    q: "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>read books</span>?",
+                    a: "→ I often read books in my free time.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">read books</span> in my free time.</div>"
+                },
+                {
+                    q: "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go shopping</span>?",
+                    a: "→ I often go shopping in my free time.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">go shopping</span> in my free time.</div>"
+                },
+                {
+                    q: "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>play sports</span>?",
+                    a: "→ I often play sports in my free time.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">play sports</span> in my free time.</div>"
+                },
+                {
+                    q: "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watch movies</span>?",
+                    a: "→ I often watch movies in my free time.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">watch movies</span> in my free time.</div>"
+                }
+            ],
                 exQ: "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>listen to music</span>?",
                 exA: "→ I often listen to music in the evening because that’s when I have free time. It helps me reduce stress and makes me feel relaxed.",
                 exAFormatted: "→ I often listen to music <span class=\"sub-hl\">in the evening</span> because that’s when I have free time. It helps me <span class=\"sub-hl\">reduce stress</span> and makes me feel <span class=\"sub-hl\">relaxed</span>.",
@@ -1336,12 +1696,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 title: "1. Where do you often [hoạt động – Vo]?",
                 formula: "→ I usually <strong>[hoạt động – Vo]</strong> <strong>[cụm địa điểm]</strong> because it’s very <strong>[tính từ mô tả địa điểm]</strong>. It helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.",
                 examples: [
-                    "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>read books</span>?",
-                    "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>study</span>?",
-                    "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>hang out with friends</span>?",
-                    "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>buy clothes</span>?",
-                    "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go for a walk</span>?"
-                ],
+                {
+                    q: "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>read books</span>?",
+                    a: "→ I often read books at home or in a cafe.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">read books</span> at home or in a cafe.</div>"
+                },
+                {
+                    q: "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>study</span>?",
+                    a: "→ I often study at home or in a cafe.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">study</span> at home or in a cafe.</div>"
+                },
+                {
+                    q: "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>hang out with friends</span>?",
+                    a: "→ I often hang out with friends at home or in a cafe.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">hang out with friends</span> at home or in a cafe.</div>"
+                },
+                {
+                    q: "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>buy clothes</span>?",
+                    a: "→ I often buy clothes at home or in a cafe.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">buy clothes</span> at home or in a cafe.</div>"
+                },
+                {
+                    q: "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go for a walk</span>?",
+                    a: "→ I often go for a walk at home or in a cafe.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <span class=\"sub-hl\">go for a walk</span> at home or in a cafe.</div>"
+                }
+            ],
                 exQ: "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>read books</span>?",
                 exA: "→ I often read books in the school library because it’s very quiet. It helps me focus better and stay motivated.",
                 exAFormatted: "→ I often read books <span class=\"sub-hl\">in the school library</span> because it’s very <span class=\"sub-hl\">quiet</span>. It helps me <span class=\"sub-hl\">focus better</span> and <span class=\"sub-hl\">stay motivated</span>.",
@@ -1391,12 +1771,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 formula: "→ I enjoy <strong>[hoạt động – Ving]</strong> because it’s very <strong>[tính từ mô tả hoạt động]</strong>. It helps me <strong>[lợi ích 1]</strong> makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.",
                 note: "LƯU Ý: Nếu không muốn mô tả cảm xúc thì có thể thay bằng 1 lợi ích khác.",
                 examples: [
-                    "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>swimming</span>?",
-                    "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span>?",
-                    "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>learning English</span>?",
-                    "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching movies</span>?",
-                    "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveling</span>?"
-                ],
+                {
+                    q: "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>swimming</span>?",
+                    a: "→ I like swimming because it is relaxing.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I like <span class=\"sub-hl\">swimming</span> because it is relaxing.</div>"
+                },
+                {
+                    q: "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span>?",
+                    a: "→ I like reading books because it is relaxing.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I like <span class=\"sub-hl\">reading books</span> because it is relaxing.</div>"
+                },
+                {
+                    q: "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>learning English</span>?",
+                    a: "→ I like learning English because it is relaxing.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I like <span class=\"sub-hl\">learning English</span> because it is relaxing.</div>"
+                },
+                {
+                    q: "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching movies</span>?",
+                    a: "→ I like watching movies because it is relaxing.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I like <span class=\"sub-hl\">watching movies</span> because it is relaxing.</div>"
+                },
+                {
+                    q: "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveling</span>?",
+                    a: "→ I like traveling because it is relaxing.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I like <span class=\"sub-hl\">traveling</span> because it is relaxing.</div>"
+                }
+            ],
                 exQ: "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>swimming</span>?",
                 exA: "→ I enjoy swimming because it’s very interesting. It helps me stay healthy and makes me feel relaxed.",
                 exAFormatted: "→ I enjoy swimming because it’s very <span class=\"sub-hl\">interesting</span>. It helps me <span class=\"sub-hl\">stay healthy</span> and makes me feel <span class=\"sub-hl\">relaxed</span>.",
@@ -1444,12 +1844,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 title: "1. How do you [go/get/commute/travel] to [địa điểm]?",
                 formula: "→ I usually <strong>[go/get/commute/travel]</strong> there by <strong>[phương tiện]</strong> because it’s very <strong>[tính từ mô tả phương tiện]</strong>. It also helps me <strong>[lợi ích]</strong>.",
                 examples: [
-                    "How do you go to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>school</span> every day?",
-                    "How do you travel to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>work</span>?",
-                    "How do you get to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>the supermarket</span>?",
-                    "How do you commute to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>the city center</span>?",
-                    "How do you travel to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>your hometown</span>?"
-                ],
+                {
+                    q: "How do you go to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>school</span> every day?",
+                    a: "→ I usually travel by motorbike.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually travel by <span class=\"sub-hl\">motorbike</span>.</div>"
+                },
+                {
+                    q: "How do you travel to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>work</span>?",
+                    a: "→ I usually travel by motorbike.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually travel by <span class=\"sub-hl\">motorbike</span>.</div>"
+                },
+                {
+                    q: "How do you get to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>the supermarket</span>?",
+                    a: "→ I usually travel by motorbike.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually travel by <span class=\"sub-hl\">motorbike</span>.</div>"
+                },
+                {
+                    q: "How do you commute to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>the city center</span>?",
+                    a: "→ I usually travel by motorbike.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually travel by <span class=\"sub-hl\">motorbike</span>.</div>"
+                },
+                {
+                    q: "How do you travel to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>your hometown</span>?",
+                    a: "→ I usually travel by motorbike.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually travel by <span class=\"sub-hl\">motorbike</span>.</div>"
+                }
+            ],
                 exQ: "How do you go to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>school</span> every day?",
                 exA: "→ I usually go to school by motorbike because it’s very fast and convenient. It also helps me save time.",
                 exAFormatted: "→ I usually go to school by <span class=\"sub-hl\">motorbike</span> because it’s very <span class=\"sub-hl\">fast and convenient</span>. It also helps me <span class=\"sub-hl\">save time</span>.",
@@ -1493,12 +1913,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 title: "2. How often do you [hoạt động – Vo]?",
                 formula: "→ Although I'm busy, I try to <strong>[hoạt động – Vo]</strong> <strong>[tần suất]</strong> because it helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.",
                 examples: [
-                    "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go to the library</span>?",
-                    "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>play sports</span>?",
-                    "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watch movies</span>?",
-                    "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eat out</span>?",
-                    "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>travel</span>?"
-                ],
+                {
+                    q: "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go to the library</span>?",
+                    a: "→ I go to the library every day.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I <span class=\"sub-hl\">go to the library</span> every day.</div>"
+                },
+                {
+                    q: "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>play sports</span>?",
+                    a: "→ I play sports every day.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I <span class=\"sub-hl\">play sports</span> every day.</div>"
+                },
+                {
+                    q: "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watch movies</span>?",
+                    a: "→ I watch movies every day.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I <span class=\"sub-hl\">watch movies</span> every day.</div>"
+                },
+                {
+                    q: "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eat out</span>?",
+                    a: "→ I eat out every day.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I <span class=\"sub-hl\">eat out</span> every day.</div>"
+                },
+                {
+                    q: "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>travel</span>?",
+                    a: "→ I travel every day.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I <span class=\"sub-hl\">travel</span> every day.</div>"
+                }
+            ],
                 exQ: "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go to the library</span> every week?",
                 exA: "→ Although I’m busy, I still try to go to the library twice a week because it helps me focus better and study more effectively.",
                 exAFormatted: "→ Although I’m busy, I still try to go to the library <span class=\"sub-hl\">twice a week</span> because it helps me <span class=\"sub-hl\">focus better</span> and <span class=\"sub-hl\">study more effectively</span>.",
@@ -1535,12 +1975,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 title: "3. How much time do you spend [hoạt động – Ving]?",
                 formula: "→ Although I have a busy schedule, I still spend about <strong>[lượng thời gian]</strong> <strong>[hoạt động – Ving]</strong> every day because it helps me <strong>[lợi ích]</strong>. It also makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.",
                 examples: [
-                    "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying English</span>?",
-                    "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>using your phone</span>?",
-                    "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching TV</span>?",
-                    "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>playing games</span>?",
-                    "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span>?"
-                ],
+                {
+                    q: "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying English</span>?",
+                    a: "→ I spend about 1 hour studying English.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I spend about 1 hour <span class=\"sub-hl\">studying English</span>.</div>"
+                },
+                {
+                    q: "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>using your phone</span>?",
+                    a: "→ I spend about 1 hour using your phone.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I spend about 1 hour <span class=\"sub-hl\">using your phone</span>.</div>"
+                },
+                {
+                    q: "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching TV</span>?",
+                    a: "→ I spend about 1 hour watching TV.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I spend about 1 hour <span class=\"sub-hl\">watching TV</span>.</div>"
+                },
+                {
+                    q: "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>playing games</span>?",
+                    a: "→ I spend about 1 hour playing games.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I spend about 1 hour <span class=\"sub-hl\">playing games</span>.</div>"
+                },
+                {
+                    q: "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span>?",
+                    a: "→ I spend about 1 hour reading books.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I spend about 1 hour <span class=\"sub-hl\">reading books</span>.</div>"
+                }
+            ],
                 exQ: "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying English</span>?",
                 exA: "→ Although I have a busy schedule, I still spend about two hours studying English every day because it helps me improve my vocabulary. It also makes me feel confident.",
                 exAFormatted: "→ Although I have a busy schedule, I still spend about <span class=\"sub-hl\">two hours</span> studying English every day because it helps me <span class=\"sub-hl\">improve my vocabulary</span>. It also makes me feel <span class=\"sub-hl\">confident</span>.",
@@ -1588,12 +2048,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 title: "4. How much money do you spend on [thứ gì đó – noun] every month?",
                 formula: "→ I’m still a student, so I need to save money. I only spend about <strong>[số tiền]</strong> on <strong>[thứ gì đó]</strong> every month because I think it’s reasonable for me.",
                 examples: [
-                    "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>clothes</span> every month?",
-                    "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>food</span> every month?",
-                    "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>entertainment</span> every month?",
-                    "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>books</span> every month?",
-                    "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>transportation</span> every month?"
-                ],
+                {
+                    q: "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>clothes</span> every month?",
+                    a: "→ I spend about 500,000 VND on clothes every month.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I spend about 500,000 VND on <span class=\"sub-hl\">clothes</span> every month.</div>"
+                },
+                {
+                    q: "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>food</span> every month?",
+                    a: "→ I spend about 500,000 VND on food every month.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I spend about 500,000 VND on <span class=\"sub-hl\">food</span> every month.</div>"
+                },
+                {
+                    q: "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>entertainment</span> every month?",
+                    a: "→ I spend about 500,000 VND on entertainment every month.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I spend about 500,000 VND on <span class=\"sub-hl\">entertainment</span> every month.</div>"
+                },
+                {
+                    q: "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>books</span> every month?",
+                    a: "→ I spend about 500,000 VND on books every month.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I spend about 500,000 VND on <span class=\"sub-hl\">books</span> every month.</div>"
+                },
+                {
+                    q: "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>transportation</span> every month?",
+                    a: "→ I spend about 500,000 VND on transportation every month.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I spend about 500,000 VND on <span class=\"sub-hl\">transportation</span> every month.</div>"
+                }
+            ],
                 exQ: "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>clothes</span> every month?",
                 exA: "→ I’m still a student, so I need to save money. I only spend about 20 dollars on clothes every month because I think it’s reasonable for me.",
                 exAFormatted: "→ I’m still a student, so I need to save money. I only spend about <span class=\"sub-hl\">20 dollars</span> on <span class=\"sub-hl\">clothes</span> every month because I think it’s reasonable for me.",
@@ -1785,10 +2265,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 item.examples.forEach(ex => {
                     flattenedPool.push({ 
                         ...item, 
-                        exQ: ex, 
+                        exQ: ex.q, 
                         originalQ: item.exQ || item.title,
-                        exAFormatted: item.exAFormatted, 
-                        exA: item.exA 
+                        exAFormatted: ex.f, 
+                        exA: ex.a 
                     });
                 });
             } else {
@@ -1823,7 +2303,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <strong style="color: #64748b; font-size: 0.95em;">📝 Tham khảo câu mẫu${final.originalQ && final.originalQ !== final.exQ ? ` (cho câu: <i>${final.originalQ.replace(/<[^>]*>/g, '')}</i>)` : ''}:</strong><br/> 
+                                    <strong style="color: #64748b; font-size: 0.95em;">📝 Tham khảo câu mẫu:</strong><br/> 
                                     <div style="color: #64748b; font-size: 0.95em; margin-top: 0.25rem; font-style: italic;">
                                         ${final.exAFormatted || `"${final.exA || ''}"`}
                                     </div>
