@@ -2282,3 +2282,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
+
+window.switchSubTab = function(tabId) {
+    document.querySelectorAll('.subtab-pane').forEach(el => el.style.display = 'none');
+    const target = document.getElementById('subtab-' + tabId);
+    if (target) target.style.display = 'block';
+    
+    if (window.event && window.event.currentTarget) {
+        document.querySelectorAll('.sub-tab-btn').forEach(btn => btn.classList.remove('active'));
+        window.event.currentTarget.classList.add('active');
+    }
+};
