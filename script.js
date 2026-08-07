@@ -884,12 +884,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         { en: 'comfortable', vn: 'thoải mái' },
                         { en: 'interesting', vn: 'thú vị' },
                         { en: 'relaxing', vn: 'thư giãn' },
-                        { en: 'useful', vn: 'hữu ích' },
-                {
-                    q: "Which is more important, <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>money</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>happiness</span>?",
-                    a: "→ I think happiness is more important because it’s more meaningful and helps me create a balanced lifestyle. It also makes me feel relaxed.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I think <strong>happiness</strong> is more important because it’s more <strong>meaningful</strong> and helps me <strong>create a balanced lifestyle</strong>. It also makes me feel <strong>relaxed</strong>.<br/><br/><span style='color: #ef4444; font-size: 0.95em;'><i class='fa-solid fa-circle-exclamation'></i> <strong>LƯU Ý:</strong> Câu này hơi khác cấu trúc gốc một chút để phù hợp ngữ pháp.</span></div>"
-                }
+                        { en: 'useful', vn: 'hữu ích' }
                     ]
                 },
                 {
@@ -961,6 +956,31 @@ document.addEventListener('DOMContentLoaded', () => {
                     q: "Which is more important, <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>money</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>happiness</span>?",
                     a: "→ It’s hard to choose because both are important. Money helps me prepare for the future, while happiness allows me to create a balanced lifestyle.",
                     f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>Money</strong> helps me <strong>prepare for the future</strong>, while <strong>happiness</strong> allows me to <strong>create a balanced lifestyle</strong>.</div>"
+                },
+                {
+                    q: "Which is more important, <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>family</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>money</span>?",
+                    a: "→ It’s hard to choose because both are important. Family helps me escape from daily stress, while money allows me to prepare for the future.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>Family</strong> helps me <strong>escape from daily stress</strong>, while <strong>money</strong> allows me to <strong>prepare for the future</strong>.</div>"
+                },
+                {
+                    q: "Which is more important, <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>career</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>family</span>?",
+                    a: "→ It’s hard to choose because both are important. Career helps me develop useful skills, while family allows me to escape from daily stress.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>Career</strong> helps me <strong>develop useful skills</strong>, while <strong>family</strong> allows me to <strong>escape from daily stress</strong>.</div>"
+                },
+                {
+                    q: "Which is more important, <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>health</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>wealth</span>?",
+                    a: "→ It’s hard to choose because both are important. Health helps me stay healthy, while wealth allows me to prepare for the future.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>Health</strong> helps me <strong>stay healthy</strong>, while <strong>wealth</strong> allows me to <strong>prepare for the future</strong>.</div>"
+                },
+                {
+                    q: "Which is more important, <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>time</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>money</span>?",
+                    a: "→ It’s hard to choose because both are important. Time helps me enjoy my free time, while money allows me to prepare for the future.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>Time</strong> helps me <strong>enjoy my free time</strong>, while <strong>money</strong> allows me to <strong>prepare for the future</strong>.</div>"
+                },
+                {
+                    q: "Which is more important, <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>knowledge</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>experience</span>?",
+                    a: "→ It’s hard to choose because both are important. Knowledge helps me widen my knowledge, while experience allows me to learn to solve problems.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>Knowledge</strong> helps me <strong>widen my knowledge</strong>, while <strong>experience</strong> allows me to <strong>learn to solve problems</strong>.</div>"
                 }
                     ]
                 },
