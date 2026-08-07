@@ -600,28 +600,28 @@ document.addEventListener('DOMContentLoaded', () => {
             examples: [
                 {
                     q: "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating healthy</span> important to you?",
-                    a: "→ Yes, it is. eating healthy is very important to me because it helps me stay healthy. It’s also a good way to avoid getting sick.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, it is. <strong>eating healthy</strong> is very important to me because it helps me <strong>stay healthy</strong>. It’s also a good way to <strong>avoid getting sick</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. <strong>eating healthy</strong> is not very important to me because it doesn't affect my daily life much. I prefer to focus on other things.</div>"
+                    a: "→ Yes, it is. Eating healthy is very important to me because it helps me stay healthy. It’s also a good way to avoid getting sick.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, it is. <strong>Eating healthy</strong> is very important to me because it helps me <strong>stay healthy</strong>. It’s also a good way to <strong>avoid getting sick</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. <strong>Eating healthy</strong> is not very important to me because it doesn't affect my daily life much. I prefer to focus on other things.</div>"
                 },
                 {
                     q: "Are <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>friends</span> important to you?",
-                    a: "→ Yes, it is. friends is very important to me because it helps me make new friends. It’s also a good way to learn to work with others.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, it is. <strong>friends</strong> is very important to me because it helps me <strong>make new friends</strong>. It’s also a good way to <strong>learn to work with others</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. <strong>friends</strong> is not very important to me because it doesn't affect my daily life much. I prefer to focus on other things.</div>"
+                    a: "→ Yes, they are. Friends are very important to me because they help me have fun. It’s also a good way to learn to work with others.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, they are. <strong>Friends</strong> are very important to me because they help me <strong>have fun</strong>. It’s also a good way to <strong>learn to work with others</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. <strong>Friends</strong> are not very important to me because they don't affect my daily life much. I prefer to focus on other things.</div>"
                 },
                 {
                     q: "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>family</span> important to you?",
-                    a: "→ Yes, it is. family is very important to me because it helps me build my confidence. It’s also a good way to escape from daily stress.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, it is. <strong>family</strong> is very important to me because it helps me <strong>build my confidence</strong>. It’s also a good way to <strong>escape from daily stress</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. <strong>family</strong> is not very important to me because it doesn't affect my daily life much. I prefer to focus on other things.</div>"
+                    a: "→ Yes, it is. Family is very important to me because it helps me build my confidence. It’s also a good way to escape from daily stress.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, it is. <strong>Family</strong> is very important to me because it helps me <strong>build my confidence</strong>. It’s also a good way to <strong>escape from daily stress</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. <strong>Family</strong> is not very important to me because it doesn't affect my daily life much. I prefer to focus on other things.</div>"
                 },
                 {
                     q: "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>money</span> important to you?",
-                    a: "→ Yes, it is. money is very important to me because it helps me prepare for the future. It’s also a good way to build good habits.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, it is. <strong>money</strong> is very important to me because it helps me <strong>prepare for the future</strong>. It’s also a good way to <strong>build good habits</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. <strong>money</strong> is not very important to me because it doesn't affect my daily life much. I prefer to focus on other things.</div>"
+                    a: "→ Yes, it is. Money is very important to me because it helps me prepare for the future. It’s also a good way to build good habits.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, it is. <strong>Money</strong> is very important to me because it helps me <strong>prepare for the future</strong>. It’s also a good way to <strong>build good habits</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. <strong>Money</strong> is not very important to me because it doesn't affect my daily life much. I prefer to focus on other things.</div>"
                 },
                 {
                     q: "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>education</span> important to you?",
-                    a: "→ Yes, it is. education is very important to me because it helps me widen my knowledge. It’s also a good way to develop useful skills.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, it is. <strong>education</strong> is very important to me because it helps me <strong>widen my knowledge</strong>. It’s also a good way to <strong>develop useful skills</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. <strong>education</strong> is not very important to me because it doesn't affect my daily life much. I prefer to focus on other things.</div>"
+                    a: "→ Yes, it is. Education is very important to me because it helps me widen my knowledge. It’s also a good way to develop useful skills.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, it is. <strong>Education</strong> is very important to me because it helps me <strong>widen my knowledge</strong>. It’s also a good way to <strong>develop useful skills</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. <strong>Education</strong> is not very important to me because it doesn't affect my daily life much. I prefer to focus on other things.</div>"
                 }
             ],
             exQ: "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating healthy</span> important to you?",
