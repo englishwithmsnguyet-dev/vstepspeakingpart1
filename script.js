@@ -605,8 +605,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     q: "Are <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>friends</span> important to you?",
-                    a: "→ Yes, they are. Friends are very important to me because they help me have fun. It’s also a good way to learn to work with others.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, they are. <strong>Friends</strong> are very important to me because they help me <strong>have fun</strong>. It’s also a good way to <strong>learn to work with others</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. <strong>Friends</strong> are not very important to me because they don't affect my daily life much. I prefer to focus on other things.</div>"
+                    a: "→ Yes, they are. Friends are very important to me because they help me have fun. It’s also a good way to feel supported during difficult times.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, they are. <strong>Friends</strong> are very important to me because they help me <strong>have fun</strong>. It’s also a good way to <strong>feel supported during difficult times</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. <strong>Friends</strong> are not very important to me because they don't affect my daily life much. I prefer to focus on other things.</div>"
                 },
                 {
                     q: "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>family</span> important to you?",
