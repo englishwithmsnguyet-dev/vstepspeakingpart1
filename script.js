@@ -2302,16 +2302,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Flatten the pool to include ALL examples as individual questions
         let flattenedPool = [];
+        let choiceMap = {};
+
         pool.forEach(item => {
             if (item.examples && item.examples.length > 0) {
                 item.examples.forEach(ex => {
-                    flattenedPool.push({ 
-                        ...item, 
-                        exQ: ex.q, 
-                        originalQ: item.exQ || item.title,
-                        exAFormatted: ex.f, 
-                        exA: ex.a 
-                    });
+                    let cleanQ = ex.q.replace(/<[^>]*>/g, '').trim();
+                    
+                    if (type === 'choice') {
+                        if (choiceMap[cleanQ]) {
+                            // Combine Cách 1 and Cách 2
+                            let existing = choiceMap[cleanQ];
+                            let f1 = existing.exAFormatted;
+                            let f2 = ex.f;
+                            
+                            existing.exAFormatted = `<div style="margin-bottom: 12px;"><div style="color:#2563eb; font-weight:bold; margin-bottom:4px;">🎯 CÁCH 1 (Chọn 1 trong 2):</div>${f1}</div><div><div style="color:#16a34a; font-weight:bold; margin-bottom:4px;">🎯 CÁCH 2 (Cả 2 đều quan trọng):</div>${f2}</div>`;
+                            existing.exA = existing.exA + " OR " + ex.a;
+                            // Clear formula since it varies by Cách
+                            existing.formula = "Hãy tham khảo 2 cách trả lời mẫu bên dưới.";
+                        } else {
+                            let newEx = { 
+                                ...item, 
+                                exQ: ex.q, 
+                                originalQ: item.exQ || item.title,
+                                exAFormatted: ex.f, 
+                                exA: ex.a 
+                            };
+                            choiceMap[cleanQ] = newEx;
+                            flattenedPool.push(newEx);
+                        }
+                    } else {
+                        flattenedPool.push({ 
+                            ...item, 
+                            exQ: ex.q, 
+                            originalQ: item.exQ || item.title,
+                            exAFormatted: ex.f, 
+                            exA: ex.a 
+                        });
+                    }
                 });
             } else {
                 flattenedPool.push(item);
