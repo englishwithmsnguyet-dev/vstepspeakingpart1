@@ -1804,33 +1804,33 @@ document.addEventListener('DOMContentLoaded', () => {
         'why': [
             {
                 title: "1. Why do you like [hoạt động – Ving]?",
-                formula: "→ I enjoy <strong>[hoạt động – Ving]</strong> because it’s very <strong>[tính từ mô tả hoạt động]</strong>. It helps me <strong>[lợi ích 1]</strong> makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.",
+                formula: "→ I enjoy <strong>[hoạt động – Ving]</strong> because it’s very <strong>[tính từ mô tả hoạt động]</strong>. It helps me <strong>[lợi ích 1]</strong> and makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.",
                 note: "LƯU Ý: Nếu không muốn mô tả cảm xúc thì có thể thay bằng 1 lợi ích khác.",
                 examples: [
                 {
                     q: "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>swimming</span>?",
-                    a: "→ I enjoy swimming because it’s very exciting. It helps me reduce stress makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I enjoy <strong>swimming</strong> because it’s very <strong>exciting</strong>. It helps me <strong>reduce stress</strong> makes me feel <strong>happy</strong>.</div>"
+                    a: "→ I enjoy swimming because it’s very swimming. It helps me stay in good shape and makes me feel refreshed.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I enjoy <strong>swimming</strong> because it’s very <strong>swimming</strong>. It helps me <strong>stay in good shape</strong> and makes me feel <strong>refreshed</strong>.</div>"
                 },
                 {
                     q: "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span>?",
-                    a: "→ I enjoy reading books because it’s very interesting. It helps me reduce stress makes me feel relaxed.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I enjoy <strong>reading books</strong> because it’s very <strong>interesting</strong>. It helps me <strong>reduce stress</strong> makes me feel <strong>relaxed</strong>.</div>"
+                    a: "→ I enjoy reading books because it’s very reading books. It helps me widen my knowledge and makes me feel relaxed.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I enjoy <strong>reading books</strong> because it’s very <strong>reading books</strong>. It helps me <strong>widen my knowledge</strong> and makes me feel <strong>relaxed</strong>.</div>"
                 },
                 {
                     q: "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>learning English</span>?",
-                    a: "→ I enjoy learning English because it’s very useful. It helps me reduce stress makes me feel confident.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I enjoy <strong>learning English</strong> because it’s very <strong>useful</strong>. It helps me <strong>reduce stress</strong> makes me feel <strong>confident</strong>.</div>"
+                    a: "→ I enjoy learning english because it’s very learning english. It helps me prepare for the future and makes me feel confident.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I enjoy <strong>learning english</strong> because it’s very <strong>learning english</strong>. It helps me <strong>prepare for the future</strong> and makes me feel <strong>confident</strong>.</div>"
                 },
                 {
                     q: "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching movies</span>?",
-                    a: "→ I enjoy watching movies because it’s very interesting. It helps me reduce stress makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I enjoy <strong>watching movies</strong> because it’s very <strong>interesting</strong>. It helps me <strong>reduce stress</strong> makes me feel <strong>happy</strong>.</div>"
+                    a: "→ I enjoy watching movies because it’s very watching movies. It helps me escape from daily stress and makes me feel happy.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I enjoy <strong>watching movies</strong> because it’s very <strong>watching movies</strong>. It helps me <strong>escape from daily stress</strong> and makes me feel <strong>happy</strong>.</div>"
                 },
                 {
                     q: "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveling</span>?",
-                    a: "→ I enjoy traveling because it’s very interesting. It helps me reduce stress makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I enjoy <strong>traveling</strong> because it’s very <strong>interesting</strong>. It helps me <strong>reduce stress</strong> makes me feel <strong>happy</strong>.</div>"
+                    a: "→ I enjoy traveling because it’s very traveling. It helps me explore different cultures and makes me feel excited.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I enjoy <strong>traveling</strong> because it’s very <strong>traveling</strong>. It helps me <strong>explore different cultures</strong> and makes me feel <strong>excited</strong>.</div>"
                 }
             ],
                 exQ: "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>swimming</span>?",
