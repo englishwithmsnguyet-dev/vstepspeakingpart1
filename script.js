@@ -1135,8 +1135,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 examples: [
                 {
                     q: "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>keep in shape</span>?",
-                    a: "→ I often go to the gym to keep in shape because it helps me improve my physical health. I also eat healthy food because it’s simple and easy to do.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>go to the gym</strong> to <strong>keep in shape</strong> because it helps me <strong>improve my physical health</strong>. I also <strong>eat healthy food</strong> because it’s simple and easy to do.</div>"
+                    a: "→ I often go to the gym to keep in shape because it helps me burn calories. I also eat healthy food because it’s simple and easy to do.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I often <strong>go to the gym</strong> to <strong>keep in shape</strong> because it helps me <strong>burn calories</strong>. I also <strong>eat healthy food</strong> because it’s simple and easy to do.</div>"
                 },
                 {
                     q: "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>relax</span>?",
@@ -1303,8 +1303,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     q: "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>sports</span> do you like?",
-                    a: "→ I’m a big fan of football and swimming because they are very exciting. They also allow me to stay in good shape and improve my physical health.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m a big fan of <strong>football and swimming</strong> because they are very <strong>exciting</strong>. They also allow me to <strong>stay in good shape</strong> and <strong>improve my physical health</strong>.</div>"
+                    a: "→ I’m a big fan of football and swimming because they are very exciting. They also allow me to stay in good shape and burn calories.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m a big fan of <strong>football and swimming</strong> because they are very <strong>exciting</strong>. They also allow me to <strong>stay in good shape</strong> and <strong>burn calories</strong>.</div>"
                 },
                 {
                     q: "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>food</span> do you like?",
@@ -1490,8 +1490,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 examples: [
                 {
                     q: "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>exercise</span>?",
-                    a: "→ One benefit of exercise is that it helps us reduce stress. It’s also a good way to stay in good shape and improve my physical health.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → One benefit of <strong>exercise</strong> is that it helps us <strong>reduce stress</strong>. It’s also a good way to <strong>stay in good shape</strong> and <strong>improve my physical health</strong>.</div><div><strong>- Cách 2:</strong> → There are many benefits of <strong>exercise</strong>. First, it helps us <strong>reduce stress</strong>. Second, it allows us to <strong>stay in good shape</strong>.</div>"
+                    a: "→ One benefit of exercise is that it helps us reduce stress. It’s also a good way to stay in good shape and burn calories.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → One benefit of <strong>exercise</strong> is that it helps us <strong>reduce stress</strong>. It’s also a good way to <strong>stay in good shape</strong> and <strong>burn calories</strong>.</div><div><strong>- Cách 2:</strong> → There are many benefits of <strong>exercise</strong>. First, it helps us <strong>reduce stress</strong>. Second, it allows us to <strong>stay in good shape</strong>.</div>"
                 },
                 {
                     q: "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span>?",
