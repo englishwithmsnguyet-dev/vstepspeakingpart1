@@ -1883,28 +1883,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 examples: [
                 {
                     q: "How do you go to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>school</span> every day?",
-                    a: "→ I usually school there by bus because it’s very convenient. It also helps me reduce stress.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>school</strong> there by <strong>bus</strong> because it’s very <strong>convenient</strong>. It also helps me <strong>reduce stress</strong>.</div>"
+                    a: "→ I usually go there by motorbike because it’s very motorbike. It also helps me save time.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>go</strong> there by <strong>motorbike</strong> because it’s very <strong>motorbike</strong>. It also helps me <strong>save time</strong>.</div>"
                 },
                 {
                     q: "How do you travel to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>work</span>?",
-                    a: "→ I usually work there by bus because it’s very convenient. It also helps me reduce stress.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>work</strong> there by <strong>bus</strong> because it’s very <strong>convenient</strong>. It also helps me <strong>reduce stress</strong>.</div>"
+                    a: "→ I usually travel there by car because it’s very car. It also helps me feel safe from bad weather.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>travel</strong> there by <strong>car</strong> because it’s very <strong>car</strong>. It also helps me <strong>feel safe from bad weather</strong>.</div>"
                 },
                 {
                     q: "How do you get to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>the supermarket</span>?",
-                    a: "→ I usually the supermarket there by bus because it’s very convenient. It also helps me reduce stress.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>the supermarket</strong> there by <strong>bus</strong> because it’s very <strong>convenient</strong>. It also helps me <strong>reduce stress</strong>.</div>"
+                    a: "→ I usually get there by motorbike because it’s very motorbike. It also helps me carry a lot of things.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>get</strong> there by <strong>motorbike</strong> because it’s very <strong>motorbike</strong>. It also helps me <strong>carry a lot of things</strong>.</div>"
                 },
                 {
                     q: "How do you commute to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>the city center</span>?",
-                    a: "→ I usually the city center there by bus because it’s very convenient. It also helps me reduce stress.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>the city center</strong> there by <strong>bus</strong> because it’s very <strong>convenient</strong>. It also helps me <strong>reduce stress</strong>.</div>"
+                    a: "→ I usually commute there by bus because it’s very bus. It also helps me reduce air pollution.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>commute</strong> there by <strong>bus</strong> because it’s very <strong>bus</strong>. It also helps me <strong>reduce air pollution</strong>.</div>"
                 },
                 {
                     q: "How do you travel to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>your hometown</span>?",
-                    a: "→ I usually your hometown there by bus because it’s very convenient. It also helps me reduce stress.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>your hometown</strong> there by <strong>bus</strong> because it’s very <strong>convenient</strong>. It also helps me <strong>reduce stress</strong>.</div>"
+                    a: "→ I usually travel there by car because it’s very car. It also helps me travel with my family easily.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>travel</strong> there by <strong>car</strong> because it’s very <strong>car</strong>. It also helps me <strong>travel with my family easily</strong>.</div>"
                 }
             ],
                 exQ: "How do you go to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>school</span> every day?",
@@ -1942,6 +1942,10 @@ document.addEventListener('DOMContentLoaded', () => {
                             { en: 'avoid being late', vn: 'tránh bị trễ giờ' },
                             { en: 'protect the environment', vn: 'bảo vệ môi trường' },
                             { en: 'reduce air pollution', vn: 'giảm thiểu ô nhiễm không khí' }
+                            ,
+                            { en: 'feel safe from bad weather', vn: 'cảm thấy an toàn trước thời tiết xấu' },
+                            { en: 'carry a lot of things', vn: 'mang theo được nhiều đồ đạc' },
+                            { en: 'travel with my family easily', vn: 'đi lại cùng gia đình dễ dàng' }
                         ]
                     }
                 ]
@@ -1952,28 +1956,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 examples: [
                 {
                     q: "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go to the library</span>?",
-                    a: "→ Although I'm busy, I try to go to the library every day because it helps me reduce stress and relax after a busy day.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → Although I'm busy, I try to <strong>go to the library</strong> <strong>every day</strong> because it helps me <strong>reduce stress</strong> and <strong>relax after a busy day</strong>.</div>"
+                    a: "→ Although I'm busy, I try to go to the library once a week because it helps me widen my knowledge and focus better.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → Although I'm busy, I try to <strong>go to the library</strong> <strong>once a week</strong> because it helps me <strong>widen my knowledge</strong> and <strong>focus better</strong>.</div>"
                 },
                 {
                     q: "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>play sports</span>?",
-                    a: "→ Although I'm busy, I try to play sports every day because it helps me reduce stress and relax after a busy day.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → Although I'm busy, I try to <strong>play sports</strong> <strong>every day</strong> because it helps me <strong>reduce stress</strong> and <strong>relax after a busy day</strong>.</div>"
+                    a: "→ Although I'm busy, I try to play sports three times a week because it helps me stay in good shape and improve my physical health.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → Although I'm busy, I try to <strong>play sports</strong> <strong>three times a week</strong> because it helps me <strong>stay in good shape</strong> and <strong>improve my physical health</strong>.</div>"
                 },
                 {
                     q: "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watch movies</span>?",
-                    a: "→ Although I'm busy, I try to watch movies every day because it helps me have fun and improve my mood.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → Although I'm busy, I try to <strong>watch movies</strong> <strong>every day</strong> because it helps me <strong>have fun</strong> and <strong>improve my mood</strong>.</div>"
+                    a: "→ Although I'm busy, I try to watch movies whenever I have free time because it helps me escape from daily stress and have fun.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → Although I'm busy, I try to <strong>watch movies</strong> <strong>whenever I have free time</strong> because it helps me <strong>escape from daily stress</strong> and <strong>have fun</strong>.</div>"
                 },
                 {
                     q: "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eat out</span>?",
-                    a: "→ Although I'm busy, I try to eat out every day because it helps me reduce stress and relax after a busy day.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → Although I'm busy, I try to <strong>eat out</strong> <strong>every day</strong> because it helps me <strong>reduce stress</strong> and <strong>relax after a busy day</strong>.</div>"
+                    a: "→ Although I'm busy, I try to eat out twice a week because it helps me relax after a busy day and have fun.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → Although I'm busy, I try to <strong>eat out</strong> <strong>twice a week</strong> because it helps me <strong>relax after a busy day</strong> and <strong>have fun</strong>.</div>"
                 },
                 {
                     q: "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>travel</span>?",
-                    a: "→ Although I'm busy, I try to travel every day because it helps me reduce stress and relax after a busy day.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → Although I'm busy, I try to <strong>travel</strong> <strong>every day</strong> because it helps me <strong>reduce stress</strong> and <strong>relax after a busy day</strong>.</div>"
+                    a: "→ Although I'm busy, I try to travel whenever I have free time because it helps me explore different cultures and widen my knowledge.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → Although I'm busy, I try to <strong>travel</strong> <strong>whenever I have free time</strong> because it helps me <strong>explore different cultures</strong> and <strong>widen my knowledge</strong>.</div>"
                 }
             ],
                 exQ: "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go to the library</span> every week?",
@@ -2014,28 +2018,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 examples: [
                 {
                     q: "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying English</span>?",
-                    a: "→ Although I have a busy schedule, I still spend about in the evening studying English every day because it helps me reduce stress. It also makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → Although I have a busy schedule, I still spend about <strong>in the evening</strong> <strong>studying English</strong> every day because it helps me <strong>reduce stress</strong>. It also makes me feel <strong>happy</strong>.</div>"
+                    a: "→ Although I have a busy schedule, I still spend about an hour studying english every day because it helps me prepare for the future. It also makes me feel confident.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → Although I have a busy schedule, I still spend about <strong>an hour</strong> <strong>studying english</strong> every day because it helps me <strong>prepare for the future</strong>. It also makes me feel <strong>confident</strong>.</div>"
                 },
                 {
                     q: "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>using your phone</span>?",
-                    a: "→ Although I have a busy schedule, I still spend about in the evening using my phone every day because it helps me reduce stress. It also makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → Although I have a busy schedule, I still spend about <strong>in the evening</strong> <strong>using my phone</strong> every day because it helps me <strong>reduce stress</strong>. It also makes me feel <strong>happy</strong>.</div>"
+                    a: "→ Although I have a busy schedule, I still spend about about 30 minutes using your phone every day because it helps me keep in touch with my friends. It also makes me feel happy.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → Although I have a busy schedule, I still spend about <strong>about 30 minutes</strong> <strong>using your phone</strong> every day because it helps me <strong>keep in touch with my friends</strong>. It also makes me feel <strong>happy</strong>.</div>"
                 },
                 {
                     q: "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watching TV</span>?",
-                    a: "→ Although I have a busy schedule, I still spend about in the evening watching TV every day because it helps me reduce stress. It also makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → Although I have a busy schedule, I still spend about <strong>in the evening</strong> <strong>watching TV</strong> every day because it helps me <strong>reduce stress</strong>. It also makes me feel <strong>happy</strong>.</div>"
+                    a: "→ Although I have a busy schedule, I still spend about an hour watching tv every day because it helps me relax after a busy day. It also makes me feel relaxed.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → Although I have a busy schedule, I still spend about <strong>an hour</strong> <strong>watching tv</strong> every day because it helps me <strong>relax after a busy day</strong>. It also makes me feel <strong>relaxed</strong>.</div>"
                 },
                 {
                     q: "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>playing games</span>?",
-                    a: "→ Although I have a busy schedule, I still spend about in the evening playing games every day because it helps me reduce stress. It also makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → Although I have a busy schedule, I still spend about <strong>in the evening</strong> <strong>playing games</strong> every day because it helps me <strong>reduce stress</strong>. It also makes me feel <strong>happy</strong>.</div>"
+                    a: "→ Although I have a busy schedule, I still spend about about 30 minutes playing games every day because it helps me reduce stress. It also makes me feel excited.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → Although I have a busy schedule, I still spend about <strong>about 30 minutes</strong> <strong>playing games</strong> every day because it helps me <strong>reduce stress</strong>. It also makes me feel <strong>excited</strong>.</div>"
                 },
                 {
                     q: "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span>?",
-                    a: "→ Although I have a busy schedule, I still spend about in the evening reading books every day because it helps me widen my knowledge. It also makes me feel relaxed.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → Although I have a busy schedule, I still spend about <strong>in the evening</strong> <strong>reading books</strong> every day because it helps me <strong>widen my knowledge</strong>. It also makes me feel <strong>relaxed</strong>.</div>"
+                    a: "→ Although I have a busy schedule, I still spend about an hour reading books every day because it helps me develop my imagination. It also makes me feel motivated.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → Although I have a busy schedule, I still spend about <strong>an hour</strong> <strong>reading books</strong> every day because it helps me <strong>develop my imagination</strong>. It also makes me feel <strong>motivated</strong>.</div>"
                 }
             ],
                 exQ: "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying English</span>?",
@@ -2088,28 +2092,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 examples: [
                 {
                     q: "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>clothes</span> every month?",
-                    a: "→ I’m still a student, so I need to save money. I only spend about 500,000 VND on clothes every month because I think it’s reasonable for me.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m still a student, so I need to save money. I only spend about <strong>500,000 VND</strong> on <strong>clothes</strong> every month because I think it’s reasonable for me.</div>"
+                    a: "→ I’m still a student, so I need to save money. I only spend about clothes on clothes every month because I think it’s reasonable for me.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m still a student, so I need to save money. I only spend about <strong>clothes</strong> on <strong>clothes</strong> every month because I think it’s reasonable for me.</div>"
                 },
                 {
                     q: "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>food</span> every month?",
-                    a: "→ I’m still a student, so I need to save money. I only spend about 500,000 VND on food every month because I think it’s reasonable for me.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m still a student, so I need to save money. I only spend about <strong>500,000 VND</strong> on <strong>food</strong> every month because I think it’s reasonable for me.</div>"
+                    a: "→ I’m still a student, so I need to save money. I only spend about food on food every month because I think it’s reasonable for me.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m still a student, so I need to save money. I only spend about <strong>food</strong> on <strong>food</strong> every month because I think it’s reasonable for me.</div>"
                 },
                 {
                     q: "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>entertainment</span> every month?",
-                    a: "→ I’m still a student, so I need to save money. I only spend about 500,000 VND on entertainment every month because I think it’s reasonable for me.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m still a student, so I need to save money. I only spend about <strong>500,000 VND</strong> on <strong>entertainment</strong> every month because I think it’s reasonable for me.</div>"
+                    a: "→ I’m still a student, so I need to save money. I only spend about entertainment on entertainment every month because I think it’s reasonable for me.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m still a student, so I need to save money. I only spend about <strong>entertainment</strong> on <strong>entertainment</strong> every month because I think it’s reasonable for me.</div>"
                 },
                 {
                     q: "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>books</span> every month?",
-                    a: "→ I’m still a student, so I need to save money. I only spend about 500,000 VND on books every month because I think it’s reasonable for me.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m still a student, so I need to save money. I only spend about <strong>500,000 VND</strong> on <strong>books</strong> every month because I think it’s reasonable for me.</div>"
+                    a: "→ I’m still a student, so I need to save money. I only spend about books on books every month because I think it’s reasonable for me.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m still a student, so I need to save money. I only spend about <strong>books</strong> on <strong>books</strong> every month because I think it’s reasonable for me.</div>"
                 },
                 {
                     q: "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>transportation</span> every month?",
-                    a: "→ I’m still a student, so I need to save money. I only spend about 500,000 VND on transportation every month because I think it’s reasonable for me.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m still a student, so I need to save money. I only spend about <strong>500,000 VND</strong> on <strong>transportation</strong> every month because I think it’s reasonable for me.</div>"
+                    a: "→ I’m still a student, so I need to save money. I only spend about transportation on transportation every month because I think it’s reasonable for me.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I’m still a student, so I need to save money. I only spend about <strong>transportation</strong> on <strong>transportation</strong> every month because I think it’s reasonable for me.</div>"
                 }
             ],
                 exQ: "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>clothes</span> every month?",
