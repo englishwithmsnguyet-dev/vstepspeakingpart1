@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const validClasses = ['2026', 'CB210', 'CB206', 'CB211', 'B212', 'CB213', 'ONB103'];
-        const partialClasses = ['CB213', 'ONB103'];
+        const partialClasses = ['CB213'];
         const formattedClass = classVal.toUpperCase().replace(/\s+/g, '');
         
         if (!validClasses.includes(formattedClass)) {
