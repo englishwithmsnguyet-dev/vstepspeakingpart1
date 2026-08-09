@@ -1660,28 +1660,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 examples: [
                 {
                     q: "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>listen to music</span>?",
-                    a: "→ I usually listen to music before going to bed because that’s when I have free time. It helps me reduce stress and makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>listen to music</strong> <strong>before going to bed</strong> because that’s when I have free time. It helps me <strong>reduce stress</strong> and makes me feel <strong>happy</strong>.</div>"
+                    a: "→ I usually listen to music in my free time because that’s when I have free time. It helps me reduce stress and makes me feel relaxed.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>listen to music</strong> <strong>in my free time</strong> because that’s when I have free time. It helps me <strong>reduce stress</strong> and makes me feel <strong>relaxed</strong>.</div>"
                 },
                 {
                     q: "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>read books</span>?",
-                    a: "→ I usually read books in the evening because that’s when I have free time. It helps me reduce stress and makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>read books</strong> <strong>in the evening</strong> because that’s when I have free time. It helps me <strong>reduce stress</strong> and makes me feel <strong>happy</strong>.</div>"
+                    a: "→ I usually read books at night because that’s when I have free time. It helps me widen my knowledge and makes me feel relaxed.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>read books</strong> <strong>at night</strong> because that’s when I have free time. It helps me <strong>widen my knowledge</strong> and makes me feel <strong>relaxed</strong>.</div>"
                 },
                 {
                     q: "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go shopping</span>?",
-                    a: "→ I usually go shopping at weekends because that’s when I have free time. It helps me reduce stress and makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>go shopping</strong> <strong>at weekends</strong> because that’s when I have free time. It helps me <strong>reduce stress</strong> and makes me feel <strong>happy</strong>.</div>"
+                    a: "→ I usually go shopping at weekends because that’s when I have free time. It helps me have fun and makes me feel excited.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>go shopping</strong> <strong>at weekends</strong> because that’s when I have free time. It helps me <strong>have fun</strong> and makes me feel <strong>excited</strong>.</div>"
                 },
                 {
                     q: "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>play sports</span>?",
-                    a: "→ I usually play sports in the evening because that’s when I have free time. It helps me reduce stress and makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>play sports</strong> <strong>in the evening</strong> because that’s when I have free time. It helps me <strong>reduce stress</strong> and makes me feel <strong>happy</strong>.</div>"
+                    a: "→ I usually play sports after school because that’s when I have free time. It helps me stay in good shape and makes me feel energetic.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>play sports</strong> <strong>after school</strong> because that’s when I have free time. It helps me <strong>stay in good shape</strong> and makes me feel <strong>energetic</strong>.</div>"
                 },
                 {
                     q: "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watch movies</span>?",
-                    a: "→ I usually watch movies at weekends because that’s when I have free time. It helps me reduce stress and makes me feel happy.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>watch movies</strong> <strong>at weekends</strong> because that’s when I have free time. It helps me <strong>reduce stress</strong> and makes me feel <strong>happy</strong>.</div>"
+                    a: "→ I usually watch movies on my days off because that’s when I have free time. It helps me escape from daily stress and makes me feel happy.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>watch movies</strong> <strong>on my days off</strong> because that’s when I have free time. It helps me <strong>escape from daily stress</strong> and makes me feel <strong>happy</strong>.</div>"
                 }
             ],
                 exQ: "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>listen to music</span>?",
@@ -1734,28 +1734,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 examples: [
                 {
                     q: "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>read books</span>?",
-                    a: "→ I usually read books the park because it’s very beautiful. It helps me widen my knowledge and develop my imagination.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>read books</strong> <strong>the park</strong> because it’s very <strong>beautiful</strong>. It helps me <strong>widen my knowledge</strong> and <strong>develop my imagination</strong>.</div>"
+                    a: "→ I usually read books in the school library because it’s very quiet. It helps me widen my knowledge and develop my imagination.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>read books</strong> <strong>in the school library</strong> because it’s very <strong>quiet</strong>. It helps me <strong>widen my knowledge</strong> and <strong>develop my imagination</strong>.</div>"
                 },
                 {
                     q: "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>study</span>?",
-                    a: "→ I usually study the park because it’s very beautiful. It helps me reduce stress and relax after a busy day.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>study</strong> <strong>the park</strong> because it’s very <strong>beautiful</strong>. It helps me <strong>reduce stress</strong> and <strong>relax after a busy day</strong>.</div>"
+                    a: "→ I usually study in my room because it’s very peaceful. It helps me prepare for the future and clear my mind.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>study</strong> <strong>in my room</strong> because it’s very <strong>peaceful</strong>. It helps me <strong>prepare for the future</strong> and <strong>clear my mind</strong>.</div>"
                 },
                 {
                     q: "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>hang out with friends</span>?",
-                    a: "→ I usually hang out with friends the park because it’s very beautiful. It helps me reduce stress and relax after a busy day.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>hang out with friends</strong> <strong>the park</strong> because it’s very <strong>beautiful</strong>. It helps me <strong>reduce stress</strong> and <strong>relax after a busy day</strong>.</div>"
+                    a: "→ I usually hang out with friends at a coffee shop because it’s very relaxing. It helps me have fun and reduce stress.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>hang out with friends</strong> <strong>at a coffee shop</strong> because it’s very <strong>relaxing</strong>. It helps me <strong>have fun</strong> and <strong>reduce stress</strong>.</div>"
                 },
                 {
                     q: "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>buy clothes</span>?",
-                    a: "→ I usually buy clothes the park because it’s very beautiful. It helps me reduce stress and relax after a busy day.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>buy clothes</strong> <strong>the park</strong> because it’s very <strong>beautiful</strong>. It helps me <strong>reduce stress</strong> and <strong>relax after a busy day</strong>.</div>"
+                    a: "→ I usually buy clothes at a shopping mall because it’s very modern. It helps me enjoy my free time and relax after a busy day.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>buy clothes</strong> <strong>at a shopping mall</strong> because it’s very <strong>modern</strong>. It helps me <strong>enjoy my free time</strong> and <strong>relax after a busy day</strong>.</div>"
                 },
                 {
                     q: "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go for a walk</span>?",
-                    a: "→ I usually go for a walk the park because it’s very beautiful. It helps me stay in good shape and clear my mind.",
-                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>go for a walk</strong> <strong>the park</strong> because it’s very <strong>beautiful</strong>. It helps me <strong>stay in good shape</strong> and <strong>clear my mind</strong>.</div>"
+                    a: "→ I usually go for a walk at the park because it’s very airy. It helps me stay in good shape and clear my mind.",
+                    f: "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → I usually <strong>go for a walk</strong> <strong>at the park</strong> because it’s very <strong>airy</strong>. It helps me <strong>stay in good shape</strong> and <strong>clear my mind</strong>.</div>"
                 }
             ],
                 exQ: "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>read books</span>?",
