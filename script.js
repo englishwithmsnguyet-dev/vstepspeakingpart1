@@ -2500,7 +2500,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    function initFlashcards(allWords, container) {
+    function initFlashcards(allWords, container, tabId) {
         let words = [...allWords].sort(() => 0.5 - Math.random());
         let currentIndex = 0;
         
@@ -2555,7 +2555,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderCard();
     }
 
-    function initMatchingGame(allWords, container) {
+    function initMatchingGame(allWords, container, tabId) {
         let pool = [...allWords].sort(() => 0.5 - Math.random()).slice(0, 6);
         let items = [];
         pool.forEach((w, i) => {
@@ -2635,7 +2635,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function initQuizGame(allWords, container) {
+    function initQuizGame(allWords, container, tabId) {
         let words = [...allWords].sort(() => 0.5 - Math.random()).slice(0, 10);
         let currentIndex = 0;
         let score = 0;
@@ -2709,7 +2709,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderQuiz();
     }
 
-    function initSpellingGame(allWords, container) {
+    function initSpellingGame(allWords, container, tabId) {
         let words = [...allWords].sort(() => 0.5 - Math.random()).slice(0, 10);
         let currentIndex = 0;
         let score = 0;
