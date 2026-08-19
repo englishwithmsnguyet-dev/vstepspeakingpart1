@@ -1799,9 +1799,195 @@
 <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
     <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
         <div>
-            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">novel</strong>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">novels</strong>
             <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">tiểu thuyết</div>
         </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('novels')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">comic books / comics</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">truyện tranh</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('comic books')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">graphic novels</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">tiểu thuyết đồ họa / truyện tranh dài</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('graphic novels')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">fiction books</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">sách hư cấu</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('fiction books')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">non-fiction books</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">sách phi hư cấu / người thật việc thật</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('non-fiction books')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">sci-fi books / science fiction books</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">sách khoa học viễn tưởng</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('sci-fi books')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">romance novels / romance books</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">tiểu thuyết lãng mạn / tình cảm</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('romance novels')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">thriller books / thrillers</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">truyện giật gân / ly kỳ</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('thriller books')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">mystery books / detective books</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">truyện bí ẩn / trinh thám</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('mystery books')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">biographies</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">sách tiểu sử</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('biographies')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">autobiographies</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">sách tự truyện</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('autobiographies')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">historical novels / history books</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">tiểu thuyết lịch sử / sách lịch sử</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('historical novels')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">fantasy books</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">truyện giả tưởng / kỳ ảo</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('fantasy books')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">adventure books / adventure stories</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">truyện phiêu lưu</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('adventure books')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">horror books / horror stories</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">truyện kinh dị</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('horror books')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">picture books</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">sách tranh</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('picture books')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">self-help books</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">sách kỹ năng sống / phát triển bản thân</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('self-help books')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">travel books</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">sách du lịch</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('travel books')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">poetry books / poetry collections</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">tập thơ / sách thơ</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('poetry books')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">short stories</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">truyện ngắn</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('short stories')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">textbooks</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">sách giáo khoa / giáo trình</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('textbooks')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+</div>
+                            </div>
         <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('novel')" title="Nghe phát âm">
             <i class="fa-solid fa-volume-high"></i>
         </button>
@@ -3844,9 +4030,141 @@
                                 <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
     <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
         <div>
-            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">action movie</strong>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">action movies</strong>
             <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">phim hành động</div>
         </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('action movies')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">horror movies</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">phim kinh dị</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('horror movies')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">comedy movies / comedies</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">phim hài</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('comedy movies')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">romantic movies / rom-coms</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">phim lãng mạn / hài tình cảm</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('romantic movies')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">thriller movies / thrillers</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">phim ly kỳ / giật gân</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('thriller movies')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">sci-fi movies / science fiction movies</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">phim khoa học viễn tưởng</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('sci-fi movies')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">animated movies / cartoons</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">phim hoạt hình</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('animated movies')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">documentaries / documentary films</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">phim tài liệu</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('documentaries')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">drama movies / dramas</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">phim tâm lý / chính kịch</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('drama movies')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">fantasy movies</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">phim giả tưởng / kỳ ảo</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('fantasy movies')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">adventure movies</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">phim phiêu lưu</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('adventure movies')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">mystery movies / detective movies</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">phim trinh thám / bí ẩn</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('mystery movies')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">musical movies / musicals</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">phim ca nhạc</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('musical movies')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">historical movies</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">phim lịch sử</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('historical movies')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+    <div style="background: var(--bg-card); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+            <strong style="font-size: 1.1rem; color: #3b82f6; font-weight: 800;">blockbuster movies / blockbusters</strong>
+            <div style="color: var(--text-muted); margin-top: 0.4rem; font-size: 0.95rem;">phim bom tấn</div>
+        </div>
+        <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('blockbuster movies')" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+    </div>
+                                </div>
+                            </div>
         <button class="icon-btn" style="background: var(--bg-body); border: 1px solid var(--border); margin-left: 10px; flex-shrink: 0;" onclick="speakText('action movie')" title="Nghe phát âm">
             <i class="fa-solid fa-volume-high"></i>
         </button>
