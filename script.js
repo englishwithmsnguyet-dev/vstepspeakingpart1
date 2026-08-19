@@ -2497,9 +2497,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if(placeholder) placeholder.style.display = 'none';
         if(content) content.style.display = 'block';
         
-        if (type === 'flashcards') {
+        if (type === 'flashcards' || type === 'flashcard') {
             initFlashcards(words, content, tabId);
-        } else if (type === 'matching') {
+        } else if (type === 'matching' || type === 'match') {
             initMatchingGame(words, content, tabId);
         } else if (type === 'quiz') {
             initQuizGame(words, content, tabId);
