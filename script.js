@@ -2830,10 +2830,16 @@ window.switchSubTab = function(tabId, btnElement) {
     
     document.querySelectorAll('.sub-tab-btn').forEach(btn => {
         btn.classList.remove('active');
+        btn.style.background = 'transparent';
+        btn.style.color = 'var(--primary)';
+        btn.style.boxShadow = 'none';
     });
     
     const activeBtn = btnElement || (window.event && window.event.currentTarget) || document.querySelector(`.sub-tab-btn[onclick*="${tabId}"]`);
     if (activeBtn) {
         activeBtn.classList.add('active');
+        activeBtn.style.background = 'var(--primary)';
+        activeBtn.style.color = '#ffffff';
+        activeBtn.style.boxShadow = '0 4px 12px rgba(67, 97, 238, 0.3)';
     }
 };

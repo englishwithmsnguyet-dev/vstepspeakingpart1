@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Canvas Confetti -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260819_1">
     <script>
         window.onerror = function(msg, url, lineNo, columnNo, error) {
             if (lineNo === 0 || msg.toLowerCase().indexOf('script error') > -1) {
@@ -1784,11 +1784,11 @@
                 <section id="topics" class="tab-pane hidden fade-in">
                     <div class="f-card-clean" style="margin-bottom: 2rem;">
                         <h3 class="f-title" style="margin-bottom: 1rem;"><i class="fa-solid fa-book-open" style="color: var(--primary);"></i> Từ Vựng Theo Chủ Đề</h3>
-                        <div class="sub-tabs-container">
-                            <button class="sub-tab-btn active" onclick="switchSubTab('books', this)">BOOKS & READING</button>
-                            <button class="sub-tab-btn" onclick="switchSubTab('games', this)">GAMES</button>
-                            <button class="sub-tab-btn" onclick="switchSubTab('music', this)">MUSIC</button>
-                            <button class="sub-tab-btn" onclick="switchSubTab('movies', this)">MOVIES</button>
+                        <div class="sub-tabs-container" style="display: flex; gap: 0.8rem; margin-bottom: 2rem; overflow-x: auto; padding-bottom: 0.5rem;">
+                            <button class="sub-tab-btn active" onclick="switchSubTab('books', this)" style="padding: 0.6rem 1.4rem; border-radius: 50px; border: 1.5px solid var(--primary); background: var(--primary); color: #ffffff; cursor: pointer; white-space: nowrap; font-weight: 700; font-size: 0.95rem; box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3); transition: all 0.25s ease;">BOOKS & READING</button>
+                            <button class="sub-tab-btn" onclick="switchSubTab('games', this)" style="padding: 0.6rem 1.4rem; border-radius: 50px; border: 1.5px solid var(--primary); background: transparent; color: var(--primary); cursor: pointer; white-space: nowrap; font-weight: 700; font-size: 0.95rem; transition: all 0.25s ease;">GAMES</button>
+                            <button class="sub-tab-btn" onclick="switchSubTab('music', this)" style="padding: 0.6rem 1.4rem; border-radius: 50px; border: 1.5px solid var(--primary); background: transparent; color: var(--primary); cursor: pointer; white-space: nowrap; font-weight: 700; font-size: 0.95rem; transition: all 0.25s ease;">MUSIC</button>
+                            <button class="sub-tab-btn" onclick="switchSubTab('movies', this)" style="padding: 0.6rem 1.4rem; border-radius: 50px; border: 1.5px solid var(--primary); background: transparent; color: var(--primary); cursor: pointer; white-space: nowrap; font-weight: 700; font-size: 0.95rem; transition: all 0.25s ease;">MOVIES</button>
                             <!-- Thêm các chủ đề khác ở đây -->
                         </div>
 
@@ -4449,6 +4449,6 @@
         </main>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20260819_1"></script>
 </body>
 </html>
