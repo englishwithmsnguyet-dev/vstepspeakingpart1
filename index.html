@@ -1784,16 +1784,16 @@
                 <section id="topics" class="tab-pane hidden fade-in">
                     <div class="f-card-clean" style="margin-bottom: 2rem;">
                         <h3 class="f-title" style="margin-bottom: 1rem;"><i class="fa-solid fa-book-open" style="color: var(--primary);"></i> Từ Vựng Theo Chủ Đề</h3>
-                        <div class="sub-tabs-container" style="display: flex; gap: 1rem; margin-bottom: 2rem; overflow-x: auto; padding-bottom: 0.5rem;">
-                            <button class="sub-tab-btn active" onclick="switchSubTab('books')" style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--primary); background: var(--primary); color: white; cursor: pointer; white-space: nowrap; font-weight: 600; font-size: 0.95rem;">BOOKS & READING</button>
-                            <button class="sub-tab-btn" onclick="switchSubTab('games')" style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--primary); background: transparent; color: var(--primary); cursor: pointer; white-space: nowrap; font-weight: 600; font-size: 0.95rem; transition: all 0.3s;">GAMES</button>
-                            <button class="sub-tab-btn" onclick="switchSubTab('music')" style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--primary); background: transparent; color: var(--primary); cursor: pointer; white-space: nowrap; font-weight: 600; font-size: 0.95rem; transition: all 0.3s;">MUSIC</button>
-                            <button class="sub-tab-btn" onclick="switchSubTab('movies')" style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--primary); background: transparent; color: var(--primary); cursor: pointer; white-space: nowrap; font-weight: 600; font-size: 0.95rem; transition: all 0.3s;">MOVIES</button>
+                        <div class="sub-tabs-container">
+                            <button class="sub-tab-btn active" onclick="switchSubTab('books', this)">BOOKS & READING</button>
+                            <button class="sub-tab-btn" onclick="switchSubTab('games', this)">GAMES</button>
+                            <button class="sub-tab-btn" onclick="switchSubTab('music', this)">MUSIC</button>
+                            <button class="sub-tab-btn" onclick="switchSubTab('movies', this)">MOVIES</button>
                             <!-- Thêm các chủ đề khác ở đây -->
                         </div>
 
                         <!-- Sub-tab content cho Books & Reading -->
-                        <div id="subtab-books" class="subtab-pane fade-in" style="display: block;">
+                        <div id="subtab-books" class="subtab-pane fade-in active" style="display: block;">
                             <div class="benefits-grid" id="books-grid">
                                 <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: #3b82f6; border-bottom: 2px solid #3b82f6; padding-bottom: 0.5rem; display: inline-block;">📚 KINDS OF BOOKS</h3>
 <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
@@ -2280,7 +2280,7 @@
                             </div>
                         </div>
                         <!-- Sub-tab content cho Games -->
-                        <div id="subtab-games" class="subtab-pane hidden fade-in" style="display: none;">
+                        <div id="subtab-games" class="subtab-pane fade-in" style="display: none;">
                             
                             <!-- TYPES OF GAMES -->
                             <div class="benefits-grid" id="games-types">
@@ -3048,7 +3048,7 @@
                             </div>
                         </div>
                         <!-- Sub-tab content cho Music -->
-                        <div id="subtab-music" class="subtab-pane hidden fade-in" style="display: none;">
+                        <div id="subtab-music" class="subtab-pane fade-in" style="display: none;">
                             
                             <!-- KINDS OF MUSIC -->
                             <div class="benefits-grid" id="music-kinds">
@@ -3836,7 +3836,7 @@
                             </div>
                         </div>
                         <!-- Sub-tab content cho Movies -->
-                        <div id="subtab-movies" class="subtab-pane hidden fade-in" style="display: none;">
+                        <div id="subtab-movies" class="subtab-pane fade-in" style="display: none;">
                             
                             <!-- TYPES OF MOVIES -->
                             <div class="benefits-grid" id="movies-types">

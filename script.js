@@ -237,6 +237,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (topTitle) topTitle.textContent = titles[target] || target.toUpperCase();
+        if (target === 'topics') {
+            const activeBtn = document.querySelector('.sub-tab-btn.active') || document.querySelector('.sub-tab-btn');
+            if (activeBtn) {
+                const match = activeBtn.getAttribute('onclick')?.match(/switchSubTab\('([^']+)'/);
+                const subId = match ? match[1] : 'books';
+                window.switchSubTab(subId, activeBtn);
+            }
+        }
         if (window.innerWidth <= 768) sidebar.classList.remove('open');
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -2807,13 +2815,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-window.switchSubTab = function(tabId) {
-    document.querySelectorAll('.subtab-pane').forEach(el => el.style.display = 'none');
+window.switchSubTab = function(tabId, btnElement) {
+    document.querySelectorAll('.subtab-pane').forEach(el => {
+        el.classList.add('hidden');
+        el.classList.remove('active');
+        el.style.display = 'none';
+    });
     const target = document.getElementById('subtab-' + tabId);
-    if (target) target.style.display = 'block';
+    if (target) {
+        target.classList.remove('hidden');
+        target.classList.add('active');
+        target.style.display = 'block';
+    }
     
-    if (window.event && window.event.currentTarget) {
-        document.querySelectorAll('.sub-tab-btn').forEach(btn => btn.classList.remove('active'));
-        window.event.currentTarget.classList.add('active');
+    document.querySelectorAll('.sub-tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    
+    const activeBtn = btnElement || (window.event && window.event.currentTarget) || document.querySelector(`.sub-tab-btn[onclick*="${tabId}"]`);
+    if (activeBtn) {
+        activeBtn.classList.add('active');
     }
 };
