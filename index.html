@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VSTEP SPEAKING PART 01 | SOCIAL INTERACTION</title>
+    <title>VSTEP SPEAKING PART 01 - B1 LEVEL</title>
     <meta name="description" content="Website tương tác luyện thi VSTEP Speaking Part 01 theo chương trình giảng dạy của Ms. Nguyệt.">
     <!-- Google Fonts: Roboto Serif Light -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,38 +16,33 @@
     <link rel="stylesheet" href="styles.css?v=20260819_1">
     <script>
         window.onerror = function(msg, url, lineNo, columnNo, error) {
-            if (lineNo === 0 || msg.toLowerCase().indexOf('script error') > -1) {
-                // Ignore cross-origin or blocked script errors
-                return false;
-            }
-            alert("Global Error: " + msg + "\nLine: " + lineNo + "\nCol: " + columnNo);
-            return false;
+            console.error("Window error: ", msg, url, lineNo, error);
+            return true; // Suppress error popup from third-party in-app browsers (Zalo, FB, etc.)
         };
     </script>
 </head>
 <body>
     <!-- Màn hình chào mừng -->
     <div id="welcome-modal" class="modal-overlay">
-        <div class="modal-card">
-            <div class="modal-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-            <h2>Welcome to Miss Nguyet's class!<br><span class="highlight-text">SPEAKING PART 01</span></h2>
-            <p class="modal-desc">Hệ thống học tập chuyên sâu và tương tác dành cho phần thi Giao tiếp xã hội (Social Interaction).</p>
+        <div class="modal-card login-card-custom">
+            <div style="font-size: 1.05rem; font-weight: 700; color: #8b5cf6; margin-bottom: 0.25rem;">Welcome to Miss Nguyet's class!</div>
+            <div style="font-size: 1.25rem; font-weight: 800; color: #4338ca; margin-bottom: 1.25rem; letter-spacing: 0.5px;">VSTEP SPEAKING PART 01</div>
+            <h2 class="login-title-custom" style="margin-top: 0; margin-bottom: 1.75rem;">NHẬP THÔNG TIN<br/>ĐỂ BẮT ĐẦU HỌC 🚀</h2>
             
-            <div class="input-group">
-                <label for="student-name">Họ và tên học viên <span style="color:red">*</span></label>
-                <input type="text" id="student-name" placeholder="Nhập họ tên đầy đủ..." autocomplete="off">
+            <div class="input-group-custom">
+                <label for="student-name">HỌ VÀ TÊN HỌC VIÊN:</label>
+                <input type="text" id="student-name" autocomplete="off">
             </div>
             
-            <div class="input-group">
-                <label for="student-class">Lớp học <span style="color:red">*</span></label>
-                <input type="text" id="student-class" placeholder="Nhập tên lớp..." autocomplete="off">
+            <div class="input-group-custom">
+                <label for="student-class">MÃ LỚP HỌC:</label>
+                <input type="text" id="student-class" autocomplete="off">
             </div>
             
-            <p id="login-error" style="color: var(--danger); font-size: 0.9rem; margin-top: -1rem; margin-bottom: 1rem; display: none; text-align: left;">Vui lòng nhập đầy đủ Họ tên và Lớp!</p>
+            <p id="login-error" style="color: var(--danger); font-size: 0.95rem; margin-top: -0.5rem; margin-bottom: 1.25rem; display: none; text-align: left; font-weight: 500;">Vui lòng nhập đầy đủ Họ tên và Lớp!</p>
             
-            <button id="start-btn" class="btn btn-primary">
-                <span>VÀO BÀI HỌC</span>
-                <i class="fa-solid fa-arrow-right"></i>
+            <button id="start-btn" class="btn-login-custom">
+                <span>BẮT ĐẦU HỌC</span>
             </button>
             
             <!-- Hidden Form for Logging -->
@@ -67,7 +62,7 @@
                     <div class="brand-badge"><i class="fa-solid fa-microphone-lines"></i></div>
                     <div>
                         <div class="brand-title">VSTEP SPEAKING</div>
-                        <div class="brand-subtitle">PART 01</div>
+                        <div class="brand-subtitle">PART 01 - B1 LEVEL</div>
                     </div>
                 </div>
             </div>
@@ -440,15 +435,30 @@
                                 
                                 <div class="accordion-box" onclick="this.classList.toggle('open')">
                                     <div class="accordion-header">
-                                        <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> 2 mẫu câu kinh điển nhất: <mark class="hl-tag">Do you prefer A or B?</mark> và <mark class="hl-tag">Which is more important, A or B?</mark></div>
+                                        <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> Mẫu 1: <mark class="hl-tag">Do you prefer A or B?</mark> (Hỏi về sở thích lựa chọn)</div>
                                         <div class="acc-toggle"><i class="fa-solid fa-lightbulb"></i> Ví dụ</div>
                                     </div>
                                     <div class="accordion-content" onclick="event.stopPropagation()">
-                                        <p style="margin-bottom:0.8rem;">Dấu hiệu rõ nhất là câu hỏi luôn chứa liên từ lựa chọn <mark class="hl-tag">... or ...</mark> nối giữa hai phương án A và B.</p>
+                                        <p style="margin-bottom:0.8rem;">Dấu hiệu rõ nhất: Câu hỏi bắt đầu bằng <mark class="hl-tag">Do you prefer...</mark> và nối 2 phương án bởi liên từ <mark class="hl-tag">or</mark>.</p>
                                         <ul class="sub-ex-list" style="margin:0;">
                                             <li><strong class="hl-keyword">Do you prefer</strong> studying at home <mark class="hl-tag">or</mark> studying in the library?</li>
-                                            <li><strong class="hl-keyword">Which is more important</strong>, earning a lot of money <mark class="hl-tag">or</mark> enjoying your job?</li>
                                             <li><strong class="hl-keyword">Do you prefer</strong> reading books <mark class="hl-tag">or</mark> watching movies?</li>
+                                            <li><strong class="hl-keyword">Do you prefer</strong> traveling alone <mark class="hl-tag">or</mark> traveling with friends?</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-box" onclick="this.classList.toggle('open')">
+                                    <div class="accordion-header">
+                                        <div class="acc-title"><i class="fa-solid fa-circle-question" style="color:var(--primary)"></i> Mẫu 2: <mark class="hl-tag">Which is more important, A or B?</mark> (Hỏi so sánh tầm quan trọng)</div>
+                                        <div class="acc-toggle"><i class="fa-solid fa-lightbulb"></i> Ví dụ</div>
+                                    </div>
+                                    <div class="accordion-content" onclick="event.stopPropagation()">
+                                        <p style="margin-bottom:0.8rem;">Dấu hiệu rõ nhất: Bắt đầu bằng <mark class="hl-tag">Which is more important...</mark> và so sánh 2 yếu tố bởi <mark class="hl-tag">or</mark>.</p>
+                                        <ul class="sub-ex-list" style="margin:0;">
+                                            <li><strong class="hl-keyword">Which is more important</strong>, earning a lot of money <mark class="hl-tag">or</mark> enjoying your job?</li>
+                                            <li><strong class="hl-keyword">Which is more important</strong>, good health <mark class="hl-tag">or</mark> career success?</li>
+                                            <li><strong class="hl-keyword">Which is more important</strong>, friends <mark class="hl-tag">or</mark> family?</li>
                                         </ul>
                                     </div>
                                 </div>
