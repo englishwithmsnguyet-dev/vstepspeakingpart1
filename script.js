@@ -4220,7 +4220,7 @@ const practiceTopicsData = [
                 qType: "Wh-question: What [noun] do you like / have?",
                 formula: `<div style="margin-bottom: 12px; line-height: 1.8;">
                     <strong style="color: var(--primary);">- Cách 1 (Nói về 1 sở thích yêu thích nhất):</strong><br>
-                    → My favorite hobby is <span class="formula-bracket-hl">[hoạt động – Ving]</span> because it’s <span class="formula-bracket-hl">[tính từ: relaxing / interesting]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span> and makes me feel <span class="formula-bracket-hl">[cảm xúc: happy / relaxed]</span>.
+                    → My favorite hobby is <span class="formula-bracket-hl">[hoạt động – Ving]</span> because it’s <span class="formula-bracket-hl">[tính từ mô tả hoạt động]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span> and makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
                 </div>
                 <div style="line-height: 1.8;">
                     <strong style="color: var(--primary);">- Cách 2 (Nói về hoạt động thường làm lúc rảnh rỗi):</strong><br>
@@ -4228,32 +4228,49 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🎯 [Sở thích / Hoạt động quen thuộc]:",
+                        title: "🎯 [Sở thích / Hoạt động] (Từ Bảng Hoạt Động - Cách 1 dùng V-ing / Cách 2 dùng Vo):",
                         items: [
-                            { en: "listening to music", vn: "nghe nhạc" },
-                            { en: "reading books", vn: "đọc sách" },
-                            { en: "playing sports", vn: "chơi thể thao" },
-                            { en: "watching movies", vn: "xem phim" },
-                            { en: "cooking", vn: "nấu ăn" }
+                            { en: "listening to music", vn: "nghe nhạc (Vo: listen to music)" },
+                            { en: "reading books", vn: "đọc sách (Vo: read books)" },
+                            { en: "watching movies", vn: "xem phim (Vo: watch movies)" },
+                            { en: "playing sports", vn: "chơi thể thao (Vo: play sports)" },
+                            { en: "cooking", vn: "nấu ăn (Vo: cook)" },
+                            { en: "playing video games", vn: "chơi game (Vo: play video games)" },
+                            { en: "going for a walk", vn: "đi bộ dạo mát (Vo: go for a walk)" },
+                            { en: "traveling", vn: "đi du lịch (Vo: travel)" }
                         ]
                     },
                     {
-                        title: "⭐ [Lợi ích cơ bản] (Từ Bảng Lợi Ích):",
+                        title: "⭐ [Cụm Lợi ích] (Từ Bảng Lợi Ích):",
                         items: [
                             { en: "relax after a busy day", vn: "thư giãn sau ngày bận rộn" },
+                            { en: "relax after a long day", vn: "thư giãn sau một ngày dài" },
                             { en: "reduce stress", vn: "giảm bớt căng thẳng" },
+                            { en: "clear my mind", vn: "giải tỏa đầu óc" },
                             { en: "widen my knowledge", vn: "mở rộng kiến thức" },
-                            { en: "stay in good shape", vn: "giữ vóc dáng cân đối" },
-                            { en: "clear my mind", vn: "giải tỏa đầu óc" }
+                            { en: "stay in good shape", vn: "giữ dáng cân đối" },
+                            { en: "recharge my energy", vn: "nạp lại năng lượng" },
+                            { en: "improve my mood", vn: "cải thiện tâm trạng" }
                         ]
                     },
                     {
-                        title: "😊 [Tính từ mô tả & cảm xúc đơn giản]:",
+                        title: "✨ [Tính từ mô tả hoạt động]:",
                         items: [
                             { en: "relaxing", vn: "mang lại cảm giác thư giãn" },
                             { en: "interesting", vn: "thú vị" },
+                            { en: "exciting", vn: "hào hứng, sôi nổi" },
+                            { en: "useful", vn: "hữu ích" },
+                            { en: "fun", vn: "vui vẻ" }
+                        ]
+                    },
+                    {
+                        title: "😊 [Tính từ mô tả cảm xúc]:",
+                        items: [
+                            { en: "relaxed", vn: "thoải mái, thư thái" },
                             { en: "happy", vn: "vui vẻ, hạnh phúc" },
-                            { en: "relaxed", vn: "thoải mái, thư thái" }
+                            { en: "refreshed", vn: "sảng khoái, tươi mới" },
+                            { en: "energetic", vn: "tràn đầy năng lượng" },
+                            { en: "comfortable", vn: "dễ chịu" }
                         ]
                     }
                 ],
@@ -4276,11 +4293,11 @@ const practiceTopicsData = [
                 qType: "Wh-question: Who do you often [hoạt động – Vo] with?",
                 formula: `<div style="margin-bottom: 12px; line-height: 1.8;">
                     <strong style="color: var(--primary);">- Cách 1 (Làm cùng bạn bè / người thân):</strong><br>
-                    → I often do my hobbies with my <span class="formula-bracket-hl">[đối tượng: best friend / brother / sister / family]</span> because we have the same hobbies. It’s more <span class="formula-bracket-hl">[tính từ: fun / enjoyable]</span> when we spend time together.
+                    → I often do my hobbies with my <span class="formula-bracket-hl">[đối tượng: best friend / brother / sister / family]</span> because we have the same hobbies. It’s more <span class="formula-bracket-hl">[tính từ mô tả trải nghiệm: fun / enjoyable]</span> when we spend time together.
                 </div>
                 <div style="line-height: 1.8;">
                     <strong style="color: var(--primary);">- Cách 2 (Làm một mình khi cần yên tĩnh):</strong><br>
-                    → Actually, I prefer doing my hobbies alone because it’s <span class="formula-bracket-hl">[tính từ: quiet / comfortable]</span>. It helps me <span class="formula-bracket-hl">[lợi ích: clear my mind / focus better]</span> and makes me feel <span class="formula-bracket-hl">[cảm xúc: relaxed / peaceful]</span>.
+                    → Actually, I prefer doing my hobbies alone because it’s <span class="formula-bracket-hl">[tính từ: quiet / peaceful]</span>. It helps me <span class="formula-bracket-hl">[lợi ích: clear my mind / focus better]</span> and makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc: relaxed / comfortable]</span>.
                 </div>`,
                 vocabGroups: [
                     {
@@ -4293,22 +4310,34 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "💡 [Lý do & Cụm từ hay] (Cách 1):",
+                        title: "💡 [Cụm từ hay] (Cách 1):",
                         items: [
                             { en: "we have the same hobbies", vn: "chúng tôi có cùng sở thích" },
-                            { en: "when we spend time together", vn: "khi chúng tôi dành thời gian bên nhau" },
-                            { en: "fun", vn: "vui vẻ" },
-                            { en: "enjoyable", vn: "thích thú, dễ chịu" }
+                            { en: "when we spend time together", vn: "khi chúng tôi dành thời gian bên nhau" }
                         ]
                     },
                     {
-                        title: "🧘 [Từ vựng khi làm một mình] (Cách 2):",
+                        title: "✨ [Tính từ mô tả trải nghiệm cùng nhau] (Cách 1):",
+                        items: [
+                            { en: "fun", vn: "vui vẻ" },
+                            { en: "enjoyable", vn: "thích thú, dễ chịu" },
+                            { en: "exciting", vn: "hào hứng, sôi nổi" }
+                        ]
+                    },
+                    {
+                        title: "🧘 [Từ vựng & Lợi ích khi làm một mình] (Cách 2):",
                         items: [
                             { en: "alone", vn: "một mình" },
                             { en: "quiet", vn: "yên tĩnh" },
-                            { en: "clear my mind", vn: "giải tỏa đầu óc" },
-                            { en: "focus better", vn: "tập trung tốt hơn" },
-                            { en: "relaxed", vn: "thư thái, thoải mái" }
+                            { en: "clear my mind", vn: "giải tỏa đầu óc (từ Bảng Lợi Ích)" },
+                            { en: "focus better", vn: "tập trung tốt hơn (từ Bảng Lợi Ích)" }
+                        ]
+                    },
+                    {
+                        title: "😊 [Tính từ mô tả cảm xúc] (Cách 2):",
+                        items: [
+                            { en: "relaxed", vn: "thư thái, thoải mái" },
+                            { en: "comfortable", vn: "dễ chịu" }
                         ]
                     }
                 ],
@@ -4331,11 +4360,11 @@ const practiceTopicsData = [
                 qType: "Wh-question: How much time do you spend on [noun] / [V-ing]?",
                 formula: `<div style="margin-bottom: 12px; line-height: 1.8;">
                     <strong style="color: var(--primary);">- Cách 1 (Đơn giản, trực tiếp nhất):</strong><br>
-                    → I usually spend about <span class="formula-bracket-hl">[khoảng thời gian]</span> <span class="formula-bracket-hl">[thời điểm]</span> on my hobbies because it helps me <span class="formula-bracket-hl">[lợi ích]</span>. It also makes me feel <span class="formula-bracket-hl">[cảm xúc]</span>.
+                    → I usually spend about <span class="formula-bracket-hl">[khoảng thời gian]</span> <span class="formula-bracket-hl">[thời điểm]</span> on my hobbies because it helps me <span class="formula-bracket-hl">[lợi ích]</span>. It also makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
                 </div>
                 <div style="line-height: 1.8;">
                     <strong style="color: var(--primary);">- Cách 2 (Cấu trúc có Although - chuẩn bài học):</strong><br>
-                    → Although I have a busy schedule, I still spend about <span class="formula-bracket-hl">[khoảng thời gian]</span> on my hobbies every day because it helps me <span class="formula-bracket-hl">[lợi ích]</span>. It also makes me feel <span class="formula-bracket-hl">[cảm xúc]</span>.
+                    → Although I have a busy schedule, I still spend about <span class="formula-bracket-hl">[khoảng thời gian]</span> on my hobbies every day because it helps me <span class="formula-bracket-hl">[lợi ích]</span>. It also makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
                 </div>`,
                 vocabGroups: [
                     {
@@ -4351,23 +4380,27 @@ const practiceTopicsData = [
                         items: [
                             { en: "every day", vn: "mỗi ngày" },
                             { en: "in the evening", vn: "vào buổi tối" },
-                            { en: "at weekends", vn: "vào cuối tuần" }
+                            { en: "at weekends", vn: "vào cuối tuần" },
+                            { en: "in my free time", vn: "vào thời gian rảnh" }
                         ]
                     },
                     {
-                        title: "⭐ [Lợi ích cơ bản]:",
+                        title: "⭐ [Cụm Lợi ích] (Từ Bảng Lợi Ích):",
                         items: [
                             { en: "relax after a long day", vn: "thư giãn sau ngày dài" },
+                            { en: "relax after a busy day", vn: "thư giãn sau ngày bận rộn" },
                             { en: "reduce stress", vn: "giảm bớt căng thẳng" },
+                            { en: "clear my mind", vn: "giải tỏa đầu óc" },
                             { en: "recharge my energy", vn: "nạp lại năng lượng" }
                         ]
                     },
                     {
-                        title: "😊 [Cảm xúc]:",
+                        title: "😊 [Tính từ mô tả cảm xúc]:",
                         items: [
                             { en: "relaxed", vn: "thoải mái, thư thái" },
-                            { en: "refreshed", vn: "sảng khoái" },
-                            { en: "happy", vn: "vui vẻ" }
+                            { en: "refreshed", vn: "sảng khoái, tươi mới" },
+                            { en: "happy", vn: "vui vẻ" },
+                            { en: "energetic", vn: "tràn đầy năng lượng" }
                         ]
                     }
                 ],
