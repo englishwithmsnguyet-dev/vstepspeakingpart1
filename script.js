@@ -4222,13 +4222,13 @@ const practiceTopicsData = [
                 qNum: 1,
                 question: "What hobbies do you have?",
                 qType: "Wh-question: What [noun] do you like / have?",
-                formula: `<div class="topic-formula-card">
+                formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Nói về 1 sở thích yêu thích nhất):</div>
                     <div class="topic-formula-text">
                         → My favorite hobby is <span class="formula-bracket-hl">[hoạt động – Ving]</span> because it’s <span class="formula-bracket-hl">[tính từ mô tả hoạt động]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span> and makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
                     </div>
                 </div>
-                <div class="topic-formula-card">
+                <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Nói về hoạt động thường làm lúc rảnh rỗi):</div>
                     <div class="topic-formula-text">
                         → In my free time, I usually <span class="formula-bracket-hl">[hoạt động 1 – Vo]</span> because it helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>. I also <span class="formula-bracket-hl">[hoạt động 2 – Vo]</span> to <span class="formula-bracket-hl">[lợi ích 3]</span>.
@@ -4283,13 +4283,13 @@ const practiceTopicsData = [
                 qNum: 2,
                 question: "Who do you usually do your hobbies with?",
                 qType: "Wh-question: Who do you often [hoạt động – Vo] with?",
-                formula: `<div class="topic-formula-card">
+                formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Làm cùng bạn bè / người thân):</div>
                     <div class="topic-formula-text">
                         → I often do my hobbies with my <span class="formula-bracket-hl">[đối tượng: best friend / brother / sister / family]</span> because we have the same hobbies. It’s more <span class="formula-bracket-hl">[tính từ mô tả trải nghiệm: fun / enjoyable]</span> when we spend time together.
                     </div>
                 </div>
-                <div class="topic-formula-card">
+                <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Làm một mình khi cần yên tĩnh):</div>
                     <div class="topic-formula-text">
                         → Actually, I prefer doing my hobbies alone because it’s <span class="formula-bracket-hl">[tính từ: quiet / peaceful]</span>. It helps me <span class="formula-bracket-hl">[lợi ích: clear my mind / focus better]</span> and makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc: relaxed / comfortable]</span>.
@@ -4358,13 +4358,13 @@ const practiceTopicsData = [
                 qNum: 3,
                 question: "How much time do you spend on your hobbies?",
                 qType: "Wh-question: How much time do you spend on [noun] / [V-ing]?",
-                formula: `<div class="topic-formula-card">
+                formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đơn giản, trực tiếp nhất):</div>
                     <div class="topic-formula-text">
                         → I usually spend about <span class="formula-bracket-hl">[khoảng thời gian]</span> <span class="formula-bracket-hl">[thời điểm]</span> on my hobbies because it helps me <span class="formula-bracket-hl">[lợi ích]</span>. It also makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
                     </div>
                 </div>
-                <div class="topic-formula-card">
+                <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Cấu trúc có Although - chuẩn bài học):</div>
                     <div class="topic-formula-text">
                         → Although I have a busy schedule, I still spend about <span class="formula-bracket-hl">[khoảng thời gian]</span> on my hobbies every day because it helps me <span class="formula-bracket-hl">[lợi ích]</span>. It also makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
@@ -4469,16 +4469,18 @@ function renderPracticeTopic(topicId) {
                 `;
             } else if (vg.items && vg.items.length > 0) {
                 let itemsHtml = vg.items.map(it => `
-                    <div class="topic-vocab-chip" onclick="speakText('${it.en.replace(/'/g, "\\'")}')" title="Nhấn để nghe phát âm" style="cursor: pointer;">
-                        <div><i class="fa-solid fa-volume-high" style="color: var(--primary); font-size: 0.8rem; margin-right: 0.35rem;"></i><strong>${it.en}</strong></div>
-                        <span>${it.vn}</span>
+                    <div class="topic-vocab-list-item" onclick="speakText('${it.en.replace(/'/g, "\\'")}')" title="Nhấn để nghe phát âm">
+                        <i class="fa-solid fa-volume-high vocab-audio-icon"></i>
+                        <strong class="vocab-en">${it.en}</strong>
+                        <span class="vocab-colon">:</span>
+                        <span class="vocab-vn">${it.vn}</span>
                     </div>
                 `).join('');
 
                 vocabHtml += `
                     <div style="margin-bottom: 1.25rem;">
-                        <div style="font-weight: 800; font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.5rem;">${vg.title}</div>
-                        <div class="topic-vocab-grid">${itemsHtml}</div>
+                        <div style="font-weight: 800; font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.4rem;">${vg.title}</div>
+                        <div class="topic-vocab-list">${itemsHtml}</div>
                     </div>
                 `;
             }

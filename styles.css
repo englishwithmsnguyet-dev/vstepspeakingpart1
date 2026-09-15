@@ -314,27 +314,18 @@ body.dark-theme .title-bracket-hl {
     border-color: rgba(245, 158, 11, 0.45);
 }
 
-/* Formula Bracket Highlight (Pastel Light Blue) */
+/* Formula Bracket Highlight (Simple Text Highlight) */
 .formula-bracket-hl {
-    background: #e0f2fe;
+    background: #dbeafe;
     color: #1d4ed8;
-    padding: 0.15rem 0.5rem;
-    margin: 0.15rem 0.2rem;
-    border-radius: 7px;
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
     font-weight: 700;
-    font-size: 0.95em;
-    border: 1px solid #bae6fd;
-    box-shadow: 0 1px 2px rgba(186, 230, 253, 0.4);
-    display: inline-block;
-    white-space: nowrap;
-    vertical-align: baseline;
-    letter-spacing: 0.1px;
+    display: inline;
 }
 body.dark-theme .formula-bracket-hl {
-    background: rgba(59, 130, 246, 0.22);
+    background: rgba(59, 130, 246, 0.25);
     color: #93c5fd;
-    border-color: rgba(59, 130, 246, 0.4);
-    box-shadow: none;
 }
 
 /* Choice Tabs & Display */
@@ -671,38 +662,65 @@ body.dark-theme .topic-q-type-badge {
     line-height: 1.8;
 }
 
-/* Topic Formula Cards with Generous Spacing */
-.topic-formula-card {
-    background: rgba(67, 97, 238, 0.04);
-    border: 1.5px solid rgba(67, 97, 238, 0.18);
-    border-radius: 14px;
-    padding: 1.3rem 1.5rem;
-    margin-bottom: 1.25rem;
-    box-shadow: 0 2px 6px rgba(67, 97, 238, 0.04);
+/* Topic Formula Rows - Clean text with highlights, no cards */
+.topic-formula-row {
+    margin-bottom: 1.5rem;
 }
-.topic-formula-card:last-child {
+.topic-formula-row:last-child {
     margin-bottom: 0;
 }
 .topic-formula-title {
     font-weight: 800;
     font-size: 1.05rem;
-    color: #1d4ed8;
-    margin-bottom: 0.85rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-body.dark-theme .topic-formula-card {
-    background: rgba(67, 97, 238, 0.08);
-    border-color: rgba(67, 97, 238, 0.28);
-}
-body.dark-theme .topic-formula-title {
-    color: #60a5fa;
+    color: var(--primary);
+    margin-bottom: 0.4rem;
 }
 .topic-formula-text {
-    font-size: 1.1rem;
-    line-height: 2.35;
+    font-size: 1.08rem;
+    line-height: 2.2;
     color: var(--text-main);
-    letter-spacing: 0.15px;
-    word-spacing: 1px;
+    padding-left: 0.25rem;
+}
+
+/* Topic Vocabulary List (Dạng List rõ ràng, dễ đọc) */
+.topic-vocab-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 0.4rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0.6rem 0.85rem;
+}
+.topic-vocab-list-item {
+    display: flex;
+    align-items: baseline;
+    font-size: 1rem;
+    line-height: 1.8;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    transition: background 0.15s ease;
+}
+.topic-vocab-list-item:hover {
+    background: rgba(67, 97, 238, 0.08);
+}
+.topic-vocab-list-item .vocab-audio-icon {
+    color: var(--primary);
+    font-size: 0.85rem;
+    margin-right: 0.55rem;
+    position: relative;
+    top: -1px;
+}
+.topic-vocab-list-item .vocab-en {
+    color: var(--primary);
+    font-weight: 700;
+}
+.topic-vocab-list-item .vocab-colon {
+    margin: 0 0.45rem;
+    color: var(--text-muted);
+}
+.topic-vocab-list-item .vocab-vn {
+    color: var(--text-main);
 }
