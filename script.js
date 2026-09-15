@@ -4292,7 +4292,7 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Làm một mình khi cần yên tĩnh):</div>
                     <div class="topic-formula-text">
-                        → Actually, I prefer doing my hobbies alone because it’s <span class="formula-bracket-hl">[tính từ]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span> and makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
+                        → Actually, I prefer doing my hobbies alone because it’s <span class="formula-bracket-hl">[tính từ mô tả không gian]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span> and makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4323,11 +4323,10 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "🧘 [Từ vựng khi làm một mình] (Cách 2):",
+                        title: "✨ [Tính từ mô tả không gian] (Cách 2):",
                         items: [
-                            { en: "alone", vn: "một mình" },
                             { en: "quiet", vn: "yên tĩnh" },
-                            { en: "peaceful", vn: "bình yên" }
+                            { en: "peaceful", vn: "bình yên, thanh tịnh" }
                         ]
                     },
                     {
@@ -4523,10 +4522,10 @@ function renderPracticeTopic(topicId) {
                     </button>
                 </div>
 
-                <!-- 1. GỢI Ý CÔNG THỨC TRẢ LỜI -->
+                <!-- 1. GỢI Ý CÁCH TRẢ LỜI -->
                 <div class="topic-section-box" style="border-color: rgba(59, 130, 246, 0.4); box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.08);">
                     <div class="topic-section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'" style="background: rgba(59, 130, 246, 0.08); color: #2563eb;">
-                        <span><i class="fa-solid fa-lightbulb" style="color: #2563eb;"></i> 💡 GỢI Ý CÔNG THỨC TRẢ LỜI ĐÃ HỌC</span>
+                        <span><i class="fa-solid fa-lightbulb" style="color: #2563eb;"></i> 💡 GỢI Ý CÁCH TRẢ LỜI</span>
                         <span style="font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-chevron-down"></i></span>
                     </div>
                     <div class="topic-section-content" style="background: rgba(59, 130, 246, 0.02);">
@@ -4536,10 +4535,10 @@ function renderPracticeTopic(topicId) {
                     </div>
                 </div>
 
-                <!-- 2. GỢI Ý NỘI DUNG ĐIỀN VÀO -->
+                <!-- 2. GỢI Ý TỪ VỰNG -->
                 <div class="topic-section-box" style="border-color: rgba(245, 158, 11, 0.4); box-shadow: 0 4px 6px -1px rgba(245, 158, 11, 0.08);">
                     <div class="topic-section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'" style="background: rgba(245, 158, 11, 0.08); color: #d97706;">
-                        <span><i class="fa-solid fa-pen-to-square" style="color: #d97706;"></i> 📝 GỢI Ý TỪ VỰNG ĐIỀN VÀO (VOCABULARY SUGGESTIONS)</span>
+                        <span><i class="fa-solid fa-pen-to-square" style="color: #d97706;"></i> 📝 GỢI Ý TỪ VỰNG</span>
                         <span style="font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-chevron-down"></i></span>
                     </div>
                     <div class="topic-section-content">
@@ -4547,10 +4546,10 @@ function renderPracticeTopic(topicId) {
                     </div>
                 </div>
 
-                <!-- 3. CÂU TRẢ LỜI MẪU & LUYỆN NÓI -->
+                <!-- 3. GỢI Ý ĐÁP ÁN MẪU THAM KHẢO -->
                 <div class="topic-section-box" style="border-color: rgba(139, 92, 246, 0.4); box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.08);">
                     <div class="topic-section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'" style="background: rgba(139, 92, 246, 0.08); color: #7c3aed;">
-                        <span><i class="fa-solid fa-star" style="color: #7c3aed;"></i> ⭐ CÂU TRẢ LỜI MẪU THAM KHẢO & AUDIO</span>
+                        <span><i class="fa-solid fa-star" style="color: #7c3aed;"></i> ⭐ GỢI Ý ĐÁP ÁN MẪU THAM KHẢO</span>
                         <span style="font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-chevron-down"></i></span>
                     </div>
                     <div class="topic-section-content">
