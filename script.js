@@ -477,6 +477,10 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
+    window.switchTab = function(target) {
+        const item = document.querySelector(`.nav-item[data-target="${target}"]`);
+        if (item) activateTab(target, item);
+    };
 
     // Theme & Audio toggles
     themeToggle?.addEventListener('click', () => {
@@ -4228,30 +4232,14 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🎯 [Sở thích / Hoạt động] (Từ Bảng Hoạt Động - Cách 1 dùng V-ing / Cách 2 dùng Vo):",
-                        items: [
-                            { en: "listening to music", vn: "nghe nhạc (Vo: listen to music)" },
-                            { en: "reading books", vn: "đọc sách (Vo: read books)" },
-                            { en: "watching movies", vn: "xem phim (Vo: watch movies)" },
-                            { en: "playing sports", vn: "chơi thể thao (Vo: play sports)" },
-                            { en: "cooking", vn: "nấu ăn (Vo: cook)" },
-                            { en: "playing video games", vn: "chơi game (Vo: play video games)" },
-                            { en: "going for a walk", vn: "đi bộ dạo mát (Vo: go for a walk)" },
-                            { en: "traveling", vn: "đi du lịch (Vo: travel)" }
-                        ]
+                        type: "note",
+                        title: "🎯 [Sở thích / Hoạt động]:",
+                        note: `Sử dụng các cụm từ trong <button type="button" onclick="switchTab('activities')" style="background: none; border: none; padding: 0; color: #3b82f6; font-weight: 800; text-decoration: underline; cursor: pointer; font-size: 0.95rem; font-family: inherit;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Bảng Hoạt Động</button> <em>(Lưu ý: Cách 1 dùng dạng V-ing, Cách 2 dùng dạng Vo)</em>.`
                     },
                     {
-                        title: "⭐ [Cụm Lợi ích] (Từ Bảng Lợi Ích):",
-                        items: [
-                            { en: "relax after a busy day", vn: "thư giãn sau ngày bận rộn" },
-                            { en: "relax after a long day", vn: "thư giãn sau một ngày dài" },
-                            { en: "reduce stress", vn: "giảm bớt căng thẳng" },
-                            { en: "clear my mind", vn: "giải tỏa đầu óc" },
-                            { en: "widen my knowledge", vn: "mở rộng kiến thức" },
-                            { en: "stay in good shape", vn: "giữ dáng cân đối" },
-                            { en: "recharge my energy", vn: "nạp lại năng lượng" },
-                            { en: "improve my mood", vn: "cải thiện tâm trạng" }
-                        ]
+                        type: "note",
+                        title: "⭐ [Cụm Lợi ích]:",
+                        note: `Sử dụng các cụm từ trong <button type="button" onclick="switchTab('benefits')" style="background: none; border: none; padding: 0; color: #d946ef; font-weight: 800; text-decoration: underline; cursor: pointer; font-size: 0.95rem; font-family: inherit;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Bảng Lợi Ích</button> để điền vào vị trí <em>[lợi ích]</em>.`
                     },
                     {
                         title: "✨ [Tính từ mô tả hoạt động]:",
@@ -4325,13 +4313,17 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "🧘 [Từ vựng & Lợi ích khi làm một mình] (Cách 2):",
+                        title: "🧘 [Từ vựng khi làm một mình] (Cách 2):",
                         items: [
                             { en: "alone", vn: "một mình" },
                             { en: "quiet", vn: "yên tĩnh" },
-                            { en: "clear my mind", vn: "giải tỏa đầu óc (từ Bảng Lợi Ích)" },
-                            { en: "focus better", vn: "tập trung tốt hơn (từ Bảng Lợi Ích)" }
+                            { en: "peaceful", vn: "bình yên" }
                         ]
+                    },
+                    {
+                        type: "note",
+                        title: "⭐ [Lợi ích khi làm một mình] (Cách 2):",
+                        note: `Sử dụng các cụm từ trong <button type="button" onclick="switchTab('benefits')" style="background: none; border: none; padding: 0; color: #d946ef; font-weight: 800; text-decoration: underline; cursor: pointer; font-size: 0.95rem; font-family: inherit;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Bảng Lợi Ích</button> <em>(Ví dụ: clear my mind, focus better...)</em>.`
                     },
                     {
                         title: "😊 [Tính từ mô tả cảm xúc] (Cách 2):",
@@ -4385,14 +4377,9 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "⭐ [Cụm Lợi ích] (Từ Bảng Lợi Ích):",
-                        items: [
-                            { en: "relax after a long day", vn: "thư giãn sau ngày dài" },
-                            { en: "relax after a busy day", vn: "thư giãn sau ngày bận rộn" },
-                            { en: "reduce stress", vn: "giảm bớt căng thẳng" },
-                            { en: "clear my mind", vn: "giải tỏa đầu óc" },
-                            { en: "recharge my energy", vn: "nạp lại năng lượng" }
-                        ]
+                        type: "note",
+                        title: "⭐ [Cụm Lợi ích]:",
+                        note: `Sử dụng các cụm từ trong <button type="button" onclick="switchTab('benefits')" style="background: none; border: none; padding: 0; color: #d946ef; font-weight: 800; text-decoration: underline; cursor: pointer; font-size: 0.95rem; font-family: inherit;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Bảng Lợi Ích</button> <em>(Ví dụ: relax after a long day, relax after a busy day, reduce stress, clear my mind, recharge my energy...)</em>.`
                     },
                     {
                         title: "😊 [Tính từ mô tả cảm xúc]:",
@@ -4457,19 +4444,32 @@ function renderPracticeTopic(topicId) {
         // Build suggestions HTML
         let vocabHtml = '';
         q.vocabGroups.forEach(vg => {
-            let itemsHtml = vg.items.map(it => `
-                <div class="topic-vocab-chip" onclick="speakText('${it.en.replace(/'/g, "\\'")}')" title="Nhấn để nghe phát âm" style="cursor: pointer;">
-                    <div><i class="fa-solid fa-volume-high" style="color: var(--primary); font-size: 0.8rem; margin-right: 0.35rem;"></i><strong>${it.en}</strong></div>
-                    <span>${it.vn}</span>
-                </div>
-            `).join('');
+            if (vg.type === 'note' || vg.note) {
+                vocabHtml += `
+                    <div style="margin-bottom: 1.25rem; background: rgba(67, 97, 238, 0.05); border-left: 4px solid var(--primary); padding: 0.85rem 1.15rem; border-radius: 12px; border: 1px solid rgba(67, 97, 238, 0.15); border-left-width: 4px;">
+                        <div style="font-weight: 800; font-size: 0.95rem; color: var(--primary); margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.4rem;">
+                            ${vg.title}
+                        </div>
+                        <div style="font-size: 0.95rem; line-height: 1.65; color: var(--text-main);">
+                            ${vg.note}
+                        </div>
+                    </div>
+                `;
+            } else if (vg.items && vg.items.length > 0) {
+                let itemsHtml = vg.items.map(it => `
+                    <div class="topic-vocab-chip" onclick="speakText('${it.en.replace(/'/g, "\\'")}')" title="Nhấn để nghe phát âm" style="cursor: pointer;">
+                        <div><i class="fa-solid fa-volume-high" style="color: var(--primary); font-size: 0.8rem; margin-right: 0.35rem;"></i><strong>${it.en}</strong></div>
+                        <span>${it.vn}</span>
+                    </div>
+                `).join('');
 
-            vocabHtml += `
-                <div style="margin-bottom: 1.25rem;">
-                    <div style="font-weight: 800; font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.5rem;">${vg.title}</div>
-                    <div class="topic-vocab-grid">${itemsHtml}</div>
-                </div>
-            `;
+                vocabHtml += `
+                    <div style="margin-bottom: 1.25rem;">
+                        <div style="font-weight: 800; font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.5rem;">${vg.title}</div>
+                        <div class="topic-vocab-grid">${itemsHtml}</div>
+                    </div>
+                `;
+            }
         });
 
         // Build samples HTML
