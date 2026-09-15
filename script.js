@@ -4286,13 +4286,13 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Làm cùng bạn bè / người thân):</div>
                     <div class="topic-formula-text">
-                        → I often do my hobbies with my <span class="formula-bracket-hl">[đối tượng: best friend / brother / sister / family]</span> because we have the same hobbies. It’s more <span class="formula-bracket-hl">[tính từ mô tả trải nghiệm: fun / enjoyable]</span> when we spend time together.
+                        → I often do my hobbies with my <span class="formula-bracket-hl">[đối tượng]</span> because we have the same hobbies. It’s more <span class="formula-bracket-hl">[tính từ mô tả trải nghiệm]</span> when we spend time together.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Làm một mình khi cần yên tĩnh):</div>
                     <div class="topic-formula-text">
-                        → Actually, I prefer doing my hobbies alone because it’s <span class="formula-bracket-hl">[tính từ: quiet / peaceful]</span>. It helps me <span class="formula-bracket-hl">[lợi ích: clear my mind / focus better]</span> and makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc: relaxed / comfortable]</span>.
+                        → Actually, I prefer doing my hobbies alone because it’s <span class="formula-bracket-hl">[tính từ]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span> and makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
