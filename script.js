@@ -4219,61 +4219,53 @@ const practiceTopicsData = [
                 question: "What hobbies do you have?",
                 qType: "Wh-question: What [noun] do you like / have?",
                 formula: `<div style="margin-bottom: 12px; line-height: 1.8;">
-                    <strong style="color: var(--primary);">- Cách 1 (Nêu 1 sở thích yêu thích nhất + 2 lợi ích):</strong><br>
-                    → Well, I have a few hobbies, but my favorite one is <span class="formula-bracket-hl">[tên sở thích/hoạt động – Ving]</span> because it helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>. In my free time, I also enjoy <span class="formula-bracket-hl">[sở thích 2 – Ving]</span> to <span class="formula-bracket-hl">[lợi ích 3]</span>.
+                    <strong style="color: var(--primary);">- Cách 1 (Nói về 1 sở thích yêu thích nhất):</strong><br>
+                    → My favorite hobby is <span class="formula-bracket-hl">[hoạt động – Ving]</span> because it’s <span class="formula-bracket-hl">[tính từ: relaxing / interesting]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span> and makes me feel <span class="formula-bracket-hl">[cảm xúc: happy / relaxed]</span>.
                 </div>
                 <div style="line-height: 1.8;">
-                    <strong style="color: var(--primary);">- Cách 2 (Kể 2 sở thích + chọn 1 cái nổi bật + cảm xúc):</strong><br>
-                    → Actually, I have several hobbies, such as <span class="formula-bracket-hl">[sở thích 1 – Ving]</span> and <span class="formula-bracket-hl">[sở thích 2 – Ving]</span>. Among them, I enjoy <span class="formula-bracket-hl">[sở thích 1 – Ving]</span> the most because it helps me <span class="formula-bracket-hl">[lợi ích]</span>. It also makes me feel <span class="formula-bracket-hl">[tính từ cảm xúc]</span>.
+                    <strong style="color: var(--primary);">- Cách 2 (Nói về hoạt động thường làm lúc rảnh rỗi):</strong><br>
+                    → In my free time, I usually <span class="formula-bracket-hl">[hoạt động – Vo]</span> because it helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>.
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🎯 [Sở thích / Hoạt động – Ving]:",
+                        title: "🎯 [Sở thích / Hoạt động quen thuộc]:",
                         items: [
                             { en: "listening to music", vn: "nghe nhạc" },
                             { en: "reading books", vn: "đọc sách" },
                             { en: "playing sports", vn: "chơi thể thao" },
-                            { en: "playing video games", vn: "chơi điện tử" },
-                            { en: "cooking", vn: "nấu ăn" },
                             { en: "watching movies", vn: "xem phim" },
-                            { en: "drawing / painting", vn: "vẽ tranh" },
-                            { en: "going for a walk", vn: "đi dạo bộ" }
+                            { en: "cooking", vn: "nấu ăn" }
                         ]
                     },
                     {
-                        title: "⭐ [Cụm Lợi ích] (Từ Bảng Lợi Ích đã học):",
+                        title: "⭐ [Lợi ích cơ bản] (Từ Bảng Lợi Ích):",
                         items: [
                             { en: "relax after a busy day", vn: "thư giãn sau ngày bận rộn" },
-                            { en: "reduce stress", vn: "giảm căng thẳng" },
-                            { en: "widen my knowledge", vn: "mở mang kiến thức" },
-                            { en: "stay in good shape", vn: "giữ dáng cân đối" },
-                            { en: "clear my mind", vn: "giải tỏa đầu óc" },
-                            { en: "improve my mood", vn: "cải thiện tâm trạng" },
-                            { en: "have fun", vn: "vui vẻ, giải trí" },
-                            { en: "develop useful skills", vn: "phát triển kỹ năng hữu ích" }
+                            { en: "reduce stress", vn: "giảm bớt căng thẳng" },
+                            { en: "widen my knowledge", vn: "mở rộng kiến thức" },
+                            { en: "stay in good shape", vn: "giữ vóc dáng cân đối" }
                         ]
                     },
                     {
-                        title: "😊 [Tính từ cảm xúc]:",
+                        title: "😊 [Tính từ mô tả & cảm xúc đơn giản]:",
                         items: [
-                            { en: "relaxed", vn: "thư thái, thoải mái" },
+                            { en: "relaxing", vn: "mang lại cảm giác thư giãn" },
+                            { en: "interesting", vn: "thú vị" },
                             { en: "happy", vn: "vui vẻ, hạnh phúc" },
-                            { en: "energetic", vn: "tràn đầy năng lượng" },
-                            { en: "excited", vn: "hào hứng, phấn chấn" },
-                            { en: "inspired", vn: "đầy cảm hứng" }
+                            { en: "relaxed", vn: "thoải mái, thư thái" }
                         ]
                     }
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu Cách 1 (Sở thích yêu thích + 2 lợi ích)",
-                        text: "Well, I have a few hobbies, but my favorite one is listening to music because it helps me relax after a busy day and improve my mood. In my free time, I also enjoy reading books to widen my knowledge.",
-                        formatted: `→ Well, I have a few hobbies, but my favorite one is <span class="sub-hl">listening to music</span> because it helps me <span class="sub-hl">relax after a busy day</span> and <span class="sub-hl">improve my mood</span>. In my free time, I also enjoy <span class="sub-hl">reading books</span> to <span class="sub-hl">widen my knowledge</span>.`
+                        label: "Bài mẫu Cách 1 (Theo sở thích yêu thích)",
+                        text: "My favorite hobby is listening to music because it’s relaxing. It helps me reduce stress and makes me feel happy.",
+                        formatted: `→ My favorite hobby is <span class="sub-hl">listening to music</span> because it’s <span class="sub-hl">relaxing</span>. It helps me <span class="sub-hl">reduce stress</span> and makes me feel <span class="sub-hl">happy</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Kể nhiều sở thích + chọn 1 cái nổi bật)",
-                        text: "Actually, I have several hobbies, such as playing sports and watching movies. Among them, I enjoy playing sports the most because it helps me stay in good shape. It also makes me feel energetic.",
-                        formatted: `→ Actually, I have several hobbies, such as <span class="sub-hl">playing sports</span> and <span class="sub-hl">watching movies</span>. Among them, I enjoy <span class="sub-hl">playing sports</span> the most because it helps me <span class="sub-hl">stay in good shape</span>. It also makes me feel <span class="sub-hl">energetic</span>.`
+                        label: "Bài mẫu Cách 2 (Theo thói quen lúc rảnh)",
+                        text: "In my free time, I usually read books because it helps me relax after a busy day and widen my knowledge.",
+                        formatted: `→ In my free time, I usually <span class="sub-hl">read books</span> because it helps me <span class="sub-hl">relax after a busy day</span> and <span class="sub-hl">widen my knowledge</span>.`
                     }
                 ]
             },
@@ -4281,50 +4273,40 @@ const practiceTopicsData = [
                 qNum: 2,
                 question: "Who do you usually do your hobbies with?",
                 qType: "Wh-question: Who do you often [hoạt động – Vo] with?",
-                formula: `<div style="margin-bottom: 12px; line-height: 1.8;">
-                    <strong style="color: var(--primary);">- Công thức chuẩn (Làm cùng bạn bè / người thân):</strong><br>
-                    → I usually do my hobbies with my <span class="formula-bracket-hl">[đối tượng phù hợp]</span> because <span class="formula-bracket-hl">[lý do]</span>. It's more <span class="formula-bracket-hl">[tính từ phù hợp]</span> when we spend time together.
-                </div>
-                <div style="line-height: 1.8;">
-                    <strong style="color: var(--primary);">- Mở rộng thêm (Khi thích làm một mình để thư giãn):</strong><br>
-                    → However, sometimes when I want to relax quietly, I prefer doing it alone to <span class="formula-bracket-hl">[lợi ích: clear my mind / take a mental break]</span>.
+                formula: `<div style="line-height: 1.8;">
+                    <strong style="color: var(--primary);">- Công thức B1 chuẩn:</strong><br>
+                    → I often do my hobbies with my <span class="formula-bracket-hl">[đối tượng: best friend / brother / sister / family]</span> because we have the same hobbies. It’s more <span class="formula-bracket-hl">[tính từ: fun / enjoyable]</span> when we spend time together.
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "👥 [Đối tượng phù hợp]:",
+                        title: "👥 [Người cùng làm]:",
                         items: [
                             { en: "my best friend", vn: "bạn thân nhất của tôi" },
-                            { en: "my close friends", vn: "những người bạn thân" },
-                            { en: "my family", vn: "gia đình tôi" },
+                            { en: "my close friend", vn: "bạn thân của tôi" },
                             { en: "my brother / sister", vn: "anh/chị/em của tôi" },
-                            { en: "my classmates", vn: "bạn cùng lớp" }
+                            { en: "my family", vn: "gia đình tôi" }
                         ]
                     },
                     {
-                        title: "💡 [Lý do cùng làm]:",
+                        title: "💡 [Lý do & Cụm từ hay]:",
                         items: [
                             { en: "we have the same hobbies", vn: "chúng tôi có cùng sở thích" },
-                            { en: "we share common interests", vn: "chúng tôi có nhiều điểm chung" },
-                            { en: "we want to spend quality time together", vn: "muốn dành thời gian gắn kết bên nhau" },
-                            { en: "we can motivate each other", vn: "chúng tôi có thể khích lệ lẫn nhau" },
-                            { en: "we can share our feelings and thoughts", vn: "chia sẻ tâm sự và suy nghĩ" }
+                            { en: "when we spend time together", vn: "khi chúng tôi dành thời gian bên nhau" }
                         ]
                     },
                     {
                         title: "✨ [Tính từ mô tả trải nghiệm]:",
                         items: [
-                            { en: "fun / enjoyable", vn: "vui vẻ, thích thú" },
-                            { en: "meaningful", vn: "ý nghĩa" },
-                            { en: "exciting", vn: "hào hứng, sôi động" },
-                            { en: "memorable", vn: "đáng nhớ" }
+                            { en: "fun", vn: "vui vẻ" },
+                            { en: "enjoyable", vn: "thích thú, dễ chịu" }
                         ]
                     }
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu hoàn chỉnh",
-                        text: "I usually do my hobbies with my best friend because we have the same hobbies. It's more fun and enjoyable when we spend time together. However, sometimes when I want to relax quietly, I prefer doing it alone to clear my mind.",
-                        formatted: `→ I usually do my hobbies with <span class="sub-hl">my best friend</span> because <span class="sub-hl">we have the same hobbies</span>. It’s more <span class="sub-hl">fun and enjoyable</span> when we spend time together. However, sometimes when I want to relax quietly, I prefer doing it alone to <span class="sub-hl">clear my mind</span>.`
+                        label: "Bài mẫu chuẩn B1 (Ngắn gọn, dễ nhớ)",
+                        text: "I often do my hobbies with my best friend because we have the same hobbies. It’s more fun when we spend time together.",
+                        formatted: `→ I often do my hobbies with <span class="sub-hl">my best friend</span> because <span class="sub-hl">we have the same hobbies</span>. It’s more <span class="sub-hl">fun</span> when we spend time together.`
                     }
                 ]
             },
@@ -4332,54 +4314,58 @@ const practiceTopicsData = [
                 qNum: 3,
                 question: "How much time do you spend on your hobbies?",
                 qType: "Wh-question: How much time do you spend on [noun] / [V-ing]?",
-                formula: `<div style="line-height: 1.8;">
-                    <strong style="color: var(--primary);">- Công thức chuẩn:</strong><br>
-                    → Although I have a busy schedule, I still spend about <span class="formula-bracket-hl">[khoảng thời gian]</span> on my hobbies <span class="formula-bracket-hl">[tần suất / thời điểm]</span> because it helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>. It also makes me feel <span class="formula-bracket-hl">[tính từ cảm xúc]</span>.
+                formula: `<div style="margin-bottom: 12px; line-height: 1.8;">
+                    <strong style="color: var(--primary);">- Cách 1 (Đơn giản, trực tiếp nhất):</strong><br>
+                    → I usually spend about <span class="formula-bracket-hl">[khoảng thời gian]</span> <span class="formula-bracket-hl">[thời điểm]</span> on my hobbies because it helps me <span class="formula-bracket-hl">[lợi ích]</span>. It also makes me feel <span class="formula-bracket-hl">[cảm xúc]</span>.
+                </div>
+                <div style="line-height: 1.8;">
+                    <strong style="color: var(--primary);">- Cách 2 (Cấu trúc có Although - chuẩn bài học):</strong><br>
+                    → Although I have a busy schedule, I still spend about <span class="formula-bracket-hl">[khoảng thời gian]</span> on my hobbies every day because it helps me <span class="formula-bracket-hl">[lợi ích]</span>. It also makes me feel <span class="formula-bracket-hl">[cảm xúc]</span>.
                 </div>`,
                 vocabGroups: [
                     {
                         title: "⏰ [Khoảng thời gian]:",
                         items: [
-                            { en: "about thirty minutes", vn: "khoảng 30 phút" },
-                            { en: "about one hour", vn: "khoảng 1 tiếng" },
-                            { en: "around one to two hours", vn: "khoảng 1 - 2 tiếng" },
-                            { en: "two to three hours", vn: "2 - 3 tiếng" }
+                            { en: "thirty minutes", vn: "30 phút" },
+                            { en: "one hour", vn: "1 tiếng" },
+                            { en: "two hours", vn: "2 tiếng" }
                         ]
                     },
                     {
-                        title: "📅 [Tần suất / Thời điểm]:",
+                        title: "📅 [Thời điểm]:",
                         items: [
                             { en: "every day", vn: "mỗi ngày" },
                             { en: "in the evening", vn: "vào buổi tối" },
-                            { en: "at weekends", vn: "vào cuối tuần" },
-                            { en: "in my free time", vn: "vào thời gian rảnh" },
-                            { en: "on my days off", vn: "vào những ngày nghỉ" }
+                            { en: "at weekends", vn: "vào cuối tuần" }
                         ]
                     },
                     {
-                        title: "⭐ [Cụm Lợi ích]:",
+                        title: "⭐ [Lợi ích cơ bản]:",
                         items: [
-                            { en: "relax after a busy day", vn: "thư giãn sau ngày bận rộn" },
-                            { en: "recharge my energy", vn: "nạp lại năng lượng" },
-                            { en: "reduce study pressure", vn: "giảm bớt áp lực học tập" },
-                            { en: "forget about my worries", vn: "quên đi những lo âu" }
+                            { en: "relax after a long day", vn: "thư giãn sau ngày dài" },
+                            { en: "reduce stress", vn: "giảm bớt căng thẳng" },
+                            { en: "recharge my energy", vn: "nạp lại năng lượng" }
                         ]
                     },
                     {
-                        title: "😊 [Tính từ cảm xúc]:",
+                        title: "😊 [Cảm xúc]:",
                         items: [
-                            { en: "relaxed", vn: "thư thái, thoải mái" },
+                            { en: "relaxed", vn: "thoải mái, thư thái" },
                             { en: "refreshed", vn: "sảng khoái" },
-                            { en: "happy", vn: "vui vẻ, phấn khởi" },
-                            { en: "inspired", vn: "đầy cảm hứng" }
+                            { en: "happy", vn: "vui vẻ" }
                         ]
                     }
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu hoàn chỉnh",
-                        text: "Although I have a busy schedule, I still spend about one to two hours on my hobbies every day because it helps me relax after a busy day and recharge my energy. It also makes me feel refreshed.",
-                        formatted: `→ Although I have a busy schedule, I still spend about <span class="sub-hl">one to two hours</span> on my hobbies <span class="sub-hl">every day</span> because it helps me <span class="sub-hl">relax after a busy day</span> and <span class="sub-hl">recharge my energy</span>. It also makes me feel <span class="sub-hl">refreshed</span>.`
+                        label: "Bài mẫu Cách 1 (Đơn giản)",
+                        text: "I usually spend about one hour in the evening on my hobbies because it helps me reduce stress. It also makes me feel relaxed.",
+                        formatted: `→ I usually spend about <span class="sub-hl">one hour</span> <span class="sub-hl">in the evening</span> on my hobbies because it helps me <span class="sub-hl">reduce stress</span>. It also makes me feel <span class="sub-hl">relaxed</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Mẫu có Although)",
+                        text: "Although I have a busy schedule, I still spend about one hour on my hobbies every day because it helps me relax after a busy day. It also makes me feel refreshed.",
+                        formatted: `→ Although I have a busy schedule, I still spend about <span class="sub-hl">one hour</span> on my hobbies <span class="sub-hl">every day</span> because it helps me <span class="sub-hl">relax after a busy day</span>. It also makes me feel <span class="sub-hl">refreshed</span>.`
                     }
                 ]
             }
