@@ -4248,21 +4248,28 @@ const practiceTopicsData = [
                     {
                         title: "✨ [Tính từ mô tả hoạt động]:",
                         items: [
-                            { en: "relaxing", vn: "mang lại cảm giác thư giãn" },
                             { en: "interesting", vn: "thú vị" },
-                            { en: "exciting", vn: "hào hứng, sôi nổi" },
-                            { en: "useful", vn: "hữu ích" },
-                            { en: "fun", vn: "vui vẻ" }
+                            { en: "exciting", vn: "hào hứng / tuyệt vời" },
+                            { en: "relaxing", vn: "mang lại cảm giác thư giãn" },
+                            { en: "fun / enjoyable", vn: "vui vẻ / thích thú" },
+                            { en: "useful / beneficial", vn: "hữu ích / có ích" },
+                            { en: "meaningful", vn: "có ý nghĩa" },
+                            { en: "challenging", vn: "đầy thử thách" },
+                            { en: "fascinating", vn: "hấp dẫn / lôi cuốn" },
+                            { en: "great / wonderful", vn: "tuyệt vời" }
                         ]
                     },
                     {
                         title: "😊 [Tính từ mô tả cảm xúc]:",
                         items: [
-                            { en: "relaxed", vn: "thoải mái, thư thái" },
-                            { en: "happy", vn: "vui vẻ, hạnh phúc" },
-                            { en: "refreshed", vn: "sảng khoái, tươi mới" },
-                            { en: "energetic", vn: "tràn đầy năng lượng" },
-                            { en: "comfortable", vn: "dễ chịu" }
+                            { en: "excited", vn: "hào hứng / phấn khích" },
+                            { en: "happy", vn: "vui vẻ / hạnh phúc" },
+                            { en: "relaxed", vn: "thư thái / thoải mái" },
+                            { en: "confident", vn: "tự tin" },
+                            { en: "refreshed", vn: "sảng khoái" },
+                            { en: "motivated", vn: "có động lực" },
+                            { en: "comfortable", vn: "dễ chịu" },
+                            { en: "energetic", vn: "tràn đầy năng lượng" }
                         ]
                     }
                 ],
@@ -4317,16 +4324,24 @@ const practiceTopicsData = [
                     {
                         title: "✨ [Tính từ mô tả trải nghiệm cùng nhau] (Cách 1):",
                         items: [
-                            { en: "fun", vn: "vui vẻ" },
-                            { en: "enjoyable", vn: "thích thú, dễ chịu" },
-                            { en: "exciting", vn: "hào hứng, sôi nổi" }
+                            { en: "fun / enjoyable", vn: "vui vẻ / thích thú" },
+                            { en: "exciting", vn: "hào hứng / sôi nổi" },
+                            { en: "meaningful", vn: "có ý nghĩa" },
+                            { en: "memorable", vn: "đáng nhớ" },
+                            { en: "interesting", vn: "thú vị" },
+                            { en: "great / wonderful", vn: "tuyệt vời" }
                         ]
                     },
                     {
                         title: "✨ [Tính từ mô tả không gian] (Cách 2):",
                         items: [
                             { en: "quiet", vn: "yên tĩnh" },
-                            { en: "peaceful", vn: "bình yên, thanh tịnh" }
+                            { en: "peaceful", vn: "bình yên / thanh bình" },
+                            { en: "comfortable", vn: "thoải mái / dễ chịu" },
+                            { en: "cozy", vn: "ấm cúng" },
+                            { en: "spacious", vn: "rộng rãi" },
+                            { en: "airy", vn: "thoáng đãng / thoáng mát" },
+                            { en: "private", vn: "riêng tư" }
                         ]
                     },
                     {
@@ -4337,8 +4352,11 @@ const practiceTopicsData = [
                     {
                         title: "😊 [Tính từ mô tả cảm xúc] (Cách 2):",
                         items: [
-                            { en: "relaxed", vn: "thư thái, thoải mái" },
-                            { en: "comfortable", vn: "dễ chịu" }
+                            { en: "relaxed", vn: "thư thái / thoải mái" },
+                            { en: "comfortable", vn: "dễ chịu" },
+                            { en: "peaceful", vn: "bình yên / thanh thản" },
+                            { en: "refreshed", vn: "sảng khoái" },
+                            { en: "happy", vn: "vui vẻ / hạnh phúc" }
                         ]
                     }
                 ],
@@ -4397,10 +4415,14 @@ const practiceTopicsData = [
                     {
                         title: "😊 [Tính từ mô tả cảm xúc]:",
                         items: [
-                            { en: "relaxed", vn: "thoải mái, thư thái" },
-                            { en: "refreshed", vn: "sảng khoái, tươi mới" },
-                            { en: "happy", vn: "vui vẻ" },
-                            { en: "energetic", vn: "tràn đầy năng lượng" }
+                            { en: "relaxed", vn: "thư thái / thoải mái" },
+                            { en: "refreshed", vn: "sảng khoái" },
+                            { en: "happy", vn: "vui vẻ / hạnh phúc" },
+                            { en: "energetic", vn: "tràn đầy năng lượng" },
+                            { en: "comfortable", vn: "dễ chịu" },
+                            { en: "excited", vn: "hào hứng / phấn khích" },
+                            { en: "confident", vn: "tự tin" },
+                            { en: "motivated", vn: "có động lực" }
                         ]
                     }
                 ],
