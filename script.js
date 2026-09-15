@@ -42,7 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
         'choice': 'CHOICE QUESTIONS',
         'wh-questions': 'WH- QUESTIONS',
         'benefits': 'COMMON BENEFITS',
-        'activities': 'COMMON ACTIVITIES'
+        'activities': 'COMMON ACTIVITIES',
+        'topics': 'VOCABULARY BY TOPIC',
+        'practice-topics': 'LUYỆN TẬP THEO CHỦ ĐỀ'
     };
 
     // Thuật toán tìm giọng đọc AI tự nhiên nhất (High Quality / Neural / Natural / Siri)
@@ -462,6 +464,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 const match = activeBtn.getAttribute('onclick')?.match(/switchSubTab\('([^']+)'/);
                 const subId = match ? match[1] : 'books';
                 window.switchSubTab(subId, activeBtn);
+            }
+        }
+        if (target === 'practice-topics') {
+            if (typeof renderPracticeTopic === 'function') {
+                const sel = document.getElementById('practice-topic-select');
+                const tId = sel ? parseInt(sel.value) : 1;
+                renderPracticeTopic(tId);
             }
         }
         if (window.innerWidth <= 768) sidebar.classList.remove('open');
@@ -4194,3 +4203,324 @@ window.switchSubTab = function(tabId, btnElement) {
         activeBtn.style.boxShadow = '0 4px 12px rgba(67, 97, 238, 0.3)';
     }
 };
+
+// =========================================================
+// 8. PRACTICE BY TOPIC (60 TOPICS - PART 1)
+// =========================================================
+const practiceTopicsData = [
+    {
+        id: 1,
+        title: "Topic 01: Let's talk about hobbies",
+        topicName: "Hobbies",
+        introText: "Now, in Part 1, I'd like to ask you some questions about yourself. Let's talk about hobbies.",
+        questions: [
+            {
+                qNum: 1,
+                question: "What hobbies do you have?",
+                qType: "Wh-question: What [noun] do you like / have?",
+                formula: `<div style="margin-bottom: 12px; line-height: 1.8;">
+                    <strong style="color: var(--primary);">- Cách 1 (Nêu 1 sở thích yêu thích nhất + 2 lợi ích):</strong><br>
+                    → Well, I have a few hobbies, but my favorite one is <span class="formula-bracket-hl">[tên sở thích/hoạt động – Ving]</span> because it helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>. In my free time, I also enjoy <span class="formula-bracket-hl">[sở thích 2 – Ving]</span> to <span class="formula-bracket-hl">[lợi ích 3]</span>.
+                </div>
+                <div style="line-height: 1.8;">
+                    <strong style="color: var(--primary);">- Cách 2 (Kể 2 sở thích + chọn 1 cái nổi bật + cảm xúc):</strong><br>
+                    → Actually, I have several hobbies, such as <span class="formula-bracket-hl">[sở thích 1 – Ving]</span> and <span class="formula-bracket-hl">[sở thích 2 – Ving]</span>. Among them, I enjoy <span class="formula-bracket-hl">[sở thích 1 – Ving]</span> the most because it helps me <span class="formula-bracket-hl">[lợi ích]</span>. It also makes me feel <span class="formula-bracket-hl">[tính từ cảm xúc]</span>.
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🎯 [Sở thích / Hoạt động – Ving]:",
+                        items: [
+                            { en: "listening to music", vn: "nghe nhạc" },
+                            { en: "reading books", vn: "đọc sách" },
+                            { en: "playing sports", vn: "chơi thể thao" },
+                            { en: "playing video games", vn: "chơi điện tử" },
+                            { en: "cooking", vn: "nấu ăn" },
+                            { en: "watching movies", vn: "xem phim" },
+                            { en: "drawing / painting", vn: "vẽ tranh" },
+                            { en: "going for a walk", vn: "đi dạo bộ" }
+                        ]
+                    },
+                    {
+                        title: "⭐ [Cụm Lợi ích] (Từ Bảng Lợi Ích đã học):",
+                        items: [
+                            { en: "relax after a busy day", vn: "thư giãn sau ngày bận rộn" },
+                            { en: "reduce stress", vn: "giảm căng thẳng" },
+                            { en: "widen my knowledge", vn: "mở mang kiến thức" },
+                            { en: "stay in good shape", vn: "giữ dáng cân đối" },
+                            { en: "clear my mind", vn: "giải tỏa đầu óc" },
+                            { en: "improve my mood", vn: "cải thiện tâm trạng" },
+                            { en: "have fun", vn: "vui vẻ, giải trí" },
+                            { en: "develop useful skills", vn: "phát triển kỹ năng hữu ích" }
+                        ]
+                    },
+                    {
+                        title: "😊 [Tính từ cảm xúc]:",
+                        items: [
+                            { en: "relaxed", vn: "thư thái, thoải mái" },
+                            { en: "happy", vn: "vui vẻ, hạnh phúc" },
+                            { en: "energetic", vn: "tràn đầy năng lượng" },
+                            { en: "excited", vn: "hào hứng, phấn chấn" },
+                            { en: "inspired", vn: "đầy cảm hứng" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Sở thích yêu thích + 2 lợi ích)",
+                        text: "Well, I have a few hobbies, but my favorite one is listening to music because it helps me relax after a busy day and improve my mood. In my free time, I also enjoy reading books to widen my knowledge.",
+                        formatted: `→ Well, I have a few hobbies, but my favorite one is <span class="sub-hl">listening to music</span> because it helps me <span class="sub-hl">relax after a busy day</span> and <span class="sub-hl">improve my mood</span>. In my free time, I also enjoy <span class="sub-hl">reading books</span> to <span class="sub-hl">widen my knowledge</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Kể nhiều sở thích + chọn 1 cái nổi bật)",
+                        text: "Actually, I have several hobbies, such as playing sports and watching movies. Among them, I enjoy playing sports the most because it helps me stay in good shape. It also makes me feel energetic.",
+                        formatted: `→ Actually, I have several hobbies, such as <span class="sub-hl">playing sports</span> and <span class="sub-hl">watching movies</span>. Among them, I enjoy <span class="sub-hl">playing sports</span> the most because it helps me <span class="sub-hl">stay in good shape</span>. It also makes me feel <span class="sub-hl">energetic</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "Who do you usually do your hobbies with?",
+                qType: "Wh-question: Who do you often [hoạt động – Vo] with?",
+                formula: `<div style="margin-bottom: 12px; line-height: 1.8;">
+                    <strong style="color: var(--primary);">- Công thức chuẩn (Làm cùng bạn bè / người thân):</strong><br>
+                    → I usually do my hobbies with my <span class="formula-bracket-hl">[đối tượng phù hợp]</span> because <span class="formula-bracket-hl">[lý do]</span>. It's more <span class="formula-bracket-hl">[tính từ phù hợp]</span> when we spend time together.
+                </div>
+                <div style="line-height: 1.8;">
+                    <strong style="color: var(--primary);">- Mở rộng thêm (Khi thích làm một mình để thư giãn):</strong><br>
+                    → However, sometimes when I want to relax quietly, I prefer doing it alone to <span class="formula-bracket-hl">[lợi ích: clear my mind / take a mental break]</span>.
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "👥 [Đối tượng phù hợp]:",
+                        items: [
+                            { en: "my best friend", vn: "bạn thân nhất của tôi" },
+                            { en: "my close friends", vn: "những người bạn thân" },
+                            { en: "my family", vn: "gia đình tôi" },
+                            { en: "my brother / sister", vn: "anh/chị/em của tôi" },
+                            { en: "my classmates", vn: "bạn cùng lớp" }
+                        ]
+                    },
+                    {
+                        title: "💡 [Lý do cùng làm]:",
+                        items: [
+                            { en: "we have the same hobbies", vn: "chúng tôi có cùng sở thích" },
+                            { en: "we share common interests", vn: "chúng tôi có nhiều điểm chung" },
+                            { en: "we want to spend quality time together", vn: "muốn dành thời gian gắn kết bên nhau" },
+                            { en: "we can motivate each other", vn: "chúng tôi có thể khích lệ lẫn nhau" },
+                            { en: "we can share our feelings and thoughts", vn: "chia sẻ tâm sự và suy nghĩ" }
+                        ]
+                    },
+                    {
+                        title: "✨ [Tính từ mô tả trải nghiệm]:",
+                        items: [
+                            { en: "fun / enjoyable", vn: "vui vẻ, thích thú" },
+                            { en: "meaningful", vn: "ý nghĩa" },
+                            { en: "exciting", vn: "hào hứng, sôi động" },
+                            { en: "memorable", vn: "đáng nhớ" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu hoàn chỉnh",
+                        text: "I usually do my hobbies with my best friend because we have the same hobbies. It's more fun and enjoyable when we spend time together. However, sometimes when I want to relax quietly, I prefer doing it alone to clear my mind.",
+                        formatted: `→ I usually do my hobbies with <span class="sub-hl">my best friend</span> because <span class="sub-hl">we have the same hobbies</span>. It’s more <span class="sub-hl">fun and enjoyable</span> when we spend time together. However, sometimes when I want to relax quietly, I prefer doing it alone to <span class="sub-hl">clear my mind</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "How much time do you spend on your hobbies?",
+                qType: "Wh-question: How much time do you spend on [noun] / [V-ing]?",
+                formula: `<div style="line-height: 1.8;">
+                    <strong style="color: var(--primary);">- Công thức chuẩn:</strong><br>
+                    → Although I have a busy schedule, I still spend about <span class="formula-bracket-hl">[khoảng thời gian]</span> on my hobbies <span class="formula-bracket-hl">[tần suất / thời điểm]</span> because it helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>. It also makes me feel <span class="formula-bracket-hl">[tính từ cảm xúc]</span>.
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "⏰ [Khoảng thời gian]:",
+                        items: [
+                            { en: "about thirty minutes", vn: "khoảng 30 phút" },
+                            { en: "about one hour", vn: "khoảng 1 tiếng" },
+                            { en: "around one to two hours", vn: "khoảng 1 - 2 tiếng" },
+                            { en: "two to three hours", vn: "2 - 3 tiếng" }
+                        ]
+                    },
+                    {
+                        title: "📅 [Tần suất / Thời điểm]:",
+                        items: [
+                            { en: "every day", vn: "mỗi ngày" },
+                            { en: "in the evening", vn: "vào buổi tối" },
+                            { en: "at weekends", vn: "vào cuối tuần" },
+                            { en: "in my free time", vn: "vào thời gian rảnh" },
+                            { en: "on my days off", vn: "vào những ngày nghỉ" }
+                        ]
+                    },
+                    {
+                        title: "⭐ [Cụm Lợi ích]:",
+                        items: [
+                            { en: "relax after a busy day", vn: "thư giãn sau ngày bận rộn" },
+                            { en: "recharge my energy", vn: "nạp lại năng lượng" },
+                            { en: "reduce study pressure", vn: "giảm bớt áp lực học tập" },
+                            { en: "forget about my worries", vn: "quên đi những lo âu" }
+                        ]
+                    },
+                    {
+                        title: "😊 [Tính từ cảm xúc]:",
+                        items: [
+                            { en: "relaxed", vn: "thư thái, thoải mái" },
+                            { en: "refreshed", vn: "sảng khoái" },
+                            { en: "happy", vn: "vui vẻ, phấn khởi" },
+                            { en: "inspired", vn: "đầy cảm hứng" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu hoàn chỉnh",
+                        text: "Although I have a busy schedule, I still spend about one to two hours on my hobbies every day because it helps me relax after a busy day and recharge my energy. It also makes me feel refreshed.",
+                        formatted: `→ Although I have a busy schedule, I still spend about <span class="sub-hl">one to two hours</span> on my hobbies <span class="sub-hl">every day</span> because it helps me <span class="sub-hl">relax after a busy day</span> and <span class="sub-hl">recharge my energy</span>. It also makes me feel <span class="sub-hl">refreshed</span>.`
+                    }
+                ]
+            }
+        ]
+    }
+];
+
+window.switchPracticeTopic = (topicId) => {
+    const id = parseInt(topicId);
+    renderPracticeTopic(id);
+};
+
+function renderPracticeTopic(topicId) {
+    const container = document.getElementById('practice-topic-content');
+    if (!container) return;
+    
+    const topic = practiceTopicsData.find(t => t.id === topicId) || practiceTopicsData[0];
+    if (!topic) return;
+
+    const labelEl = document.getElementById('current-topic-label');
+    if (labelEl) labelEl.textContent = `Topic ${String(topic.id).padStart(2, '0')} / 60`;
+
+    let html = `
+        <div class="f-card-clean fade-in" style="margin-bottom: 2rem;">
+            <div style="background: linear-gradient(135deg, rgba(67, 97, 238, 0.08), rgba(58, 12, 163, 0.05)); border: 2px solid rgba(67, 97, 238, 0.2); border-radius: 20px; padding: 1.5rem 1.75rem; margin-bottom: 2rem;">
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.75rem;">
+                    <div style="font-size: 1.4rem; font-weight: 800; color: var(--primary); display: flex; align-items: center; gap: 0.6rem;">
+                        <i class="fa-solid fa-comments"></i> ${topic.title}
+                    </div>
+                    <button class="btn-audio-sample" onclick="speakText('${topic.introText.replace(/'/g, "\\'")}')" style="background: var(--primary);">
+                        <i class="fa-solid fa-volume-high"></i> Nghe Giới Thiệu
+                    </button>
+                </div>
+                <div style="font-size: 1.05rem; color: var(--text-main); line-height: 1.7; font-style: italic; background: var(--bg-card); padding: 0.85rem 1.25rem; border-radius: 12px; border: 1px dashed var(--border);">
+                    🎙️ Giám khảo: <strong>"${topic.introText}"</strong>
+                </div>
+            </div>
+    `;
+
+    topic.questions.forEach((q) => {
+        // Build suggestions HTML
+        let vocabHtml = '';
+        q.vocabGroups.forEach(vg => {
+            let itemsHtml = vg.items.map(it => `
+                <div class="topic-vocab-chip" onclick="speakText('${it.en.replace(/'/g, "\\'")}')" title="Nhấn để nghe phát âm" style="cursor: pointer;">
+                    <div><i class="fa-solid fa-volume-high" style="color: var(--primary); font-size: 0.8rem; margin-right: 0.35rem;"></i><strong>${it.en}</strong></div>
+                    <span>${it.vn}</span>
+                </div>
+            `).join('');
+
+            vocabHtml += `
+                <div style="margin-bottom: 1.25rem;">
+                    <div style="font-weight: 800; font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.5rem;">${vg.title}</div>
+                    <div class="topic-vocab-grid">${itemsHtml}</div>
+                </div>
+            `;
+        });
+
+        // Build samples HTML
+        let samplesHtml = q.samples.map((s) => `
+            <div style="background: var(--bg-body); border-radius: 14px; padding: 1.25rem; border: 1px solid var(--border); margin-bottom: 1rem;">
+                <div style="font-weight: 800; color: #7c3aed; font-size: 0.95rem; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fa-solid fa-star"></i> ${s.label}:
+                </div>
+                <div style="font-size: 1.05rem; line-height: 1.8; color: var(--secondary); margin-bottom: 0.85rem;">
+                    ${s.formatted}
+                </div>
+                <button class="btn-audio-sample" onclick="speakText('${s.text.replace(/'/g, "\\'")}')" style="background: #8b5cf6;">
+                    <i class="fa-solid fa-volume-high"></i> Nghe Audio bài mẫu
+                </button>
+            </div>
+        `).join('');
+
+        html += `
+            <div class="topic-q-card fade-in">
+                <!-- Question Header -->
+                <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 1.25rem; flex-wrap: wrap;">
+                    <div>
+                        <div class="topic-q-badge">
+                            <i class="fa-solid fa-circle-question"></i> CÂU HỎI ${q.qNum} / 3
+                        </div>
+                        <span class="topic-q-type-badge">
+                            <i class="fa-solid fa-tag"></i> ${q.qType}
+                        </span>
+                        <div style="font-size: 1.25rem; font-weight: 800; color: var(--text-main); margin-top: 0.5rem; line-height: 1.5;">
+                            ${q.question}
+                        </div>
+                    </div>
+                    <button class="icon-btn" onclick="speakText('${q.question.replace(/'/g, "\\'")}')" title="Nghe phát âm câu hỏi" style="flex-shrink: 0; width: 44px; height: 44px; border-radius: 12px; background: rgba(67, 97, 238, 0.1); color: var(--primary); border: 1.5px solid rgba(67, 97, 238, 0.25);">
+                        <i class="fa-solid fa-volume-high" style="font-size: 1.1rem;"></i>
+                    </button>
+                </div>
+
+                <!-- 1. GỢI Ý CÔNG THỨC TRẢ LỜI -->
+                <div class="topic-section-box" style="border-color: rgba(59, 130, 246, 0.4); box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.08);">
+                    <div class="topic-section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'" style="background: rgba(59, 130, 246, 0.08); color: #2563eb;">
+                        <span><i class="fa-solid fa-lightbulb" style="color: #2563eb;"></i> 💡 GỢI Ý CÔNG THỨC TRẢ LỜI ĐÃ HỌC</span>
+                        <span style="font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="topic-section-content" style="background: rgba(59, 130, 246, 0.02);">
+                        <div class="f-formula-box" style="margin: 0; padding: 0.5rem 0; background: transparent; border: none;">
+                            ${q.formula}
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. GỢI Ý NỘI DUNG ĐIỀN VÀO -->
+                <div class="topic-section-box" style="border-color: rgba(245, 158, 11, 0.4); box-shadow: 0 4px 6px -1px rgba(245, 158, 11, 0.08);">
+                    <div class="topic-section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'" style="background: rgba(245, 158, 11, 0.08); color: #d97706;">
+                        <span><i class="fa-solid fa-pen-to-square" style="color: #d97706;"></i> 📝 GỢI Ý TỪ VỰNG ĐIỀN VÀO (VOCABULARY SUGGESTIONS)</span>
+                        <span style="font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="topic-section-content">
+                        ${vocabHtml}
+                    </div>
+                </div>
+
+                <!-- 3. CÂU TRẢ LỜI MẪU & LUYỆN NÓI -->
+                <div class="topic-section-box" style="border-color: rgba(139, 92, 246, 0.4); box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.08);">
+                    <div class="topic-section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'" style="background: rgba(139, 92, 246, 0.08); color: #7c3aed;">
+                        <span><i class="fa-solid fa-star" style="color: #7c3aed;"></i> ⭐ CÂU TRẢ LỜI MẪU THAM KHẢO & AUDIO</span>
+                        <span style="font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="topic-section-content">
+                        ${samplesHtml}
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+
+    html += `</div>`;
+    container.innerHTML = html;
+}
+
+// Auto-initialize topic 1 on load
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        if (typeof renderPracticeTopic === 'function') renderPracticeTopic(1);
+    });
+} else {
+    if (typeof renderPracticeTopic === 'function') renderPracticeTopic(1);
+}
+

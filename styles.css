@@ -573,3 +573,99 @@ body.dark-theme .quiz-option.wrong { background: #7f1d1d; color: #fecaca; }
 .subtab-pane.active {
     display: block !important;
 }
+
+/* =========================================================
+   PRACTICE BY TOPIC (60 TOPICS)
+========================================================= */
+.topic-q-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 1.75rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+.topic-q-card:hover {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+}
+.topic-q-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: linear-gradient(135deg, #4361ee, #3a0ca3);
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 800;
+    padding: 0.35rem 0.85rem;
+    border-radius: 50px;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.5px;
+}
+.topic-q-type-badge {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #2563eb;
+    background: rgba(37, 99, 235, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 8px;
+    margin-left: 0.5rem;
+}
+body.dark-theme .topic-q-type-badge {
+    color: #93c5fd;
+    background: rgba(37, 99, 235, 0.2);
+}
+.topic-vocab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+.topic-vocab-chip {
+    background: var(--bg-body);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.6rem 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.92rem;
+    transition: all 0.2s ease;
+}
+.topic-vocab-chip:hover {
+    border-color: var(--primary);
+    transform: translateY(-1px);
+}
+.topic-vocab-chip strong {
+    color: var(--primary);
+    font-weight: 700;
+}
+.topic-vocab-chip span {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+    text-align: right;
+}
+.topic-section-box {
+    margin-bottom: 1.25rem;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+}
+.topic-section-header {
+    padding: 0.85rem 1.25rem;
+    font-weight: 800;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+}
+.topic-section-content {
+    padding: 1.25rem;
+    border-top: 1px solid var(--border);
+    line-height: 1.8;
+}
