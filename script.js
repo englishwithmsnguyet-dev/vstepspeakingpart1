@@ -4224,7 +4224,7 @@ const practiceTopicsData = [
                 </div>
                 <div style="line-height: 1.8;">
                     <strong style="color: var(--primary);">- Cách 2 (Nói về hoạt động thường làm lúc rảnh rỗi):</strong><br>
-                    → In my free time, I usually <span class="formula-bracket-hl">[hoạt động – Vo]</span> because it helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>.
+                    → In my free time, I usually <span class="formula-bracket-hl">[hoạt động 1 – Vo]</span> because it helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>. I also <span class="formula-bracket-hl">[hoạt động 2 – Vo]</span> to <span class="formula-bracket-hl">[lợi ích 3]</span>.
                 </div>`,
                 vocabGroups: [
                     {
@@ -4243,7 +4243,8 @@ const practiceTopicsData = [
                             { en: "relax after a busy day", vn: "thư giãn sau ngày bận rộn" },
                             { en: "reduce stress", vn: "giảm bớt căng thẳng" },
                             { en: "widen my knowledge", vn: "mở rộng kiến thức" },
-                            { en: "stay in good shape", vn: "giữ vóc dáng cân đối" }
+                            { en: "stay in good shape", vn: "giữ vóc dáng cân đối" },
+                            { en: "clear my mind", vn: "giải tỏa đầu óc" }
                         ]
                     },
                     {
@@ -4264,8 +4265,8 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Theo thói quen lúc rảnh)",
-                        text: "In my free time, I usually read books because it helps me relax after a busy day and widen my knowledge.",
-                        formatted: `→ In my free time, I usually <span class="sub-hl">read books</span> because it helps me <span class="sub-hl">relax after a busy day</span> and <span class="sub-hl">widen my knowledge</span>.`
+                        text: "In my free time, I usually read books because it helps me relax after a busy day and widen my knowledge. I also listen to music to clear my mind.",
+                        formatted: `→ In my free time, I usually <span class="sub-hl">read books</span> because it helps me <span class="sub-hl">relax after a busy day</span> and <span class="sub-hl">widen my knowledge</span>. I also <span class="sub-hl">listen to music</span> to <span class="sub-hl">clear my mind</span>.`
                     }
                 ]
             },
@@ -4273,13 +4274,17 @@ const practiceTopicsData = [
                 qNum: 2,
                 question: "Who do you usually do your hobbies with?",
                 qType: "Wh-question: Who do you often [hoạt động – Vo] with?",
-                formula: `<div style="line-height: 1.8;">
-                    <strong style="color: var(--primary);">- Công thức B1 chuẩn:</strong><br>
+                formula: `<div style="margin-bottom: 12px; line-height: 1.8;">
+                    <strong style="color: var(--primary);">- Cách 1 (Làm cùng bạn bè / người thân):</strong><br>
                     → I often do my hobbies with my <span class="formula-bracket-hl">[đối tượng: best friend / brother / sister / family]</span> because we have the same hobbies. It’s more <span class="formula-bracket-hl">[tính từ: fun / enjoyable]</span> when we spend time together.
+                </div>
+                <div style="line-height: 1.8;">
+                    <strong style="color: var(--primary);">- Cách 2 (Làm một mình khi cần yên tĩnh):</strong><br>
+                    → Actually, I prefer doing my hobbies alone because it’s <span class="formula-bracket-hl">[tính từ: quiet / comfortable]</span>. It helps me <span class="formula-bracket-hl">[lợi ích: clear my mind / focus better]</span> and makes me feel <span class="formula-bracket-hl">[cảm xúc: relaxed / peaceful]</span>.
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "👥 [Người cùng làm]:",
+                        title: "👥 [Người cùng làm] (Cách 1):",
                         items: [
                             { en: "my best friend", vn: "bạn thân nhất của tôi" },
                             { en: "my close friend", vn: "bạn thân của tôi" },
@@ -4288,25 +4293,35 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "💡 [Lý do & Cụm từ hay]:",
+                        title: "💡 [Lý do & Cụm từ hay] (Cách 1):",
                         items: [
                             { en: "we have the same hobbies", vn: "chúng tôi có cùng sở thích" },
-                            { en: "when we spend time together", vn: "khi chúng tôi dành thời gian bên nhau" }
+                            { en: "when we spend time together", vn: "khi chúng tôi dành thời gian bên nhau" },
+                            { en: "fun", vn: "vui vẻ" },
+                            { en: "enjoyable", vn: "thích thú, dễ chịu" }
                         ]
                     },
                     {
-                        title: "✨ [Tính từ mô tả trải nghiệm]:",
+                        title: "🧘 [Từ vựng khi làm một mình] (Cách 2):",
                         items: [
-                            { en: "fun", vn: "vui vẻ" },
-                            { en: "enjoyable", vn: "thích thú, dễ chịu" }
+                            { en: "alone", vn: "một mình" },
+                            { en: "quiet", vn: "yên tĩnh" },
+                            { en: "clear my mind", vn: "giải tỏa đầu óc" },
+                            { en: "focus better", vn: "tập trung tốt hơn" },
+                            { en: "relaxed", vn: "thư thái, thoải mái" }
                         ]
                     }
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu chuẩn B1 (Ngắn gọn, dễ nhớ)",
+                        label: "Bài mẫu Cách 1 (Làm cùng bạn bè / người thân)",
                         text: "I often do my hobbies with my best friend because we have the same hobbies. It’s more fun when we spend time together.",
                         formatted: `→ I often do my hobbies with <span class="sub-hl">my best friend</span> because <span class="sub-hl">we have the same hobbies</span>. It’s more <span class="sub-hl">fun</span> when we spend time together.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Làm một mình)",
+                        text: "Actually, I prefer doing my hobbies alone because it’s quiet. It helps me clear my mind and makes me feel relaxed.",
+                        formatted: `→ Actually, I prefer doing my hobbies <span class="sub-hl">alone</span> because it’s <span class="sub-hl">quiet</span>. It helps me <span class="sub-hl">clear my mind</span> and makes me feel <span class="sub-hl">relaxed</span>.`
                     }
                 ]
             },
