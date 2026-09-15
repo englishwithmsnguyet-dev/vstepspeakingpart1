@@ -4286,7 +4286,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Làm cùng bạn bè / người thân):</div>
                     <div class="topic-formula-text">
-                        → I often do my hobbies with my <span class="formula-bracket-hl">[đối tượng]</span> because we have the same hobbies. It’s more <span class="formula-bracket-hl">[tính từ mô tả trải nghiệm]</span> when we spend time together.
+                        → I often do my hobbies with my <span class="formula-bracket-hl">[đối tượng]</span> because <span class="formula-bracket-hl">[lý do]</span>. It’s more <span class="formula-bracket-hl">[tính từ mô tả trải nghiệm]</span> when we spend time together.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -4306,10 +4306,12 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "💡 [Cụm từ hay] (Cách 1):",
+                        title: "💡 [Lý do] (Cách 1):",
                         items: [
                             { en: "we have the same hobbies", vn: "chúng tôi có cùng sở thích" },
-                            { en: "when we spend time together", vn: "khi chúng tôi dành thời gian bên nhau" }
+                            { en: "we are very close", vn: "chúng tôi rất thân thiết" },
+                            { en: "we understand each other well", vn: "chúng tôi rất hiểu nhau" },
+                            { en: "we both like this activity", vn: "cả hai chúng tôi đều thích hoạt động này" }
                         ]
                     },
                     {
