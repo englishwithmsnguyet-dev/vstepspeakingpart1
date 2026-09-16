@@ -4579,15 +4579,15 @@ const practiceTopicsData = [
                 question: "Do you prefer playing video games alone or with friends? Why?",
                 qType: "Choice question: Do you prefer [option 1] or [option 2]?",
                 formula: `<div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 1 (Lựa chọn 1 - Chơi một mình để tập trung & thư giãn):</div>
+                    <div class="topic-formula-title">- Cách 1 (Cấu trúc chọn trực tiếp & dứt khoát):</div>
                     <div class="topic-formula-text">
-                        → I prefer playing video games alone because it’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>. It allows me to <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → I definitely prefer playing video games <span class="formula-bracket-hl">[alone / with friends]</span> because it’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>. It allows <span class="formula-bracket-hl">[me / us]</span> to <span class="formula-bracket-hl">[lợi ích]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Lựa chọn 2 - Chơi cùng bạn bè để vui vẻ & kết nối):</div>
+                    <div class="topic-formula-title">- Cách 2 (Cấu trúc so sánh nhượng bộ có Although - Điểm cao hơn):</div>
                     <div class="topic-formula-text">
-                        → I prefer playing video games with friends because it’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>. It allows us to <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → Although playing <span class="formula-bracket-hl">[with friends / alone]</span> is <span class="formula-bracket-hl">[tính từ]</span>, I still prefer playing <span class="formula-bracket-hl">[alone / with friends]</span> because it’s much more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>. It helps <span class="formula-bracket-hl">[me / us]</span> <span class="formula-bracket-hl">[lợi ích]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4604,25 +4604,25 @@ const practiceTopicsData = [
                     },
                     {
                         type: "note",
-                        title: "⭐ [Lợi ích khi chơi một mình] (Lựa chọn 1):",
+                        title: "⭐ [Lợi ích khi chơi một mình]:",
                         note: `Sử dụng các cụm từ trong <button type="button" onclick="switchTab('benefits')" style="background: none; border: none; padding: 0; color: #d946ef; font-weight: 800; text-decoration: underline; cursor: pointer; font-size: 0.95rem; font-family: inherit;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Bảng Lợi Ích</button> (Ví dụ: <em>focus better on the game, relax more, clear my mind, play at my own pace...</em>).`
                     },
                     {
                         type: "note",
-                        title: "👥 [Lợi ích khi chơi cùng bạn bè] (Lựa chọn 2):",
+                        title: "👥 [Lợi ích khi chơi cùng bạn bè]:",
                         note: `Sử dụng các cụm từ trong <button type="button" onclick="switchTab('benefits')" style="background: none; border: none; padding: 0; color: #d946ef; font-weight: 800; text-decoration: underline; cursor: pointer; font-size: 0.95rem; font-family: inherit;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Bảng Lợi Ích</button> (Ví dụ: <em>talk and laugh together, have more fun, connect with friends, learn to work with others...</em>).`
                     }
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu Cách 1 (Thích chơi một mình để tập trung & thư giãn)",
-                        text: "I prefer playing video games alone because it’s more relaxing. It allows me to focus better on the game and clear my mind.",
-                        formatted: `→ I prefer <span class="sub-hl">playing video games alone</span> because it’s more <span class="sub-hl">relaxing</span>. It allows me to <span class="sub-hl">focus better on the game</span> and <span class="sub-hl">clear my mind</span>.`
+                        label: "Bài mẫu Cách 1 (Cấu trúc trực tiếp - Chọn chơi cùng bạn bè)",
+                        text: "I definitely prefer playing video games with friends because it’s more exciting. It allows us to talk and laugh together and have more fun.",
+                        formatted: `→ I definitely prefer <span class="sub-hl">playing video games with friends</span> because it’s more <span class="sub-hl">exciting</span>. It allows us to <span class="sub-hl">talk and laugh together</span> and <span class="sub-hl">have more fun</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Thích chơi cùng bạn bè để trò chuyện & vui vẻ)",
-                        text: "I prefer playing video games with friends because it’s more exciting. It allows us to talk and laugh together and have more fun.",
-                        formatted: `→ I prefer <span class="sub-hl">playing video games with friends</span> because it’s more <span class="sub-hl">exciting</span>. It allows us to <span class="sub-hl">talk and laugh together</span> and <span class="sub-hl">have more fun</span>.`
+                        label: "Bài mẫu Cách 2 (Cấu trúc nhượng bộ Although - Chọn chơi một mình)",
+                        text: "Although playing with friends is quite fun, I still prefer playing video games alone because it’s much more relaxing. It helps me focus better on the game and clear my mind.",
+                        formatted: `→ Although <span class="sub-hl">playing with friends is quite fun</span>, I still prefer <span class="sub-hl">playing video games alone</span> because it’s much more <span class="sub-hl">relaxing</span>. It helps me <span class="sub-hl">focus better on the game</span> and <span class="sub-hl">clear my mind</span>.`
                     }
                 ]
             }
@@ -4714,15 +4714,15 @@ const practiceTopicsData = [
                 question: "Do you prefer reading paper books or electronic books?",
                 qType: "Choice question: Do you prefer [option 1] or [option 2]?",
                 formula: `<div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 1 (Lựa chọn 1 - Sách điện tử / E-books):</div>
+                    <div class="topic-formula-title">- Cách 1 (Cấu trúc chọn trực tiếp & dứt khoát):</div>
                     <div class="topic-formula-text">
-                        → I prefer <span class="formula-bracket-hl">[reading electronic books]</span>. It’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>, so I can <span class="formula-bracket-hl">[lợi ích 1]</span>. It’s also a good way to <span class="formula-bracket-hl">[lợi ích 2]</span>.
+                        → I definitely prefer <span class="formula-bracket-hl">[lựa chọn: reading electronic books / reading paper books]</span>. It’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>, so I can <span class="formula-bracket-hl">[lợi ích 1]</span>. It’s also a good way to <span class="formula-bracket-hl">[lợi ích 2]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Lựa chọn 2 - Sách giấy / Paper books):</div>
+                    <div class="topic-formula-title">- Cách 2 (Cấu trúc so sánh nhượng bộ có Although - Điểm cao hơn):</div>
                     <div class="topic-formula-text">
-                        → I prefer <span class="formula-bracket-hl">[reading paper books]</span>. It’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>, so I can <span class="formula-bracket-hl">[lợi ích 1]</span>. It’s also a good way to <span class="formula-bracket-hl">[lợi ích 2]</span>.
+                        → Although <span class="formula-bracket-hl">[đối tượng kia: paper books / electronic books]</span> are <span class="formula-bracket-hl">[tính từ]</span>, I still prefer <span class="formula-bracket-hl">[đối tượng mình chọn]</span> because it is much more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4737,7 +4737,7 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "📱 [Lợi ích khi đọc sách điện tử - E-books] (Lựa chọn 1):",
+                        title: "📱 [Lợi ích khi đọc sách điện tử - E-books]:",
                         items: [
                             { en: "read anywhere", vn: "đọc ở bất cứ đâu" },
                             { en: "save time", vn: "tiết kiệm thời gian" },
@@ -4746,7 +4746,7 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "📖 [Lợi ích khi đọc sách giấy - Paper books] (Lựa chọn 2):",
+                        title: "📖 [Lợi ích khi đọc sách giấy - Paper books]:",
                         items: [
                             { en: "focus better", vn: "tập trung tốt hơn" },
                             { en: "protect my eyes", vn: "bảo vệ mắt" },
@@ -4757,14 +4757,14 @@ const practiceTopicsData = [
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu Cách 1 (Sách điện tử - Tiện lợi & Đọc mọi nơi)",
-                        text: "I prefer reading electronic books. It’s more convenient, so I can read anywhere. It’s also a good way to save time.",
-                        formatted: `→ I prefer <span class="sub-hl">reading electronic books</span>. It’s more <span class="sub-hl">convenient</span>, so I can <span class="sub-hl">read anywhere</span>. It’s also a good way to <span class="sub-hl">save time</span>.`
+                        label: "Bài mẫu Cách 1 (Cấu trúc trực tiếp - Chọn sách điện tử)",
+                        text: "I definitely prefer reading electronic books. It’s more convenient, so I can read anywhere. It’s also a good way to save time.",
+                        formatted: `→ I definitely prefer <span class="sub-hl">reading electronic books</span>. It’s more <span class="sub-hl">convenient</span>, so I can <span class="sub-hl">read anywhere</span>. It’s also a good way to <span class="sub-hl">save time</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Sách giấy - Thoải mái & Tập trung tốt hơn)",
-                        text: "I prefer reading paper books. It’s more comfortable, so I can focus better. It’s also a good way to protect my eyes.",
-                        formatted: `→ I prefer <span class="sub-hl">reading paper books</span>. It’s more <span class="sub-hl">comfortable</span>, so I can <span class="sub-hl">focus better</span>. It’s also a good way to <span class="sub-hl">protect my eyes</span>.`
+                        label: "Bài mẫu Cách 2 (Cấu trúc nhượng bộ Although - Chọn sách giấy)",
+                        text: "Although electronic books are very convenient, I still prefer reading paper books because they are more comfortable for my eyes. They help me focus better and avoid distractions.",
+                        formatted: `→ Although <span class="sub-hl">electronic books are very convenient</span>, I still prefer <span class="sub-hl">reading paper books</span> because they are more <span class="sub-hl">comfortable for my eyes</span>. They help me <span class="sub-hl">focus better</span> and <span class="sub-hl">avoid distractions</span>.`
                     }
                 ]
             },
@@ -4919,15 +4919,15 @@ const practiceTopicsData = [
                 question: "What radio station do you usually listen to?",
                 qType: "Wh-question: What [radio station] do you usually [Vo]?",
                 formula: `<div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 1 (Kênh phát thanh âm nhạc / giải trí):</div>
+                    <div class="topic-formula-title">- Cách 1 (Kênh phát thanh âm nhạc / giải trí - Cấu trúc trực tiếp):</div>
                     <div class="topic-formula-text">
                         → I usually listen to <span class="formula-bracket-hl">[kênh phát thanh]</span>. It provides a lot of <span class="formula-bracket-hl">[nội dung kênh]</span>. I like it because it’s very <span class="formula-bracket-hl">[tính từ mô tả]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Kênh phát thanh tin tức / học tiếng Anh):</div>
+                    <div class="topic-formula-title">- Cách 2 (Kênh học tiếng Anh / tin tức - Cấu trúc theo mục đích):</div>
                     <div class="topic-formula-text">
-                        → My favorite station is <span class="formula-bracket-hl">[kênh phát thanh]</span> because it provides a lot of <span class="formula-bracket-hl">[nội dung kênh]</span>. I like it because it’s very <span class="formula-bracket-hl">[tính từ mô tả]</span>.
+                        → Whenever I want to <span class="formula-bracket-hl">[mục đích]</span>, I usually tune in to <span class="formula-bracket-hl">[kênh phát thanh]</span> because it is extremely <span class="formula-bracket-hl">[tính từ mô tả]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4942,10 +4942,19 @@ const practiceTopicsData = [
                         ]
                     },
                     {
+                        title: "🎯 [Mục đích nghe đài] (Dành cho Cách 2):",
+                        items: [
+                            { en: "improve my English listening skills", vn: "nâng cao kỹ năng nghe tiếng Anh" },
+                            { en: "learn new English vocabulary", vn: "học thêm từ vựng tiếng Anh" },
+                            { en: "catch up on daily news", vn: "nắm bắt tin tức hàng ngày" },
+                            { en: "check traffic updates", vn: "kiểm tra tình hình giao thông" }
+                        ]
+                    },
+                    {
                         title: "✨ [Tính từ mô tả kênh]:",
                         items: [
                             { en: "relaxing", vn: "thư giãn" },
-                            { en: "useful", vn: "hữu ích" },
+                            { en: "useful / helpful", vn: "hữu ích" },
                             { en: "informative", vn: "nhiều thông tin bổ ích" },
                             { en: "easy to understand", vn: "dễ hiểu" },
                             { en: "interesting", vn: "thú vị" }
@@ -4959,9 +4968,9 @@ const practiceTopicsData = [
                         formatted: `→ I usually listen to <span class="sub-hl">VOV3</span>. It provides a lot of <span class="sub-hl">music and entertainment programs</span>. I like it because it’s very <span class="sub-hl">relaxing</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (BBC Learning English - Bài học tiếng Anh & Hữu ích)",
-                        text: "My favorite station is BBC Learning English because it provides a lot of English lessons and listening practice. I like it because it’s very useful.",
-                        formatted: `→ My favorite station is <span class="sub-hl">BBC Learning English</span> because it provides a lot of <span class="sub-hl">English lessons and listening practice</span>. I like it because it’s very <span class="sub-hl">useful</span>.`
+                        label: "Bài mẫu Cách 2 (BBC Learning English - Cấu trúc theo mục đích học tiếng Anh)",
+                        text: "Whenever I want to improve my English listening skills, I usually tune in to BBC Learning English because it is extremely useful.",
+                        formatted: `→ Whenever I want to <span class="sub-hl">improve my English listening skills</span>, I usually tune in to <span class="sub-hl">BBC Learning English</span> because it is extremely <span class="sub-hl">useful</span>.`
                     }
                 ]
             },
