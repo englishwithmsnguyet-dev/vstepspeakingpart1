@@ -4452,15 +4452,15 @@ const practiceTopicsData = [
                 question: "What video game do you often play?",
                 qType: "Wh-question: What [noun] do you often [Vo]?",
                 formula: `<div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 1 (Dùng cấu trúc I'm a big fan of...):</div>
+                    <div class="topic-formula-title">- Cách 1 (Nêu trực tiếp tên trò chơi yêu thích & tính chất):</div>
                     <div class="topic-formula-text">
                         → I’m a big fan of <span class="formula-bracket-hl">[tên trò chơi điện tử]</span> because it’s very <span class="formula-bracket-hl">[tính từ mô tả trò chơi]</span>. I often play it in my free time, especially <span class="formula-bracket-hl">[thời điểm cụ thể]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Dùng cấu trúc In my free time, I usually play...):</div>
+                    <div class="topic-formula-title">- Cách 2 (Nêu thiết bị chơi & người chơi cùng để giải trí):</div>
                     <div class="topic-formula-text">
-                        → In my free time, I usually play <span class="formula-bracket-hl">[tên trò chơi điện tử]</span>, especially <span class="formula-bracket-hl">[thời điểm cụ thể]</span>. I really enjoy it because it’s <span class="formula-bracket-hl">[tính từ mô tả trò chơi]</span>.
+                        → Whenever I have free time, I love playing <span class="formula-bracket-hl">[tên trò chơi điện tử]</span> on my <span class="formula-bracket-hl">[thiết bị]</span> with <span class="formula-bracket-hl">[người chơi cùng]</span>. It’s a wonderful way to <span class="formula-bracket-hl">[lợi ích]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4476,20 +4476,35 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "✨ [Tính từ mô tả trò chơi]:",
+                        title: "📱 [Thiết bị chơi game] (Dành cho Cách 2):",
+                        items: [
+                            { en: "smartphone", vn: "điện thoại thông minh" },
+                            { en: "laptop / computer", vn: "máy tính xách tay / máy vi tính" },
+                            { en: "iPad / tablet", vn: "máy tính bảng" }
+                        ]
+                    },
+                    {
+                        title: "👥 [Người chơi cùng] (Dành cho Cách 2):",
+                        items: [
+                            { en: "my close friends", vn: "bạn thân của tôi" },
+                            { en: "my brother / sister", vn: "anh/chị/em của tôi" },
+                            { en: "other online players", vn: "những người chơi khác trên mạng" },
+                            { en: "by myself / alone", vn: "chơi một mình" }
+                        ]
+                    },
+                    {
+                        title: "✨ [Tính từ mô tả trò chơi] (Cách 1):",
                         items: [
                             { en: "exciting", vn: "hào hứng / sôi nổi" },
                             { en: "relaxing", vn: "mang lại cảm giác thư giãn" },
                             { en: "interesting", vn: "thú vị" },
                             { en: "fun / enjoyable", vn: "vui vẻ / thích thú" },
                             { en: "entertaining", vn: "mang tính giải trí cao" },
-                            { en: "challenging", vn: "đầy thử thách" },
-                            { en: "fascinating", vn: "hấp dẫn / lôi cuốn" },
-                            { en: "great / wonderful", vn: "tuyệt vời" }
+                            { en: "challenging", vn: "đầy thử thách" }
                         ]
                     },
                     {
-                        title: "📅 [Thời điểm cụ thể]:",
+                        title: "📅 [Thời điểm cụ thể] (Cách 1):",
                         items: [
                             { en: "at the weekend", vn: "vào cuối tuần" },
                             { en: "in the evening", vn: "vào buổi tối" },
@@ -4500,14 +4515,14 @@ const practiceTopicsData = [
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu Cách 1 (FIFA - Trò chơi bóng đá / sôi nổi)",
+                        label: "Bài mẫu Cách 1 (FIFA - Trò chơi bóng đá sôi nổi vào cuối tuần)",
                         text: "I’m a big fan of FIFA because it’s very exciting. I often play it in my free time, especially at the weekend.",
                         formatted: `→ I’m a big fan of <span class="sub-hl">FIFA</span> because it’s very <span class="sub-hl">exciting</span>. I often play it in my free time, especially <span class="sub-hl">at the weekend</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Minecraft - Trò chơi thư giãn)",
-                        text: "In my free time, I usually play Minecraft, especially in the evening. I really enjoy it because it’s very relaxing.",
-                        formatted: `→ In my free time, I usually play <span class="sub-hl">Minecraft</span>, especially <span class="sub-hl">in the evening</span>. I really enjoy it because it’s very <span class="sub-hl">relaxing</span>.`
+                        label: "Bài mẫu Cách 2 (Cờ vua trực tuyến trên điện thoại cùng bạn bè)",
+                        text: "Whenever I have free time, I love playing online chess on my smartphone with my close friends. It’s a wonderful way to relax after a busy day.",
+                        formatted: `→ Whenever I have free time, I love playing <span class="sub-hl">online chess</span> on my <span class="sub-hl">smartphone</span> with <span class="sub-hl">my close friends</span>. It’s a wonderful way to <span class="sub-hl">relax after a busy day</span>.`
                     }
                 ]
             },
@@ -4623,15 +4638,15 @@ const practiceTopicsData = [
                 question: "What is your favorite book?",
                 qType: "Wh-question: What is your favorite [noun]?",
                 formula: `<div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 1 (Dùng cấu trúc I'm a big fan of...):</div>
+                    <div class="topic-formula-title">- Cách 1 (Nêu trực tiếp tên cuốn sách yêu thích & lý do):</div>
                     <div class="topic-formula-text">
                         → I’m a big fan of <span class="formula-bracket-hl">[tên quyển sách]</span>. I like it because it’s very <span class="formula-bracket-hl">[tính từ mô tả quyển sách]</span>. It always helps me <span class="formula-bracket-hl">[lợi ích]</span> and makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span> whenever I read it.
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Dùng cấu trúc My favorite book is...):</div>
+                    <div class="topic-formula-title">- Cách 2 (Nêu thể loại sách yêu thích trước, rồi dẫn tới cuốn sách tâm đắc nhất):</div>
                     <div class="topic-formula-text">
-                        → My favorite book is <span class="formula-bracket-hl">[tên quyển sách]</span> because it’s very <span class="formula-bracket-hl">[tính từ mô tả quyển sách]</span>. Reading this book helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
+                        → To be honest, I really enjoy reading <span class="formula-bracket-hl">[thể loại sách]</span>, and my all-time favorite is <span class="formula-bracket-hl">[tên quyển sách]</span>. The main reason is that it provides a lot of valuable lessons and helps me <span class="formula-bracket-hl">[lợi ích]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4646,7 +4661,16 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "✨ [Tính từ mô tả quyển sách]:",
+                        title: "📚 [Thể loại sách] (Dành cho Cách 2):",
+                        items: [
+                            { en: "self-help books", vn: "sách kỹ năng sống / phát triển bản thân" },
+                            { en: "detective stories", vn: "truyện trinh thám" },
+                            { en: "comic books", vn: "truyện tranh" },
+                            { en: "science fiction novels", vn: "tiểu thuyết khoa học viễn tưởng" }
+                        ]
+                    },
+                    {
+                        title: "✨ [Tính từ mô tả quyển sách] (Cách 1):",
                         items: [
                             { en: "exciting", vn: "hào hứng / lôi cuốn" },
                             { en: "interesting", vn: "thú vị" },
@@ -4662,7 +4686,7 @@ const practiceTopicsData = [
                         note: `Sử dụng các cụm từ trong <button type="button" onclick="switchTab('benefits')" style="background: none; border: none; padding: 0; color: #d946ef; font-weight: 800; text-decoration: underline; cursor: pointer; font-size: 0.95rem; font-family: inherit;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Bảng Lợi Ích</button> để điền vào vị trí <em>[lợi ích]</em> (Ví dụ: <em>reduce stress, widen my knowledge, clear my mind, learn new things, develop my imagination...</em>).`
                     },
                     {
-                        title: "😊 [Tính từ mô tả cảm xúc]:",
+                        title: "😊 [Tính từ mô tả cảm xúc] (Cách 1):",
                         items: [
                             { en: "happy", vn: "vui vẻ / hạnh phúc" },
                             { en: "relaxed", vn: "thư thái / thoải mái" },
@@ -4674,14 +4698,14 @@ const practiceTopicsData = [
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu Cách 1 (Harry Potter - Lôi cuốn & Giảm stress)",
+                        label: "Bài mẫu Cách 1 (Nêu sách Harry Potter - Lôi cuốn & Giảm stress)",
                         text: "I’m a big fan of Harry Potter. I like it because it’s very exciting. It always helps me reduce stress and makes me feel happy whenever I read it.",
                         formatted: `→ I’m a big fan of <span class="sub-hl">Harry Potter</span>. I like it because it’s very <span class="sub-hl">exciting</span>. It always helps me <span class="sub-hl">reduce stress</span> and makes me feel <span class="sub-hl">happy</span> whenever I read it.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Đắc Nhân Tâm - Ý nghĩa & Có động lực)",
-                        text: "My favorite book is How to Win Friends and Influence People because it’s very meaningful. Reading this book helps me widen my knowledge and makes me feel motivated.",
-                        formatted: `→ My favorite book is <span class="sub-hl">How to Win Friends and Influence People</span> because it’s very <span class="sub-hl">meaningful</span>. Reading this book helps me <span class="sub-hl">widen my knowledge</span> and makes me feel <span class="sub-hl">motivated</span>.`
+                        label: "Bài mẫu Cách 2 (Nêu thể loại kỹ năng sống & Đắc Nhân Tâm)",
+                        text: "To be honest, I really enjoy reading self-help books, and my all-time favorite is How to Win Friends and Influence People. The main reason is that it provides a lot of valuable lessons and helps me widen my knowledge.",
+                        formatted: `→ To be honest, I really enjoy reading <span class="sub-hl">self-help books</span>, and my all-time favorite is <span class="sub-hl">How to Win Friends and Influence People</span>. The main reason is that it provides a lot of <span class="sub-hl">valuable lessons</span> and helps me <span class="sub-hl">widen my knowledge</span>.`
                     }
                 ]
             },
@@ -4817,59 +4841,76 @@ const practiceTopicsData = [
                 question: "Do you often listen to the radio?",
                 qType: "Yes/No question: Do you often [Vo]?",
                 formula: `<div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 1 (Nghe để thư giãn, giảm căng thẳng):</div>
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Thường xuyên nghe đài để cập nhật tin tức & thư giãn):</div>
                     <div class="topic-formula-text">
-                        → Yes, I do. I often listen to the radio <span class="formula-bracket-hl">[thời điểm]</span>. I do it because it’s very <span class="formula-bracket-hl">[tính từ mô tả]</span>. It also helps me <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → Yes, I do. I often listen to the radio <span class="formula-bracket-hl">[thời điểm]</span> because it helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>. It also makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Nghe để cập nhật tin tức, bổ sung thông tin):</div>
+                    <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG / HIẾM KHI - Thích dùng điện thoại / podcast hơn):</div>
                     <div class="topic-formula-text">
-                        → Yes, definitely. I usually listen to the radio <span class="formula-bracket-hl">[thời điểm]</span> because it’s very <span class="formula-bracket-hl">[tính từ mô tả]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → To be honest, not really. I rarely listen to the radio because I prefer <span class="formula-bracket-hl">[hoạt động thay thế trên điện thoại]</span>. It’s much more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span> for me.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "📅 [Thời điểm nghe đài]:",
+                        title: "📅 [Thời điểm nghe đài] (Cách 1):",
                         items: [
                             { en: "in the morning", vn: "vào buổi sáng" },
                             { en: "in the evening", vn: "vào buổi tối" },
-                            { en: "when driving / on the bus", vn: "khi lái xe / trên xe buýt" },
+                            { en: "when driving to work", vn: "khi lái xe đi làm" },
                             { en: "in my free time", vn: "vào thời gian rảnh" },
                             { en: "before going to bed", vn: "trước khi đi ngủ" }
                         ]
                     },
                     {
-                        title: "✨ [Tính từ mô tả]:",
+                        title: "⭐ [Cụm Lợi ích khi nghe đài] (Cách 1):",
                         items: [
-                            { en: "relaxing", vn: "mang lại cảm giác thư giãn" },
-                            { en: "informative", vn: "cung cấp nhiều thông tin bổ ích" },
-                            { en: "interesting", vn: "thú vị" },
-                            { en: "useful", vn: "hữu ích" },
-                            { en: "convenient", vn: "tiện lợi" }
+                            { en: "get the news", vn: "nắm bắt tin tức thời sự" },
+                            { en: "relax after a busy day", vn: "thư giãn sau ngày bận rộn" },
+                            { en: "reduce stress", vn: "giảm bớt căng thẳng" },
+                            { en: "clear my mind", vn: "giải tỏa tâm trí" },
+                            { en: "pass the time", vn: "giải trí / giết thời gian" }
                         ]
                     },
                     {
-                        title: "⭐ [Cụm Lợi ích]:",
+                        title: "😊 [Tính từ mô tả cảm xúc] (Cách 1):",
                         items: [
-                            { en: "reduce stress", vn: "giảm bớt căng thẳng" },
-                            { en: "keep up with the news", vn: "cập nhật tin tức thời sự" },
-                            { en: "clear my mind", vn: "giải tỏa tâm trí" },
-                            { en: "learn new things", vn: "học hỏi điều mới" },
-                            { en: "pass the time", vn: "giải trí / giết thời gian" }
+                            { en: "refreshed", vn: "sảng khoái / tươi mới" },
+                            { en: "relaxed", vn: "thư thái / thoải mái" },
+                            { en: "comfortable", vn: "dễ chịu" },
+                            { en: "informed", vn: "am hiểu / nắm bắt thông tin" }
+                        ]
+                    },
+                    {
+                        title: "📱 [Hoạt động thay thế trên điện thoại] (Cách 2):",
+                        items: [
+                            { en: "listening to music on my smartphone", vn: "nghe nhạc trên điện thoại thông minh" },
+                            { en: "listening to podcasts on Spotify", vn: "nghe podcast trên Spotify" },
+                            { en: "watching videos on YouTube", vn: "xem video trên YouTube" },
+                            { en: "reading online news", vn: "đọc báo mạng / lướt tin tức trực tuyến" }
+                        ]
+                    },
+                    {
+                        title: "✨ [Tính từ so sánh hơn - Lý do chọn điện thoại] (Cách 2):",
+                        items: [
+                            { en: "more convenient", vn: "tiện lợi hơn" },
+                            { en: "more modern", vn: "hiện đại hơn" },
+                            { en: "more interesting", vn: "thú vị hơn" },
+                            { en: "much easier to access", vn: "dễ dàng tiếp cận hơn nhiều" }
                         ]
                     }
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu Cách 1 (Buổi sáng - Thư giãn & Giảm stress)",
-                        text: "Yes, I do. I often listen to the radio in the morning. I do it because it’s very relaxing. It helps me reduce stress.",
-                        formatted: `→ Yes, I do. I often listen to the radio <span class="sub-hl">in the morning</span>. I do it because it’s very <span class="sub-hl">relaxing</span>. It helps me <span class="sub-hl">reduce stress</span>.`
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - Buổi sáng & Cập nhật tin tức)",
+                        text: "Yes, I do. I often listen to the radio in the morning because it helps me get the news and relax after a busy day. It also makes me feel refreshed.",
+                        formatted: `→ Yes, I do. I often listen to the radio <span class="sub-hl">in the morning</span> because it helps me <span class="sub-hl">get the news</span> and <span class="sub-hl">relax after a busy day</span>. It also makes me feel <span class="sub-hl">refreshed</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Buổi tối - Cung cấp thông tin & Cập nhật tin tức)",
-                        text: "Yes, definitely. I usually listen to the radio in the evening because it’s very informative. It helps me keep up with the news.",
-                        formatted: `→ Yes, definitely. I usually listen to the radio <span class="sub-hl">in the evening</span> because it’s very <span class="sub-hl">informative</span>. It helps me <span class="sub-hl">keep up with the news</span>.`
+                        label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Thích nghe podcast trên điện thoại)",
+                        text: "To be honest, not really. I rarely listen to the radio because I prefer listening to podcasts on my smartphone. It’s much more convenient for me.",
+                        formatted: `→ To be honest, not really. I rarely listen to the radio because I prefer <span class="sub-hl">listening to podcasts on my smartphone</span>. It’s much more <span class="sub-hl">convenient</span> for me.`
                     }
                 ]
             },
