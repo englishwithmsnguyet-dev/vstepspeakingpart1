@@ -4495,8 +4495,8 @@ const practiceTopicsData = [
                 samples: [
                     {
                         label: "Bài mẫu 1 (FIFA - Trò chơi bóng đá / sôi nổi)",
-                        text: "I’m a big fan of FIFA because it’s very exciting. I often play it in my free time, especially at weekends.",
-                        formatted: `→ I’m a big fan of <span class="sub-hl">FIFA</span> because it’s very <span class="sub-hl">exciting</span>. I often play it in my free time, especially <span class="sub-hl">at weekends</span>.`
+                        text: "I’m a big fan of FIFA because it’s very exciting. I often play it in my free time, especially at the weekend.",
+                        formatted: `→ I’m a big fan of <span class="sub-hl">FIFA</span> because it’s very <span class="sub-hl">exciting</span>. I often play it in my free time, especially <span class="sub-hl">at the weekend</span>.`
                     },
                     {
                         label: "Bài mẫu 2 (Minecraft - Trò chơi thư giãn)",
@@ -4683,7 +4683,7 @@ function renderPracticeTopic(topicId) {
                 <div style="font-weight: 800; color: #7c3aed; font-size: 0.95rem; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.5rem;">
                     <i class="fa-solid fa-star"></i> ${s.label}:
                 </div>
-                <div class="ex-text" style="font-size: 1.05rem; line-height: 1.85; color: var(--text-main); font-weight: 500; margin-bottom: 0.85rem;">
+                <div class="ex-text" style="font-size: 1.05rem; line-height: 1.85; color: var(--text-main); font-weight: 500; margin-bottom: 0.85rem; text-align: justify; text-justify: inter-word;">
                     ${s.formatted}
                 </div>
                 <button class="btn-audio-sample" onclick="speakText('${s.text.replace(/'/g, "\\'")}')" style="background: #8b5cf6;">
