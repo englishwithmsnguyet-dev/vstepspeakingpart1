@@ -4465,9 +4465,14 @@ function renderPracticeTopic(topicId) {
                     <div style="font-size: 1.4rem; font-weight: 800; color: var(--primary); display: flex; align-items: center; gap: 0.6rem;">
                         <i class="fa-solid fa-comments"></i> ${topic.title}
                     </div>
-                    <button class="btn-audio-sample" onclick="speakText('${topic.introText.replace(/'/g, "\\'")}')" style="background: var(--primary);">
-                        <i class="fa-solid fa-volume-high"></i> Nghe Giới Thiệu
-                    </button>
+                    <div style="display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;">
+                        <button class="btn-audio-sample" onclick="speakText('${topic.introText.replace(/'/g, "\\'")}')" style="background: var(--primary);">
+                            <i class="fa-solid fa-volume-high"></i> Nghe Giới Thiệu
+                        </button>
+                        <button class="btn-audio-sample" onclick="openFullTopicExamModal(${topic.id})" style="background: linear-gradient(135deg, #ef4444, #dc2626); box-shadow: 0 4px 12px rgba(239, 68, 68, 0.35);">
+                            <i class="fa-solid fa-stopwatch"></i> Thi Thử Cả Chủ Đề (90s)
+                        </button>
+                    </div>
                 </div>
                 <div style="font-size: 1.05rem; color: var(--text-main); line-height: 1.7; font-style: italic; background: var(--bg-card); padding: 0.85rem 1.25rem; border-radius: 12px; border: 1px dashed var(--border);">
                     🎙️ Giám khảo: <strong>"${topic.introText}"</strong>
@@ -4578,6 +4583,68 @@ function renderPracticeTopic(topicId) {
                         ${samplesHtml}
                     </div>
                 </div>
+
+                <!-- 4. THỰC HÀNH NÓI & GHI ÂM TÍNH GIỜ (NHƯ LÚC THI) -->
+                <div class="topic-section-box" style="border-color: rgba(239, 68, 68, 0.45); box-shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.08);">
+                    <div class="topic-section-header" style="background: rgba(239, 68, 68, 0.08); color: #dc2626; cursor: default;">
+                        <span><i class="fa-solid fa-microphone-lines" style="color: #dc2626;"></i> 🎙️ 4. THỰC HÀNH NÓI & GHI ÂM TÍNH GIỜ (NHƯ LÚC THI)</span>
+                        <span id="topic-q-phase-badge-${q.qNum}" class="topic-exam-phase-badge">⏱️ Sẵn sàng trả lời</span>
+                    </div>
+                    <div class="topic-section-content" style="background: var(--bg-card); padding: 1.25rem 1.35rem;">
+                        <div class="topic-exam-recorder" style="margin-top: 0; border: none; box-shadow: none; padding: 0;">
+                            <div class="topic-exam-top">
+                                <div class="topic-exam-time-options">
+                                    <span><i class="fa-regular fa-clock"></i> Thời gian nói:</span>
+                                    <button type="button" class="btn-time-opt" onclick="setTopicQuestionTime(${q.qNum}, 30, this)">30s</button>
+                                    <button type="button" class="btn-time-opt active" onclick="setTopicQuestionTime(${q.qNum}, 45, this)">45s (Chuẩn B1)</button>
+                                    <button type="button" class="btn-time-opt" onclick="setTopicQuestionTime(${q.qNum}, 60, this)">60s</button>
+                                </div>
+                                <div style="font-size: 0.85rem; color: var(--text-muted); font-style: italic;">
+                                    💡 Máy tính sẽ phát tiếng <strong>Beep</strong> khi bắt đầu và <strong>Chuông</strong> khi hết giờ.
+                                </div>
+                            </div>
+
+                            <div class="topic-exam-body">
+                                <div class="topic-exam-timer-wrap">
+                                    <div id="topic-q-digits-${q.qNum}" class="topic-exam-digits">00:45</div>
+                                    <div id="topic-q-wave-${q.qNum}" class="topic-mic-wave">
+                                        <div class="topic-mic-bar"></div>
+                                        <div class="topic-mic-bar"></div>
+                                        <div class="topic-mic-bar"></div>
+                                        <div class="topic-mic-bar"></div>
+                                        <div class="topic-mic-bar"></div>
+                                        <div class="topic-mic-bar"></div>
+                                        <div class="topic-mic-bar"></div>
+                                        <div class="topic-mic-bar"></div>
+                                        <span style="font-size: 0.78rem; font-weight: 700; color: #ef4444; margin-left: 0.25rem;">
+                                            <span class="topic-recording-dot"></span> ĐANG THU ÂM
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="topic-exam-actions">
+                                    <button type="button" id="btn-topic-start-${q.qNum}" class="btn-exam-rec start" onclick="startTopicQuestionRecording(${q.qNum})">
+                                        <i class="fa-solid fa-microphone"></i> Bắt đầu nói & Ghi âm
+                                    </button>
+                                    <button type="button" id="btn-topic-stop-${q.qNum}" class="btn-exam-rec stop" onclick="stopTopicQuestionRecording(${q.qNum})" style="display: none;">
+                                        <i class="fa-solid fa-square"></i> Dừng & Nộp bài
+                                    </button>
+                                    <button type="button" id="btn-topic-reset-${q.qNum}" class="btn-exam-rec reset" onclick="resetTopicQuestionRecording(${q.qNum})" style="display: none;">
+                                        <i class="fa-solid fa-rotate-left"></i> Ghi âm lại
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Playback Box -->
+                            <div id="topic-playback-box-${q.qNum}" class="topic-exam-playback" style="display: none;">
+                                <audio id="topic-audio-player-${q.qNum}" controls class="topic-exam-audio-player"></audio>
+                                <a id="btn-download-topic-q-${q.qNum}" class="btn-exam-download" download="VSTEP_Speaking_P1_Q${q.qNum}.webm">
+                                    <i class="fa-solid fa-download"></i> Tải bài nói (.webm)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         `;
     });
@@ -4585,6 +4652,556 @@ function renderPracticeTopic(topicId) {
     html += `</div>`;
     container.innerHTML = html;
 }
+
+// ==========================================================================
+// EXAM AUDIO SYNTHESIZER & SOUND EFFECTS (Web Audio API)
+// ==========================================================================
+function playExamTone(freq, duration, type = 'sine') {
+    try {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        if (!AudioContext) return;
+        if (!window._examAudioCtx) {
+            window._examAudioCtx = new AudioContext();
+        }
+        if (window._examAudioCtx.state === 'suspended') {
+            window._examAudioCtx.resume();
+        }
+        const ctx = window._examAudioCtx;
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, ctx.currentTime);
+        gain.gain.setValueAtTime(0.2, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + duration);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start(ctx.currentTime);
+        osc.stop(ctx.currentTime + duration);
+    } catch (e) {
+        console.warn('Exam audio synth notice:', e);
+    }
+}
+
+function playExamDoubleBeep() {
+    playExamTone(880, 0.15);
+    setTimeout(() => playExamTone(880, 0.15), 200);
+}
+
+function playExamTimeUpChime() {
+    playExamTone(523.25, 0.15); // C5
+    setTimeout(() => {
+        playExamTone(659.25, 0.15); // E5
+        setTimeout(() => {
+            playExamTone(783.99, 0.35); // G5
+        }, 120);
+    }, 120);
+}
+
+function stopAllActiveRecordings() {
+    if (window._topicTimers) {
+        Object.keys(window._topicTimers).forEach(qNum => {
+            if (window._topicTimers[qNum] && window._topicTimers[qNum].isRecording) {
+                stopTopicQuestionRecording(qNum);
+            }
+        });
+    }
+    if (window._fullExamTimer && window._fullExamTimer.isRecording) {
+        stopFullTopicRecording();
+    }
+}
+
+// ==========================================================================
+// TOPIC PRACTICE - TIMED AUDIO RECORDER ENGINE (PER-QUESTION)
+// ==========================================================================
+window._topicTimers = {};
+
+window.setTopicQuestionTime = (qNum, seconds, btnEl) => {
+    if (window._topicTimers[qNum] && window._topicTimers[qNum].isRecording) return;
+    
+    if (!window._topicTimers[qNum]) {
+        window._topicTimers[qNum] = {};
+    }
+    window._topicTimers[qNum].totalTime = seconds;
+    window._topicTimers[qNum].timeLeft = seconds;
+
+    if (btnEl && btnEl.parentElement) {
+        btnEl.parentElement.querySelectorAll('.btn-time-opt').forEach(b => b.classList.remove('active'));
+        btnEl.classList.add('active');
+    }
+
+    const digitsEl = document.getElementById(`topic-q-digits-${qNum}`);
+    if (digitsEl) {
+        const mm = String(Math.floor(seconds / 60)).padStart(2, '0');
+        const ss = String(seconds % 60).padStart(2, '0');
+        digitsEl.textContent = `${mm}:${ss}`;
+        digitsEl.classList.remove('warning', 'danger');
+    }
+};
+
+window.startTopicQuestionRecording = async (qNum) => {
+    stopAllActiveRecordings();
+
+    const timerObj = window._topicTimers[qNum] || { totalTime: 45, timeLeft: 45 };
+    window._topicTimers[qNum] = timerObj;
+    timerObj.timeLeft = timerObj.totalTime || 45;
+
+    try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        timerObj.stream = stream;
+
+        let options = { mimeType: 'audio/webm' };
+        if (typeof MediaRecorder !== 'undefined' && MediaRecorder.isTypeSupported) {
+            if (!MediaRecorder.isTypeSupported('audio/webm') && MediaRecorder.isTypeSupported('audio/mp4')) {
+                options = { mimeType: 'audio/mp4' };
+            }
+        }
+
+        const recorder = new MediaRecorder(stream, options);
+        timerObj.recorder = recorder;
+        timerObj.chunks = [];
+
+        recorder.ondataavailable = (e) => {
+            if (e.data && e.data.size > 0) {
+                timerObj.chunks.push(e.data);
+            }
+        };
+
+        recorder.onstop = () => {
+            const blob = new Blob(timerObj.chunks, { type: recorder.mimeType || 'audio/webm' });
+            if (timerObj.blobUrl) URL.revokeObjectURL(timerObj.blobUrl);
+            timerObj.blobUrl = URL.createObjectURL(blob);
+
+            const player = document.getElementById(`topic-audio-player-${qNum}`);
+            const downloadBtn = document.getElementById(`btn-download-topic-q-${qNum}`);
+            const playbackBox = document.getElementById(`topic-playback-box-${qNum}`);
+
+            if (player) player.src = timerObj.blobUrl;
+            if (downloadBtn) {
+                downloadBtn.href = timerObj.blobUrl;
+                const student = (document.getElementById('display-name')?.textContent || 'HocVien').trim().replace(/\s+/g, '_');
+                downloadBtn.download = `VSTEP_Speaking_P1_Q${qNum}_${student}.webm`;
+            }
+            if (playbackBox) playbackBox.style.display = 'flex';
+
+            const badge = document.getElementById(`topic-q-phase-badge-${qNum}`);
+            if (badge) {
+                badge.className = 'topic-exam-phase-badge done';
+                badge.innerHTML = '<i class="fa-solid fa-circle-check"></i> Đã hoàn thành bài nói';
+            }
+
+            const startBtn = document.getElementById(`btn-topic-start-${qNum}`);
+            const stopBtn = document.getElementById(`btn-topic-stop-${qNum}`);
+            const resetBtn = document.getElementById(`btn-topic-reset-${qNum}`);
+            if (startBtn) startBtn.style.display = 'none';
+            if (stopBtn) stopBtn.style.display = 'none';
+            if (resetBtn) resetBtn.style.display = 'inline-flex';
+
+            const waveEl = document.getElementById(`topic-q-wave-${qNum}`);
+            if (waveEl) waveEl.classList.remove('active');
+        };
+
+        playExamDoubleBeep();
+        recorder.start(1000);
+        timerObj.isRecording = true;
+
+        const badge = document.getElementById(`topic-q-phase-badge-${qNum}`);
+        if (badge) {
+            badge.className = 'topic-exam-phase-badge recording';
+            badge.innerHTML = '<span class="topic-recording-dot"></span> Đang ghi âm bài nói';
+        }
+
+        const waveEl = document.getElementById(`topic-q-wave-${qNum}`);
+        if (waveEl) waveEl.classList.add('active');
+
+        const startBtn = document.getElementById(`btn-topic-start-${qNum}`);
+        const stopBtn = document.getElementById(`btn-topic-stop-${qNum}`);
+        const resetBtn = document.getElementById(`btn-topic-reset-${qNum}`);
+        const playbackBox = document.getElementById(`topic-playback-box-${qNum}`);
+        if (startBtn) startBtn.style.display = 'none';
+        if (stopBtn) stopBtn.style.display = 'inline-flex';
+        if (resetBtn) resetBtn.style.display = 'none';
+        if (playbackBox) playbackBox.style.display = 'none';
+
+        const digitsEl = document.getElementById(`topic-q-digits-${qNum}`);
+        if (digitsEl) digitsEl.classList.remove('warning', 'danger');
+
+        timerObj.timerInterval = setInterval(() => {
+            timerObj.timeLeft--;
+            const cur = timerObj.timeLeft;
+            if (digitsEl) {
+                const mm = String(Math.floor(cur / 60)).padStart(2, '0');
+                const ss = String(cur % 60).padStart(2, '0');
+                digitsEl.textContent = `${mm}:${ss}`;
+
+                if (cur <= 15 && cur > 5) {
+                    digitsEl.classList.add('warning');
+                } else if (cur <= 5) {
+                    digitsEl.classList.remove('warning');
+                    digitsEl.classList.add('danger');
+                }
+            }
+
+            if (cur <= 0) {
+                playExamTimeUpChime();
+                stopTopicQuestionRecording(qNum);
+            }
+        }, 1000);
+
+    } catch (err) {
+        console.warn('Microphone permission error:', err);
+        alert('⚠️ Không thể truy cập Microphone! Vui lòng cho phép trình duyệt truy cập micro để ghi âm bài nói.');
+    }
+};
+
+window.stopTopicQuestionRecording = (qNum) => {
+    const timerObj = window._topicTimers[qNum];
+    if (!timerObj || !timerObj.isRecording) return;
+
+    timerObj.isRecording = false;
+    if (timerObj.timerInterval) {
+        clearInterval(timerObj.timerInterval);
+        timerObj.timerInterval = null;
+    }
+
+    if (timerObj.recorder && timerObj.recorder.state !== 'inactive') {
+        try { timerObj.recorder.stop(); } catch(e) {}
+    }
+
+    if (timerObj.stream) {
+        try { timerObj.stream.getTracks().forEach(t => t.stop()); } catch(e) {}
+        timerObj.stream = null;
+    }
+};
+
+window.resetTopicQuestionRecording = (qNum) => {
+    const timerObj = window._topicTimers[qNum] || {};
+    if (timerObj.isRecording) {
+        stopTopicQuestionRecording(qNum);
+    }
+    timerObj.timeLeft = timerObj.totalTime || 45;
+
+    const digitsEl = document.getElementById(`topic-q-digits-${qNum}`);
+    if (digitsEl) {
+        const mm = String(Math.floor(timerObj.timeLeft / 60)).padStart(2, '0');
+        const ss = String(timerObj.timeLeft % 60).padStart(2, '0');
+        digitsEl.textContent = `${mm}:${ss}`;
+        digitsEl.classList.remove('warning', 'danger');
+    }
+
+    const badge = document.getElementById(`topic-q-phase-badge-${qNum}`);
+    if (badge) {
+        badge.className = 'topic-exam-phase-badge';
+        badge.innerHTML = '⏱️ Sẵn sàng trả lời';
+    }
+
+    const startBtn = document.getElementById(`btn-topic-start-${qNum}`);
+    const stopBtn = document.getElementById(`btn-topic-stop-${qNum}`);
+    const resetBtn = document.getElementById(`btn-topic-reset-${qNum}`);
+    const playbackBox = document.getElementById(`topic-playback-box-${qNum}`);
+    const waveEl = document.getElementById(`topic-q-wave-${qNum}`);
+
+    if (startBtn) startBtn.style.display = 'inline-flex';
+    if (stopBtn) stopBtn.style.display = 'none';
+    if (resetBtn) resetBtn.style.display = 'none';
+    if (playbackBox) playbackBox.style.display = 'none';
+    if (waveEl) waveEl.classList.remove('active');
+};
+
+// ==========================================================================
+// FULL TOPIC EXAM SIMULATION MODAL (3 Questions Continuous - 90s)
+// ==========================================================================
+window._fullExamTimer = {
+    totalTime: 90,
+    timeLeft: 90,
+    isRecording: false,
+    interval: null,
+    recorder: null,
+    chunks: [],
+    stream: null,
+    blobUrl: null
+};
+
+window.openFullTopicExamModal = (topicId) => {
+    stopAllActiveRecordings();
+    const topic = practiceTopicsData.find(t => t.id === topicId) || practiceTopicsData[0];
+    if (!topic) return;
+
+    let overlay = document.getElementById('topic-full-exam-overlay');
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'topic-full-exam-overlay';
+        overlay.className = 'topic-full-exam-overlay';
+        document.body.appendChild(overlay);
+    }
+
+    const qListHtml = topic.questions.map(q => `
+        <div style="background: var(--bg-body); border-radius: 12px; padding: 1rem 1.25rem; border: 1px solid var(--border); margin-bottom: 0.85rem;">
+            <div style="font-weight: 800; color: var(--primary); font-size: 0.92rem; margin-bottom: 0.35rem;">
+                CÂU HỎI ${q.qNum}:
+            </div>
+            <div style="font-size: 1.15rem; font-weight: 700; color: var(--text-main); line-height: 1.5;">
+                ${q.question}
+            </div>
+        </div>
+    `).join('');
+
+    overlay.innerHTML = `
+        <div class="topic-full-exam-modal fade-in">
+            <div class="topic-full-exam-header">
+                <div>
+                    <div style="font-size: 0.85rem; font-weight: 700; color: #ef4444; letter-spacing: 0.5px; text-transform: uppercase;">
+                        <i class="fa-solid fa-microphone-lines"></i> VSTEP EXAM SIMULATION • SPEAKING PART 01
+                    </div>
+                    <div class="topic-full-exam-title">
+                        ${topic.title}
+                    </div>
+                </div>
+                <button class="topic-full-exam-close" onclick="closeFullTopicExamModal()" title="Đóng phòng thi">&times;</button>
+            </div>
+
+            <div style="margin-bottom: 1.25rem;">
+                <div style="font-size: 0.95rem; font-weight: 700; color: var(--text-muted); margin-bottom: 0.75rem;">
+                    📋 NỘI DUNG 3 CÂU HỎI BẠN CẦN TRẢ LỜI LIÊN TỤC:
+                </div>
+                ${qListHtml}
+            </div>
+
+            <!-- Exam Console -->
+            <div style="background: var(--bg-body); border: 2px solid rgba(239, 68, 68, 0.3); border-radius: 16px; padding: 1.5rem; text-align: center;">
+                <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                    <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-muted);">Thời gian thi:</span>
+                    <button type="button" class="btn-time-opt" onclick="setFullExamTime(60, this)">60s</button>
+                    <button type="button" class="btn-time-opt active" onclick="setFullExamTime(90, this)">90s (Chuẩn 1 Chủ Đề)</button>
+                    <button type="button" class="btn-time-opt" onclick="setFullExamTime(180, this)">180s (3 Phút - Cả Part 1)</button>
+                </div>
+
+                <div id="full-exam-badge" class="topic-exam-phase-badge" style="margin-bottom: 1rem;">
+                    ⏱️ SẴN SÀNG VÀO THI
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: center; gap: 1.25rem; margin-bottom: 1.25rem;">
+                    <div id="full-exam-digits" class="topic-exam-digits" style="font-size: 3.5rem;">01:30</div>
+                    <div id="full-exam-wave" class="topic-mic-wave">
+                        <div class="topic-mic-bar"></div>
+                        <div class="topic-mic-bar"></div>
+                        <div class="topic-mic-bar"></div>
+                        <div class="topic-mic-bar"></div>
+                        <div class="topic-mic-bar"></div>
+                        <div class="topic-mic-bar"></div>
+                        <div class="topic-mic-bar"></div>
+                        <div class="topic-mic-bar"></div>
+                        <span style="font-size: 0.8rem; font-weight: 700; color: #ef4444; margin-left: 0.3rem;">
+                            <span class="topic-recording-dot"></span> ĐANG THU ÂM
+                        </span>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+                    <button type="button" id="btn-full-start" class="btn-exam-rec start" onclick="startFullTopicRecording(${topic.id})">
+                        <i class="fa-solid fa-play"></i> Bắt đầu thi thử & Ghi âm
+                    </button>
+                    <button type="button" id="btn-full-stop" class="btn-exam-rec stop" onclick="stopFullTopicRecording()" style="display: none;">
+                        <i class="fa-solid fa-square"></i> Nộp bài & Dừng thi
+                    </button>
+                    <button type="button" id="btn-full-reset" class="btn-exam-rec reset" onclick="resetFullTopicRecording()" style="display: none;">
+                        <i class="fa-solid fa-rotate-left"></i> Thi lại
+                    </button>
+                </div>
+
+                <div id="full-exam-playback" class="topic-exam-playback" style="display: none; justify-content: center;">
+                    <audio id="full-exam-player" controls class="topic-exam-audio-player"></audio>
+                    <a id="full-exam-download" class="btn-exam-download" download="VSTEP_Speaking_P1_Topic_${topic.id}.webm">
+                        <i class="fa-solid fa-download"></i> Tải bài thi của bạn (.webm)
+                    </a>
+                </div>
+            </div>
+        </div>
+    `;
+
+    overlay.style.display = 'flex';
+};
+
+window.closeFullTopicExamModal = () => {
+    if (window._fullExamTimer && window._fullExamTimer.isRecording) {
+        stopFullTopicRecording();
+    }
+    const overlay = document.getElementById('topic-full-exam-overlay');
+    if (overlay) overlay.style.display = 'none';
+};
+
+window.setFullExamTime = (seconds, btnEl) => {
+    if (window._fullExamTimer.isRecording) return;
+    window._fullExamTimer.totalTime = seconds;
+    window._fullExamTimer.timeLeft = seconds;
+    if (btnEl && btnEl.parentElement) {
+        btnEl.parentElement.querySelectorAll('.btn-time-opt').forEach(b => b.classList.remove('active'));
+        btnEl.classList.add('active');
+    }
+    const digitsEl = document.getElementById('full-exam-digits');
+    if (digitsEl) {
+        const mm = String(Math.floor(seconds / 60)).padStart(2, '0');
+        const ss = String(seconds % 60).padStart(2, '0');
+        digitsEl.textContent = `${mm}:${ss}`;
+        digitsEl.classList.remove('warning', 'danger');
+    }
+};
+
+window.startFullTopicRecording = async (topicId) => {
+    try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        window._fullExamTimer.stream = stream;
+
+        let options = { mimeType: 'audio/webm' };
+        if (typeof MediaRecorder !== 'undefined' && MediaRecorder.isTypeSupported) {
+            if (!MediaRecorder.isTypeSupported('audio/webm') && MediaRecorder.isTypeSupported('audio/mp4')) {
+                options = { mimeType: 'audio/mp4' };
+            }
+        }
+
+        const recorder = new MediaRecorder(stream, options);
+        window._fullExamTimer.recorder = recorder;
+        window._fullExamTimer.chunks = [];
+
+        recorder.ondataavailable = (e) => {
+            if (e.data && e.data.size > 0) {
+                window._fullExamTimer.chunks.push(e.data);
+            }
+        };
+
+        recorder.onstop = () => {
+            const blob = new Blob(window._fullExamTimer.chunks, { type: recorder.mimeType || 'audio/webm' });
+            if (window._fullExamTimer.blobUrl) URL.revokeObjectURL(window._fullExamTimer.blobUrl);
+            window._fullExamTimer.blobUrl = URL.createObjectURL(blob);
+
+            const player = document.getElementById('full-exam-player');
+            const downloadBtn = document.getElementById('full-exam-download');
+            const playbackBox = document.getElementById('full-exam-playback');
+
+            if (player) player.src = window._fullExamTimer.blobUrl;
+            if (downloadBtn) {
+                downloadBtn.href = window._fullExamTimer.blobUrl;
+                const student = (document.getElementById('display-name')?.textContent || 'HocVien').trim().replace(/\s+/g, '_');
+                downloadBtn.download = `VSTEP_Speaking_P1_Topic${topicId}_${student}.webm`;
+            }
+            if (playbackBox) playbackBox.style.display = 'flex';
+
+            const badge = document.getElementById('full-exam-badge');
+            if (badge) {
+                badge.className = 'topic-exam-phase-badge done';
+                badge.innerHTML = '<i class="fa-solid fa-circle-check"></i> ĐÃ HOÀN THÀNH BÀI THI 🎉';
+            }
+
+            const startBtn = document.getElementById('btn-full-start');
+            const stopBtn = document.getElementById('btn-full-stop');
+            const resetBtn = document.getElementById('btn-full-reset');
+            if (startBtn) startBtn.style.display = 'none';
+            if (stopBtn) stopBtn.style.display = 'none';
+            if (resetBtn) resetBtn.style.display = 'inline-flex';
+
+            const wave = document.getElementById('full-exam-wave');
+            if (wave) wave.classList.remove('active');
+        };
+
+        playExamDoubleBeep();
+        recorder.start(1000);
+        window._fullExamTimer.isRecording = true;
+
+        const badge = document.getElementById('full-exam-badge');
+        if (badge) {
+            badge.className = 'topic-exam-phase-badge recording';
+            badge.innerHTML = '<span class="topic-recording-dot"></span> HỆ THỐNG ĐANG GHI ÂM BÀI NÓI CỦA BẠN';
+        }
+
+        const wave = document.getElementById('full-exam-wave');
+        if (wave) wave.classList.add('active');
+
+        const startBtn = document.getElementById('btn-full-start');
+        const stopBtn = document.getElementById('btn-full-stop');
+        const resetBtn = document.getElementById('btn-full-reset');
+        const playback = document.getElementById('full-exam-playback');
+        if (startBtn) startBtn.style.display = 'none';
+        if (stopBtn) stopBtn.style.display = 'inline-flex';
+        if (resetBtn) resetBtn.style.display = 'none';
+        if (playback) playback.style.display = 'none';
+
+        const digitsEl = document.getElementById('full-exam-digits');
+        window._fullExamTimer.timeLeft = window._fullExamTimer.totalTime || 90;
+
+        window._fullExamTimer.interval = setInterval(() => {
+            window._fullExamTimer.timeLeft--;
+            const cur = window._fullExamTimer.timeLeft;
+            if (digitsEl) {
+                const mm = String(Math.floor(cur / 60)).padStart(2, '0');
+                const ss = String(cur % 60).padStart(2, '0');
+                digitsEl.textContent = `${mm}:${ss}`;
+
+                if (cur <= 20 && cur > 5) {
+                    digitsEl.classList.add('warning');
+                } else if (cur <= 5) {
+                    digitsEl.classList.remove('warning');
+                    digitsEl.classList.add('danger');
+                }
+            }
+
+            if (cur <= 0) {
+                playExamTimeUpChime();
+                stopFullTopicRecording();
+            }
+        }, 1000);
+
+    } catch (err) {
+        console.warn('Full exam mic error:', err);
+        alert('⚠️ Không thể truy cập Microphone! Vui lòng cho phép quyền truy cập micro.');
+    }
+};
+
+window.stopFullTopicRecording = () => {
+    if (!window._fullExamTimer.isRecording) return;
+    window._fullExamTimer.isRecording = false;
+    if (window._fullExamTimer.interval) {
+        clearInterval(window._fullExamTimer.interval);
+        window._fullExamTimer.interval = null;
+    }
+    if (window._fullExamTimer.recorder && window._fullExamTimer.recorder.state !== 'inactive') {
+        try { window._fullExamTimer.recorder.stop(); } catch(e) {}
+    }
+    if (window._fullExamTimer.stream) {
+        try { window._fullExamTimer.stream.getTracks().forEach(t => t.stop()); } catch(e) {}
+        window._fullExamTimer.stream = null;
+    }
+};
+
+window.resetFullTopicRecording = () => {
+    if (window._fullExamTimer.isRecording) {
+        stopFullTopicRecording();
+    }
+    window._fullExamTimer.timeLeft = window._fullExamTimer.totalTime || 90;
+    const digitsEl = document.getElementById('full-exam-digits');
+    if (digitsEl) {
+        const mm = String(Math.floor(window._fullExamTimer.timeLeft / 60)).padStart(2, '0');
+        const ss = String(window._fullExamTimer.timeLeft % 60).padStart(2, '0');
+        digitsEl.textContent = `${mm}:${ss}`;
+        digitsEl.classList.remove('warning', 'danger');
+    }
+
+    const badge = document.getElementById('full-exam-badge');
+    if (badge) {
+        badge.className = 'topic-exam-phase-badge';
+        badge.innerHTML = '⏱️ SẴN SÀNG VÀO THI';
+    }
+
+    const startBtn = document.getElementById('btn-full-start');
+    const stopBtn = document.getElementById('btn-full-stop');
+    const resetBtn = document.getElementById('btn-full-reset');
+    const playback = document.getElementById('full-exam-playback');
+    const wave = document.getElementById('full-exam-wave');
+
+    if (startBtn) startBtn.style.display = 'inline-flex';
+    if (stopBtn) stopBtn.style.display = 'none';
+    if (resetBtn) resetBtn.style.display = 'none';
+    if (playback) playback.style.display = 'none';
+    if (wave) wave.classList.remove('active');
+};
 
 // Auto-initialize topic 1 on load
 if (document.readyState === 'loading') {
