@@ -4394,6 +4394,7 @@ const practiceTopicsData = [
                         title: "⏰ [Khoảng thời gian]:",
                         items: [
                             { en: "thirty minutes", vn: "30 phút" },
+                            { en: "half an hour", vn: "nửa tiếng / 30 phút" },
                             { en: "one hour", vn: "1 tiếng" },
                             { en: "two hours", vn: "2 tiếng" }
                         ]
