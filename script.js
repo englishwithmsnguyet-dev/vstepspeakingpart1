@@ -4441,6 +4441,165 @@ const practiceTopicsData = [
                 ]
             }
         ]
+    },
+    {
+        id: 2,
+        title: "Chủ đề 02: Let's talk about video games",
+        introText: "Let’s talk about video games.",
+        questions: [
+            {
+                qNum: 1,
+                question: "What video game do you often play?",
+                qType: "Wh-question: What [noun] do you often [Vo]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách trả lời (Nêu rõ tên trò chơi điện tử):</div>
+                    <div class="topic-formula-text">
+                        → I’m a big fan of <span class="formula-bracket-hl">[tên trò chơi điện tử]</span> because it’s very <span class="formula-bracket-hl">[tính từ mô tả hoạt động]</span>. I often play it in my free time, especially <span class="formula-bracket-hl">[thời điểm cụ thể]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🎮 [Tên trò chơi điện tử phổ biến]:",
+                        items: [
+                            { en: "FIFA", vn: "trò chơi bóng đá FIFA" },
+                            { en: "Minecraft", vn: "trò chơi xây dựng thế giới Minecraft" },
+                            { en: "League of Legends", vn: "Liên Minh Huyền Thoại (LOL)" },
+                            { en: "PUBG", vn: "trò chơi bắn súng sinh tồn PUBG" },
+                            { en: "Candy Crush", vn: "trò chơi giải đố xếp kẹo Candy Crush" },
+                            { en: "online chess", vn: "cờ vua trực tuyến" }
+                        ]
+                    },
+                    {
+                        title: "✨ [Tính từ mô tả trò chơi]:",
+                        items: [
+                            { en: "exciting", vn: "hào hứng / sôi nổi" },
+                            { en: "relaxing", vn: "mang lại cảm giác thư giãn" },
+                            { en: "interesting", vn: "thú vị" },
+                            { en: "fun / enjoyable", vn: "vui vẻ / thích thú" },
+                            { en: "entertaining", vn: "mang tính giải trí cao" },
+                            { en: "challenging", vn: "đầy thử thách" },
+                            { en: "fascinating", vn: "hấp dẫn / lôi cuốn" },
+                            { en: "great / wonderful", vn: "tuyệt vời" }
+                        ]
+                    },
+                    {
+                        title: "📅 [Thời điểm cụ thể]:",
+                        items: [
+                            { en: "at weekends", vn: "vào cuối tuần" },
+                            { en: "in the evening", vn: "vào buổi tối" },
+                            { en: "after school", vn: "sau giờ học" },
+                            { en: "in my free time", vn: "vào thời gian rảnh" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu 1 (FIFA - Trò chơi bóng đá / sôi nổi)",
+                        text: "I’m a big fan of FIFA because it’s very exciting. I often play it in my free time, especially at weekends.",
+                        formatted: `→ I’m a big fan of <span class="sub-hl">FIFA</span> because it’s very <span class="sub-hl">exciting</span>. I often play it in my free time, especially <span class="sub-hl">at weekends</span>.`
+                    },
+                    {
+                        label: "Bài mẫu 2 (Minecraft - Trò chơi thư giãn)",
+                        text: "I’m a big fan of Minecraft because it’s very relaxing. I often play it in my free time, especially in the evening.",
+                        formatted: `→ I’m a big fan of <span class="sub-hl">Minecraft</span> because it’s very <span class="sub-hl">relaxing</span>. I often play it in my free time, especially <span class="sub-hl">in the evening</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "Why do you often play that game?",
+                qType: "Wh-question: Why do you often [Vo]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách trả lời (Nêu lý do & lợi ích mang lại):</div>
+                    <div class="topic-formula-text">
+                        → I often play that game because it helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>. It also makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        type: "note",
+                        title: "⭐ [Cụm Lợi ích]:",
+                        note: `Sử dụng các cụm từ trong <button type="button" onclick="switchTab('benefits')" style="background: none; border: none; padding: 0; color: #d946ef; font-weight: 800; text-decoration: underline; cursor: pointer; font-size: 0.95rem; font-family: inherit;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Bảng Lợi Ích</button> để điền vào vị trí <em>[lợi ích]</em> (Ví dụ: <em>relax after a busy day, reduce stress, clear my mind, pass the time, have fun, boost my concentration...</em>).`
+                    },
+                    {
+                        title: "😊 [Tính từ mô tả cảm xúc]:",
+                        items: [
+                            { en: "comfortable", vn: "dễ chịu / thoải mái" },
+                            { en: "happy", vn: "vui vẻ / hạnh phúc" },
+                            { en: "relaxed", vn: "thư thái / thoải mái" },
+                            { en: "excited", vn: "hào hứng / phấn khích" },
+                            { en: "refreshed", vn: "sảng khoái" },
+                            { en: "energetic", vn: "tràn đầy năng lượng" },
+                            { en: "motivated", vn: "có động lực" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu 1 (Giúp thư giãn & vui vẻ)",
+                        text: "I often play that game because it helps me relax after a busy day and have fun. It also makes me feel comfortable.",
+                        formatted: `→ I often play that game because it helps me <span class="sub-hl">relax after a busy day</span> and <span class="sub-hl">have fun</span>. It also makes me feel <span class="sub-hl">comfortable</span>.`
+                    },
+                    {
+                        label: "Bài mẫu 2 (Giảm stress & giết thời gian)",
+                        text: "I often play that game because it helps me reduce stress and pass the time. It also makes me feel happy.",
+                        formatted: `→ I often play that game because it helps me <span class="sub-hl">reduce stress</span> and <span class="sub-hl">pass the time</span>. It also makes me feel <span class="sub-hl">happy</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Do you prefer playing video games alone or with friends? Why?",
+                qType: "Choice question: Do you prefer [option 1] or [option 2]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Lựa chọn 1 (Chơi một mình):</div>
+                    <div class="topic-formula-text">
+                        → I prefer playing video games alone because it’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>. It allows me to <span class="formula-bracket-hl">[lợi ích]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Lựa chọn 2 (Chơi cùng bạn bè):</div>
+                    <div class="topic-formula-text">
+                        → I prefer playing video games with friends because it’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>. It allows us to <span class="formula-bracket-hl">[lợi ích]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "✨ [Tính từ so sánh hơn (more + tính từ)]:",
+                        items: [
+                            { en: "more relaxing", vn: "thư giãn hơn" },
+                            { en: "more exciting", vn: "hào hứng / sôi nổi hơn" },
+                            { en: "more fun / enjoyable", vn: "vui vẻ / thích thú hơn" },
+                            { en: "more comfortable", vn: "thoải mái hơn" },
+                            { en: "more challenging", vn: "thử thách hơn" },
+                            { en: "more competitive", vn: "mang tính cạnh tranh hơn" }
+                        ]
+                    },
+                    {
+                        type: "note",
+                        title: "⭐ [Lợi ích khi chơi một mình] (Lựa chọn 1):",
+                        note: `Sử dụng các cụm từ trong <button type="button" onclick="switchTab('benefits')" style="background: none; border: none; padding: 0; color: #d946ef; font-weight: 800; text-decoration: underline; cursor: pointer; font-size: 0.95rem; font-family: inherit;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Bảng Lợi Ích</button> (Ví dụ: <em>focus better on the game, relax more, clear my mind, play at my own pace...</em>).`
+                    },
+                    {
+                        type: "note",
+                        title: "👥 [Lợi ích khi chơi cùng bạn bè] (Lựa chọn 2):",
+                        note: `Sử dụng các cụm từ trong <button type="button" onclick="switchTab('benefits')" style="background: none; border: none; padding: 0; color: #d946ef; font-weight: 800; text-decoration: underline; cursor: pointer; font-size: 0.95rem; font-family: inherit;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Bảng Lợi Ích</button> (Ví dụ: <em>talk and laugh together, have more fun, connect with friends, learn to work with others...</em>).`
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu 1 (Thích chơi một mình để tập trung & thư giãn)",
+                        text: "I prefer playing video games alone because it’s more relaxing. It allows me to focus better on the game and clear my mind.",
+                        formatted: `→ I prefer <span class="sub-hl">playing video games alone</span> because it’s more <span class="sub-hl">relaxing</span>. It allows me to <span class="sub-hl">focus better on the game</span> and <span class="sub-hl">clear my mind</span>.`
+                    },
+                    {
+                        label: "Bài mẫu 2 (Thích chơi cùng bạn bè để trò chuyện & vui vẻ)",
+                        text: "I prefer playing video games with friends because it’s more exciting. It allows us to talk and laugh together and have more fun.",
+                        formatted: `→ I prefer <span class="sub-hl">playing video games with friends</span> because it’s more <span class="sub-hl">exciting</span>. It allows us to <span class="sub-hl">talk and laugh together</span> and <span class="sub-hl">have more fun</span>.`
+                    }
+                ]
+            }
+        ]
     }
 ];
 
@@ -4458,6 +4617,9 @@ function renderPracticeTopic(topicId) {
 
     const labelEl = document.getElementById('current-topic-label');
     if (labelEl) labelEl.textContent = `Topic ${String(topic.id).padStart(2, '0')} / 60`;
+
+    const selectEl = document.getElementById('practice-topic-select');
+    if (selectEl) selectEl.value = String(topic.id);
 
     let html = `
         <div class="f-card-clean fade-in" style="margin-bottom: 2rem;">
