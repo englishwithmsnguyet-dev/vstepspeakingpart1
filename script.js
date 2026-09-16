@@ -4600,6 +4600,335 @@ const practiceTopicsData = [
                 ]
             }
         ]
+    },
+    {
+        id: 3,
+        title: "Chủ đề 03: Let's talk about books",
+        introText: "Let’s talk about books.",
+        questions: [
+            {
+                qNum: 1,
+                question: "What is your favorite book?",
+                qType: "Wh-question: What is your favorite [noun]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách trả lời (Nêu tên quyển sách & lý do yêu thích):</div>
+                    <div class="topic-formula-text">
+                        → I’m a big fan of <span class="formula-bracket-hl">[tên quyển sách]</span>. I like it because it’s very <span class="formula-bracket-hl">[tính từ mô tả quyển sách]</span>. It always helps me <span class="formula-bracket-hl">[lợi ích]</span> and makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span> whenever I read it.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "📖 [Tên quyển sách phổ biến]:",
+                        items: [
+                            { en: "Harry Potter", vn: "truyện ma thuật Harry Potter" },
+                            { en: "Sherlock Holmes", vn: "truyện trinh thám Sherlock Holmes" },
+                            { en: "Doraemon", vn: "truyện tranh Doraemon" },
+                            { en: "The Little Prince", vn: "Hoàng tử bé" },
+                            { en: "How to Win Friends and Influence People", vn: "sách Đắc Nhân Tâm" }
+                        ]
+                    },
+                    {
+                        title: "✨ [Tính từ mô tả quyển sách]:",
+                        items: [
+                            { en: "exciting", vn: "hào hứng / lôi cuốn" },
+                            { en: "interesting", vn: "thú vị" },
+                            { en: "meaningful", vn: "ý nghĩa / sâu sắc" },
+                            { en: "fascinating", vn: "hấp dẫn / cuốn hút" },
+                            { en: "inspiring", vn: "truyền cảm hứng" },
+                            { en: "relaxing", vn: "mang lại cảm giác thư giãn" }
+                        ]
+                    },
+                    {
+                        type: "note",
+                        title: "⭐ [Cụm Lợi ích]:",
+                        note: `Sử dụng các cụm từ trong <button type="button" onclick="switchTab('benefits')" style="background: none; border: none; padding: 0; color: #d946ef; font-weight: 800; text-decoration: underline; cursor: pointer; font-size: 0.95rem; font-family: inherit;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Bảng Lợi Ích</button> để điền vào vị trí <em>[lợi ích]</em> (Ví dụ: <em>reduce stress, widen my knowledge, clear my mind, learn new things, develop my imagination...</em>).`
+                    },
+                    {
+                        title: "😊 [Tính từ mô tả cảm xúc]:",
+                        items: [
+                            { en: "happy", vn: "vui vẻ / hạnh phúc" },
+                            { en: "relaxed", vn: "thư thái / thoải mái" },
+                            { en: "comfortable", vn: "dễ chịu" },
+                            { en: "motivated", vn: "có thêm động lực" },
+                            { en: "refreshed", vn: "sảng khoái / tươi mới" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu 1 (Harry Potter - Lôi cuốn & Giảm stress)",
+                        text: "I’m a big fan of Harry Potter. I like it because it’s very exciting. It always helps me reduce stress and makes me feel happy whenever I read it.",
+                        formatted: `→ I’m a big fan of <span class="sub-hl">Harry Potter</span>. I like it because it’s very <span class="sub-hl">exciting</span>. It always helps me <span class="sub-hl">reduce stress</span> and makes me feel <span class="sub-hl">happy</span> whenever I read it.`
+                    },
+                    {
+                        label: "Bài mẫu 2 (Đắc Nhân Tâm - Ý nghĩa & Mở rộng hiểu biết)",
+                        text: "I’m a big fan of How to Win Friends and Influence People. I like it because it’s very meaningful. It always helps me widen my knowledge and makes me feel motivated whenever I read it.",
+                        formatted: `→ I’m a big fan of <span class="sub-hl">How to Win Friends and Influence People</span>. I like it because it’s very <span class="sub-hl">meaningful</span>. It always helps me <span class="sub-hl">widen my knowledge</span> and makes me feel <span class="sub-hl">motivated</span> whenever I read it.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "Do you prefer reading paper books or electronic books?",
+                qType: "Choice question: Do you prefer [option 1] or [option 2]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách trả lời (Đưa ra lựa chọn & lý do):</div>
+                    <div class="topic-formula-text">
+                        → I prefer <span class="formula-bracket-hl">[lựa chọn: reading electronic books / reading paper books]</span>. It’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>, so I can <span class="formula-bracket-hl">[lợi ích 1]</span>. It’s also a good way to <span class="formula-bracket-hl">[lợi ích 2]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "✨ [Tính từ so sánh hơn (more + tính từ)]:",
+                        items: [
+                            { en: "more convenient", vn: "tiện lợi hơn" },
+                            { en: "more comfortable", vn: "thoải mái / dễ chịu hơn" },
+                            { en: "more interesting", vn: "thú vị hơn" },
+                            { en: "more relaxing", vn: "thư giãn hơn" },
+                            { en: "more economical", vn: "tiết kiệm hơn" }
+                        ]
+                    },
+                    {
+                        title: "📱 [Lợi ích khi đọc sách điện tử - E-books] (Lựa chọn 1):",
+                        items: [
+                            { en: "read anywhere", vn: "đọc ở bất cứ đâu" },
+                            { en: "save time", vn: "tiết kiệm thời gian" },
+                            { en: "carry many books easily", vn: "mang theo nhiều sách dễ dàng" },
+                            { en: "save money", vn: "tiết kiệm tiền mua sách" }
+                        ]
+                    },
+                    {
+                        title: "📖 [Lợi ích khi đọc sách giấy - Paper books] (Lựa chọn 2):",
+                        items: [
+                            { en: "focus better", vn: "tập trung tốt hơn" },
+                            { en: "protect my eyes", vn: "bảo vệ mắt" },
+                            { en: "avoid distractions", vn: "tránh bị phân tâm / xao nhãng" },
+                            { en: "feel the real pages", vn: "cảm nhận mùi giấy và trang sách thật" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu 1 (Sách điện tử - Tiện lợi & Đọc mọi nơi)",
+                        text: "I prefer reading electronic books. It’s more convenient, so I can read anywhere. It’s also a good way to save time.",
+                        formatted: `→ I prefer <span class="sub-hl">reading electronic books</span>. It’s more <span class="sub-hl">convenient</span>, so I can <span class="sub-hl">read anywhere</span>. It’s also a good way to <span class="sub-hl">save time</span>.`
+                    },
+                    {
+                        label: "Bài mẫu 2 (Sách giấy - Thoải mái & Tập trung tốt hơn)",
+                        text: "I prefer reading paper books. It’s more comfortable, so I can focus better. It’s also a good way to protect my eyes.",
+                        formatted: `→ I prefer <span class="sub-hl">reading paper books</span>. It’s more <span class="sub-hl">comfortable</span>, so I can <span class="sub-hl">focus better</span>. It’s also a good way to <span class="sub-hl">protect my eyes</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "What kinds of books do teenagers in your country enjoy reading?",
+                qType: "Wh-question: What kinds of [noun] do [people] enjoy [Ving]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách trả lời (Nêu thể loại sách phù hợp & lý do):</div>
+                    <div class="topic-formula-text">
+                        → Teenagers in my country often read <span class="formula-bracket-hl">[thể loại sách]</span>. These books are <span class="formula-bracket-hl">[tính từ mô tả]</span>, so they’re very popular. They help young people <span class="formula-bracket-hl">[lợi ích]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "📚 [Thể loại sách thanh thiếu niên yêu thích]:",
+                        items: [
+                            { en: "comic books", vn: "truyện tranh" },
+                            { en: "novel / fiction books", vn: "tiểu thuyết / truyện viễn tưởng" },
+                            { en: "self-help books", vn: "sách kỹ năng / phát triển bản thân" },
+                            { en: "detective stories", vn: "truyện trinh thám" },
+                            { en: "science books", vn: "sách khoa học khám phá" }
+                        ]
+                    },
+                    {
+                        title: "✨ [Tính từ mô tả sách]:",
+                        items: [
+                            { en: "interesting", vn: "thú vị" },
+                            { en: "exciting", vn: "hấp dẫn / kịch tính" },
+                            { en: "useful / helpful", vn: "hữu ích" },
+                            { en: "entertaining", vn: "mang tính giải trí cao" },
+                            { en: "inspiring", vn: "truyền cảm hứng" }
+                        ]
+                    },
+                    {
+                        title: "⭐ [Lợi ích mang lại cho giới trẻ]:",
+                        items: [
+                            { en: "relax after studying hard", vn: "thư giãn sau khi học tập vất vả" },
+                            { en: "reduce study pressure", vn: "giảm bớt áp lực học tập" },
+                            { en: "widen their knowledge", vn: "mở rộng hiểu biết" },
+                            { en: "develop their imagination", vn: "phát triển trí tưởng tượng" },
+                            { en: "learn useful skills", vn: "học thêm các kỹ năng hữu ích" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu 1 (Truyện tranh - Thú vị & Thư giãn sau giờ học)",
+                        text: "Teenagers in my country often read comic books. These books are interesting, so they’re very popular. They help young people relax after studying hard.",
+                        formatted: `→ Teenagers in my country often read <span class="sub-hl">comic books</span>. These books are <span class="sub-hl">interesting</span>, so they’re very popular. They help young people <span class="sub-hl">relax after studying hard</span>.`
+                    },
+                    {
+                        label: "Bài mẫu 2 (Sách kỹ năng - Hữu ích & Mở rộng kiến thức)",
+                        text: "Teenagers in my country often read self-help books. These books are useful, so they’re very popular. They help young people widen their knowledge and learn new things.",
+                        formatted: `→ Teenagers in my country often read <span class="sub-hl">self-help books</span>. These books are <span class="sub-hl">useful</span>, so they’re very popular. They help young people <span class="sub-hl">widen their knowledge</span> and <span class="sub-hl">learn new things</span>.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 4,
+        title: "Chủ đề 04: Let's talk about listening to the radio",
+        introText: "Let’s talk about listening to the radio.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Do you often listen to the radio?",
+                qType: "Yes/No question: Do you often [Vo]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách trả lời (Yes/No + Thời điểm + Lý do & Lợi ích):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I do. I often listen to the radio <span class="formula-bracket-hl">[thời điểm]</span>. I do it because it’s very <span class="formula-bracket-hl">[tính từ mô tả]</span>. It also helps me <span class="formula-bracket-hl">[lợi ích]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "📅 [Thời điểm nghe đài]:",
+                        items: [
+                            { en: "in the morning", vn: "vào buổi sáng" },
+                            { en: "in the evening", vn: "vào buổi tối" },
+                            { en: "when driving / on the bus", vn: "khi lái xe / trên xe buýt" },
+                            { en: "in my free time", vn: "vào thời gian rảnh" },
+                            { en: "before going to bed", vn: "trước khi đi ngủ" }
+                        ]
+                    },
+                    {
+                        title: "✨ [Tính từ mô tả]:",
+                        items: [
+                            { en: "relaxing", vn: "mang lại cảm giác thư giãn" },
+                            { en: "informative", vn: "cung cấp nhiều thông tin bổ ích" },
+                            { en: "interesting", vn: "thú vị" },
+                            { en: "useful", vn: "hữu ích" },
+                            { en: "convenient", vn: "tiện lợi" }
+                        ]
+                    },
+                    {
+                        title: "⭐ [Cụm Lợi ích]:",
+                        items: [
+                            { en: "reduce stress", vn: "giảm bớt căng thẳng" },
+                            { en: "keep up with the news", vn: "cập nhật tin tức thời sự" },
+                            { en: "clear my mind", vn: "giải tỏa tâm trí" },
+                            { en: "learn new things", vn: "học hỏi điều mới" },
+                            { en: "pass the time", vn: "giải trí / giết thời gian" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu 1 (Buổi sáng - Thư giãn & Giảm stress)",
+                        text: "Yes, I do. I often listen to the radio in the morning. I do it because it’s very relaxing. It helps me reduce stress.",
+                        formatted: `→ Yes, I do. I often listen to the radio <span class="sub-hl">in the morning</span>. I do it because it’s very <span class="sub-hl">relaxing</span>. It helps me <span class="sub-hl">reduce stress</span>.`
+                    },
+                    {
+                        label: "Bài mẫu 2 (Buổi tối - Cung cấp thông tin & Cập nhật tin tức)",
+                        text: "Yes, I do. I often listen to the radio in the evening. I do it because it’s very informative. It helps me keep up with the news.",
+                        formatted: `→ Yes, I do. I often listen to the radio <span class="sub-hl">in the evening</span>. I do it because it’s very <span class="sub-hl">informative</span>. It helps me <span class="sub-hl">keep up with the news</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What radio station do you usually listen to?",
+                qType: "Wh-question: What [radio station] do you usually [Vo]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách trả lời (Nêu kênh phát thanh, nội dung & lý do):</div>
+                    <div class="topic-formula-text">
+                        → I usually listen to <span class="formula-bracket-hl">[kênh phát thanh]</span>. It provides a lot of <span class="formula-bracket-hl">[nội dung kênh]</span>. I like it because it’s very <span class="formula-bracket-hl">[tính từ mô tả]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "📻 [Kênh phát thanh & Nội dung kênh]:",
+                        items: [
+                            { en: "VOV3", vn: "kênh VOV3 → music and entertainment programs (chương trình âm nhạc & giải trí)" },
+                            { en: "VOV Traffic", vn: "kênh VOV Giao thông → traffic updates and news (cập nhật giao thông & tin tức)" },
+                            { en: "VOV1", vn: "kênh VOV1 → news and information (tin tức & thông tin xã hội)" },
+                            { en: "BBC Learning English", vn: "kênh BBC → English lessons and listening practice (bài học tiếng Anh & luyện nghe)" },
+                            { en: "VOA Learning English", vn: "kênh VOA → slow news and English lessons (tin tức đọc chậm & bài học)" }
+                        ]
+                    },
+                    {
+                        title: "✨ [Tính từ mô tả kênh]:",
+                        items: [
+                            { en: "relaxing", vn: "thư giãn" },
+                            { en: "useful", vn: "hữu ích" },
+                            { en: "informative", vn: "nhiều thông tin bổ ích" },
+                            { en: "easy to understand", vn: "dễ hiểu" },
+                            { en: "interesting", vn: "thú vị" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu 1 (VOV3 - Âm nhạc & Thư giãn)",
+                        text: "I usually listen to VOV3. It provides a lot of music and entertainment programs. I like it because it’s very relaxing.",
+                        formatted: `→ I usually listen to <span class="sub-hl">VOV3</span>. It provides a lot of <span class="sub-hl">music and entertainment programs</span>. I like it because it’s very <span class="sub-hl">relaxing</span>.`
+                    },
+                    {
+                        label: "Bài mẫu 2 (BBC Learning English - Bài học tiếng Anh & Hữu ích)",
+                        text: "I usually listen to BBC Learning English. It provides a lot of English lessons and listening practice. I like it because it’s very useful.",
+                        formatted: `→ I usually listen to <span class="sub-hl">BBC Learning English</span>. It provides a lot of <span class="sub-hl">English lessons and listening practice</span>. I like it because it’s very <span class="sub-hl">useful</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "What are the benefits of listening to the radio?",
+                qType: "Wh-question: What are the benefits of [Ving]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách trả lời (Nêu các lợi ích & cảm xúc mang lại):</div>
+                    <div class="topic-formula-text">
+                        → Listening to the radio helps us <span class="formula-bracket-hl">[lợi ích 1]</span>. It’s also a good way to <span class="formula-bracket-hl">[lợi ích 2]</span>. Besides, it makes us feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "⭐ [Lợi ích khi nghe đài phát thanh]:",
+                        items: [
+                            { en: "reduce stress", vn: "giảm bớt căng thẳng" },
+                            { en: "pass the time", vn: "giải trí / giết thời gian" },
+                            { en: "get the news", vn: "nắm bắt tin tức thời sự" },
+                            { en: "learn new things", vn: "học hỏi những điều mới" },
+                            { en: "relax after a busy day", vn: "thư giãn sau ngày bận rộn" },
+                            { en: "improve listening skills", vn: "nâng cao kỹ năng nghe tiếng Anh" }
+                        ]
+                    },
+                    {
+                        title: "😊 [Tính từ mô tả cảm xúc]:",
+                        items: [
+                            { en: "relaxed", vn: "thư thái / thoải mái" },
+                            { en: "informed", vn: "am hiểu / nắm bắt thông tin" },
+                            { en: "happy", vn: "vui vẻ" },
+                            { en: "comfortable", vn: "dễ chịu" },
+                            { en: "refreshed", vn: "tươi mới / sảng khoái" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu 1 (Giảm stress & Giết thời gian - Thư giãn)",
+                        text: "Listening to the radio helps us reduce stress. It’s also a good way to pass the time. Besides, it makes us feel relaxed.",
+                        formatted: `→ Listening to the radio helps us <span class="sub-hl">reduce stress</span>. It’s also a good way to <span class="sub-hl">pass the time</span>. Besides, it makes us feel <span class="sub-hl">relaxed</span>.`
+                    },
+                    {
+                        label: "Bài mẫu 2 (Nắm bắt tin tức & Học điều mới - Am hiểu)",
+                        text: "Listening to the radio helps us get the news. It’s also a good way to learn new things. Besides, it makes us feel informed.",
+                        formatted: `→ Listening to the radio helps us <span class="sub-hl">get the news</span>. It’s also a good way to <span class="sub-hl">learn new things</span>. Besides, it makes us feel <span class="sub-hl">informed</span>.`
+                    }
+                ]
+            }
+        ]
     }
 ];
 
