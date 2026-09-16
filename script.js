@@ -4581,7 +4581,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Cấu trúc chọn trực tiếp & dứt khoát):</div>
                     <div class="topic-formula-text">
-                        → I definitely prefer playing video games <span class="formula-bracket-hl">[alone / with friends]</span> because it’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>. It allows <span class="formula-bracket-hl">[me / us]</span> to <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → I prefer playing video games <span class="formula-bracket-hl">[alone / with friends]</span> because it’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>. It allows <span class="formula-bracket-hl">[me / us]</span> to <span class="formula-bracket-hl">[lợi ích]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -4616,8 +4616,8 @@ const practiceTopicsData = [
                 samples: [
                     {
                         label: "Bài mẫu Cách 1 (Cấu trúc trực tiếp - Chọn chơi cùng bạn bè)",
-                        text: "I definitely prefer playing video games with friends because it’s more exciting. It allows us to talk and laugh together and have more fun.",
-                        formatted: `→ I definitely prefer <span class="sub-hl">playing video games with friends</span> because it’s more <span class="sub-hl">exciting</span>. It allows us to <span class="sub-hl">talk and laugh together</span> and <span class="sub-hl">have more fun</span>.`
+                        text: "I prefer playing video games with friends because it’s more exciting. It allows us to talk and laugh together and have more fun.",
+                        formatted: `→ I prefer <span class="sub-hl">playing video games with friends</span> because it’s more <span class="sub-hl">exciting</span>. It allows us to <span class="sub-hl">talk and laugh together</span> and <span class="sub-hl">have more fun</span>.`
                     },
                     {
                         label: "Bài mẫu Cách 2 (Cấu trúc nhượng bộ Although - Chọn chơi một mình)",
@@ -4716,7 +4716,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Cấu trúc chọn trực tiếp & dứt khoát):</div>
                     <div class="topic-formula-text">
-                        → I definitely prefer <span class="formula-bracket-hl">[lựa chọn: reading electronic books / reading paper books]</span>. It’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>, so I can <span class="formula-bracket-hl">[lợi ích 1]</span>. It’s also a good way to <span class="formula-bracket-hl">[lợi ích 2]</span>.
+                        → I prefer <span class="formula-bracket-hl">[lựa chọn: reading electronic books / reading paper books]</span>. It’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>, so I can <span class="formula-bracket-hl">[lợi ích 1]</span>. It’s also a good way to <span class="formula-bracket-hl">[lợi ích 2]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -4758,8 +4758,8 @@ const practiceTopicsData = [
                 samples: [
                     {
                         label: "Bài mẫu Cách 1 (Cấu trúc trực tiếp - Chọn sách điện tử)",
-                        text: "I definitely prefer reading electronic books. It’s more convenient, so I can read anywhere. It’s also a good way to save time.",
-                        formatted: `→ I definitely prefer <span class="sub-hl">reading electronic books</span>. It’s more <span class="sub-hl">convenient</span>, so I can <span class="sub-hl">read anywhere</span>. It’s also a good way to <span class="sub-hl">save time</span>.`
+                        text: "I prefer reading electronic books. It’s more convenient, so I can read anywhere. It’s also a good way to save time.",
+                        formatted: `→ I prefer <span class="sub-hl">reading electronic books</span>. It’s more <span class="sub-hl">convenient</span>, so I can <span class="sub-hl">read anywhere</span>. It’s also a good way to <span class="sub-hl">save time</span>.`
                     },
                     {
                         label: "Bài mẫu Cách 2 (Cấu trúc nhượng bộ Although - Chọn sách giấy)",
