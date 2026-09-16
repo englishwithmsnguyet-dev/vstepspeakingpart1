@@ -4595,9 +4595,7 @@ function renderPracticeTopic(topicId) {
                             <div class="topic-exam-top">
                                 <div class="topic-exam-time-options">
                                     <span><i class="fa-regular fa-clock"></i> Thời gian nói:</span>
-                                    <button type="button" class="btn-time-opt" onclick="setTopicQuestionTime(${q.qNum}, 30, this)">30s</button>
-                                    <button type="button" class="btn-time-opt active" onclick="setTopicQuestionTime(${q.qNum}, 45, this)">45s (Chuẩn B1)</button>
-                                    <button type="button" class="btn-time-opt" onclick="setTopicQuestionTime(${q.qNum}, 60, this)">60s</button>
+                                    <span style="font-weight: 800; color: #ef4444; font-size: 0.95rem; background: rgba(239, 68, 68, 0.08); padding: 0.25rem 0.75rem; border-radius: 50px; border: 1px solid rgba(239, 68, 68, 0.25);"><i class="fa-solid fa-stopwatch"></i> 25 giây / câu</span>
                                 </div>
                                 <div style="font-size: 0.85rem; color: var(--text-muted); font-style: italic;">
                                     💡 Máy tính sẽ phát tiếng <strong>Beep</strong> khi bắt đầu và <strong>Chuông</strong> khi hết giờ.
@@ -4606,7 +4604,7 @@ function renderPracticeTopic(topicId) {
 
                             <div class="topic-exam-body">
                                 <div class="topic-exam-timer-wrap">
-                                    <div id="topic-q-digits-${q.qNum}" class="topic-exam-digits">00:45</div>
+                                    <div id="topic-q-digits-${q.qNum}" class="topic-exam-digits">00:25</div>
                                     <div id="topic-q-wave-${q.qNum}" class="topic-mic-wave">
                                         <div class="topic-mic-bar"></div>
                                         <div class="topic-mic-bar"></div>
@@ -4711,7 +4709,7 @@ function stopAllActiveRecordings() {
 }
 
 // ==========================================================================
-// TOPIC PRACTICE - TIMED AUDIO RECORDER ENGINE (PER-QUESTION)
+// TOPIC PRACTICE - TIMED AUDIO RECORDER ENGINE (PER-QUESTION: 25s)
 // ==========================================================================
 window._topicTimers = {};
 
@@ -4723,11 +4721,6 @@ window.setTopicQuestionTime = (qNum, seconds, btnEl) => {
     }
     window._topicTimers[qNum].totalTime = seconds;
     window._topicTimers[qNum].timeLeft = seconds;
-
-    if (btnEl && btnEl.parentElement) {
-        btnEl.parentElement.querySelectorAll('.btn-time-opt').forEach(b => b.classList.remove('active'));
-        btnEl.classList.add('active');
-    }
 
     const digitsEl = document.getElementById(`topic-q-digits-${qNum}`);
     if (digitsEl) {
@@ -4741,9 +4734,10 @@ window.setTopicQuestionTime = (qNum, seconds, btnEl) => {
 window.startTopicQuestionRecording = async (qNum) => {
     stopAllActiveRecordings();
 
-    const timerObj = window._topicTimers[qNum] || { totalTime: 45, timeLeft: 45 };
+    const timerObj = window._topicTimers[qNum] || { totalTime: 25, timeLeft: 25 };
     window._topicTimers[qNum] = timerObj;
-    timerObj.timeLeft = timerObj.totalTime || 45;
+    timerObj.totalTime = 25;
+    timerObj.timeLeft = 25;
 
     try {
         const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
@@ -4823,7 +4817,10 @@ window.startTopicQuestionRecording = async (qNum) => {
         if (playbackBox) playbackBox.style.display = 'none';
 
         const digitsEl = document.getElementById(`topic-q-digits-${qNum}`);
-        if (digitsEl) digitsEl.classList.remove('warning', 'danger');
+        if (digitsEl) {
+            digitsEl.textContent = '00:25';
+            digitsEl.classList.remove('warning', 'danger');
+        }
 
         timerObj.timerInterval = setInterval(() => {
             timerObj.timeLeft--;
@@ -4833,9 +4830,9 @@ window.startTopicQuestionRecording = async (qNum) => {
                 const ss = String(cur % 60).padStart(2, '0');
                 digitsEl.textContent = `${mm}:${ss}`;
 
-                if (cur <= 15 && cur > 5) {
+                if (cur <= 8 && cur > 3) {
                     digitsEl.classList.add('warning');
-                } else if (cur <= 5) {
+                } else if (cur <= 3) {
                     digitsEl.classList.remove('warning');
                     digitsEl.classList.add('danger');
                 }
@@ -4878,13 +4875,12 @@ window.resetTopicQuestionRecording = (qNum) => {
     if (timerObj.isRecording) {
         stopTopicQuestionRecording(qNum);
     }
-    timerObj.timeLeft = timerObj.totalTime || 45;
+    timerObj.totalTime = 25;
+    timerObj.timeLeft = 25;
 
     const digitsEl = document.getElementById(`topic-q-digits-${qNum}`);
     if (digitsEl) {
-        const mm = String(Math.floor(timerObj.timeLeft / 60)).padStart(2, '0');
-        const ss = String(timerObj.timeLeft % 60).padStart(2, '0');
-        digitsEl.textContent = `${mm}:${ss}`;
+        digitsEl.textContent = '00:25';
         digitsEl.classList.remove('warning', 'danger');
     }
 
