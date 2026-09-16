@@ -4452,9 +4452,15 @@ const practiceTopicsData = [
                 question: "What video game do you often play?",
                 qType: "Wh-question: What [noun] do you often [Vo]?",
                 formula: `<div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách trả lời (Nêu rõ tên trò chơi điện tử):</div>
+                    <div class="topic-formula-title">- Cách 1 (Dùng cấu trúc I'm a big fan of...):</div>
                     <div class="topic-formula-text">
-                        → I’m a big fan of <span class="formula-bracket-hl">[tên trò chơi điện tử]</span> because it’s very <span class="formula-bracket-hl">[tính từ mô tả hoạt động]</span>. I often play it in my free time, especially <span class="formula-bracket-hl">[thời điểm cụ thể]</span>.
+                        → I’m a big fan of <span class="formula-bracket-hl">[tên trò chơi điện tử]</span> because it’s very <span class="formula-bracket-hl">[tính từ mô tả trò chơi]</span>. I often play it in my free time, especially <span class="formula-bracket-hl">[thời điểm cụ thể]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Dùng cấu trúc In my free time, I usually play...):</div>
+                    <div class="topic-formula-text">
+                        → In my free time, I usually play <span class="formula-bracket-hl">[tên trò chơi điện tử]</span>, especially <span class="formula-bracket-hl">[thời điểm cụ thể]</span>. I really enjoy it because it’s <span class="formula-bracket-hl">[tính từ mô tả trò chơi]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4485,7 +4491,7 @@ const practiceTopicsData = [
                     {
                         title: "📅 [Thời điểm cụ thể]:",
                         items: [
-                            { en: "at weekends", vn: "vào cuối tuần" },
+                            { en: "at the weekend", vn: "vào cuối tuần" },
                             { en: "in the evening", vn: "vào buổi tối" },
                             { en: "after school", vn: "sau giờ học" },
                             { en: "in my free time", vn: "vào thời gian rảnh" }
@@ -4494,14 +4500,14 @@ const practiceTopicsData = [
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu 1 (FIFA - Trò chơi bóng đá / sôi nổi)",
+                        label: "Bài mẫu Cách 1 (FIFA - Trò chơi bóng đá / sôi nổi)",
                         text: "I’m a big fan of FIFA because it’s very exciting. I often play it in my free time, especially at the weekend.",
                         formatted: `→ I’m a big fan of <span class="sub-hl">FIFA</span> because it’s very <span class="sub-hl">exciting</span>. I often play it in my free time, especially <span class="sub-hl">at the weekend</span>.`
                     },
                     {
-                        label: "Bài mẫu 2 (Minecraft - Trò chơi thư giãn)",
-                        text: "I’m a big fan of Minecraft because it’s very relaxing. I often play it in my free time, especially in the evening.",
-                        formatted: `→ I’m a big fan of <span class="sub-hl">Minecraft</span> because it’s very <span class="sub-hl">relaxing</span>. I often play it in my free time, especially <span class="sub-hl">in the evening</span>.`
+                        label: "Bài mẫu Cách 2 (Minecraft - Trò chơi thư giãn)",
+                        text: "In my free time, I usually play Minecraft, especially in the evening. I really enjoy it because it’s very relaxing.",
+                        formatted: `→ In my free time, I usually play <span class="sub-hl">Minecraft</span>, especially <span class="sub-hl">in the evening</span>. I really enjoy it because it’s very <span class="sub-hl">relaxing</span>.`
                     }
                 ]
             },
@@ -4510,9 +4516,15 @@ const practiceTopicsData = [
                 question: "Why do you often play that game?",
                 qType: "Wh-question: Why do you often [Vo]?",
                 formula: `<div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách trả lời (Nêu lý do & lợi ích mang lại):</div>
+                    <div class="topic-formula-title">- Cách 1 (Dùng cấu trúc it helps me... and makes me feel...):</div>
                     <div class="topic-formula-text">
                         → I often play that game because it helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>. It also makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Dùng cấu trúc The main reason is that it's a great way to...):</div>
+                    <div class="topic-formula-text">
+                        → The main reason is that it’s a great way to <span class="formula-bracket-hl">[lợi ích 1]</span>. Besides, playing that game also helps me <span class="formula-bracket-hl">[lợi ích 2]</span> and feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4536,14 +4548,14 @@ const practiceTopicsData = [
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu 1 (Giúp thư giãn & vui vẻ)",
+                        label: "Bài mẫu Cách 1 (Giúp thư giãn & vui vẻ)",
                         text: "I often play that game because it helps me relax after a busy day and have fun. It also makes me feel comfortable.",
                         formatted: `→ I often play that game because it helps me <span class="sub-hl">relax after a busy day</span> and <span class="sub-hl">have fun</span>. It also makes me feel <span class="sub-hl">comfortable</span>.`
                     },
                     {
-                        label: "Bài mẫu 2 (Giảm stress & giết thời gian)",
-                        text: "I often play that game because it helps me reduce stress and pass the time. It also makes me feel happy.",
-                        formatted: `→ I often play that game because it helps me <span class="sub-hl">reduce stress</span> and <span class="sub-hl">pass the time</span>. It also makes me feel <span class="sub-hl">happy</span>.`
+                        label: "Bài mẫu Cách 2 (Giảm stress & giết thời gian)",
+                        text: "The main reason is that it’s a great way to reduce stress. Besides, playing that game also helps me pass the time and feel happy.",
+                        formatted: `→ The main reason is that it’s a great way to <span class="sub-hl">reduce stress</span>. Besides, playing that game also helps me <span class="sub-hl">pass the time</span> and feel <span class="sub-hl">happy</span>.`
                     }
                 ]
             },
@@ -4552,13 +4564,13 @@ const practiceTopicsData = [
                 question: "Do you prefer playing video games alone or with friends? Why?",
                 qType: "Choice question: Do you prefer [option 1] or [option 2]?",
                 formula: `<div class="topic-formula-row">
-                    <div class="topic-formula-title">- Lựa chọn 1 (Chơi một mình):</div>
+                    <div class="topic-formula-title">- Cách 1 (Lựa chọn 1 - Chơi một mình để tập trung & thư giãn):</div>
                     <div class="topic-formula-text">
                         → I prefer playing video games alone because it’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>. It allows me to <span class="formula-bracket-hl">[lợi ích]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Lựa chọn 2 (Chơi cùng bạn bè):</div>
+                    <div class="topic-formula-title">- Cách 2 (Lựa chọn 2 - Chơi cùng bạn bè để vui vẻ & kết nối):</div>
                     <div class="topic-formula-text">
                         → I prefer playing video games with friends because it’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>. It allows us to <span class="formula-bracket-hl">[lợi ích]</span>.
                     </div>
@@ -4588,12 +4600,12 @@ const practiceTopicsData = [
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu 1 (Thích chơi một mình để tập trung & thư giãn)",
+                        label: "Bài mẫu Cách 1 (Thích chơi một mình để tập trung & thư giãn)",
                         text: "I prefer playing video games alone because it’s more relaxing. It allows me to focus better on the game and clear my mind.",
                         formatted: `→ I prefer <span class="sub-hl">playing video games alone</span> because it’s more <span class="sub-hl">relaxing</span>. It allows me to <span class="sub-hl">focus better on the game</span> and <span class="sub-hl">clear my mind</span>.`
                     },
                     {
-                        label: "Bài mẫu 2 (Thích chơi cùng bạn bè để trò chuyện & vui vẻ)",
+                        label: "Bài mẫu Cách 2 (Thích chơi cùng bạn bè để trò chuyện & vui vẻ)",
                         text: "I prefer playing video games with friends because it’s more exciting. It allows us to talk and laugh together and have more fun.",
                         formatted: `→ I prefer <span class="sub-hl">playing video games with friends</span> because it’s more <span class="sub-hl">exciting</span>. It allows us to <span class="sub-hl">talk and laugh together</span> and <span class="sub-hl">have more fun</span>.`
                     }
@@ -4611,9 +4623,15 @@ const practiceTopicsData = [
                 question: "What is your favorite book?",
                 qType: "Wh-question: What is your favorite [noun]?",
                 formula: `<div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách trả lời (Nêu tên quyển sách & lý do yêu thích):</div>
+                    <div class="topic-formula-title">- Cách 1 (Dùng cấu trúc I'm a big fan of...):</div>
                     <div class="topic-formula-text">
                         → I’m a big fan of <span class="formula-bracket-hl">[tên quyển sách]</span>. I like it because it’s very <span class="formula-bracket-hl">[tính từ mô tả quyển sách]</span>. It always helps me <span class="formula-bracket-hl">[lợi ích]</span> and makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span> whenever I read it.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Dùng cấu trúc My favorite book is...):</div>
+                    <div class="topic-formula-text">
+                        → My favorite book is <span class="formula-bracket-hl">[tên quyển sách]</span> because it’s very <span class="formula-bracket-hl">[tính từ mô tả quyển sách]</span>. Reading this book helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4656,14 +4674,14 @@ const practiceTopicsData = [
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu 1 (Harry Potter - Lôi cuốn & Giảm stress)",
+                        label: "Bài mẫu Cách 1 (Harry Potter - Lôi cuốn & Giảm stress)",
                         text: "I’m a big fan of Harry Potter. I like it because it’s very exciting. It always helps me reduce stress and makes me feel happy whenever I read it.",
                         formatted: `→ I’m a big fan of <span class="sub-hl">Harry Potter</span>. I like it because it’s very <span class="sub-hl">exciting</span>. It always helps me <span class="sub-hl">reduce stress</span> and makes me feel <span class="sub-hl">happy</span> whenever I read it.`
                     },
                     {
-                        label: "Bài mẫu 2 (Đắc Nhân Tâm - Ý nghĩa & Mở rộng hiểu biết)",
-                        text: "I’m a big fan of How to Win Friends and Influence People. I like it because it’s very meaningful. It always helps me widen my knowledge and makes me feel motivated whenever I read it.",
-                        formatted: `→ I’m a big fan of <span class="sub-hl">How to Win Friends and Influence People</span>. I like it because it’s very <span class="sub-hl">meaningful</span>. It always helps me <span class="sub-hl">widen my knowledge</span> and makes me feel <span class="sub-hl">motivated</span> whenever I read it.`
+                        label: "Bài mẫu Cách 2 (Đắc Nhân Tâm - Ý nghĩa & Có động lực)",
+                        text: "My favorite book is How to Win Friends and Influence People because it’s very meaningful. Reading this book helps me widen my knowledge and makes me feel motivated.",
+                        formatted: `→ My favorite book is <span class="sub-hl">How to Win Friends and Influence People</span> because it’s very <span class="sub-hl">meaningful</span>. Reading this book helps me <span class="sub-hl">widen my knowledge</span> and makes me feel <span class="sub-hl">motivated</span>.`
                     }
                 ]
             },
@@ -4672,9 +4690,15 @@ const practiceTopicsData = [
                 question: "Do you prefer reading paper books or electronic books?",
                 qType: "Choice question: Do you prefer [option 1] or [option 2]?",
                 formula: `<div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách trả lời (Đưa ra lựa chọn & lý do):</div>
+                    <div class="topic-formula-title">- Cách 1 (Lựa chọn 1 - Sách điện tử / E-books):</div>
                     <div class="topic-formula-text">
-                        → I prefer <span class="formula-bracket-hl">[lựa chọn: reading electronic books / reading paper books]</span>. It’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>, so I can <span class="formula-bracket-hl">[lợi ích 1]</span>. It’s also a good way to <span class="formula-bracket-hl">[lợi ích 2]</span>.
+                        → I prefer <span class="formula-bracket-hl">[reading electronic books]</span>. It’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>, so I can <span class="formula-bracket-hl">[lợi ích 1]</span>. It’s also a good way to <span class="formula-bracket-hl">[lợi ích 2]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Lựa chọn 2 - Sách giấy / Paper books):</div>
+                    <div class="topic-formula-text">
+                        → I prefer <span class="formula-bracket-hl">[reading paper books]</span>. It’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>, so I can <span class="formula-bracket-hl">[lợi ích 1]</span>. It’s also a good way to <span class="formula-bracket-hl">[lợi ích 2]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4709,12 +4733,12 @@ const practiceTopicsData = [
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu 1 (Sách điện tử - Tiện lợi & Đọc mọi nơi)",
+                        label: "Bài mẫu Cách 1 (Sách điện tử - Tiện lợi & Đọc mọi nơi)",
                         text: "I prefer reading electronic books. It’s more convenient, so I can read anywhere. It’s also a good way to save time.",
                         formatted: `→ I prefer <span class="sub-hl">reading electronic books</span>. It’s more <span class="sub-hl">convenient</span>, so I can <span class="sub-hl">read anywhere</span>. It’s also a good way to <span class="sub-hl">save time</span>.`
                     },
                     {
-                        label: "Bài mẫu 2 (Sách giấy - Thoải mái & Tập trung tốt hơn)",
+                        label: "Bài mẫu Cách 2 (Sách giấy - Thoải mái & Tập trung tốt hơn)",
                         text: "I prefer reading paper books. It’s more comfortable, so I can focus better. It’s also a good way to protect my eyes.",
                         formatted: `→ I prefer <span class="sub-hl">reading paper books</span>. It’s more <span class="sub-hl">comfortable</span>, so I can <span class="sub-hl">focus better</span>. It’s also a good way to <span class="sub-hl">protect my eyes</span>.`
                     }
@@ -4725,9 +4749,15 @@ const practiceTopicsData = [
                 question: "What kinds of books do teenagers in your country enjoy reading?",
                 qType: "Wh-question: What kinds of [noun] do [people] enjoy [Ving]?",
                 formula: `<div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách trả lời (Nêu thể loại sách phù hợp & lý do):</div>
+                    <div class="topic-formula-title">- Cách 1 (Nêu thể loại sách giải trí - truyện tranh / tiểu thuyết):</div>
                     <div class="topic-formula-text">
                         → Teenagers in my country often read <span class="formula-bracket-hl">[thể loại sách]</span>. These books are <span class="formula-bracket-hl">[tính từ mô tả]</span>, so they’re very popular. They help young people <span class="formula-bracket-hl">[lợi ích]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Nêu thể loại sách phát triển bản thân / kỹ năng):</div>
+                    <div class="topic-formula-text">
+                        → Most teenagers in my country love reading <span class="formula-bracket-hl">[thể loại sách]</span> because they are very <span class="formula-bracket-hl">[tính từ mô tả]</span>. Reading them is a great way to <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4764,14 +4794,14 @@ const practiceTopicsData = [
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu 1 (Truyện tranh - Thú vị & Thư giãn sau giờ học)",
+                        label: "Bài mẫu Cách 1 (Truyện tranh - Thú vị & Thư giãn sau giờ học)",
                         text: "Teenagers in my country often read comic books. These books are interesting, so they’re very popular. They help young people relax after studying hard.",
                         formatted: `→ Teenagers in my country often read <span class="sub-hl">comic books</span>. These books are <span class="sub-hl">interesting</span>, so they’re very popular. They help young people <span class="sub-hl">relax after studying hard</span>.`
                     },
                     {
-                        label: "Bài mẫu 2 (Sách kỹ năng - Hữu ích & Mở rộng kiến thức)",
-                        text: "Teenagers in my country often read self-help books. These books are useful, so they’re very popular. They help young people widen their knowledge and learn new things.",
-                        formatted: `→ Teenagers in my country often read <span class="sub-hl">self-help books</span>. These books are <span class="sub-hl">useful</span>, so they’re very popular. They help young people <span class="sub-hl">widen their knowledge</span> and <span class="sub-hl">learn new things</span>.`
+                        label: "Bài mẫu Cách 2 (Sách kỹ năng - Hữu ích & Mở rộng kiến thức)",
+                        text: "Most teenagers in my country love reading self-help books because they are very useful. Reading them is a great way to widen their knowledge and learn useful skills.",
+                        formatted: `→ Most teenagers in my country love reading <span class="sub-hl">self-help books</span>. These books are <span class="sub-hl">useful</span>, so they’re very popular. They help young people <span class="sub-hl">widen their knowledge</span> and <span class="sub-hl">learn useful skills</span>.`
                     }
                 ]
             }
@@ -4787,9 +4817,15 @@ const practiceTopicsData = [
                 question: "Do you often listen to the radio?",
                 qType: "Yes/No question: Do you often [Vo]?",
                 formula: `<div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách trả lời (Yes/No + Thời điểm + Lý do & Lợi ích):</div>
+                    <div class="topic-formula-title">- Cách 1 (Nghe để thư giãn, giảm căng thẳng):</div>
                     <div class="topic-formula-text">
                         → Yes, I do. I often listen to the radio <span class="formula-bracket-hl">[thời điểm]</span>. I do it because it’s very <span class="formula-bracket-hl">[tính từ mô tả]</span>. It also helps me <span class="formula-bracket-hl">[lợi ích]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Nghe để cập nhật tin tức, bổ sung thông tin):</div>
+                    <div class="topic-formula-text">
+                        → Yes, definitely. I usually listen to the radio <span class="formula-bracket-hl">[thời điểm]</span> because it’s very <span class="formula-bracket-hl">[tính từ mô tả]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4826,14 +4862,14 @@ const practiceTopicsData = [
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu 1 (Buổi sáng - Thư giãn & Giảm stress)",
+                        label: "Bài mẫu Cách 1 (Buổi sáng - Thư giãn & Giảm stress)",
                         text: "Yes, I do. I often listen to the radio in the morning. I do it because it’s very relaxing. It helps me reduce stress.",
                         formatted: `→ Yes, I do. I often listen to the radio <span class="sub-hl">in the morning</span>. I do it because it’s very <span class="sub-hl">relaxing</span>. It helps me <span class="sub-hl">reduce stress</span>.`
                     },
                     {
-                        label: "Bài mẫu 2 (Buổi tối - Cung cấp thông tin & Cập nhật tin tức)",
-                        text: "Yes, I do. I often listen to the radio in the evening. I do it because it’s very informative. It helps me keep up with the news.",
-                        formatted: `→ Yes, I do. I often listen to the radio <span class="sub-hl">in the evening</span>. I do it because it’s very <span class="sub-hl">informative</span>. It helps me <span class="sub-hl">keep up with the news</span>.`
+                        label: "Bài mẫu Cách 2 (Buổi tối - Cung cấp thông tin & Cập nhật tin tức)",
+                        text: "Yes, definitely. I usually listen to the radio in the evening because it’s very informative. It helps me keep up with the news.",
+                        formatted: `→ Yes, definitely. I usually listen to the radio <span class="sub-hl">in the evening</span> because it’s very <span class="sub-hl">informative</span>. It helps me <span class="sub-hl">keep up with the news</span>.`
                     }
                 ]
             },
@@ -4842,9 +4878,15 @@ const practiceTopicsData = [
                 question: "What radio station do you usually listen to?",
                 qType: "Wh-question: What [radio station] do you usually [Vo]?",
                 formula: `<div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách trả lời (Nêu kênh phát thanh, nội dung & lý do):</div>
+                    <div class="topic-formula-title">- Cách 1 (Kênh phát thanh âm nhạc / giải trí):</div>
                     <div class="topic-formula-text">
                         → I usually listen to <span class="formula-bracket-hl">[kênh phát thanh]</span>. It provides a lot of <span class="formula-bracket-hl">[nội dung kênh]</span>. I like it because it’s very <span class="formula-bracket-hl">[tính từ mô tả]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Kênh phát thanh tin tức / học tiếng Anh):</div>
+                    <div class="topic-formula-text">
+                        → My favorite station is <span class="formula-bracket-hl">[kênh phát thanh]</span> because it provides a lot of <span class="formula-bracket-hl">[nội dung kênh]</span>. I like it because it’s very <span class="formula-bracket-hl">[tính từ mô tả]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4871,14 +4913,14 @@ const practiceTopicsData = [
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu 1 (VOV3 - Âm nhạc & Thư giãn)",
+                        label: "Bài mẫu Cách 1 (VOV3 - Âm nhạc & Thư giãn)",
                         text: "I usually listen to VOV3. It provides a lot of music and entertainment programs. I like it because it’s very relaxing.",
                         formatted: `→ I usually listen to <span class="sub-hl">VOV3</span>. It provides a lot of <span class="sub-hl">music and entertainment programs</span>. I like it because it’s very <span class="sub-hl">relaxing</span>.`
                     },
                     {
-                        label: "Bài mẫu 2 (BBC Learning English - Bài học tiếng Anh & Hữu ích)",
-                        text: "I usually listen to BBC Learning English. It provides a lot of English lessons and listening practice. I like it because it’s very useful.",
-                        formatted: `→ I usually listen to <span class="sub-hl">BBC Learning English</span>. It provides a lot of <span class="sub-hl">English lessons and listening practice</span>. I like it because it’s very <span class="sub-hl">useful</span>.`
+                        label: "Bài mẫu Cách 2 (BBC Learning English - Bài học tiếng Anh & Hữu ích)",
+                        text: "My favorite station is BBC Learning English because it provides a lot of English lessons and listening practice. I like it because it’s very useful.",
+                        formatted: `→ My favorite station is <span class="sub-hl">BBC Learning English</span> because it provides a lot of <span class="sub-hl">English lessons and listening practice</span>. I like it because it’s very <span class="sub-hl">useful</span>.`
                     }
                 ]
             },
@@ -4887,9 +4929,15 @@ const practiceTopicsData = [
                 question: "What are the benefits of listening to the radio?",
                 qType: "Wh-question: What are the benefits of [Ving]?",
                 formula: `<div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách trả lời (Nêu các lợi ích & cảm xúc mang lại):</div>
+                    <div class="topic-formula-title">- Cách 1 (Cấu trúc trực tiếp: Giúp ích & Cảm xúc mang lại):</div>
                     <div class="topic-formula-text">
                         → Listening to the radio helps us <span class="formula-bracket-hl">[lợi ích 1]</span>. It’s also a good way to <span class="formula-bracket-hl">[lợi ích 2]</span>. Besides, it makes us feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Cấu trúc liệt kê: First, ... Second, ...):</div>
+                    <div class="topic-formula-text">
+                        → There are many benefits of listening to the radio. First, it helps us <span class="formula-bracket-hl">[lợi ích 1]</span>. Second, it’s a wonderful way to <span class="formula-bracket-hl">[lợi ích 2]</span> and stay <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4917,14 +4965,14 @@ const practiceTopicsData = [
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu 1 (Giảm stress & Giết thời gian - Thư giãn)",
+                        label: "Bài mẫu Cách 1 (Giảm stress & Giết thời gian - Thư giãn)",
                         text: "Listening to the radio helps us reduce stress. It’s also a good way to pass the time. Besides, it makes us feel relaxed.",
                         formatted: `→ Listening to the radio helps us <span class="sub-hl">reduce stress</span>. It’s also a good way to <span class="sub-hl">pass the time</span>. Besides, it makes us feel <span class="sub-hl">relaxed</span>.`
                     },
                     {
-                        label: "Bài mẫu 2 (Nắm bắt tin tức & Học điều mới - Am hiểu)",
-                        text: "Listening to the radio helps us get the news. It’s also a good way to learn new things. Besides, it makes us feel informed.",
-                        formatted: `→ Listening to the radio helps us <span class="sub-hl">get the news</span>. It’s also a good way to <span class="sub-hl">learn new things</span>. Besides, it makes us feel <span class="sub-hl">informed</span>.`
+                        label: "Bài mẫu Cách 2 (Nắm bắt tin tức & Học điều mới - Am hiểu)",
+                        text: "There are many benefits of listening to the radio. First, it helps us get the news. Second, it’s a wonderful way to learn new things and stay informed.",
+                        formatted: `→ There are many benefits of listening to the radio. First, it helps us <span class="sub-hl">get the news</span>. Second, it’s a wonderful way to <span class="sub-hl">learn new things</span> and stay <span class="sub-hl">informed</span>.`
                     }
                 ]
             }
