@@ -4608,6 +4608,55 @@ window.switchPracticeTopic = (topicId) => {
     renderPracticeTopic(id);
 };
 
+window.setTopicSelectionMode = (mode) => {
+    const manualBtn = document.getElementById('topic-mode-manual-btn');
+    const randomBtn = document.getElementById('topic-mode-random-btn');
+    const manualPanel = document.getElementById('topic-manual-panel');
+    const randomPanel = document.getElementById('topic-random-panel');
+
+    if (mode === 'manual') {
+        if (manualBtn) manualBtn.classList.add('active');
+        if (randomBtn) randomBtn.classList.remove('active');
+        if (manualPanel) manualPanel.style.display = 'block';
+        if (randomPanel) randomPanel.style.display = 'none';
+    } else {
+        if (manualBtn) manualBtn.classList.remove('active');
+        if (randomBtn) randomBtn.classList.add('active');
+        if (manualPanel) manualPanel.style.display = 'none';
+        if (randomPanel) randomPanel.style.display = 'block';
+        pickRandomPracticeTopic();
+    }
+};
+
+window.pickRandomPracticeTopic = () => {
+    const available = practiceTopicsData.map(t => t.id);
+    if (!available || available.length === 0) return;
+
+    const selectEl = document.getElementById('practice-topic-select');
+    const currentId = selectEl ? parseInt(selectEl.value) : 1;
+
+    let nextId = currentId;
+    if (available.length > 1) {
+        const pool = available.filter(id => id !== currentId);
+        nextId = pool[Math.floor(Math.random() * pool.length)];
+    } else {
+        nextId = available[0];
+    }
+
+    renderPracticeTopic(nextId);
+
+    // Confetti celebration
+    if (typeof confetti === 'function') {
+        try {
+            confetti({
+                particleCount: 50,
+                spread: 70,
+                origin: { y: 0.3 }
+            });
+        } catch (e) {}
+    }
+};
+
 function renderPracticeTopic(topicId) {
     const container = document.getElementById('practice-topic-content');
     if (!container) return;
@@ -4620,6 +4669,9 @@ function renderPracticeTopic(topicId) {
 
     const selectEl = document.getElementById('practice-topic-select');
     if (selectEl) selectEl.value = String(topic.id);
+
+    const randomDisplayEl = document.getElementById('random-topic-title-display');
+    if (randomDisplayEl) randomDisplayEl.textContent = topic.title;
 
     let html = `
         <div class="f-card-clean fade-in" style="margin-bottom: 2rem;">

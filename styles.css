@@ -739,6 +739,46 @@ body.dark-theme .topic-q-type-badge {
     color: var(--text-main);
 }
 
+/* Topic Selection Mode (Tự chọn vs Ngẫu nhiên) */
+.topic-mode-container {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+}
+.topic-mode-btn {
+    flex: 1;
+    min-width: 220px;
+    padding: 0.85rem 1.25rem;
+    border-radius: 12px;
+    border: 2px solid var(--border);
+    background: var(--bg-card);
+    color: var(--text-main);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    transition: all 0.2s ease;
+    box-shadow: var(--shadow-sm);
+    user-select: none;
+}
+.topic-mode-btn:hover {
+    border-color: var(--primary);
+    background: rgba(67, 97, 238, 0.05);
+}
+.topic-mode-btn.active {
+    border-color: var(--primary);
+    background: var(--grad-primary);
+    color: white;
+    box-shadow: 0 4px 14px rgba(67, 97, 238, 0.35);
+}
+.topic-mode-btn.active i {
+    color: white;
+}
+
 /* ==========================================================================
    EXAM TIMER & AUDIO RECORDING COMPONENT (VSTEP SPEAKING PART 1)
    ========================================================================== */
