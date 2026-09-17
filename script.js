@@ -5030,8 +5030,8 @@ const practiceTopicsData = [
     },
     {
         id: 5,
-        title: "Let's talk about music",
-        intro: "Let’s talk about music.",
+        title: "Chủ đề 05: Let's talk about music",
+        introText: "Let’s talk about music.",
         questions: [
             {
                 qNum: 1,
@@ -5224,8 +5224,8 @@ const practiceTopicsData = [
     },
     {
         id: 6,
-        title: "Let's talk about musical instruments",
-        intro: "Let’s talk about musical instruments.",
+        title: "Chủ đề 06: Let's talk about musical instruments",
+        introText: "Let’s talk about musical instruments.",
         questions: [
             {
                 qNum: 1,
@@ -5484,7 +5484,7 @@ function renderPracticeTopic(topicId) {
                         <i class="fa-solid fa-comments"></i> ${topic.title}
                     </div>
                     <div style="display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;">
-                        <button class="btn-audio-sample" onclick="speakText('${topic.introText.replace(/'/g, "\\'")}')" style="background: var(--primary);">
+                        <button class="btn-audio-sample" onclick="speakText('${(topic.introText || topic.intro || '').replace(/'/g, "\\'")}')" style="background: var(--primary);">
                             <i class="fa-solid fa-volume-high"></i> Nghe Giới Thiệu
                         </button>
                         <button class="btn-audio-sample" onclick="openFullTopicExamModal(${topic.id})" style="background: linear-gradient(135deg, #ef4444, #dc2626); box-shadow: 0 4px 12px rgba(239, 68, 68, 0.35);">
@@ -5493,7 +5493,7 @@ function renderPracticeTopic(topicId) {
                     </div>
                 </div>
                 <div style="font-size: 1.05rem; color: var(--text-main); line-height: 1.7; font-style: italic; background: var(--bg-card); padding: 0.85rem 1.25rem; border-radius: 12px; border: 1px dashed var(--border);">
-                    🎙️ Giám khảo: <strong>"${topic.introText}"</strong>
+                    🎙️ Giám khảo: <strong>"${topic.introText || topic.intro || ''}"</strong>
                 </div>
             </div>
     `;
