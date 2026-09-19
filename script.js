@@ -5415,56 +5415,65 @@ const practiceTopicsData = [
                 question: "What restaurant do you often go to? Why do you go there?",
                 qType: "Wh-question: What restaurant do you often go to? Why do you go there?",
                 formula: `<div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 1 (Đồ ăn ngon, giá cả phải chăng & Thực đơn đa dạng):</div>
+                    <div class="topic-formula-title">- Cách 1 (Đi quán quen - Đồ ăn ngon, giá phải chăng & Thực đơn đa dạng):</div>
                     <div class="topic-formula-text">
-                        → I often go to a restaurant near my <span class="formula-bracket-hl">[nơi chốn]</span> because the food is <span class="formula-bracket-hl">[tính từ]</span>. Besides, the price is <span class="formula-bracket-hl">[tính từ về giá]</span> and the menu is diverse.
+                        → I often go to <span class="formula-bracket-hl">[loại nhà hàng]</span> near my <span class="formula-bracket-hl">[địa điểm]</span> because <span class="formula-bracket-hl">[lý do chính]</span>. Moreover, <span class="formula-bracket-hl">[lý do phụ]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Đồ ăn ngon, nhiều món & Phục vụ tốt):</div>
+                    <div class="topic-formula-title">- Cách 2 (Quán yêu thích - Đồ ăn ngon, nhiều món & Phục vụ tốt):</div>
                     <div class="topic-formula-text">
-                        → I usually go to a restaurant near my <span class="formula-bracket-hl">[nơi chốn]</span> because the food is <span class="formula-bracket-hl">[tính từ]</span>. Besides, it has many dishes and the service is <span class="formula-bracket-hl">[chất lượng phục vụ]</span>.
+                        → One of my favorite restaurants is <span class="formula-bracket-hl">[loại nhà hàng]</span> near my <span class="formula-bracket-hl">[địa điểm]</span> because <span class="formula-bracket-hl">[lý do chính]</span>. Moreover, <span class="formula-bracket-hl">[lý do phụ]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "📍 [Nơi chốn & Điểm đến]:",
+                        title: "🍽️ [Loại nhà hàng]:",
                         items: [
-                            { en: "near my house", vn: "gần nhà tôi" },
-                            { en: "near my office", vn: "gần cơ quan của tôi" },
-                            { en: "near my university", vn: "gần trường đại học của tôi" },
-                            { en: "in the city center", vn: "ở trung tâm thành phố" }
+                            { en: "a family restaurant", vn: "quán ăn gia đình" },
+                            { en: "a local restaurant", vn: "quán ăn bình dân" },
+                            { en: "a BBQ restaurant", vn: "quán đồ nướng" },
+                            { en: "a seafood restaurant", vn: "nhà hàng hải sản" },
+                            { en: "a noodle shop", vn: "quán bún / phở" }
                         ]
                     },
                     {
-                        title: "💵 [Đồ ăn & Giá cả] (Cách 1):",
+                        title: "📍 [Địa điểm]:",
                         items: [
-                            { en: "delicious / tasty", vn: "thơm ngon" },
-                            { en: "fresh and clean", vn: "tươi và sạch sẽ" },
-                            { en: "affordable / reasonable", vn: "phải chăng / hợp lý" },
-                            { en: "diverse", vn: "đa dạng / phong phú" }
+                            { en: "house", vn: "nhà" },
+                            { en: "office", vn: "cơ quan" },
+                            { en: "university / school", vn: "trường học" },
+                            { en: "company", vn: "công ty" }
                         ]
                     },
                     {
-                        title: "👥 [Nhiều món & Phục vụ] (Cách 2):",
+                        title: "⭐ [Lý do chính]:",
                         items: [
-                            { en: "many dishes", vn: "nhiều món ăn" },
-                            { en: "a variety of food", vn: "nhiều món ăn phong phú" },
-                            { en: "good / great", vn: "tốt / tuyệt vời" },
-                            { en: "fast and friendly", vn: "nhanh nhẹn và thân thiện" }
+                            { en: "the food is delicious", vn: "đồ ăn thơm ngon" },
+                            { en: "the food is fresh and clean", vn: "đồ ăn tươi sạch" },
+                            { en: "the dishes are very tasty", vn: "các món ăn rất ngon miệng" }
+                        ]
+                    },
+                    {
+                        title: "💡 [Lý do phụ] (Moreover,...):",
+                        items: [
+                            { en: "the price is affordable and the menu is diverse", vn: "giá cả phải chăng và thực đơn đa dạng" },
+                            { en: "the price is reasonable and the food is healthy", vn: "giá cả hợp lý và đồ ăn lành mạnh" },
+                            { en: "it has many dishes and good service", vn: "có nhiều món ăn và phục vụ tốt" },
+                            { en: "the service is fast and the staff is friendly", vn: "phục vụ nhanh và nhân viên thân thiện" }
                         ]
                     }
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu Cách 1 (Đồ ăn ngon, giá cả phải chăng & Thực đơn đa dạng - 24 từ)",
-                        text: "I often go to a restaurant near my house because the food is delicious. Besides, the price is affordable and the menu is diverse.",
-                        formatted: `→ I often go to a restaurant near my <span class="sub-hl">house</span> because the food is <span class="sub-hl">delicious</span>. Besides, the price is <span class="sub-hl">affordable</span> and the menu is <span class="sub-hl">diverse</span>.`
+                        label: "Bài mẫu Cách 1 (Quán gần nhà - Đồ ăn ngon, giá phải chăng & Thực đơn đa dạng - 24 từ)",
+                        text: "I often go to a family restaurant near my house because the food is delicious. Moreover, the price is affordable and the menu is diverse.",
+                        formatted: `→ I often go to a <span class="sub-hl">family restaurant</span> near my <span class="sub-hl">house</span> because <span class="sub-hl">the food is delicious</span>. Moreover, <span class="sub-hl">the price is affordable and the menu is diverse</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Đồ ăn ngon, nhiều món & Phục vụ tốt - 24 từ)",
-                        text: "I usually go to a restaurant near my office because the food is delicious. Besides, it has many dishes and the service is good.",
-                        formatted: `→ I usually go to a restaurant near my <span class="sub-hl">office</span> because the food is <span class="sub-hl">delicious</span>. Besides, it has <span class="sub-hl">many dishes</span> and the service is <span class="sub-hl">good</span>.`
+                        label: "Bài mẫu Cách 2 (Quán gần cơ quan - Đồ ăn ngon, nhiều món & Phục vụ tốt - 24 từ)",
+                        text: "One of my favorite restaurants is a local restaurant near my office because the food is delicious. Moreover, it has many dishes and good service.",
+                        formatted: `→ One of my favorite restaurants is a <span class="sub-hl">local restaurant</span> near my <span class="sub-hl">office</span> because <span class="sub-hl">the food is delicious</span>. Moreover, <span class="sub-hl">it has many dishes and good service</span>.`
                     }
                 ]
             },
