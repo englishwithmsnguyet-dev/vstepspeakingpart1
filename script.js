@@ -5480,7 +5480,7 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Món lẩu nướng & hải sản phong phú - Tôm cua nướng, lẩu cay, tráng miệng):</div>
                     <div class="topic-formula-text">
-                        → They serve a wide range of <span class="formula-bracket-hl">[ẩm thực / loại món ăn]</span>, including <span class="formula-bracket-hl">[kể tên 2-3 món]</span>. They also offer <span class="formula-bracket-hl">[món tráng miệng / thức uống]</span>, which makes every meal enjoyable.
+                        → They serve a wide range of <span class="formula-bracket-hl">[ẩm thực / loại món ăn]</span>, such as <span class="formula-bracket-hl">[kể tên 2-3 món]</span>. They also offer <span class="formula-bracket-hl">[món tráng miệng / thức uống]</span>, and all the food is very <span class="formula-bracket-hl">[tính từ món ăn]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -5516,13 +5516,13 @@ const practiceTopicsData = [
                 samples: [
                     {
                         label: "Bài mẫu Cách 1 (Món ăn truyền thống Việt Nam - Nguyên liệu tươi, vị đậm đà)",
-                        text: "That restaurant mainly serves traditional Vietnamese dishes, such as beef noodle soup, spring rolls, and grilled pork. All the ingredients are fresh and cooked with rich flavors, which makes the food very delicious and healthy.",
-                        formatted: `→ That restaurant mainly serves <span class="sub-hl">traditional Vietnamese dishes</span>, such as <span class="sub-hl">beef noodle soup</span>, <span class="sub-hl">spring rolls</span>, and grilled pork. All the ingredients are fresh and cooked with <span class="sub-hl">rich flavors</span>, which makes the food very delicious and healthy.`
+                        text: "That restaurant mainly serves traditional Vietnamese dishes, such as beef noodle soup, spring rolls, and grilled pork. All the ingredients are fresh, and the food is very delicious and healthy.",
+                        formatted: `→ That restaurant mainly serves <span class="sub-hl">traditional Vietnamese dishes</span>, such as <span class="sub-hl">beef noodle soup</span>, <span class="sub-hl">spring rolls</span>, and grilled pork. All the ingredients are fresh, and the food is very <span class="sub-hl">delicious and healthy</span>.`
                     },
                     {
                         label: "Bài mẫu Cách 2 (Hải sản nướng và lẩu nướng phong phú kèm tráng miệng)",
-                        text: "They serve a wide range of seafood and hotpot dishes, including grilled prawns, crabs, and spicy fish hotpot. They also offer fresh seasonal fruits and desserts, which makes every meal enjoyable.",
-                        formatted: `→ They serve a wide range of <span class="sub-hl">seafood and hotpot dishes</span>, including <span class="sub-hl">grilled prawns</span>, crabs, and <span class="sub-hl">spicy fish hotpot</span>. They also offer fresh seasonal fruits and desserts, which makes every meal enjoyable.`
+                        text: "They serve a wide range of seafood and hotpot dishes, such as grilled prawns, crabs, and spicy fish hotpot. They also offer fresh fruits and sweet desserts, and all the dishes are very tasty.",
+                        formatted: `→ They serve a wide range of <span class="sub-hl">seafood and hotpot dishes</span>, such as <span class="sub-hl">grilled prawns</span>, crabs, and <span class="sub-hl">spicy fish hotpot</span>. They also offer fresh fruits and sweet desserts, and all the dishes are very <span class="sub-hl">tasty</span>.`
                     }
                 ]
             },
