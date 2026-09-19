@@ -5779,7 +5779,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời THÍCH - Nấu ăn sáng tạo và giúp thư giãn):</div>
                     <div class="topic-formula-text">
-                        → To be honest, I'm really into cooking because it's <span class="formula-bracket-hl">[tính từ]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span> after a busy day.
+                        → Yes, I do. I'm really into cooking because it's <span class="formula-bracket-hl">[tính từ]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span> after a busy day.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -5821,8 +5821,8 @@ const practiceTopicsData = [
                 samples: [
                     {
                         label: "Bài mẫu Cách 1 (Trả lời THÍCH - Sáng tạo, giúp thư giãn sau ngày bận rộn - 21 từ)",
-                        text: "To be honest, I'm really into cooking because it's fun and creative. It helps me reduce stress after a busy day.",
-                        formatted: `→ To be honest, <span class="sub-hl">I'm really into cooking</span> because <span class="sub-hl">it's fun and creative</span>. It helps me <span class="sub-hl">reduce stress after a busy day</span>.`
+                        text: "Yes, I do. I'm really into cooking because it's fun and creative. It helps me reduce stress after a busy day.",
+                        formatted: `→ Yes, I do. <span class="sub-hl">I'm really into cooking</span> because <span class="sub-hl">it's fun and creative</span>. It helps me <span class="sub-hl">reduce stress after a busy day</span>.`
                     },
                     {
                         label: "Bài mẫu Cách 2 (Trả lời HIẾM KHI - Bận rộn công việc, mẹ nấu cho ăn - 20 từ)",
