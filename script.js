@@ -5417,18 +5417,18 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Quán gần nhà - Đồ ăn ngon & Thư giãn sau ngày bận rộn):</div>
                     <div class="topic-formula-text">
-                        → I often go to a restaurant near my house because the food is <span class="formula-bracket-hl">[tính từ món ăn]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → I often go to a restaurant near my house because the food is <span class="formula-bracket-hl">[tính từ]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Quán nướng/lẩu cùng bạn bè cuối tuần - Vui vẻ bên nhau):</div>
                     <div class="topic-formula-text">
-                        → I usually go to a <span class="formula-bracket-hl">[loại quán: BBQ restaurant]</span> with my friends on weekends because the food is tasty and we <span class="formula-bracket-hl">[lợi ích: have fun together]</span>.
+                        → I usually go to a <span class="formula-bracket-hl">[loại nhà hàng]</span> with my friends on weekends because the food is tasty and we <span class="formula-bracket-hl">[lợi ích]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🍽️ [Loại nhà hàng & Phong cách quán]:",
+                        title: "🍽️ [Loại nhà hàng]:",
                         items: [
                             { en: "a family restaurant", vn: "quán ăn gia đình" },
                             { en: "a BBQ restaurant", vn: "quán đồ nướng" },
@@ -5470,13 +5470,13 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Món ăn truyền thống Việt Nam - Phở và nem rán):</div>
                     <div class="topic-formula-text">
-                        → That restaurant mainly serves <span class="formula-bracket-hl">[loại món: traditional Vietnamese food]</span>, such as <span class="formula-bracket-hl">[kể 2 món: beef noodle soup and spring rolls]</span>. All the dishes are very <span class="formula-bracket-hl">[tính từ]</span>.
+                        → That restaurant mainly serves <span class="formula-bracket-hl">[loại đồ ăn]</span>, such as <span class="formula-bracket-hl">[món 1]</span> and <span class="formula-bracket-hl">[món 2]</span>. All the dishes are very <span class="formula-bracket-hl">[tính từ]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Hải sản tươi sống - Tôm nướng và lẩu cá):</div>
                     <div class="topic-formula-text">
-                        → They serve many <span class="formula-bracket-hl">[loại món: seafood dishes]</span>, such as <span class="formula-bracket-hl">[kể 2 món: grilled prawns and fish hotpot]</span>. The food is always <span class="formula-bracket-hl">[tính từ]</span>.
+                        → They serve many <span class="formula-bracket-hl">[loại đồ ăn]</span>, such as <span class="formula-bracket-hl">[món 1]</span> and <span class="formula-bracket-hl">[món 2]</span>. The food is always <span class="formula-bracket-hl">[tính từ]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -5525,7 +5525,7 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG HẲN - Không ăn được cay, chọn món thanh nhẹ):</div>
                     <div class="topic-formula-text">
-                        → Not really. Most dishes are delicious, but I don’t like <span class="formula-bracket-hl">[món không thích: spicy food]</span>. I always choose milder dishes like <span class="formula-bracket-hl">[món nhẹ: chicken soup]</span>.
+                        → Not really. Most dishes are delicious, but I don’t like <span class="formula-bracket-hl">[loại món không thích]</span>. I always choose milder dishes like <span class="formula-bracket-hl">[món ăn thanh đạm]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -5566,13 +5566,13 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời ĐÃ TỪNG - Đi KFC cùng bạn vì nhanh chóng, tiện lợi):</div>
                     <div class="topic-formula-text">
-                        → Yes, I have. I often go to <span class="formula-bracket-hl">[tên quán: KFC]</span> with my friends because the food is served very quickly and conveniently.
+                        → Yes, I have. I often go to <span class="formula-bracket-hl">[tên quán]</span> with my friends because the food is served very quickly and conveniently.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Trả lời HIẾM KHI - Thích cơm nhà để giữ sức khỏe và tiết kiệm):</div>
                     <div class="topic-formula-text">
-                        → Yes, but very rarely. Nowadays, I prefer eating home-cooked meals with my family to <span class="formula-bracket-hl">[lợi ích 1: stay healthy]</span> and <span class="formula-bracket-hl">[lợi ích 2: save money]</span>.
+                        → Yes, but very rarely. Nowadays, I prefer eating home-cooked meals with my family to <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -5610,13 +5610,13 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Gà rán giòn tan - Vỏ giòn, mang lại niềm vui):</div>
                     <div class="topic-formula-text">
-                        → My favorite fast food is <span class="formula-bracket-hl">[món ăn: crispy fried chicken]</span>. I love it because it is <span class="formula-bracket-hl">[tính từ: crunchy]</span> and makes me feel happy.
+                        → My favorite fast food is <span class="formula-bracket-hl">[tên món ăn]</span>. I love it because it is <span class="formula-bracket-hl">[tính từ]</span> and makes me feel happy.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Bánh pizza phô mai - Ngon miệng, chia sẻ cùng bạn bè):</div>
                     <div class="topic-formula-text">
-                        → I really like <span class="formula-bracket-hl">[món ăn: cheese pizza]</span>. It is very delicious, and I often share it with my friends to have fun.
+                        → I really like <span class="formula-bracket-hl">[tên món ăn]</span>. It is very delicious, and I often share it with my friends to <span class="formula-bracket-hl">[lợi ích]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -5650,13 +5650,13 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Không tốt cho sức khỏe - Nhiều dầu mỡ và calo, gây tăng cân):</div>
                     <div class="topic-formula-text">
-                        → No, it is not healthy at all. Fast food has too much <span class="formula-bracket-hl">[chất béo: oil and calories]</span>, so it can cause <span class="formula-bracket-hl">[tác hại: weight gain]</span>.
+                        → No, it is not healthy at all. Fast food has too much <span class="formula-bracket-hl">[chất không tốt]</span>, so it can cause <span class="formula-bracket-hl">[tác hại]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Cấu trúc nhượng bộ Although - Tiện nhưng hại, nên ăn rau để khỏe):</div>
                     <div class="topic-formula-text">
-                        → Although fast food is convenient, eating it often is bad for our health. We should eat more vegetables to <span class="formula-bracket-hl">[lợi ích: stay healthy]</span>.
+                        → Although fast food is convenient, eating it often is bad for our health. We should eat more vegetables to <span class="formula-bracket-hl">[lợi ích]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
