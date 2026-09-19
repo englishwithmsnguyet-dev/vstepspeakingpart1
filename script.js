@@ -5766,6 +5766,352 @@ const practiceTopicsData = [
             }
         ]
     }
+,
+    {
+        id: 9,
+        title: "Chủ đề 09: Let's talk about cooking",
+        introText: "Let’s talk about cooking.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Do you like cooking?",
+                qType: "Do you like [V-ing]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời THÍCH - Nấu ăn sáng tạo và giúp thư giãn):</div>
+                    <div class="topic-formula-text">
+                        → To be honest, I'm really into cooking because it's <span class="formula-bracket-hl">[tính từ]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span> after a busy day.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời HIẾM KHI - Bận rộn công việc, người nhà nấu cho):</div>
+                    <div class="topic-formula-text">
+                        → Actually, no. I rarely cook because I'm very busy with my <span class="formula-bracket-hl">[lý do]</span>. I usually eat meals cooked by my <span class="formula-bracket-hl">[người nấu]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "✨ [Tính từ mô tả nấu ăn]:",
+                        items: [
+                            { en: "fun and creative", vn: "vui vẻ và sáng tạo" },
+                            { en: "relaxing", vn: "mang lại cảm giác thư giãn" },
+                            { en: "an essential life skill", vn: "kỹ năng sống thiết yếu" },
+                            { en: "very interesting", vn: "rất thú vị" }
+                        ]
+                    },
+                    {
+                        title: "⭐ [Lợi ích khi nấu ăn]:",
+                        items: [
+                            { en: "reduce stress", vn: "giảm bớt căng thẳng" },
+                            { en: "clear my mind", vn: "giúp đầu óc thanh thản" },
+                            { en: "improve my mood", vn: "cải thiện tâm trạng" },
+                            { en: "prepare healthy meals", vn: "tự chuẩn bị bữa ăn lành mạnh" }
+                        ]
+                    },
+                    {
+                        title: "💼 [Lý do bận rộn & Người nấu]:",
+                        items: [
+                            { en: "work", vn: "công việc" },
+                            { en: "study", vn: "học tập" },
+                            { en: "tight schedule", vn: "lịch trình bận rộn" },
+                            { en: "mother", vn: "mẹ tôi" },
+                            { en: "family", vn: "gia đình tôi" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời THÍCH - Sáng tạo, giúp thư giãn sau ngày bận rộn - 21 từ)",
+                        text: "To be honest, I'm really into cooking because it's fun and creative. It helps me reduce stress after a busy day.",
+                        formatted: `→ To be honest, <span class="sub-hl">I'm really into cooking</span> because <span class="sub-hl">it's fun and creative</span>. It helps me <span class="sub-hl">reduce stress after a busy day</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời HIẾM KHI - Bận rộn công việc, mẹ nấu cho ăn - 20 từ)",
+                        text: "Actually, no. I rarely cook because I'm very busy with my work. I usually eat meals cooked by my mother.",
+                        formatted: `→ Actually, no. I rarely cook because <span class="sub-hl">I'm very busy with my work</span>. I usually eat meals <span class="sub-hl">cooked by my mother</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What is the most popular food in your country?",
+                qType: "Wh-question: What is the most popular food in your country?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Phở bò - Nước dùng thơm ngon, món ăn truyền thống cho bữa sáng):</div>
+                    <div class="topic-formula-text">
+                        → In Vietnam, <span class="formula-bracket-hl">[tên món ăn]</span> is the most popular food. It has <span class="formula-bracket-hl">[đặc điểm món]</span>, and people often eat it for <span class="formula-bracket-hl">[bữa ăn]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Bánh mì - Món ăn đường phố ngon, tiện lợi & giá bình dân):</div>
+                    <div class="topic-formula-text">
+                        → I think <span class="formula-bracket-hl">[tên món ăn]</span> is the most popular dish. It's very <span class="formula-bracket-hl">[tính từ]</span>, so many students and workers love it.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🍲 [Món ăn nổi tiếng]:",
+                        items: [
+                            { en: "beef noodle soup", vn: "phở bò truyền thống" },
+                            { en: "chicken noodle soup", vn: "phở gà thơm ngon" },
+                            { en: "Vietnamese bread", vn: "bánh mì Việt Nam" },
+                            { en: "broken rice", vn: "cơm tấm sườn nướng" },
+                            { en: "crispy spring rolls", vn: "nem rán giòn rụm" }
+                        ]
+                    },
+                    {
+                        title: "🌿 [Đặc điểm & Hương vị]:",
+                        items: [
+                            { en: "a delicious broth", vn: "nước dùng thơm ngon đậm vị" },
+                            { en: "fresh beef and herbs", vn: "thịt bò và rau thơm tươi sạch" },
+                            { en: "delicious and convenient", vn: "thơm ngon và thuận tiện" },
+                            { en: "crispy and affordable", vn: "vỏ giòn và giá cả phải chăng" }
+                        ]
+                    },
+                    {
+                        title: "⏰ [Bữa ăn trong ngày]:",
+                        items: [
+                            { en: "breakfast", vn: "bữa sáng" },
+                            { en: "lunch", vn: "bữa trưa" },
+                            { en: "every meal", vn: "mọi bữa ăn trong ngày" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Phở bò - Nước dùng thơm ngon, ăn vào bữa sáng - 22 từ)",
+                        text: "In Vietnam, beef noodle soup is the most popular food. It has a delicious broth, and people often eat it for breakfast.",
+                        formatted: `→ In Vietnam, <span class="sub-hl">beef noodle soup</span> is the most popular food. It has <span class="sub-hl">a delicious broth</span>, and people often eat it for <span class="sub-hl">breakfast</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Bánh mì - Thơm ngon tiện lợi, học sinh và người đi làm yêu thích - 21 từ)",
+                        text: "I think Vietnamese bread is the most popular dish. It's very delicious and convenient, so many students and workers love it.",
+                        formatted: `→ I think <span class="sub-hl">Vietnamese bread</span> is the most popular dish. It's very <span class="sub-hl">delicious and convenient</span>, so many students and workers love it.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Do you prefer to eat out or eat at home?",
+                qType: "Choice question: Do you prefer to [eat out] or [eat at home]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Thích ăn ở nhà - Cơm nhà sạch sẽ, giữ sức khỏe & tiết kiệm):</div>
+                    <div class="topic-formula-text">
+                        → I prefer eating at home because home-cooked meals are <span class="formula-bracket-hl">[tính từ]</span>. It helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Thích ăn ngoài - Tiết kiệm thời gian nấu nướng & tụ tập bạn bè):</div>
+                    <div class="topic-formula-text">
+                        → I prefer eating out because it saves time on cooking. Moreover, I can try <span class="formula-bracket-hl">[loại món ăn]</span> and <span class="formula-bracket-hl">[lợi ích]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🥗 [Đặc điểm bữa cơm nhà & Lợi ích] (Cách 1):",
+                        items: [
+                            { en: "clean and healthy", vn: "sạch sẽ và lành mạnh" },
+                            { en: "fresh and safe", vn: "tươi ngon và an toàn" },
+                            { en: "save money", vn: "tiết kiệm tiền" },
+                            { en: "stay healthy", vn: "giữ gìn sức khỏe" },
+                            { en: "spend time with my family", vn: "dành thời gian bên gia đình" }
+                        ]
+                    },
+                    {
+                        title: "🍽️ [Tiện ích ăn ngoài & Trải nghiệm] (Cách 2):",
+                        items: [
+                            { en: "different dishes", vn: "nhiều món ăn khác nhau" },
+                            { en: "new foods", vn: "các món ăn mới lạ" },
+                            { en: "hang out with my friends", vn: "tụ tập cùng bạn bè" },
+                            { en: "have fun together", vn: "vui vẻ bên nhau" },
+                            { en: "relax after work", vn: "thư giãn sau giờ làm việc" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Ăn ở nhà - Cơm nhà sạch sẽ, tiết kiệm tiền và giữ sức khỏe - 20 từ)",
+                        text: "I prefer eating at home because home-cooked meals are clean and healthy. It helps me save money and stay healthy.",
+                        formatted: `→ I prefer <span class="sub-hl">eating at home</span> because home-cooked meals are <span class="sub-hl">clean and healthy</span>. It helps me <span class="sub-hl">save money</span> and <span class="sub-hl">stay healthy</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Ăn ngoài - Tiết kiệm thời gian, thử món mới và đi cùng bạn bè - 22 từ)",
+                        text: "I prefer eating out because it saves time on cooking. Moreover, I can try different dishes and hang out with my friends.",
+                        formatted: `→ I prefer <span class="sub-hl">eating out</span> because it <span class="sub-hl">saves time on cooking</span>. Moreover, I can try <span class="sub-hl">different dishes</span> and <span class="sub-hl">hang out with my friends</span>.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 10,
+        title: "Chủ đề 10: Let's talk about the cooking class",
+        introText: "Let’s talk about the cooking class.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Have you ever been to a cooking class?",
+                qType: "Have you ever [V3/ed]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời ĐÃ TỪNG - Tham gia lớp học, học thêm công thức mới):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I have. I attended a <span class="formula-bracket-hl">[loại lớp học]</span> last year. It was <span class="formula-bracket-hl">[tính từ]</span> and helped me <span class="formula-bracket-hl">[lợi ích]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời CHƯA TỪNG - Thường học qua mạng, muốn tham gia trong tương lai):</div>
+                    <div class="topic-formula-text">
+                        → No, I haven't. I usually learn cooking from <span class="formula-bracket-hl">[nguồn học]</span>. However, I want to join a class to <span class="formula-bracket-hl">[lợi ích]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🍳 [Loại lớp học nấu ăn]:",
+                        items: [
+                            { en: "basic cooking class", vn: "lớp nấu ăn cơ bản" },
+                            { en: "baking class", vn: "lớp học làm bánh" },
+                            { en: "weekend cooking workshop", vn: "buổi workshop nấu ăn cuối tuần" },
+                            { en: "traditional food course", vn: "khóa học nấu món truyền thống" }
+                        ]
+                    },
+                    {
+                        title: "✨ [Tính từ & Lợi ích lớp học] (Cách 1):",
+                        items: [
+                            { en: "very useful", vn: "rất hữu ích" },
+                            { en: "fun and exciting", vn: "vui vẻ và hào hứng" },
+                            { en: "learn new recipes", vn: "học thêm nhiều công thức mới" },
+                            { en: "develop useful skills", vn: "phát triển kỹ năng hữu ích" },
+                            { en: "cook better", vn: "nấu nướng ngon hơn" }
+                        ]
+                    },
+                    {
+                        title: "📱 [Kênh tự học & Mục tiêu] (Cách 2):",
+                        items: [
+                            { en: "online videos", vn: "các video trên mạng" },
+                            { en: "my mother at home", vn: "mẹ tôi ở nhà" },
+                            { en: "cooking blogs", vn: "các trang blog dạy nấu ăn" },
+                            { en: "improve my skills", vn: "nâng cao kỹ năng của mình" },
+                            { en: "learn to cook properly", vn: "học nấu nướng bài bản đúng cách" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời ĐÃ TỪNG - Lớp nấu ăn cơ bản rất hữu ích, học công thức mới - 21 từ)",
+                        text: "Yes, I have. I attended a basic cooking class last year. It was very useful and helped me learn new recipes.",
+                        formatted: `→ Yes, I have. I attended a <span class="sub-hl">basic cooking class</span> last year. It was <span class="sub-hl">very useful</span> and helped me <span class="sub-hl">learn new recipes</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời CHƯA TỪNG - Tự học qua mạng, muốn tham gia nâng cao tay nghề - 21 từ)",
+                        text: "No, I haven't. I usually learn cooking from online videos. However, I want to join a class to improve my skills.",
+                        formatted: `→ No, I haven't. I usually learn cooking from <span class="sub-hl">online videos</span>. However, I want to join a class to <span class="sub-hl">improve my skills</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "Would you prefer to go there alone or with someone else?",
+                qType: "Choice question: Would you prefer to go there [alone] or [with someone else]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Đi cùng người khác - Hỗ trợ nhau & Thực hành vui vẻ hơn):</div>
+                    <div class="topic-formula-text">
+                        → I prefer going with my <span class="formula-bracket-hl">[đối tượng]</span> because we can <span class="formula-bracket-hl">[hành động hỗ trợ]</span>. It's more <span class="formula-bracket-hl">[tính từ]</span> to practice together.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Đi một mình - Tập trung cao độ & Tiếp thu bài học tốt hơn):</div>
+                    <div class="topic-formula-text">
+                        → I prefer going alone because I can <span class="formula-bracket-hl">[lý do tự lập]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span> and learn better.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "👥 [Người đi cùng & Hỗ trợ] (Cách 1):",
+                        items: [
+                            { en: "best friend", vn: "bạn thân nhất" },
+                            { en: "sister", vn: "chị / em gái" },
+                            { en: "family", vn: "gia đình" },
+                            { en: "help each other", vn: "giúp đỡ lẫn nhau" },
+                            { en: "share our dishes", vn: "chia sẻ món ăn cùng nhau" },
+                            { en: "fun and exciting", vn: "vui vẻ và hào hứng" }
+                        ]
+                    },
+                    {
+                        title: "🎯 [Lý do tự lập & Lợi ích] (Cách 2):",
+                        items: [
+                            { en: "focus on the lesson", vn: "tập trung vào bài học" },
+                            { en: "follow the teacher easily", vn: "theo bài của giáo viên dễ dàng" },
+                            { en: "boost my concentration", vn: "nâng cao sự tập trung" },
+                            { en: "work independently", vn: "làm việc độc lập" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Đi cùng bạn thân - Hỗ trợ nhau, thực hành cùng nhau vui hơn - 19 từ)",
+                        text: "I prefer going with my best friend because we can help each other. It's more fun to practice together.",
+                        formatted: `→ I prefer going with my <span class="sub-hl">best friend</span> because we can <span class="sub-hl">help each other</span>. It's more <span class="sub-hl">fun to practice together</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Đi một mình - Tập trung vào bài học, tiếp thu tốt hơn - 20 từ)",
+                        text: "I prefer going alone because I can focus on the lesson. It helps me boost my concentration and learn better.",
+                        formatted: `→ I prefer <span class="sub-hl">going alone</span> because I can <span class="sub-hl">focus on the lesson</span>. It helps me <span class="sub-hl">boost my concentration</span> and learn better.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "How important is a cooking class?",
+                qType: "Wh-question: How important is [noun]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Rất quan trọng - Rèn kỹ năng sống thiết yếu & Duy trì lối sống lành mạnh):</div>
+                    <div class="topic-formula-text">
+                        → I think a cooking class is very important. It teaches people <span class="formula-bracket-hl">[kỹ năng học được]</span> and helps them <span class="formula-bracket-hl">[lợi ích]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Hữu ích nhưng không bắt buộc - Có thể tự học qua video mạng để tiết kiệm):</div>
+                    <div class="topic-formula-text">
+                        → It's quite useful, but not necessary. People can easily learn cooking through <span class="formula-bracket-hl">[kênh tự học]</span> to <span class="formula-bracket-hl">[lợi ích]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🌟 [Kỹ năng thiết yếu & Lợi ích] (Cách 1):",
+                        items: [
+                            { en: "essential life skills", vn: "các kỹ năng sống thiết yếu" },
+                            { en: "proper cooking methods", vn: "các phương pháp nấu ăn bài bản" },
+                            { en: "how to choose fresh ingredients", vn: "cách lựa chọn nguyên liệu tươi sạch" },
+                            { en: "maintain a healthy lifestyle", vn: "duy trì lối sống lành mạnh" },
+                            { en: "prepare healthy meals", vn: "tự chuẩn bị bữa ăn dinh dưỡng" },
+                            { en: "take care of their health", vn: "tự chăm sóc sức khỏe của mình" }
+                        ]
+                    },
+                    {
+                        title: "💡 [Kênh tự học & Tiết kiệm] (Cách 2):",
+                        items: [
+                            { en: "free online videos", vn: "video hướng dẫn miễn phí trên mạng" },
+                            { en: "cooking books", vn: "sách dạy nấu ăn" },
+                            { en: "family members", vn: "người thân trong gia đình" },
+                            { en: "save money", vn: "tiết kiệm tiền bạc" },
+                            { en: "study at home", vn: "tự học tại nhà" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Rất quan trọng - Dạy kỹ năng sống, duy trì lối sống lành mạnh - 21 từ)",
+                        text: "I think a cooking class is very important. It teaches people essential life skills and helps them maintain a healthy lifestyle.",
+                        formatted: `→ I think a cooking class is <span class="sub-hl">very important</span>. It teaches people <span class="sub-hl">essential life skills</span> and helps them <span class="sub-hl">maintain a healthy lifestyle</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Hữu ích nhưng không bắt buộc - Tự học video miễn phí để tiết kiệm - 18 từ)",
+                        text: "It's quite useful, but not necessary. People can easily learn cooking through free online videos to save money.",
+                        formatted: `→ <span class="sub-hl">It's quite useful, but not necessary</span>. People can easily learn cooking through <span class="sub-hl">free online videos</span> to <span class="sub-hl">save money</span>.`
+                    }
+                ]
+            }
+        ]
+    }
 ];
 
 window.switchPracticeTopic = (topicId) => {
