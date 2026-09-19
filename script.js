@@ -5421,38 +5421,44 @@ const practiceTopicsData = [
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Quán nướng/lẩu cùng bạn bè cuối tuần - Vui vẻ bên nhau):</div>
+                    <div class="topic-formula-title">- Cách 2 (Quán bình dân - Giá cả phải chăng & Tiết kiệm tiền):</div>
+                    <div class="topic-formula-text">
+                        → I usually go to a restaurant near my <span class="formula-bracket-hl">[nơi chốn]</span> because the price is very <span class="formula-bracket-hl">[tính từ về giá]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 3 (Quán nướng/lẩu cùng bạn bè cuối tuần - Vui vẻ bên nhau):</div>
                     <div class="topic-formula-text">
                         → I usually go to a <span class="formula-bracket-hl">[loại nhà hàng]</span> with my friends on weekends because the food is tasty and we <span class="formula-bracket-hl">[lợi ích]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🍽️ [Loại nhà hàng]:",
+                        title: "🍽️ [Loại nhà hàng & Địa điểm]:",
                         items: [
+                            { en: "a local restaurant near my office", vn: "quán ăn bình dân gần cơ quan" },
+                            { en: "a restaurant near my house", vn: "quán ăn gần nhà tôi" },
                             { en: "a family restaurant", vn: "quán ăn gia đình" },
                             { en: "a BBQ restaurant", vn: "quán đồ nướng" },
                             { en: "a seafood restaurant", vn: "nhà hàng hải sản" },
                             { en: "a local noodle shop", vn: "quán bún / phở gần nhà" },
-                            { en: "a buffet restaurant", vn: "nhà hàng buffet" },
-                            { en: "a hotpot restaurant", vn: "quán lẩu" },
-                            { en: "a vegetarian restaurant", vn: "quán ăn chay" }
+                            { en: "a hotpot restaurant", vn: "quán lẩu" }
                         ]
                     },
                     {
-                        title: "✨ [Tính từ mô tả món ăn & quán]:",
+                        title: "💵 [Giá cả & Tính từ mô tả]:",
                         items: [
+                            { en: "affordable / reasonable", vn: "giá cả phải chăng / hợp lý" },
+                            { en: "not too expensive", vn: "không quá đắt đỏ" },
                             { en: "delicious / tasty", vn: "thơm ngon" },
                             { en: "fresh and clean", vn: "tươi và sạch sẽ" },
-                            { en: "affordable / reasonable", vn: "giá cả hợp lý" },
-                            { en: "flavorful", vn: "đậm đà hương vị" },
                             { en: "cozy and comfortable", vn: "ấm cúng và thoải mái" }
                         ]
                     },
                     {
                         type: "note",
                         title: "⭐ [Cụm Lợi ích]:",
-                        note: `Sử dụng các cụm từ trong <button type="button" onclick="switchTab('benefits')" style="background: none; border: none; padding: 0; color: #d946ef; font-weight: 800; text-decoration: underline; cursor: pointer; font-size: 0.95rem; font-family: inherit;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Bảng Lợi Ích</button> để điền vào vị trí <em>[lợi ích]</em> (Ví dụ: <em>relax after a busy day, have fun together, enjoy my free time...</em>).`
+                        note: `Sử dụng các cụm từ trong <button type="button" onclick="switchTab('benefits')" style="background: none; border: none; padding: 0; color: #d946ef; font-weight: 800; text-decoration: underline; cursor: pointer; font-size: 0.95rem; font-family: inherit;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Bảng Lợi Ích</button> để điền vào vị trí <em>[lợi ích]</em> (Ví dụ: <em>save money, relax after a busy day, have fun together...</em>).`
                     }
                 ],
                 samples: [
@@ -5462,7 +5468,12 @@ const practiceTopicsData = [
                         formatted: `→ I often go to a restaurant near my house because the food is <span class="sub-hl">delicious</span>. It helps me <span class="sub-hl">relax after a busy day</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Quán nướng cuối tuần cùng bạn bè - Vui vẻ bên nhau - 22 từ)",
+                        label: "Bài mẫu Cách 2 (Quán bình dân - Giá cả phải chăng, tiết kiệm tiền - 21 từ)",
+                        text: "I usually go to a restaurant near my office because the price is very affordable. It helps me save money.",
+                        formatted: `→ I usually go to a restaurant near my <span class="sub-hl">office</span> because the price is very <span class="sub-hl">affordable</span>. It helps me <span class="sub-hl">save money</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 3 (Quán nướng cuối tuần cùng bạn bè - Vui vẻ bên nhau - 22 từ)",
                         text: "I usually go to a BBQ restaurant with my friends on weekends because the food is tasty and we have fun together.",
                         formatted: `→ I usually go to a <span class="sub-hl">BBQ restaurant</span> with my friends on weekends because the food is tasty and we <span class="sub-hl">have fun together</span>.`
                     }
