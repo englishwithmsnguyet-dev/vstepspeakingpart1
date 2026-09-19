@@ -6111,7 +6111,335 @@ const practiceTopicsData = [
                 ]
             }
         ]
+    },
+    {
+        id: 11,
+        title: "Chủ đề 11: Let's talk about health",
+        introText: "Let’s talk about health.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Do you think you are a healthy person? Why?",
+                qType: "Yes/No + Wh-question: Do you think you are a healthy person? Why?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Duy trì thói quen ăn uống & rèn luyện tốt):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I do. I think I'm a healthy person because I usually <span class="formula-bracket-hl">[thói quen lành mạnh 1]</span> and <span class="formula-bracket-hl">[thói quen lành mạnh 2]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời CHƯA HẲN - Bận rộn công việc, đôi khi thức khuya và đang cố cải thiện):</div>
+                    <div class="topic-formula-text">
+                        → Not really. I'm often busy with my <span class="formula-bracket-hl">[lý do]</span>, so I sometimes <span class="formula-bracket-hl">[thói quen chưa tốt]</span>. However, I'm trying to <span class="formula-bracket-hl">[mục tiêu cải thiện]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🥗 [Thói quen lành mạnh & Lợi ích] (Cách 1):",
+                        items: [
+                            { en: "eat healthy food", vn: "ăn uống thực phẩm lành mạnh" },
+                            { en: "exercise every day", vn: "tập thể dục mỗi ngày" },
+                            { en: "drink enough water", vn: "uống đủ nước" },
+                            { en: "get enough sleep", vn: "ngủ đủ giấc" },
+                            { en: "stay energetic", vn: "luôn tràn đầy năng lượng" },
+                            { en: "stay in good shape", vn: "giữ vóc dáng cân đối" }
+                        ]
+                    },
+                    {
+                        title: "⏳ [Lý do & Thói quen cần cải thiện] (Cách 2):",
+                        items: [
+                            { en: "work and studies", vn: "công việc và học tập" },
+                            { en: "daily work", vn: "công việc hằng ngày" },
+                            { en: "stay up late", vn: "thức khuya" },
+                            { en: "skip breakfast", vn: "bỏ bữa sáng" },
+                            { en: "exercise more", vn: "tập thể dục nhiều hơn" },
+                            { en: "sleep earlier", vn: "đi ngủ sớm hơn" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - Ăn uống lành mạnh, tập thể dục mỗi ngày để luôn tràn đầy năng lượng - 21 từ)",
+                        text: "Yes, I do. I think I'm a healthy person because I usually eat healthy food and exercise every day. It helps me stay energetic.",
+                        formatted: `→ Yes, I do. I think I'm a healthy person because I usually <span class="sub-hl">eat healthy food</span> and <span class="sub-hl">exercise every day</span>. It helps me <span class="sub-hl">stay energetic</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời CHƯA HẲN - Bận rộn công việc, đôi khi thức khuya và đang cố tập luyện nhiều hơn - 21 từ)",
+                        text: "Not really. I'm often busy with my work, so I sometimes stay up late. However, I'm trying to exercise more.",
+                        formatted: `→ Not really. I'm often busy with my <span class="sub-hl">work</span>, so I sometimes <span class="sub-hl">stay up late</span>. However, I'm trying to <span class="sub-hl">exercise more</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What do you do to maintain good health and a fit body?",
+                qType: "Wh-question: What do you do to maintain [noun]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Tập thể thao buổi sáng & Ăn nhiều rau xanh để giữ dáng):</div>
+                    <div class="topic-formula-text">
+                        → To stay fit, I usually <span class="formula-bracket-hl">[hoạt động thể thao]</span> every morning. Moreover, I try to <span class="formula-bracket-hl">[thói quen ăn uống]</span> to <span class="formula-bracket-hl">[lợi ích]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Ăn trái cây rau củ & Ngủ đủ giấc để học tập và làm việc hiệu quả):</div>
+                    <div class="topic-formula-text">
+                        → I maintain my health by <span class="formula-bracket-hl">[chế độ ăn uống]</span> and getting enough sleep. It helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🏃 [Thể thao & Dinh dưỡng] (Cách 1):",
+                        items: [
+                            { en: "go jogging in the park", vn: "chạy bộ trong công viên" },
+                            { en: "do morning exercises", vn: "tập thể dục buổi sáng" },
+                            { en: "go swimming", vn: "đi bơi" },
+                            { en: "eat more green vegetables", vn: "ăn nhiều rau xanh" },
+                            { en: "cut down on sugar", vn: "cắt giảm lượng đường" },
+                            { en: "keep fit", vn: "giữ dáng cân đối" },
+                            { en: "stay healthy", vn: "giữ gìn sức khỏe" }
+                        ]
+                    },
+                    {
+                        title: "🍎 [Chế độ ăn & Lợi ích làm việc] (Cách 2):",
+                        items: [
+                            { en: "eating fresh fruits and vegetables", vn: "ăn hoa quả và rau củ tươi" },
+                            { en: "drinking plenty of water", vn: "uống nhiều nước" },
+                            { en: "avoiding fast food", vn: "tránh đồ ăn nhanh" },
+                            { en: "study and work effectively", vn: "học tập và làm việc hiệu quả" },
+                            { en: "clear my mind", vn: "thư thái đầu óc" },
+                            { en: "regain my energy", vn: "phục hồi năng lượng" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Chạy bộ công viên buổi sáng & Ăn nhiều rau xanh để giữ dáng - 22 từ)",
+                        text: "To stay fit, I usually go jogging in the park every morning. Moreover, I try to eat more green vegetables to keep fit.",
+                        formatted: `→ To stay fit, I usually <span class="sub-hl">go jogging in the park</span> every morning. Moreover, I try to <span class="sub-hl">eat more green vegetables</span> to <span class="sub-hl">keep fit</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Ăn trái cây rau củ & Ngủ đủ giấc để học tập, làm việc hiệu quả - 20 từ)",
+                        text: "I maintain my health by eating fresh fruits and vegetables and getting enough sleep. It helps me study and work effectively.",
+                        formatted: `→ I maintain my health by <span class="sub-hl">eating fresh fruits and vegetables</span> and getting enough sleep. It helps me <span class="sub-hl">study and work effectively</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "What do you think are the benefits of good health?",
+                qType: "Wh-question: What do you think are the benefits of [noun]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Làm việc học tập hiệu quả & Dành thời gian chất lượng cho gia đình):</div>
+                    <div class="topic-formula-text">
+                        → In my opinion, good health helps people <span class="formula-bracket-hl">[lợi ích 1]</span>. Moreover, it allows us to <span class="formula-bracket-hl">[lợi ích 2]</span> and enjoy life.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Tránh bệnh tật, tiết kiệm viện phí & Tinh thần tự tin mỗi ngày):</div>
+                    <div class="topic-formula-text">
+                        → Having good health helps us <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>. It also makes us feel <span class="formula-bracket-hl">[tính từ cảm xúc]</span> every day.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "💼 [Hiệu quả công việc & Cuộc sống] (Cách 1):",
+                        items: [
+                            { en: "work and study effectively", vn: "làm việc và học tập hiệu quả" },
+                            { en: "stay focused throughout the day", vn: "tập trung suốt cả ngày" },
+                            { en: "spend quality time with family", vn: "dành thời gian chất lượng cho gia đình" },
+                            { en: "pursue personal hobbies", vn: "theo đuổi sở thích cá nhân" }
+                        ]
+                    },
+                    {
+                        title: "🛡️ [Phòng bệnh & Cảm xúc tích cực] (Cách 2):",
+                        items: [
+                            { en: "avoid serious diseases", vn: "tránh các bệnh nghiêm trọng" },
+                            { en: "save medical money", vn: "tiết kiệm chi phí khám chữa bệnh" },
+                            { en: "stay energetic", vn: "luôn tràn đầy năng lượng" },
+                            { en: "happy and confident", vn: "hạnh phúc và tự tin" },
+                            { en: "relaxed and optimistic", vn: "thư thái và lạc quan" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Làm việc, học tập hiệu quả & Dành thời gian trọn vẹn cho gia đình - 20 từ)",
+                        text: "In my opinion, good health helps people work and study effectively. Moreover, it allows us to spend quality time with family.",
+                        formatted: `→ In my opinion, good health helps people <span class="sub-hl">work and study effectively</span>. Moreover, it allows us to <span class="sub-hl">spend quality time with family</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Tránh bệnh tật, tiết kiệm viện phí & Luôn cảm thấy vui vẻ tự tin - 21 từ)",
+                        text: "Having good health helps us avoid serious diseases and save medical money. It also makes us feel happy and confident every day.",
+                        formatted: `→ Having good health helps us <span class="sub-hl">avoid serious diseases</span> and <span class="sub-hl">save medical money</span>. It also makes us feel <span class="sub-hl">happy and confident</span> every day.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 12,
+        title: "Chủ đề 12: Let's talk about health (part 2)",
+        introText: "Let’s talk about health.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Do you often get sick?",
+                qType: "Yes/No: Do you often [Vo]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời HIẾM KHI - Hệ miễn dịch tốt, thường xuyên rèn luyện ngừa bệnh):</div>
+                    <div class="topic-formula-text">
+                        → No, I rarely get sick because I have a <span class="formula-bracket-hl">[đặc điểm thể chất]</span>. I usually <span class="formula-bracket-hl">[thói quen tốt]</span> to <span class="formula-bracket-hl">[lợi ích]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời ĐÔI KHI - Bị cảm nhẹ khi thời tiết đổi mùa, nhanh hồi phục nhờ nghỉ ngơi):</div>
+                    <div class="topic-formula-text">
+                        → Sometimes, I catch a <span class="formula-bracket-hl">[tên bệnh nhẹ]</span> when the weather changes. However, I quickly recover after <span class="formula-bracket-hl">[hành động tự chăm sóc]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🛡️ [Thể chất tốt & Phòng ngừa] (Cách 1):",
+                        items: [
+                            { en: "strong immune system", vn: "hệ miễn dịch khỏe mạnh" },
+                            { en: "good physical condition", vn: "thể trạng sức khỏe tốt" },
+                            { en: "exercise regularly", vn: "tập thể dục đều đặn" },
+                            { en: "eat balanced meals", vn: "ăn uống cân bằng dinh dưỡng" },
+                            { en: "prevent some health problems", vn: "phòng ngừa một số vấn đề sức khỏe" },
+                            { en: "avoid getting sick", vn: "tránh bị ốm đau" }
+                        ]
+                    },
+                    {
+                        title: "🤒 [Bệnh thường gặp & Tự chăm sóc] (Cách 2):",
+                        items: [
+                            { en: "cold", vn: "cảm lạnh" },
+                            { en: "flu", vn: "cúm" },
+                            { en: "mild headache", vn: "đau đầu nhẹ" },
+                            { en: "taking some medicine and resting at home", vn: "uống thuốc và nghỉ ngơi tại nhà" },
+                            { en: "drinking plenty of warm water", vn: "uống nhiều nước ấm" },
+                            { en: "sleeping for a few hours", vn: "ngủ sâu vài tiếng" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời HIẾM KHI - Hệ miễn dịch tốt, tập thể dục đều đặn phòng ngừa bệnh tật - 20 từ)",
+                        text: "No, I rarely get sick because I have a strong immune system. I usually exercise regularly to prevent some health problems.",
+                        formatted: `→ No, I rarely get sick because I have a <span class="sub-hl">strong immune system</span>. I usually <span class="sub-hl">exercise regularly</span> to <span class="sub-hl">prevent some health problems</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời ĐÔI KHI - Bị cảm nhẹ khi đổi thời tiết, hồi phục nhanh nhờ uống thuốc nghỉ ngơi - 21 từ)",
+                        text: "Sometimes, I catch a cold when the weather changes. However, I quickly recover after taking some medicine and resting at home.",
+                        formatted: `→ Sometimes, I catch a <span class="sub-hl">cold</span> when the weather changes. However, I quickly recover after <span class="sub-hl">taking some medicine and resting at home</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "Do you often go to the doctor?",
+                qType: "Yes/No: Do you often [Vo]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Chỉ đi khi ốm nặng - Bình thường tự nghỉ ngơi uống nước ấm tại nhà):</div>
+                    <div class="topic-formula-text">
+                        → No, I only see a doctor when I'm <span class="formula-bracket-hl">[tình trạng sức khỏe]</span>. Normally, I just <span class="formula-bracket-hl">[hành động tự chăm sóc]</span> at home.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Đi định kỳ - Khám tổng quát để tầm soát bệnh sớm và bảo vệ sức khỏe):</div>
+                    <div class="topic-formula-text">
+                        → I usually visit the doctor <span class="formula-bracket-hl">[tần suất]</span> for a health check-up. It helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🏠 [Tình trạng & Tự chăm sóc tại nhà] (Cách 1):",
+                        items: [
+                            { en: "seriously sick", vn: "ốm nặng" },
+                            { en: "really unwell", vn: "thực sự không khỏe" },
+                            { en: "take a rest and drink warm water", vn: "nghỉ ngơi và uống nước ấm" },
+                            { en: "take some light medicine", vn: "uống thuốc nhẹ" },
+                            { en: "relax in bed", vn: "nằm nghỉ ngơi trên giường" }
+                        ]
+                    },
+                    {
+                        title: "🩺 [Khám định kỳ & Tầm soát sớm] (Cách 2):",
+                        items: [
+                            { en: "twice a year", vn: "hai lần một năm" },
+                            { en: "once a year", vn: "một lần mỗi năm" },
+                            { en: "every six months", vn: "mỗi sáu tháng một lần" },
+                            { en: "detect illnesses early", vn: "phát hiện bệnh tật sớm" },
+                            { en: "protect my health", vn: "bảo vệ sức khỏe của mình" },
+                            { en: "receive medical advice", vn: "nhận lời khuyên y tế" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Chỉ đi khi ốm nặng - Bình thường tự nghỉ ngơi và uống nước ấm tại nhà - 21 từ)",
+                        text: "No, I only see a doctor when I'm seriously sick. Normally, I just take a rest and drink warm water at home.",
+                        formatted: `→ No, I only see a doctor when <span class="sub-hl">I'm seriously sick</span>. Normally, I just <span class="sub-hl">take a rest and drink warm water</span> at home.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Khám 2 lần/năm - Tầm soát phát hiện bệnh sớm và bảo vệ sức khỏe - 22 từ)",
+                        text: "I usually visit the doctor twice a year for a health check-up. It helps me detect illnesses early and protect my health.",
+                        formatted: `→ I usually visit the doctor <span class="sub-hl">twice a year</span> for a health check-up. It helps me <span class="sub-hl">detect illnesses early</span> and <span class="sub-hl">protect my health</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Do you think people care more about their health nowadays? Why?",
+                qType: "Yes/No + Wh-question: Do you think people [verb] nowadays? Why?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Do có nhiều dịch bệnh nên chủ động ăn sạch, tập luyện):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I do. People care more about their health because <span class="formula-bracket-hl">[lý do]</span>. Therefore, they <span class="formula-bracket-hl">[hành động bảo vệ sức khỏe]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời CÓ - Cuộc sống áp lực nên nhận thức sức khỏe là vốn quý nhất):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I think so. Nowadays, life is <span class="formula-bracket-hl">[tính từ]</span>, so people realize health is the most important thing to <span class="formula-bracket-hl">[lợi ích]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🌍 [Nguyên nhân & Hành động bảo vệ] (Cách 1):",
+                        items: [
+                            { en: "there are more diseases nowadays", vn: "ngày nay có nhiều bệnh tật hơn" },
+                            { en: "pollution is getting worse", vn: "ô nhiễm môi trường ngày càng nghiêm trọng" },
+                            { en: "eat clean food and exercise more", vn: "ăn thực phẩm sạch và tập thể dục nhiều hơn" },
+                            { en: "buy organic products", vn: "mua thực phẩm hữu cơ" },
+                            { en: "go to fitness centers", vn: "đến các phòng tập gym / thể hình" }
+                        ]
+                    },
+                    {
+                        title: "🧘 [Áp lực cuộc sống & Ý thức sức khỏe] (Cách 2):",
+                        items: [
+                            { en: "stressful and demanding", vn: "căng thẳng và nhiều áp lực" },
+                            { en: "fast-paced and busy", vn: "hối hả và bận rộn" },
+                            { en: "work and enjoy life", vn: "làm việc và tận hưởng cuộc sống" },
+                            { en: "take care of family", vn: "chăm sóc cho gia đình" },
+                            { en: "live happily", vn: "sống vui vẻ hạnh phúc" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - Nhiều bệnh tật hơn nên chủ động ăn thực phẩm sạch và tập thể dục - 22 từ)",
+                        text: "Yes, I do. People care more about their health because there are more diseases nowadays. Therefore, they eat clean food and exercise more.",
+                        formatted: `→ Yes, I do. People care more about their health because <span class="sub-hl">there are more diseases nowadays</span>. Therefore, they <span class="sub-hl">eat clean food and exercise more</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời CÓ - Cuộc sống căng thẳng nên nhận thức sức khỏe là vốn quý nhất để làm việc - 21 từ)",
+                        text: "Yes, I think so. Nowadays, life is stressful, so people realize health is the most important thing to work and enjoy life.",
+                        formatted: `→ Yes, I think so. Nowadays, life is <span class="sub-hl">stressful</span>, so people realize health is the most important thing to <span class="sub-hl">work and enjoy life</span>.`
+                    }
+                ]
+            }
+        ]
     }
+
 ];
 
 window.switchPracticeTopic = (topicId) => {
