@@ -5890,21 +5890,10 @@ function renderPracticeTopic(topicId) {
                     </div>
                 </div>
 
-                <!-- 3. GỢI Ý ĐÁP ÁN MẪU THAM KHẢO -->
-                <div class="topic-section-box" style="border-color: rgba(139, 92, 246, 0.4); box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.08);">
-                    <div class="topic-section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'" style="background: rgba(139, 92, 246, 0.08); color: #7c3aed;">
-                        <span><i class="fa-solid fa-star" style="color: #7c3aed;"></i> ⭐ GỢI Ý ĐÁP ÁN MẪU THAM KHẢO</span>
-                        <span style="font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-chevron-down"></i></span>
-                    </div>
-                    <div class="topic-section-content">
-                        ${samplesHtml}
-                    </div>
-                </div>
-
-                <!-- 4. THỰC HÀNH NÓI & GHI ÂM TÍNH GIỜ (NHƯ LÚC THI) -->
+                <!-- 3. THỰC HÀNH NÓI & GHI ÂM TÍNH GIỜ (NHƯ LÚC THI) -->
                 <div class="topic-section-box" style="border-color: rgba(239, 68, 68, 0.45); box-shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.08);">
                     <div class="topic-section-header" style="background: rgba(239, 68, 68, 0.08); color: #dc2626; cursor: default;">
-                        <span><i class="fa-solid fa-microphone-lines" style="color: #dc2626;"></i> 🎙️ 4. THỰC HÀNH NÓI & GHI ÂM TÍNH GIỜ (NHƯ LÚC THI)</span>
+                        <span><i class="fa-solid fa-microphone-lines" style="color: #dc2626;"></i> 🎙️ THỰC HÀNH NÓI & GHI ÂM TÍNH GIỜ (NHƯ LÚC THI)</span>
                         <span id="topic-q-phase-badge-${q.qNum}" class="topic-exam-phase-badge">⏱️ Sẵn sàng trả lời</span>
                     </div>
                     <div class="topic-section-content" style="background: var(--bg-card); padding: 1.25rem 1.35rem;">
@@ -5958,6 +5947,17 @@ function renderPracticeTopic(topicId) {
                                 </a>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- 4. GỢI Ý ĐÁP ÁN MẪU THAM KHẢO -->
+                <div class="topic-section-box" style="border-color: rgba(139, 92, 246, 0.4); box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.08);">
+                    <div class="topic-section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'" style="background: rgba(139, 92, 246, 0.08); color: #7c3aed;">
+                        <span><i class="fa-solid fa-star" style="color: #7c3aed;"></i> ⭐ GỢI Ý ĐÁP ÁN MẪU THAM KHẢO</span>
+                        <span style="font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="topic-section-content">
+                        ${samplesHtml}
                     </div>
                 </div>
             </div>
