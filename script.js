@@ -5629,8 +5629,8 @@ const practiceTopicsData = [
                         items: [
                             { en: "home-cooked meals", vn: "các bữa cơm nhà nấu" },
                             { en: "fresh food", vn: "thực phẩm tươi sống" },
-                            { en: "it is healthier and cleaner", vn: "lành mạnh và sạch sẽ hơn" },
-                            { en: "it is safe for my health", vn: "an toàn cho sức khỏe của tôi" },
+                            { en: "it's healthier and cleaner", vn: "lành mạnh và sạch sẽ hơn" },
+                            { en: "it's safe for my health", vn: "an toàn cho sức khỏe của tôi" },
                             { en: "save money and stay healthy", vn: "tiết kiệm tiền và giữ sức khỏe" }
                         ]
                     }
@@ -5643,8 +5643,8 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Trả lời HIẾM KHI - Thích cơm nhà để khỏe và tiết kiệm - 23 từ)",
-                        text: "Yes, but very rarely. Nowadays, I prefer eating home-cooked meals with my family because it is healthier. It helps me save money.",
-                        formatted: `→ Yes, but <span class="sub-hl">very rarely</span>. Nowadays, I prefer eating <span class="sub-hl">home-cooked meals</span> with my <span class="sub-hl">family</span> because <span class="sub-hl">it is healthier</span>. It helps me <span class="sub-hl">save money</span>.`
+                        text: "Yes, but very rarely. Nowadays, I prefer eating home-cooked meals with my family because it's healthier. It helps me save money.",
+                        formatted: `→ Yes, but <span class="sub-hl">very rarely</span>. Nowadays, I prefer eating <span class="sub-hl">home-cooked meals</span> with my <span class="sub-hl">family</span> because <span class="sub-hl">it's healthier</span>. It helps me <span class="sub-hl">save money</span>.`
                     }
                 ]
             },
@@ -5655,13 +5655,13 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Dùng "I'm a big fan of" - Gà rán giòn rụm, mang lại niềm vui):</div>
                     <div class="topic-formula-text">
-                        → I'm a big fan of <span class="formula-bracket-hl">[tên món ăn]</span> because it is <span class="formula-bracket-hl">[tính từ]</span>. Moreover, it makes me feel <span class="formula-bracket-hl">[tính từ cảm xúc]</span>.
+                        → I'm a big fan of <span class="formula-bracket-hl">[tên món ăn]</span> because it's <span class="formula-bracket-hl">[tính từ]</span>. Moreover, it makes me feel <span class="formula-bracket-hl">[tính từ cảm xúc]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Dùng "My favorite fast food is" - Pizza phô mai thơm ngon, chia sẻ cùng bạn bè):</div>
                     <div class="topic-formula-text">
-                        → My favorite fast food is <span class="formula-bracket-hl">[tên món ăn]</span>. It is always <span class="formula-bracket-hl">[tính từ]</span>, and I often share it with my <span class="formula-bracket-hl">[đối tượng]</span> to <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → My favorite fast food is <span class="formula-bracket-hl">[tên món ăn]</span>. It's always <span class="formula-bracket-hl">[tính từ]</span>, and I often share it with my <span class="formula-bracket-hl">[đối tượng]</span> to <span class="formula-bracket-hl">[lợi ích]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -5697,13 +5697,13 @@ const practiceTopicsData = [
                 samples: [
                     {
                         label: "Bài mẫu Cách 1 (Dùng \"I'm a big fan of\" - Gà rán giòn rụm, mang lại niềm vui - 20 từ)",
-                        text: "I'm a big fan of crispy fried chicken because it is crunchy and tasty. Moreover, it makes me feel happy.",
-                        formatted: `→ <span class="sub-hl">I'm a big fan of</span> <span class="sub-hl">crispy fried chicken</span> because it is <span class="sub-hl">crunchy and tasty</span>. Moreover, it makes me feel <span class="sub-hl">happy</span>.`
+                        text: "I'm a big fan of crispy fried chicken because it's crunchy and tasty. Moreover, it makes me feel happy.",
+                        formatted: `→ <span class="sub-hl">I'm a big fan of</span> <span class="sub-hl">crispy fried chicken</span> because <span class="sub-hl">it's crunchy and tasty</span>. Moreover, it makes me feel <span class="sub-hl">happy</span>.`
                     },
                     {
                         label: "Bài mẫu Cách 2 (Dùng \"My favorite fast food is\" - Pizza phô mai thơm ngon, chia sẻ cùng bạn bè - 24 từ)",
-                        text: "My favorite fast food is cheese pizza. It is always delicious and hot, and I often share it with my friends to have fun.",
-                        formatted: `→ My favorite fast food is <span class="sub-hl">cheese pizza</span>. It is always <span class="sub-hl">delicious and hot</span>, and I often share it with my <span class="sub-hl">friends</span> to <span class="sub-hl">have fun</span>.`
+                        text: "My favorite fast food is cheese pizza. It's always delicious and hot, and I often share it with my friends to have fun.",
+                        formatted: `→ My favorite fast food is <span class="sub-hl">cheese pizza</span>. <span class="sub-hl">It's always delicious and hot</span>, and I often share it with my <span class="sub-hl">friends</span> to <span class="sub-hl">have fun</span>.`
                     }
                 ]
             },
@@ -5714,7 +5714,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Không tốt cho sức khỏe - Nhiều dầu mỡ/calo, gây tăng cân):</div>
                     <div class="topic-formula-text">
-                        → No, it is not healthy at all. Fast food contains too much <span class="formula-bracket-hl">[chất không tốt]</span>, so it can cause <span class="formula-bracket-hl">[tác hại]</span> and health problems.
+                        → No, it's not healthy at all. Fast food contains too much <span class="formula-bracket-hl">[chất không tốt]</span>, so it can cause <span class="formula-bracket-hl">[tác hại]</span> and health problems.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -5754,8 +5754,8 @@ const practiceTopicsData = [
                 samples: [
                     {
                         label: "Bài mẫu Cách 1 (Không lành mạnh - Nhiều dầu và mỡ, gây tăng cân và bệnh tật - 23 từ)",
-                        text: "No, it is not healthy at all. Fast food contains too much fat and oil, so it can cause weight gain and health problems.",
-                        formatted: `→ No, <span class="sub-hl">it is not healthy at all</span>. Fast food contains too much <span class="sub-hl">fat and oil</span>, so it can cause <span class="sub-hl">weight gain and health problems</span>.`
+                        text: "No, it's not healthy at all. Fast food contains too much fat and oil, so it can cause weight gain and health problems.",
+                        formatted: `→ No, <span class="sub-hl">it's not healthy at all</span>. Fast food contains too much <span class="sub-hl">fat and oil</span>, so it can cause <span class="sub-hl">weight gain and health problems</span>.`
                     },
                     {
                         label: "Bài mẫu Cách 2 (Cấu trúc nhượng bộ Although - Tiện nhưng có hại, ăn rau quả để khỏe mạnh - 23 từ)",
