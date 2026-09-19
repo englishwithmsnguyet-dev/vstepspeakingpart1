@@ -5653,15 +5653,15 @@ const practiceTopicsData = [
                 question: "What is your favorite fast food?",
                 qType: "Wh-question: What is your favorite fast food?",
                 formula: `<div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 1 (Gà rán giòn rụm - Vị giòn ngon, mang lại niềm vui):</div>
+                    <div class="topic-formula-title">- Cách 1 (Dùng "I'm a big fan of" - Gà rán giòn rụm, mang lại niềm vui):</div>
                     <div class="topic-formula-text">
-                        → My favorite fast food is <span class="formula-bracket-hl">[tên món ăn]</span>. I really like it because it is <span class="formula-bracket-hl">[tính từ]</span>. Moreover, it makes me feel <span class="formula-bracket-hl">[tính từ cảm xúc]</span>.
+                        → I'm a big fan of <span class="formula-bracket-hl">[tên món ăn]</span> because it is <span class="formula-bracket-hl">[tính từ]</span>. Moreover, it makes me feel <span class="formula-bracket-hl">[tính từ cảm xúc]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Pizza phô mai - Thơm ngon, chia sẻ cùng bạn bè / người thân):</div>
+                    <div class="topic-formula-title">- Cách 2 (Dùng "My favorite fast food is" - Pizza phô mai thơm ngon, chia sẻ cùng bạn bè):</div>
                     <div class="topic-formula-text">
-                        → I really like eating <span class="formula-bracket-hl">[tên món ăn]</span>. It is always <span class="formula-bracket-hl">[tính từ]</span>, and I often share it with my <span class="formula-bracket-hl">[đối tượng]</span> to <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → My favorite fast food is <span class="formula-bracket-hl">[tên món ăn]</span>. It is always <span class="formula-bracket-hl">[tính từ]</span>, and I often share it with my <span class="formula-bracket-hl">[đối tượng]</span> to <span class="formula-bracket-hl">[lợi ích]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -5696,14 +5696,14 @@ const practiceTopicsData = [
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu Cách 1 (Gà rán giòn rụm - Giòn ngon, mang lại niềm vui - 24 từ)",
-                        text: "My favorite fast food is crispy fried chicken. I really like it because it is crunchy and tasty. Moreover, it makes me feel happy.",
-                        formatted: `→ My favorite fast food is <span class="sub-hl">crispy fried chicken</span>. I really like it because it is <span class="sub-hl">crunchy and tasty</span>. Moreover, it makes me feel <span class="sub-hl">happy</span>.`
+                        label: "Bài mẫu Cách 1 (Dùng \"I'm a big fan of\" - Gà rán giòn rụm, mang lại niềm vui - 20 từ)",
+                        text: "I'm a big fan of crispy fried chicken because it is crunchy and tasty. Moreover, it makes me feel happy.",
+                        formatted: `→ <span class="sub-hl">I'm a big fan of</span> <span class="sub-hl">crispy fried chicken</span> because it is <span class="sub-hl">crunchy and tasty</span>. Moreover, it makes me feel <span class="sub-hl">happy</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Bánh pizza phô mai - Thơm ngon, chia sẻ cùng bạn bè vui vẻ - 24 từ)",
-                        text: "I really like eating cheese pizza. It is always delicious and hot, and I often share it with my friends to have fun.",
-                        formatted: `→ I really like eating <span class="sub-hl">cheese pizza</span>. It is always <span class="sub-hl">delicious and hot</span>, and I often share it with my <span class="sub-hl">friends</span> to <span class="sub-hl">have fun</span>.`
+                        label: "Bài mẫu Cách 2 (Dùng \"My favorite fast food is\" - Pizza phô mai thơm ngon, chia sẻ cùng bạn bè - 24 từ)",
+                        text: "My favorite fast food is cheese pizza. It is always delicious and hot, and I often share it with my friends to have fun.",
+                        formatted: `→ My favorite fast food is <span class="sub-hl">cheese pizza</span>. It is always <span class="sub-hl">delicious and hot</span>, and I often share it with my <span class="sub-hl">friends</span> to <span class="sub-hl">have fun</span>.`
                     }
                 ]
             },
