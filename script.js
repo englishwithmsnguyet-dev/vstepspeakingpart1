@@ -5433,15 +5433,20 @@ const practiceTopicsData = [
                             { en: "a family restaurant", vn: "quán ăn gia đình" },
                             { en: "a BBQ restaurant", vn: "quán đồ nướng" },
                             { en: "a seafood restaurant", vn: "nhà hàng hải sản" },
-                            { en: "a local noodle shop", vn: "quán bún / phở gần nhà" }
+                            { en: "a local noodle shop", vn: "quán bún / phở gần nhà" },
+                            { en: "a buffet restaurant", vn: "nhà hàng buffet" },
+                            { en: "a hotpot restaurant", vn: "quán lẩu" },
+                            { en: "a vegetarian restaurant", vn: "quán ăn chay" }
                         ]
                     },
                     {
-                        title: "✨ [Tính từ mô tả món ăn]:",
+                        title: "✨ [Tính từ mô tả món ăn & quán]:",
                         items: [
                             { en: "delicious / tasty", vn: "thơm ngon" },
                             { en: "fresh and clean", vn: "tươi và sạch sẽ" },
-                            { en: "affordable", vn: "giá cả hợp lý" }
+                            { en: "affordable / reasonable", vn: "giá cả hợp lý" },
+                            { en: "flavorful", vn: "đậm đà hương vị" },
+                            { en: "cozy and comfortable", vn: "ấm cúng và thoải mái" }
                         ]
                     },
                     {
@@ -5485,17 +5490,21 @@ const practiceTopicsData = [
                         items: [
                             { en: "beef noodle soup", vn: "phở bò" },
                             { en: "spring rolls", vn: "nem rán / chả giò" },
+                            { en: "grilled pork with noodles", vn: "bún chả" },
                             { en: "grilled prawns", vn: "tôm nướng" },
                             { en: "fish hotpot", vn: "lẩu cá" },
-                            { en: "fried rice", vn: "cơm rang / cơm chiên" }
+                            { en: "fried rice", vn: "cơm rang / cơm chiên" },
+                            { en: "broken rice", vn: "cơm tấm" }
                         ]
                     },
                     {
                         title: "🌿 [Tính từ mô tả]:",
                         items: [
-                            { en: "delicious", vn: "ngon miệng" },
+                            { en: "delicious / tasty", vn: "ngon miệng" },
                             { en: "fresh and tasty", vn: "tươi ngon" },
-                            { en: "healthy", vn: "lành mạnh" }
+                            { en: "healthy", vn: "lành mạnh" },
+                            { en: "well-seasoned", vn: "nêm nếm vừa vặn" },
+                            { en: "crispy and hot", vn: "giòn và nóng hổi" }
                         ]
                     }
                 ],
@@ -5530,12 +5539,14 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "👌 [Cụm từ diễn đạt]:",
+                        title: "👌 [Cụm từ diễn đạt & Khẩu vị]:",
                         items: [
                             { en: "suit my taste", vn: "hợp khẩu vị của tôi" },
                             { en: "almost all the dishes", vn: "hầu hết mọi món ăn" },
                             { en: "spicy food", vn: "đồ ăn cay" },
-                            { en: "chicken soup", vn: "súp gà / canh gà" }
+                            { en: "too greasy / oily", vn: "quá ngấy / nhiều dầu mỡ" },
+                            { en: "chicken soup", vn: "súp gà / canh gà" },
+                            { en: "steamed vegetables", vn: "rau hấp / luộc thanh đạm" }
                         ]
                     }
                 ],
@@ -5579,9 +5590,12 @@ const practiceTopicsData = [
                     {
                         title: "🍟 [Quán ăn & Cụm từ]:",
                         items: [
-                            { en: "KFC / Lotteria", vn: "KFC / Lotteria" },
+                            { en: "KFC / Lotteria / Jollibee", vn: "KFC / Lotteria / Jollibee" },
+                            { en: "Pizza Hut / Domino's", vn: "Pizza Hut / Domino's" },
                             { en: "quickly and conveniently", vn: "nhanh chóng và thuận tiện" },
-                            { en: "home-cooked meals", vn: "các bữa cơm nhà nấu" }
+                            { en: "home-cooked meals", vn: "các bữa cơm nhà nấu" },
+                            { en: "hang out with friends", vn: "tụ tập cùng bạn bè" },
+                            { en: "once or twice a month", vn: "1 - 2 lần mỗi tháng" }
                         ]
                     },
                     {
@@ -5625,8 +5639,10 @@ const practiceTopicsData = [
                         items: [
                             { en: "crispy fried chicken", vn: "gà rán giòn rụm" },
                             { en: "cheese pizza", vn: "pizza phô mai" },
-                            { en: "crunchy and delicious", vn: "giòn tan và ngon miệng" },
-                            { en: "share it with my friends", vn: "chia sẻ cùng bạn bè" }
+                            { en: "beef burger", vn: "bánh burger bò" },
+                            { en: "french fries", vn: "khoai tây chiên" },
+                            { en: "crunchy and tasty", vn: "giòn tan và thơm ngon" },
+                            { en: "melted cheese", vn: "phô mai béo ngậy tan chảy" }
                         ]
                     }
                 ],
@@ -5661,13 +5677,14 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "⚠️ [Tác hại & Giải pháp]:",
+                        title: "⚠️ [Tác hại & Thói quen tốt]:",
                         items: [
                             { en: "not healthy at all", vn: "hoàn toàn không lành mạnh" },
                             { en: "too much oil and calories", vn: "quá nhiều dầu mỡ và calo" },
+                            { en: "high in sugar and fat", vn: "nhiều đường và chất béo" },
                             { en: "cause weight gain", vn: "gây tăng cân" },
                             { en: "bad for our health", vn: "có hại cho sức khỏe" },
-                            { en: "eat more vegetables", vn: "ăn nhiều rau xanh hơn" }
+                            { en: "eat more vegetables and fruits", vn: "ăn nhiều rau xanh và hoa quả" }
                         ]
                     }
                 ],
