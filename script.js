@@ -4217,7 +4217,7 @@ const practiceTopicsData = [
         id: 1,
         title: "Topic 01: Let's talk about hobbies",
         topicName: "Hobbies",
-        introText: "Now, in Part 1, I'd like to ask you some questions about yourself. Let's talk about hobbies.",
+        introText: "Let’s talk about hobbies.",
         questions: [
             {
                 qNum: 1,
@@ -5847,7 +5847,7 @@ function renderPracticeTopic(topicId) {
                     </div>
                     <div style="display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;">
                         <button class="btn-audio-sample" onclick="speakText('${(topic.introText || topic.intro || '').replace(/'/g, "\\'")}')" style="background: var(--primary);">
-                            <i class="fa-solid fa-volume-high"></i> Nghe Giới Thiệu
+                            <i class="fa-solid fa-volume-high"></i> Nghe Câu Dẫn
                         </button>
                         <button class="btn-audio-sample" onclick="openFullTopicExamModal(${topic.id})" style="background: linear-gradient(135deg, #ef4444, #dc2626); box-shadow: 0 4px 12px rgba(239, 68, 68, 0.35);">
                             <i class="fa-solid fa-stopwatch"></i> Thi Thử Cả Chủ Đề (90s)
@@ -5855,7 +5855,7 @@ function renderPracticeTopic(topicId) {
                     </div>
                 </div>
                 <div style="font-size: 1.05rem; color: var(--text-main); line-height: 1.7; font-style: italic; background: var(--bg-card); padding: 0.85rem 1.25rem; border-radius: 12px; border: 1px dashed var(--border);">
-                    🎙️ Giám khảo: <strong>"${topic.introText || topic.intro || ''}"</strong>
+                    🗣️ Câu dẫn của thí sinh: <strong>"${topic.introText || topic.intro || ''}"</strong>
                 </div>
             </div>
     `;
