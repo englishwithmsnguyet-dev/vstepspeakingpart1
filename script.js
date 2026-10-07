@@ -295,49 +295,44 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     updateVoiceUI();
 
-    // 1. WELCOME MODAL & STUDENT AUTHENTICATION
-    const validStudentsB212 = [
-        "Nguyễn Duy Hồng Anh",
-        "Nguyễn Ngọc Minh Anh",
-        "Nguyễn Lê Mỹ Hân",
-        "Nguyễn Hồng Minh Huy",
-        "Nguyễn Quốc Khải",
-        "Đoàn Nguyễn Đình Khang",
-        "Lê Nguyễn Gia Khánh",
-        "Nguyễn Hữu Khánh",
-        "Hồ Thị Ngọc Lan",
-        "Trần Thị Hồng Lỉnh",
-        "Võ Thị Triệu Minh",
-        "Hứa Đình Nghi",
-        "Võ Thị Bảo Ngọc",
-        "Lê Tiến Phát",
-        "Nguyễn Hoàng Thông",
-        "Nguyễn Kim Tiền",
-        "Lê Thị Bảo Trân",
-        "Võ Thị Diễm Trinh",
-        "Nguyễn Tiến Trung",
-        "Trần Thị Ánh Tuyết",
-        "Đặng Nguyễn Khánh Uyên",
-        "Nguyễn Thị Chúc Yến"
-    ];
-
-    const validStudentsCB219 = [
-        "Lưu Thị Vân Anh",
-        "Nguyễn Tuấn Anh",
-        "Trần Thị Huỳnh Duy",
-        "Duy Thị Huỳnh Hân",
-        "Trần Thị Xuân Hoa",
-        "Nguyễn Phạm Khang",
-        "Đặng Văn Khánh",
-        "Chim Nhật Luân",
-        "Lư Vĩnh Phúc",
-        "Nguyễn Chí Thiện",
-        "Trần Thị Ngọc Thơ",
-        "Huỳnh Yến Trang",
-        "Thị Thu Trinh",
-        "Nguyễn Thị Mỹ Xuyên",
-        "Nguyễn Như Ý"
-    ];
+    const CLASS_STUDENTS = {
+        "ONB103": [
+            "Nguyễn Thị Duy", "Phạm Trần Mỹ Hân", "Trịnh Thị Thu Hiền", "Nguyễn Hoàng Kha",
+            "Phạm Thị Út Lua", "Lê Huỳnh Diễm My", "Nguyễn Thị Ngọc Mỹ", "Huỳnh Thị Kim Ngân",
+            "Trần Thị Kim Ngân", "Nguyễn Thị Tiểu Phụng", "Trần Yến Phụng", "Phạm Ngọc Thạch",
+            "Cao Thị Thu Trang", "Nguyễn Thị Thanh Tuyền", "Trần Phạm Phương Uyên", "Trần Ngô Mỹ Vy"
+        ],
+        "CB210": [
+            "Nguyễn Võ Thành Đạt", "Lê Huỳnh Thanh Duy", "Nguyễn Cao Kỳ Duyên", "Đào Ngọc Hân", 
+            "Trần Văn Hữu", "Trần Văn Kim Khoa", "Nguyễn Thanh Nâng", "Huỳnh Kỳ Nguyên", 
+            "Võ Thị Kim Nguyên", "Võ Hùng Sanh", "Trần Thị Thanh Thảo", "Đặng Thị Kim Thoa", 
+            "Trần Thị Tiên Tiên", "Lê Kim Tuyền"
+        ],
+        "CB211": [
+            "Hồ Anh Quân", "Lê Thành Nghiệp", "Lê Khánh Lâm", "Huỳnh Thị Ngọc Thắm", 
+            "Mai Trần Xuân Mai", "Lê Thị Uyển Nhi", "Nguyễn Thụy Thanh Trúc"
+        ],
+        "CB213": [
+            "Nguyễn Quốc Anh", "Hoàng Hợp Minh Châu", "Đặng Châu Gia Huy", "Trần Minh Tuệ Mẩn", 
+            "Đặng Thị Trúc Măng", "Trương Thị Kha My", "Ngô Diễm My", "Chiêm Chúc Ngân", 
+            "Huỳnh Thị Yến Nhi", "Phạm Nguyễn Tâm Như", "Phạm Nhựt Tiến", "Lê Thị Tú Trinh", 
+            "Trần Ngọc Vinh"
+        ],
+        "B212": [
+            "Nguyễn Duy Hồng Anh", "Nguyễn Ngọc Minh Anh", "Nguyễn Lê Mỹ Hân", "Nguyễn Hồng Minh Huy",
+            "Nguyễn Quốc Khải", "Đoàn Nguyễn Đình Khang", "Lê Nguyễn Gia Khánh", "Nguyễn Hữu Khánh", 
+            "Hồ Thị Ngọc Lan", "Trần Thị Hồng Lỉnh", "Võ Thị Triệu Minh", "Hứa Đình Nghi", 
+            "Võ Thị Bảo Ngọc", "Lê Tiến Phát", "Nguyễn Hoàng Thông", "Nguyễn Kim Tiền", 
+            "Lê Thị Bảo Trân", "Võ Thị Diễm Trinh", "Nguyễn Tấn Trung", "Nguyễn Tiến Trung", 
+            "Trần Thị Ánh Tuyết", "Đặng Nguyễn Khánh Uyên", "Nguyễn Thị Chúc Yến"
+        ],
+        "CB219": [
+            "Lưu Thị Vân Anh", "Nguyễn Tuấn Anh", "Trần Thị Huỳnh Duy", "Duy Thị Huỳnh Hân",
+            "Trần Thị Xuân Hoa", "Nguyễn Phạm Khang", "Đặng Văn Khánh", "Chim Nhật Luân",
+            "Lư Vĩnh Phúc", "Nguyễn Chí Thiện", "Trần Thị Ngọc Thơ", "Huỳnh Yến Trang",
+            "Thị Thu Trinh", "Nguyễn Thị Mỹ Xuyên", "Nguyễn Như Ý"
+        ]
+    };
 
     const normalizeStr = (str) => {
         return (str || '')
@@ -390,31 +385,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isTeacher) {
             state.studentName = 'Cô Nguyệt';
             state.accessLevel = 'FULL';
-        } else if (formattedClass === 'CB219') {
-            // Check student list for class CB219
-            const matchedStudent = validStudentsCB219.find(s => normalizeStr(s) === normName);
-
-            if (!matchedStudent) {
-                loginError.textContent = 'Họ và Tên không thuộc danh sách lớp CB219. Vui lòng kiểm tra lại!';
-                loginError.style.display = 'block';
-                return;
-            }
-            state.studentName = matchedStudent;
-            state.accessLevel = 'FULL';
-        } else if (formattedClass === 'B212') {
-            // Check student list for class B212
-            const matchedStudent = validStudentsB212.find(s => {
-                return normalizeStr(s) === normName;
-            });
-
-            if (!matchedStudent) {
-                loginError.textContent = 'Họ và Tên không thuộc danh sách lớp B212. Vui lòng kiểm tra lại!';
-                loginError.style.display = 'block';
-                return;
-            }
-            state.studentName = matchedStudent;
-            state.accessLevel = 'FULL';
         } else if (validClasses.includes(formattedClass)) {
+            const roster = CLASS_STUDENTS[formattedClass];
+            if (roster) {
+                const matchedStudent = roster.find(s => normalizeStr(s) === normName);
+                if (!matchedStudent) {
+                    loginError.textContent = `Họ và Tên không thuộc danh sách lớp ${formattedClass}. Vui lòng kiểm tra lại!`;
+                    loginError.style.display = 'block';
+                    return;
+                }
+                state.studentName = matchedStudent;
+            }
             state.accessLevel = partialClasses.includes(formattedClass) ? 'PARTIAL' : 'FULL';
         } else {
             loginError.textContent = 'Mã lớp không hợp lệ. Vui lòng nhập lại!';
