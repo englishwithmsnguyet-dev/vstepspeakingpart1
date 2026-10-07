@@ -321,6 +321,24 @@ document.addEventListener('DOMContentLoaded', () => {
         "Nguyễn Thị Chúc Yến"
     ];
 
+    const validStudentsCB219 = [
+        "Lưu Thị Vân Anh",
+        "Nguyễn Tuấn Anh",
+        "Trần Thị Huỳnh Duy",
+        "Duy Thị Huỳnh Hân",
+        "Trần Thị Xuân Hoa",
+        "Nguyễn Phạm Khang",
+        "Đặng Văn Khánh",
+        "Chim Nhật Luân",
+        "Lư Vĩnh Phúc",
+        "Nguyễn Chí Thiện",
+        "Trần Thị Ngọc Thơ",
+        "Huỳnh Yến Trang",
+        "Thị Thu Trinh",
+        "Nguyễn Thị Mỹ Xuyên",
+        "Nguyễn Như Ý"
+    ];
+
     const normalizeStr = (str) => {
         return (str || '')
             .normalize('NFD')
@@ -360,7 +378,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const validClasses = ['2026', 'CB210', 'CB206', 'CB211', 'B212', 'CB213', 'ONB103'];
+        const validClasses = ['2026', 'CB210', 'CB206', 'CB211', 'B212', 'CB213', 'ONB103', 'CB219'];
         const partialClasses = ['CB213'];
         const formattedClass = classVal.toUpperCase().replace(/\s+/g, '');
         const normName = normalizeStr(nameVal);
@@ -371,6 +389,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (isTeacher) {
             state.studentName = 'Cô Nguyệt';
+            state.accessLevel = 'FULL';
+        } else if (formattedClass === 'CB219') {
+            // Check student list for class CB219
+            const matchedStudent = validStudentsCB219.find(s => normalizeStr(s) === normName);
+
+            if (!matchedStudent) {
+                loginError.textContent = 'Họ và Tên không thuộc danh sách lớp CB219. Vui lòng kiểm tra lại!';
+                loginError.style.display = 'block';
+                return;
+            }
+            state.studentName = matchedStudent;
             state.accessLevel = 'FULL';
         } else if (formattedClass === 'B212') {
             // Check student list for class B212
