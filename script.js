@@ -378,7 +378,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const validClasses = ['2026', 'CB210', 'CB206', 'CB211', 'B212', 'CB213', 'ONB103', 'CB219'];
+        const validClasses = ['2026', 'CB211', 'CB213', 'ONB103', 'B212', 'CB219', 'CB210'];
         const partialClasses = ['CB213'];
         const formattedClass = classVal.toUpperCase().replace(/\s+/g, '');
         const normName = normalizeStr(nameVal);
