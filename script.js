@@ -8395,6 +8395,303 @@ const practiceTopicsData = [
                 ]
             }
         ]
+    },
+    {
+        id: 25,
+        title: "Chủ đề 25: Let's talk about planes",
+        introText: "Let’s talk about planes.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Have you ever travelled by plane?",
+                qType: "Present Perfect Yes/No: Have you ever travelled by plane?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Bay đi Đà Nẵng cùng gia đình - Rất nhanh và hào hứng):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I have. I flew to <span class="formula-bracket-hl">[điểm đến du lịch]</span> with my <span class="formula-bracket-hl">[đối tượng]</span> last year. It was <span class="formula-bracket-hl">[tính từ cảm nhận]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Thường đi xe khách/tàu hỏa, muốn trải nghiệm bay trong tương lai):</div>
+                    <div class="topic-formula-text">
+                        → No, I haven't. I usually travel by <span class="formula-bracket-hl">[phương tiện quen thuộc]</span>. However, I want to <span class="formula-bracket-hl">[mong muốn trải nghiệm]</span> in the future.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "✈️ [Điểm đến & Cảm nhận] (Cách 1):",
+                        items: [
+                            { en: "Da Nang city", vn: "thành phố Đà Nẵng" },
+                            { en: "Phu Quoc island", vn: "đảo Phú Quốc" },
+                            { en: "my family", vn: "gia đình tôi" },
+                            { en: "very fast and exciting", vn: "rất nhanh chóng và hào hứng" }
+                        ]
+                    },
+                    {
+                        title: "🚌 [Phương tiện & Trải nghiệm] (Cách 2):",
+                        items: [
+                            { en: "coach or train", vn: "xe khách hoặc tàu hỏa" },
+                            { en: "experience flying soon", vn: "sớm trải nghiệm cảm giác đi máy bay" },
+                            { en: "take a flight", vn: "thực hiện một chuyến bay" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Bay đi Đà Nẵng cùng gia đình - Rất nhanh và hào hứng - 20 từ)",
+                        text: "Yes, I have. I flew to Da Nang city with my family last year. It was very fast and exciting.",
+                        formatted: `→ Yes, I have. I flew to <span class="sub-hl">Da Nang city</span> with my <span class="sub-hl">family</span> last year. It was <span class="sub-hl">very fast and exciting</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Thường đi xe khách/tàu hỏa, muốn trải nghiệm bay trong tương lai - 20 từ)",
+                        text: "No, I haven't. I usually travel by coach or train. However, I want to experience flying soon in the future.",
+                        formatted: `→ No, I haven't. I usually travel by <span class="sub-hl">coach or train</span>. However, I want to <span class="sub-hl">experience flying soon</span> in the future.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "Is the plane service good in your country?",
+                qType: "Yes/No: Is the plane service good in your country?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Tiếp viên lịch sự, sân bay cung cấp thủ tục check-in nhanh chóng):</div>
+                    <div class="topic-formula-text">
+                        → Yes, it's quite good. Flight attendants are <span class="formula-bracket-hl">[đặc điểm nhân viên]</span>, and modern airports offer <span class="formula-bracket-hl">[tiện ích dịch vụ]</span> for passengers.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Khá tốt nhưng đôi khi bị delay vào dịp lễ, các hãng đang nỗ lực cải thiện):</div>
+                    <div class="topic-formula-text">
+                        → Overall, it's good, but flights are sometimes <span class="formula-bracket-hl">[vấn đề thường gặp]</span> during <span class="formula-bracket-hl">[thời điểm cao điểm]</span>. Airlines are trying to improve.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🛫 [Dịch vụ & Nhân viên] (Cách 1):",
+                        items: [
+                            { en: "very polite", vn: "rất lịch sự chu đáo" },
+                            { en: "fast check-in services for all passengers", vn: "dịch vụ làm thủ tục nhanh chóng cho mọi hành khách" },
+                            { en: "helpful and professional", vn: "nhiệt tình và chuyên nghiệp" }
+                        ]
+                    },
+                    {
+                        title: "⏳ [Chậm chuyến & Nỗ lực] (Cách 2):",
+                        items: [
+                            { en: "delayed during busy holidays", vn: "bị hoãn lại trong những dịp lễ bận rộn" },
+                            { en: "improve this issue", vn: "cải thiện vấn đề này" },
+                            { en: "rescheduled unexpectedly", vn: "bị đổi lịch trình đột xuất" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Tiếp viên lịch sự, sân bay cung cấp thủ tục check-in nhanh chóng - 20 từ)",
+                        text: "Yes, it's quite good. Flight attendants are very polite, and modern airports offer fast check-in services for all passengers.",
+                        formatted: `→ Yes, it's quite good. Flight attendants are <span class="sub-hl">very polite</span>, and modern airports offer <span class="sub-hl">fast check-in services for all passengers</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Khá tốt nhưng đôi khi bị delay vào dịp lễ, các hãng đang nỗ lực cải thiện - 20 từ)",
+                        text: "Overall, it's good, but flights are sometimes delayed during busy holidays. Airlines are trying hard to improve this issue.",
+                        formatted: `→ Overall, it's good, but flights are sometimes <span class="sub-hl">delayed during busy holidays</span>. Airlines are trying hard to <span class="sub-hl">improve this issue</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "What are the benefits of travelling by plane?",
+                qType: "Wh-question: What are the benefits of [V-ing]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Tiết kiệm thời gian quý báu và là phương tiện an toàn nhất cho chuyến đi xa):</div>
+                    <div class="topic-formula-text">
+                        → In my opinion, planes help travelers <span class="formula-bracket-hl">[lợi ích thời gian]</span>. It's also considered the <span class="formula-bracket-hl">[lợi ích an toàn]</span> for long trips.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Rất thoải mái, thư giãn trên ghế điều hòa và ngắm cảnh bầu trời):</div>
+                    <div class="topic-formula-text">
+                        → Traveling by plane is <span class="formula-bracket-hl">[đặc điểm tiện nghi]</span>. Passengers can <span class="formula-bracket-hl">[hoạt động thư giãn]</span> and enjoy beautiful sky views.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "⏱️ [Thời gian & An toàn] (Cách 1):",
+                        items: [
+                            { en: "save valuable travel time", vn: "tiết kiệm thời gian đi lại quý báu" },
+                            { en: "safest transport for long journeys", vn: "phương tiện an toàn nhất cho các hành trình dài" },
+                            { en: "reach distant places quickly", vn: "đến những nơi xa xôi nhanh chóng" }
+                        ]
+                    },
+                    {
+                        title: "☁️ [Tiện nghi & Thư giãn] (Cách 2):",
+                        items: [
+                            { en: "very comfortable", vn: "rất thoải mái tiện nghi" },
+                            { en: "relax in air-conditioned seats", vn: "thư giãn trên những chiếc ghế điều hòa mát mẻ" },
+                            { en: "enjoy beautiful sky views through windows", vn: "ngắm nhìn khung cảnh bầu trời tuyệt đẹp qua cửa sổ" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Tiết kiệm thời gian quý báu và là phương tiện an toàn nhất cho chuyến đi xa - 20 từ)",
+                        text: "In my opinion, planes help travelers save valuable travel time. It's also considered the safest transport for long journeys.",
+                        formatted: `→ In my opinion, planes help travelers <span class="sub-hl">save valuable travel time</span>. It's also considered the <span class="sub-hl">safest transport for long journeys</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Rất thoải mái, thư giãn trên ghế điều hòa và ngắm cảnh bầu trời - 19 từ)",
+                        text: "Traveling by plane is very comfortable. Passengers can relax in air-conditioned seats and enjoy beautiful sky views through windows.",
+                        formatted: `→ Traveling by plane is <span class="sub-hl">very comfortable</span>. Passengers can <span class="sub-hl">relax in air-conditioned seats</span> and enjoy beautiful sky views through windows.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 26,
+        title: "Chủ đề 26: Let's talk about traffic problems",
+        introText: "Let’s talk about traffic problems.",
+        questions: [
+            {
+                qNum: 1,
+                question: "What are some common traffic problems in your city?",
+                qType: "Wh-question: What are some common [noun] in your city?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Ùn tắc giờ cao điểm do quá nhiều xe cộ trên đường hẹp):</div>
+                    <div class="topic-formula-text">
+                        → The most common problem is <span class="formula-bracket-hl">[vấn đề chính]</span> during rush hours. There are <span class="formula-bracket-hl">[nguyên nhân phương tiện]</span> on narrow streets.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Ô nhiễm khói bụi từ xe cộ và người đi đường vượt đèn đỏ gây tai nạn):</div>
+                    <div class="topic-formula-text">
+                        → In my city, we often face <span class="formula-bracket-hl">[vấn đề ô nhiễm]</span>. Moreover, some drivers <span class="formula-bracket-hl">[hành vi vi phạm]</span>, causing dangerous accidents.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🚦 [Ùn tắc & Giờ cao điểm] (Cách 1):",
+                        items: [
+                            { en: "traffic congestion during rush hours", vn: "ùn tắc giao thông trong các khung giờ cao điểm" },
+                            { en: "too many motorbikes and cars", vn: "quá nhiều xe máy và xe ô tô" },
+                            { en: "crowded narrow streets", vn: "các đường phố chật hẹp đông đúc" }
+                        ]
+                    },
+                    {
+                        title: "🛑 [Khói bụi & Vi phạm] (Cách 2):",
+                        items: [
+                            { en: "air pollution from vehicles", vn: "ô nhiễm không khí do khói bụi xe cộ" },
+                            { en: "run red lights", vn: "vượt đèn đỏ" },
+                            { en: "dangerous road accidents", vn: "các vụ tai nạn giao thông nguy hiểm" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Ùn tắc giờ cao điểm do quá nhiều xe cộ trên đường hẹp - 20 từ)",
+                        text: "The most common problem is traffic congestion during rush hours. There are too many motorbikes and cars on narrow streets.",
+                        formatted: `→ The most common problem is <span class="sub-hl">traffic congestion during rush hours</span>. There are <span class="sub-hl">too many motorbikes and cars</span> on narrow streets.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Ô nhiễm khói bụi từ xe cộ và người đi đường vượt đèn đỏ gây tai nạn - 20 từ)",
+                        text: "In my city, we often face air pollution from vehicles. Moreover, some drivers run red lights, causing dangerous road accidents.",
+                        formatted: `→ In my city, we often face <span class="sub-hl">air pollution from vehicles</span>. Moreover, some drivers <span class="sub-hl">run red lights</span>, causing dangerous road accidents.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "How do traffic problems affect daily life where you live?",
+                qType: "Wh-question: How do [noun] affect daily life?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Lãng phí thời gian, dễ trễ giờ làm và cảm thấy mệt mỏi căng thẳng):</div>
+                    <div class="topic-formula-text">
+                        → Traffic problems waste a lot of time. People often <span class="formula-bracket-hl">[hậu quả công việc]</span> and feel very <span class="formula-bracket-hl">[tính từ cảm xúc tiêu cực]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Hít phải khói bụi độc hại dễ gây ra các vấn đề về đường hô hấp):</div>
+                    <div class="topic-formula-text">
+                        → They negatively affect public health. Inhaling <span class="formula-bracket-hl">[nguyên nhân độc hại]</span> easily causes <span class="formula-bracket-hl">[vấn đề sức khỏe]</span> for local residents.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "⏳ [Trễ giờ & Mệt mỏi] (Cách 1):",
+                        items: [
+                            { en: "arrive late for work", vn: "đến nơi làm việc bị muộn" },
+                            { en: "very tired and stressed daily", vn: "rất mệt mỏi và căng thẳng mỗi ngày" },
+                            { en: "miss important appointments", vn: "bỏ lỡ các cuộc hẹn quan trọng" }
+                        ]
+                    },
+                    {
+                        title: "😷 [Tác hại sức khỏe] (Cách 2):",
+                        items: [
+                            { en: "toxic dust and fumes", vn: "bụi bẩn và khói thải độc hại" },
+                            { en: "breathing problems for many local residents", vn: "các vấn đề hô hấp cho nhiều người dân địa phương" },
+                            { en: "headaches and eye irritation", vn: "đau đầu và cay mắt" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Lãng phí thời gian, dễ trễ giờ làm và cảm thấy mệt mỏi căng thẳng - 20 từ)",
+                        text: "Traffic problems waste a lot of time. People often arrive late for work and feel very tired and stressed daily.",
+                        formatted: `→ Traffic problems waste a lot of time. People often <span class="sub-hl">arrive late for work</span> and feel <span class="sub-hl">very tired and stressed daily</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Hít phải khói bụi độc hại dễ gây ra các vấn đề về đường hô hấp - 19 từ)",
+                        text: "They negatively affect public health. Inhaling toxic dust and fumes easily causes breathing problems for many local residents.",
+                        formatted: `→ They negatively affect public health. Inhaling <span class="sub-hl">toxic dust and fumes</span> easily causes <span class="sub-hl">breathing problems for many local residents</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "What solutions do you think could help reduce traffic congestion?",
+                qType: "Wh-question: What solutions do you think could help [verb]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Phát triển giao thông công cộng, khi người dân đi xe buýt tàu điện thì đường sẽ bớt đông):</div>
+                    <div class="topic-formula-text">
+                        → The government should <span class="formula-bracket-hl">[giải pháp hạ tầng]</span>. When people use buses and trains, roads will be <span class="formula-bracket-hl">[kết quả tích cực]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Mở rộng đường chật hẹp và phạt nghiêm người vi phạm để khuyến khích tuân thủ luật):</div>
+                    <div class="topic-formula-text">
+                        → We need to <span class="formula-bracket-hl">[hành động mở rộng]</span> and <span class="formula-bracket-hl">[biện pháp xử phạt]</span>. It will encourage citizens to obey laws.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🚇 [Giao thông công cộng] (Cách 1):",
+                        items: [
+                            { en: "develop modern public transport systems", vn: "phát triển hệ thống giao thông công cộng hiện đại" },
+                            { en: "much less crowded", vn: "bớt đông đúc chật chội hơn nhiều" },
+                            { en: "safer and smoother", vn: "an toàn và thông thoáng hơn" }
+                        ]
+                    },
+                    {
+                        title: "🚧 [Mở rộng đường & Xử phạt] (Cách 2):",
+                        items: [
+                            { en: "widen narrow roads", vn: "mở rộng các tuyến đường chật hẹp" },
+                            { en: "strictly fine traffic violators", vn: "xử phạt nghiêm khắc những người vi phạm luật giao thông" },
+                            { en: "obey traffic laws", vn: "tuân thủ luật an toàn giao thông" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Phát triển giao thông công cộng, khi người dân đi xe buýt tàu điện thì đường sẽ bớt đông - 20 từ)",
+                        text: "The government should develop modern public transport systems. When people use buses and trains, roads will be much less crowded.",
+                        formatted: `→ The government should <span class="sub-hl">develop modern public transport systems</span>. When people use buses and trains, roads will be <span class="sub-hl">much less crowded</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Mở rộng đường chật hẹp và phạt nghiêm người vi phạm để khuyến khích tuân thủ luật - 19 từ)",
+                        text: "We need to widen narrow roads and strictly fine traffic violators. It will encourage citizens to obey traffic laws.",
+                        formatted: `→ We need to <span class="sub-hl">widen narrow roads</span> and <span class="sub-hl">strictly fine traffic violators</span>. It will encourage citizens to obey traffic laws.`
+                    }
+                ]
+            }
+        ]
     }
 
 ];
