@@ -8087,6 +8087,314 @@ const practiceTopicsData = [
                 ]
             }
         ]
+    },
+    {
+        id: 23,
+        title: "Chủ đề 23: Let's talk about your dream job",
+        introText: "Let’s talk about your dream job.",
+        questions: [
+            {
+                qNum: 1,
+                question: "What was your dream job when you were a child? Why?",
+                qType: "Past Wh-question: What was your dream job when you were a child? Why?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Giáo viên - Mong muốn dạy dỗ học sinh và lan tỏa tri thức hữu ích):</div>
+                    <div class="topic-formula-text">
+                        → When I was a child, I dreamed of becoming a <span class="formula-bracket-hl">[nghề nghiệp mơ ước]</span>. I wanted to <span class="formula-bracket-hl">[lý do ước mơ]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Bác sĩ - Mong muốn khám chữa bệnh và cứu giúp người khác):</div>
+                    <div class="topic-formula-text">
+                        → As a child, my dream job was to be a <span class="formula-bracket-hl">[nghề nghiệp mơ ước]</span> because I loved <span class="formula-bracket-hl">[lý do ước mơ]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "👩‍🏫 [Giáo viên & Dạy học] (Cách 1):",
+                        items: [
+                            { en: "teacher", vn: "giáo viên" },
+                            { en: "primary school teacher", vn: "giáo viên tiểu học" },
+                            { en: "teach young children", vn: "dạy dỗ các em nhỏ" },
+                            { en: "share useful knowledge", vn: "chia sẻ kiến thức hữu ích" }
+                        ]
+                    },
+                    {
+                        title: "🩺 [Bác sĩ & Giúp đỡ] (Cách 2):",
+                        items: [
+                            { en: "doctor", vn: "bác sĩ" },
+                            { en: "nurse", vn: "y tá" },
+                            { en: "helping sick people", vn: "giúp đỡ người đau ốm bệnh tật" },
+                            { en: "saving lives", vn: "cứu giúp sinh mạng mọi người" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Giáo viên - Muốn dạy dỗ học sinh và lan tỏa tri thức hữu ích - 20 từ)",
+                        text: "When I was a child, I dreamed of becoming a teacher. I wanted to teach children and share useful knowledge.",
+                        formatted: `→ When I was a child, I dreamed of becoming a <span class="sub-hl">teacher</span>. I wanted to <span class="sub-hl">teach children</span> and share useful knowledge.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Bác sĩ - Muốn khám chữa bệnh và cứu giúp mọi người - 19 từ)",
+                        text: "As a child, my dream job was to be a doctor because I loved helping sick people and saving lives.",
+                        formatted: `→ As a child, my dream job was to be a <span class="sub-hl">doctor</span> because I loved <span class="sub-hl">helping sick people</span> and saving lives.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "Do you have a part-time job on weekends? If yes, what is it? If not, would you like to have one?",
+                qType: "Yes/No + Conditional: Do you have a part-time job on weekends? If not, would you like to have one?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Làm nhân viên pha chế ở quán cà phê để kiếm thêm thu nhập và tích lũy kinh nghiệm):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I do. I work as a <span class="formula-bracket-hl">[công việc làm thêm]</span> at weekends. It helps me <span class="formula-bracket-hl">[lợi ích tài chính]</span> and gain experience.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời CHƯA CÓ NHƯNG MUỐN THỬ - Muốn rèn luyện các kỹ năng hữu ích và mở rộng quan hệ bạn bè):</div>
+                    <div class="topic-formula-text">
+                        → No, I don't, but I would love to have one. A weekend job can help me <span class="formula-bracket-hl">[kỹ năng phát triển]</span> and make friends.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "☕ [Việc làm thêm & Lợi ích] (Cách 1):",
+                        items: [
+                            { en: "barista at a coffee shop", vn: "nhân viên pha chế ở quán cà phê" },
+                            { en: "waiter at a restaurant", vn: "nhân viên phục vụ ở nhà hàng" },
+                            { en: "earn extra money", vn: "kiếm thêm thu nhập trang trải" },
+                            { en: "gain practical experience", vn: "tích lũy kinh nghiệm thực tế" }
+                        ]
+                    },
+                    {
+                        title: "💼 [Kỹ năng & Mở rộng quan hệ] (Cách 2):",
+                        items: [
+                            { en: "develop useful skills", vn: "phát triển các kỹ năng hữu ích" },
+                            { en: "manage my time", vn: "học cách quản lý thời gian" },
+                            { en: "build my confidence", vn: "xây dựng sự tự tin" },
+                            { en: "make new friends", vn: "kết giao thêm nhiều bạn mới" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - Làm pha chế cà phê cuối tuần để kiếm thu nhập - 22 từ)",
+                        text: "Yes, I do. I work as a barista at a coffee shop on weekends. It helps me earn money and gain experience.",
+                        formatted: `→ Yes, I do. I work as a <span class="sub-hl">barista at a coffee shop</span> at weekends. It helps me <span class="sub-hl">earn extra money</span> and gain experience.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời CHƯA - Muốn làm thêm để rèn luyện kỹ năng và kết bạn - 22 từ)",
+                        text: "No, I don't, but I would love to have one. A weekend job can help me develop useful skills and make friends.",
+                        formatted: `→ No, I don't, but I would love to have one. A weekend job can help me <span class="sub-hl">develop useful skills</span> and <span class="sub-hl">make friends</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Has your dream job changed over time? Why or why not?",
+                qType: "Present Perfect Yes/No: Has your dream job changed over time? Why or why not?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Khi lớn lên sở thích thay đổi và chuyển sang quan tâm đến lĩnh vực công nghệ):</div>
+                    <div class="topic-formula-text">
+                        → Yes, it has. As I grew up, my interests changed, and now I want to work in <span class="formula-bracket-hl">[lĩnh vực hiện tại]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Vẫn giữ trọn vẹn đam mê giảng dạy và nỗ lực học tập để đạt mục tiêu):</div>
+                    <div class="topic-formula-text">
+                        → No, it hasn't. I'm still passionate about <span class="formula-bracket-hl">[lĩnh vực đam mê]</span>, so I'm studying hard to achieve this goal.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "💡 [Lĩnh vực mới & Cơ hội] (Cách 1):",
+                        items: [
+                            { en: "the technology field", vn: "lĩnh vực công nghệ" },
+                            { en: "business and marketing", vn: "kinh doanh và tiếp thị" },
+                            { en: "modern design", vn: "thiết kế hiện đại" }
+                        ]
+                    },
+                    {
+                        title: "🎯 [Đam mê kiên định] (Cách 2):",
+                        items: [
+                            { en: "teaching", vn: "công việc giảng dạy" },
+                            { en: "medical care", vn: "ngành chăm sóc y tế" },
+                            { en: "achieve this goal", vn: "đạt được mục tiêu này" },
+                            { en: "childhood dream", vn: "ước mơ thời thơ ấu" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - Lớn lên sở thích thay đổi, muốn làm ngành công nghệ - 20 từ)",
+                        text: "Yes, it has. As I grew up, my interests changed, and now I want to work in the technology field.",
+                        formatted: `→ Yes, it has. As I grew up, my interests changed, and now I want to work in <span class="sub-hl">the technology field</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Vẫn kiên định đam mê giảng dạy, chăm chỉ học mỗi ngày - 19 từ)",
+                        text: "No, it hasn't. I'm still passionate about teaching, so I'm studying hard every day to achieve this goal.",
+                        formatted: `→ No, it hasn't. I'm still passionate about <span class="sub-hl">teaching</span>, so I'm studying hard every day to <span class="sub-hl">achieve this goal</span>.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 24,
+        title: "Chủ đề 24: Let's talk about transportation",
+        introText: "Let’s talk about transportation.",
+        questions: [
+            {
+                qNum: 1,
+                question: "How do you usually travel to school/work?",
+                qType: "Wh-question: How do you usually travel to [place]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Đi bằng xe máy - Thuận tiện, linh hoạt và tiết kiệm thời gian di chuyển):</div>
+                    <div class="topic-formula-text">
+                        → I usually travel to <span class="formula-bracket-hl">[nơi đến]</span> by motorbike. It's <span class="formula-bracket-hl">[tính từ]</span> and helps me save a lot of travel time.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Đi bằng xe buýt - Giá vé rất rẻ, an toàn và thoải mái):</div>
+                    <div class="topic-formula-text">
+                        → I usually catch a public bus because the ticket is <span class="formula-bracket-hl">[đặc điểm chi phí]</span>. It's also very <span class="formula-bracket-hl">[tính từ]</span> and safe.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🛵 [Xe máy & Tiện lợi] (Cách 1):",
+                        items: [
+                            { en: "work", vn: "chỗ làm việc" },
+                            { en: "university", vn: "trường đại học" },
+                            { en: "very convenient", vn: "rất thuận tiện" },
+                            { en: "flexible on busy streets", vn: "linh hoạt trên các đường phố đông đúc" },
+                            { en: "save a lot of travel time", vn: "tiết kiệm nhiều thời gian đi lại" }
+                        ]
+                    },
+                    {
+                        title: "🚌 [Xe buýt & An toàn] (Cách 2):",
+                        items: [
+                            { en: "the ticket is very cheap", vn: "giá vé rất rẻ" },
+                            { en: "affordable", vn: "vừa túi tiền" },
+                            { en: "very comfortable and safe for me", vn: "rất thoải mái và an toàn đối với tôi" },
+                            { en: "environmentally friendly", vn: "thân thiện với môi trường" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Đi bằng xe máy - Thuận tiện, linh hoạt và tiết kiệm thời gian đi lại - 19 từ)",
+                        text: "I usually travel to work by motorbike. It's very convenient and helps me save a lot of travel time.",
+                        formatted: `→ I usually travel to work by <span class="sub-hl">motorbike</span>. It's <span class="sub-hl">very convenient</span> and helps me save a lot of travel time.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Đi bằng xe buýt - Giá vé rẻ, thoải mái và an toàn - 20 từ)",
+                        text: "I usually catch a public bus because the ticket is very cheap. It's also very comfortable and safe for me.",
+                        formatted: `→ I usually catch a public bus because <span class="sub-hl">the ticket is very cheap</span>. It's also <span class="sub-hl">very comfortable and safe for me</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What do you do to save the travel cost?",
+                qType: "Wh-question: What do you do to save [noun]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Đi chung xe cùng bạn học/đồng nghiệp để san sẻ chi phí tiền xăng):</div>
+                    <div class="topic-formula-text">
+                        → To save money, I often <span class="formula-bracket-hl">[hành động tiết kiệm]</span>. It helps me <span class="formula-bracket-hl">[lợi ích tài chính]</span> on petrol.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Đạp xe hoặc đi bộ với các cự ly gần - Vừa tiết kiệm chi phí vừa nâng cao sức khỏe):</div>
+                    <div class="topic-formula-text">
+                        → For short distances, I usually <span class="formula-bracket-hl">[hành động di chuyển xanh]</span>. It helps me save costs and <span class="formula-bracket-hl">[lợi ích sức khỏe]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🚗 [Đi chung xe & Tiết kiệm] (Cách 1):",
+                        items: [
+                            { en: "share rides with my classmates", vn: "đi chung xe với các bạn cùng lớp" },
+                            { en: "carpool with colleagues", vn: "đi chung xe cùng đồng nghiệp" },
+                            { en: "save a lot of money on petrol", vn: "tiết kiệm được nhiều tiền xăng xe" },
+                            { en: "cut down on daily expenses", vn: "cắt giảm các khoản chi tiêu hằng ngày" }
+                        ]
+                    },
+                    {
+                        title: "🚲 [Đi xe đạp & Sức khỏe] (Cách 2):",
+                        items: [
+                            { en: "ride a bicycle", vn: "đạp xe đạp" },
+                            { en: "walk on foot", vn: "đi bộ" },
+                            { en: "improve my physical health every day", vn: "cải thiện sức khỏe thể chất mỗi ngày" },
+                            { en: "stay in good shape", vn: "duy trì vóc dáng khỏe đẹp" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Đi chung xe với bạn bè - Tiết kiệm chi phí tiền xăng hiệu quả - 20 từ)",
+                        text: "To save money, I often share rides with my classmates. It helps me save a lot of money on petrol.",
+                        formatted: `→ To save money, I often <span class="sub-hl">share rides with my classmates</span>. It helps me <span class="sub-hl">save a lot of money on petrol</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Đi xe đạp cự ly gần - Tiết kiệm chi phí và nâng cao sức khỏe - 20 từ)",
+                        text: "For short distances, I usually ride a bicycle. It helps me save costs and improve my physical health every day.",
+                        formatted: `→ For short distances, I usually <span class="sub-hl">ride a bicycle</span>. It helps me save costs and <span class="sub-hl">improve my physical health every day</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "What means of transport do you prefer for long-distant travel?",
+                qType: "Wh-question: What means of transport do you prefer for [purpose]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Đi máy bay - Tốc độ cực nhanh, tiết kiệm tối đa thời gian di chuyển đường dài):</div>
+                    <div class="topic-formula-text">
+                        → For long distances, I prefer traveling by plane. It's <span class="formula-bracket-hl">[tính từ]</span> and helps me <span class="formula-bracket-hl">[lợi ích thời gian]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Đi tàu hỏa - Rất an toàn, thoải mái ngắm nhìn phong cảnh tuyệt đẹp qua cửa sổ):</div>
+                    <div class="topic-formula-text">
+                        → I prefer taking a train because it's <span class="formula-bracket-hl">[tính từ]</span>. I can <span class="formula-bracket-hl">[hoạt động ngắm cảnh]</span> through the window.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "✈️ [Máy bay & Tốc độ] (Cách 1):",
+                        items: [
+                            { en: "extremely fast", vn: "cực kỳ nhanh chóng" },
+                            { en: "modern and comfortable", vn: "hiện đại và tiện nghi" },
+                            { en: "save a lot of travel time", vn: "tiết kiệm được rất nhiều thời gian di chuyển" },
+                            { en: "avoid feeling tired", vn: "tránh cảm giác mệt mỏi" }
+                        ]
+                    },
+                    {
+                        title: "🚆 [Tàu hỏa & Ngắm cảnh] (Cách 2):",
+                        items: [
+                            { en: "it's very safe", vn: "nó rất an toàn" },
+                            { en: "smooth and peaceful", vn: "êm ái và thanh bình" },
+                            { en: "enjoy beautiful landscapes through the window", vn: "ngắm nhìn các phong cảnh đẹp qua cửa sổ" },
+                            { en: "take nice photos", vn: "chụp nhiều bức ảnh đẹp" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Đi máy bay - Tốc độ cực nhanh, tiết kiệm thời gian đi lại đường dài - 19 từ)",
+                        text: "For long distances, I prefer traveling by plane. It's extremely fast and helps me save a lot of travel time.",
+                        formatted: `→ For long distances, I prefer traveling by <span class="sub-hl">plane</span>. It's <span class="sub-hl">extremely fast</span> and helps me <span class="sub-hl">save a lot of travel time</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Đi tàu hỏa - An toàn và thư thái ngắm nhìn phong cảnh qua cửa sổ - 19 từ)",
+                        text: "I prefer taking a train because it's very safe. I can enjoy beautiful landscapes through the window comfortably.",
+                        formatted: `→ I prefer taking a train because <span class="sub-hl">it's very safe</span>. I can <span class="sub-hl">enjoy beautiful landscapes through the window</span> comfortably.`
+                    }
+                ]
+            }
+        ]
     }
 
 ];
