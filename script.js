@@ -7475,6 +7475,313 @@ const practiceTopicsData = [
                 ]
             }
         ]
+    },
+    {
+        id: 19,
+        title: "Chủ đề 19: Let's talk about schools",
+        introText: "Let’s talk about schools.",
+        questions: [
+            {
+                qNum: 1,
+                question: "What type of school did you attend when you were younger?",
+                qType: "Past Wh-question: What type of school did you attend when you were younger?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trường công lập gần nhà - Học phí vừa phải, thầy cô thân thiện):</div>
+                    <div class="topic-formula-text">
+                        → When I was younger, I attended a <span class="formula-bracket-hl">[loại trường học]</span> near my house. It had <span class="formula-bracket-hl">[đặc điểm]</span> and friendly teachers.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trường tư thục - Cơ sở vật chất hiện đại, rèn tính tự lập):</div>
+                    <div class="topic-formula-text">
+                        → I went to a <span class="formula-bracket-hl">[loại trường học]</span> in my hometown. It provided <span class="formula-bracket-hl">[tiện ích học tập]</span> and helped me <span class="formula-bracket-hl">[kỹ năng phát triển]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🏫 [Trường công lập & Đặc điểm] (Cách 1):",
+                        items: [
+                            { en: "public school", vn: "trường công lập" },
+                            { en: "local primary school", vn: "trường tiểu học ở địa phương" },
+                            { en: "affordable tuition fees", vn: "học phí vừa phải hợp lý" },
+                            { en: "good learning environment", vn: "môi trường học tập tốt" }
+                        ]
+                    },
+                    {
+                        title: "🏫 [Trường tư thục & Tiện ích] (Cách 2):",
+                        items: [
+                            { en: "private school", vn: "trường tư thục" },
+                            { en: "modern learning facilities", vn: "các cơ sở vật chất học tập hiện đại" },
+                            { en: "dynamic study programs", vn: "các chương trình học tập năng động" },
+                            { en: "become more independent", vn: "trở nên tự lập hơn trong cuộc sống" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trường công lập - Học phí vừa phải, thầy cô thân thiện - 20 từ)",
+                        text: "When I was younger, I attended a public school near my house. It had affordable tuition fees and friendly teachers.",
+                        formatted: `→ When I was younger, I attended a <span class="sub-hl">public school</span> near my house. It had <span class="sub-hl">affordable tuition fees</span> and friendly teachers.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trường tư thục - Cơ sở vật chất hiện đại, rèn tính tự lập - 20 từ)",
+                        text: "I went to a private school in my hometown. It provided modern learning facilities and helped me become more independent.",
+                        formatted: `→ I went to a <span class="sub-hl">private school</span> in my hometown. It provided <span class="sub-hl">modern learning facilities</span> and helped me <span class="sub-hl">become more independent</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "Do you prefer public or private schools? Why?",
+                qType: "Choice question: Do you prefer [public] or [private] schools? Why?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Thích trường công lập - Học phí hợp lý, giảm bớt gánh nặng tài chính cho gia đình):</div>
+                    <div class="topic-formula-text">
+                        → I prefer public schools because their fees are <span class="formula-bracket-hl">[đặc điểm chi phí]</span>. It helps many families <span class="formula-bracket-hl">[lợi ích tài chính]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Thích trường tư thục - Sĩ số lớp nhỏ, học sinh được quan tâm chu đáo hơn):</div>
+                    <div class="topic-formula-text">
+                        → I like private schools more because they have <span class="formula-bracket-hl">[ưu điểm trường tư 1]</span> and <span class="formula-bracket-hl">[ưu điểm trường tư 2]</span> for students.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "💰 [Chi phí & Lợi ích tài chính] (Cách 1):",
+                        items: [
+                            { en: "very reasonable", vn: "rất hợp lý vừa phải" },
+                            { en: "affordable", vn: "vừa túi tiền số đông" },
+                            { en: "reduce financial pressure on their education", vn: "giảm bớt áp lực tài chính cho việc học" },
+                            { en: "save educational money", vn: "tiết kiệm chi phí học tập" }
+                        ]
+                    },
+                    {
+                        title: "🌟 [Ưu điểm trường tư] (Cách 2):",
+                        items: [
+                            { en: "smaller class sizes", vn: "sĩ số lớp học ít hơn" },
+                            { en: "modern classrooms", vn: "các phòng học hiện đại" },
+                            { en: "better personal care for every student", vn: "sự quan tâm chăm sóc chu đáo cho từng học sinh" },
+                            { en: "great extracurricular activities", vn: "nhiều hoạt động ngoại khóa tuyệt vời" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trường công lập - Học phí hợp lý, giảm áp lực tài chính cho gia đình - 20 từ)",
+                        text: "I prefer public schools because their fees are very reasonable. It helps many families reduce financial pressure on their education.",
+                        formatted: `→ I prefer public schools because <span class="sub-hl">their fees are very reasonable</span>. It helps many families <span class="sub-hl">reduce financial pressure on their education</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trường tư thục - Sĩ số lớp nhỏ, học sinh được quan tâm chu đáo - 19 từ)",
+                        text: "I like private schools more because they have smaller class sizes and better personal care for every student.",
+                        formatted: `→ I like private schools more because they have <span class="sub-hl">smaller class sizes</span> and <span class="sub-hl">better personal care for every student</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "In the future, which type of school do you think will become more common, and why?",
+                qType: "Prediction Wh-question: Which type of school will become more common, and why?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trường tư thục - Đời sống nâng cao, phụ huynh muốn con hưởng chất lượng giáo dục tốt nhất):</div>
+                    <div class="topic-formula-text">
+                        → I think private schools will be more popular. Parents have <span class="formula-bracket-hl">[điều kiện]</span>, so they want <span class="formula-bracket-hl">[mong muốn giáo dục]</span> for their children.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trường công lập - Nhà nước liên tục đầu tư nâng cấp cơ sở vật chất phục vụ đại chúng):</div>
+                    <div class="topic-formula-text">
+                        → In my opinion, public schools will stay most common. The government is <span class="formula-bracket-hl">[hành động chính phủ]</span> to help all students study.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🚀 [Điều kiện & Mong muốn] (Cách 1):",
+                        items: [
+                            { en: "better incomes", vn: "thu nhập tốt hơn" },
+                            { en: "higher living standards", vn: "mức sống cao hơn" },
+                            { en: "higher education quality", vn: "chất lượng giáo dục cao hơn" },
+                            { en: "international learning environments", vn: "môi trường học tập quốc tế" }
+                        ]
+                    },
+                    {
+                        title: "🏛️ [Đầu tư công] (Cách 2):",
+                        items: [
+                            { en: "upgrading modern facilities", vn: "nâng cấp cơ sở vật chất hiện đại" },
+                            { en: "improving learning equipment", vn: "cải thiện các trang thiết bị học đường" },
+                            { en: "keeping fees very low", vn: "giữ mức học phí ở mức rất thấp" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trường tư thục - Phụ huynh thu nhập cao muốn chất lượng giáo dục tốt hơn - 21 từ)",
+                        text: "I think private schools will be more popular. Parents have better incomes, so they want higher education quality for their children.",
+                        formatted: `→ I think private schools will be more popular. Parents have <span class="sub-hl">better incomes</span>, so they want <span class="sub-hl">higher education quality for their children</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trường công lập - Nhà nước nâng cấp trang thiết bị hỗ trợ toàn diện học sinh - 20 từ)",
+                        text: "In my opinion, public schools will stay most common. The government is upgrading modern facilities to help all students study.",
+                        formatted: `→ In my opinion, public schools will stay most common. The government is <span class="sub-hl">upgrading modern facilities</span> to help all students study.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 20,
+        title: "Chủ đề 20: Let's talk about learning English",
+        introText: "Let’s talk about learning English.",
+        questions: [
+            {
+                qNum: 1,
+                question: "What was learning English like for you at school when you were younger?",
+                qType: "Past Wh-question: What was learning English like for you at school?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Khá thử thách - Nặng về ngữ pháp, bài thi trên giấy, ít cơ hội luyện nói):</div>
+                    <div class="topic-formula-text">
+                        → When I was younger, learning English was <span class="formula-bracket-hl">[tính từ cảm nhận]</span>. We mostly focused on <span class="formula-bracket-hl">[nội dung học cũ]</span> and rarely spoke.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Vui nhộn và hào hứng - Thầy cô lồng ghép bài hát, trò chơi tiếng Anh sinh động):</div>
+                    <div class="topic-formula-text">
+                        → It was <span class="formula-bracket-hl">[tính từ]</span> because my teacher used <span class="formula-bracket-hl">[phương pháp vui]</span>. It made me feel <span class="formula-bracket-hl">[tính từ cảm xúc]</span> about English.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "📖 [Cảm nhận & Ngữ pháp] (Cách 1):",
+                        items: [
+                            { en: "quite challenging", vn: "khá là thử thách" },
+                            { en: "a bit difficult", vn: "hơi khó khăn" },
+                            { en: "grammar rules and tests", vn: "các quy tắc ngữ pháp và bài kiểm tra" },
+                            { en: "textbook exercises", vn: "bài tập trong sách giáo khoa" }
+                        ]
+                    },
+                    {
+                        title: "🎶 [Phương pháp sinh động & Cảm xúc] (Cách 2):",
+                        items: [
+                            { en: "fun and exciting", vn: "vui vẻ và hào hứng" },
+                            { en: "lively songs and games", vn: "các bài hát và trò chơi sinh động" },
+                            { en: "very motivated", vn: "rất có động lực và hứng thú" },
+                            { en: "enthusiastic", vn: "nhiệt huyết, say mê" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Khá thử thách - Nặng về ngữ pháp bài thi, hiếm khi được luyện nói - 21 từ)",
+                        text: "When I was younger, learning English was quite challenging. We mostly focused on grammar rules and tests, and we rarely spoke.",
+                        formatted: `→ When I was younger, learning English was <span class="sub-hl">quite challenging</span>. We mostly focused on <span class="sub-hl">grammar rules and tests</span>, and we rarely spoke.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Vui vẻ hào hứng - Thầy cô dùng bài hát và trò chơi sinh động tạo động lực - 21 từ)",
+                        text: "It was fun and exciting because my teacher used lively songs and games. It made me feel very motivated about English.",
+                        formatted: `→ It was <span class="sub-hl">fun and exciting</span> because my teacher used <span class="sub-hl">lively songs and games</span>. It made me feel <span class="sub-hl">very motivated</span> about English.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What methods have you used to learn English?",
+                qType: "Present Perfect Wh-question: What methods have you used to learn English?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Học qua phim ảnh có phụ đề - Vừa cải thiện kỹ năng nghe vừa thư giãn giải trí):</div>
+                    <div class="topic-formula-text">
+                        → I usually learn English by <span class="formula-bracket-hl">[phương pháp trực tuyến]</span>. It helps me <span class="formula-bracket-hl">[lợi ích học tập]</span> and <span class="formula-bracket-hl">[lợi ích giải trí]</span> at the same time.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Dùng ứng dụng điện thoại & Tự luyện nói hằng ngày để rèn sự tự tin):</div>
+                    <div class="topic-formula-text">
+                        → I often use <span class="formula-bracket-hl">[công cụ học]</span> on my smartphone. Moreover, I try to <span class="formula-bracket-hl">[thói quen luyện tập]</span> to <span class="formula-bracket-hl">[mục tiêu cải thiện]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🎬 [Phim ảnh & Giải trí song hành] (Cách 1):",
+                        items: [
+                            { en: "watching movies with subtitles", vn: "xem phim có phụ đề tiếng Anh" },
+                            { en: "listening to English songs", vn: "nghe các bài hát tiếng Anh" },
+                            { en: "improve my listening skills", vn: "cải thiện kỹ năng nghe" },
+                            { en: "relax at the same time", vn: "thư giãn đồng thời" }
+                        ]
+                    },
+                    {
+                        title: "📱 [Ứng dụng & Luyện nói] (Cách 2):",
+                        items: [
+                            { en: "English learning apps", vn: "các ứng dụng học tiếng Anh" },
+                            { en: "vocabulary flashcards", vn: "thẻ học từ vựng thông minh" },
+                            { en: "practice speaking every day", vn: "luyện tập nói hằng ngày" },
+                            { en: "build my confidence", vn: "xây dựng sự tự tin của bản thân" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Xem phim có phụ đề - Cải thiện kỹ năng nghe và giải trí thư giãn cùng lúc - 22 từ)",
+                        text: "I usually learn English by watching movies with subtitles. It helps me improve my listening skills and relax at the same time.",
+                        formatted: `→ I usually learn English by <span class="sub-hl">watching movies with subtitles</span>. It helps me <span class="sub-hl">improve my listening skills</span> and <span class="sub-hl">relax at the same time</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Dùng app điện thoại - Luyện nói mỗi ngày để rèn sự tự tin - 21 từ)",
+                        text: "I often use English learning apps on my smartphone. Moreover, I try to practice speaking every day to build my confidence.",
+                        formatted: `→ I often use <span class="sub-hl">English learning apps</span> on my smartphone. Moreover, I try to <span class="sub-hl">practice speaking every day</span> to <span class="sub-hl">build my confidence</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "In your opinion, what is the most difficult skill in learning English?",
+                qType: "Superlative Wh-question: What is the most difficult skill in learning English?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Kỹ năng Nói - Lo lắng về phát âm, thiếu người luyện tập giao tiếp hằng ngày):</div>
+                    <div class="topic-formula-text">
+                        → In my opinion, speaking is the hardest skill. I often <span class="formula-bracket-hl">[khó khăn khi nói]</span> and lack a <span class="formula-bracket-hl">[môi trường luyện tập]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Kỹ năng Nghe - Người bản xứ nói nhanh, nuốt âm khó bắt kịp từng từ):</div>
+                    <div class="topic-formula-text">
+                        → For me, listening is the most difficult skill. Native speakers usually <span class="formula-bracket-hl">[đặc điểm nói nhanh]</span>, so I can't <span class="formula-bracket-hl">[khó khăn khi nghe]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🗣️ [Khó khăn khi nói] (Cách 1):",
+                        items: [
+                            { en: "worry about pronunciation mistakes", vn: "lo sợ mắc lỗi phát âm" },
+                            { en: "hesitate to talk", vn: "ngập ngừng rụt rè khi nói" },
+                            { en: "daily speaking partner", vn: "bạn đồng hành luyện nói mỗi ngày" },
+                            { en: "native speaking environment", vn: "môi trường giao tiếp bản xứ" }
+                        ]
+                    },
+                    {
+                        title: "🎧 [Khó khăn khi nghe] (Cách 2):",
+                        items: [
+                            { en: "speak very fast", vn: "nói rất nhanh" },
+                            { en: "connect words together", vn: "nối âm các từ lại với nhau" },
+                            { en: "catch every word", vn: "bắt kịp từng từ một" },
+                            { en: "understand their ideas easily", vn: "hiểu được ý của họ một cách dễ dàng" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Kỹ năng Nói - Lo lắng lỗi phát âm, thiếu bạn luyện nói hằng ngày - 20 từ)",
+                        text: "In my opinion, speaking is the hardest skill. I often worry about pronunciation mistakes and lack a daily speaking partner.",
+                        formatted: `→ In my opinion, <span class="sub-hl">speaking is the hardest skill</span>. I often <span class="sub-hl">worry about pronunciation mistakes</span> and lack a <span class="sub-hl">daily speaking partner</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Kỹ năng Nghe - Người bản xứ nói rất nhanh, khó bắt kịp từng từ - 20 từ)",
+                        text: "For me, listening is the most difficult skill. Native speakers usually speak very fast, so I can't catch every word.",
+                        formatted: `→ For me, <span class="sub-hl">listening is the most difficult skill</span>. Native speakers usually <span class="sub-hl">speak very fast</span>, so I can't <span class="sub-hl">catch every word</span>.`
+                    }
+                ]
+            }
+        ]
     }
 
 ];
