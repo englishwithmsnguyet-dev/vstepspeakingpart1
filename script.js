@@ -7782,6 +7782,311 @@ const practiceTopicsData = [
                 ]
             }
         ]
+    },
+    {
+        id: 21,
+        title: "Chủ đề 21: Let's talk about studying English on the Internet",
+        introText: "Let’s talk about studying English on the Internet.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Do you study English on the Internet?",
+                qType: "Yes/No: Do you study [subject] on the Internet?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Học qua các kênh YouTube để cải thiện phát âm và vốn từ vựng):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I do. I usually learn English on <span class="formula-bracket-hl">[kênh học trực tuyến]</span>. It helps me <span class="formula-bracket-hl">[lợi ích học tập]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời CÓ - Học hằng ngày qua các ứng dụng di động thông minh, tiện lợi):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I study English online every day. I use <span class="formula-bracket-hl">[công cụ ứng dụng]</span> because it's <span class="formula-bracket-hl">[tính từ]</span> and effective.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🌐 [Kênh trực tuyến & Lợi ích] (Cách 1):",
+                        items: [
+                            { en: "YouTube channels", vn: "các kênh học trên YouTube" },
+                            { en: "free learning websites", vn: "các trang web học tiếng Anh miễn phí" },
+                            { en: "improve my pronunciation", vn: "cải thiện cách phát âm của mình" },
+                            { en: "expand my vocabulary", vn: "mở rộng vốn từ vựng" }
+                        ]
+                    },
+                    {
+                        title: "📱 [Ứng dụng di động & Tiện ích] (Cách 2):",
+                        items: [
+                            { en: "mobile learning apps", vn: "các ứng dụng học tập trên điện thoại" },
+                            { en: "interactive study tools", vn: "các công cụ học tập tương tác" },
+                            { en: "very convenient, flexible, and effective", vn: "rất tiện lợi, linh hoạt và hiệu quả" },
+                            { en: "fun and easy to follow", vn: "vui vẻ và dễ dàng theo dõi" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - Học qua các kênh YouTube, cải thiện phát âm và vốn từ - 20 từ)",
+                        text: "Yes, I do. I usually learn English on YouTube channels. It helps me improve my pronunciation and expand my vocabulary.",
+                        formatted: `→ Yes, I do. I usually learn English on <span class="sub-hl">YouTube channels</span>. It helps me <span class="sub-hl">improve my pronunciation</span> and <span class="sub-hl">expand my vocabulary</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời CÓ - Dùng ứng dụng di động hằng ngày vì tiện lợi và hiệu quả - 19 từ)",
+                        text: "Yes, I study English online every day. I use mobile learning apps because it's very convenient, flexible, and effective.",
+                        formatted: `→ Yes, I study English online every day. I use <span class="sub-hl">mobile learning apps</span> because it's <span class="sub-hl">very convenient, flexible, and effective</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What do you like about studying English online?",
+                qType: "Wh-question: What do you like about studying English online?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Sự linh hoạt vượt trội - Có thể tự do học bất kỳ khi nào và ở bất cứ đâu):</div>
+                    <div class="topic-formula-text">
+                        → What I like most is the flexibility. I can learn <span class="formula-bracket-hl">[thời gian & địa điểm]</span>, so it's very <span class="formula-bracket-hl">[tính từ]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Kho tài liệu phong phú, miễn phí - Nhiều bài giảng video giúp rèn kỹ năng nghe):</div>
+                    <div class="topic-formula-text">
+                        → I really like the rich materials online. There are many <span class="formula-bracket-hl">[loại tài liệu]</span> to help me <span class="formula-bracket-hl">[lợi ích học tập]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "⏰ [Linh hoạt & Tiện lợi] (Cách 1):",
+                        items: [
+                            { en: "anytime and anywhere", vn: "bất cứ lúc nào và ở bất cứ nơi đâu" },
+                            { en: "in my free time at home", vn: "vào thời gian rảnh rỗi tại nhà" },
+                            { en: "convenient and comfortable", vn: "tiện lợi và thoải mái" },
+                            { en: "stress-free", vn: "không bị căng thẳng áp lực" }
+                        ]
+                    },
+                    {
+                        title: "📚 [Tài liệu phong phú & Luyện nghe] (Cách 2):",
+                        items: [
+                            { en: "free video lessons", vn: "nhiều bài học video miễn phí" },
+                            { en: "interactive practice exercises", vn: "các bài tập thực hành tương tác" },
+                            { en: "practice my listening skills", vn: "thực hành rèn luyện kỹ năng nghe" },
+                            { en: "learn new words naturally", vn: "học từ mới một cách tự nhiên" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Sự linh hoạt - Có thể học bất cứ khi nào và bất cứ đâu rất thoải mái - 20 từ)",
+                        text: "What I like most is the flexibility. I can learn anytime and anywhere, so it's very convenient and comfortable.",
+                        formatted: `→ What I like most is <span class="sub-hl">the flexibility</span>. I can learn <span class="sub-hl">anytime and anywhere</span>, so it's very <span class="sub-hl">convenient and comfortable</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Tài liệu phong phú - Nhiều bài giảng video miễn phí giúp luyện nghe - 21 từ)",
+                        text: "I really like the rich materials online. There are many free video lessons to help me practice my listening skills.",
+                        formatted: `→ I really like <span class="sub-hl">the rich materials online</span>. There are many <span class="sub-hl">free video lessons</span> to help me <span class="sub-hl">practice my listening skills</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "How often do you use the Internet to learn English?",
+                qType: "Frequency Wh-question: How often do you use the Internet to learn English?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Học hằng ngày - Dành khoảng 30 phút mỗi tối để duy trì thói quen luyện tập):</div>
+                    <div class="topic-formula-text">
+                        → I use the Internet to learn English <span class="formula-bracket-hl">[tần suất]</span>. I usually spend <span class="formula-bracket-hl">[khoảng thời gian]</span> every night to practice.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Ba đến bốn lần một tuần - Những ngày bận rộn chỉ ôn vài thẻ từ vựng):</div>
+                    <div class="topic-formula-text">
+                        → I usually study online <span class="formula-bracket-hl">[tần suất]</span>. On busy days, I only <span class="formula-bracket-hl">[hành động ngắn]</span> to keep my habit.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "📅 [Tần suất & Thời gian] (Cách 1):",
+                        items: [
+                            { en: "almost every day", vn: "hầu như mỗi ngày" },
+                            { en: "every single evening", vn: "mỗi một buổi tối" },
+                            { en: "about thirty minutes", vn: "khoảng 30 phút" },
+                            { en: "one hour after dinner", vn: "một tiếng sau bữa tối" }
+                        ]
+                    },
+                    {
+                        title: "⏳ [Tần suất & Thói quen ngắn] (Cách 2):",
+                        items: [
+                            { en: "three or four times a week", vn: "ba hoặc bốn lần một tuần" },
+                            { en: "review a few flashcards", vn: "ôn lại một vài thẻ từ vựng" },
+                            { en: "listen to a short podcast", vn: "nghe một mẩu podcast ngắn" },
+                            { en: "keep my habit", vn: "duy trì thói quen học tập của mình" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Học hằng ngày - Dành khoảng 30 phút mỗi tối để duy trì thói quen - 20 từ)",
+                        text: "I use the Internet to learn English almost every day. I usually spend about thirty minutes every night to practice.",
+                        formatted: `→ I use the Internet to learn English <span class="sub-hl">almost every day</span>. I usually spend <span class="sub-hl">about thirty minutes</span> every night to practice.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Ba đến bốn lần mỗi tuần - Những ngày bận chỉ ôn thẻ từ vựng - 21 từ)",
+                        text: "I usually study online three or four times a week. On busy days, I only review flashcards to keep my habit.",
+                        formatted: `→ I usually study online <span class="sub-hl">three or four times a week</span>. On busy days, I only <span class="sub-hl">review a few flashcards</span> to keep my habit.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 22,
+        title: "Chủ đề 22: Let's talk about using mobile phones",
+        introText: "Let’s talk about using mobile phones.",
+        questions: [
+            {
+                qNum: 1,
+                question: "How often do you use your mobile phone?",
+                qType: "Frequency Wh-question: How often do you use your mobile phone?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Dùng hằng ngày - Công cụ thiết yếu phục vụ liên lạc, công việc và học tập):</div>
+                    <div class="topic-formula-text">
+                        → I use my mobile phone every day. It's an essential tool for my <span class="formula-bracket-hl">[mục đích 1]</span> and <span class="formula-bracket-hl">[mục đích 2]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Dùng vài tiếng mỗi ngày nhưng chủ động giới hạn thời gian để bảo vệ mắt):</div>
+                    <div class="topic-formula-text">
+                        → I use it several hours a day. However, I'm trying to <span class="formula-bracket-hl">[hành động giới hạn]</span> to protect my eyes.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "📲 [Mục đích thiết yếu] (Cách 1):",
+                        items: [
+                            { en: "daily communication", vn: "liên lạc thường ngày" },
+                            { en: "work and my studies", vn: "công việc và việc học của tôi" },
+                            { en: "keeping in touch with family", vn: "giữ liên lạc với gia đình người thân" },
+                            { en: "checking important updates", vn: "kiểm tra các cập nhật quan trọng" }
+                        ]
+                    },
+                    {
+                        title: "⏱️ [Giới hạn thời gian màn hình] (Cách 2):",
+                        items: [
+                            { en: "limit my screen time", vn: "hạn chế thời gian nhìn vào màn hình" },
+                            { en: "reduce phone use at night", vn: "giảm bớt dùng điện thoại vào ban đêm" },
+                            { en: "protect my eyes", vn: "bảo vệ đôi mắt của mình" },
+                            { en: "avoid eye strain", vn: "tránh bị mỏi mắt" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Dùng hằng ngày - Công cụ thiết yếu cho liên lạc, công việc và học tập - 19 từ)",
+                        text: "I use my mobile phone every day. It's an essential tool for my daily communication, work, and my studies.",
+                        formatted: `→ I use my mobile phone every day. It's an essential tool for my <span class="sub-hl">daily communication</span>, work, and <span class="sub-hl">my studies</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Dùng vài tiếng mỗi ngày nhưng cố gắng hạn chế để bảo vệ mắt - 19 từ)",
+                        text: "I use it several hours a day. However, I'm trying to limit my screen time to protect my eyes.",
+                        formatted: `→ I use it several hours a day. However, I'm trying to <span class="sub-hl">limit my screen time</span> to <span class="sub-hl">protect my eyes</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What do you mostly use your phone for?",
+                qType: "Wh-question: What do you mostly use your phone for?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Giải trí thư giãn - Nghe nhạc yêu thích và lướt mạng xã hội sau ngày bận rộn):</div>
+                    <div class="topic-formula-text">
+                        → I mostly use my phone to <span class="formula-bracket-hl">[hoạt động giải trí 1]</span> and <span class="formula-bracket-hl">[hoạt động giải trí 2]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Phục vụ học tập - Tra cứu thông tin hữu ích và trao đổi tài liệu với bạn học):</div>
+                    <div class="topic-formula-text">
+                        → I mainly use it for my studies. I often <span class="formula-bracket-hl">[hoạt động học tập]</span> and <span class="formula-bracket-hl">[hoạt động trao đổi]</span> with my classmates.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🎵 [Giải trí trên điện thoại] (Cách 1):",
+                        items: [
+                            { en: "listen to favorite songs", vn: "nghe những bài hát yêu thích" },
+                            { en: "check social media", vn: "lướt các trang mạng xã hội" },
+                            { en: "watch funny short videos", vn: "xem các video ngắn hài hước" },
+                            { en: "relax after a busy day", vn: "thư giãn sau một ngày bận rộn" }
+                        ]
+                    },
+                    {
+                        title: "📑 [Học tập & Tra cứu] (Cách 2):",
+                        items: [
+                            { en: "search for useful information", vn: "tìm kiếm những thông tin hữu ích" },
+                            { en: "exchange study materials with my classmates", vn: "trao đổi tài liệu học tập cùng bạn học" },
+                            { en: "read educational articles", vn: "đọc các bài viết kiến thức giáo dục" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Nghe nhạc và lướt mạng xã hội để thư giãn sau ngày bận rộn - 21 từ)",
+                        text: "I mostly use my phone to listen to favorite songs and check social media. It helps me relax after a busy day.",
+                        formatted: `→ I mostly use my phone to <span class="sub-hl">listen to favorite songs</span> and <span class="sub-hl">check social media</span>. It helps me <span class="sub-hl">relax after a busy day</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Phục vụ học tập - Tra cứu thông tin và trao đổi tài liệu học với bạn - 20 từ)",
+                        text: "I mainly use it for my studies. I often search for useful information and exchange study materials with my classmates.",
+                        formatted: `→ I mainly use it for my studies. I often <span class="sub-hl">search for useful information</span> and <span class="sub-hl">exchange study materials with my classmates</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Do you think students should use mobile phones at school?",
+                qType: "Yes/No: Do you think students should [verb]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ NHƯNG CẦN QUY TẮC NGHIÊM NGẶT - Tra cứu tài liệu dưới sự hướng dẫn của giáo viên):</div>
+                    <div class="topic-formula-text">
+                        → Yes, but with strict rules. Students should use phones to <span class="formula-bracket-hl">[mục đích học tập]</span> under the teacher's guidance.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG NÊN - Điện thoại dễ gây xao nhãng, khiến học sinh mất tập trung vào bài học):</div>
+                    <div class="topic-formula-text">
+                        → No, I don't think so. Phones easily cause <span class="formula-bracket-hl">[tác hại tiêu cực]</span>, so students cannot <span class="formula-bracket-hl">[ảnh hưởng xấu]</span> during class.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🧑‍🏫 [Quy tắc & Học tập] (Cách 1):",
+                        items: [
+                            { en: "search for lesson materials", vn: "tìm kiếm tài liệu phục vụ bài học" },
+                            { en: "look up new vocabulary", vn: "tra cứu từ vựng mới" },
+                            { en: "teacher's careful guidance", vn: "sự hướng dẫn cẩn thận của thầy cô" }
+                        ]
+                    },
+                    {
+                        title: "📵 [Xao nhãng & Bất lợi] (Cách 2):",
+                        items: [
+                            { en: "major distractions", vn: "sự xao nhãng lớn" },
+                            { en: "gaming addiction", vn: "nghiện chơi game" },
+                            { en: "focus on their lessons during class", vn: "tập trung vào bài học trong giờ lên lớp" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - Dùng tra cứu tài liệu học dưới sự hướng dẫn chu đáo của thầy cô - 19 từ)",
+                        text: "Yes, but with strict rules. Students should use phones to search for lesson materials under the teacher's careful guidance.",
+                        formatted: `→ Yes, but with strict rules. Students should use phones to <span class="sub-hl">search for lesson materials</span> under the <span class="sub-hl">teacher's careful guidance</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Dễ gây mất tập trung, không chú ý bài giảng trên lớp - 20 từ)",
+                        text: "No, I don't think so. Phones easily cause major distractions, so students cannot focus on their lessons during class.",
+                        formatted: `→ No, I don't think so. Phones easily cause <span class="sub-hl">major distractions</span>, so students cannot <span class="sub-hl">focus on their lessons during class</span>.`
+                    }
+                ]
+            }
+        ]
     }
 
 ];
