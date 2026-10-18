@@ -7145,6 +7145,336 @@ const practiceTopicsData = [
                 ]
             }
         ]
+    },
+    {
+        id: 17,
+        title: "Chủ đề 17: Let's talk about traveling",
+        introText: "Let’s talk about traveling.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Do you like travelling?",
+                qType: "Yes/No: Do you like [noun/V-ing]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Rất thích đi du lịch để khám phá vùng đất mới và xả stress):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I do. I'm a big fan of traveling because I can <span class="formula-bracket-hl">[hoạt động trải nghiệm]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời THÍCH NHƯNG BẬN - Thích đi nhưng bận rộn, chỉ đi vào các kỳ nghỉ dài):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I really like it. However, I'm often busy with my <span class="formula-bracket-hl">[lý do bận]</span>, so I only travel <span class="formula-bracket-hl">[thời điểm rảnh]</span> to <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "✈️ [Trải nghiệm & Khám phá] (Cách 1):",
+                        items: [
+                            { en: "explore new places", vn: "khám phá những vùng đất mới lạ" },
+                            { en: "try delicious local food", vn: "thưởng thức các món đặc sản địa phương" },
+                            { en: "see beautiful landscapes", vn: "ngắm nhìn nhiều danh lam thắng cảnh đẹp" }
+                        ]
+                    },
+                    {
+                        title: "🎉 [Lợi ích giải trí] (Cách 1):",
+                        items: [
+                            { en: "relax after hard work", vn: "thư giãn sau thời gian làm việc vất vả" },
+                            { en: "clear my mind", vn: "thư thái đầu óc" },
+                            { en: "escape from daily stress", vn: "thoát khỏi những áp lực thường nhật" },
+                            { en: "widen my knowledge", vn: "mở mang thêm tầm hiểu biết" }
+                        ]
+                    },
+                    {
+                        title: "⏳ [Lý do & Dịp du lịch] (Cách 2):",
+                        items: [
+                            { en: "work and studies", vn: "công việc và học tập bận rộn" },
+                            { en: "daily work", vn: "công việc hằng ngày" },
+                            { en: "during long holidays", vn: "vào các dịp nghỉ lễ dài ngày" },
+                            { en: "once a year in summer", vn: "mỗi năm một lần vào mùa hè" },
+                            { en: "recharge my energy", vn: "nạp lại năng lượng cho bản thân" },
+                            { en: "unwind with friends", vn: "thư giãn xả hơi cùng bạn bè" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - Khám phá vùng đất mới, thư giãn sau thời gian làm việc vất vả - 21 từ)",
+                        text: "Yes, I do. I'm a big fan of traveling because I can explore new places. It helps me relax after hard work.",
+                        formatted: `→ Yes, I do. I'm a big fan of traveling because I can <span class="sub-hl">explore new places</span>. It helps me <span class="sub-hl">relax after hard work</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời THÍCH NHƯNG BẬN - Bận công việc, chỉ đi vào các kỳ nghỉ dài để xả hơi - 21 từ)",
+                        text: "Yes, I really like it. However, I'm often busy with my work, so I only travel during long holidays to unwind.",
+                        formatted: `→ Yes, I really like it. However, I'm often busy with my <span class="sub-hl">work</span>, so I only travel <span class="sub-hl">during long holidays</span> to <span class="sub-hl">unwind</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "Do you like to travel alone or in a group?",
+                qType: "Choice question: Do you like to travel [alone] or [in a group]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Đi theo nhóm/bạn bè - Chia sẻ chi phí và có nhiều khoảnh khắc vui vẻ cùng nhau):</div>
+                    <div class="topic-formula-text">
+                        → I prefer traveling in a group with my <span class="formula-bracket-hl">[đối tượng]</span>. We can <span class="formula-bracket-hl">[hành động hỗ trợ]</span> and have <span class="formula-bracket-hl">[lợi ích giải trí]</span> together.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Đi một mình - Tự do lên lịch trình và tận hưởng sự thư thái theo nhịp riêng):</div>
+                    <div class="topic-formula-text">
+                        → I prefer traveling alone because I can <span class="formula-bracket-hl">[lý do tự do]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí]</span> at my own pace.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "👥 [Đi nhóm & Gắn kết] (Cách 1):",
+                        items: [
+                            { en: "close friends", vn: "những người bạn thân thiết" },
+                            { en: "family members", vn: "các thành viên trong gia đình" },
+                            { en: "share travel costs", vn: "chia sẻ chi phí chuyến đi" },
+                            { en: "take nice photos for each other", vn: "chụp nhiều ảnh đẹp cho nhau" },
+                            { en: "have lots of fun together", vn: "có nhiều niềm vui cùng nhau" },
+                            { en: "enjoy memorable moments", vn: "tận hưởng những khoảnh khắc đáng nhớ" }
+                        ]
+                    },
+                    {
+                        title: "🚶 [Đi một mình & Tự do] (Cách 2):",
+                        items: [
+                            { en: "plan my own schedule", vn: "tự lên kế hoạch và lịch trình của riêng mình" },
+                            { en: "choose any place freely", vn: "tự do lựa chọn bất kỳ điểm đến nào" },
+                            { en: "enjoy quiet moments", vn: "tận hưởng những khoảnh khắc yên tĩnh" },
+                            { en: "clear my mind at my own pace", vn: "thư thái đầu óc theo nhịp độ của riêng mình" },
+                            { en: "relax completely", vn: "thư giãn một cách trọn vẹn" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Đi theo nhóm bạn thân - Chia sẻ chi phí và có nhiều niềm vui cùng nhau - 21 từ)",
+                        text: "I prefer traveling in a group with my close friends. We can share travel costs and have lots of fun together.",
+                        formatted: `→ I prefer traveling in a group with my <span class="sub-hl">close friends</span>. We can <span class="sub-hl">share travel costs</span> and <span class="sub-hl">have lots of fun together</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Đi một mình - Tự do lên lịch trình, thư thái đầu óc theo nhịp riêng - 20 từ)",
+                        text: "I prefer traveling alone because I can plan my own schedule. It helps me clear my mind at my own pace.",
+                        formatted: `→ I prefer traveling alone because I can <span class="sub-hl">plan my own schedule</span>. It helps me <span class="sub-hl">clear my mind at my own pace</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "In which season do you prefer to travel?",
+                qType: "Wh-question: In which season do you prefer to travel?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Mùa hè - Thời tiết nắng ấm, lý tưởng để đi tắm biển):</div>
+                    <div class="topic-formula-text">
+                        → I prefer traveling in <span class="formula-bracket-hl">[mùa trong năm]</span> because the weather is <span class="formula-bracket-hl">[đặc điểm thời tiết]</span>. It's perfect to <span class="formula-bracket-hl">[hoạt động du lịch]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Mùa thu - Tiết trời mát mẻ trong lành, thoải mái đi dạo thưởng ngoạn thiên nhiên):</div>
+                    <div class="topic-formula-text">
+                        → I like traveling in <span class="formula-bracket-hl">[mùa trong năm]</span> because the air is <span class="formula-bracket-hl">[đặc điểm thời tiết]</span>. I can <span class="formula-bracket-hl">[hoạt động ngắm cảnh]</span> comfortably.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "☀️ [Mùa hè & Biển] (Cách 1):",
+                        items: [
+                            { en: "summer", vn: "mùa hè" },
+                            { en: "sunny and warm", vn: "nắng ráo và ấm áp" },
+                            { en: "bright and clear", vn: "trời trong xanh sáng sủa" },
+                            { en: "visit beautiful beaches and swim", vn: "đến thăm bãi biển đẹp và tắm mát" },
+                            { en: "enjoy fresh seafood", vn: "thưởng thức hải sản tươi sống" }
+                        ]
+                    },
+                    {
+                        title: "🍂 [Mùa thu & Dạo chơi] (Cách 2):",
+                        items: [
+                            { en: "autumn", vn: "mùa thu" },
+                            { en: "spring", vn: "mùa xuân" },
+                            { en: "cool and fresh", vn: "mát mẻ và trong lành" },
+                            { en: "walk around and enjoy nature", vn: "đi dạo xung quanh và thưởng ngoạn thiên nhiên" },
+                            { en: "take photos easily", vn: "chụp ảnh dễ dàng thuận tiện" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Mùa hè - Thời tiết nắng ấm, hoàn hảo để đi biển tắm mát - 20 từ)",
+                        text: "I prefer traveling in summer because the weather is sunny and warm. It's perfect to visit beautiful beaches and swim.",
+                        formatted: `→ I prefer traveling in <span class="sub-hl">summer</span> because the weather is <span class="sub-hl">sunny and warm</span>. It's perfect to <span class="sub-hl">visit beautiful beaches and swim</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Mùa thu - Không khí mát mẻ trong lành, thoải mái đi dạo thưởng ngoạn thiên nhiên - 19 từ)",
+                        text: "I like traveling in autumn because the air is cool and fresh. I can walk around and enjoy nature comfortably.",
+                        formatted: `→ I like traveling in <span class="sub-hl">autumn</span> because the air is <span class="sub-hl">cool and fresh</span>. I can <span class="sub-hl">walk around and enjoy nature</span> comfortably.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 18,
+        title: "Chủ đề 18: Let's talk about holidays",
+        introText: "Let’s talk about holidays.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Where did you go on your last holiday?",
+                qType: "Past Wh-question: Where did you go on your last holiday?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Đi du lịch biển/thành phố lớn cùng gia đình - Tắm biển và ăn hải sản tươi):</div>
+                    <div class="topic-formula-text">
+                        → On my last holiday, I went to <span class="formula-bracket-hl">[địa điểm du lịch]</span> with my <span class="formula-bracket-hl">[đối tượng]</span>. We <span class="formula-bracket-hl">[hoạt động quá khứ]</span> and had great fun.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Về quê thăm ông bà/người thân - Không gian thanh bình và thư thái):</div>
+                    <div class="topic-formula-text">
+                        → During my last holiday, I returned to my <span class="formula-bracket-hl">[nơi chốn]</span> to visit my <span class="formula-bracket-hl">[đối tượng người thân]</span>. It was very <span class="formula-bracket-hl">[tính từ]</span> for me.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🏖️ [Địa điểm & Hoạt động quá khứ] (Cách 1):",
+                        items: [
+                            { en: "Da Nang city", vn: "thành phố Đà Nẵng" },
+                            { en: "Vung Tau beach", vn: "bãi biển Vũng Tàu" },
+                            { en: "Phu Quoc island", vn: "đảo Phú Quốc" },
+                            { en: "family", vn: "gia đình" },
+                            { en: "close friends", vn: "bạn bè thân thiết" },
+                            { en: "swam in the sea", vn: "đã tắm biển" },
+                            { en: "ate fresh seafood", vn: "đã thưởng thức hải sản tươi sống" }
+                        ]
+                    },
+                    {
+                        title: "🏡 [Quê hương & Người thân] (Cách 2):",
+                        items: [
+                            { en: "hometown", vn: "quê hương" },
+                            { en: "peaceful village", vn: "làng quê yên bình" },
+                            { en: "grandparents", vn: "ông bà" },
+                            { en: "relatives", vn: "họ hàng người thân" },
+                            { en: "peaceful and relaxing", vn: "thanh bình và thư thái" },
+                            { en: "warm and cozy", vn: "ấm cúng và gần gũi" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Đi du lịch Đà Nẵng cùng gia đình - Tắm biển và vui chơi thỏa thích - 21 từ)",
+                        text: "On my last holiday, I went to Da Nang city with my family. We swam in the sea and had great fun.",
+                        formatted: `→ On my last holiday, I went to <span class="sub-hl">Da Nang city</span> with my <span class="sub-hl">family</span>. We <span class="sub-hl">swam in the sea</span> and had great fun.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Về quê thăm ông bà - Không gian thanh bình và thư thái - 20 từ)",
+                        text: "During my last holiday, I returned to my hometown to visit my grandparents. It was very peaceful and relaxing for me.",
+                        formatted: `→ During my last holiday, I returned to my <span class="sub-hl">hometown</span> to visit my <span class="sub-hl">grandparents</span>. It was very <span class="sub-hl">peaceful and relaxing</span> for me.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "Do you like holidays?",
+                qType: "Yes/No: Do you like [noun]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Rất thích kỳ nghỉ - Dịp nghỉ ngơi tốt và xua tan căng thẳng công việc):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I love holidays very much. They give me time to <span class="formula-bracket-hl">[lợi ích sức khỏe]</span> and <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Cơ hội sum họp gia đình và dành thời gian ấm cúng bên nhau):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I do. Holidays are a great chance to <span class="formula-bracket-hl">[hành động sum họp]</span> with my <span class="formula-bracket-hl">[đối tượng]</span> and <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🛌 [Sức khỏe & Giải trí] (Cách 1):",
+                        items: [
+                            { en: "rest well", vn: "nghỉ ngơi thật tốt" },
+                            { en: "sleep more", vn: "ngủ nhiều hơn" },
+                            { en: "recover my health", vn: "phục hồi sức khỏe" },
+                            { en: "escape from daily work stress", vn: "thoát khỏi căng thẳng công việc hằng ngày" },
+                            { en: "clear my mind", vn: "thư thái đầu óc" }
+                        ]
+                    },
+                    {
+                        title: "👨‍👩‍👧‍👦 [Sum họp & Gắn kết] (Cách 2):",
+                        items: [
+                            { en: "gather with my family", vn: "sum họp quây quần bên gia đình" },
+                            { en: "reunite after a long time", vn: "đoàn tụ sau thời gian dài" },
+                            { en: "spend quality time with each other", vn: "dành thời gian quý giá bên nhau" },
+                            { en: "share memorable stories", vn: "chia sẻ những mẩu chuyện đáng nhớ" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Rất thích kỳ nghỉ - Nghỉ ngơi tốt và xua tan căng thẳng công việc - 19 từ)",
+                        text: "Yes, I love holidays very much. They give me time to rest well and escape from daily work stress.",
+                        formatted: `→ Yes, I love holidays very much. They give me time to <span class="sub-hl">rest well</span> and <span class="sub-hl">escape from daily work stress</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Cơ hội sum họp gia đình và dành thời gian quý báu bên nhau - 20 từ)",
+                        text: "Yes, I do. Holidays are a great chance to gather with my family and spend quality time with each other.",
+                        formatted: `→ Yes, I do. Holidays are a great chance to <span class="sub-hl">gather with my family</span> and <span class="sub-hl">spend quality time with each other</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "What do people in your country usually do during holidays?",
+                qType: "Wh-question: What do people usually do during [holiday]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Về quê sum họp gia đình và cùng nhau nấu các bữa cơm truyền thống):</div>
+                    <div class="topic-formula-text">
+                        → In my country, many people often <span class="formula-bracket-hl">[hành động về quê]</span> to visit <span class="formula-bracket-hl">[đối tượng]</span>. They usually <span class="formula-bracket-hl">[hoạt động truyền thống]</span> together.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Đi du lịch nghỉ mát tại các bãi biển để xả stress và chụp ảnh):</div>
+                    <div class="topic-formula-text">
+                        → Others like to <span class="formula-bracket-hl">[hoạt động du lịch]</span> to famous <span class="formula-bracket-hl">[địa điểm du lịch]</span>. It helps them <span class="formula-bracket-hl">[lợi ích giải trí]</span> and take photos.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🏮 [Về quê & Hoạt động] (Cách 1):",
+                        items: [
+                            { en: "return to their hometowns", vn: "trở về quê hương" },
+                            { en: "travel back home", vn: "quay trở về nhà" },
+                            { en: "family", vn: "gia đình và người thân" },
+                            { en: "cook traditional meals together", vn: "cùng nhau nấu các bữa ăn truyền thống" },
+                            { en: "celebrate together", vn: "cùng nhau ăn mừng vui vẻ" }
+                        ]
+                    },
+                    {
+                        title: "🏖️ [Nghỉ mát & Giải trí] (Cách 2):",
+                        items: [
+                            { en: "go on vacation to famous beach cities", vn: "đi nghỉ mát tại các thành phố biển nổi tiếng" },
+                            { en: "take short trips", vn: "thực hiện những chuyến du lịch ngắn ngày" },
+                            { en: "relax after hard work", vn: "thư giãn sau thời gian làm việc vất vả" },
+                            { en: "enjoy the festive atmosphere", vn: "hòa mình vào bầu không khí lễ hội náo nhiệt" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Về quê thăm gia đình và cùng nhau nấu bữa ăn truyền thống - 19 từ)",
+                        text: "In my country, many people often return to their hometowns to visit family. They usually cook traditional meals together.",
+                        formatted: `→ In my country, many people often <span class="sub-hl">return to their hometowns</span> to visit family. They usually <span class="sub-hl">cook traditional meals together</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Đi nghỉ mát tại các thành phố biển - Thư giãn sau thời gian làm việc vất vả - 20 từ)",
+                        text: "Others like to go on vacation to famous beach cities. It helps them relax after hard work and take photos.",
+                        formatted: `→ Others like to <span class="sub-hl">go on vacation to famous beach cities</span>. It helps them <span class="sub-hl">relax after hard work</span> and take photos.`
+                    }
+                ]
+            }
+        ]
     }
 
 ];
