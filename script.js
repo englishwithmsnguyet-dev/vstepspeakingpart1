@@ -6819,6 +6819,332 @@ const practiceTopicsData = [
                 ]
             }
         ]
+    },
+    {
+        id: 15,
+        title: "Chủ đề 15: Let's talk about shopping habits",
+        introText: "Let’s talk about shopping habits.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Do you often go shopping?",
+                qType: "Yes/No: Do you often [Vo]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Đi mua sắm cuối tuần, xem như một cách thư giãn giải trí):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I do. I usually go shopping <span class="formula-bracket-hl">[tần suất]</span> to buy <span class="formula-bracket-hl">[mặt hàng]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời HIẾM KHI - Chỉ mua khi thực sự cần, ưu tiên mua online để tiết kiệm thời gian):</div>
+                    <div class="topic-formula-text">
+                        → Not really. I only go shopping when I <span class="formula-bracket-hl">[tình huống]</span>. I prefer <span class="formula-bracket-hl">[hình thức mua sắm]</span> to save time.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🛒 [Tần suất & Mặt hàng] (Cách 1):",
+                        items: [
+                            { en: "at weekends", vn: "vào những ngày cuối tuần" },
+                            { en: "once or twice a week", vn: "một hoặc hai lần mỗi tuần" },
+                            { en: "daily groceries", vn: "đồ tạp hóa tiêu dùng hằng ngày" },
+                            { en: "fresh food and clothes", vn: "thực phẩm tươi sống và quần áo" }
+                        ]
+                    },
+                    {
+                        title: "🎉 [Lợi ích giải trí] (Cách 1):",
+                        items: [
+                            { en: "relax after a busy week", vn: "thư giãn sau một tuần bận rộn" },
+                            { en: "clear my mind", vn: "thư thái đầu óc" },
+                            { en: "enjoy my free time", vn: "tận hưởng thời gian rảnh rỗi" }
+                        ]
+                    },
+                    {
+                        title: "📱 [Tình huống & Hình thức mua sắm] (Cách 2):",
+                        items: [
+                            { en: "really need something", vn: "thực sự cần mua món đồ gì đó" },
+                            { en: "run out of food", vn: "hết sạch đồ ăn trong nhà" },
+                            { en: "shopping online", vn: "mua sắm trực tuyến qua mạng" },
+                            { en: "buying things on apps", vn: "mua đồ trên các ứng dụng điện thoại" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - Đi mua sắm cuối tuần, thư giãn sau tuần bận rộn - 21 từ)",
+                        text: "Yes, I do. I usually go shopping at weekends to buy daily groceries. It helps me relax after a busy week.",
+                        formatted: `→ Yes, I do. I usually go shopping <span class="sub-hl">at weekends</span> to buy <span class="sub-hl">daily groceries</span>. It helps me <span class="sub-hl">relax after a busy week</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời HIẾM KHI - Chỉ mua khi thực sự cần, ưu tiên mua online - 20 từ)",
+                        text: "Not really. I only go shopping when I really need something. I prefer shopping online to save time and energy.",
+                        formatted: `→ Not really. I only go shopping when I <span class="sub-hl">really need something</span>. I prefer <span class="sub-hl">shopping online</span> to save time and energy.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "In your free time, who do you often go shopping with?",
+                qType: "Wh-question: Who do you often go shopping with?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Đi cùng mẹ/gia đình - Cùng chọn đồ tươi và dành thời gian ấm cúng bên nhau):</div>
+                    <div class="topic-formula-text">
+                        → I usually go shopping with my <span class="formula-bracket-hl">[thành viên gia đình]</span>. We often <span class="formula-bracket-hl">[hành động cùng nhau]</span> and <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Đi cùng bạn thân - Nhận lời khuyên chọn đồ thời trang và cải thiện tâm trạng):</div>
+                    <div class="topic-formula-text">
+                        → I prefer going with my <span class="formula-bracket-hl">[đối tượng bạn bè]</span>. They give me <span class="formula-bracket-hl">[hành động hỗ trợ]</span> and help me <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "👩‍👧 [Gia đình & Gắn kết] (Cách 1):",
+                        items: [
+                            { en: "mother", vn: "mẹ của tôi" },
+                            { en: "sister", vn: "chị / em gái" },
+                            { en: "family", vn: "gia đình" },
+                            { en: "choose fresh food together", vn: "cùng nhau lựa chọn thực phẩm tươi ngon" },
+                            { en: "spend quality time with each other", vn: "dành thời gian quý giá bên nhau" },
+                            { en: "enjoy our free time", vn: "tận hưởng thời gian rảnh rỗi" }
+                        ]
+                    },
+                    {
+                        title: "👗 [Bạn bè & Lời khuyên] (Cách 2):",
+                        items: [
+                            { en: "best friends", vn: "những người bạn thân nhất" },
+                            { en: "close friends", vn: "bạn bè thân thiết" },
+                            { en: "good advice on clothes", vn: "lời khuyên hữu ích về việc chọn đồ" },
+                            { en: "helpful fashion tips", vn: "các mẹo phối đồ thời trang" },
+                            { en: "improve my mood", vn: "cải thiện tâm trạng vui tươi" },
+                            { en: "have fun", vn: "vui vẻ bên nhau" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Đi cùng mẹ - Cùng chọn đồ tươi và dành thời gian ấm cúng bên nhau - 21 từ)",
+                        text: "I usually go shopping with my mother. We often choose fresh food together and spend quality time with each other.",
+                        formatted: `→ I usually go shopping with my <span class="sub-hl">mother</span>. We often <span class="sub-hl">choose fresh food together</span> and <span class="sub-hl">spend quality time with each other</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Đi cùng bạn thân - Nhận lời khuyên chọn đồ và cải thiện tâm trạng - 21 từ)",
+                        text: "I prefer going with my best friends. They give me good advice on clothes and help me improve my mood.",
+                        formatted: `→ I prefer going with my <span class="sub-hl">best friends</span>. They give me <span class="sub-hl">good advice on clothes</span> and help me <span class="sub-hl">improve my mood</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Do you think that you spend too much money on shopping?",
+                qType: "Yes/No: Do you think that you [verb]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời KHÔNG - Luôn lên danh sách trước khi mua để tiết kiệm và tránh lãng phí):</div>
+                    <div class="topic-formula-text">
+                        → No, I don't. I always <span class="formula-bracket-hl">[thói quen chi tiêu]</span> before buying. It helps me <span class="formula-bracket-hl">[lợi ích tài chính]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời ĐÔI KHI - Thỉnh thoảng mua sắm ngẫu hứng đồ giảm giá, đang cố kiểm soát):</div>
+                    <div class="topic-formula-text">
+                        → Sometimes, I do. I occasionally buy <span class="formula-bracket-hl">[mặt hàng ngẫu hứng]</span> on sale. However, I'm trying to <span class="formula-bracket-hl">[mục tiêu kiểm soát]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "📝 [Thói quen chi tiêu & Lợi ích] (Cách 1):",
+                        items: [
+                            { en: "make a shopping list", vn: "lập danh sách các món cần mua" },
+                            { en: "check my budget", vn: "kiểm tra lại ngân sách chi tiêu" },
+                            { en: "buy necessary things only", vn: "chỉ mua những món thực sự cần thiết" },
+                            { en: "save money and avoid overspending", vn: "tiết kiệm tiền và tránh chi tiêu quá tay" },
+                            { en: "manage my money well", vn: "quản lý tiền bạc một cách hiệu quả" }
+                        ]
+                    },
+                    {
+                        title: "💸 [Chi tiêu ngẫu hứng & Kiểm soát] (Cách 2):",
+                        items: [
+                            { en: "unnecessary clothes", vn: "quần áo không thật sự cần thiết" },
+                            { en: "random online items", vn: "những món đồ ngẫu hứng trên mạng" },
+                            { en: "cute accessories", vn: "các món phụ kiện dễ thương" },
+                            { en: "control my monthly spending", vn: "kiểm soát các khoản chi tiêu hằng tháng" },
+                            { en: "save more money", vn: "tiết kiệm được nhiều tiền hơn" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời KHÔNG - Luôn lên danh sách trước để tiết kiệm tiền và tránh chi tiêu quá tay - 21 từ)",
+                        text: "No, I don't. I always make a shopping list before buying. It helps me save money and avoid overspending.",
+                        formatted: `→ No, I don't. I always <span class="sub-hl">make a shopping list</span> before buying. It helps me <span class="sub-hl">save money and avoid overspending</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời ĐÔI KHI - Thỉnh thoảng mua quần áo giảm giá ngẫu hứng, đang cố kiểm soát - 21 từ)",
+                        text: "Sometimes, I do. I occasionally buy unnecessary clothes on sale. However, I'm trying to control my monthly spending.",
+                        formatted: `→ Sometimes, I do. I occasionally buy <span class="sub-hl">unnecessary clothes on sale</span>. However, I'm trying to <span class="sub-hl">control my monthly spending</span>.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 16,
+        title: "Chủ đề 16: Let's talk about prices and shopping habits",
+        introText: "Let’s talk about prices and shopping habits.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Do you usually check the price before buying something? Why or why not?",
+                qType: "Yes/No + Wh-question: Do you usually check the price before buying something? Why or why not?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - So sánh giữa các nhãn hàng để quản lý tốt ngân sách chi tiêu):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I always check the price. It helps me <span class="formula-bracket-hl">[hành động so sánh]</span> and <span class="formula-bracket-hl">[lợi ích tài chính]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời TÙY MÓN - Đồ ăn vặt rẻ thì mua luôn, đồ điện tử đắt tiền mới cân nhắc kỹ):</div>
+                    <div class="topic-formula-text">
+                        → It depends on the item. For <span class="formula-bracket-hl">[món đồ rẻ]</span>, I buy right away, but for <span class="formula-bracket-hl">[món đồ đắt]</span>, I consider carefully.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🏷️ [So sánh & Quản lý ngân sách] (Cách 1):",
+                        items: [
+                            { en: "compare different brands", vn: "so sánh giữa các thương hiệu khác nhau" },
+                            { en: "find the best deal", vn: "tìm kiếm mức giá ưu đãi nhất" },
+                            { en: "avoid wasting money", vn: "tránh lãng phí tiền bạc" },
+                            { en: "manage my monthly budget well", vn: "quản lý ngân sách hằng tháng hiệu quả" }
+                        ]
+                    },
+                    {
+                        title: "⚖️ [Phân loại hàng hóa] (Cách 2):",
+                        items: [
+                            { en: "cheap daily food", vn: "đồ ăn hằng ngày giá rẻ" },
+                            { en: "small snacks", vn: "các món ăn vặt nhỏ" },
+                            { en: "expensive electronics", vn: "thiết bị điện tử đắt tiền" },
+                            { en: "high-end products", vn: "các sản phẩm cao cấp đắt đỏ" },
+                            { en: "valuable items", vn: "những món đồ có giá trị lớn" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - So sánh các nhãn hàng và quản lý tốt ngân sách hằng tháng - 20 từ)",
+                        text: "Yes, I always check the price. It helps me compare different brands and manage my monthly budget well.",
+                        formatted: `→ Yes, I always check the price. It helps me <span class="sub-hl">compare different brands</span> and <span class="sub-hl">manage my monthly budget well</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời TÙY MÓN - Đồ ăn rẻ mua ngay, đồ điện tử đắt tiền cân nhắc kỹ - 21 từ)",
+                        text: "It depends on the item. For cheap daily food, I buy right away, but for expensive electronics, I consider carefully.",
+                        formatted: `→ It depends on the item. For <span class="sub-hl">cheap daily food</span>, I buy right away, but for <span class="sub-hl">expensive electronics</span>, I consider carefully.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "With the increase in prices, do you think more carefully before making a purchase? Why?",
+                qType: "Yes/No + Wh-question: With the increase in prices, do you think more carefully? Why?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Chi phí sinh hoạt tăng nhanh nên chỉ mua đồ thiết yếu để tiết kiệm):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I do. Living costs are <span class="formula-bracket-hl">[tính từ]</span> now, so I only buy <span class="formula-bracket-hl">[loại mặt hàng]</span> to <span class="formula-bracket-hl">[mục đích tiết kiệm]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời CÓ - Cân nhắc kỹ và so sánh giá giữa các ứng dụng để tìm ưu đãi tốt nhất):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I think twice before buying. I usually <span class="formula-bracket-hl">[hành động so sánh]</span> to find <span class="formula-bracket-hl">[kết quả mong đợi]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "📈 [Chi phí & Ưu tiên] (Cách 1):",
+                        items: [
+                            { en: "rising quickly now", vn: "đang tăng lên nhanh chóng hiện nay" },
+                            { en: "very high", vn: "rất cao" },
+                            { en: "essential items", vn: "các mặt hàng thiết yếu" },
+                            { en: "basic necessities", vn: "các nhu yếu phẩm cơ bản" },
+                            { en: "save money for emergencies", vn: "tiết kiệm tiền cho các trường hợp khẩn cấp" },
+                            { en: "cut down on luxury goods", vn: "cắt giảm các mặt hàng xa xỉ" }
+                        ]
+                    },
+                    {
+                        title: "🔍 [So sánh & Khuyến mãi] (Cách 2):",
+                        items: [
+                            { en: "compare prices on different shopping apps", vn: "so sánh giá trên nhiều ứng dụng mua sắm" },
+                            { en: "look for discount codes", vn: "tìm kiếm các mã giảm giá" },
+                            { en: "compare several stores", vn: "so sánh đối chiếu nhiều cửa hàng" },
+                            { en: "find the best deals", vn: "tìm được những mức giá ưu đãi nhất" },
+                            { en: "affordable options", vn: "những lựa chọn vừa túi tiền" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - Chi phí sinh hoạt tăng nhanh, chỉ mua đồ thiết yếu để tiết kiệm dự phòng - 20 từ)",
+                        text: "Yes, I do. Living costs are rising quickly now, so I only buy essential items to save money for emergencies.",
+                        formatted: `→ Yes, I do. Living costs are <span class="sub-hl">rising quickly now</span>, so I only buy <span class="sub-hl">essential items</span> to <span class="sub-hl">save money for emergencies</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời CÓ - So sánh giá trên nhiều ứng dụng mua sắm để tìm ưu đãi tốt nhất - 20 từ)",
+                        text: "Yes, I think twice before buying. I usually compare prices on different shopping apps to find the best deals.",
+                        formatted: `→ Yes, I think twice before buying. I usually <span class="sub-hl">compare prices on different shopping apps</span> to find <span class="sub-hl">the best deals</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Do you think expensive products always have better quality? Why or why not?",
+                qType: "Yes/No + Wh-question: Do you think expensive products always have better quality? Why or why not?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời KHÔNG HẲN - Giá cao đôi khi do tên tuổi thương hiệu và chi phí quảng cáo):</div>
+                    <div class="topic-formula-text">
+                        → Not always. Many expensive products cost more because of <span class="formula-bracket-hl">[yếu tố đẩy giá]</span>, not better quality.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời ĐỒNG Ý PHẦN LỚN - Giá cao thường đi kèm chất liệu bền và bảo hành chu đáo):</div>
+                    <div class="topic-formula-text">
+                        → Most of the time, yes. High-priced items usually offer <span class="formula-bracket-hl">[ưu điểm sản phẩm]</span> and <span class="formula-bracket-hl">[dịch vụ khách hàng]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🏷️ [Yếu tố thương hiệu & Quảng cáo] (Cách 1):",
+                        items: [
+                            { en: "famous brand names and heavy advertising", vn: "thương hiệu nổi tiếng và quảng cáo rầm rộ" },
+                            { en: "fancy packaging", vn: "bao bì đóng gói bắt mắt sang trọng" },
+                            { en: "marketing costs", vn: "chi phí tiếp thị và quảng bá" },
+                            { en: "brand prestige", vn: "uy tín và đẳng cấp thương hiệu" }
+                        ]
+                    },
+                    {
+                        title: "⭐ [Chất lượng & Dịch vụ] (Cách 2):",
+                        items: [
+                            { en: "durable materials", vn: "chất liệu bền bỉ, dùng lâu dài" },
+                            { en: "longer lifespan", vn: "tuổi thọ sản phẩm dài hơn" },
+                            { en: "better user experience", vn: "trải nghiệm sử dụng tốt hơn" },
+                            { en: "excellent warranty services for all customers", vn: "dịch vụ bảo hành chu đáo cho mọi khách hàng" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời KHÔNG HẲN - Giá đắt do tên thương hiệu và chi phí quảng cáo lớn - 19 từ)",
+                        text: "Not always. Many expensive products cost more because of famous brand names and heavy advertising, not better quality.",
+                        formatted: `→ Not always. Many expensive products cost more because of <span class="sub-hl">famous brand names and heavy advertising</span>, not better quality.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời ĐỒNG Ý PHẦN LỚN - Đồ đắt có chất liệu bền và dịch vụ bảo hành chu đáo - 19 từ)",
+                        text: "Most of the time, yes. High-priced items usually offer durable materials and excellent warranty services for all customers.",
+                        formatted: `→ Most of the time, yes. High-priced items usually offer <span class="sub-hl">durable materials</span> and <span class="sub-hl">excellent warranty services for all customers</span>.`
+                    }
+                ]
+            }
+        ]
     }
 
 ];
