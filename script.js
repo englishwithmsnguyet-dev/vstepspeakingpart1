@@ -8692,6 +8692,305 @@ const practiceTopicsData = [
                 ]
             }
         ]
+    },
+    {
+        id: 27,
+        title: "Chủ đề 27: Let's talk about your hometown",
+        introText: "Let’s talk about your hometown.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Where is your hometown?",
+                qType: "Wh-question: Where is your hometown?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Thành phố ven biển miền Trung - Nổi tiếng với biển đẹp và con người thân thiện):</div>
+                    <div class="topic-formula-text">
+                        → My hometown is <span class="formula-bracket-hl">[tên địa danh]</span> in <span class="formula-bracket-hl">[vùng miền]</span>. It's famous for <span class="formula-bracket-hl">[đặc sản / cảnh đẹp]</span> and friendly local people.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Vùng quê yên bình ở đồng bằng sông Cửu Long - Cách TP.HCM khoảng 2 tiếng xe khách):</div>
+                    <div class="topic-formula-text">
+                        → I was born in a peaceful province in <span class="formula-bracket-hl">[vùng miền]</span>. It's about <span class="formula-bracket-hl">[khoảng cách/thời gian]</span> from Ho Chi Minh City.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🌊 [Thành phố & Cảnh đẹp] (Cách 1):",
+                        items: [
+                            { en: "Da Nang city", vn: "thành phố Đà Nẵng" },
+                            { en: "central Vietnam", vn: "miền Trung Việt Nam" },
+                            { en: "beautiful beaches", vn: "những bãi biển tuyệt đẹp" },
+                            { en: "fresh seafood", vn: "hải sản tươi ngon" }
+                        ]
+                    },
+                    {
+                        title: "🌾 [Vị trí & Khoảng cách] (Cách 2):",
+                        items: [
+                            { en: "the Mekong Delta", vn: "đồng bằng sông Cửu Long" },
+                            { en: "two hours by bus", vn: "hai tiếng đi xe buýt" },
+                            { en: "eighty kilometers", vn: "khoảng 80 cây số" },
+                            { en: "fresh green fields", vn: "những cánh đồng xanh tươi mát" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Thành phố Đà Nẵng ở miền Trung - Nổi tiếng với biển đẹp và người dân thân thiện - 18 từ)",
+                        text: "My hometown is Da Nang city in central Vietnam. It's famous for beautiful beaches and friendly local people.",
+                        formatted: `→ My hometown is <span class="sub-hl">Da Nang city</span> in central Vietnam. It's famous for <span class="sub-hl">beautiful beaches</span> and friendly local people.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Tỉnh thành yên bình ở miền Tây - Cách TP.HCM khoảng 2 tiếng đi xe buýt - 21 từ)",
+                        text: "I was born in a peaceful province in the Mekong Delta. It's about two hours by bus from Ho Chi Minh City.",
+                        formatted: `→ I was born in a peaceful province in <span class="sub-hl">the Mekong Delta</span>. It's about <span class="sub-hl">two hours by bus</span> from Ho Chi Minh City.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What do you like best about your hometown?",
+                qType: "Wh-question: What do you like best about [noun]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Không khí trong lành, yên bình và nhịp sống chậm rãi thư thái):</div>
+                    <div class="topic-formula-text">
+                        → What I like most is the peaceful atmosphere. The air is <span class="formula-bracket-hl">[đặc điểm không khí]</span>, and life is <span class="formula-bracket-hl">[tính từ cuộc sống]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Người dân ấm áp hiếu khách và các món ăn truyền thống ngon rẻ):</div>
+                    <div class="topic-formula-text">
+                        → I love the local people and food. Everyone is <span class="formula-bracket-hl">[tính cách người dân]</span>, and traditional dishes are <span class="formula-bracket-hl">[đặc điểm món ăn]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🍃 [Không khí & Nhịp sống] (Cách 1):",
+                        items: [
+                            { en: "fresh and clean", vn: "trong lành và sạch sẽ" },
+                            { en: "cool and pleasant", vn: "mát mẻ và dễ chịu" },
+                            { en: "slow and calm", vn: "chậm rãi và êm đềm" },
+                            { en: "peaceful atmosphere", vn: "bầu không khí thanh bình" }
+                        ]
+                    },
+                    {
+                        title: "🍲 [Con người & Món ăn] (Cách 2):",
+                        items: [
+                            { en: "very warm and hospitable", vn: "rất ấm áp và hiếu khách" },
+                            { en: "delicious and cheap", vn: "rất ngon miệng và giá cả rẻ" },
+                            { en: "full of unique flavors", vn: "đậm đà hương vị độc đáo" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Không khí yên bình trong lành, nhịp sống chậm rãi và êm đềm - 20 từ)",
+                        text: "What I like most is the peaceful atmosphere. The air is fresh and clean, and life is slow and calm.",
+                        formatted: `→ What I like most is the <span class="sub-hl">peaceful atmosphere</span>. The air is <span class="sub-hl">fresh and clean</span>, and life is slow and calm.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Người dân ấm áp hiếu khách và các món ăn truyền thống ngon rẻ - 18 từ)",
+                        text: "I love the local people and food. Everyone is very warm and hospitable, and traditional dishes are delicious and cheap.",
+                        formatted: `→ I love the local people and food. Everyone is <span class="sub-hl">very warm and hospitable</span>, and traditional dishes are <span class="sub-hl">delicious and cheap</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "What can tourists do in your hometown?",
+                qType: "Wh-question: What can tourists do in your hometown?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Tắm biển, tham quan các danh lam thắng cảnh và chụp ảnh):</div>
+                    <div class="topic-formula-text">
+                        → Tourists can visit famous <span class="formula-bracket-hl">[loại địa điểm]</span>. They can also <span class="formula-bracket-hl">[hoạt động trải nghiệm]</span> and take nice photos.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Khám phá chợ đêm nhộn nhịp và thưởng thức ẩm thực đường phố đặc sản):</div>
+                    <div class="topic-formula-text">
+                        → Visitors can explore lively <span class="formula-bracket-hl">[địa điểm ăn uống]</span>. It's a great experience to <span class="formula-bracket-hl">[hoạt động ẩm thực]</span> at night.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🏖️ [Thắng cảnh & Trải nghiệm] (Cách 1):",
+                        items: [
+                            { en: "sandy beaches and mountains", vn: "những bãi biển cát trắng và núi non hùng vĩ" },
+                            { en: "swim in the sea", vn: "tắm mát dưới làn nước biển" },
+                            { en: "take nice photos", vn: "chụp nhiều bức ảnh kỷ niệm đẹp" }
+                        ]
+                    },
+                    {
+                        title: "🍢 [Chợ đêm & Ẩm thực] (Cách 2):",
+                        items: [
+                            { en: "lively local night markets", vn: "các khu chợ đêm địa phương nhộn nhịp" },
+                            { en: "taste unique street food at cheap prices", vn: "thưởng thức các món ăn đường phố độc đáo với giá rẻ" },
+                            { en: "buy local souvenirs", vn: "mua quà lưu niệm đặc sản" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Tắm biển, tham quan các danh lam thắng cảnh và chụp ảnh đẹp - 18 từ)",
+                        text: "Tourists can visit famous sandy beaches and mountains. They can also swim in the sea and take nice photos.",
+                        formatted: `→ Tourists can visit famous <span class="sub-hl">sandy beaches and mountains</span>. They can also <span class="sub-hl">swim in the sea</span> and take nice photos.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Khám phá chợ đêm nhộn nhịp và thưởng thức ẩm thực đường phố giá rẻ - 18 từ)",
+                        text: "Visitors can explore lively local night markets. It's a great experience to taste unique street food at cheap prices.",
+                        formatted: `→ Visitors can explore <span class="sub-hl">lively local night markets</span>. It's a great experience to <span class="sub-hl">taste unique street food at cheap prices</span>.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 28,
+        title: "Chủ đề 28: Let's talk about neighbors",
+        introText: "Let’s talk about neighbors.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Do you know the people who live next door to you?",
+                qType: "Yes/No: Do you know the people who live next door to you?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Biết rất rõ - Sống cạnh nhau nhiều năm, hàng xóm rất tốt bụng và lịch sự):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I do. We have lived near each other for <span class="formula-bracket-hl">[khoảng thời gian]</span>. They're very <span class="formula-bracket-hl">[tính từ]</span> to my family.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Chỉ biết sơ - Đều bận rộn hằng ngày, chỉ mỉm cười chào hỏi khi gặp):</div>
+                    <div class="topic-formula-text">
+                        → Not very well. We are all busy with our <span class="formula-bracket-hl">[lý do]</span>, so we usually <span class="formula-bracket-hl">[hành động xã giao]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🏡 [Gắn bó lâu năm & Tốt bụng] (Cách 1):",
+                        items: [
+                            { en: "many years", vn: "nhiều năm qua" },
+                            { en: "more than ten years", vn: "hơn mười năm" },
+                            { en: "very kind, polite, and friendly to my family", vn: "rất tốt bụng, lịch sự và thân thiện với gia đình tôi" }
+                        ]
+                    },
+                    {
+                        title: "🤝 [Bận rộn & Chào hỏi] (Cách 2):",
+                        items: [
+                            { en: "daily work", vn: "công việc hằng ngày" },
+                            { en: "busy schedules", vn: "lịch trình bận rộn" },
+                            { en: "just smile and say hello when meeting", vn: "chỉ mỉm cười và chào hỏi khi gặp gỡ" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Biết rất rõ - Sống cạnh nhau nhiều năm, hàng xóm rất tốt bụng và lịch sự - 20 từ)",
+                        text: "Yes, I do. We have lived near each other for many years. They're very kind, polite, and friendly to my family.",
+                        formatted: `→ Yes, I do. We have lived near each other for <span class="sub-hl">many years</span>. They're <span class="sub-hl">very kind, polite, and friendly to my family</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Chỉ biết sơ - Đều bận rộn hằng ngày, chỉ mỉm cười chào hỏi khi gặp - 20 từ)",
+                        text: "Not very well. We are all busy with our daily work, so we usually just smile and say hello when meeting.",
+                        formatted: `→ Not very well. We are all busy with our <span class="sub-hl">daily work</span>, so we usually <span class="sub-hl">just smile and say hello when meeting</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "Do you get along with your neighbors? How?",
+                qType: "Yes/No + Wh-question: Do you get along with your neighbors? How?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Rất hòa thuận - Thường trò chuyện buổi tối và chia sẻ hoa quả, đồ ăn ngon):</div>
+                    <div class="topic-formula-text">
+                        → Yes, we get along very well. We often <span class="formula-bracket-hl">[hoạt động gắn kết 1]</span> and <span class="formula-bracket-hl">[hoạt động gắn kết 2]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Quan hệ tốt đẹp - Luôn tôn trọng sự riêng tư và tránh gây ồn ào vào ban đêm):</div>
+                    <div class="topic-formula-text">
+                        → Yes, we have a good relationship. We always <span class="formula-bracket-hl">[thái độ tôn trọng]</span> and avoid <span class="formula-bracket-hl">[hành động làm phiền]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🍉 [Trò chuyện & Chia sẻ đồ ăn] (Cách 1):",
+                        items: [
+                            { en: "chat in the evening", vn: "trò chuyện vào buổi tối" },
+                            { en: "share homegrown fruits and delicious food together", vn: "chia sẻ trái cây nhà trồng và thức ăn ngon cùng nhau" },
+                            { en: "have small weekend gatherings", vn: "có những buổi gặp gỡ tụ tập nhỏ cuối tuần" }
+                        ]
+                    },
+                    {
+                        title: "🕊️ [Tôn trọng riêng tư & Giữ yên lặng] (Cách 2):",
+                        items: [
+                            { en: "respect each other's privacy", vn: "tôn trọng sự riêng tư của nhau" },
+                            { en: "avoid making loud noises at night", vn: "tránh làm ồn ào lớn vào ban đêm" },
+                            { en: "maintain a peaceful neighborhood", vn: "duy trì xóm giềng yên bình" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Rất hòa thuận - Thường trò chuyện buổi tối và chia sẻ hoa quả, đồ ăn ngon - 20 từ)",
+                        text: "Yes, we get along very well. We often chat in the evening and share homegrown fruits and delicious food together.",
+                        formatted: `→ Yes, we get along very well. We often <span class="sub-hl">chat in the evening</span> and <span class="sub-hl">share homegrown fruits and delicious food together</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Quan hệ tốt đẹp - Luôn tôn trọng sự riêng tư và tránh gây ồn ào vào ban đêm - 19 từ)",
+                        text: "Yes, we have a good relationship. We always respect each other's privacy and avoid making loud noises at night.",
+                        formatted: `→ Yes, we have a good relationship. We always <span class="sub-hl">respect each other's privacy</span> and <span class="sub-hl">avoid making loud noises at night</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Are your neighbors helpful?",
+                qType: "Yes/No: Are your neighbors helpful?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Rất hay giúp đỡ - Sẵn sàng trông nhà và nhận bưu phẩm giúp khi đi vắng):</div>
+                    <div class="topic-formula-text">
+                        → Yes, they're extremely helpful. Whenever my family is away, they willingly <span class="formula-bracket-hl">[hành động giúp đỡ]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Sẵn sàng hỗ trợ - Khi gặp sự cố hỏng hóc đồ đạc luôn giúp một tay):</div>
+                    <div class="topic-formula-text">
+                        → Yes, they are. When we face <span class="formula-bracket-hl">[tình huống khó khăn]</span>, they are always ready to <span class="formula-bracket-hl">[hành động hỗ trợ]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "📦 [Trông nhà & Nhận bưu phẩm] (Cách 1):",
+                        items: [
+                            { en: "keep an eye on our house and receive packages", vn: "trông chừng nhà cửa và nhận bưu phẩm giúp" },
+                            { en: "water our plants", vn: "tưới cây giúp" },
+                            { en: "lend necessary tools", vn: "cho mượn dụng cụ cần thiết" }
+                        ]
+                    },
+                    {
+                        title: "🛠️ [Hỗ trợ sự cố] (Cách 2):",
+                        items: [
+                            { en: "home repair problems", vn: "các sự cố sửa chữa trong nhà" },
+                            { en: "give a helping hand quickly", vn: "nhanh chóng giúp một tay" },
+                            { en: "solve urgent issues", vn: "giải quyết các việc cấp bách" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Rất hay giúp đỡ - Sẵn sàng trông nhà và nhận bưu phẩm giúp khi đi vắng - 20 từ)",
+                        text: "Yes, they're extremely helpful. Whenever my family is away, they willingly keep an eye on our house and receive packages.",
+                        formatted: `→ Yes, they're extremely helpful. Whenever my family is away, they willingly <span class="sub-hl">keep an eye on our house and receive packages</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Sẵn sàng hỗ trợ - Khi gặp sự cố hỏng hóc đồ đạc luôn giúp một tay - 19 từ)",
+                        text: "Yes, they are. When we face home repair problems, they are always ready to give a helping hand quickly.",
+                        formatted: `→ Yes, they are. When we face <span class="sub-hl">home repair problems</span>, they are always ready to <span class="sub-hl">give a helping hand quickly</span>.`
+                    }
+                ]
+            }
+        ]
     }
 
 ];
