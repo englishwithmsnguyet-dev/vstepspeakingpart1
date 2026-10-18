@@ -419,6 +419,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1500);
     };
 
+    // Luôn luôn hiển thị modal đăng nhập mỗi khi tải lại trang / refresh
+    if (welcomeModal) {
+        welcomeModal.classList.remove('hidden');
+        welcomeModal.style.display = 'flex';
+        welcomeModal.style.opacity = '1';
+    }
+    if (userProfile) {
+        userProfile.classList.add('hidden');
+    }
+    if (studentInput) studentInput.value = '';
+    if (studentClassInput) studentClassInput.value = '';
+    if (loginError) loginError.style.display = 'none';
+
     startBtn?.addEventListener('click', enterRoom);
     studentInput?.addEventListener('keypress', (e) => { if (e.key === 'Enter') enterRoom(); });
     studentClassInput?.addEventListener('keypress', (e) => { if (e.key === 'Enter') enterRoom(); });
@@ -6444,6 +6457,364 @@ const practiceTopicsData = [
                         label: "Bài mẫu Cách 2 (Trả lời CÓ - Cuộc sống căng thẳng nên nhận thức sức khỏe là vốn quý nhất để làm việc - 21 từ)",
                         text: "Yes, I think so. Nowadays, life is stressful, so people realize health is the most important thing to work and enjoy life.",
                         formatted: `→ Yes, I think so. Nowadays, life is <span class="sub-hl">stressful</span>, so people realize health is the most important thing to <span class="sub-hl">work and enjoy life</span>.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 13,
+        title: "Chủ đề 13: Talk about your favorite day of the week",
+        introText: "Let’s talk about your favorite day of the week.",
+        questions: [
+            {
+                qNum: 1,
+                question: "What’s your favorite day of the week?",
+                qType: "Wh-question: What is your favorite [noun]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Thứ Bảy / Cuối tuần - Ngủ nướng, nghỉ ngơi sau tuần bận rộn):</div>
+                    <div class="topic-formula-text">
+                        → My favorite day of the week is <span class="formula-bracket-hl">[ngày trong tuần]</span> because I can <span class="formula-bracket-hl">[lý do chính]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Thứ Sáu - Hào hứng vì chuẩn bị bước vào kỳ nghỉ cuối tuần):</div>
+                    <div class="topic-formula-text">
+                        → I like <span class="formula-bracket-hl">[ngày trong tuần]</span> the most because <span class="formula-bracket-hl">[lý do]</span>. I usually feel very <span class="formula-bracket-hl">[tính từ cảm xúc]</span> on this day.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🗓️ [Ngày trong tuần & Lý do] (Cách 1):",
+                        items: [
+                            { en: "Saturday", vn: "thứ Bảy" },
+                            { en: "Sunday", vn: "Chủ nhật" },
+                            { en: "sleep in", vn: "ngủ nướng" },
+                            { en: "wake up late", vn: "thức dậy muộn" },
+                            { en: "rest after a busy week", vn: "nghỉ ngơi sau một tuần bận rộn" },
+                            { en: "have free time for myself", vn: "có thời gian rảnh cho bản thân" }
+                        ]
+                    },
+                    {
+                        title: "🎉 [Lợi ích giải trí] (Cách 1):",
+                        items: [
+                            { en: "relax after a long week", vn: "thư giãn sau một tuần dài" },
+                            { en: "clear my mind", vn: "thư thái đầu óc" },
+                            { en: "enjoy my free time", vn: "tận hưởng thời gian rảnh rỗi" },
+                            { en: "regain my energy", vn: "phục hồi năng lượng" }
+                        ]
+                    },
+                    {
+                        title: "✨ [Ngày yêu thích, Lý do & Cảm xúc] (Cách 2):",
+                        items: [
+                            { en: "Friday", vn: "thứ Sáu" },
+                            { en: "the weekend is coming soon", vn: "cuối tuần sắp đến gần" },
+                            { en: "my days off are coming", vn: "những ngày nghỉ sắp đến" },
+                            { en: "excited and cheerful", vn: "hào hứng và vui tươi" },
+                            { en: "happy and energetic", vn: "vui vẻ và tràn đầy năng lượng" },
+                            { en: "relaxed", vn: "thư thái" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Thứ Bảy - Ngủ nướng, thư giãn sau một tuần bận rộn - 19 từ)",
+                        text: "My favorite day of the week is Saturday because I can sleep in. It helps me relax after a long week.",
+                        formatted: `→ My favorite day of the week is <span class="sub-hl">Saturday</span> because I can <span class="sub-hl">sleep in</span>. It helps me <span class="sub-hl">relax after a long week</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Thứ Sáu - Cuối tuần sắp tới, hào hứng và vui tươi - 19 từ)",
+                        text: "I like Friday the most because the weekend is coming soon. I usually feel very excited and cheerful on this day.",
+                        formatted: `→ I like <span class="sub-hl">Friday</span> the most because <span class="sub-hl">the weekend is coming soon</span>. I usually feel very <span class="sub-hl">excited and cheerful</span> on this day.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What do you often do on that day? Why?",
+                qType: "Wh-question: What do you often do on [time]? Why?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Đi cà phê, gặp gỡ bạn bè để giải trí và giảm căng thẳng):</div>
+                    <div class="topic-formula-text">
+                        → On this day, I often <span class="formula-bracket-hl">[hoạt động ra ngoài]</span> with my <span class="formula-bracket-hl">[đối tượng]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí]</span> and <span class="formula-bracket-hl">[lợi ích sức khỏe]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Ở nhà nấu nướng, xem phim cùng gia đình để thư giãn):</div>
+                    <div class="topic-formula-text">
+                        → I usually stay at home to <span class="formula-bracket-hl">[hoạt động tại nhà 1]</span> and <span class="formula-bracket-hl">[hoạt động tại nhà 2]</span>. It's a great way to <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "☕ [Hoạt động ra ngoài & Đối tượng] (Cách 1):",
+                        items: [
+                            { en: "hang out at a coffee shop", vn: "đi chơi ở quán cà phê" },
+                            { en: "walk in the park", vn: "đi dạo trong công viên" },
+                            { en: "chat with my best friends", vn: "tán gẫu cùng bạn thân" },
+                            { en: "my close friends", vn: "những người bạn thân" },
+                            { en: "my classmates", vn: "bạn cùng lớp" }
+                        ]
+                    },
+                    {
+                        title: "🎉 [Lợi ích giải trí & Sức khỏe] (Cách 1):",
+                        items: [
+                            { en: "improve my mood", vn: "cải thiện tâm trạng" },
+                            { en: "have fun", vn: "vui vẻ" },
+                            { en: "pass the time", vn: "giết thời gian ý nghĩa" },
+                            { en: "reduce stress", vn: "giảm bớt căng thẳng" },
+                            { en: "clear my mind", vn: "thư thái đầu óc" },
+                            { en: "take a mental break", vn: "nghỉ ngơi tinh thần" }
+                        ]
+                    },
+                    {
+                        title: "🏡 [Hoạt động tại nhà & Lợi ích giải trí] (Cách 2):",
+                        items: [
+                            { en: "cook nice meals", vn: "nấu các bữa ăn ngon" },
+                            { en: "watch movies", vn: "xem phim" },
+                            { en: "listen to acoustic music", vn: "nghe nhạc nhẹ nhàng" },
+                            { en: "spend quality time with my family", vn: "dành thời gian quý giá bên gia đình" },
+                            { en: "enjoy my free time", vn: "tận hưởng thời gian rảnh" },
+                            { en: "relax after a busy week", vn: "thư giãn sau một tuần bận rộn" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Đi cà phê với bạn bè - Giảm căng thẳng, cải thiện tâm trạng - 22 từ)",
+                        text: "On this day, I often hang out with friends at a coffee shop. It helps me reduce stress and improve my mood.",
+                        formatted: `→ On this day, I often <span class="sub-hl">hang out with my friends at a coffee shop</span>. It helps me <span class="sub-hl">reduce stress</span> and <span class="sub-hl">improve my mood</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Ở nhà nấu ăn xem phim - Dành thời gian ấm cúng bên gia đình - 21 từ)",
+                        text: "I usually stay home to cook nice meals and watch movies. It's a great way to spend quality time with family.",
+                        formatted: `→ I usually stay at home to <span class="sub-hl">cook nice meals and watch movies</span>. It's a great way to <span class="sub-hl">spend quality time with my family</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "How important is it to have a favorite day of the week?",
+                qType: "Wh-question: How important is it to [verb]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Rất quan trọng - Tạo động lực giúp làm việc và học tập hiệu quả):</div>
+                    <div class="topic-formula-text">
+                        → I think it's very important. It gives people something to <span class="formula-bracket-hl">[mục đích tích cực]</span> and helps them <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Cần thiết - Cho bản thân nghỉ ngơi và nạp lại năng lượng cho tuần mới):</div>
+                    <div class="topic-formula-text">
+                        → Having a special day is essential. It allows us to <span class="formula-bracket-hl">[lợi ích giải trí]</span> and <span class="formula-bracket-hl">[lợi ích sức khỏe]</span> for the upcoming week.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🎯 [Mục đích & Lợi ích] (Cách 1):",
+                        items: [
+                            { en: "look forward to", vn: "mong đợi, ngóng chờ" },
+                            { en: "stay motivated during the week", vn: "giữ vững động lực trong cả tuần" },
+                            { en: "overcome busy weekdays", vn: "vượt qua những ngày trong tuần bận rộn" },
+                            { en: "escape from daily stress", vn: "thoát khỏi áp lực hằng ngày" },
+                            { en: "work more effectively", vn: "làm việc hiệu quả hơn" }
+                        ]
+                    },
+                    {
+                        title: "⚖️ [Lợi ích giải trí & Sức khỏe] (Cách 2):",
+                        items: [
+                            { en: "take a mental break", vn: "cho tinh thần nghỉ ngơi" },
+                            { en: "balance work and life", vn: "cân bằng giữa công việc và cuộc sống" },
+                            { en: "enjoy personal time", vn: "tận hưởng thời gian riêng tư" },
+                            { en: "regain our energy", vn: "phục hồi lại năng lượng" },
+                            { en: "recharge my batteries", vn: "nạp lại năng lượng tích cực" },
+                            { en: "sleep better", vn: "ngủ ngon hơn" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Rất quan trọng - Có điều mong chờ, giữ động lực trong suốt tuần - 20 từ)",
+                        text: "I think it's very important. It gives people something to look forward to and helps them stay motivated during the week.",
+                        formatted: `→ I think <span class="sub-hl">it's very important</span>. It gives people something to <span class="sub-hl">look forward to</span> and helps them <span class="sub-hl">stay motivated during the week</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Cần thiết - Cho tinh thần nghỉ ngơi, nạp lại năng lượng cho tuần mới - 20 từ)",
+                        text: "Having a special day is essential. It allows us to take a mental break and regain our energy for the upcoming week.",
+                        formatted: `→ Having a special day is essential. It allows us to <span class="sub-hl">take a mental break</span> and <span class="sub-hl">regain our energy</span> for the upcoming week.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 14,
+        title: "Chủ đề 14: Let's talk about an evening walk",
+        introText: "Let’s talk about an evening walk.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Do you often go for a walk in the evening?",
+                qType: "Yes/No: Do you often [Vo]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Đi bộ mỗi tối sau bữa ăn để thư giãn và hỗ trợ tiêu hóa tốt):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I do. I usually take a walk <span class="formula-bracket-hl">[tần suất]</span> after dinner. It helps me <span class="formula-bracket-hl">[lợi ích giải trí]</span> and <span class="formula-bracket-hl">[lợi ích sức khỏe]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời HIẾM KHI - Bận học/làm việc buổi tối, chỉ đi vào cuối tuần để hít thở không khí):</div>
+                    <div class="topic-formula-text">
+                        → Not very often. I'm usually busy with my <span class="formula-bracket-hl">[lý do]</span> at night. I only go walking on <span class="formula-bracket-hl">[thời điểm rảnh]</span> to <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "⏱️ [Tần suất & Thời điểm] (Cách 1):",
+                        items: [
+                            { en: "almost every evening", vn: "hầu như mỗi buổi tối" },
+                            { en: "three or four times a week", vn: "ba hoặc bốn lần một tuần" },
+                            { en: "around seven in the evening", vn: "khoảng 7 giờ tối" }
+                        ]
+                    },
+                    {
+                        title: "🎉 [Lợi ích giải trí & Sức khỏe] (Cách 1):",
+                        items: [
+                            { en: "relax after a busy day", vn: "thư giãn sau một ngày bận rộn" },
+                            { en: "enjoy the fresh air", vn: "tận hưởng không khí trong lành" },
+                            { en: "clear my mind", vn: "thư thái đầu óc" },
+                            { en: "digest better", vn: "hỗ trợ tiêu hóa tốt hơn" },
+                            { en: "sleep better", vn: "ngủ ngon hơn" },
+                            { en: "improve my physical health", vn: "cải thiện sức khỏe thể chất" }
+                        ]
+                    },
+                    {
+                        title: "📚 [Lý do bận & Lợi ích giải trí] (Cách 2):",
+                        items: [
+                            { en: "studies at night", vn: "việc học vào buổi tối" },
+                            { en: "office work", vn: "công việc văn phòng" },
+                            { en: "weekends", vn: "những ngày cuối tuần" },
+                            { en: "Saturday evenings", vn: "buổi tối thứ Bảy" },
+                            { en: "get some fresh air", vn: "hít thở chút không khí trong lành" },
+                            { en: "reduce stress", vn: "giảm bớt căng thẳng" },
+                            { en: "unwind after study", vn: "thư giãn sau giờ học" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - Đi bộ mỗi tối sau bữa ăn, thư giãn và tiêu hóa tốt hơn - 20 từ)",
+                        text: "Yes, I do. I usually take a walk every evening after dinner. It helps me relax and digest food better.",
+                        formatted: `→ Yes, I do. I usually take a walk <span class="sub-hl">almost every evening after dinner</span>. It helps me <span class="sub-hl">relax after a busy day</span> and <span class="sub-hl">digest better</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời HIẾM KHI - Buổi tối bận học, chỉ đi vào cuối tuần hít thở không khí - 21 từ)",
+                        text: "Not very often. I'm usually busy with my studies at night. I only go walking on weekends to get some fresh air.",
+                        formatted: `→ Not very often. I'm usually busy with my <span class="sub-hl">studies at night</span>. I only go walking on <span class="sub-hl">weekends</span> to <span class="sub-hl">get some fresh air</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "Where do you often go for a walk?",
+                qType: "Wh-question: Where do you often [Vo]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Công viên gần nhà - Nhiều cây xanh, thanh bình và an toàn):</div>
+                    <div class="topic-formula-text">
+                        → I often walk in a <span class="formula-bracket-hl">[địa điểm]</span> near my house because it has <span class="formula-bracket-hl">[đặc điểm]</span>. It's very <span class="formula-bracket-hl">[tính từ]</span> and safe.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Khu phố yên tĩnh quanh nhà - Tiện lợi, không phải đi xa):</div>
+                    <div class="topic-formula-text">
+                        → I usually stroll around my <span class="formula-bracket-hl">[khu vực]</span>. It's very <span class="formula-bracket-hl">[tính từ]</span>, so I don't need to <span class="formula-bracket-hl">[hành động phiền toái]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🌳 [Địa điểm & Đặc điểm công viên] (Cách 1):",
+                        items: [
+                            { en: "public park", vn: "công viên công cộng" },
+                            { en: "local lake", vn: "khu vực hồ nước gần nhà" },
+                            { en: "lots of green trees", vn: "nhiều cây xanh bóng mát" },
+                            { en: "wide walking paths", vn: "đường đi bộ rộng rãi" },
+                            { en: "peaceful", vn: "thanh bình, yên ả" },
+                            { en: "quiet and cool", vn: "yên tĩnh và mát mẻ" }
+                        ]
+                    },
+                    {
+                        title: "🏘️ [Khu vực quanh nhà & Tiện lợi] (Cách 2):",
+                        items: [
+                            { en: "quiet neighborhood", vn: "khu phố yên tĩnh quanh nhà" },
+                            { en: "residential area", vn: "khu dân cư" },
+                            { en: "convenient", vn: "tiện lợi" },
+                            { en: "close to home", vn: "gần ngay nhà" },
+                            { en: "travel far away from home", vn: "phải đi lại xa nhà" },
+                            { en: "ride a motorbike", vn: "phải chạy xe máy ra đường" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Công viên công cộng gần nhà - Nhiều cây xanh, thanh bình và an toàn - 21 từ)",
+                        text: "I often walk in a public park near my house because it has lots of green trees. It's very peaceful and safe.",
+                        formatted: `→ I often walk in a <span class="sub-hl">public park near my house</span> because it has <span class="sub-hl">lots of green trees</span>. It's very <span class="sub-hl">peaceful and safe</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Khu phố yên tĩnh quanh nhà - Rất tiện lợi, không phải đi đâu xa - 19 từ)",
+                        text: "I usually stroll around my quiet neighborhood. It's very convenient, so I don't need to travel far away from home.",
+                        formatted: `→ I usually stroll around my <span class="sub-hl">quiet neighborhood</span>. It's very convenient, so I don't need to <span class="sub-hl">travel far away from home</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "What are the benefits of going for a walk?",
+                qType: "Wh-question: What are the benefits of [V-ing]?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Tập trung vào Lợi ích sức khỏe - Cải thiện thể chất, giữ dáng và ngủ ngon):</div>
+                    <div class="topic-formula-text">
+                        → Walking helps people <span class="formula-bracket-hl">[lợi ích sức khỏe 1]</span> and <span class="formula-bracket-hl">[lợi ích sức khỏe 2]</span>. It also allows them to <span class="formula-bracket-hl">[lợi ích sức khỏe 3]</span> at night.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Tập trung vào Lợi ích giải trí & Thư thái - Xua tan căng thẳng sau ngày làm việc):</div>
+                    <div class="topic-formula-text">
+                        → In my opinion, it helps people <span class="formula-bracket-hl">[lợi ích giải trí 1]</span>. Moreover, it's an easy way to <span class="formula-bracket-hl">[lợi ích giải trí 2]</span> after a busy day.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "💊 [Lợi ích sức khỏe] (Cách 1):",
+                        items: [
+                            { en: "improve their physical health", vn: "cải thiện sức khỏe thể chất" },
+                            { en: "keep fit", vn: "giữ dáng thon gọn" },
+                            { en: "stay in good shape", vn: "duy trì vóc dáng đẹp" },
+                            { en: "burn calories", vn: "đốt cháy calo" },
+                            { en: "sleep much better", vn: "ngủ ngon giấc hơn nhiều" },
+                            { en: "fall asleep easily", vn: "dễ dàng đi vào giấc ngủ" }
+                        ]
+                    },
+                    {
+                        title: "🎉 [Lợi ích giải trí] (Cách 2):",
+                        items: [
+                            { en: "reduce stress", vn: "giảm bớt căng thẳng" },
+                            { en: "clear their mind", vn: "thư thái đầu óc" },
+                            { en: "escape from daily pressure", vn: "thoát khỏi áp lực hằng ngày" },
+                            { en: "improve their mood", vn: "cải thiện tâm trạng vui vẻ hơn" },
+                            { en: "enjoy some quiet time", vn: "tận hưởng một chút thời gian yên tĩnh" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Lợi ích sức khỏe - Tăng cường thể chất, giữ dáng và ngủ ngon hơn - 20 từ)",
+                        text: "Walking helps people improve their physical health and keep fit. It also allows them to sleep much better at night.",
+                        formatted: `→ Walking helps people <span class="sub-hl">improve their physical health</span> and <span class="sub-hl">keep fit</span>. It also allows them to <span class="sub-hl">sleep much better</span> at night.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Lợi ích giải trí - Giảm stress, đầu óc thư thái sau ngày làm việc bận rộn - 20 từ)",
+                        text: "In my opinion, it helps people reduce stress. Moreover, it's an easy way to clear their mind after a busy day.",
+                        formatted: `→ In my opinion, it helps people <span class="sub-hl">reduce stress</span>. Moreover, it's an easy way to <span class="sub-hl">clear their mind</span> after a busy day.`
                     }
                 ]
             }
