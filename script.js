@@ -4740,13 +4740,13 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Cấu trúc chọn trực tiếp & dứt khoát):</div>
                     <div class="topic-formula-text">
-                        → I prefer <span class="formula-bracket-hl">[lựa chọn: reading electronic books / reading paper books]</span>. It’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>, so I can <span class="formula-bracket-hl">[lợi ích 1]</span>. It’s also a good way to <span class="formula-bracket-hl">[lợi ích 2]</span>.
+                        → I prefer <span class="formula-bracket-hl">[lựa chọn loại sách]</span>. It’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>, so I can <span class="formula-bracket-hl">[lợi ích 1]</span>. It’s also a good way to <span class="formula-bracket-hl">[lợi ích 2]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Cấu trúc so sánh nhượng bộ có Although - Điểm cao hơn):</div>
                     <div class="topic-formula-text">
-                        → Although <span class="formula-bracket-hl">[đối tượng kia: paper books / electronic books]</span> are <span class="formula-bracket-hl">[tính từ]</span>, I still prefer <span class="formula-bracket-hl">[đối tượng mình chọn]</span> because it is much more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → Although <span class="formula-bracket-hl">[loại sách đối chiếu]</span> are <span class="formula-bracket-hl">[tính từ]</span>, I still prefer <span class="formula-bracket-hl">[đối tượng mình chọn]</span> because it is much more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4993,7 +4993,7 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (BBC Learning English - Cấu trúc theo mục đích học tiếng Anh)",
-                        text: "Whenever I want to improve my English listening skills, I usually tune in to BBC Learning English because it is extremely useful.",
+                        text: "Whenever I want to improve my English listening skills, I usually tune in to BBC Learning English because it's extremely useful.",
                         formatted: `→ Whenever I want to <span class="sub-hl">improve my English listening skills</span>, I usually tune in to <span class="sub-hl">BBC Learning English</span> because it is extremely <span class="sub-hl">useful</span>.`
                     }
                 ]
@@ -5137,7 +5137,7 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Cấu trúc kết hợp trong khi làm hoạt động khác - While + V-ing):</div>
                     <div class="topic-formula-text">
-                        → I usually listen to music while <span class="formula-bracket-hl">[hoạt động: doing housework / studying / traveling]</span>. It is a wonderful way to <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>.
+                        → I usually listen to music while <span class="formula-bracket-hl">[hoạt động - Ving]</span>. It is a wonderful way to <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -5180,7 +5180,7 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Cấu trúc kết hợp: Vừa làm việc nhà vừa nghe nhạc)",
-                        text: "I usually listen to music while doing housework. It is a wonderful way to pass the time and boost my concentration.",
+                        text: "I usually listen to music while doing housework. It's a wonderful way to pass the time and boost my concentration.",
                         formatted: `→ I usually listen to music while <span class="sub-hl">doing housework</span>. It is a wonderful way to <span class="sub-hl">pass the time</span> and <span class="sub-hl">boost my concentration</span>.`
                     }
                 ]
@@ -5239,7 +5239,7 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Cấu trúc giả định: I cannot imagine my life without music)",
-                        text: "Yes, of course. I cannot imagine my life without music because it is the best way for me to improve my mood whenever I feel stressed or tired.",
+                        text: "Yes, of course. I cannot imagine my life without music because it's the best way for me to improve my mood whenever I feel stressed or tired.",
                         formatted: `→ Yes, of course. I <span class="sub-hl">cannot imagine my life without music</span> because it is the best way for me to <span class="sub-hl">improve my mood</span> whenever I feel <span class="sub-hl">stressed or tired</span>.`
                     }
                 ]
@@ -5373,7 +5373,7 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Đàn Guitar - Tiện lợi mang theo khi đi dã ngoại, hát cùng bạn bè)",
-                        text: "I like the guitar the most because it is very convenient. People can carry it easily to picnics and outdoor gatherings and sing along with friends.",
+                        text: "I like the guitar the most because it's very convenient. People can carry it easily to picnics and outdoor gatherings and sing along with friends.",
                         formatted: `→ I like the <span class="sub-hl">guitar</span> the most because it is very <span class="sub-hl">convenient</span>. People can carry it easily to <span class="sub-hl">picnics and outdoor gatherings</span> and <span class="sub-hl">sing along with friends</span>.`
                     }
                 ]
@@ -5385,7 +5385,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đồng ý trực tiếp - Tốt cho phát triển trí não & tính kiên nhẫn):</div>
                     <div class="topic-formula-text">
-                        → Yes, I think so. Learning an instrument helps children <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>. It is also very good for their brain development.
+                        → Yes, I think so. Learning an instrument helps children <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>. It's also very good for their brain development.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -5416,7 +5416,7 @@ const practiceTopicsData = [
                 samples: [
                     {
                         label: "Bài mẫu Cách 1 (Đồng ý trực tiếp - Phát triển trí sáng tạo & Tính kiên nhẫn)",
-                        text: "Yes, I think so. Learning an instrument helps children develop their creativity and become more patient. It is also very good for their brain development.",
+                        text: "Yes, I think so. Learning an instrument helps children develop their creativity and become more patient. It's also very good for their brain development.",
                         formatted: `→ Yes, I think so. Learning an instrument helps children <span class="sub-hl">develop their creativity</span> and <span class="sub-hl">become more patient</span>. It is also very good for their <span class="sub-hl">brain development</span>.`
                     },
                     {
@@ -7345,7 +7345,7 @@ const practiceTopicsData = [
                             { en: "Phu Quoc island", vn: "đảo Phú Quốc" },
                             { en: "family", vn: "gia đình" },
                             { en: "close friends", vn: "bạn bè thân thiết" },
-                            { en: "swam in the sea", vn: "đã tắm biển" },
+                            { en: "swim in the sea", vn: "đã tắm biển" },
                             { en: "ate fresh seafood", vn: "đã thưởng thức hải sản tươi sống" }
                         ]
                     },
@@ -9159,7 +9159,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Có - Bố mẹ luôn yêu thương, chăm lo và động viên nhiệt tình):</div>
                     <div class="topic-formula-text">
-                        → Yes, I did. I had a wonderful childhood because my parents always <span class="formula-bracket-hl">[hành động yêu thương]</span>. I felt <span class="formula-bracket-hl">[tính từ cảm xúc]</span>.
+                        → Yes, I did. I had a wonderful childhood because my parents always <span class="formula-bracket-hl">[hành động yêu thương - Ved]</span>. I felt <span class="formula-bracket-hl">[tính từ cảm xúc]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -9172,8 +9172,8 @@ const practiceTopicsData = [
                     {
                         title: "👨‍👩‍👧 [Tình thương gia đình] (Cách 1):",
                         items: [
-                            { en: "loved and supported me warmly", vn: "yêu thương và ủng hộ tôi ấm áp" },
-                            { en: "cared for my health and study", vn: "chăm lo cho sức khỏe và học tập của tôi" },
+                            { en: "love and support me warmly", vn: "yêu thương và ủng hộ tôi ấm áp" },
+                            { en: "care for my health and study", vn: "chăm lo cho sức khỏe và học tập của tôi" },
                             { en: "truly happy", vn: "thực sự hạnh phúc" },
                             { en: "safe and protected", vn: "an toàn và được chở che" }
                         ]
@@ -9208,30 +9208,30 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Chơi các trò chơi dân gian: trốn tìm, thả diều cùng bạn bè):</div>
                     <div class="topic-formula-text">
-                        → When I was small, I often <span class="formula-bracket-hl">[hoạt động 1]</span> and <span class="formula-bracket-hl">[hoạt động 2]</span> with other kids. We had great memories.
+                        → When I was small, I often <span class="formula-bracket-hl">[hoạt động 1 - Ved]</span> and <span class="formula-bracket-hl">[hoạt động 2 - Ved]</span> with other kids. We had great memories.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Phụ bố mẹ tưới rau buổi chiều và đọc truyện tranh hài hước buổi tối):</div>
                     <div class="topic-formula-text">
-                        → I usually <span class="formula-bracket-hl">[hoạt động phụ gia đình]</span> in the afternoon. In the evening, I loved <span class="formula-bracket-hl">[hoạt động giải trí]</span> before bedtime.
+                        → I usually <span class="formula-bracket-hl">[hoạt động phụ gia đình - Ved]</span> in the afternoon. In the evening, I loved <span class="formula-bracket-hl">[hoạt động giải trí]</span> before bedtime.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
                         title: "🪁 [Trò chơi ngoài trời] (Cách 1):",
                         items: [
-                            { en: "played hide and seek", vn: "chơi trốn tìm" },
-                            { en: "flew colorful kites", vn: "thả những cánh diều rực rỡ" },
-                            { en: "rode small bicycles", vn: "đạp xe đạp nhỏ" },
+                            { en: "play hide and seek", vn: "chơi trốn tìm" },
+                            { en: "fly colorful kites", vn: "thả những cánh diều rực rỡ" },
+                            { en: "ride small bicycles", vn: "đạp xe đạp nhỏ" },
                             { en: "great memories", vn: "những kỷ niệm tuyệt vời" }
                         ]
                     },
                     {
                         title: "🏡 [Làm việc nhà & Đọc truyện] (Cách 2):",
                         items: [
-                            { en: "helped my parents water vegetables", vn: "giúp bố mẹ tưới rau" },
-                            { en: "fed backyard animals", vn: "cho vật nuôi sau nhà ăn" },
+                            { en: "help my parents water vegetables", vn: "giúp bố mẹ tưới rau" },
+                            { en: "feed backyard animals", vn: "cho vật nuôi sau nhà ăn" },
                             { en: "reading funny comic books", vn: "đọc truyện tranh vui nhộn" },
                             { en: "drawing simple pictures", vn: "vẽ những bức tranh giản dị" }
                         ]
@@ -9257,7 +9257,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Có nhiều bạn - Cùng chơi bóng đá và đạp xe cùng nhau sau giờ học):</div>
                     <div class="topic-formula-text">
-                        → Yes, I did. I had lots of neighborhood friends, and we always <span class="formula-bracket-hl">[hoạt động tập thể]</span> together after school.
+                        → Yes, I did. I had lots of neighborhood friends, and we always <span class="formula-bracket-hl">[hoạt động tập thể - Ved]</span> together after school.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -9270,8 +9270,8 @@ const practiceTopicsData = [
                     {
                         title: "⚽ [Nhiều bạn bè xóm làng] (Cách 1):",
                         items: [
-                            { en: "played football and rode bicycles", vn: "đá bóng và đạp xe" },
-                            { en: "explored green fields", vn: "khám phá những cánh đồng xanh" },
+                            { en: "play football and ride bicycles", vn: "đá bóng và đạp xe" },
+                            { en: "explore green fields", vn: "khám phá những cánh đồng xanh" },
                             { en: "lots of neighborhood friends", vn: "rất nhiều bạn bè hàng xóm" },
                             { en: "after school", vn: "sau giờ tan học" }
                         ]
@@ -10902,7 +10902,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đã từng - Tự đan một chiếc khăn len ấm áp tặng mẹ vào mùa đông):</div>
                     <div class="topic-formula-text">
-                        → Yes, I have. In high school, I <span class="formula-bracket-hl">[hoạt động làm thủ công]</span> for my mother. She loved it very much.
+                        → Yes, I have. In high school, I <span class="formula-bracket-hl">[hoạt động làm thủ công - Ved]</span> for my mother. She loved it very much.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -10915,9 +10915,9 @@ const practiceTopicsData = [
                     {
                         title: "🧣 [Tự đan khăn len] (Cách 1):",
                         items: [
-                            { en: "knitted a warm wool scarf", vn: "đan một chiếc khăn len ấm áp" },
-                            { en: "sewed small fabric bags", vn: "may những chiếc túi vải nhỏ" },
-                            { en: "loved it very much", vn: "rất yêu thích món quà" },
+                            { en: "knit a warm wool scarf", vn: "đan một chiếc khăn len ấm áp" },
+                            { en: "sew small fabric bags", vn: "may những chiếc túi vải nhỏ" },
+                            { en: "love it very much", vn: "rất yêu thích món quà" },
                             { en: "felt a deep sense of joy", vn: "cảm thấy niềm vui sâu sắc" }
                         ]
                     },
@@ -11161,7 +11161,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đã từng - Đến làng gốm Bát Tràng, tự nặn bình gốm nhỏ rất vui):</div>
                     <div class="topic-formula-text">
-                        → Yes, I have. Last summer, I visited <span class="formula-bracket-hl">[tên làng nghề]</span>. I <span class="formula-bracket-hl">[hoạt động trải nghiệm]</span> and had great fun.
+                        → Yes, I have. Last summer, I visited <span class="formula-bracket-hl">[tên làng nghề]</span>. I <span class="formula-bracket-hl">[hoạt động trải nghiệm - Ved]</span> and had great fun.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -11175,8 +11175,8 @@ const practiceTopicsData = [
                         title: "🏺 [Trải nghiệm nặn gốm] (Cách 1):",
                         items: [
                             { en: "Bat Trang pottery village", vn: "làng gốm Bát Tràng" },
-                            { en: "made a small ceramic vase", vn: "tự nặn một chiếc bình gốm nhỏ" },
-                            { en: "learned ancient ceramic crafting", vn: "học chế tác gốm cổ truyền" },
+                            { en: "make a small ceramic vase", vn: "tự nặn một chiếc bình gốm nhỏ" },
+                            { en: "learn ancient ceramic crafting", vn: "học chế tác gốm cổ truyền" },
                             { en: "had great fun", vn: "đã có rất nhiều niềm vui" }
                         ]
                     },
