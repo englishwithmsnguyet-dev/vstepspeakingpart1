@@ -12434,6 +12434,314 @@ window.startFullTopicRecording = async (topicId) => {
             }
         ]
     },
+    {
+        id: 47,
+        title: "Chủ đề 47: Let's talk about outdoor activities",
+        introText: "Let’s talk about outdoor activities.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Do you like outdoor activities?",
+                qType: "Yes/No Question: Do you like outdoor activities?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Rất thích hoạt động ngoài trời để hít thở không khí trong lành và rèn luyện thể chất):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I do. I love outdoor activities because they allow me to <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span> and <span class="formula-bracket-hl">[lợi ích 2 - Vo]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Thời tiết ngoài trời nóng bức khó chịu, thích ở trong phòng máy lạnh đọc sách và nghe nhạc):</div>
+                    <div class="topic-formula-text">
+                        → Honestly, no, I don't. The outdoor weather is often <span class="formula-bracket-hl">[thực trạng thời tiết]</span>, so I prefer staying in air-conditioned rooms to <span class="formula-bracket-hl">[hoạt động thư giãn - Vo]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🌳 [Không khí trong lành & Sức khỏe] (Cách 1):",
+                        items: [
+                            { en: "breathe fresh open air", vn: "hít thở không khí ngoài trời trong lành" },
+                            { en: "improve my physical health", vn: "cải thiện sức khỏe thể chất" },
+                            { en: "escape from study pressure", vn: "thoát khỏi áp lực học tập" },
+                            { en: "stay energetic and fit", vn: "luôn tràn đầy năng lượng và cân đối" }
+                        ]
+                    },
+                    {
+                        title: "❄️ [Tránh nắng nóng & Thích ở trong phòng] (Cách 2):",
+                        items: [
+                            { en: "extremely hot and humid", vn: "cực kỳ nóng bức và oi ả" },
+                            { en: "read books and listen to music", vn: "đọc sách và nghe nhạc" },
+                            { en: "suffer unpleasant sunburns", vn: "bị cháy nắng khó chịu" },
+                            { en: "enjoy quiet cool indoor spaces", vn: "tận hưởng không gian mát mẻ yên tĩnh trong nhà" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - Thích hoạt động ngoài trời để hít thở không khí trong lành và rèn luyện sức khỏe - 22 từ)",
+                        text: "Yes, I do. I love outdoor activities because they allow me to breathe fresh open air and improve my physical health effectively.",
+                        formatted: `→ Yes, I do. I love outdoor activities because they allow me to <span class="sub-hl">breathe fresh open air</span> and <span class="sub-hl">improve my physical health effectively</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Thời tiết bên ngoài quá nóng nực, thích ở trong phòng mát đọc sách - 23 từ)",
+                        text: "Honestly, no, I don't. The outdoor weather is often extremely hot and humid, so I prefer staying in air-conditioned rooms to read books.",
+                        formatted: `→ Honestly, no, I don't. The outdoor weather is often <span class="sub-hl">extremely hot and humid</span>, so I prefer staying in air-conditioned rooms to <span class="sub-hl">read books</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What outdoor activities do you often do?",
+                qType: "Wh-question: What outdoor activities do you often do?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Chạy bộ và tập thể dục ở công viên gần nhà vào mỗi sáng sớm để nạp năng lượng):</div>
+                    <div class="topic-formula-text">
+                        → I usually <span class="formula-bracket-hl">[hoạt động thể thao 1 - Vo]</span> and <span class="formula-bracket-hl">[hoạt động thể thao 2 - Vo]</span> in the nearby public park early in the morning.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Đạp xe cùng bạn thân vào các buổi chiều cuối tuần để ngắm phố phường và thư giãn):</div>
+                    <div class="topic-formula-text">
+                        → At weekends, I often <span class="formula-bracket-hl">[hoạt động cùng bạn bè - Vo]</span> along green streets. It helps me <span class="formula-bracket-hl">[lợi ích tinh thần - Vo]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🏃 [Chạy bộ & Tập thể dục công viên] (Cách 1):",
+                        items: [
+                            { en: "jog around the lake", vn: "chạy bộ quanh hồ nước" },
+                            { en: "do light stretching exercises", vn: "tập các động tác giãn cơ nhẹ nhàng" },
+                            { en: "recharge morning batteries", vn: "nạp lại năng lượng buổi sáng" },
+                            { en: "enjoy the cool morning breeze", vn: "tận hưởng làn gió mát ban mai" }
+                        ]
+                    },
+                    {
+                        title: "🚴 [Đạp xe dạo phố cuối tuần] (Cách 2):",
+                        items: [
+                            { en: "ride bicycles with close friends", vn: "đạp xe cùng bạn thân" },
+                            { en: "explore quiet peaceful streets", vn: "khám phá những con phố thanh bình yên tĩnh" },
+                            { en: "clear my mind after busy study", vn: "thư thái tâm trí sau giờ học bận rộn" },
+                            { en: "watch beautiful city sunsets", vn: "ngắm hoàng hôn tuyệt đẹp trên phố" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Chạy bộ quanh hồ và tập giãn cơ nhẹ nhàng ở công viên gần nhà vào sáng sớm - 23 từ)",
+                        text: "I usually jog around the lake and do light stretching exercises in the nearby public park early in the morning. It feels great.",
+                        formatted: `→ I usually <span class="sub-hl">jog around the lake</span> and <span class="sub-hl">do light stretching exercises</span> in the nearby public park early in the morning. It feels great.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Đạp xe cùng bạn thân qua các con phố rợp bóng cây vào cuối tuần để thư giãn tâm trí - 22 từ)",
+                        text: "At weekends, I often ride bicycles with close friends along green streets. It helps me clear my mind after busy study days.",
+                        formatted: `→ At weekends, I often <span class="sub-hl">ride bicycles with close friends</span> along green streets. It helps me <span class="sub-hl">clear my mind after busy study days</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Do you prefer outdoor activities or indoor activities?",
+                qType: "Preference Question: Do you prefer outdoor activities or indoor activities?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Thích hoạt động ngoài trời - Gần gũi thiên nhiên, không khí thoáng đãng và vận động nhiều hơn):</div>
+                    <div class="topic-formula-text">
+                        → I strongly prefer outdoor activities. Being close to nature and getting fresh air keeps me <span class="formula-bracket-hl">[tính từ thể chất]</span> and active.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Thích hoạt động trong nhà - Yên tĩnh, thoải mái, không lo thời tiết xấu và phù hợp sở thích cá nhân):</div>
+                    <div class="topic-formula-text">
+                        → I prefer indoor activities because they're <span class="formula-bracket-hl">[ưu điểm không gian]</span>. I never need to worry about <span class="formula-bracket-hl">[lo ngại thời tiết]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🌱 [Gần gũi thiên nhiên & Vận động năng nổ] (Cách 1):",
+                        items: [
+                            { en: "physically fit and mentally healthy", vn: "thể chất cân đối và tinh thần khỏe khoắn" },
+                            { en: "stay away from electronic screens", vn: "tránh xa màn hình thiết bị điện tử" },
+                            { en: "enjoy warm natural sunshine", vn: "tận hưởng ánh nắng ấm áp tự nhiên" },
+                            { en: "boost personal immune system", vn: "tăng cường hệ thống miễn dịch cá nhân" }
+                        ]
+                    },
+                    {
+                        title: "🏠 [Yên tĩnh & Thoải mái trong nhà] (Cách 2):",
+                        items: [
+                            { en: "very peaceful and completely safe", vn: "rất yên bình và hoàn toàn an toàn" },
+                            { en: "sudden rain or burning sunshine", vn: "mưa bất chợt hoặc nắng gắt" },
+                            { en: "focus on reading and drawing", vn: "tập trung vào đọc sách và vẽ tranh" },
+                            { en: "enjoy comfortable air conditioning", vn: "tận hưởng điều hòa thoải mái" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Thích hoạt động ngoài trời - Gần gũi thiên nhiên và hít thở khí trời giúp cơ thể khỏe mạnh - 23 từ)",
+                        text: "I strongly prefer outdoor activities. Being close to nature and getting fresh air keeps me physically fit and mentally healthy every single day.",
+                        formatted: `→ I strongly prefer outdoor activities. Being close to nature and getting fresh air keeps me <span class="sub-hl">physically fit and mentally healthy</span> every single day.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Thích hoạt động trong nhà - Yên tĩnh, an toàn, không lo mưa nắng bất chợt bên ngoài - 23 từ)",
+                        text: "I prefer indoor activities because they're very peaceful and completely safe. I never need to worry about sudden rain or burning sunshine outside.",
+                        formatted: `→ I prefer indoor activities because they're <span class="sub-hl">very peaceful and completely safe</span>. I never need to worry about <span class="sub-hl">sudden rain or burning sunshine</span> outside.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 48,
+        title: "Chủ đề 48: Let's talk about your favorite number",
+        introText: "Let’s talk about your favorite number.",
+        questions: [
+            {
+                qNum: 1,
+                question: "What is your favorite number?",
+                qType: "Wh-question: What is your favorite number?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Số 7 - Con số ngày sinh nhật may mắn, mang lại năng lượng tích cực và sự tự tin):</div>
+                    <div class="topic-formula-text">
+                        → My favorite number is seven because it's <span class="formula-bracket-hl">[ý nghĩa đặc biệt]</span>. This special number always brings me <span class="formula-bracket-hl">[cảm xúc tốt đẹp]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Số 9 - Con số biểu tượng cho sự trường tồn, thịnh vượng và thành công đỉnh cao):</div>
+                    <div class="topic-formula-text">
+                        → I love the number nine the most. In Vietnamese culture, nine represents <span class="formula-bracket-hl">[ý nghĩa biểu tượng 1]</span> and <span class="formula-bracket-hl">[ý nghĩa biểu tượng 2]</span> in life.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🍀 [Số 7 & Ngày sinh nhật] (Cách 1):",
+                        items: [
+                            { en: "my lucky birthday date", vn: "ngày sinh nhật may mắn của tôi" },
+                            { en: "good luck and positive confidence", vn: "sự may mắn và sự tự tin tích cực" },
+                            { en: "achieve successful test results", vn: "đạt kết quả thi cử thành công" },
+                            { en: "feel protected and inspired", vn: "cảm thấy được bảo vệ và truyền cảm hứng" }
+                        ]
+                    },
+                    {
+                        title: "👑 [Số 9 & Biểu tượng trường tồn] (Cách 2):",
+                        items: [
+                            { en: "long-lasting prosperity", vn: "sự thịnh vượng trường tồn" },
+                            { en: "highest ultimate success", vn: "thành công đỉnh cao tột bậc" },
+                            { en: "symbolize perfect complete harmony", vn: "tượng trưng cho sự hài hòa trọn vẹn hoàn hảo" },
+                            { en: "bring great peace of mind", vn: "mang lại sự an tâm to lớn" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Số 7 - Con số ngày sinh nhật may mắn, luôn mang lại tự tin và năng lượng tích cực - 22 từ)",
+                        text: "My favorite number is seven because it's my lucky birthday date. This special number always brings me good luck and positive confidence.",
+                        formatted: `→ My favorite number is seven because it's <span class="sub-hl">my lucky birthday date</span>. This special number always brings me <span class="sub-hl">good luck and positive confidence</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Số 9 - Biểu tượng của sự trường tồn, thịnh vượng và thành công đỉnh cao trong văn hóa - 22 từ)",
+                        text: "I love the number nine the most. In Vietnamese culture, nine represents long-lasting prosperity and highest ultimate success in life and business.",
+                        formatted: `→ I love the number nine the most. In Vietnamese culture, nine represents <span class="sub-hl">long-lasting prosperity</span> and <span class="sub-hl">highest ultimate success</span> in life and business.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What number do you think most people like?",
+                qType: "Wh-question: What number do you think most people like?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Số 8 - Âm đọc giống phát tài, thường được chọn làm số điện thoại và biển số xe):</div>
+                    <div class="topic-formula-text">
+                        → I think most people like the number eight. It sounds like wealth, so people choose it for <span class="formula-bracket-hl">[ứng dụng thực tế]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Số 6 - Tượng trưng cho chữ lộc, mọi việc thuận lợi, trôi chảy và hanh thông):</div>
+                    <div class="topic-formula-text">
+                        → Many people love the number six. In Asian culture, six signifies <span class="formula-bracket-hl">[ý nghĩa may mắn 1]</span> and <span class="formula-bracket-hl">[ý nghĩa may mắn 2]</span> in daily work.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "💰 [Số 8 & Tài lộc làm ăn] (Cách 1):",
+                        items: [
+                            { en: "lucky phone numbers and license plates", vn: "số điện thoại may mắn và biển số xe" },
+                            { en: "symbolize financial wealth and growth", vn: "tượng trưng cho tiền tài và sự tăng trưởng tài chính" },
+                            { en: "attract smooth business deals", vn: "thu hút những thương vụ làm ăn suôn sẻ" },
+                            { en: "bring great financial fortune", vn: "mang lại vận may tài chính to lớn" }
+                        ]
+                    },
+                    {
+                        title: "⛵ [Số 6 & Thuận buồm xuôi gió] (Cách 2):",
+                        items: [
+                            { en: "smooth progress and good fortune", vn: "sự tiến triển trôi chảy và vận may tốt lành" },
+                            { en: "harmonious family relationships", vn: "các mối quan hệ gia đình hòa thuận" },
+                            { en: "wish for smooth career journeys", vn: "cầu chúc hành trình sự nghiệp thuận buồm xuôi gió" },
+                            { en: "avoid unexpected troubles", vn: "tránh các rắc rối bất ngờ" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Số 8 - Âm đọc giống chữ phát tài, thường được chọn làm số điện thoại và biển số xe may mắn - 23 từ)",
+                        text: "I think most people like the number eight. It sounds like wealth, so people choose it for lucky phone numbers and license plates.",
+                        formatted: `→ I think most people like the number eight. It sounds like wealth, so people choose it for <span class="sub-hl">lucky phone numbers and license plates</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Số 6 - Tượng trưng cho chữ lộc, tiến triển trôi chảy và may mắn trong công việc, gia đình - 22 từ)",
+                        text: "Many people love the number six. In Asian culture, six signifies smooth progress and good fortune in daily work and family relationships.",
+                        formatted: `→ Many people love the number six. In Asian culture, six signifies <span class="sub-hl">smooth progress and good fortune</span> in daily work and family relationships.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Are there any numbers that are considered lucky in your country?",
+                qType: "Yes/No Question: Are there any numbers that are considered lucky in your country?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Số 6 và 8 mang âm lộc phát, đại diện cho may mắn hanh thông và tiền tài):</div>
+                    <div class="topic-formula-text">
+                        → Yes, of course. Numbers six and eight are extremely lucky because they sound like <span class="formula-bracket-hl">[khái niệm may mắn 1]</span> and <span class="formula-bracket-hl">[khái niệm may mắn 2]</span> in our culture.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Người trẻ hiện đại không tin vào số may mắn, thành công đến từ nỗ lực thực tế):</div>
+                    <div class="topic-formula-text">
+                        → Honestly, not really among modern youths. We believe that real success comes from <span class="formula-bracket-hl">[yếu tố thực tế 1]</span> and <span class="formula-bracket-hl">[yếu tố thực tế 2]</span>, not random numbers.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🧧 [Cặp số 6 & 8 Lộc Phát] (Cách 1):",
+                        items: [
+                            { en: "smooth luck and rising wealth", vn: "vận may hanh thông và tài lộc thăng tiến" },
+                            { en: "financial blessings for businessmen", vn: "phước lành tài chính cho người làm kinh doanh" },
+                            { en: "bring peaceful family happiness", vn: "mang lại niềm hạnh phúc gia đình êm ấm" },
+                            { en: "popular for phone SIM cards", vn: "rất được chuộng cho SIM điện thoại" }
+                        ]
+                    },
+                    {
+                        title: "💪 [Nỗ lực thực tế & Không mê tín] (Cách 2):",
+                        items: [
+                            { en: "hard work and practical skills", vn: "sự chăm chỉ và kỹ năng thực tế" },
+                            { en: "superstitious beliefs in lucky digits", vn: "niềm tin mê tín vào các con số may mắn" },
+                            { en: "focus on continuous self-improvement", vn: "tập trung vào việc tự hoàn thiện bản thân liên tục" },
+                            { en: "rely on genuine personal efforts", vn: "dựa vào những nỗ lực cá nhân thực sự" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - Số 6 và 8 mang âm lộc phát, đại diện cho may mắn hanh thông và tiền tài dồi dào - 23 từ)",
+                        text: "Yes, of course. Numbers six and eight are extremely lucky because they sound like smooth luck and rising wealth in our Vietnamese culture.",
+                        formatted: `→ Yes, of course. Numbers six and eight are extremely lucky because they sound like <span class="sub-hl">smooth luck and rising wealth</span> in our Vietnamese culture.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Giới trẻ hiện đại không tin số may mắn, thành công đến từ sự chăm chỉ và kỹ năng thực tế - 22 từ)",
+                        text: "Honestly, not really among modern youths. We believe that real success comes from hard work and practical skills, not random lucky numbers.",
+                        formatted: `→ Honestly, not really among modern youths. We believe that real success comes from <span class="sub-hl">hard work and practical skills</span>, not random lucky numbers.`
+                    }
+                ]
+            }
+        ]
+    },
 ];
 
         recorder.ondataavailable = (e) => {
