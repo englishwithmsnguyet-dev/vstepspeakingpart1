@@ -12742,6 +12742,314 @@ window.startFullTopicRecording = async (topicId) => {
             }
         ]
     },
+    {
+        id: 49,
+        title: "Chủ đề 49: Let's talk about time management",
+        introText: "Let’s talk about time management.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Are you good at managing your time?",
+                qType: "Yes/No Question: Are you good at managing your time?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Quản lý thời gian tốt nhờ lập to-do list hằng ngày và luôn đúng hạn):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I believe I am. Every morning, I <span class="formula-bracket-hl">[phương pháp quản lý 1 - Vo]</span> and <span class="formula-bracket-hl">[phương pháp quản lý 2 - Vo]</span> to meet deadlines.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Hay có thói quen trì hoãn, dễ bị phân tâm bởi điện thoại và đang cố gắng sửa):</div>
+                    <div class="topic-formula-text">
+                        → Honestly, not really. I often <span class="formula-bracket-hl">[thói quen xấu 1 - Vo]</span> and <span class="formula-bracket-hl">[thói quen xấu 2 - Vo]</span>, but I'm trying hard to improve.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "📋 [Lập kế hoạch & Đúng hạn] (Cách 1):",
+                        items: [
+                            { en: "write a clear daily to-do list", vn: "viết danh sách công việc hằng ngày rõ ràng" },
+                            { en: "prioritize important urgent tasks", vn: "ưu tiên các nhiệm vụ quan trọng cấp bách" },
+                            { en: "meet strict deadlines easily", vn: "đáp ứng các hạn chót nghiêm ngặt dễ dàng" },
+                            { en: "maintain high work productivity", vn: "duy trì hiệu suất làm việc cao" }
+                        ]
+                    },
+                    {
+                        title: "⏳ [Trì hoãn & Dễ phân tâm] (Cách 2):",
+                        items: [
+                            { en: "procrastinate on challenging tasks", vn: "chần chừ trước những nhiệm vụ khó" },
+                            { en: "waste time browsing social media", vn: "lãng phí thời gian lướt mạng xã hội" },
+                            { en: "struggle with tight schedules", vn: "chật vật với lịch trình bận rộn" },
+                            { en: "learn to set realistic goals", vn: "học cách đặt mục tiêu thực tế" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - Luôn lập danh sách công việc mỗi sáng và ưu tiên nhiệm vụ quan trọng - 22 từ)",
+                        text: "Yes, I believe I am. Every morning, I write a clear daily to-do list and prioritize important urgent tasks to meet strict deadlines.",
+                        formatted: `→ Yes, I believe I am. Every morning, I <span class="sub-hl">write a clear daily to-do list</span> and <span class="sub-hl">prioritize important urgent tasks</span> to meet strict deadlines.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Thường trì hoãn và lãng phí thời gian lướt mạng, đang cố rèn luyện tính kỷ luật - 23 từ)",
+                        text: "Honestly, not really. I often procrastinate on challenging tasks and waste time browsing social media, but I'm trying hard to improve my discipline.",
+                        formatted: `→ Honestly, not really. I often <span class="sub-hl">procrastinate on challenging tasks</span> and <span class="sub-hl">waste time browsing social media</span>, but I'm trying hard to improve my discipline.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "How do you manage your time?",
+                qType: "Wh-question: How do you manage your time?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Dùng ứng dụng lịch số - Cài đặt Google Calendar và đặt thông báo nhắc nhở các sự kiện quan trọng):</div>
+                    <div class="topic-formula-text">
+                        → I rely heavily on smartphone calendar apps. I <span class="formula-bracket-hl">[hành động lên lịch - Vo]</span> and <span class="formula-bracket-hl">[hành động nhắc nhở - Vo]</span> for urgent meetings.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Dùng sổ tay ghi chú truyền thống - Ghi chép nhật ký công việc và gạch bỏ từng mục khi hoàn thành):</div>
+                    <div class="topic-formula-text">
+                        → I prefer writing in a paper notebook. I <span class="formula-bracket-hl">[hoạt động ghi chép - Vo]</span> and tick them off. It brings <span class="formula-bracket-hl">[cảm giác hài lòng]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "📱 [Ứng dụng lịch & Đặt báo thức] (Cách 1):",
+                        items: [
+                            { en: "schedule all study appointments", vn: "lên lịch cho mọi cuộc hẹn học tập" },
+                            { en: "set helpful reminder notifications", vn: "cài đặt các thông báo nhắc nhở hữu ích" },
+                            { en: "track daily progress conveniently", vn: "theo dõi tiến độ hằng ngày tiện lợi" },
+                            { en: "avoid missing important events", vn: "tránh bỏ lỡ các sự kiện quan trọng" }
+                        ]
+                    },
+                    {
+                        title: "📓 [Sổ tay giấy & Gạch bỏ mục tiêu] (Cách 2):",
+                        items: [
+                            { en: "jot down daily action plans", vn: "ghi nhanh các kế hoạch hành động trong ngày" },
+                            { en: "organize study hours neatly", vn: "sắp xếp giờ học ngăn nắp" },
+                            { en: "a great sense of accomplishment", vn: "cảm giác thành tựu tuyệt vời" },
+                            { en: "keep mind highly focused", vn: "giữ tâm trí tập trung cao độ" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Sử dụng ứng dụng lịch trên điện thoại để lên lịch hẹn và cài đặt thông báo nhắc việc - 23 từ)",
+                        text: "I rely heavily on smartphone calendar apps. I schedule all study appointments and set helpful reminder notifications for urgent tasks and exam deadlines.",
+                        formatted: `→ I rely heavily on smartphone calendar apps. I <span class="sub-hl">schedule all study appointments</span> and <span class="sub-hl">set helpful reminder notifications</span> for urgent tasks and exam deadlines.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Dùng sổ tay giấy ghi kế hoạch hành động và tích hoàn thành giúp cảm thấy có thành tựu - 23 từ)",
+                        text: "I prefer writing in a paper notebook. I jot down daily action plans and tick completed tasks. It brings a great sense of accomplishment.",
+                        formatted: `→ I prefer writing in a paper notebook. I <span class="sub-hl">jot down daily action plans</span> and tick completed tasks. It brings <span class="sub-hl">a great sense of accomplishment</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "How important is time management?",
+                qType: "Wh-question: How important is time management?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Giảm căng thẳng & Cân bằng cuộc sống - Tránh tình trạng quá tải và có thời gian thư giãn):</div>
+                    <div class="topic-formula-text">
+                        → Time management is extremely essential. It helps people <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span> and maintain <span class="formula-bracket-hl">[lợi ích 2]</span> without feeling overwhelmed.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Chìa khóa thành công & Uy tín nghề nghiệp - Hoàn thành mục tiêu đúng hẹn và được đồng nghiệp tôn trọng):</div>
+                    <div class="topic-formula-text">
+                        → It's the key to personal success. Managing time well enables us to <span class="formula-bracket-hl">[lợi ích sự nghiệp 1 - Vo]</span> and <span class="formula-bracket-hl">[lợi ích sự nghiệp 2 - Vo]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🧘 [Giảm áp lực & Cân bằng lối sống] (Cách 1):",
+                        items: [
+                            { en: "avoid unnecessary stress", vn: "tránh sự căng thẳng không cần thiết" },
+                            { en: "a healthy work-life balance", vn: "sự cân bằng lành mạnh giữa công việc và cuộc sống" },
+                            { en: "enjoy guilt-free leisure time", vn: "tận hưởng thời gian rảnh rỗi thoải mái" },
+                            { en: "prevent mental exhaustion", vn: "ngăn ngừa kiệt sức tinh thần" }
+                        ]
+                    },
+                    {
+                        title: "🚀 [Thành công sự nghiệp & Uy tín] (Cách 2):",
+                        items: [
+                            { en: "achieve ambitious long-term goals", vn: "đạt được những mục tiêu dài hạn đầy tham vọng" },
+                            { en: "build professional personal credibility", vn: "xây dựng uy tín cá nhân chuyên nghiệp" },
+                            { en: "gain high respect from colleagues", vn: "nhận được sự tôn trọng lớn từ đồng nghiệp" },
+                            { en: "open promising promotion opportunities", vn: "mở ra những cơ hội thăng tiến đầy triển vọng" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Cực kỳ quan trọng giúp giảm bớt căng thẳng và duy trì sự cân bằng giữa học tập và cuộc sống - 20 từ)",
+                        text: "Time management is extremely essential. It helps people avoid unnecessary stress and maintain a healthy work-life balance without feeling overwhelmed.",
+                        formatted: `→ Time management is extremely essential. It helps people <span class="sub-hl">avoid unnecessary stress</span> and <span class="sub-hl">maintain a healthy work-life balance</span> without feeling overwhelmed.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Chìa khóa thành công - Giúp đạt mục tiêu dài hạn và tạo dựng uy tín nghề nghiệp vững chắc - 23 từ)",
+                        text: "It's the key to personal success. Managing time well enables us to achieve ambitious long-term goals and build professional personal credibility at work.",
+                        formatted: `→ It's the key to personal success. Managing time well enables us to <span class="sub-hl">achieve ambitious long-term goals</span> and <span class="sub-hl">build professional personal credibility</span> at work.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 50,
+        title: "Chủ đề 50: Let's talk about personality",
+        introText: "Let’s talk about personality.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Are you a family person?",
+                qType: "Yes/No Question: Are you a family person?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Người coi trọng gia đình, luôn ưu tiên bữa cơm sum họp và chăm sóc người thân):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I certainly am. My family always comes first. I love <span class="formula-bracket-hl">[hoạt động gia đình 1 - Ving]</span> and <span class="formula-bracket-hl">[hoạt động gia đình 2 - Ving]</span> every weekend.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Người độc lập và hướng ngoại, dành phần lớn năng lượng cho sự nghiệp và các mối quan hệ xã hội):</div>
+                    <div class="topic-formula-text">
+                        → Honestly, not really. I'm an independent person, so I spend more time <span class="formula-bracket-hl">[ưu tiên cuộc sống 1 - Ving]</span> and <span class="formula-bracket-hl">[ưu tiên cuộc sống 2 - Ving]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "👨‍👩‍👦 [Coi trọng gia đình & Bữa cơm sum họp] (Cách 1):",
+                        items: [
+                            { en: "cooking dinner for my parents", vn: "nấu bữa tối cho bố mẹ" },
+                            { en: "sharing daily stories with family members", vn: "chia sẻ những mẩu chuyện hằng ngày với người thân" },
+                            { en: "cherish warm household bonds", vn: "trân trọng tình cảm gia đình ấm cúng" },
+                            { en: "care for family health", vn: "chăm sóc sức khỏe gia đình" }
+                        ]
+                    },
+                    {
+                        title: "💼 [Độc lập & Xây dựng sự nghiệp] (Cách 2):",
+                        items: [
+                            { en: "building my professional career", vn: "xây dựng sự nghiệp chuyên môn" },
+                            { en: "networking with ambitious colleagues", vn: "giao lưu kết nối với những đồng nghiệp cầu tiến" },
+                            { en: "pursue personal life adventures", vn: "theo đuổi những chuyến phiêu lưu cuộc sống cá nhân" },
+                            { en: "live an active outgoing lifestyle", vn: "sống một phong cách sống năng động hướng ngoại" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - Gia đình luôn là số một, thích nấu ăn cho bố mẹ và trò chuyện ấm áp mỗi ngày - 23 từ)",
+                        text: "Yes, I certainly am. My family always comes first. I love cooking dinner for my parents and sharing daily stories with family members.",
+                        formatted: `→ Yes, I certainly am. My family always comes first. I love <span class="sub-hl">cooking dinner for my parents</span> and <span class="sub-hl">sharing daily stories with family members</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Người độc lập, dành nhiều thời gian xây dựng sự nghiệp và mở rộng quan hệ xã hội - 22 từ)",
+                        text: "Honestly, not really. I'm an independent person, so I spend more time building my professional career and networking with ambitious colleagues outside.",
+                        formatted: `→ Honestly, not really. I'm an independent person, so I spend more time <span class="sub-hl">building my professional career</span> and <span class="sub-hl">networking with ambitious colleagues</span> outside.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What are the qualities of a good wife?",
+                qType: "Wh-question: What are the qualities of a good wife?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Nhân ái và biết thấu hiểu - Lắng nghe, động viên người bạn đời và giữ gìn ngọn lửa ấm gia đình):</div>
+                    <div class="topic-formula-text">
+                        → In my opinion, a good wife should be <span class="formula-bracket-hl">[phẩm chất 1]</span> and <span class="formula-bracket-hl">[phẩm chất 2]</span>. She always supports her partner through difficulties.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Độc lập và biết quán xuyến - Tự chủ trong cuộc sống và biết quản lý tài chính gia đình thông minh):</div>
+                    <div class="topic-formula-text">
+                        → I believe a wonderful wife possesses <span class="formula-bracket-hl">[phẩm chất 1]</span>. She can <span class="formula-bracket-hl">[năng lực quán xuyến 1 - Vo]</span> and build mutual trust.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "💖 [Nhân ái & Thấu hiểu sâu sắc] (Cách 1):",
+                        items: [
+                            { en: "caring and deeply understanding", vn: "biết quan tâm và thấu hiểu sâu sắc" },
+                            { en: "patient in daily conversations", vn: "kiên nhẫn trong các cuộc trò chuyện thường nhật" },
+                            { en: "encourage partner through hard times", vn: "động viên bạn đời vượt qua giai đoạn khó khăn" },
+                            { en: "create a loving peaceful home", vn: "tạo dựng một mái ấm yêu thương bình yên" }
+                        ]
+                    },
+                    {
+                        title: "💡 [Độc lập & Quán xuyến tài chính] (Cách 2):",
+                        items: [
+                            { en: "strong independence and financial wisdom", vn: "sự độc lập vững vàng và sự thông thái tài chính" },
+                            { en: "manage household expenses wisely", vn: "quản lý chi tiêu gia đình thông minh" },
+                            { en: "balance work and family duties", vn: "cân bằng giữa công việc và trách nhiệm gia đình" },
+                            { en: "respect mutual equality", vn: "tôn trọng sự bình đẳng đôi bên" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Biết quan tâm, thấu hiểu sâu sắc và luôn kiên nhẫn đồng hành cùng người bạn đời - 22 từ)",
+                        text: "In my opinion, a good wife should be caring and deeply understanding. She always supports her partner patiently through life's hard times.",
+                        formatted: `→ In my opinion, a good wife should be <span class="sub-hl">caring and deeply understanding</span>. She always <span class="sub-hl">supports her partner patiently</span> through life's hard times.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Độc lập, có hiểu biết tài chính và biết quản lý chi tiêu gia đình khéo léo, đáng tin cậy - 22 từ)",
+                        text: "I believe a wonderful wife possesses strong independence and financial wisdom. She can manage household expenses wisely and build mutual family trust.",
+                        formatted: `→ I believe a wonderful wife possesses <span class="sub-hl">strong independence and financial wisdom</span>. She can <span class="sub-hl">manage household expenses wisely</span> and build mutual family trust.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Will your personality change when you get older?",
+                qType: "Yes/No Question: Will your personality change when you get older?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Chắc chắn sẽ thay đổi, trở nên điềm đạm, kiên nhẫn và chín chắn hơn nhờ vốn sống):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I think so. Life experiences will make me <span class="formula-bracket-hl">[tính cách thay đổi 1]</span> and <span class="formula-bracket-hl">[tính cách thay đổi 2]</span> when facing difficult challenges.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Những giá trị cốt lõi như lòng lạc quan, tính chân thành và vui tươi sẽ luôn được gìn giữ):</div>
+                    <div class="topic-formula-text">
+                        → Probably not much. My core values like <span class="formula-bracket-hl">[giá trị cốt lõi 1]</span> and <span class="formula-bracket-hl">[giá trị cốt lõi 2]</span> will always remain unchanged throughout life.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🧘 [Điềm tĩnh & Chín chắn hơn] (Cách 1):",
+                        items: [
+                            { en: "much more mature and patient", vn: "chín chắn và kiên nhẫn hơn nhiều" },
+                            { en: "calm in stressful situations", vn: "điềm tĩnh trong các tình huống căng thẳng" },
+                            { en: "listen to others with empathy", vn: "lắng nghe người khác với sự thấu cảm" },
+                            { en: "gain valuable life wisdom", vn: "tích lũy vốn sống quý báu" }
+                        ]
+                    },
+                    {
+                        title: "☀️ [Giá trị cốt lõi & Giữ nguyên bản sắc] (Cách 2):",
+                        items: [
+                            { en: "cheerful optimism and genuine honesty", vn: "tinh thần lạc quan vui vẻ và sự trung thực chân thành" },
+                            { en: "stay true to personal principles", vn: "trung thành với các nguyên tắc cá nhân" },
+                            { en: "protect authentic identity", vn: "bảo vệ bản sắc chân thật" },
+                            { en: "remain positive through all ages", vn: "giữ tinh thần tích cực qua mọi độ tuổi" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - Vốn sống phong phú sẽ giúp bản thân trở nên chín chắn và kiên nhẫn hơn nhiều - 22 từ)",
+                        text: "Yes, I think so. Rich life experiences will make me much more mature and patient when facing stressful challenges in the future.",
+                        formatted: `→ Yes, I think so. Rich life experiences will make me <span class="sub-hl">much more mature and patient</span> when facing <span class="sub-hl">stressful challenges</span> in the future.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Những giá trị cốt lõi như tinh thần lạc quan và sự chân thực sẽ không bao giờ thay đổi - 21 từ)",
+                        text: "Probably not much. My core values like cheerful optimism and genuine honesty will always remain completely unchanged throughout my entire lifetime.",
+                        formatted: `→ Probably not much. My core values like <span class="sub-hl">cheerful optimism and genuine honesty</span> will always remain <span class="sub-hl">completely unchanged</span> throughout my entire lifetime.`
+                    }
+                ]
+            }
+        ]
+    },
 ];
 
         recorder.ondataavailable = (e) => {
