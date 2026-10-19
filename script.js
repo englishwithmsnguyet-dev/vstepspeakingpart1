@@ -12126,7 +12126,315 @@ window.startFullTopicRecording = async (topicId) => {
 
         const recorder = new MediaRecorder(stream, options);
         window._fullExamTimer.recorder = recorder;
-        window._fullExamTimer.chunks = [];
+        window._fullExamTimer.chunks = [    {
+        id: 45,
+        title: "Chủ đề 45: Let's talk about happiness",
+        introText: "Let’s talk about happiness.",
+        questions: [
+            {
+                qNum: 1,
+                question: "What can make you happy?",
+                qType: "Wh-question: What can make you happy?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Nấu ăn và sum họp gia đình - Tận hưởng khoảnh khắc ấm áp bên người thân):</div>
+                    <div class="topic-formula-text">
+                        → Simple things make me happy, especially <span class="formula-bracket-hl">[hoạt động 1 - Ving]</span> and <span class="formula-bracket-hl">[hoạt động 2 - Ving]</span>. It always helps me relax.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Hoàn thành mục tiêu học tập/công việc - Đạt kết quả tốt và phát triển bản thân):</div>
+                    <div class="topic-formula-text">
+                        → Achieving my daily goals brings me joy. Whenever I <span class="formula-bracket-hl">[kết quả công việc - Vo]</span>, I feel <span class="formula-bracket-hl">[tính từ cảm xúc]</span> and proud.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "👨‍👩‍👧 [Nấu ăn & Sum họp gia đình] (Cách 1):",
+                        items: [
+                            { en: "cooking delicious meals at home", vn: "nấu các bữa ăn ngon tại nhà" },
+                            { en: "gathering with family members", vn: "sum họp cùng các thành viên gia đình" },
+                            { en: "enjoy warm conversations", vn: "tận hưởng những cuộc trò chuyện ấm áp" },
+                            { en: "feel peaceful and cheerful", vn: "cảm thấy bình yên và được yêu thương" }
+                        ]
+                    },
+                    {
+                        title: "🎯 [Hoàn thành mục tiêu & Tự hào] (Cách 2):",
+                        items: [
+                            { en: "complete difficult tasks successfully", vn: "hoàn thành các nhiệm vụ khó khăn thành công" },
+                            { en: "receive positive feedback from teachers", vn: "nhận phản hồi tích cực từ thầy cô" },
+                            { en: "extremely motivated and confident", vn: "vô cùng có động lực và tự tin" },
+                            { en: "make continuous personal progress", vn: "tiến bộ liên tục trong cuộc sống" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Nấu ăn ngon tại nhà và sum họp gia đình vào cuối tuần giúp cảm thấy bình yên - 21 từ)",
+                        text: "Simple things make me happy, especially cooking delicious meals at home and gathering with family members. It always helps me relax.",
+                        formatted: `→ Simple things make me happy, especially <span class="sub-hl">cooking delicious meals at home</span> and <span class="sub-hl">gathering with family members</span>. It always helps me relax.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Hoàn thành mục tiêu học tập và công việc mỗi ngày giúp tràn đầy động lực - 21 từ)",
+                        text: "Achieving my daily goals brings me joy. Whenever I complete difficult tasks successfully, I feel extremely motivated and proud of myself.",
+                        formatted: `→ Achieving my daily goals brings me joy. Whenever I <span class="sub-hl">complete difficult tasks successfully</span>, I feel <span class="sub-hl">extremely motivated and proud</span> of myself.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "Do you share your happiness with others?",
+                qType: "Yes/No Question: Do you share your happiness with others?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Chia sẻ niềm vui với người thân yêu để nhân đôi hạnh phúc và nhận lời chúc mừng):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I always do. Whenever good things happen, I <span class="formula-bracket-hl">[hành động chia sẻ - Vo]</span>. Sharing happiness <span class="formula-bracket-hl">[tác động tích cực]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Thích giữ niềm vui riêng tư cho bản thân, tránh khoe khoang và tự tận hưởng):</div>
+                    <div class="topic-formula-text">
+                        → Honestly, not really. I'm a private person, so I usually <span class="formula-bracket-hl">[thói quen giữ riêng - Vo]</span> instead of <span class="formula-bracket-hl">[hành vi chia sẻ ồn ào - Ving]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🎉 [Chia sẻ & Nhân đôi niềm vui] (Cách 1):",
+                        items: [
+                            { en: "call my parents and best friends", vn: "gọi điện cho bố mẹ và bạn thân" },
+                            { en: "doubles the joy and strengthens bonds", vn: "nhân đôi niềm vui và gắn kết tình cảm" },
+                            { en: "celebrate small achievements together", vn: "cùng nhau ăn mừng những thành tựu nhỏ" },
+                            { en: "spread positive energy to everyone", vn: "lan tỏa năng lượng tích cực đến mọi người" }
+                        ]
+                    },
+                    {
+                        title: "🤫 [Giữ kín riêng tư & Tự chiêm nghiệm] (Cách 2):",
+                        items: [
+                            { en: "keep good news to myself", vn: "giữ tin vui cho riêng mình" },
+                            { en: "posting everything on social media", vn: "đăng tải mọi thứ lên mạng xã hội" },
+                            { en: "enjoy peaceful quiet moments", vn: "tận hưởng những khoảnh khắc yên bình" },
+                            { en: "avoid unnecessary public attention", vn: "tránh sự chú ý không cần thiết của công chúng" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - Luôn gọi điện chia sẻ với bố mẹ và bạn thân để nhân đôi niềm vui - 23 từ)",
+                        text: "Yes, I always do. Whenever good things happen, I call my parents and best friends. Sharing happiness doubles the joy and strengthens bonds.",
+                        formatted: `→ Yes, I always do. Whenever good things happen, I <span class="sub-hl">call my parents and best friends</span>. Sharing happiness <span class="sub-hl">doubles the joy and strengthens bonds</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Người kín tiếng nên giữ tin vui cho riêng mình, tránh đăng lên mạng xã hội - 22 từ)",
+                        text: "Honestly, not really. I'm a private person, so I usually keep good news to myself instead of posting everything on social media.",
+                        formatted: `→ Honestly, not really. I'm a private person, so I usually <span class="sub-hl">keep good news to myself</span> instead of <span class="sub-hl">posting everything on social media</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Do you think money can buy happiness? Why or why not?",
+                qType: "Yes/No Question: Do you think money can buy happiness? Why or why not?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Tiền bạc giúp giải quyết lo toan tài chính, chi trả giáo dục và chăm sóc y tế):</div>
+                    <div class="topic-formula-text">
+                        → Yes, to some extent. Having enough money helps us <span class="formula-bracket-hl">[lợi ích tài chính 1 - Vo]</span> and <span class="formula-bracket-hl">[lợi ích tài chính 2 - Vo]</span> without daily stress.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Tiền bạc không thể mua được sức khỏe thực sự, tình bạn chân chính và bình yên nội tâm):</div>
+                    <div class="topic-formula-text">
+                        → I don't think so. Money cannot buy <span class="formula-bracket-hl">[giá trị tinh thần 1]</span> or <span class="formula-bracket-hl">[giá trị tinh thần 2]</span>. True happiness comes from inner peace.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "💳 [Đảm bảo tài chính & Chăm sóc y tế] (Cách 1):",
+                        items: [
+                            { en: "pay for high healthcare services", vn: "chi trả dịch vụ y tế chất lượng cao" },
+                            { en: "provide a comfortable living condition", vn: "cung cấp điều kiện sống tiện nghi" },
+                            { en: "reduce financial anxiety", vn: "giảm bớt lo âu tài chính" },
+                            { en: "support beloved family members", vn: "hỗ trợ các thành viên thân yêu trong gia đình" }
+                        ]
+                    },
+                    {
+                        title: "💖 [Tình bạn chân thành & Bình yên nội tâm] (Cách 2):",
+                        items: [
+                            { en: "genuine friendship and deep love", vn: "tình bạn chân chính và tình yêu sâu sắc" },
+                            { en: "good physical health", vn: "sức khỏe thể chất tốt" },
+                            { en: "cherish simple daily blessings", vn: "trân trọng những phước lành giản dị hằng ngày" },
+                            { en: "build lasting emotional connections", vn: "xây dựng sự gắn kết cảm xúc bền lâu" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - Tiền bạc giúp chi trả y tế và tạo điều kiện sống tiện nghi, giảm bớt lo âu - 23 từ)",
+                        text: "Yes, to some extent. Having enough money helps us pay for good healthcare services and provide comfortable living conditions without daily financial stress.",
+                        formatted: `→ Yes, to some extent. Having enough money helps us <span class="sub-hl">pay for good healthcare services</span> and <span class="sub-hl">provide comfortable living conditions</span> without daily financial stress.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Tiền bạc không mua được tình bạn chân thành và sức khỏe, hạnh phúc đến từ nội tâm - 22 từ)",
+                        text: "I don't think so. Money cannot buy genuine friendship and good physical health. True happiness always comes from love and inner peace.",
+                        formatted: `→ I don't think so. Money cannot buy <span class="sub-hl">genuine friendship and good physical health</span>. True happiness always comes from <span class="sub-hl">love and inner peace</span>.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 46,
+        title: "Chủ đề 46: Let's talk about cinema",
+        introText: "Let’s talk about cinema.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Are there many cinemas in your city?",
+                qType: "Yes/No Question: Are there many cinemas in your city?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Rất nhiều rạp chiếu phim hiện đại tại các trung tâm thương mại lớn):</div>
+                    <div class="topic-formula-text">
+                        → Yes, there are plenty. Major shopping malls in my city feature <span class="formula-bracket-hl">[tiện ích rạp phim hiện đại]</span> with advanced sound systems.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Thị trấn nhỏ không có rạp chiếu phim, người dân xem phim trên mạng tại nhà):</div>
+                    <div class="topic-formula-text">
+                        → Unfortunately, no, there aren't. My small hometown lacks <span class="formula-bracket-hl">[cơ sở giải trí]</span>, so local people usually <span class="formula-bracket-hl">[hoạt động xem phim thay thế - Vo]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🎬 [Rạp hiện đại & Trung tâm thương mại] (Cách 1):",
+                        items: [
+                            { en: "modern cinema complexes like CGV", vn: "các cụm rạp hiện đại như CGV" },
+                            { en: "large IMAX projection screens", vn: "màn hình chiếu IMAX cỡ lớn" },
+                            { en: "attract lots of young moviegoers", vn: "thu hút nhiều khán giả trẻ" },
+                            { en: "offer comfortable seating areas", vn: "cung cấp các khu vực ghế ngồi thoải mái" }
+                        ]
+                    },
+                    {
+                        title: "🏡 [Thị trấn nhỏ & Xem phim online] (Cách 2):",
+                        items: [
+                            { en: "commercial movie theaters", vn: "các rạp chiếu phim thương mại" },
+                            { en: "stream movies online at home", vn: "xem phim trực tuyến tại nhà" },
+                            { en: "travel to nearby big cities", vn: "di chuyển đến các thành phố lớn lân cận" },
+                            { en: "watch television entertainment shows", vn: "xem các chương trình giải trí truyền hình" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - Nhiều cụm rạp hiện đại như CGV trong các trung tâm thương mại với màn hình lớn - 23 từ)",
+                        text: "Yes, there are plenty. Major shopping malls in my city feature modern cinema complexes like CGV with advanced sound systems and large screens.",
+                        formatted: `→ Yes, there are plenty. Major shopping malls in my city feature <span class="sub-hl">modern cinema complexes like CGV</span> with <span class="sub-hl">advanced sound systems and large screens</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Quê nhỏ không có rạp chiếu phim thương mại, người dân thường xem phim trực tuyến tại nhà - 21 từ)",
+                        text: "Unfortunately, no, there aren't. My small hometown lacks commercial movie theaters, so local people usually stream movies online at home instead.",
+                        formatted: `→ Unfortunately, no, there aren't. My small hometown lacks <span class="sub-hl">commercial movie theaters</span>, so local people usually <span class="sub-hl">stream movies online at home</span> instead.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "Do you often go to the cinema?",
+                qType: "Yes/No Question: Do you often go to the cinema?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Thường đi 1 đến 2 lần mỗi tháng cùng bạn thân để thưởng thức các phim bom tấn mới):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I do. I usually go to the cinema <span class="formula-bracket-hl">[tần suất đi xem]</span> with my close friends to <span class="formula-bracket-hl">[mục đích thưởng thức - Vo]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Hiếm khi đi vì giá vé khá đắt và bận rộn, thích xem qua ứng dụng tại nhà):</div>
+                    <div class="topic-formula-text">
+                        → Rarely now. Cinema tickets are <span class="formula-bracket-hl">[lý do chi phí]</span>, and I'm busy. I prefer <span class="formula-bracket-hl">[thói quen xem phim ở nhà - Ving]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🍿 [Đi xem phim cùng bạn bè] (Cách 1):",
+                        items: [
+                            { en: "once or twice a month", vn: "một hoặc hai lần mỗi tháng" },
+                            { en: "enjoy exciting new blockbuster films", vn: "thưởng thức các bộ phim bom tấn mới hào hứng" },
+                            { en: "eat delicious sweet popcorn", vn: "ăn bắp rang bơ ngọt thơm ngon" },
+                            { en: "relax together on Saturday nights", vn: "cùng nhau thư giãn vào tối thứ Bảy" }
+                        ]
+                    },
+                    {
+                        title: "🛋️ [Hiếm khi đi & Xem Netflix tại nhà] (Cách 2):",
+                        items: [
+                            { en: "quite expensive for my budget", vn: "khá đắt đỏ so với ngân sách của tôi" },
+                            { en: "watching Netflix films on my sofa", vn: "xem phim Netflix trên ghế sofa" },
+                            { en: "save travel time and money", vn: "tiết kiệm thời gian di chuyển và tiền bạc" },
+                            { en: "pause favorite movies anytime", vn: "tạm dừng phim yêu thích bất kỳ lúc nào" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ - Đi 1-2 lần mỗi tháng cùng bạn thân để thưởng thức phim bom tấn mới ra rạp - 23 từ)",
+                        text: "Yes, I do. I usually go to the cinema once or twice a month with my close friends to enjoy exciting new blockbuster films.",
+                        formatted: `→ Yes, I do. I usually go to the cinema <span class="sub-hl">once or twice a month</span> with my close friends to <span class="sub-hl">enjoy exciting new blockbuster films</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trả lời HIẾM KHI - Vé xem phim khá đắt đỏ, thích xem Netflix thoải mái trên ghế sofa tại nhà - 21 từ)",
+                        text: "Rarely now. Cinema tickets are quite expensive for my budget, and I'm busy. I prefer watching Netflix films on my sofa comfortably.",
+                        formatted: `→ Rarely now. Cinema tickets are <span class="sub-hl">quite expensive for my budget</span>, and I'm busy. I prefer <span class="sub-hl">watching Netflix films on my sofa comfortably</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Do you prefer to watch movies at home or in the cinema?",
+                qType: "Preference Question: Do you prefer to watch movies at home or in the cinema?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Thích xem tại rạp - Màn hình lớn và hiệu ứng âm thanh sống động mang lại trải nghiệm đỉnh cao):</div>
+                    <div class="topic-formula-text">
+                        → I strongly prefer the cinema. The giant screen and <span class="formula-bracket-hl">[hiệu ứng nghe nhìn]</span> deliver an <span class="formula-bracket-hl">[tính từ trải nghiệm]</span> with delicious popcorn.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Thích xem tại nhà - Tiện lợi, riêng tư tuyệt đối, có thể tạm dừng phim và tiết kiệm chi phí):</div>
+                    <div class="topic-formula-text">
+                        → I prefer watching at home because it's <span class="formula-bracket-hl">[ưu điểm tiện nghi]</span>. I can pause movies easily and <span class="formula-bracket-hl">[lợi ích tự do - Vo]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🎥 [Màn hình khổng lồ & Âm thanh sống động] (Cách 1):",
+                        items: [
+                            { en: "vivid surround sound effects", vn: "các hiệu ứng âm thanh vòm sống động" },
+                            { en: "unforgettable cinematic experience", vn: "trải nghiệm điện ảnh khó quên" },
+                            { en: "immerse in action scenes", vn: "đắm chìm trong các cảnh hành động" },
+                            { en: "enjoy top visual quality", vn: "thưởng thức chất lượng hình ảnh đỉnh cao" }
+                        ]
+                    },
+                    {
+                        title: "🍿 [Tiện lợi & Riêng tư tại nhà] (Cách 2):",
+                        items: [
+                            { en: "much more comfortable and private", vn: "thoải mái và riêng tư hơn nhiều" },
+                            { en: "eat homemade snacks freely", vn: "tự do ăn đồ ăn vặt tự làm" },
+                            { en: "avoid noisy cinema crowds", vn: "tránh đám đông ồn ào ở rạp" },
+                            { en: "save monthly entertainment money", vn: "tiết kiệm tiền giải trí hằng tháng" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Thích xem tại rạp - Màn hình lớn và âm thanh vòm sống động mang lại trải nghiệm điện ảnh tuyệt vời - 22 từ)",
+                        text: "I strongly prefer the cinema. The giant screen and vivid surround sound effects deliver an unforgettable cinematic experience with delicious sweet popcorn.",
+                        formatted: `→ I strongly prefer the cinema. The giant screen and <span class="sub-hl">vivid surround sound effects</span> deliver an <span class="sub-hl">unforgettable cinematic experience</span> with delicious sweet popcorn.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Thích xem tại nhà - Thoải mái, riêng tư, có thể tạm dừng phim và tự do ăn vặt - 22 từ)",
+                        text: "I prefer watching at home because it's much more comfortable and private. I can pause movies easily and eat homemade snacks freely.",
+                        formatted: `→ I prefer watching at home because it's <span class="sub-hl">much more comfortable and private</span>. I can pause movies easily and <span class="sub-hl">eat homemade snacks freely</span>.`
+                    }
+                ]
+            }
+        ]
+    },
+];
 
         recorder.ondataavailable = (e) => {
             if (e.data && e.data.size > 0) {
