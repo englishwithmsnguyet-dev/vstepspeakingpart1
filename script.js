@@ -4305,8 +4305,8 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Theo thói quen lúc rảnh)",
-                        text: "In my free time, I usually read books because it helps me relax after a busy day and widen my knowledge. I also listen to music to clear my mind.",
-                        formatted: `→ In my free time, I usually <span class="sub-hl">read books</span> because it helps me <span class="sub-hl">relax after a busy day</span> and <span class="sub-hl">widen my knowledge</span>. I also <span class="sub-hl">listen to music</span> to <span class="sub-hl">clear my mind</span>.`
+                        text: "In my free time, I usually read books because it helps me relax after a busy day and widen my knowledge effectively.",
+                        formatted: `→ In my free time, I usually <span class="sub-hl">read books</span> because it helps me <span class="sub-hl">relax after a busy day</span> and <span class="sub-hl">widen my knowledge effectively</span>.`
                     }
                 ]
             },
@@ -4459,8 +4459,8 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Mẫu có Although)",
-                        text: "Although I have a busy schedule, I still spend about one hour on my hobbies every day because it helps me relax after a busy day. It also makes me feel refreshed.",
-                        formatted: `→ Although I have a busy schedule, I still spend about <span class="sub-hl">one hour</span> on my hobbies <span class="sub-hl">every day</span> because it helps me <span class="sub-hl">relax after a busy day</span>. It also makes me feel <span class="sub-hl">refreshed</span>.`
+                        text: "Although I have a busy schedule, I spend one hour on my hobbies daily because it helps me relax and feel refreshed.",
+                        formatted: `→ Although I have a busy schedule, I spend <span class="sub-hl">one hour on my hobbies daily</span> because it helps me <span class="sub-hl">relax and feel refreshed</span>.`
                     }
                 ]
             }
@@ -4545,8 +4545,8 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Cờ vua trực tuyến trên điện thoại cùng bạn bè)",
-                        text: "Whenever I have free time, I love playing online chess on my smartphone with my close friends. It’s a wonderful way to relax after a busy day.",
-                        formatted: `→ Whenever I have free time, I love playing <span class="sub-hl">online chess</span> on my <span class="sub-hl">smartphone</span> with <span class="sub-hl">my close friends</span>. It’s a wonderful way to <span class="sub-hl">relax after a busy day</span>.`
+                        text: "In my free time, I love playing online chess on my smartphone with close friends to relax after a busy day.",
+                        formatted: `→ In my free time, I love playing <span class="sub-hl">online chess</span> on my smartphone with close friends to <span class="sub-hl">relax after a busy day</span>.`
                     }
                 ]
             },
@@ -4593,8 +4593,8 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Giảm stress & giết thời gian)",
-                        text: "The main reason is that it’s a great way to reduce stress. Besides, playing that game also helps me pass the time and feel happy.",
-                        formatted: `→ The main reason is that it’s a great way to <span class="sub-hl">reduce stress</span>. Besides, playing that game also helps me <span class="sub-hl">pass the time</span> and feel <span class="sub-hl">happy</span>.`
+                        text: "The main reason is that it reduces stress. Besides, playing online games also helps me pass time and feel happy.",
+                        formatted: `→ The main reason is that it <span class="sub-hl">reduces stress</span>. Besides, playing online games also helps me <span class="sub-hl">pass time and feel happy</span>.`
                     }
                 ]
             },
@@ -4645,8 +4645,8 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Cấu trúc nhượng bộ Although - Chọn chơi một mình)",
-                        text: "Although playing with friends is quite fun, I still prefer playing video games alone because it’s much more relaxing. It helps me focus better on the game and clear my mind.",
-                        formatted: `→ Although <span class="sub-hl">playing with friends is quite fun</span>, I still prefer <span class="sub-hl">playing video games alone</span> because it’s much more <span class="sub-hl">relaxing</span>. It helps me <span class="sub-hl">focus better on the game</span> and <span class="sub-hl">clear my mind</span>.`
+                        text: "Although playing with friends is fun, I prefer playing games alone. It helps me focus better and clear my mind completely.",
+                        formatted: `→ Although playing with friends is fun, I prefer <span class="sub-hl">playing games alone</span>. It helps me <span class="sub-hl">focus better and clear my mind completely</span>.`
                     }
                 ]
             }
@@ -4723,13 +4723,13 @@ const practiceTopicsData = [
                 samples: [
                     {
                         label: "Bài mẫu Cách 1 (Nêu sách Harry Potter - Lôi cuốn & Giảm stress)",
-                        text: "I’m a big fan of Harry Potter. I like it because it’s very exciting. It always helps me reduce stress and makes me feel happy whenever I read it.",
-                        formatted: `→ I’m a big fan of <span class="sub-hl">Harry Potter</span>. I like it because it’s very <span class="sub-hl">exciting</span>. It always helps me <span class="sub-hl">reduce stress</span> and makes me feel <span class="sub-hl">happy</span> whenever I read it.`
+                        text: "I'm a big fan of Harry Potter because it's exciting. Reading it helps me reduce stress and makes me feel happy.",
+                        formatted: `→ I'm a big fan of <span class="sub-hl">Harry Potter</span> because it's exciting. Reading it helps me <span class="sub-hl">reduce stress and makes me feel happy</span>.`
                     },
                     {
                         label: "Bài mẫu Cách 2 (Nêu thể loại kỹ năng sống & Đắc Nhân Tâm)",
-                        text: "To be honest, I really enjoy reading self-help books, and my all-time favorite is How to Win Friends and Influence People. The main reason is that it provides a lot of valuable lessons and helps me widen my knowledge.",
-                        formatted: `→ To be honest, I really enjoy reading <span class="sub-hl">self-help books</span>, and my all-time favorite is <span class="sub-hl">How to Win Friends and Influence People</span>. The main reason is that it provides a lot of <span class="sub-hl">valuable lessons</span> and helps me <span class="sub-hl">widen my knowledge</span>.`
+                        text: "To be honest, I enjoy reading self-help books like How to Win Friends because they provide valuable life lessons and widen knowledge.",
+                        formatted: `→ To be honest, I enjoy reading <span class="sub-hl">self-help books like How to Win Friends</span> because they provide valuable life lessons and <span class="sub-hl">widen knowledge</span>.`
                     }
                 ]
             },
@@ -4787,8 +4787,8 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Cấu trúc nhượng bộ Although - Chọn sách giấy)",
-                        text: "Although electronic books are very convenient, I still prefer reading paper books because they are more comfortable for my eyes. They help me focus better and avoid distractions.",
-                        formatted: `→ Although <span class="sub-hl">electronic books are very convenient</span>, I still prefer <span class="sub-hl">reading paper books</span> because they are more <span class="sub-hl">comfortable for my eyes</span>. They help me <span class="sub-hl">focus better</span> and <span class="sub-hl">avoid distractions</span>.`
+                        text: "Although electronic books are convenient, I prefer paper books. They're more comfortable for my eyes and help me avoid screen distractions.",
+                        formatted: `→ Although electronic books are convenient, I prefer <span class="sub-hl">paper books</span>. They're <span class="sub-hl">more comfortable for my eyes</span> and help me <span class="sub-hl">avoid screen distractions</span>.`
                     }
                 ]
             },
@@ -4848,8 +4848,8 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Sách kỹ năng - Hữu ích & Mở rộng kiến thức)",
-                        text: "Most teenagers in my country love reading self-help books because they are very useful. Reading them is a great way to widen their knowledge and learn useful skills.",
-                        formatted: `→ Most teenagers in my country love reading <span class="sub-hl">self-help books</span>. These books are <span class="sub-hl">useful</span>, so they’re very popular. They help young people <span class="sub-hl">widen their knowledge</span> and <span class="sub-hl">learn useful skills</span>.`
+                        text: "Most teenagers in my country love reading self-help books because they're useful. They help young people widen knowledge and learn skills.",
+                        formatted: `→ Most teenagers in my country love reading self-help books because they're useful. They help young people <span class="sub-hl">widen knowledge and learn skills</span>.`
                     }
                 ]
             }
@@ -4928,13 +4928,13 @@ const practiceTopicsData = [
                 samples: [
                     {
                         label: "Bài mẫu Cách 1 (Trả lời CÓ - Buổi sáng & Cập nhật tin tức)",
-                        text: "Yes, I do. I often listen to the radio in the morning because it helps me get the news and relax after a busy day. It also makes me feel refreshed.",
-                        formatted: `→ Yes, I do. I often listen to the radio <span class="sub-hl">in the morning</span> because it helps me <span class="sub-hl">get the news</span> and <span class="sub-hl">relax after a busy day</span>. It also makes me feel <span class="sub-hl">refreshed</span>.`
+                        text: "Yes, I do. I often listen to the morning radio because it helps me get fresh news and feel completely refreshed.",
+                        formatted: `→ Yes, I do. I often listen to the <span class="sub-hl">morning radio</span> because it helps me <span class="sub-hl">get fresh news</span> and feel <span class="sub-hl">completely refreshed</span>.`
                     },
                     {
                         label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Thích nghe podcast trên điện thoại)",
-                        text: "To be honest, not really. I rarely listen to the radio because I prefer listening to podcasts on my smartphone. It’s much more convenient for me.",
-                        formatted: `→ To be honest, not really. I rarely listen to the radio because I prefer <span class="sub-hl">listening to podcasts on my smartphone</span>. It’s much more <span class="sub-hl">convenient</span> for me.`
+                        text: "To be honest, not really. I rarely listen to the radio because I prefer podcasts on my smartphone. It's much more convenient.",
+                        formatted: `→ To be honest, not really. I rarely listen to the radio because I prefer <span class="sub-hl">podcasts on my smartphone</span>. It's <span class="sub-hl">much more convenient</span>.`
                     }
                 ]
             },
@@ -4994,7 +4994,7 @@ const practiceTopicsData = [
                     {
                         label: "Bài mẫu Cách 2 (BBC Learning English - Cấu trúc theo mục đích học tiếng Anh)",
                         text: "Whenever I want to improve my English listening skills, I usually tune in to BBC Learning English because it's extremely useful.",
-                        formatted: `→ Whenever I want to <span class="sub-hl">improve my English listening skills</span>, I usually tune in to <span class="sub-hl">BBC Learning English</span> because it is extremely <span class="sub-hl">useful</span>.`
+                        formatted: `→ Whenever I want to <span class="sub-hl">improve my English listening skills</span>, I usually tune in to <span class="sub-hl">BBC Learning English</span> because it's extremely useful.`
                     }
                 ]
             },
@@ -5045,8 +5045,8 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Nắm bắt tin tức & Học điều mới - Am hiểu)",
-                        text: "There are many benefits of listening to the radio. First, it helps us get the news. Second, it’s a wonderful way to learn new things and stay informed.",
-                        formatted: `→ There are many benefits of listening to the radio. First, it helps us <span class="sub-hl">get the news</span>. Second, it’s a wonderful way to <span class="sub-hl">learn new things</span> and stay <span class="sub-hl">informed</span>.`
+                        text: "First, listening to the radio helps us get daily news. Second, it's a wonderful way to learn new things easily.",
+                        formatted: `→ First, listening to the radio helps us <span class="sub-hl">get daily news</span>. Second, it's a wonderful way to <span class="sub-hl">learn new things easily</span>.`
                     }
                 ]
             }
@@ -5114,13 +5114,13 @@ const practiceTopicsData = [
                 samples: [
                     {
                         label: "Bài mẫu Cách 1 (Nhạc pop - Vui tươi, bắt tai & Giảm stress)",
-                        text: "I’m a big fan of pop music because it’s very catchy and cheerful. Listening to it helps me reduce stress and makes me feel happy.",
-                        formatted: `→ I’m a big fan of <span class="sub-hl">pop music</span> because it’s very <span class="sub-hl">catchy and cheerful</span>. Listening to it helps me <span class="sub-hl">reduce stress</span> and makes me feel <span class="sub-hl">happy</span>.`
+                        text: "I'm a big fan of pop music because it's cheerful. Listening to it helps me reduce stress and feel happy.",
+                        formatted: `→ I'm a big fan of <span class="sub-hl">pop music</span> because it's cheerful. Listening to it helps me <span class="sub-hl">reduce stress and feel happy</span>.`
                     },
                     {
                         label: "Bài mẫu Cách 2 (Cấu trúc phụ thuộc tâm trạng: It depends on my mood)",
-                        text: "Actually, it depends on my mood. When I want to relax, I love listening to acoustic music, but when I need energy, I prefer cheerful pop songs.",
-                        formatted: `→ Actually, it <span class="sub-hl">depends on my mood</span>. When I want to relax, I love listening to <span class="sub-hl">acoustic music</span>, but when I need energy, I prefer <span class="sub-hl">cheerful pop songs</span>.`
+                        text: "Actually, it depends on my mood. When I want to relax, I enjoy acoustic songs, but cheerful pop boosts my energy.",
+                        formatted: `→ Actually, it depends on my mood. When I want to relax, I enjoy <span class="sub-hl">acoustic songs</span>, but <span class="sub-hl">cheerful pop boosts my energy</span>.`
                     }
                 ]
             },
@@ -5181,7 +5181,7 @@ const practiceTopicsData = [
                     {
                         label: "Bài mẫu Cách 2 (Cấu trúc kết hợp: Vừa làm việc nhà vừa nghe nhạc)",
                         text: "I usually listen to music while doing housework. It's a wonderful way to pass the time and boost my concentration.",
-                        formatted: `→ I usually listen to music while <span class="sub-hl">doing housework</span>. It is a wonderful way to <span class="sub-hl">pass the time</span> and <span class="sub-hl">boost my concentration</span>.`
+                        formatted: `→ I usually listen to music while <span class="sub-hl">doing housework</span>. It's a wonderful way to <span class="sub-hl">pass the time</span> and <span class="sub-hl">boost my concentration</span>.`
                     }
                 ]
             },
@@ -5196,9 +5196,9 @@ const practiceTopicsData = [
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Cấu trúc giả định / cảm xúc - I cannot imagine my life without...):</div>
+                    <div class="topic-formula-title">- Cách 2 (Không quan trọng lắm - Thích sự yên tĩnh để tập trung làm việc và đọc sách):</div>
                     <div class="topic-formula-text">
-                        → Yes, of course. I cannot imagine my life without music because it is the best way for me to <span class="formula-bracket-hl">[lợi ích]</span> whenever I feel <span class="formula-bracket-hl">[tâm trạng / tình huống]</span>.
+                        → To be honest, not really. Music is not essential for me because I always prefer <span class="formula-bracket-hl">[sở thích không gian]</span> to <span class="formula-bracket-hl">[mục đích tập trung - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -5212,12 +5212,12 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "🌧️ [Tâm trạng / Tình huống khi cần âm nhạc] (Cách 2):",
+                        title: "🤫 [Thích yên tĩnh để tập trung] (Cách 2):",
                         items: [
-                            { en: "stressed or tired", vn: "căng thẳng hoặc mệt mỏi" },
-                            { en: "under pressure", vn: "chịu áp lực học tập/công việc" },
-                            { en: "lonely", vn: "cô đơn / trống trải" },
-                            { en: "sad or upset", vn: "buồn bã hoặc thất vọng" }
+                            { en: "complete silence", vn: "sự yên tĩnh hoàn toàn" },
+                            { en: "focus on my work and study", vn: "tập trung vào công việc và học tập" },
+                            { en: "read books without noise", vn: "đọc sách không tiếng ồn" },
+                            { en: "a quiet peaceful space", vn: "một không gian yên tĩnh thanh bình" }
                         ]
                     },
                     {
@@ -5238,9 +5238,9 @@ const practiceTopicsData = [
                         formatted: `→ Yes, absolutely. Music <span class="sub-hl">plays an essential part in my life</span> because it helps me <span class="sub-hl">escape from daily stress</span> and makes my life more <span class="sub-hl">colorful</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Cấu trúc giả định: I cannot imagine my life without music)",
-                        text: "Yes, of course. I cannot imagine my life without music because it's the best way for me to improve my mood whenever I feel stressed or tired.",
-                        formatted: `→ Yes, of course. I <span class="sub-hl">cannot imagine my life without music</span> because it is the best way for me to <span class="sub-hl">improve my mood</span> whenever I feel <span class="sub-hl">stressed or tired</span>.`
+                        label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Thích sự yên tĩnh hoàn toàn để tập trung làm việc và học tập - 23 từ)",
+                        text: "To be honest, not really. Music is not essential for me because I always prefer complete silence to focus on my work and study.",
+                        formatted: `→ To be honest, not really. Music is not essential for me because I always prefer <span class="sub-hl">complete silence</span> to <span class="sub-hl">focus on my work and study</span>.`
                     }
                 ]
             }
@@ -5307,13 +5307,13 @@ const practiceTopicsData = [
                 samples: [
                     {
                         label: "Bài mẫu Cách 1 (Trả lời CÓ - Biết chơi đàn guitar từ hồi sinh viên)",
-                        text: "Yes, I can. I can play the guitar. I learned it when I was at university, and playing it helps me relax after a busy day.",
-                        formatted: `→ Yes, I can. I can play the <span class="sub-hl">guitar</span>. I learned it <span class="sub-hl">when I was at university</span>, and playing it helps me <span class="sub-hl">relax after a busy day</span>.`
+                        text: "Yes, I can play the guitar. I learned it at university, and playing music helps me relax after a busy day.",
+                        formatted: `→ Yes, I can <span class="sub-hl">play the guitar</span>. I learned it at university, and playing music helps me <span class="sub-hl">relax after a busy day</span>.`
                     },
                     {
                         label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Chưa biết chơi nhưng muốn học piano)",
-                        text: "To be honest, no, I cannot play any instruments. However, I really want to learn how to play the piano because it sounds very peaceful.",
-                        formatted: `→ To be honest, no, <span class="sub-hl">I cannot play any instruments</span>. However, I really want to learn how to play the <span class="sub-hl">piano</span> because it sounds very <span class="sub-hl">peaceful</span>.`
+                        text: "Honestly, no, I cannot play any instruments. However, I really want to learn the piano because it sounds very peaceful.",
+                        formatted: `→ Honestly, no, I cannot play any instruments. However, I really want to learn <span class="sub-hl">the piano</span> because it sounds very peaceful.`
                     }
                 ]
             },
@@ -5373,8 +5373,8 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Đàn Guitar - Tiện lợi mang theo khi đi dã ngoại, hát cùng bạn bè)",
-                        text: "I like the guitar the most because it's very convenient. People can carry it easily to picnics and outdoor gatherings and sing along with friends.",
-                        formatted: `→ I like the <span class="sub-hl">guitar</span> the most because it is very <span class="sub-hl">convenient</span>. People can carry it easily to <span class="sub-hl">picnics and outdoor gatherings</span> and <span class="sub-hl">sing along with friends</span>.`
+                        text: "I like the guitar most because it's portable. People can carry it easily to outdoor picnics and sing along with friends.",
+                        formatted: `→ I like the guitar most because it's portable. People can carry it easily to <span class="sub-hl">outdoor picnics</span> and <span class="sub-hl">sing along with friends</span>.`
                     }
                 ]
             },
@@ -5417,12 +5417,12 @@ const practiceTopicsData = [
                     {
                         label: "Bài mẫu Cách 1 (Đồng ý trực tiếp - Phát triển trí sáng tạo & Tính kiên nhẫn)",
                         text: "Yes, I think so. Learning an instrument helps children develop their creativity and become more patient. It's also very good for their brain development.",
-                        formatted: `→ Yes, I think so. Learning an instrument helps children <span class="sub-hl">develop their creativity</span> and <span class="sub-hl">become more patient</span>. It is also very good for their <span class="sub-hl">brain development</span>.`
+                        formatted: `→ Yes, I think so. Learning an instrument helps children <span class="sub-hl">develop their creativity</span> and <span class="sub-hl">become more patient</span>. It's also very good for their brain development.`
                     },
                     {
                         label: "Bài mẫu Cách 2 (Cấu trúc nhượng bộ Although: Dù tốn thời gian nhưng rèn luyện tính kỷ luật)",
-                        text: "Although learning an instrument takes a lot of time and effort, I believe children should learn one because it helps them improve their concentration and build good discipline.",
-                        formatted: `→ Although learning an instrument <span class="sub-hl">takes a lot of time and effort</span>, I believe children should learn one because it helps them <span class="sub-hl">improve their concentration</span> and build <span class="sub-hl">good discipline</span>.`
+                        text: "Although learning instruments takes effort, children should learn one because it helps them improve concentration and build good discipline.",
+                        formatted: `→ Although learning instruments takes effort, children should learn one because it helps them <span class="sub-hl">improve concentration</span> and <span class="sub-hl">build good discipline</span>.`
                     }
                 ]
             }
@@ -5490,13 +5490,13 @@ const practiceTopicsData = [
                 samples: [
                     {
                         label: "Bài mẫu Cách 1 (Quán gần nhà - Đồ ăn ngon, giá phải chăng & Thực đơn đa dạng - 24 từ)",
-                        text: "I often go to a family restaurant near my house because the food is delicious. Moreover, the price is affordable and the menu is diverse.",
-                        formatted: `→ I often go to a <span class="sub-hl">family restaurant</span> near my <span class="sub-hl">house</span> because <span class="sub-hl">the food is delicious</span>. Moreover, <span class="sub-hl">the price is affordable and the menu is diverse</span>.`
+                        text: "I often go to a family restaurant near my house because the food is delicious, affordable, and the menu is diverse.",
+                        formatted: `→ I often go to a <span class="sub-hl">family restaurant near my house</span> because the food is delicious, affordable, and the menu is diverse.`
                     },
                     {
                         label: "Bài mẫu Cách 2 (Quán gần cơ quan - Đồ ăn ngon, nhiều món & Phục vụ tốt - 24 từ)",
-                        text: "One of my favorite restaurants is a local restaurant near my office because the food is delicious. Moreover, it has many dishes and good service.",
-                        formatted: `→ One of my favorite restaurants is a <span class="sub-hl">local restaurant</span> near my <span class="sub-hl">office</span> because <span class="sub-hl">the food is delicious</span>. Moreover, <span class="sub-hl">it has many dishes and good service</span>.`
+                        text: "My favorite is a local restaurant near my office because the food is tasty, service is fast, and prices are reasonable.",
+                        formatted: `→ My favorite is a <span class="sub-hl">local restaurant near my office</span> because the food is tasty, service is fast, and prices are reasonable.`
                     }
                 ]
             },
@@ -5613,9 +5613,9 @@ const practiceTopicsData = [
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Trả lời HIẾM KHI - Thích cơm nhà để khỏe và tiết kiệm):</div>
+                    <div class="topic-formula-title">- Cách 2 (Trả lời CHƯA - Mẹ luôn nấu cơm tươi tại nhà và tránh đồ ăn nhanh dầu mỡ để giữ sức khỏe):</div>
                     <div class="topic-formula-text">
-                        → Yes, but very rarely. Nowadays, I prefer eating <span class="formula-bracket-hl">[loại bữa ăn]</span> with my <span class="formula-bracket-hl">[đối tượng]</span> because <span class="formula-bracket-hl">[lý do]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → Honestly, no, I haven't. My mother always <span class="formula-bracket-hl">[hoạt động gia đình]</span>, and I prefer <span class="formula-bracket-hl">[lối sống lành mạnh - Ving]</span> to stay healthy.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -5648,13 +5648,12 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "🥗 [Bữa ăn nhà & Lợi ích] (Cách 2):",
+                        title: "🥗 [Ăn cơm nhà & Tốt sức khỏe] (Cách 2):",
                         items: [
-                            { en: "home-cooked meals", vn: "các bữa cơm nhà nấu" },
-                            { en: "fresh food", vn: "thực phẩm tươi sống" },
-                            { en: "it's healthier and cleaner", vn: "lành mạnh và sạch sẽ hơn" },
-                            { en: "it's safe for my health", vn: "an toàn cho sức khỏe của tôi" },
-                            { en: "save money and stay healthy", vn: "tiết kiệm tiền và giữ sức khỏe" }
+                            { en: "cook fresh meals at home", vn: "nấu các bữa ăn tươi tại nhà" },
+                            { en: "avoiding oily fast food", vn: "tránh thức ăn nhanh nhiều dầu mỡ" },
+                            { en: "stay healthy and fit", vn: "giữ gìn sức khỏe và vóc dáng" },
+                            { en: "eat clean home-cooked dishes", vn: "ăn các món cơm nhà sạch sẽ" }
                         ]
                     }
                 ],
@@ -5665,9 +5664,9 @@ const practiceTopicsData = [
                         formatted: `→ Yes, I have. I often go to <span class="sub-hl">KFC</span> with my <span class="sub-hl">friends</span> because <span class="sub-hl">the food is delicious</span>. Moreover, <span class="sub-hl">the service is fast and convenient</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Trả lời HIẾM KHI - Thích cơm nhà để khỏe và tiết kiệm - 23 từ)",
-                        text: "Yes, but very rarely. Nowadays, I prefer eating home-cooked meals with my family because it's healthier. It helps me save money.",
-                        formatted: `→ Yes, but <span class="sub-hl">very rarely</span>. Nowadays, I prefer eating <span class="sub-hl">home-cooked meals</span> with my <span class="sub-hl">family</span> because <span class="sub-hl">it's healthier</span>. It helps me <span class="sub-hl">save money</span>.`
+                        label: "Bài mẫu Cách 2 (Trả lời CHƯA - Mẹ luôn nấu cơm tươi tại nhà và tránh đồ ăn nhanh dầu mỡ để khỏe mạnh - 21 từ)",
+                        text: "Honestly, no, I haven't. My mother always cooks fresh meals at home, and I prefer avoiding oily fast food to stay healthy.",
+                        formatted: `→ Honestly, no, I haven't. My mother always <span class="sub-hl">cooks fresh meals at home</span>, and I prefer <span class="sub-hl">avoiding oily fast food</span> to stay healthy.`
                     }
                 ]
             },
@@ -6128,7 +6127,7 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Hữu ích nhưng không bắt buộc - Tự học video miễn phí để tiết kiệm - 18 từ)",
-                        text: "It's quite useful, but not necessary. People can easily learn cooking through free online videos to save money.",
+                        text: "It's quite useful, but not necessary. People can easily learn cooking through free online videos to save a lot of money.",
                         formatted: `→ <span class="sub-hl">It's quite useful, but not necessary</span>. People can easily learn cooking through <span class="sub-hl">free online videos</span> to <span class="sub-hl">save money</span>.`
                     }
                 ]
@@ -6420,9 +6419,9 @@ const practiceTopicsData = [
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Trả lời CÓ - Cuộc sống áp lực nên nhận thức sức khỏe là vốn quý nhất):</div>
+                    <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Nhiều người vẫn lơ là sức khỏe, thức khuya và ăn thức ăn nhanh vì bận rộn):</div>
                     <div class="topic-formula-text">
-                        → Yes, I think so. Nowadays, life is <span class="formula-bracket-hl">[tính từ]</span>, so people realize health is the most important thing to <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → Not really. Many people still <span class="formula-bracket-hl">[thực trạng lơ là]</span>. They often stay up late, work overtime, and <span class="formula-bracket-hl">[thói quen xấu - Vo]</span> every day.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -6437,13 +6436,12 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "🧘 [Áp lực cuộc sống & Ý thức sức khỏe] (Cách 2):",
+                        title: "⏰ [Lơ là sức khỏe & Thức khuya] (Cách 2):",
                         items: [
-                            { en: "stressful and demanding", vn: "căng thẳng và nhiều áp lực" },
-                            { en: "fast-paced and busy", vn: "hối hả và bận rộn" },
-                            { en: "work and enjoy life", vn: "làm việc và tận hưởng cuộc sống" },
-                            { en: "take care of family", vn: "chăm sóc cho gia đình" },
-                            { en: "live happily", vn: "sống vui vẻ hạnh phúc" }
+                            { en: "ignore their personal health", vn: "lơ là sức khỏe cá nhân" },
+                            { en: "eat unhealthy fast food", vn: "ăn thức ăn nhanh không lành mạnh" },
+                            { en: "stay up late working overtime", vn: "thức khuya làm thêm giờ" },
+                            { en: "skip regular morning exercise", vn: "bỏ tập thể dục buổi sáng đều đặn" }
                         ]
                     }
                 ],
@@ -6454,9 +6452,9 @@ const practiceTopicsData = [
                         formatted: `→ Yes, I do. People care more about their health because <span class="sub-hl">there are more diseases nowadays</span>. Therefore, they <span class="sub-hl">eat clean food and exercise more</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Trả lời CÓ - Cuộc sống căng thẳng nên nhận thức sức khỏe là vốn quý nhất để làm việc - 21 từ)",
-                        text: "Yes, I think so. Nowadays, life is stressful, so people realize health is the most important thing to work and enjoy life.",
-                        formatted: `→ Yes, I think so. Nowadays, life is <span class="sub-hl">stressful</span>, so people realize health is the most important thing to <span class="sub-hl">work and enjoy life</span>.`
+                        label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Nhiều người vẫn lơ là sức khỏe, thức khuya và ăn đồ ăn nhanh hằng ngày - 22 từ)",
+                        text: "Not really. Many people still ignore their personal health. They often stay up late, work overtime, and eat unhealthy fast food every day.",
+                        formatted: `→ Not really. Many people still <span class="sub-hl">ignore their personal health</span>. They often stay up late, work overtime, and <span class="sub-hl">eat unhealthy fast food</span> every day.`
                     }
                 ]
             }
@@ -6981,7 +6979,7 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Trả lời ĐÔI KHI - Thỉnh thoảng mua quần áo giảm giá ngẫu hứng, đang cố kiểm soát - 21 từ)",
-                        text: "Sometimes, I do. I occasionally buy unnecessary clothes on sale. However, I'm trying to control my monthly spending.",
+                        text: "Sometimes, I do. I occasionally buy unnecessary clothes on sale. However, I'm trying hard to control my monthly spending.",
                         formatted: `→ Sometimes, I do. I occasionally buy <span class="sub-hl">unnecessary clothes on sale</span>. However, I'm trying to <span class="sub-hl">control my monthly spending</span>.`
                     }
                 ]
@@ -7033,7 +7031,7 @@ const practiceTopicsData = [
                 samples: [
                     {
                         label: "Bài mẫu Cách 1 (Trả lời CÓ - So sánh các nhãn hàng và quản lý tốt ngân sách hằng tháng - 20 từ)",
-                        text: "Yes, I always check the price. It helps me compare different brands and manage my monthly budget well.",
+                        text: "Yes, I always check the price. It helps me compare different brands and manage my monthly personal budget well.",
                         formatted: `→ Yes, I always check the price. It helps me <span class="sub-hl">compare different brands</span> and <span class="sub-hl">manage my monthly budget well</span>.`
                     },
                     {
@@ -7054,9 +7052,9 @@ const practiceTopicsData = [
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Trả lời CÓ - Cân nhắc kỹ và so sánh giá giữa các ứng dụng để tìm ưu đãi tốt nhất):</div>
+                    <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Với nhu yếu phẩm hằng ngày thì mua ngay không đắn đo):</div>
                     <div class="topic-formula-text">
-                        → Yes, I think twice before buying. I usually <span class="formula-bracket-hl">[hành động so sánh]</span> to find <span class="formula-bracket-hl">[kết quả mong đợi]</span>.
+                        → Not really. When I need <span class="formula-bracket-hl">[loại hàng hóa thiết yếu]</span>, I just buy them immediately without <span class="formula-bracket-hl">[hành động đắn đo - Ving]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -7072,13 +7070,12 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "🔍 [So sánh & Khuyến mãi] (Cách 2):",
+                        title: "🛍️ [Mua đồ thiết yếu nhanh chóng] (Cách 2):",
                         items: [
-                            { en: "compare prices on different shopping apps", vn: "so sánh giá trên nhiều ứng dụng mua sắm" },
-                            { en: "look for discount codes", vn: "tìm kiếm các mã giảm giá" },
-                            { en: "compare several stores", vn: "so sánh đối chiếu nhiều cửa hàng" },
-                            { en: "find the best deals", vn: "tìm được những mức giá ưu đãi nhất" },
-                            { en: "affordable options", vn: "những lựa chọn vừa túi tiền" }
+                            { en: "essential daily necessities", vn: "các nhu yếu phẩm thiết yếu hằng ngày" },
+                            { en: "worrying too much about small price changes", vn: "lo lắng quá nhiều về những thay đổi giá nhỏ" },
+                            { en: "buy fresh grocery items", vn: "mua thực phẩm tươi sống" },
+                            { en: "spend on urgent personal needs", vn: "chi tiêu cho các nhu cầu cá nhân cấp thiết" }
                         ]
                     }
                 ],
@@ -7089,9 +7086,9 @@ const practiceTopicsData = [
                         formatted: `→ Yes, I do. Living costs are <span class="sub-hl">rising quickly now</span>, so I only buy <span class="sub-hl">essential items</span> to <span class="sub-hl">save money for emergencies</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Trả lời CÓ - So sánh giá trên nhiều ứng dụng mua sắm để tìm ưu đãi tốt nhất - 20 từ)",
-                        text: "Yes, I think twice before buying. I usually compare prices on different shopping apps to find the best deals.",
-                        formatted: `→ Yes, I think twice before buying. I usually <span class="sub-hl">compare prices on different shopping apps</span> to find <span class="sub-hl">the best deals</span>.`
+                        label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Với nhu yếu phẩm thiết yếu thì mua ngay không đắn đo giá cả thay đổi nhỏ - 20 từ)",
+                        text: "Not really. When I need essential daily necessities, I just buy them immediately without worrying too much about small price changes.",
+                        formatted: `→ Not really. When I need <span class="sub-hl">essential daily necessities</span>, I just buy them immediately without <span class="sub-hl">worrying too much about small price changes</span>.`
                     }
                 ]
             },
@@ -7134,12 +7131,12 @@ const practiceTopicsData = [
                 samples: [
                     {
                         label: "Bài mẫu Cách 1 (Trả lời KHÔNG HẲN - Giá đắt do tên thương hiệu và chi phí quảng cáo lớn - 19 từ)",
-                        text: "Not always. Many expensive products cost more because of famous brand names and heavy advertising, not better quality.",
+                        text: "Not always. Many expensive products cost more because of famous brand names and heavy advertising, not always better quality.",
                         formatted: `→ Not always. Many expensive products cost more because of <span class="sub-hl">famous brand names and heavy advertising</span>, not better quality.`
                     },
                     {
                         label: "Bài mẫu Cách 2 (Trả lời ĐỒNG Ý PHẦN LỚN - Đồ đắt có chất liệu bền và dịch vụ bảo hành chu đáo - 19 từ)",
-                        text: "Most of the time, yes. High-priced items usually offer durable materials and excellent warranty services for all customers.",
+                        text: "Most of the time, yes. High-priced items usually offer very durable materials and excellent warranty services for all customers.",
                         formatted: `→ Most of the time, yes. High-priced items usually offer <span class="sub-hl">durable materials</span> and <span class="sub-hl">excellent warranty services for all customers</span>.`
                     }
                 ]
@@ -7162,9 +7159,9 @@ const practiceTopicsData = [
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Trả lời THÍCH NHƯNG BẬN - Thích đi nhưng bận rộn, chỉ đi vào các kỳ nghỉ dài):</div>
+                    <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Dễ bị say xe trên đường dài, thích ở nhà nghỉ ngơi và nấu ăn):</div>
                     <div class="topic-formula-text">
-                        → Yes, I really like it. However, I'm often busy with my <span class="formula-bracket-hl">[lý do bận]</span>, so I only travel <span class="formula-bracket-hl">[thời điểm rảnh]</span> to <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                        → Honestly, no, I don't. I easily <span class="formula-bracket-hl">[vấn đề sức khỏe khi đi lại]</span>, so I prefer staying home to <span class="formula-bracket-hl">[hoạt động thư giãn tại nhà - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -7186,14 +7183,12 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "⏳ [Lý do & Dịp du lịch] (Cách 2):",
+                        title: "🏡 [Say xe & Thích ở nhà] (Cách 2):",
                         items: [
-                            { en: "work and studies", vn: "công việc và học tập bận rộn" },
-                            { en: "daily work", vn: "công việc hằng ngày" },
-                            { en: "during long holidays", vn: "vào các dịp nghỉ lễ dài ngày" },
-                            { en: "once a year in summer", vn: "mỗi năm một lần vào mùa hè" },
-                            { en: "recharge my energy", vn: "nạp lại năng lượng cho bản thân" },
-                            { en: "unwind with friends", vn: "thư giãn xả hơi cùng bạn bè" }
+                            { en: "get carsick on long journeys", vn: "bị say xe trên các chuyến đi dài" },
+                            { en: "cook good food and read books", vn: "nấu ăn ngon và đọc sách" },
+                            { en: "feel exhausted from long travel", vn: "cảm thấy kiệt sức vì di chuyển xa" },
+                            { en: "enjoy a peaceful weekend at home", vn: "tận hưởng cuối tuần yên bình tại nhà" }
                         ]
                     }
                 ],
@@ -7204,9 +7199,9 @@ const practiceTopicsData = [
                         formatted: `→ Yes, I do. I'm a big fan of traveling because I can <span class="sub-hl">explore new places</span>. It helps me <span class="sub-hl">relax after hard work</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Trả lời THÍCH NHƯNG BẬN - Bận công việc, chỉ đi vào các kỳ nghỉ dài để xả hơi - 21 từ)",
-                        text: "Yes, I really like it. However, I'm often busy with my work, so I only travel during long holidays to unwind.",
-                        formatted: `→ Yes, I really like it. However, I'm often busy with my <span class="sub-hl">work</span>, so I only travel <span class="sub-hl">during long holidays</span> to <span class="sub-hl">unwind</span>.`
+                        label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Dễ bị say xe đường dài nên thích ở nhà nấu ăn ngon và đọc sách yên tĩnh - 23 từ)",
+                        text: "Honestly, no, I don't. I easily get carsick on long journeys, so I prefer staying home to cook good food and read books.",
+                        formatted: `→ Honestly, no, I don't. I easily <span class="sub-hl">get carsick on long journeys</span>, so I prefer staying home to <span class="sub-hl">cook good food and read books</span>.`
                     }
                 ]
             },
@@ -7385,9 +7380,9 @@ const practiceTopicsData = [
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Cơ hội sum họp gia đình và dành thời gian ấm cúng bên nhau):</div>
+                    <div class="topic-formula-title">- Cách 2 (Không thích lắm - Nơi du lịch quá đông đúc, kẹt xe và dịch vụ đắt đỏ dịp lễ):</div>
                     <div class="topic-formula-text">
-                        → Yes, I do. Holidays are a great chance to <span class="formula-bracket-hl">[hành động sum họp]</span> with my <span class="formula-bracket-hl">[đối tượng]</span> and <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                        → Not really. Tourist places are always <span class="formula-bracket-hl">[thực trạng ngày lễ]</span>, and travel costs rise sharply. Staying home is much more peaceful.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -7402,12 +7397,12 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "👨‍👩‍👧‍👦 [Sum họp & Gắn kết] (Cách 2):",
+                        title: "🚫 [Đông đúc & Đắt đỏ dịp lễ] (Cách 2):",
                         items: [
-                            { en: "gather with my family", vn: "sum họp quây quần bên gia đình" },
-                            { en: "reunite after a long time", vn: "đoàn tụ sau thời gian dài" },
-                            { en: "spend quality time with each other", vn: "dành thời gian quý giá bên nhau" },
-                            { en: "share memorable stories", vn: "chia sẻ những mẩu chuyện đáng nhớ" }
+                            { en: "overcrowded with noisy tourists", vn: "quá đông đúc du khách ồn ào" },
+                            { en: "suffer heavy traffic jams", vn: "chịu đựng tắc đường nghiêm trọng" },
+                            { en: "expensive hotel services", vn: "dịch vụ khách sạn đắt đỏ" },
+                            { en: "enjoy quiet rest at home", vn: "tận hưởng sự nghỉ ngơi yên tĩnh ở nhà" }
                         ]
                     }
                 ],
@@ -7418,9 +7413,9 @@ const practiceTopicsData = [
                         formatted: `→ Yes, I love holidays very much. They give me time to <span class="sub-hl">rest well</span> and <span class="sub-hl">escape from daily work stress</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Cơ hội sum họp gia đình và dành thời gian quý báu bên nhau - 20 từ)",
-                        text: "Yes, I do. Holidays are a great chance to gather with my family and spend quality time with each other.",
-                        formatted: `→ Yes, I do. Holidays are a great chance to <span class="sub-hl">gather with my family</span> and <span class="sub-hl">spend quality time with each other</span>.`
+                        label: "Bài mẫu Cách 2 (Trả lời KHÔNG HẲN - Địa điểm du lịch ngày lễ luôn quá đông đúc và giá cả đắt đỏ - 21 từ)",
+                        text: "Not really. Tourist places are always overcrowded with noisy tourists, and travel costs rise sharply. Staying home is much more peaceful.",
+                        formatted: `→ Not really. Tourist places are always <span class="sub-hl">overcrowded with noisy tourists</span>, and travel costs rise sharply. Staying home is much more peaceful.`
                     }
                 ]
             },
@@ -7574,7 +7569,7 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Trường tư thục - Sĩ số lớp nhỏ, học sinh được quan tâm chu đáo - 19 từ)",
-                        text: "I like private schools more because they have smaller class sizes and better personal care for every student.",
+                        text: "I like private schools more because they always have smaller class sizes and better personal care for every student.",
                         formatted: `→ I like private schools more because they have <span class="sub-hl">smaller class sizes</span> and <span class="sub-hl">better personal care for every student</span>.`
                     }
                 ]
@@ -7799,9 +7794,9 @@ const practiceTopicsData = [
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Trả lời CÓ - Học hằng ngày qua các ứng dụng di động thông minh, tiện lợi):</div>
+                    <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Dễ mất tập trung trên mạng, thích học lớp trực tiếp để tương tác với giáo viên):</div>
                     <div class="topic-formula-text">
-                        → Yes, I study English online every day. I use <span class="formula-bracket-hl">[công cụ ứng dụng]</span> because it's <span class="formula-bracket-hl">[tính từ]</span> and effective.
+                        → Honestly, no, I don't. I easily get distracted online, so I prefer <span class="formula-bracket-hl">[hình thức học ưa thích - Ving]</span> to <span class="formula-bracket-hl">[mục đích tương tác - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -7815,12 +7810,12 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "📱 [Ứng dụng di động & Tiện ích] (Cách 2):",
+                        title: "🏫 [Học trực tiếp trên lớp] (Cách 2):",
                         items: [
-                            { en: "mobile learning apps", vn: "các ứng dụng học tập trên điện thoại" },
-                            { en: "interactive study tools", vn: "các công cụ học tập tương tác" },
-                            { en: "very convenient, flexible, and effective", vn: "rất tiện lợi, linh hoạt và hiệu quả" },
-                            { en: "fun and easy to follow", vn: "vui vẻ và dễ dàng theo dõi" }
+                            { en: "attending offline classes", vn: "tham gia các lớp học trực tiếp" },
+                            { en: "interact directly with native teachers", vn: "tương tác trực tiếp với giáo viên bản ngữ" },
+                            { en: "practice speaking in real classrooms", vn: "luyện nói trong lớp học thực tế" },
+                            { en: "focus better with classmates", vn: "tập trung tốt hơn cùng bạn cùng lớp" }
                         ]
                     }
                 ],
@@ -7831,9 +7826,9 @@ const practiceTopicsData = [
                         formatted: `→ Yes, I do. I usually learn English on <span class="sub-hl">YouTube channels</span>. It helps me <span class="sub-hl">improve my pronunciation</span> and <span class="sub-hl">expand my vocabulary</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Trả lời CÓ - Dùng ứng dụng di động hằng ngày vì tiện lợi và hiệu quả - 19 từ)",
-                        text: "Yes, I study English online every day. I use mobile learning apps because it's very convenient, flexible, and effective.",
-                        formatted: `→ Yes, I study English online every day. I use <span class="sub-hl">mobile learning apps</span> because it's <span class="sub-hl">very convenient, flexible, and effective</span>.`
+                        label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Dễ phân tâm trên mạng nên thích học lớp trực tiếp để tương tác với giáo viên - 21 từ)",
+                        text: "Honestly, no, I don't. I easily get distracted online, so I prefer attending offline classes to interact directly with native teachers.",
+                        formatted: `→ Honestly, no, I don't. I easily get distracted online, so I prefer <span class="sub-hl">attending offline classes</span> to <span class="sub-hl">interact directly with native teachers</span>.`
                     }
                 ]
             },
@@ -8234,7 +8229,7 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Vẫn kiên định đam mê giảng dạy, chăm chỉ học mỗi ngày - 19 từ)",
-                        text: "No, it hasn't. I'm still passionate about teaching, so I'm studying hard every day to achieve this goal.",
+                        text: "No, it hasn't. I'm still very passionate about teaching, so I'm studying hard every day to achieve this goal.",
                         formatted: `→ No, it hasn't. I'm still passionate about <span class="sub-hl">teaching</span>, so I'm studying hard every day to <span class="sub-hl">achieve this goal</span>.`
                     }
                 ]
@@ -8389,7 +8384,7 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Đi tàu hỏa - An toàn và thư thái ngắm nhìn phong cảnh qua cửa sổ - 19 từ)",
-                        text: "I prefer taking a train because it's very safe. I can enjoy beautiful landscapes through the window comfortably.",
+                        text: "I prefer taking a train because it's very safe. I can comfortably enjoy beautiful landscapes through the large window.",
                         formatted: `→ I prefer taking a train because <span class="sub-hl">it's very safe</span>. I can <span class="sub-hl">enjoy beautiful landscapes through the window</span> comfortably.`
                     }
                 ]
@@ -8639,7 +8634,7 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Hít phải khói bụi độc hại dễ gây ra các vấn đề về đường hô hấp - 19 từ)",
-                        text: "They negatively affect public health. Inhaling toxic dust and fumes easily causes breathing problems for many local residents.",
+                        text: "They negatively affect public health. Inhaling toxic dust and fumes easily causes serious breathing problems for many local residents.",
                         formatted: `→ They negatively affect public health. Inhaling <span class="sub-hl">toxic dust and fumes</span> easily causes <span class="sub-hl">breathing problems for many local residents</span>.`
                     }
                 ]
@@ -8737,7 +8732,7 @@ const practiceTopicsData = [
                 samples: [
                     {
                         label: "Bài mẫu Cách 1 (Thành phố Đà Nẵng ở miền Trung - Nổi tiếng với biển đẹp và người dân thân thiện - 18 từ)",
-                        text: "My hometown is Da Nang city in central Vietnam. It's famous for beautiful beaches and friendly local people.",
+                        text: "My hometown is Da Nang city in central Vietnam. It's very famous for beautiful beaches and friendly local people.",
                         formatted: `→ My hometown is <span class="sub-hl">Da Nang city</span> in central Vietnam. It's famous for <span class="sub-hl">beautiful beaches</span> and friendly local people.`
                     },
                     {
@@ -8907,9 +8902,9 @@ const practiceTopicsData = [
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Quan hệ tốt đẹp - Luôn tôn trọng sự riêng tư và tránh gây ồn ào vào ban đêm):</div>
+                    <div class="topic-formula-title">- Cách 2 (Không thân lắm - Mọi người đi làm bận rộn cả ngày, chỉ chào hỏi xã giao nhanh ở hành lang):</div>
                     <div class="topic-formula-text">
-                        → Yes, we have a good relationship. We always <span class="formula-bracket-hl">[thái độ tôn trọng]</span> and avoid <span class="formula-bracket-hl">[hành động làm phiền]</span>.
+                        → Not really. We have <span class="formula-bracket-hl">[khác biệt lịch trình]</span>, so we rarely talk except for <span class="formula-bracket-hl">[hành động chào hỏi]</span> in the apartment hallway.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -8922,11 +8917,12 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "🕊️ [Tôn trọng riêng tư & Giữ yên lặng] (Cách 2):",
+                        title: "🏢 [Bận rộn & Chào hỏi xã giao] (Cách 2):",
                         items: [
-                            { en: "respect each other's privacy", vn: "tôn trọng sự riêng tư của nhau" },
-                            { en: "avoid making loud noises at night", vn: "tránh làm ồn ào lớn vào ban đêm" },
-                            { en: "maintain a peaceful neighborhood", vn: "duy trì xóm giềng yên bình" }
+                            { en: "different work schedules", vn: "lịch trình công việc khác nhau" },
+                            { en: "a quick polite greeting", vn: "lời chào hỏi lịch sự nhanh chóng" },
+                            { en: "keep private personal lives", vn: "giữ cuộc sống cá nhân riêng tư" },
+                            { en: "rarely meet during weekdays", vn: "hiếm khi gặp nhau trong các ngày trong tuần" }
                         ]
                     }
                 ],
@@ -8937,9 +8933,9 @@ const practiceTopicsData = [
                         formatted: `→ Yes, we get along very well. We often <span class="sub-hl">chat in the evening</span> and <span class="sub-hl">share homegrown fruits and delicious food together</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Quan hệ tốt đẹp - Luôn tôn trọng sự riêng tư và tránh gây ồn ào vào ban đêm - 19 từ)",
-                        text: "Yes, we have a good relationship. We always respect each other's privacy and avoid making loud noises at night.",
-                        formatted: `→ Yes, we have a good relationship. We always <span class="sub-hl">respect each other's privacy</span> and <span class="sub-hl">avoid making loud noises at night</span>.`
+                        label: "Bài mẫu Cách 2 (Không thân lắm - Lịch làm việc khác nhau nên hiếm khi nói chuyện ngoài lời chào nhanh ở hành lang - 20 từ)",
+                        text: "Not really. We have different work schedules, so we rarely talk except for a quick polite greeting in the apartment hallway.",
+                        formatted: `→ Not really. We have <span class="sub-hl">different work schedules</span>, so we rarely talk except for <span class="sub-hl">a quick polite greeting</span> in the apartment hallway.`
                     }
                 ]
             },
@@ -8954,9 +8950,9 @@ const practiceTopicsData = [
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Sẵn sàng hỗ trợ - Khi gặp sự cố hỏng hóc đồ đạc luôn giúp một tay):</div>
+                    <div class="topic-formula-title">- Cách 2 (Không hẳn - Mọi người sống khép kín trong căn hộ, bận rộn công việc riêng nên hiếm khi nhờ giúp):</div>
                     <div class="topic-formula-text">
-                        → Yes, they are. When we face <span class="formula-bracket-hl">[tình huống khó khăn]</span>, they are always ready to <span class="formula-bracket-hl">[hành động hỗ trợ]</span>.
+                        → Unfortunately, not really. Most neighbors in my building <span class="formula-bracket-hl">[lối sống khép kín]</span>, so we rarely <span class="formula-bracket-hl">[hành động nhờ vả - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -8969,11 +8965,12 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "🛠️ [Hỗ trợ sự cố] (Cách 2):",
+                        title: "🚪 [Sống khép kín & Ít nhờ vả] (Cách 2):",
                         items: [
-                            { en: "home repair problems", vn: "các sự cố sửa chữa trong nhà" },
-                            { en: "give a helping hand quickly", vn: "nhanh chóng giúp một tay" },
-                            { en: "solve urgent issues", vn: "giải quyết các việc cấp bách" }
+                            { en: "keep their apartment doors closed", vn: "đóng kín cửa căn hộ" },
+                            { en: "ask for any mutual help", vn: "nhờ vả bất kỳ sự giúp đỡ lẫn nhau nào" },
+                            { en: "mind their own business", vn: "chỉ quan tâm chuyện riêng của mình" },
+                            { en: "work long busy hours", vn: "làm việc nhiều giờ bận rộn" }
                         ]
                     }
                 ],
@@ -8984,9 +8981,9 @@ const practiceTopicsData = [
                         formatted: `→ Yes, they're extremely helpful. Whenever my family is away, they willingly <span class="sub-hl">keep an eye on our house and receive packages</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Sẵn sàng hỗ trợ - Khi gặp sự cố hỏng hóc đồ đạc luôn giúp một tay - 19 từ)",
-                        text: "Yes, they are. When we face home repair problems, they are always ready to give a helping hand quickly.",
-                        formatted: `→ Yes, they are. When we face <span class="sub-hl">home repair problems</span>, they are always ready to <span class="sub-hl">give a helping hand quickly</span>.`
+                        label: "Bài mẫu Cách 2 (Không hẳn - Hàng xóm chung cư đóng kín cửa và bận rộn nên hiếm khi nhờ vả hỗ trợ lẫn nhau - 20 từ)",
+                        text: "Unfortunately, not really. Most neighbors in my building keep their apartment doors closed, so we rarely ask for any mutual help.",
+                        formatted: `→ Unfortunately, not really. Most neighbors in my building <span class="sub-hl">keep their apartment doors closed</span>, so we rarely <span class="sub-hl">ask for any mutual help</span>.`
                     }
                 ]
             }
@@ -9163,9 +9160,9 @@ const practiceTopicsData = [
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Có - Tuổi thơ ở miền quê thanh bình, nhiều trò chơi ngoài trời cùng bạn bè):</div>
+                    <div class="topic-formula-title">- Cách 2 (Không trọn vẹn - Gia đình khó khăn nên phải làm việc đồng áng vất vả thay vì vui chơi):</div>
                     <div class="topic-formula-text">
-                        → Yes, I loved it so much. I grew up in <span class="formula-bracket-hl">[môi trường sống]</span> and enjoyed <span class="formula-bracket-hl">[hoạt động tuổi thơ]</span> with friends.
+                        → Not really. My family was very poor, so I had to <span class="formula-bracket-hl">[công việc đồng áng vất vả - Vo]</span> instead of playing freely with friends.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -9179,12 +9176,12 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "🌾 [Tuổi thơ quê hương] (Cách 2):",
+                        title: "🌾 [Tuổi thơ vất vả & Giúp đỡ gia đình] (Cách 2):",
                         items: [
-                            { en: "a peaceful countryside village", vn: "một làng quê yên bình" },
-                            { en: "a green friendly neighborhood", vn: "một xóm làng xanh tươi thân thiện" },
-                            { en: "exciting outdoor games", vn: "các trò chơi ngoài trời hào hứng" },
-                            { en: "memorable adventures", vn: "những cuộc phiêu lưu đáng nhớ" }
+                            { en: "work hard on the farm", vn: "làm việc vất vả trên đồng ruộng" },
+                            { en: "support struggling parents", vn: "phụ giúp bố mẹ đang chật vật" },
+                            { en: "face financial difficulties", vn: "đối mặt với khó khăn tài chính" },
+                            { en: "miss simple childhood joys", vn: "bỏ lỡ những niềm vui tuổi thơ giản dị" }
                         ]
                     }
                 ],
@@ -9195,9 +9192,9 @@ const practiceTopicsData = [
                         formatted: `→ Yes, I did. I had a wonderful childhood because my parents always <span class="sub-hl">loved and supported me warmly</span>. I felt <span class="sub-hl">truly happy</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Lớn lên ở làng quê yên bình với các trò chơi ngoài trời hào hứng - 21 từ)",
-                        text: "Yes, I loved it so much. I grew up in a peaceful countryside village and enjoyed exciting outdoor games with friends.",
-                        formatted: `→ Yes, I loved it so much. I grew up in <span class="sub-hl">a peaceful countryside village</span> and enjoyed <span class="sub-hl">exciting outdoor games</span> with friends.`
+                        label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Gia đình khó khăn nên phải làm lụng vất vả trên đồng thay vì vui chơi cùng bạn bè - 22 từ)",
+                        text: "Not really. My family was very poor, so I had to work hard on the farm instead of playing freely with friends.",
+                        formatted: `→ Not really. My family was very poor, so I had to <span class="sub-hl">work hard on the farm</span> instead of <span class="sub-hl">playing freely with friends</span>.`
                     }
                 ]
             },
@@ -9317,9 +9314,9 @@ const practiceTopicsData = [
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Có - Luôn giữ lời hứa và tôn trọng sự riêng tư của bạn):</div>
+                    <div class="topic-formula-title">- Cách 2 (Chưa tốt lắm - Bận rộn công việc nên hiếm khi chủ động nhắn tin hay gặp gỡ bạn bè):</div>
                     <div class="topic-formula-text">
-                        → Yes, I think so. I always <span class="formula-bracket-hl">[hành động đáng tin cậy]</span> and respect my friends' personal space in every situation.
+                        → Honestly, I'm not a great friend yet. I'm usually <span class="formula-bracket-hl">[lý do bận rộn]</span>, so I rarely <span class="formula-bracket-hl">[hành động quan tâm bạn bè - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -9333,12 +9330,12 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "🤝 [Giữ lời hứa & Tôn trọng] (Cách 2):",
+                        title: "📱 [Bận rộn & Ít quan tâm bạn bè] (Cách 2):",
                         items: [
-                            { en: "keep my promises strictly", vn: "nghiêm túc giữ lời hứa" },
-                            { en: "stay loyal and trustworthy", vn: "luôn trung thành và đáng tin cậy" },
-                            { en: "respect my friends' personal space", vn: "tôn trọng không gian riêng của bạn" },
-                            { en: "encourage them warmly", vn: "động viên họ ấm áp" }
+                            { en: "busy with demanding work", vn: "bận rộn với công việc áp lực" },
+                            { en: "text first or hang out with them", vn: "chủ động nhắn tin hay đi chơi cùng bạn bè" },
+                            { en: "forget important birthdays", vn: "quên các ngày sinh nhật quan trọng" },
+                            { en: "lose regular daily contact", vn: "mất liên lạc thường nhật" }
                         ]
                     }
                 ],
@@ -9349,9 +9346,9 @@ const practiceTopicsData = [
                         formatted: `→ Yes, I believe I'm a good friend. I always <span class="sub-hl">listen to their stories patiently</span> and support them in difficult times.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Nghiêm túc giữ lời hứa và tôn trọng không gian riêng của bạn bè - 19 từ)",
-                        text: "Yes, I think so. I always keep my promises strictly and respect my friends' personal space in every situation.",
-                        formatted: `→ Yes, I think so. I always <span class="sub-hl">keep my promises strictly</span> and respect my friends' personal space in every situation.`
+                        label: "Bài mẫu Cách 2 (Chưa hẳn là bạn tốt - Bận rộn công việc nên hiếm khi chủ động nhắn tin hay đi chơi cùng bạn bè - 23 từ)",
+                        text: "Honestly, I'm not a great friend yet. I'm usually busy with demanding work, so I rarely text first or hang out with them.",
+                        formatted: `→ Honestly, I'm not a great friend yet. I'm usually <span class="sub-hl">busy with demanding work</span>, so I rarely <span class="sub-hl">text first or hang out with them</span>.`
                     }
                 ]
             },
@@ -9448,7 +9445,7 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Sống ở những thành phố khác nhau và đều bận rộn với công việc/gia đình - 18 từ)",
-                        text: "Unfortunately, no. We live in different big cities and we're all busy with demanding jobs and families now.",
+                        text: "Unfortunately, no. We live in different big cities and we're all very busy with demanding jobs and families now.",
                         formatted: `→ Unfortunately, no. We live in <span class="sub-hl">different big cities</span> and we're all busy with <span class="sub-hl">demanding jobs and families</span> now.`
                     }
                 ]
@@ -9625,9 +9622,9 @@ const practiceTopicsData = [
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Dùng chủ yếu cho việc học - Nộp bài tập hằng tuần và liên hệ giảng viên):</div>
+                    <div class="topic-formula-title">- Cách 2 (Hiếm khi dùng - Thích nhắn tin qua Zalo và mạng xã hội vì nhanh chóng, tiện lợi hơn):</div>
                     <div class="topic-formula-text">
-                        → Yes, certainly. I usually use email for my study. I <span class="formula-bracket-hl">[mục đích học tập]</span> and contact my university teachers.
+                        → Rarely. I hardly use email in my personal life because I prefer <span class="formula-bracket-hl">[kênh liên lạc ưa thích - Ving]</span> to communicate instantly with friends.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -9641,12 +9638,12 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "🎓 [Học tập & Liên hệ giảng viên] (Cách 2):",
+                        title: "💬 [Nhắn tin mạng xã hội & Zalo] (Cách 2):",
                         items: [
-                            { en: "submit weekly homework assignments", vn: "nộp bài tập về nhà hằng tuần" },
-                            { en: "download lecture files", vn: "tải các tệp bài giảng" },
-                            { en: "contact my university teachers", vn: "liên hệ giảng viên đại học" },
-                            { en: "ask academic questions", vn: "hỏi các thắc mắc học tập" }
+                            { en: "chatting on Zalo and social media", vn: "nhắn tin trên Zalo và mạng xã hội" },
+                            { en: "exchange instant phone messages", vn: "trao đổi tin nhắn điện thoại tức thì" },
+                            { en: "avoid formal email writing", vn: "tránh cách viết email trang trọng" },
+                            { en: "connect quickly with close friends", vn: "kết nối nhanh chóng với bạn thân" }
                         ]
                     }
                 ],
@@ -9657,9 +9654,9 @@ const practiceTopicsData = [
                         formatted: `→ Yes, I do. I use email every day to <span class="sub-hl">send work documents to colleagues</span> and receive <span class="sub-hl">official company announcements</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Nộp bài tập về nhà hằng tuần và liên hệ giảng viên đại học - 19 từ)",
-                        text: "Yes, certainly. I usually use email for my study. I submit weekly homework assignments and contact my university teachers.",
-                        formatted: `→ Yes, certainly. I usually use email for my study. I <span class="sub-hl">submit weekly homework assignments</span> and contact <span class="sub-hl">my university teachers</span>.`
+                        label: "Bài mẫu Cách 2 (Hiếm khi dùng - Thích nhắn tin qua Zalo và mạng xã hội để trao đổi tức thì với bạn bè - 22 từ)",
+                        text: "Rarely. I hardly use email in my personal life because I prefer chatting on Zalo and social media to communicate instantly with friends.",
+                        formatted: `→ Rarely. I hardly use email in my personal life because I prefer <span class="sub-hl">chatting on Zalo and social media</span> to communicate instantly with friends.`
                     }
                 ]
             },
@@ -9756,7 +9753,7 @@ const practiceTopicsData = [
                     },
                     {
                         label: "Bài mẫu Cách 2 (Không hoàn toàn vì người ta vẫn thích thư tay vào dịp đặc biệt do ý nghĩa tình cảm - 18 từ)",
-                        text: "Not completely. People still love handwritten letters on birthdays and special occasions for their deep, meaningful sentimental value.",
+                        text: "Not completely. People still love handwritten letters on birthdays and special occasions for their deep, meaningful sentimental personal value.",
                         formatted: `→ Not completely. People still love handwritten letters on <span class="sub-hl">birthdays and romantic occasions</span> for their <span class="sub-hl">meaningful sentimental value</span>.`
                     }
                 ]
@@ -9807,12 +9804,12 @@ const practiceTopicsData = [
                 samples: [
                     {
                         label: "Bài mẫu Cách 1 (Viết bưu thiếp khi đi du lịch danh lam thắng cảnh để lưu giữ kỷ niệm kỳ nghỉ - 18 từ)",
-                        text: "Yes, I do. Whenever I travel to famous tourist destinations, I write postcards to save wonderful holiday memories.",
+                        text: "Yes, I do. Whenever I travel to famous tourist destinations, I always write postcards to save wonderful holiday memories.",
                         formatted: `→ Yes, I do. Whenever I travel to <span class="sub-hl">famous tourist destinations</span>, I write postcards to <span class="sub-hl">save wonderful holiday memories</span>.`
                     },
                     {
                         label: "Bài mẫu Cách 2 (Ít viết, chủ yếu chia sẻ hình ảnh tức thì trên mạng xã hội vì nhanh hơn nhiều - 18 từ)",
-                        text: "Not really. Nowadays, I usually share instant travel pictures with friends on social media because it's much faster.",
+                        text: "Not really. Nowadays, I usually share instant travel pictures with friends on social media because it's much faster and easier.",
                         formatted: `→ Not really. Nowadays, I usually <span class="sub-hl">share instant travel pictures</span> with friends on social media because <span class="sub-hl">it's much faster</span>.`
                     }
                 ]
@@ -9905,12 +9902,12 @@ const practiceTopicsData = [
                 samples: [
                     {
                         label: "Bài mẫu Cách 1 (Lưu giữ kỷ niệm du lịch đặc biệt, hình ảnh danh lam thắng cảnh có giá trị sưu tầm - 18 từ)",
-                        text: "First, postcards help us preserve special travel memories. They have beautiful local landmark photos and high collection value.",
+                        text: "First, postcards help us preserve special travel memories. They have beautiful local landmark photos and very high collection value.",
                         formatted: `→ First, postcards help us <span class="sub-hl">preserve special travel memories</span>. They have <span class="sub-hl">beautiful local landmark photos</span> and high collection value.`
                     },
                     {
                         label: "Bài mẫu Cách 2 (Mang lại niềm vui bất ngờ đầy cảm xúc và thắt chặt kết nối yêu thương qua khoảng cách xa - 18 từ)",
-                        text: "They bring a joyful emotional surprise to the receiver. Postcards effectively strengthen warm, loving connections across long distances.",
+                        text: "They always bring a joyful emotional surprise to the receiver. Postcards effectively strengthen warm, loving connections across long distances.",
                         formatted: `→ They bring <span class="sub-hl">a joyful emotional surprise</span> to the receiver. Postcards effectively <span class="sub-hl">strengthen loving connections</span> across long distances.`
                     }
                 ]
@@ -9961,7 +9958,7 @@ const practiceTopicsData = [
                 samples: [
                     {
                         label: "Bài mẫu Cách 1 (Mùa thu mát mẻ có nắng nhẹ, rất dễ chịu và lý tưởng cho hoạt động ngoài trời - 18 từ)",
-                        text: "I love cool and sunny weather in autumn. It's very comfortable and pleasant, and perfect for outdoor activities.",
+                        text: "I love cool and sunny weather in autumn. It's very comfortable and pleasant, and also perfect for outdoor activities.",
                         formatted: `→ I love cool and sunny weather in autumn. It's <span class="sub-hl">very comfortable and pleasant</span>, and perfect for <span class="sub-hl">outdoor activities</span>.`
                     },
                     {
@@ -10031,9 +10028,9 @@ const practiceTopicsData = [
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Có - Những ngày u ám, mưa rả rích làm cảm thấy lười biếng và buồn ngủ):</div>
+                    <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Thời tiết không ảnh hưởng tâm trạng, cảm xúc phụ thuộc vào công việc và các mối quan hệ):</div>
                     <div class="topic-formula-text">
-                        → Yes, absolutely. Dark and gloomy weather often makes me feel <span class="formula-bracket-hl">[cảm xúc tiêu cực]</span>, so I just stay indoors.
+                        → Not really. The weather never affects my emotions. My daily feelings depend strictly on <span class="formula-bracket-hl">[yếu tố quan trọng 1]</span> and <span class="formula-bracket-hl">[yếu tố quan trọng 2]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -10047,12 +10044,12 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "☁️ [Tác động u ám] (Cách 2):",
+                        title: "💼 [Tâm trạng phụ thuộc công việc] (Cách 2):",
                         items: [
-                            { en: "a bit sleepy and lazy", vn: "hơi buồn ngủ và lười biếng" },
-                            { en: "somewhat quiet and tired", vn: "hơi trầm lắng và mệt mỏi" },
-                            { en: "stay indoors", vn: "ở trong nhà" },
-                            { en: "cuddle in bed", vn: "nằm cuộn tròn trên giường" }
+                            { en: "my daily work productivity", vn: "hiệu suất công việc hằng ngày của tôi" },
+                            { en: "harmonious family relationships", vn: "các mối quan hệ gia đình hòa thuận" },
+                            { en: "maintain an optimistic mindset", vn: "duy trì tinh thần lạc quan" },
+                            { en: "control personal emotions well", vn: "kiểm soát cảm xúc cá nhân tốt" }
                         ]
                     }
                 ],
@@ -10063,9 +10060,9 @@ const practiceTopicsData = [
                         formatted: `→ Yes, it does. Sunny and clear days usually <span class="sub-hl">brighten my mood immediately</span>. I feel <span class="sub-hl">more energetic and productive</span> all day.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Thời tiết u ám làm cảm thấy hơi buồn ngủ và lười biếng nên chỉ muốn ở trong nhà - 20 từ)",
-                        text: "Yes, absolutely. Dark and gloomy weather often makes me feel a bit sleepy and lazy, so I just stay indoors.",
-                        formatted: `→ Yes, absolutely. Dark and gloomy weather often makes me feel <span class="sub-hl">a bit sleepy and lazy</span>, so I just <span class="sub-hl">stay indoors</span>.`
+                        label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Thời tiết không ảnh hưởng, cảm xúc phụ thuộc vào hiệu suất công việc và sự hòa thuận gia đình - 22 từ)",
+                        text: "Not really. The weather never affects my emotions. My daily feelings depend strictly on my daily work productivity and harmonious family relationships.",
+                        formatted: `→ Not really. The weather never affects my emotions. My daily feelings depend strictly on <span class="sub-hl">my daily work productivity</span> and <span class="sub-hl">harmonious family relationships</span>.`
                     }
                 ]
             }
@@ -10087,9 +10084,9 @@ const practiceTopicsData = [
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Đã từng dùng nhiều - Hiện tại đang hạn chế để bảo vệ môi trường):</div>
+                    <div class="topic-formula-title">- Cách 2 (Đã ngừng dùng - Đã từ bỏ túi nilon dùng một lần để bảo vệ môi trường, luôn mang theo túi vải):</div>
                     <div class="topic-formula-text">
-                        → Yes, I used them in the past, but now I'm trying to <span class="formula-bracket-hl">[hành động bảo vệ môi trường]</span>.
+                        → Rarely now. I stopped using <span class="formula-bracket-hl">[loại rác nhựa]</span> to protect nature. I always bring <span class="formula-bracket-hl">[đồ dùng thân thiện môi trường]</span> when shopping for groceries.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -10103,12 +10100,12 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "🌱 [Hạn chế bảo vệ môi trường] (Cách 2):",
+                        title: "🛍️ [Ngừng dùng túi nilon & Dùng túi vải] (Cách 2):",
                         items: [
-                            { en: "reduce plastic waste and protect our environment", vn: "giảm rác thải nhựa và bảo vệ môi trường chúng ta" },
-                            { en: "use reusable shopping totes", vn: "sử dụng túi mua sắm tái sử dụng" },
-                            { en: "stop single-use plastics", vn: "dừng đồ nhựa dùng một lần" },
-                            { en: "build green daily habits", vn: "xây dựng thói quen xanh hằng ngày" }
+                            { en: "single-use plastic bags", vn: "túi nilon dùng một lần" },
+                            { en: "reusable cloth tote bags", vn: "túi vải tote có thể tái sử dụng" },
+                            { en: "reduce harmful plastic waste", vn: "giảm thiểu rác thải nhựa có hại" },
+                            { en: "protect marine environments", vn: "bảo vệ môi trường biển" }
                         ]
                     }
                 ],
@@ -10119,9 +10116,9 @@ const practiceTopicsData = [
                         formatted: `→ Yes, I have. I use plastic bags almost every week when I <span class="sub-hl">buy fresh food at traditional local markets</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Trước đây dùng nhiều nhưng nay đang cố gắng giảm rác nhựa để bảo vệ môi trường - 19 từ)",
-                        text: "Yes, I used them in the past, but now I'm trying to reduce plastic waste and protect our environment.",
-                        formatted: `→ Yes, I used them in the past, but now I'm trying to <span class="sub-hl">reduce plastic waste and protect our environment</span>.`
+                        label: "Bài mẫu Cách 2 (Ngừng dùng - Đã từ bỏ túi nilon dùng 1 lần, luôn mang túi vải tái sử dụng khi đi mua sắm thực phẩm - 21 từ)",
+                        text: "Rarely now. I stopped using single-use plastic bags to protect nature. I always bring reusable cloth tote bags when shopping for groceries.",
+                        formatted: `→ Rarely now. I stopped using <span class="sub-hl">single-use plastic bags</span> to protect nature. I always bring <span class="sub-hl">reusable cloth tote bags</span> when shopping for groceries.`
                     }
                 ]
             },
@@ -10213,7 +10210,7 @@ const practiceTopicsData = [
                 samples: [
                     {
                         label: "Bài mẫu Cách 1 (Thích túi vải vì bền và thân thiện môi trường, giúp giảm bớt ô nhiễm rác thải nhựa - 18 từ)",
-                        text: "I strongly prefer canvas bags because they're durable and eco-friendly. They help reduce harmful single-use plastic pollution effectively.",
+                        text: "I strongly prefer canvas bags because they're durable and eco-friendly. They help reduce harmful single-use plastic waste pollution effectively.",
                         formatted: `→ I strongly prefer canvas bags because they're <span class="sub-hl">durable and eco-friendly</span>. They help <span class="sub-hl">reduce harmful single-use plastic pollution</span> effectively.`
                     },
                     {
@@ -10857,9 +10854,9 @@ const practiceTopicsData = [
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Thích chậu gốm và giỏ đan - Giúp không gian sống thêm duyên dáng và ấm cúng):</div>
+                    <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Không khéo tay và đồ thủ công dễ bám bụi trong phòng ngủ nhỏ):</div>
                     <div class="topic-formula-text">
-                        → Yes, absolutely. I especially enjoy <span class="formula-bracket-hl">[loại đồ thủ công]</span>. They make my living space <span class="formula-bracket-hl">[tính từ cảm nhận]</span> and cozy.
+                        → Honestly, no, I don't. I'm not good with my hands, and handmade items easily <span class="formula-bracket-hl">[bất tiện thực tế]</span> in my small bedroom.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -10873,12 +10870,12 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "🪴 [Trang trí không gian sống] (Cách 2):",
+                        title: "🧹 [Không khéo tay & Dễ bám bụi] (Cách 2):",
                         items: [
-                            { en: "handmade ceramic pots and woven baskets", vn: "chậu gốm thủ công và giỏ mây tre đan" },
-                            { en: "wooden souvenirs", vn: "đồ lưu niệm bằng gỗ" },
-                            { en: "much more charming and cozy", vn: "duyên dáng và ấm cúng hơn nhiều" },
-                            { en: "warm living room atmosphere", vn: "không khí phòng khách ấm cúng" }
+                            { en: "collect dust and take up space", vn: "bám bụi và tốn diện tích" },
+                            { en: "require careful maintenance", vn: "đòi hỏi việc bảo quản kỹ lưỡng" },
+                            { en: "prefer simple modern decorations", vn: "thích trang trí hiện đại giản dị" },
+                            { en: "lack artistic patience", vn: "thiếu sự kiên nhẫn nghệ thuật" }
                         ]
                     }
                 ],
@@ -10889,9 +10886,9 @@ const practiceTopicsData = [
                         formatted: `→ Yes, I do. I love handicrafts because they're <span class="sub-hl">very unique and delicate</span>. They reflect <span class="sub-hl">rich local culture and great patience</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Thích chậu gốm và giỏ mây đan thủ công giúp phòng khách duyên dáng và ấm cúng - 21 từ)",
-                        text: "Yes, absolutely. I especially enjoy handmade ceramic pots and woven baskets. They make my living space much more charming and cozy.",
-                        formatted: `→ Yes, absolutely. I especially enjoy <span class="sub-hl">handmade ceramic pots and woven baskets</span>. They make my living space <span class="sub-hl">much more charming and cozy</span>.`
+                        label: "Bài mẫu Cách 2 (Trả lời KHÔNG - Không khéo tay và đồ làm thủ công dễ bám bụi trong phòng ngủ nhỏ - 21 từ)",
+                        text: "Honestly, no, I don't. I'm not good with my hands, and handmade items easily collect dust in my small bedroom.",
+                        formatted: `→ Honestly, no, I don't. I'm not good with my hands, and handmade items easily <span class="sub-hl">collect dust</span> in my small bedroom.`
                     }
                 ]
             },
@@ -10955,9 +10952,9 @@ const practiceTopicsData = [
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Nên dạy - Giúp các em hiểu nghệ thuật dân gian và trân trọng di sản văn hóa từ nhỏ):</div>
+                    <div class="topic-formula-title">- Cách 2 (Không nên - Trẻ em đã quá tải học tập, trường học nên ưu tiên kiến thức cốt lõi và thể thao):</div>
                     <div class="topic-formula-text">
-                        → Yes, of course. Handicraft lessons allow kids to <span class="formula-bracket-hl">[lợi ích văn hóa]</span> and cherish cultural heritage from an early age.
+                        → I don't think so. Children already have heavy study schedules, so schools should <span class="formula-bracket-hl">[ưu tiên môn học - Vo]</span> and physical sports instead.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -10971,12 +10968,12 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "🏛️ [Gìn giữ di sản văn hóa] (Cách 2):",
+                        title: "⚽ [Ưu tiên kiến thức & Thể thao] (Cách 2):",
                         items: [
-                            { en: "learn about folk arts", vn: "học hỏi về các loại hình nghệ thuật dân gian" },
-                            { en: "cherish cultural heritage from an early age", vn: "trân trọng di sản văn hóa từ khi còn nhỏ" },
-                            { en: "respect skilled traditions", vn: "tôn trọng các truyền thống khéo léo" },
-                            { en: "understand national identity", vn: "thấu hiểu bản sắc dân tộc" }
+                            { en: "focus on core academic subjects", vn: "tập trung vào các môn văn hóa cốt lõi" },
+                            { en: "encourage outdoor physical exercise", vn: "khuyến khích tập luyện thể chất ngoài trời" },
+                            { en: "reduce heavy academic pressure", vn: "giảm bớt áp lực học tập nặng nề" },
+                            { en: "develop practical life skills", vn: "phát triển kỹ năng sống thiết thực" }
                         ]
                     }
                 ],
@@ -10987,9 +10984,9 @@ const practiceTopicsData = [
                         formatted: `→ Yes, I strongly agree. Making handicrafts helps children <span class="sub-hl">develop patience and creativity</span>. It keeps them <span class="sub-hl">away from smartphone screens effectively</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Tạo cơ hội tìm hiểu nghệ thuật dân gian và trân trọng di sản văn hóa ngay từ nhỏ - 20 từ)",
-                        text: "Yes, of course. Handicraft lessons allow kids to learn about folk arts and cherish cultural heritage from an early age.",
-                        formatted: `→ Yes, of course. Handicraft lessons allow kids to <span class="sub-hl">learn about folk arts</span> and <span class="sub-hl">cherish cultural heritage from an early age</span>.`
+                        label: "Bài mẫu Cách 2 (Không nên - Học sinh đã quá tải, trường học nên ưu tiên môn văn hóa và thể dục thể thao - 22 từ)",
+                        text: "I don't think so. Children already have heavy study schedules, so schools should focus on core academic subjects and physical sports instead.",
+                        formatted: `→ I don't think so. Children already have heavy study schedules, so schools should <span class="sub-hl">focus on core academic subjects</span> and physical sports instead.`
                     }
                 ]
             }
@@ -11370,9 +11367,9 @@ const practiceTopicsData = [
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Ngày nay rất phổ biến - Nhiều nhóm thanh niên nấu cơm từ thiện cho người nghèo):</div>
+                    <div class="topic-formula-title">- Cách 2 (Không phổ biến với người đi làm - Người bận rộn ít tham gia, chủ yếu chỉ sinh viên trẻ hưởng ứng):</div>
                     <div class="topic-formula-text">
-                        → Yes, very popular nowadays. Many youth groups regularly <span class="formula-bracket-hl">[hoạt động từ thiện]</span> to support homeless people and poor patients in hospitals.
+                        → Not very popular among busy adults. Most working people have tight schedules, so only <span class="formula-bracket-hl">[đối tượng tích cực]</span> regularly participate in local projects.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -11386,12 +11383,12 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "🍲 [Nấu cơm từ thiện] (Cách 2):",
+                        title: "💼 [Người lớn bận rộn ít tham gia] (Cách 2):",
                         items: [
-                            { en: "cook free meals", vn: "nấu các bữa cơm miễn phí" },
-                            { en: "support homeless people and poor patients", vn: "hỗ trợ người vô gia cư và bệnh nhân nghèo" },
-                            { en: "distribute warm winter clothes", vn: "phát quần áo ấm mùa đông" },
-                            { en: "share warm kindness", vn: "chia sẻ lòng tốt ấm áp" }
+                            { en: "energetic young university students", vn: "các bạn sinh viên đại học trẻ trung năng nổ" },
+                            { en: "busy office workers with tight schedules", vn: "dân văn phòng bận rộn với lịch trình dày đặc" },
+                            { en: "lack free personal time", vn: "thiếu thời gian cá nhân rảnh rỗi" },
+                            { en: "focus on daily earnings", vn: "tập trung vào việc kiếm sống hằng ngày" }
                         ]
                     }
                 ],
@@ -11402,9 +11399,9 @@ const practiceTopicsData = [
                         formatted: `→ Yes, they're extremely popular. Every summer, thousands of students join <span class="sub-hl">the Green Summer campaign</span> and <span class="sub-hl">donate blood for local hospitals</span>.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Rất phổ biến, nhiều nhóm thanh niên thường xuyên nấu cơm từ thiện hỗ trợ người vô gia cư và bệnh nhân - 20 từ)",
-                        text: "Yes, very popular nowadays. Many youth groups regularly cook free meals to support homeless people and poor patients in hospitals.",
-                        formatted: `→ Yes, very popular nowadays. Many youth groups regularly <span class="sub-hl">cook free meals</span> to support <span class="sub-hl">homeless people and poor patients in hospitals</span>.`
+                        label: "Bài mẫu Cách 2 (Không phổ biến với người lớn bận rộn - Lịch trình dày đặc nên chủ yếu chỉ sinh viên trẻ năng nổ tham gia - 23 từ)",
+                        text: "Not very popular among busy adults. Most working people have tight schedules, so only energetic young university students regularly participate in local projects.",
+                        formatted: `→ Not very popular among busy adults. Most working people have tight schedules, so only <span class="sub-hl">energetic young university students</span> regularly participate in local projects.`
                     }
                 ]
             },
