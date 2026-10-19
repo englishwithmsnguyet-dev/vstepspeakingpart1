@@ -9916,6 +9916,314 @@ const practiceTopicsData = [
                 ]
             }
         ]
+    },
+    {
+        id: 35,
+        title: "Chủ đề 35: Let's talk about the weather",
+        introText: "Let’s talk about the weather.",
+        questions: [
+            {
+                qNum: 1,
+                question: "What kind of weather do you like?",
+                qType: "Wh-question: What kind of weather do you like?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Thích mùa thu mát mẻ - Thoải mái, dễ chịu, thích hợp hoạt động ngoài trời):</div>
+                    <div class="topic-formula-text">
+                        → I love cool and sunny weather in autumn. It's <span class="formula-bracket-hl">[tính từ cảm giác]</span>, and perfect for outdoor activities.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Thích những ngày mưa se lạnh - Ở trong nhà thưởng thức trà nóng bình yên):</div>
+                    <div class="topic-formula-text">
+                        → I really enjoy chilly rainy days. Staying indoors with <span class="formula-bracket-hl">[hoạt động thư giãn]</span> makes me feel very peaceful.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🍂 [Mùa thu mát mẻ] (Cách 1):",
+                        items: [
+                            { en: "very comfortable and pleasant", vn: "rất thoải mái và dễ chịu" },
+                            { en: "mild and sunny", vn: "ôn hòa và có nắng nhẹ" },
+                            { en: "outdoor activities", vn: "các hoạt động ngoài trời" },
+                            { en: "daily leisure walks", vn: "những buổi đi dạo thư giãn hằng ngày" }
+                        ]
+                    },
+                    {
+                        title: "🌧️ [Ngày mưa se lạnh] (Cách 2):",
+                        items: [
+                            { en: "a hot cup of tea", vn: "một tách trà nóng" },
+                            { en: "warm herbal drinks", vn: "đồ uống thảo mộc ấm áp" },
+                            { en: "very peaceful", vn: "rất đỗi bình yên" },
+                            { en: "cozy and quiet", vn: "ấm cúng và tĩnh lặng" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Mùa thu mát mẻ có nắng nhẹ, rất dễ chịu và lý tưởng cho hoạt động ngoài trời - 18 từ)",
+                        text: "I love cool and sunny weather in autumn. It's very comfortable and pleasant, and perfect for outdoor activities.",
+                        formatted: `→ I love cool and sunny weather in autumn. It's <span class="sub-hl">very comfortable and pleasant</span>, and perfect for <span class="sub-hl">outdoor activities</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Những ngày mưa se lạnh, ngồi trong nhà với tách trà nóng tạo cảm giác bình yên - 19 từ)",
+                        text: "I really enjoy chilly rainy days. Staying indoors with a hot cup of tea makes me feel very peaceful.",
+                        formatted: `→ I really enjoy chilly rainy days. Staying indoors with <span class="sub-hl">a hot cup of tea</span> makes me feel <span class="sub-hl">very peaceful</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What do you do during that weather? Why?",
+                qType: "Wh-question: What do you do during that weather? Why?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Đi dạo trong công viên - Hít thở không khí trong lành và giữ sức khỏe):</div>
+                    <div class="topic-formula-text">
+                        → During this pleasant weather, I often <span class="formula-bracket-hl">[hoạt động ngoài trời]</span>. It helps me <span class="formula-bracket-hl">[lợi ích sức khỏe]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Đọc tiểu thuyết và nghe nhạc nhẹ ở nhà - Giảm bớt căng thẳng thường nhật):</div>
+                    <div class="topic-formula-text">
+                        → On rainy days, I usually <span class="formula-bracket-hl">[hoạt động trong nhà]</span> at home. It helps me <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🌳 [Đi dạo ngoài trời] (Cách 1):",
+                        items: [
+                            { en: "take a walk in the park", vn: "đi dạo trong công viên" },
+                            { en: "ride bicycles around the lake", vn: "đạp xe quanh hồ" },
+                            { en: "breathe fresh air and stay healthy", vn: "hít thở không khí trong lành và giữ sức khỏe" },
+                            { en: "regain positive energy", vn: "lấy lại năng lượng tích cực" }
+                        ]
+                    },
+                    {
+                        title: "📖 [Thư giãn trong nhà] (Cách 2):",
+                        items: [
+                            { en: "read novels and listen to gentle music", vn: "đọc tiểu thuyết và nghe nhạc nhẹ" },
+                            { en: "watch lighthearted series", vn: "xem những bộ phim nhẹ nhàng" },
+                            { en: "reduce daily stress", vn: "giảm bớt căng thẳng hằng ngày" },
+                            { en: "clear my busy mind", vn: "giải tỏa tâm trí bận rộn" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Đi dạo trong công viên giúp hít thở không khí trong lành và tăng cường sức khỏe - 21 từ)",
+                        text: "During this pleasant weather, I often take a walk in the park. It helps me breathe fresh air and stay healthy.",
+                        formatted: `→ During this pleasant weather, I often <span class="sub-hl">take a walk in the park</span>. It helps me <span class="sub-hl">breathe fresh air and stay healthy</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Đọc tiểu thuyết và nghe nhạc nhẹ tại nhà giúp giải tỏa căng thẳng sau một ngày bận rộn - 20 từ)",
+                        text: "On rainy days, I usually read novels and listen to gentle music at home. It helps me reduce daily stress.",
+                        formatted: `→ On rainy days, I usually <span class="sub-hl">read novels and listen to gentle music</span> at home. It helps me <span class="sub-hl">reduce daily stress</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Does the weather affect your feelings?",
+                qType: "Yes/No Question: Does the weather affect your feelings?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Có - Nắng đẹp làm tâm trạng bừng sáng, tràn đầy năng lượng làm việc):</div>
+                    <div class="topic-formula-text">
+                        → Yes, it does. Sunny and clear days usually <span class="formula-bracket-hl">[tác động cảm xúc]</span>. I feel <span class="formula-bracket-hl">[tính từ cảm xúc]</span> all day.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Có - Những ngày u ám, mưa rả rích làm cảm thấy lười biếng và buồn ngủ):</div>
+                    <div class="topic-formula-text">
+                        → Yes, absolutely. Dark and gloomy weather often makes me feel <span class="formula-bracket-hl">[cảm xúc tiêu cực]</span>, so I just stay indoors.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "☀️ [Tác động tích cực] (Cách 1):",
+                        items: [
+                            { en: "brighten my mood immediately", vn: "làm bừng sáng tâm trạng ngay lập tức" },
+                            { en: "boost my motivation", vn: "thúc đẩy động lực của tôi" },
+                            { en: "more energetic and productive", vn: "năng động và làm việc hiệu quả hơn" },
+                            { en: "optimistic and cheerful", vn: "lạc quan và vui tươi" }
+                        ]
+                    },
+                    {
+                        title: "☁️ [Tác động u ám] (Cách 2):",
+                        items: [
+                            { en: "a bit sleepy and lazy", vn: "hơi buồn ngủ và lười biếng" },
+                            { en: "somewhat quiet and tired", vn: "hơi trầm lắng và mệt mỏi" },
+                            { en: "stay indoors", vn: "ở trong nhà" },
+                            { en: "cuddle in bed", vn: "nằm cuộn tròn trên giường" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Ngày nắng đẹp làm bừng sáng tâm trạng, khiến bản thân tràn đầy năng lượng làm việc cả ngày - 20 từ)",
+                        text: "Yes, it does. Sunny and clear days usually brighten my mood immediately. I feel more energetic and productive all day.",
+                        formatted: `→ Yes, it does. Sunny and clear days usually <span class="sub-hl">brighten my mood immediately</span>. I feel <span class="sub-hl">more energetic and productive</span> all day.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Thời tiết u ám làm cảm thấy hơi buồn ngủ và lười biếng nên chỉ muốn ở trong nhà - 20 từ)",
+                        text: "Yes, absolutely. Dark and gloomy weather often makes me feel a bit sleepy and lazy, so I just stay indoors.",
+                        formatted: `→ Yes, absolutely. Dark and gloomy weather often makes me feel <span class="sub-hl">a bit sleepy and lazy</span>, so I just <span class="sub-hl">stay indoors</span>.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 36,
+        title: "Chủ đề 36: Let's talk about plastic bags",
+        introText: "Let’s talk about plastic bags.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Have you ever used plastic bags?",
+                qType: "Wh/General: Have you ever used plastic bags?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Có - Dùng hằng tuần khi đi chợ mua thực phẩm tươi sống):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I have. I use plastic bags almost every week when I <span class="formula-bracket-hl">[hoạt động mua sắm]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Đã từng dùng nhiều - Hiện tại đang hạn chế để bảo vệ môi trường):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I used them in the past, but now I'm trying to <span class="formula-bracket-hl">[hành động bảo vệ môi trường]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🛒 [Đi chợ thường ngày] (Cách 1):",
+                        items: [
+                            { en: "buy fresh food at traditional local markets", vn: "mua thực phẩm tươi ở chợ truyền thống địa phương" },
+                            { en: "carry daily groceries home", vn: "mang đồ tạp hóa hằng ngày về nhà" },
+                            { en: "shop for kitchen cooking ingredients", vn: "mua sắm nguyên liệu nấu ăn cho bếp" },
+                            { en: "convenient everyday carry", vn: "đồ đựng tiện lợi hằng ngày" }
+                        ]
+                    },
+                    {
+                        title: "🌱 [Hạn chế bảo vệ môi trường] (Cách 2):",
+                        items: [
+                            { en: "reduce plastic waste and protect our environment", vn: "giảm rác thải nhựa và bảo vệ môi trường chúng ta" },
+                            { en: "use reusable shopping totes", vn: "sử dụng túi mua sắm tái sử dụng" },
+                            { en: "stop single-use plastics", vn: "dừng đồ nhựa dùng một lần" },
+                            { en: "build green daily habits", vn: "xây dựng thói quen xanh hằng ngày" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Dùng hằng tuần khi đi chợ truyền thống để mua thực phẩm tươi sống nấu ăn - 19 từ)",
+                        text: "Yes, I have. I use plastic bags almost every week when I buy fresh food at traditional local markets.",
+                        formatted: `→ Yes, I have. I use plastic bags almost every week when I <span class="sub-hl">buy fresh food at traditional local markets</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Trước đây dùng nhiều nhưng nay đang cố gắng giảm rác nhựa để bảo vệ môi trường - 19 từ)",
+                        text: "Yes, I used them in the past, but now I'm trying to reduce plastic waste and protect our environment.",
+                        formatted: `→ Yes, I used them in the past, but now I'm trying to <span class="sub-hl">reduce plastic waste and protect our environment</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What do you use plastic bags for?",
+                qType: "Wh-question: What do you use plastic bags for?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Đựng thịt tươi và cá sống - Giữ đồ sạch sẽ và chống rò rỉ nước):</div>
+                    <div class="topic-formula-text">
+                        → I mainly use them to <span class="formula-bracket-hl">[mục đích sử dụng]</span>. They keep other items clean and prevent water leakage.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Tái sử dụng làm túi đựng rác sinh hoạt trong nhà bếp):</div>
+                    <div class="topic-formula-text">
+                        → I often reuse small plastic bags as <span class="formula-bracket-hl">[mục đích tái chế]</span>. It's a convenient way to <span class="formula-bracket-hl">[lợi ích]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🥩 [Đựng thực phẩm sống] (Cách 1):",
+                        items: [
+                            { en: "hold fresh meat and raw fish", vn: "đựng thịt tươi và cá sống" },
+                            { en: "store wet green vegetables", vn: "chứa các loại rau xanh ướt" },
+                            { en: "keep other items clean and hygienic", vn: "giữ các đồ khác sạch sẽ và vệ sinh" },
+                            { en: "prevent water leakage", vn: "ngăn nước rò rỉ ra ngoài" }
+                        ]
+                    },
+                    {
+                        title: "🗑️ [Túi lót thùng rác] (Cách 2):",
+                        items: [
+                            { en: "household trash liners", vn: "túi lót thùng rác gia đình" },
+                            { en: "collect daily kitchen waste cleanly", vn: "thu gom rác bếp hằng ngày sạch sẽ" },
+                            { en: "keep garbage bins odor-free", vn: "giữ thùng rác không bị bốc mùi" },
+                            { en: "save household expenses", vn: "tiết kiệm chi tiêu gia đình" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Đựng thịt tươi sống và cá giúp các món đồ khác sạch sẽ và không bị rò rỉ nước - 20 từ)",
+                        text: "I mainly use them to hold fresh meat and raw fish. They keep other items clean and prevent water leakage.",
+                        formatted: `→ I mainly use them to <span class="sub-hl">hold fresh meat and raw fish</span>. They keep other items clean and <span class="sub-hl">prevent water leakage</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Tái sử dụng làm túi lót thùng rác là cách tiện lợi để gom rác nhà bếp sạch sẽ - 20 từ)",
+                        text: "I often reuse small plastic bags as household trash liners. It's a convenient way to collect daily kitchen waste cleanly.",
+                        formatted: `→ I often reuse small plastic bags as <span class="sub-hl">household trash liners</span>. It's a convenient way to <span class="sub-hl">collect daily kitchen waste cleanly</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Do you prefer plastic bags or canvas bags?",
+                qType: "Choice Question: Do you prefer plastic bags or canvas bags?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Thích túi vải hơn - Bền chắc, thân thiện môi trường, giảm ô nhiễm rác nhựa):</div>
+                    <div class="topic-formula-text">
+                        → I strongly prefer canvas bags because they're <span class="formula-bracket-hl">[ưu điểm túi vải]</span>. They help <span class="formula-bracket-hl">[lợi ích môi trường]</span> effectively.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Tùy trường hợp - Túi nilon tiện cho đồ ướt, túi vải chắc chắn cho sách vở):</div>
+                    <div class="topic-formula-text">
+                        → It depends. Plastic bags are handy for <span class="formula-bracket-hl">[đồ ướt]</span>, while canvas bags are <span class="formula-bracket-hl">[ưu điểm]</span> for <span class="formula-bracket-hl">[đồ khô]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "👜 [Ưu thế túi vải] (Cách 1):",
+                        items: [
+                            { en: "durable and eco-friendly", vn: "bền chắc và thân thiện môi trường" },
+                            { en: "reusable and washable", vn: "tái sử dụng và giặt sạch được" },
+                            { en: "reduce harmful single-use plastic pollution", vn: "giảm thiểu ô nhiễm rác nhựa dùng một lần độc hại" },
+                            { en: "protect marine animals", vn: "bảo vệ các sinh vật biển" }
+                        ]
+                    },
+                    {
+                        title: "⚖️ [Linh hoạt theo công năng] (Cách 2):",
+                        items: [
+                            { en: "wet seafood", vn: "hải sản tươi ướt" },
+                            { en: "raw watery groceries", vn: "thực phẩm tươi sống nhiều nước" },
+                            { en: "sturdy and stylish", vn: "chắc chắn và phong cách" },
+                            { en: "dry study books", vn: "sách vở tài liệu khô" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Thích túi vải vì bền và thân thiện môi trường, giúp giảm bớt ô nhiễm rác thải nhựa - 18 từ)",
+                        text: "I strongly prefer canvas bags because they're durable and eco-friendly. They help reduce harmful single-use plastic pollution effectively.",
+                        formatted: `→ I strongly prefer canvas bags because they're <span class="sub-hl">durable and eco-friendly</span>. They help <span class="sub-hl">reduce harmful single-use plastic pollution</span> effectively.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Tùy loại đồ: túi nilon tiện cho hải sản tươi sống, túi vải bền đẹp cho sách vở - 20 từ)",
+                        text: "It depends. Plastic bags are handy for wet seafood, while canvas bags are sturdy and stylish for dry study books.",
+                        formatted: `→ It depends. Plastic bags are handy for <span class="sub-hl">wet seafood</span>, while canvas bags are <span class="sub-hl">sturdy and stylish</span> for dry study books.`
+                    }
+                ]
+            }
+        ]
     }
 ];
 
