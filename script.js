@@ -10840,6 +10840,314 @@ const practiceTopicsData = [
                 ]
             }
         ]
+    },
+    {
+        id: 41,
+        title: "Chủ đề 41: Let's talk about handicrafts",
+        introText: "Let’s talk about handicrafts.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Do you like handicrafts?",
+                qType: "Yes/No Question: Do you like handicrafts?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Có - Tinh xảo, độc đáo và phản ánh nét đẹp văn hóa truyền thống):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I do. I love handicrafts because they're <span class="formula-bracket-hl">[tính từ ưu điểm]</span>. They reflect <span class="formula-bracket-hl">[giá trị văn hóa]</span> and great patience.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Thích chậu gốm và giỏ đan - Giúp không gian sống thêm duyên dáng và ấm cúng):</div>
+                    <div class="topic-formula-text">
+                        → Yes, absolutely. I especially enjoy <span class="formula-bracket-hl">[loại đồ thủ công]</span>. They make my living space <span class="formula-bracket-hl">[tính từ cảm nhận]</span> and cozy.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🏺 [Tinh xảo & Văn hóa] (Cách 1):",
+                        items: [
+                            { en: "very unique and delicate", vn: "rất độc đáo và tinh xảo" },
+                            { en: "rich local culture and great patience", vn: "văn hóa địa phương phong phú và sự kiên nhẫn tuyệt vời" },
+                            { en: "skilled traditional craftsmanship", vn: "tay nghề thủ công truyền thống khéo léo" },
+                            { en: "authentic folk value", vn: "giá trị dân gian đích thực" }
+                        ]
+                    },
+                    {
+                        title: "🪴 [Trang trí không gian sống] (Cách 2):",
+                        items: [
+                            { en: "handmade ceramic pots and woven baskets", vn: "chậu gốm thủ công và giỏ mây tre đan" },
+                            { en: "wooden souvenirs", vn: "đồ lưu niệm bằng gỗ" },
+                            { en: "much more charming and cozy", vn: "duyên dáng và ấm cúng hơn nhiều" },
+                            { en: "warm living room atmosphere", vn: "không khí phòng khách ấm cúng" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Yêu thích đồ thủ công vì độc đáo, tinh xảo và phản ánh nét văn hóa giàu bản sắc - 20 từ)",
+                        text: "Yes, I do. I love handicrafts because they're very unique and delicate. They reflect rich local culture and great patience.",
+                        formatted: `→ Yes, I do. I love handicrafts because they're <span class="sub-hl">very unique and delicate</span>. They reflect <span class="sub-hl">rich local culture and great patience</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Thích chậu gốm và giỏ mây đan thủ công giúp phòng khách duyên dáng và ấm cúng - 21 từ)",
+                        text: "Yes, absolutely. I especially enjoy handmade ceramic pots and woven baskets. They make my living space much more charming and cozy.",
+                        formatted: `→ Yes, absolutely. I especially enjoy <span class="sub-hl">handmade ceramic pots and woven baskets</span>. They make my living space <span class="sub-hl">much more charming and cozy</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "Have you ever made handicrafts?",
+                qType: "Wh/General: Have you ever made handicrafts?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Đã từng - Tự đan một chiếc khăn len ấm áp tặng mẹ vào mùa đông):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I have. In high school, I <span class="formula-bracket-hl">[hoạt động làm thủ công]</span> for my mother. She loved it very much.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Chưa từng làm nhiều - Không khéo tay nên thích mua đồ ở tiệm quà tặng):</div>
+                    <div class="topic-formula-text">
+                        → No, not really. I'm not very skillful with my hands, so I usually <span class="formula-bracket-hl">[hành động thay thế]</span> instead.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🧣 [Tự đan khăn len] (Cách 1):",
+                        items: [
+                            { en: "knitted a warm wool scarf", vn: "đan một chiếc khăn len ấm áp" },
+                            { en: "sewed small fabric bags", vn: "may những chiếc túi vải nhỏ" },
+                            { en: "loved it very much", vn: "rất yêu thích món quà" },
+                            { en: "felt a deep sense of joy", vn: "cảm thấy niềm vui sâu sắc" }
+                        ]
+                    },
+                    {
+                        title: "🛍️ [Mua quà thủ công tại tiệm] (Cách 2):",
+                        items: [
+                            { en: "buy craft gifts from local shops", vn: "mua quà thủ công từ các cửa hàng địa phương" },
+                            { en: "not very skillful with my hands", vn: "không quá khéo léo với đôi bàn tay" },
+                            { en: "support talented local artisans", vn: "ủng hộ những nghệ nhân địa phương tài năng" },
+                            { en: "admire intricate artworks", vn: "ngưỡng mộ các tác phẩm nghệ thuật phức tạp" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Thời học cấp ba đã từng đan chiếc khăn len ấm tặng mẹ và bà rất yêu thích - 20 từ)",
+                        text: "Yes, I have. In high school, I knitted a warm wool scarf for my mother. She loved it very much.",
+                        formatted: `→ Yes, I have. In high school, I <span class="sub-hl">knitted a warm wool scarf</span> for my mother. She loved it very much.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Không khéo tay cho lắm nên thường mua các món quà thủ công ở tiệm địa phương - 20 từ)",
+                        text: "No, not really. I'm not very skillful with my hands, so I usually buy craft gifts from local shops instead.",
+                        formatted: `→ No, not really. I'm not very skillful with my hands, so I usually <span class="sub-hl">buy craft gifts from local shops instead</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Should making handicrafts be taught to children?",
+                qType: "Yes/No Question: Should making handicrafts be taught to children?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Rất nên dạy - Rèn tính kiên nhẫn, óc sáng tạo và tránh xa màn hình điện thoại):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I strongly agree. Making handicrafts helps children <span class="formula-bracket-hl">[lợi ích kỹ năng]</span>. It keeps them away from smartphone screens effectively.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Nên dạy - Giúp các em hiểu nghệ thuật dân gian và trân trọng di sản văn hóa từ nhỏ):</div>
+                    <div class="topic-formula-text">
+                        → Yes, of course. Handicraft lessons allow kids to <span class="formula-bracket-hl">[lợi ích văn hóa]</span> and cherish cultural heritage from an early age.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "💡 [Rèn luyện tính kiên nhẫn & Sáng tạo] (Cách 1):",
+                        items: [
+                            { en: "develop patience and creativity", vn: "phát triển tính kiên nhẫn và sáng tạo" },
+                            { en: "train fine motor skills", vn: "rèn luyện kỹ năng vận động tinh" },
+                            { en: "keeps them away from smartphone screens", vn: "giúp các em tránh xa màn hình điện thoại" },
+                            { en: "stimulate artistic imagination", vn: "kích thích trí tưởng tượng nghệ thuật" }
+                        ]
+                    },
+                    {
+                        title: "🏛️ [Gìn giữ di sản văn hóa] (Cách 2):",
+                        items: [
+                            { en: "learn about folk arts", vn: "học hỏi về các loại hình nghệ thuật dân gian" },
+                            { en: "cherish cultural heritage from an early age", vn: "trân trọng di sản văn hóa từ khi còn nhỏ" },
+                            { en: "respect skilled traditions", vn: "tôn trọng các truyền thống khéo léo" },
+                            { en: "understand national identity", vn: "thấu hiểu bản sắc dân tộc" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Rèn luyện tính kiên nhẫn và sáng tạo, giúp các em tránh xa màn hình điện thoại hiệu quả - 20 từ)",
+                        text: "Yes, I strongly agree. Making handicrafts helps children develop patience and creativity. It keeps them away from smartphone screens effectively.",
+                        formatted: `→ Yes, I strongly agree. Making handicrafts helps children <span class="sub-hl">develop patience and creativity</span>. It keeps them <span class="sub-hl">away from smartphone screens effectively</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Tạo cơ hội tìm hiểu nghệ thuật dân gian và trân trọng di sản văn hóa ngay từ nhỏ - 20 từ)",
+                        text: "Yes, of course. Handicraft lessons allow kids to learn about folk arts and cherish cultural heritage from an early age.",
+                        formatted: `→ Yes, of course. Handicraft lessons allow kids to <span class="sub-hl">learn about folk arts</span> and <span class="sub-hl">cherish cultural heritage from an early age</span>.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 42,
+        title: "Chủ đề 42: Let's talk about traditional food",
+        introText: "Let’s talk about traditional food.",
+        questions: [
+            {
+                qNum: 1,
+                question: "What are some places you often go to for traditional Vietnamese food?",
+                qType: "Wh-question: What are some places you often go to for traditional Vietnamese food?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Đến các quán ăn gia đình ở khu phố cổ phục vụ phở chuẩn vị giá bình dân):</div>
+                    <div class="topic-formula-text">
+                        → I often go to <span class="formula-bracket-hl">[địa điểm quán ăn]</span>. These stalls serve <span class="formula-bracket-hl">[món ăn đặc trưng]</span> at very affordable prices.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Bàn ăn gia đình - Mẹ luôn nấu những bữa cơm truyền thống thơm ngon từ đồ chợ tươi):</div>
+                    <div class="topic-formula-text">
+                        → My favorite place is my family dining table. My mother always <span class="formula-bracket-hl">[hành động nấu nướng]</span> with fresh market ingredients.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🍜 [Quán ăn phố cổ lâu đời] (Cách 1):",
+                        items: [
+                            { en: "family-run eateries in the old quarter", vn: "quán ăn gia đình ở khu phố cổ" },
+                            { en: "serve authentic pho at very affordable prices", vn: "phục vụ phở chuẩn vị với giá rất bình dân" },
+                            { en: "crispy fried spring rolls", vn: "nem rán giòn rụm thơm ngon" },
+                            { en: "traditional cooking recipes", vn: "công thức nấu nướng truyền thống" }
+                        ]
+                    },
+                    {
+                        title: "🍚 [Bữa cơm nhà ấm áp] (Cách 2):",
+                        items: [
+                            { en: "cooks flavorful traditional meals", vn: "nấu những bữa ăn truyền thống đậm đà" },
+                            { en: "fresh market ingredients", vn: "nguyên liệu mua tươi từ chợ" },
+                            { en: "braised fish and sour vegetable soup", vn: "cá kho tộ và canh chua rau muống" },
+                            { en: "warm family dinner atmosphere", vn: "không khí bữa tối gia đình ấm cúng" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Đến quán ăn gia đình ở phố cổ phục vụ phở truyền thống chuẩn vị giá rất phải chăng - 19 từ)",
+                        text: "I often go to family-run eateries in the old quarter. These stalls serve authentic pho at very affordable prices.",
+                        formatted: `→ I often go to <span class="sub-hl">family-run eateries in the old quarter</span>. These stalls serve <span class="sub-hl">authentic pho at very affordable prices</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Bàn ăn gia đình nơi mẹ luôn nấu những món ăn truyền thống đậm đà từ nguyên liệu tươi - 19 từ)",
+                        text: "My favorite place is my family dining table. My mother always cooks flavorful traditional meals with fresh market ingredients.",
+                        formatted: `→ My favorite place is my family dining table. My mother always <span class="sub-hl">cooks flavorful traditional meals</span> with <span class="sub-hl">fresh market ingredients</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "Which traditional Vietnamese dishes do you think foreigners would enjoy the most?",
+                qType: "Wh-question: Which traditional Vietnamese dishes do you think foreigners would enjoy the most?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Phở bò và bánh mì - Nước dùng đậm đà, vỏ bánh mì giòn rụm và tiện lợi):</div>
+                    <div class="topic-formula-text">
+                        → In my opinion, foreigners enjoy beef pho and banh mi most. They offer <span class="formula-bracket-hl">[hương vị đặc trưng]</span> and convenience.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Bún chả và chả giò rán - Thịt nướng thơm lừng và nước chấm chua ngọt ngon tuyệt):</div>
+                    <div class="topic-formula-text">
+                        → They usually love bun cha and crispy spring rolls. The <span class="formula-bracket-hl">[yếu tố cuốn hút]</span> create a delightful dining experience.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🥖 [Phở & Bánh mì quốc hồn] (Cách 1):",
+                        items: [
+                            { en: "rich savory broth, crispy bread", vn: "nước dùng đậm đà thơm phức, vỏ bánh mì giòn rụm" },
+                            { en: "aromatic herbs and tender beef slices", vn: "rau thơm thảo mộc và từng lát thịt bò mềm" },
+                            { en: "convenience", vn: "sự tiện lợi khi thưởng thức" },
+                            { en: "globally famous Vietnamese cuisine", vn: "ẩm thực Việt Nam nổi tiếng toàn cầu" }
+                        ]
+                    },
+                    {
+                        title: "🥓 [Bún chả & Chả giò giòn] (Cách 2):",
+                        items: [
+                            { en: "grilled pork and sweet-sour dipping sauce", vn: "thịt heo nướng thơm và nước chấm chua ngọt" },
+                            { en: "crispy golden rolls", vn: "nem rán vàng ươm giòn rụm" },
+                            { en: "delightful dining experience", vn: "trải nghiệm ăn uống thú vị tuyệt vời" },
+                            { en: "fresh rice noodles and salad", vn: "bún tươi và rau sống thanh mát" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Phở bò và bánh mì nhờ nước dùng đậm đà, bánh mì giòn rụm và tính tiện lợi - 20 từ)",
+                        text: "In my opinion, foreigners enjoy beef pho and banh mi most. They offer rich savory broth, crispy bread, and convenience.",
+                        formatted: `→ In my opinion, foreigners enjoy <span class="sub-hl">beef pho and banh mi</span> most. They offer <span class="sub-hl">rich savory broth, crispy bread</span>, and convenience.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Bún chả và nem rán với thịt nướng thơm phức cùng nước chấm chua ngọt tuyệt hảo - 21 từ)",
+                        text: "They usually love bun cha and crispy spring rolls. The grilled pork and sweet-sour dipping sauce create a delightful dining experience.",
+                        formatted: `→ They usually love <span class="sub-hl">bun cha and crispy spring rolls</span>. The <span class="sub-hl">grilled pork and sweet-sour dipping sauce</span> create a delightful dining experience.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Do you think traditional Vietnamese food is hygienic? Why or why not?",
+                qType: "Wh/General: Do you think traditional Vietnamese food is hygienic? Why or why not?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Nhìn chung là vệ sinh - Rau thịt tươi mua sáng sớm và nước dùng đun sôi kỹ):</div>
+                    <div class="topic-formula-text">
+                        → Yes, generally. Cooks use <span class="formula-bracket-hl">[nguyên liệu tươi]</span> every morning, and soups are always boiled thoroughly at high temperatures.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Đa số an toàn nhưng quán vỉa hè dễ dính bụi - Khách nên chọn quán sạch sẽ):</div>
+                    <div class="topic-formula-text">
+                        → Most foods are safe, but some street stalls face <span class="formula-bracket-hl">[vấn đề môi trường]</span>. Customers should choose <span class="formula-bracket-hl">[tiêu chí quán]</span> to protect health.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🥬 [Nguyên liệu tươi & Ninh sôi kỹ] (Cách 1):",
+                        items: [
+                            { en: "fresh vegetables and meat", vn: "rau củ và thịt tươi mới" },
+                            { en: "boiled thoroughly at high temperatures", vn: "ninh đun sôi kỹ ở nhiệt độ cao" },
+                            { en: "natural cooking seasonings", vn: "gia vị nấu nướng từ tự nhiên" },
+                            { en: "safe food hygiene practices", vn: "các thực hành vệ sinh an toàn thực phẩm" }
+                        ]
+                    },
+                    {
+                        title: "🛡️ [Vấn đề vỉa hè & Tiêu chí sạch] (Cách 2):",
+                        items: [
+                            { en: "roadside dust", vn: "bụi bặm ven đường phố" },
+                            { en: "clean, well-reviewed eateries", vn: "các quán ăn sạch sẽ và được đánh giá uy tín" },
+                            { en: "protect personal health", vn: "bảo vệ sức khỏe bản thân" },
+                            { en: "observe clean food prep areas", vn: "quan sát khu chế biến thức ăn sạch sẽ" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Nguyên liệu rau thịt tươi mua buổi sáng và nồi nước dùng luôn ninh sôi sùng sục - 19 từ)",
+                        text: "Yes, generally. Cooks use fresh vegetables and meat every morning, and soups are always boiled thoroughly at high temperatures.",
+                        formatted: `→ Yes, generally. Cooks use <span class="sub-hl">fresh vegetables and meat</span> every morning, and soups are always <span class="sub-hl">boiled thoroughly at high temperatures</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Đa số an toàn nhưng một số quán vỉa hè bụi bặm, nên chọn quán sạch sẽ uy tín - 20 từ)",
+                        text: "Most foods are safe, but some street stalls face roadside dust. Customers should choose clean, well-reviewed eateries to protect health.",
+                        formatted: `→ Most foods are safe, but some street stalls face <span class="sub-hl">roadside dust</span>. Customers should choose <span class="sub-hl">clean, well-reviewed eateries</span> to protect health.`
+                    }
+                ]
+            }
+        ]
     }
 ];
 
