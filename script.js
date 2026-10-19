@@ -9608,6 +9608,314 @@ const practiceTopicsData = [
                 ]
             }
         ]
+    },
+    {
+        id: 33,
+        title: "Chủ đề 33: Let's talk about emails",
+        introText: "Let’s talk about emails.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Do you use email? What do you use email for?",
+                qType: "Wh/General: Do you use email? What do you use email for?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Dùng hằng ngày cho công việc - Gửi tài liệu và nhận thông báo công ty):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I do. I use email every day to <span class="formula-bracket-hl">[mục đích công việc]</span> and receive official company announcements.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Dùng chủ yếu cho việc học - Nộp bài tập hằng tuần và liên hệ giảng viên):</div>
+                    <div class="topic-formula-text">
+                        → Yes, certainly. I usually use email for my study. I <span class="formula-bracket-hl">[mục đích học tập]</span> and contact my university teachers.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "💼 [Công việc & Trao đổi] (Cách 1):",
+                        items: [
+                            { en: "send work documents to colleagues", vn: "gửi tài liệu công việc cho đồng nghiệp" },
+                            { en: "exchange project information", vn: "trao đổi thông tin dự án" },
+                            { en: "receive official company announcements", vn: "nhận thông báo chính thức từ công ty" },
+                            { en: "communicate with clients", vn: "giao tiếp với khách hàng" }
+                        ]
+                    },
+                    {
+                        title: "🎓 [Học tập & Liên hệ giảng viên] (Cách 2):",
+                        items: [
+                            { en: "submit weekly homework assignments", vn: "nộp bài tập về nhà hằng tuần" },
+                            { en: "download lecture files", vn: "tải các tệp bài giảng" },
+                            { en: "contact my university teachers", vn: "liên hệ giảng viên đại học" },
+                            { en: "ask academic questions", vn: "hỏi các thắc mắc học tập" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Gửi tài liệu công việc cho đồng nghiệp và nhận thông báo chính thức - 19 từ)",
+                        text: "Yes, I do. I use email every day to send work documents to colleagues and receive official company announcements.",
+                        formatted: `→ Yes, I do. I use email every day to <span class="sub-hl">send work documents to colleagues</span> and receive <span class="sub-hl">official company announcements</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Nộp bài tập về nhà hằng tuần và liên hệ giảng viên đại học - 19 từ)",
+                        text: "Yes, certainly. I usually use email for my study. I submit weekly homework assignments and contact my university teachers.",
+                        formatted: `→ Yes, certainly. I usually use email for my study. I <span class="sub-hl">submit weekly homework assignments</span> and contact <span class="sub-hl">my university teachers</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "Which do you prefer: letters or emails?",
+                qType: "Choice Question: Which do you prefer: letters or emails?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Thích email hơn - Nhanh chóng, tiện lợi, gửi tin khẩn cấp miễn phí):</div>
+                    <div class="topic-formula-text">
+                        → I prefer emails because they're <span class="formula-bracket-hl">[tính từ ưu điểm]</span>. I can send urgent messages in seconds at zero cost.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Thích thư tay hơn - Mang cảm xúc ấm áp và thể hiện sự tôn trọng chân thành):</div>
+                    <div class="topic-formula-text">
+                        → I prefer handwritten letters. They carry <span class="formula-bracket-hl">[giá trị cảm xúc]</span> and show deep care and sincere respect for the recipient.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "⚡ [Ưu điểm Email] (Cách 1):",
+                        items: [
+                            { en: "much faster and more convenient", vn: "nhanh hơn và tiện lợi hơn nhiều" },
+                            { en: "instant and modern", vn: "tức thì và hiện đại" },
+                            { en: "send urgent messages in seconds", vn: "gửi tin nhắn khẩn cấp trong vài giây" },
+                            { en: "zero cost", vn: "hoàn toàn miễn phí" }
+                        ]
+                    },
+                    {
+                        title: "✉️ [Ý nghĩa Thư tay] (Cách 2):",
+                        items: [
+                            { en: "warm personal feelings", vn: "những cảm xúc cá nhân ấm áp" },
+                            { en: "sentimental value", vn: "giá trị tình cảm" },
+                            { en: "deep care and sincere respect", vn: "sự quan tâm sâu sắc và tôn trọng chân thành" },
+                            { en: "lasting sweet memories", vn: "những kỷ niệm ngọt ngào lâu bền" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Thích email vì nhanh hơn, tiện hơn và gửi tin khẩn cấp tức thì miễn phí - 20 từ)",
+                        text: "I prefer emails because they're much faster and more convenient. I can send urgent messages in seconds at zero cost.",
+                        formatted: `→ I prefer emails because they're <span class="sub-hl">much faster and more convenient</span>. I can send <span class="sub-hl">urgent messages in seconds</span> at zero cost.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Thích thư tay vì chứa đựng cảm xúc ấm áp và sự tôn trọng chân thành - 19 từ)",
+                        text: "I prefer handwritten letters. They carry warm personal feelings and show deep care and sincere respect for the recipient.",
+                        formatted: `→ I prefer handwritten letters. They carry <span class="sub-hl">warm personal feelings</span> and show <span class="sub-hl">deep care and sincere respect</span> for the recipient.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Do you think emails will replace letters?",
+                qType: "Yes/No Question: Do you think emails will replace letters?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Có - Trong kinh doanh và trao đổi hằng ngày vì nhanh và tiết kiệm thời gian):</div>
+                    <div class="topic-formula-text">
+                        → Yes, in daily business and communication. Emails are <span class="formula-bracket-hl">[lợi thế nổi bật]</span>, and they save a lot of time.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Không hoàn toàn - Thư tay vẫn được trân trọng vào các dịp đặc biệt vì giá trị tình cảm):</div>
+                    <div class="topic-formula-text">
+                        → Not completely. People still love handwritten letters on <span class="formula-bracket-hl">[dịp đặc biệt]</span> for their meaningful sentimental value.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🚀 [Xu hướng thay thế] (Cách 1):",
+                        items: [
+                            { en: "incredibly fast and convenient", vn: "cực kỳ nhanh và tiện lợi" },
+                            { en: "paperless and green", vn: "không tốn giấy và bảo vệ môi trường" },
+                            { en: "save a lot of time", vn: "tiết kiệm rất nhiều thời gian" },
+                            { en: "modern business habits", vn: "thói quen kinh doanh hiện đại" }
+                        ]
+                    },
+                    {
+                        title: "💝 [Giá trị bền vững] (Cách 2):",
+                        items: [
+                            { en: "birthdays and romantic occasions", vn: "sinh nhật và những dịp lãng mạn" },
+                            { en: "traditional anniversaries", vn: "các ngày kỷ niệm truyền thống" },
+                            { en: "meaningful sentimental value", vn: "giá trị tình cảm đầy ý nghĩa" },
+                            { en: "treasured keepsakes", vn: "những kỷ vật được trân quý" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Thay thế trong công việc hằng ngày vì email cực nhanh và tiết kiệm thời gian - 19 từ)",
+                        text: "Yes, in daily business and communication. Emails are incredibly fast and convenient, and they save a lot of time.",
+                        formatted: `→ Yes, in daily business and communication. Emails are <span class="sub-hl">incredibly fast and convenient</span>, and they save <span class="sub-hl">a lot of time</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Không hoàn toàn vì người ta vẫn thích thư tay vào dịp đặc biệt do ý nghĩa tình cảm - 18 từ)",
+                        text: "Not completely. People still love handwritten letters on birthdays and special occasions for their deep, meaningful sentimental value.",
+                        formatted: `→ Not completely. People still love handwritten letters on <span class="sub-hl">birthdays and romantic occasions</span> for their <span class="sub-hl">meaningful sentimental value</span>.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 34,
+        title: "Chủ đề 34: Let's talk about postcards",
+        introText: "Let’s talk about postcards.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Do you often write postcards? Why?",
+                qType: "Wh/General: Do you often write postcards? Why?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Có - Thường viết khi đến điểm du lịch nổi tiếng để lưu kỷ niệm đẹp):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I do. Whenever I travel to <span class="formula-bracket-hl">[địa điểm du lịch]</span>, I write postcards to <span class="formula-bracket-hl">[mục đích gửi]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Không thường xuyên - Thích chia sẻ ảnh chụp tức thì trên mạng xã hội hơn):</div>
+                    <div class="topic-formula-text">
+                        → Not really. Nowadays, I usually <span class="formula-bracket-hl">[thói quen hiện đại]</span> with friends on social media because it's <span class="formula-bracket-hl">[tính từ]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🏝️ [Kỷ niệm du lịch] (Cách 1):",
+                        items: [
+                            { en: "famous tourist destinations", vn: "các điểm du lịch nổi tiếng" },
+                            { en: "scenic mountain towns", vn: "các thị trấn vùng núi tuyệt đẹp" },
+                            { en: "save wonderful holiday memories", vn: "lưu giữ những kỷ niệm kỳ nghỉ tuyệt vời" },
+                            { en: "send sweet wishes", vn: "gửi gắm những lời chúc ngọt ngào" }
+                        ]
+                    },
+                    {
+                        title: "📸 [Ảnh mạng xã hội] (Cách 2):",
+                        items: [
+                            { en: "share instant travel pictures", vn: "chia sẻ hình ảnh du lịch tức thì" },
+                            { en: "post travel moments", vn: "đăng các khoảnh khắc du lịch" },
+                            { en: "much faster", vn: "nhanh hơn nhiều" },
+                            { en: "more convenient and interactive", vn: "tiện lợi và có tính tương tác hơn" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Viết bưu thiếp khi đi du lịch danh lam thắng cảnh để lưu giữ kỷ niệm kỳ nghỉ - 18 từ)",
+                        text: "Yes, I do. Whenever I travel to famous tourist destinations, I write postcards to save wonderful holiday memories.",
+                        formatted: `→ Yes, I do. Whenever I travel to <span class="sub-hl">famous tourist destinations</span>, I write postcards to <span class="sub-hl">save wonderful holiday memories</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Ít viết, chủ yếu chia sẻ hình ảnh tức thì trên mạng xã hội vì nhanh hơn nhiều - 18 từ)",
+                        text: "Not really. Nowadays, I usually share instant travel pictures with friends on social media because it's much faster.",
+                        formatted: `→ Not really. Nowadays, I usually <span class="sub-hl">share instant travel pictures</span> with friends on social media because <span class="sub-hl">it's much faster</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "Who do you often send postcards to?",
+                qType: "Wh-question: Who do you often send postcards to?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Gửi cho bạn thân - Chia sẻ hình ảnh phong cảnh tuyệt đẹp và cảm xúc chuyến đi):</div>
+                    <div class="topic-formula-text">
+                        → I often send postcards to my <span class="formula-bracket-hl">[đối tượng]</span>. I love sharing <span class="formula-bracket-hl">[điều chia sẻ]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Gửi cho bố mẹ và ông bà - Thể hiện sự hiếu thảo và lời chúc sức khỏe ấm áp):</div>
+                    <div class="topic-formula-text">
+                        → I always send them to my <span class="formula-bracket-hl">[đối tượng gia đình]</span>. It's a sweet way to <span class="formula-bracket-hl">[mục đích tình cảm]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🏖️ [Gửi bạn thân] (Cách 1):",
+                        items: [
+                            { en: "close friends", vn: "bạn bè thân thiết" },
+                            { en: "favorite classmates", vn: "những người bạn cùng lớp yêu thích" },
+                            { en: "pictures of stunning landscapes and exciting travel feelings", vn: "ảnh phong cảnh tuyệt mỹ và cảm xúc du lịch hào hứng" },
+                            { en: "fun local stories", vn: "những câu chuyện thú vị ở địa phương" }
+                        ]
+                    },
+                    {
+                        title: "🏡 [Gửi gia đình & Ông bà] (Cách 2):",
+                        items: [
+                            { en: "beloved parents and grandparents", vn: "bố mẹ và ông bà kính yêu" },
+                            { en: "send warm health wishes", vn: "gửi những lời chúc sức khỏe ấm áp" },
+                            { en: "express my love and care", vn: "bày tỏ tình cảm yêu thương và sự quan tâm" },
+                            { en: "show deep gratitude", vn: "thể hiện lòng biết ơn sâu sắc" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Gửi bạn thân hình ảnh danh lam thắng cảnh tuyệt đẹp và cảm xúc hào hứng - 19 từ)",
+                        text: "I often send postcards to my close friends. I love sharing pictures of stunning landscapes and exciting travel feelings.",
+                        formatted: `→ I often send postcards to <span class="sub-hl">my close friends</span>. I love sharing <span class="sub-hl">pictures of stunning landscapes and exciting travel feelings</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Gửi bố mẹ và ông bà kính yêu như một cách ấm áp để gửi lời chúc sức khỏe - 19 từ)",
+                        text: "I always send them to my beloved parents and grandparents. It's a sweet way to send warm health wishes.",
+                        formatted: `→ I always send them to <span class="sub-hl">my beloved parents and grandparents</span>. It's a sweet way to <span class="sub-hl">send warm health wishes</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "What are the benefits of postcards?",
+                qType: "Wh-question: What are the benefits of postcards?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Lưu giữ kỷ niệm du lịch đặc biệt và có giá trị sưu tầm hình ảnh thắng cảnh đẹp):</div>
+                    <div class="topic-formula-text">
+                        → First, postcards help us <span class="formula-bracket-hl">[lợi ích lưu giữ]</span>. They have <span class="formula-bracket-hl">[đặc điểm thẩm mỹ]</span> and high collection value.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Mang lại niềm vui bất ngờ và gắn kết tình cảm chân thành qua khoảng cách xa):</div>
+                    <div class="topic-formula-text">
+                        → They bring <span class="formula-bracket-hl">[cảm xúc bất ngờ]</span> to the receiver. Postcards effectively <span class="formula-bracket-hl">[lợi ích kết nối]</span> across long distances.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🖼️ [Lưu giữ & Sưu tầm] (Cách 1):",
+                        items: [
+                            { en: "preserve special travel memories", vn: "gìn giữ những kỷ niệm du lịch đặc biệt" },
+                            { en: "remember exciting adventures", vn: "nhớ về những chuyến phiêu lưu hào hứng" },
+                            { en: "beautiful local landmark photos", vn: "hình ảnh danh lam thắng cảnh địa phương tuyệt đẹp" },
+                            { en: "unique postcard art", vn: "nghệ thuật bưu thiếp độc đáo" }
+                        ]
+                    },
+                    {
+                        title: "💌 [Gắn kết yêu thương] (Cách 2):",
+                        items: [
+                            { en: "a joyful emotional surprise", vn: "sự bất ngờ đầy cảm xúc và niềm vui" },
+                            { en: "heartwarming happiness", vn: "niềm hạnh phúc ấm lòng" },
+                            { en: "strengthen loving connections", vn: "thắt chặt các mối liên kết yêu thương" },
+                            { en: "shorten geographical distances", vn: "rút ngắn khoảng cách địa lý" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Lưu giữ kỷ niệm du lịch đặc biệt, hình ảnh danh lam thắng cảnh có giá trị sưu tầm - 18 từ)",
+                        text: "First, postcards help us preserve special travel memories. They have beautiful local landmark photos and high collection value.",
+                        formatted: `→ First, postcards help us <span class="sub-hl">preserve special travel memories</span>. They have <span class="sub-hl">beautiful local landmark photos</span> and high collection value.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Mang lại niềm vui bất ngờ đầy cảm xúc và thắt chặt kết nối yêu thương qua khoảng cách xa - 18 từ)",
+                        text: "They bring a joyful emotional surprise to the receiver. Postcards effectively strengthen warm, loving connections across long distances.",
+                        formatted: `→ They bring <span class="sub-hl">a joyful emotional surprise</span> to the receiver. Postcards effectively <span class="sub-hl">strengthen loving connections</span> across long distances.`
+                    }
+                ]
+            }
+        ]
     }
 ];
 
