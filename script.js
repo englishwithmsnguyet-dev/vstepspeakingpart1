@@ -9300,6 +9300,314 @@ const practiceTopicsData = [
                 ]
             }
         ]
+    },
+    {
+        id: 31,
+        title: "Chủ đề 31: Let's talk about friends",
+        introText: "Let’s talk about friends.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Are you a good friend?",
+                qType: "Yes/No Question: Are you a good friend?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Có - Kiên nhẫn lắng nghe và luôn hỗ trợ bạn bè khi khó khăn):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I believe I'm a good friend. I always <span class="formula-bracket-hl">[hành động lắng nghe]</span> and support them in difficult times.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Có - Luôn giữ lời hứa và tôn trọng sự riêng tư của bạn):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I think so. I always <span class="formula-bracket-hl">[hành động đáng tin cậy]</span> and respect my friends' personal space in every situation.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "👂 [Lắng nghe & Hỗ trợ] (Cách 1):",
+                        items: [
+                            { en: "listen to their stories patiently", vn: "kiên nhẫn lắng nghe tâm sự" },
+                            { en: "give sincere advice", vn: "đưa ra lời khuyên chân thành" },
+                            { en: "support them in difficult times", vn: "hỗ trợ họ khi khó khăn" },
+                            { en: "share everything honestly", vn: "chia sẻ mọi điều thật lòng" }
+                        ]
+                    },
+                    {
+                        title: "🤝 [Giữ lời hứa & Tôn trọng] (Cách 2):",
+                        items: [
+                            { en: "keep my promises strictly", vn: "nghiêm túc giữ lời hứa" },
+                            { en: "stay loyal and trustworthy", vn: "luôn trung thành và đáng tin cậy" },
+                            { en: "respect my friends' personal space", vn: "tôn trọng không gian riêng của bạn" },
+                            { en: "encourage them warmly", vn: "động viên họ ấm áp" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Kiên nhẫn lắng nghe tâm sự và hỗ trợ bạn khi khó khăn - 20 từ)",
+                        text: "Yes, I believe I'm a good friend. I always listen to their stories patiently and support them in difficult times.",
+                        formatted: `→ Yes, I believe I'm a good friend. I always <span class="sub-hl">listen to their stories patiently</span> and support them in difficult times.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Nghiêm túc giữ lời hứa và tôn trọng không gian riêng của bạn bè - 19 từ)",
+                        text: "Yes, I think so. I always keep my promises strictly and respect my friends' personal space in every situation.",
+                        formatted: `→ Yes, I think so. I always <span class="sub-hl">keep my promises strictly</span> and respect my friends' personal space in every situation.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What kind of people do you like to make friends with?",
+                qType: "Wh-question: What kind of people do you like to make friends with?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Thích kết bạn với người chân thành, tử tế và tốt bụng):</div>
+                    <div class="topic-formula-text">
+                        → I prefer to make friends with <span class="formula-bracket-hl">[tính từ tính cách]</span> people. They make me feel very <span class="formula-bracket-hl">[cảm xúc]</span> and comfortable.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Thích kết bạn với người vui vẻ, hài hước và có chung sở thích):</div>
+                    <div class="topic-formula-text">
+                        → I love hanging out with <span class="formula-bracket-hl">[tính từ tính cách]</span> people. We can easily <span class="formula-bracket-hl">[hoạt động chung]</span> and share lots of happiness.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "💖 [Chân thành & Tử tế] (Cách 1):",
+                        items: [
+                            { en: "honest and kind-hearted", vn: "thành thật và tốt bụng" },
+                            { en: "sincere and trustworthy", vn: "chân thành và đáng tin cậy" },
+                            { en: "safe, positive", vn: "an toàn, tích cực" },
+                            { en: "peaceful and relaxed", vn: "bình yên và thư thái" }
+                        ]
+                    },
+                    {
+                        title: "😄 [Vui vẻ & Chung sở thích] (Cách 2):",
+                        items: [
+                            { en: "cheerful and humorous", vn: "vui vẻ và hài hước" },
+                            { en: "optimistic and energetic", vn: "lạc quan và tràn đầy năng lượng" },
+                            { en: "discuss common hobbies", vn: "thảo luận về sở thích chung" },
+                            { en: "enjoy weekend activities", vn: "tận hưởng các hoạt động cuối tuần" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Kết bạn với người chân thành, tốt bụng giúp cảm thấy an toàn và thoải mái - 19 từ)",
+                        text: "I prefer to make friends with honest and kind-hearted people. They make me feel very safe, positive, and comfortable.",
+                        formatted: `→ I prefer to make friends with <span class="sub-hl">honest and kind-hearted</span> people. They make me feel very <span class="sub-hl">safe, positive</span>, and comfortable.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Thích bạn bè vui vẻ, hài hước để cùng trao đổi sở thích và chia sẻ niềm vui - 20 từ)",
+                        text: "I love hanging out with cheerful and humorous people. We can easily discuss common hobbies and share lots of happiness.",
+                        formatted: `→ I love hanging out with <span class="sub-hl">cheerful and humorous</span> people. We can easily <span class="sub-hl">discuss common hobbies</span> and share lots of happiness.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Do you still keep in touch with your friends from elementary school?",
+                qType: "Yes/No Question: Do you still keep in touch with your friends from elementary school?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Có - Vẫn nhắn tin trên mạng xã hội và hẹn cà phê vào dịp Tết):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I still do. We often <span class="formula-bracket-hl">[hình thức liên lạc]</span> and meet for coffee during <span class="formula-bracket-hl">[dịp gặp gỡ]</span> together.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Không - Sống ở các thành phố khác nhau và ai cũng bận rộn công việc):</div>
+                    <div class="topic-formula-text">
+                        → Unfortunately, no. We live in <span class="formula-bracket-hl">[nơi chốn]</span> and we're all busy with <span class="formula-bracket-hl">[lý do bận rộn]</span> now.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "📱 [Giữ liên lạc] (Cách 1):",
+                        items: [
+                            { en: "chat on social media", vn: "nhắn tin trên mạng xã hội" },
+                            { en: "send holiday greetings", vn: "gửi lời chúc các dịp lễ" },
+                            { en: "annual Tet holidays", vn: "kỳ nghỉ Tết hằng năm" },
+                            { en: "summer vacations", vn: "những kỳ nghỉ hè" }
+                        ]
+                    },
+                    {
+                        title: "🏙️ [Mất liên lạc do bận rộn] (Cách 2):",
+                        items: [
+                            { en: "different big cities", vn: "các thành phố lớn khác nhau" },
+                            { en: "faraway provinces", vn: "các tỉnh ở xa" },
+                            { en: "demanding jobs and families", vn: "công việc bận rộn và gia đình" },
+                            { en: "daily busy schedules", vn: "lịch trình bận rộn hằng ngày" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Thường nhắn tin qua mạng xã hội và gặp nhau cà phê vào dịp Tết - 19 từ)",
+                        text: "Yes, I still do. We often chat on social media and meet for coffee during annual Tet holidays together.",
+                        formatted: `→ Yes, I still do. We often <span class="sub-hl">chat on social media</span> and meet for coffee during <span class="sub-hl">annual Tet holidays</span> together.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Sống ở những thành phố khác nhau và đều bận rộn với công việc/gia đình - 18 từ)",
+                        text: "Unfortunately, no. We live in different big cities and we're all busy with demanding jobs and families now.",
+                        formatted: `→ Unfortunately, no. We live in <span class="sub-hl">different big cities</span> and we're all busy with <span class="sub-hl">demanding jobs and families</span> now.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 32,
+        title: "Chủ đề 32: Let's talk about dating",
+        introText: "Let’s talk about dating.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Do you like dating?",
+                qType: "Yes/No Question: Do you like dating?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Có - Thấu hiểu sâu sắc đối phương và tận hưởng khoảnh khắc lãng mạn):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I do. Dating is a wonderful opportunity to <span class="formula-bracket-hl">[mục đích hẹn hò]</span> and enjoy <span class="formula-bracket-hl">[trải nghiệm cảm xúc]</span> together.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Không quá hào hứng - Tập trung học tập, sự nghiệp và tận hưởng cuộc sống độc thân):</div>
+                    <div class="topic-formula-text">
+                        → Not really. At present, I prefer to focus on <span class="formula-bracket-hl">[mục tiêu cá nhân]</span>, so I enjoy my single life.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🌹 [Yêu thích hẹn hò] (Cách 1):",
+                        items: [
+                            { en: "understand another person deeply", vn: "thấu hiểu sâu sắc đối phương" },
+                            { en: "explore different personalities", vn: "tìm hiểu những tính cách khác nhau" },
+                            { en: "sweet romantic moments", vn: "những khoảnh khắc lãng mạn ngọt ngào" },
+                            { en: "special weekend dates", vn: "những buổi hẹn hò cuối tuần đặc biệt" }
+                        ]
+                    },
+                    {
+                        title: "🎯 [Ưu tiên sự nghiệp & Độc thân] (Cách 2):",
+                        items: [
+                            { en: "my university study and career", vn: "việc học đại học và sự nghiệp" },
+                            { en: "personal skill development", vn: "phát triển kỹ năng cá nhân" },
+                            { en: "peaceful independent life", vn: "cuộc sống độc lập thanh bình" },
+                            { en: "quality time with friends", vn: "thời gian chất lượng bên bạn bè" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Cơ hội tuyệt vời để thấu hiểu người khác và tận hưởng khoảnh khắc lãng mạn - 19 từ)",
+                        text: "Yes, I do. Dating is a wonderful opportunity to understand another person deeply and enjoy sweet romantic moments together.",
+                        formatted: `→ Yes, I do. Dating is a wonderful opportunity to <span class="sub-hl">understand another person deeply</span> and enjoy <span class="sub-hl">sweet romantic moments</span> together.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Hiện tại ưu tiên tập trung học tập và sự nghiệp nên tận hưởng cuộc sống độc thân - 20 từ)",
+                        text: "Not really. At present, I prefer to focus on my university study and career, so I enjoy my single life.",
+                        formatted: `→ Not really. At present, I prefer to focus on <span class="sub-hl">my university study and career</span>, so I enjoy my single life.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "Have you ever been on a date before? What is your ideal type of partner?",
+                qType: "Wh/General: Have you ever been on a date before? What is your ideal type of partner?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Đã từng hẹn hò - Mẫu người ấm áp, chân thành và có khiếu hài hước):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I have. My ideal partner is someone <span class="formula-bracket-hl">[tính từ tính cách]</span>. A good sense of humor is also <span class="formula-bracket-hl">[tính từ]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Chưa từng hẹn hò - Tìm kiếm người thấu hiểu sâu sắc, kiên nhẫn và tôn trọng gia đình):</div>
+                    <div class="topic-formula-text">
+                        → No, I haven't. In the future, I look for a partner with <span class="formula-bracket-hl">[phẩm chất tốt]</span> and respect for family.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "✨ [Ấm áp & Chân thành] (Cách 1):",
+                        items: [
+                            { en: "warm-hearted and sincere", vn: "ấm áp và chân thành" },
+                            { en: "caring and thoughtful", vn: "chu đáo và biết quan tâm" },
+                            { en: "very important", vn: "rất quan trọng" },
+                            { en: "really attractive", vn: "thực sự cuốn hút" }
+                        ]
+                    },
+                    {
+                        title: "🏡 [Kiên nhẫn & Tôn trọng gia đình] (Cách 2):",
+                        items: [
+                            { en: "deep understanding, patience", vn: "sự thấu hiểu sâu sắc, tính kiên nhẫn" },
+                            { en: "a responsible mindset", vn: "tư duy có trách nhiệm" },
+                            { en: "respect for family", vn: "tôn trọng gia đình" },
+                            { en: "polite and gentle manners", vn: "cách cư xử lịch sự và hòa nhã" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Thích người bạn đời ấm áp, chân thành và khiếu hài hước rất quan trọng - 20 từ)",
+                        text: "Yes, I have. My ideal partner is someone warm-hearted and sincere. A good sense of humor is also very important.",
+                        formatted: `→ Yes, I have. My ideal partner is someone <span class="sub-hl">warm-hearted and sincere</span>. A good sense of humor is also <span class="sub-hl">very important</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Tìm kiếm một người có sự thấu hiểu sâu sắc, tính kiên nhẫn và tôn trọng gia đình - 19 từ)",
+                        text: "No, I haven't. In the future, I look for a partner with deep understanding, patience, and respect for family.",
+                        formatted: `→ No, I haven't. In the future, I look for a partner with <span class="sub-hl">deep understanding, patience</span>, and <span class="sub-hl">respect for family</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Can you share some experiences or tips from your dating life?",
+                qType: "Wh/Open: Can you share some experiences or tips from your dating life?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Chọn quán cà phê yên tĩnh ấm cúng và chăm chú lắng nghe đối phương):</div>
+                    <div class="topic-formula-text">
+                        → In my opinion, you should choose a <span class="formula-bracket-hl">[địa điểm hẹn hò]</span>. Also, <span class="formula-bracket-hl">[hành động giao tiếp]</span> during the conversation.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Hãy là chính mình, ăn mặc gọn gàng, đến đúng giờ và tôn trọng thời gian):</div>
+                    <div class="topic-formula-text">
+                        → My best tip is to be yourself. You should <span class="formula-bracket-hl">[hành động lịch sự]</span> and show respect for their time.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "☕ [Chọn địa điểm & Lắng nghe] (Cách 1):",
+                        items: [
+                            { en: "cozy quiet coffee shop", vn: "quán cà phê ấm cúng yên tĩnh" },
+                            { en: "peaceful flower garden", vn: "vườn hoa thanh bình" },
+                            { en: "listen to your partner attentively", vn: "chăm chú lắng nghe đối phương" },
+                            { en: "show genuine interest", vn: "thể hiện sự quan tâm chân thật" }
+                        ]
+                    },
+                    {
+                        title: "👔 [Lịch sự & Đúng giờ] (Cách 2):",
+                        items: [
+                            { en: "dress neatly, arrive punctually", vn: "ăn mặc gọn gàng, đến đúng giờ" },
+                            { en: "speak politely and gently", vn: "nói chuyện lịch sự và nhẹ nhàng" },
+                            { en: "show respect for their time", vn: "thể hiện sự tôn trọng thời gian của họ" },
+                            { en: "avoid looking at phones", vn: "tránh nhìn vào điện thoại" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Nên chọn quán cà phê yên tĩnh ấm cúng và chăm chú lắng nghe khi trò chuyện - 20 từ)",
+                        text: "In my opinion, you should choose a cozy quiet coffee shop. Also, listen to your partner attentively during the conversation.",
+                        formatted: `→ In my opinion, you should choose a <span class="sub-hl">cozy quiet coffee shop</span>. Also, <span class="sub-hl">listen to your partner attentively</span> during the conversation.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Hãy là chính mình, ăn mặc gọn gàng, đến đúng giờ và tôn trọng thời gian đối phương - 19 từ)",
+                        text: "My best tip is to be yourself. You should dress neatly, arrive punctually, and show respect for their time.",
+                        formatted: `→ My best tip is to be yourself. You should <span class="sub-hl">dress neatly, arrive punctually</span>, and show respect for their time.`
+                    }
+                ]
+            }
+        ]
     }
 ];
 
