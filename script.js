@@ -11148,6 +11148,314 @@ const practiceTopicsData = [
                 ]
             }
         ]
+    },
+    {
+        id: 43,
+        title: "Chủ đề 43: Let's talk about traditional villages",
+        introText: "Let’s talk about traditional villages.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Have you ever been to a traditional village?",
+                qType: "Wh/General: Have you ever been to a traditional village?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Đã từng - Đến làng gốm Bát Tràng, tự nặn bình gốm nhỏ rất vui):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I have. Last summer, I visited <span class="formula-bracket-hl">[tên làng nghề]</span>. I <span class="formula-bracket-hl">[hoạt động trải nghiệm]</span> and had great fun.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Chưa từng đến tận nơi - Mới chỉ xem phim tài liệu du lịch trên tivi):</div>
+                    <div class="topic-formula-text">
+                        → No, I haven't. I've only watched <span class="formula-bracket-hl">[chương trình]</span> on television. I really want to visit a craft village soon.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🏺 [Trải nghiệm nặn gốm] (Cách 1):",
+                        items: [
+                            { en: "Bat Trang pottery village", vn: "làng gốm Bát Tràng" },
+                            { en: "made a small ceramic vase", vn: "tự nặn một chiếc bình gốm nhỏ" },
+                            { en: "learned ancient ceramic crafting", vn: "học chế tác gốm cổ truyền" },
+                            { en: "had great fun", vn: "đã có rất nhiều niềm vui" }
+                        ]
+                    },
+                    {
+                        title: "📺 [Xem phim tài liệu] (Cách 2):",
+                        items: [
+                            { en: "cultural travel documentaries", vn: "phim tài liệu du lịch văn hóa" },
+                            { en: "traditional craft showcases", vn: "các chương trình giới thiệu làng nghề" },
+                            { en: "visit a craft village soon", vn: "sớm đến thăm một làng nghề thủ công" },
+                            { en: "explore rural workshops", vn: "khám phá những xưởng thủ công thôn quê" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Mùa hè năm ngoái đã đến làng gốm Bát Tràng tự tay nặn bình gốm nhỏ rất vui - 21 từ)",
+                        text: "Yes, I have. Last summer, I visited Bat Trang pottery village. I made a small ceramic vase and had great fun.",
+                        formatted: `→ Yes, I have. Last summer, I visited <span class="sub-hl">Bat Trang pottery village</span>. I <span class="sub-hl">made a small ceramic vase</span> and had great fun.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Chưa từng đến, chỉ mới xem qua phim tài liệu du lịch trên tivi và mong được đi sớm - 20 từ)",
+                        text: "No, I haven't. I've only watched cultural travel documentaries on television. I really want to visit a craft village soon.",
+                        formatted: `→ No, I haven't. I've only watched <span class="sub-hl">cultural travel documentaries</span> on television. I really want to <span class="sub-hl">visit a craft village soon</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What are some popular traditional villages in your country?",
+                qType: "Wh-question: What are some popular traditional villages in your country?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Làng lụa Vạn Phúc và làng gốm Bát Tràng nổi tiếng với lụa và gốm sứ):</div>
+                    <div class="topic-formula-text">
+                        → The most famous ones are <span class="formula-bracket-hl">[hai làng nghề nổi tiếng]</span>. They're well-known for <span class="formula-bracket-hl">[sản phẩm đặc trưng]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Làng hương Thủy Xuân ở Huế đẹp như tranh với những bó hương thơm rực rỡ):</div>
+                    <div class="topic-formula-text">
+                        → Many tourists love <span class="formula-bracket-hl">[tên làng nghề]</span>. This picturesque village offers <span class="formula-bracket-hl">[sản phẩm đặc trưng]</span> and great photos.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🏮 [Làng lụa & Làng gốm] (Cách 1):",
+                        items: [
+                            { en: "Van Phuc silk village and Bat Trang pottery village", vn: "làng lụa Vạn Phúc và làng gốm Bát Tràng" },
+                            { en: "smooth shiny natural silk", vn: "lụa tự nhiên óng ả mềm mịn" },
+                            { en: "silk and ceramics", vn: "lụa tơ tằm và đồ gốm sứ" },
+                            { en: "centuries of artisan history", vn: "hàng thế kỷ lịch sử nghệ nhân" }
+                        ]
+                    },
+                    {
+                        title: "🌸 [Làng hương Thủy Xuân] (Cách 2):",
+                        items: [
+                            { en: "Thuy Xuan incense village in Hue", vn: "làng hương Thủy Xuân ở Huế" },
+                            { en: "colorful fragrant incense sticks", vn: "những bó hương thơm ngát rực rỡ sắc màu" },
+                            { en: "picturesque tourist village", vn: "ngôi làng du lịch đẹp như tranh" },
+                            { en: "great photos", vn: "những bức ảnh chụp tuyệt đẹp" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Nổi tiếng nhất là làng lụa Vạn Phúc và gốm Bát Tràng với sản phẩm lụa và gốm sứ - 20 từ)",
+                        text: "The most famous ones are Van Phuc silk village and Bat Trang pottery village. They're well-known for silk and ceramics.",
+                        formatted: `→ The most famous ones are <span class="sub-hl">Van Phuc silk village and Bat Trang pottery village</span>. They're well-known for <span class="sub-hl">silk and ceramics</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Nhiều du khách yêu thích làng hương Thủy Xuân ở Huế với những bó hương thơm rực rỡ sắc màu - 20 từ)",
+                        text: "Many tourists love Thuy Xuan incense village in Hue. This picturesque village offers colorful fragrant incense sticks and great photos.",
+                        formatted: `→ Many tourists love <span class="sub-hl">Thuy Xuan incense village in Hue</span>. This picturesque village offers <span class="sub-hl">colorful fragrant incense sticks and great photos</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "What should we do to maintain traditional villages?",
+                qType: "Wh-question: What should we do to maintain traditional villages?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Quảng bá du lịch làng nghề và hỗ trợ tài chính để nghệ nhân truyền nghề):</div>
+                    <div class="topic-formula-text">
+                        → The government should <span class="formula-bracket-hl">[giải pháp 1]</span>. Also, financial support helps elderly artisans <span class="formula-bracket-hl">[giải pháp truyền nghề]</span> to young people.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Cải tiến mẫu mã hiện đại và đưa hàng thủ công lên sàn thương mại điện tử):</div>
+                    <div class="topic-formula-text">
+                        → Artisans should <span class="formula-bracket-hl">[giải pháp cải tiến mẫu mã]</span>. Selling handmade goods on e-commerce platforms can <span class="formula-bracket-hl">[lợi ích kinh tế]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🏛️ [Quảng bá du lịch & Hỗ trợ] (Cách 1):",
+                        items: [
+                            { en: "promote craft village tourism widely", vn: "quảng bá rộng rãi du lịch làng nghề" },
+                            { en: "pass down skills to young people", vn: "truyền dạy kỹ năng cho người trẻ" },
+                            { en: "preserve traditional techniques", vn: "bảo tồn các kỹ thuật truyền thống" },
+                            { en: "subsidize craft workshop costs", vn: "trợ cấp chi phí xưởng chế tác" }
+                        ]
+                    },
+                    {
+                        title: "🛒 [Đổi mới mẫu mã & Bán online] (Cách 2):",
+                        items: [
+                            { en: "modernize product designs creatively", vn: "hiện đại hóa mẫu mã sản phẩm sáng tạo" },
+                            { en: "selling handmade goods on e-commerce platforms", vn: "bán hàng thủ công trên sàn thương mại điện tử" },
+                            { en: "increase sales and attract worldwide customers", vn: "tăng doanh số và thu hút khách hàng toàn cầu" },
+                            { en: "reach young modern buyers", vn: "tiếp cận người mua trẻ tuổi hiện đại" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Quảng bá du lịch làng nghề và hỗ trợ tài chính để nghệ nhân lớn tuổi truyền nghề cho giới trẻ - 20 từ)",
+                        text: "The government should promote craft village tourism widely. Also, financial support helps elderly artisans pass down skills to young people.",
+                        formatted: `→ The government should <span class="sub-hl">promote craft village tourism widely</span>. Also, financial support helps elderly artisans <span class="sub-hl">pass down skills to young people</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Cải tiến mẫu mã sáng tạo và bán trên sàn thương mại điện tử giúp tăng doanh số, thu hút khách quốc tế - 19 từ)",
+                        text: "Artisans should modernize product designs creatively. Selling handmade goods on e-commerce platforms can increase sales and attract worldwide customers.",
+                        formatted: `→ Artisans should <span class="sub-hl">modernize product designs creatively</span>. Selling handmade goods on e-commerce platforms can <span class="sub-hl">increase sales and attract worldwide customers</span>.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 44,
+        title: "Chủ đề 44: Let's talk about community service",
+        introText: "Let’s talk about community service.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Have you ever done community service? If yes, what kinds of community service have you done?",
+                qType: "Wh/General: Have you ever done community service? If yes, what kinds of community service have you done?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Đã từng - Dọn rác bãi biển và trồng cây xanh, trải nghiệm rất ý nghĩa):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I have. Last summer, I <span class="formula-bracket-hl">[hoạt động môi trường]</span>. It was a very meaningful experience.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Đã từng - Tình nguyện dạy tiếng Anh cho trẻ em nghèo và cảm thấy biết ơn):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I have. I volunteered to <span class="formula-bracket-hl">[hoạt động dạy học]</span>. Helping disadvantaged kids made me feel deeply grateful.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🏖️ [Dọn bãi biển & Trồng cây] (Cách 1):",
+                        items: [
+                            { en: "cleaned up local beaches and planted green trees", vn: "dọn sạch bãi biển địa phương và trồng cây xanh" },
+                            { en: "collected plastic waste", vn: "thu gom rác thải nhựa" },
+                            { en: "a very meaningful experience", vn: "một trải nghiệm vô cùng ý nghĩa" },
+                            { en: "improved our coastal environment", vn: "cải thiện môi trường ven biển của chúng tôi" }
+                        ]
+                    },
+                    {
+                        title: "📚 [Dạy học cho trẻ em nghèo] (Cách 2):",
+                        items: [
+                            { en: "teach basic English to poor children", vn: "dạy tiếng Anh cơ bản cho trẻ em nghèo" },
+                            { en: "organize free weekend lessons", vn: "tổ chức các buổi học miễn phí cuối tuần" },
+                            { en: "feel deeply grateful", vn: "cảm thấy biết ơn sâu sắc" },
+                            { en: "bring joyful smiles to kids", vn: "mang lại nụ cười rạng rỡ cho các em" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Mùa hè năm ngoái đã dọn rác bãi biển và trồng cây xanh, một trải nghiệm vô cùng ý nghĩa - 20 từ)",
+                        text: "Yes, I have. Last summer, I cleaned up local beaches and planted green trees. It was a very meaningful experience.",
+                        formatted: `→ Yes, I have. Last summer, I <span class="sub-hl">cleaned up local beaches and planted green trees</span>. It was a very meaningful experience.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Tình nguyện dạy tiếng Anh cơ bản cho trẻ em nghèo, giúp đỡ các em khiến tôi cảm thấy biết ơn sâu sắc - 20 từ)",
+                        text: "Yes, I have. I volunteered to teach basic English to poor children. Helping disadvantaged kids made me feel deeply grateful.",
+                        formatted: `→ Yes, I have. I volunteered to <span class="sub-hl">teach basic English to poor children</span>. Helping disadvantaged kids made me <span class="sub-hl">feel deeply grateful</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "Are community activities popular in your country?",
+                qType: "Yes/No Question: Are community activities popular in your country?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Rất phổ biến - Sinh viên tham gia Mùa hè xanh và hiến máu nhân đạo):</div>
+                    <div class="topic-formula-text">
+                        → Yes, they're extremely popular. Every summer, thousands of students join <span class="formula-bracket-hl">[chiến dịch tình nguyện]</span> and donate blood for local hospitals.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Ngày nay rất phổ biến - Nhiều nhóm thanh niên nấu cơm từ thiện cho người nghèo):</div>
+                    <div class="topic-formula-text">
+                        → Yes, very popular nowadays. Many youth groups regularly <span class="formula-bracket-hl">[hoạt động từ thiện]</span> to support homeless people and poor patients in hospitals.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "☀️ [Mùa hè xanh & Hiến máu] (Cách 1):",
+                        items: [
+                            { en: "the Green Summer campaign", vn: "chiến dịch Mùa hè xanh" },
+                            { en: "donate blood for local hospitals", vn: "hiến máu cho các bệnh viện địa phương" },
+                            { en: "rural volunteer expeditions", vn: "các chuyến tình nguyện về vùng nông thôn" },
+                            { en: "support remote communities", vn: "hỗ trợ các cộng đồng vùng sâu vùng xa" }
+                        ]
+                    },
+                    {
+                        title: "🍲 [Nấu cơm từ thiện] (Cách 2):",
+                        items: [
+                            { en: "cook free meals", vn: "nấu các bữa cơm miễn phí" },
+                            { en: "support homeless people and poor patients", vn: "hỗ trợ người vô gia cư và bệnh nhân nghèo" },
+                            { en: "distribute warm winter clothes", vn: "phát quần áo ấm mùa đông" },
+                            { en: "share warm kindness", vn: "chia sẻ lòng tốt ấm áp" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Rất phổ biến, mỗi mùa hè hàng ngàn sinh viên tham gia Mùa hè xanh và hiến máu cứu người - 20 từ)",
+                        text: "Yes, they're extremely popular. Every summer, thousands of students join the Green Summer campaign and donate blood for local hospitals.",
+                        formatted: `→ Yes, they're extremely popular. Every summer, thousands of students join <span class="sub-hl">the Green Summer campaign</span> and <span class="sub-hl">donate blood for local hospitals</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Rất phổ biến, nhiều nhóm thanh niên thường xuyên nấu cơm từ thiện hỗ trợ người vô gia cư và bệnh nhân - 20 từ)",
+                        text: "Yes, very popular nowadays. Many youth groups regularly cook free meals to support homeless people and poor patients in hospitals.",
+                        formatted: `→ Yes, very popular nowadays. Many youth groups regularly <span class="sub-hl">cook free meals</span> to support <span class="sub-hl">homeless people and poor patients in hospitals</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "What are the benefits of participating in community activities?",
+                qType: "Wh-question: What are the benefits of participating in community activities?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Phát triển kỹ năng làm việc nhóm, giao tiếp giúp tự tin và trưởng thành hơn):</div>
+                    <div class="topic-formula-text">
+                        → Volunteers can <span class="formula-bracket-hl">[lợi ích kỹ năng]</span>. Working with diverse teammates makes them <span class="formula-bracket-hl">[tính từ cảm xúc và sự chín chắn]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Nuôi dưỡng sự thấu cảm sâu sắc và trách nhiệm xã hội, giúp sống có ý nghĩa hơn):</div>
+                    <div class="topic-formula-text">
+                        → Community service fosters <span class="formula-bracket-hl">[phẩm chất đạo đức]</span>. It helps people appreciate their lives and live <span class="formula-bracket-hl">[lối sống tích cực]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🤝 [Kỹ năng mềm & Tự tin] (Cách 1):",
+                        items: [
+                            { en: "develop essential teamwork and communication skills", vn: "phát triển kỹ năng làm việc nhóm và giao tiếp thiết yếu" },
+                            { en: "much more confident and mature", vn: "tự tin và trưởng thành hơn nhiều" },
+                            { en: "adapt to challenging conditions", vn: "thích nghi với các điều kiện thử thách" },
+                            { en: "build lasting friendships", vn: "xây dựng tình bạn bền chặt" }
+                        ]
+                    },
+                    {
+                        title: "💖 [Thấu cảm & Sống ý nghĩa] (Cách 2):",
+                        items: [
+                            { en: "deep empathy and social responsibility", vn: "sự thấu cảm sâu sắc và tinh thần trách nhiệm xã hội" },
+                            { en: "live much more meaningfully", vn: "sống ý nghĩa hơn nhiều" },
+                            { en: "appreciate good fortunes in life", vn: "biết ơn những may mắn trong cuộc sống" },
+                            { en: "spread positive energy", vn: "lan tỏa năng lượng tích cực" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Phát triển kỹ năng làm việc nhóm và giao tiếp, làm việc cùng đồng đội giúp tự tin và trưởng thành hơn - 19 từ)",
+                        text: "Volunteers can develop essential teamwork and communication skills. Working with diverse teammates makes them much more confident and mature.",
+                        formatted: `→ Volunteers can <span class="sub-hl">develop essential teamwork and communication skills</span>. Working with diverse teammates makes them <span class="sub-hl">much more confident and mature</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Nuôi dưỡng sự thấu cảm sâu sắc và trách nhiệm xã hội, giúp con người trân quý cuộc sống và sống ý nghĩa hơn - 19 từ)",
+                        text: "Community service fosters deep empathy and social responsibility. It helps people appreciate their lives and live much more meaningfully.",
+                        formatted: `→ Community service fosters <span class="sub-hl">deep empathy and social responsibility</span>. It helps people appreciate their lives and <span class="sub-hl">live much more meaningfully</span>.`
+                    }
+                ]
+            }
+        ]
     }
 ];
 
