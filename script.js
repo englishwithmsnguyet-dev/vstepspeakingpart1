@@ -11313,47 +11313,49 @@ const practiceTopicsData = [
                 question: "Have you ever done community service? If yes, what kinds of community service have you done?",
                 qType: "Wh/General: Have you ever done community service? If yes, what kinds of community service have you done?",
                 formula: `<div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 1 (Đã từng - Dọn rác bãi biển và trồng cây xanh, trải nghiệm rất ý nghĩa):</div>
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Đã từng tham gia 2 hoạt động và cảm thấy ý nghĩa):</div>
                     <div class="topic-formula-text">
-                        → Yes, I have. Last summer, I <span class="formula-bracket-hl">[hoạt động môi trường]</span>. It was a very meaningful experience.
+                        → Yes, I have. Last summer, I <span class="formula-bracket-hl">[hoạt động 1]</span> and <span class="formula-bracket-hl">[hoạt động 2]</span>. It was a very meaningful experience.
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Đã từng - Tình nguyện dạy tiếng Anh cho trẻ em nghèo và cảm thấy biết ơn):</div>
+                    <div class="topic-formula-title">- Cách 2 (Trả lời CHƯA - Chưa có cơ hội do bận học nhưng dự định tham gia sớm):</div>
                     <div class="topic-formula-text">
-                        → Yes, I have. I volunteered to <span class="formula-bracket-hl">[hoạt động dạy học]</span>. Helping disadvantaged kids made me feel deeply grateful.
+                        → Honestly, no, I haven't. I'm usually very busy with <span class="formula-bracket-hl">[lý do bận rộn]</span>, but I plan to <span class="formula-bracket-hl">[kế hoạch tham gia]</span> soon.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏖️ [Dọn bãi biển & Trồng cây] (Cách 1):",
+                        title: "🤝 [Gợi ý hoạt động tình nguyện]:",
                         items: [
-                            { en: "cleaned up local beaches and planted green trees", vn: "dọn sạch bãi biển địa phương và trồng cây xanh" },
-                            { en: "collected plastic waste", vn: "thu gom rác thải nhựa" },
-                            { en: "a very meaningful experience", vn: "một trải nghiệm vô cùng ý nghĩa" },
-                            { en: "improved our coastal environment", vn: "cải thiện môi trường ven biển của chúng tôi" }
+                            { en: "cleaned up local beaches", vn: "dọn sạch bãi biển địa phương" },
+                            { en: "planted green trees", vn: "trồng thêm cây xanh" },
+                            { en: "taught basic English to kids", vn: "dạy tiếng Anh cơ bản cho trẻ em" },
+                            { en: "cooked free meals for patients", vn: "nấu các bữa cơm miễn phí cho bệnh nhân" },
+                            { en: "collected warm clothes for the poor", vn: "quyên góp quần áo ấm cho người nghèo" },
+                            { en: "donated blood for hospitals", vn: "hiến máu cho các bệnh viện" }
                         ]
                     },
                     {
-                        title: "📚 [Dạy học cho trẻ em nghèo] (Cách 2):",
+                        title: "⏳ [Lý do bận rộn & Kế hoạch tương lai] (Cách 2):",
                         items: [
-                            { en: "teach basic English to poor children", vn: "dạy tiếng Anh cơ bản cho trẻ em nghèo" },
-                            { en: "organize free weekend lessons", vn: "tổ chức các buổi học miễn phí cuối tuần" },
-                            { en: "feel deeply grateful", vn: "cảm thấy biết ơn sâu sắc" },
-                            { en: "bring joyful smiles to kids", vn: "mang lại nụ cười rạng rỡ cho các em" }
+                            { en: "my university study and exams", vn: "việc học đại học và thi cử" },
+                            { en: "my tight work schedule", vn: "lịch làm việc bận rộn của tôi" },
+                            { en: "join a local volunteer club", vn: "tham gia một câu lạc bộ tình nguyện địa phương" },
+                            { en: "participate in charity projects", vn: "tham gia các dự án từ thiện" }
                         ]
                     }
                 ],
                 samples: [
                     {
-                        label: "Bài mẫu Cách 1 (Mùa hè năm ngoái đã dọn rác bãi biển và trồng cây xanh, một trải nghiệm vô cùng ý nghĩa - 20 từ)",
+                        label: "Bài mẫu Cách 1 (Trả lời CÓ: Dọn rác bãi biển và trồng cây xanh, một trải nghiệm vô cùng ý nghĩa - 20 từ)",
                         text: "Yes, I have. Last summer, I cleaned up local beaches and planted green trees. It was a very meaningful experience.",
-                        formatted: `→ Yes, I have. Last summer, I <span class="sub-hl">cleaned up local beaches and planted green trees</span>. It was a very meaningful experience.`
+                        formatted: `→ Yes, I have. Last summer, I <span class="sub-hl">cleaned up local beaches</span> and <span class="sub-hl">planted green trees</span>. It was a very meaningful experience.`
                     },
                     {
-                        label: "Bài mẫu Cách 2 (Tình nguyện dạy tiếng Anh cơ bản cho trẻ em nghèo, giúp đỡ các em khiến tôi cảm thấy biết ơn sâu sắc - 20 từ)",
-                        text: "Yes, I have. I volunteered to teach basic English to poor children. Helping disadvantaged kids made me feel deeply grateful.",
-                        formatted: `→ Yes, I have. I volunteered to <span class="sub-hl">teach basic English to poor children</span>. Helping disadvantaged kids made me <span class="sub-hl">feel deeply grateful</span>.`
+                        label: "Bài mẫu Cách 2 (Trả lời CHƯA: Chưa tham gia vì bận học đại học, dự định tham gia câu lạc bộ sớm - 21 từ)",
+                        text: "Honestly, no, I haven't. I'm usually very busy with my university study, but I plan to join a volunteer club soon.",
+                        formatted: `→ Honestly, no, I haven't. I'm usually very busy with <span class="sub-hl">my university study</span>, but I plan to <span class="sub-hl">join a volunteer club</span> soon.`
                     }
                 ]
             },
