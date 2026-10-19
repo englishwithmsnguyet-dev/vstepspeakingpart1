@@ -10532,6 +10532,314 @@ const practiceTopicsData = [
                 ]
             }
         ]
+    },
+    {
+        id: 39,
+        title: "Chủ đề 39: Let's talk about noise",
+        introText: "Let’s talk about noise.",
+        questions: [
+            {
+                qNum: 1,
+                question: "What is the common noise in your living area?",
+                qType: "Wh-question: What is the common noise in your living area?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Tiếng còi xe và xe máy giờ cao điểm rất phiền toái):</div>
+                    <div class="topic-formula-text">
+                        → The most common noise comes from <span class="formula-bracket-hl">[nguồn tiếng ồn]</span>. During rush hours, loud honking sounds are very annoying.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Tiếng máy khoan đục từ các công trình xây dựng gần nhà vào sáng sớm):</div>
+                    <div class="topic-formula-text">
+                        → In my neighborhood, I often hear <span class="formula-bracket-hl">[nguồn tiếng ồn]</span>. Workers operate noisy machines and power drills from early morning.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🚗 [Tiếng còi xe & Giao thông] (Cách 1):",
+                        items: [
+                            { en: "heavy street traffic and motorbikes", vn: "giao thông đông đúc và xe máy" },
+                            { en: "continuous vehicle engines", vn: "động cơ xe chạy liên tục" },
+                            { en: "loud honking sounds", vn: "tiếng còi bấm inh ỏi" },
+                            { en: "very annoying and stressful", vn: "rất khó chịu và căng thẳng" }
+                        ]
+                    },
+                    {
+                        title: "🏗️ [Công trình xây dựng] (Cách 2):",
+                        items: [
+                            { en: "nearby building construction sites", vn: "các công trường xây dựng gần nhà" },
+                            { en: "home repair noises", vn: "tiếng sửa chữa nhà cửa" },
+                            { en: "noisy machines and power drills", vn: "máy móc ồn ào và máy khoan điện" },
+                            { en: "disrupt my sleep", vn: "làm gián đoạn giấc ngủ của tôi" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Tiếng ồn giao thông và xe máy đông đúc, tiếng còi xe bấm inh ỏi giờ cao điểm - 20 từ)",
+                        text: "The most common noise comes from heavy street traffic and motorbikes. During rush hours, loud honking sounds are very annoying.",
+                        formatted: `→ The most common noise comes from <span class="sub-hl">heavy street traffic and motorbikes</span>. During rush hours, <span class="sub-hl">loud honking sounds</span> are very annoying.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Tiếng ồn từ công trình xây dựng gần nhà, công nhân dùng máy khoan từ sáng sớm - 20 từ)",
+                        text: "In my neighborhood, I often hear nearby building construction sites. Workers operate noisy machines and power drills from early morning.",
+                        formatted: `→ In my neighborhood, I often hear <span class="sub-hl">nearby building construction sites</span>. Workers operate <span class="sub-hl">noisy machines and power drills</span> from early morning.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "How would you deal with the noise in your neighborhood?",
+                qType: "Wh-question: How would you deal with the noise in your neighborhood?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Đóng kín cửa sổ và đeo tai nghe chống ồn nghe nhạc nhẹ):</div>
+                    <div class="topic-formula-text">
+                        → I usually <span class="formula-bracket-hl">[biện pháp cách âm]</span> and put on noise-cancelling headphones. Gentle acoustic music helps me focus better.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Lịch sự nhắc nhở hàng xóm nếu quá ồn vào đêm muộn để giải quyết trong hòa bình):</div>
+                    <div class="topic-formula-text">
+                        → If the noise is too loud late at night, I politely <span class="formula-bracket-hl">[hành động giải quyết]</span>. We solve the issue peacefully.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🎧 [Đóng cửa & Đeo tai nghe] (Cách 1):",
+                        items: [
+                            { en: "close all bedroom glass windows tightly", vn: "đóng chặt toàn bộ cửa kính phòng ngủ" },
+                            { en: "noise-cancelling headphones", vn: "tai nghe chống ồn" },
+                            { en: "gentle acoustic music", vn: "nhạc nhẹ acoustic" },
+                            { en: "focus better on my study", vn: "tập trung tốt hơn vào việc học" }
+                        ]
+                    },
+                    {
+                        title: "🗣️ [Nhắc nhở hòa nhã] (Cách 2):",
+                        items: [
+                            { en: "talk to my neighbors", vn: "nói chuyện với hàng xóm của tôi" },
+                            { en: "request lower music volume", vn: "yêu cầu vặn nhỏ âm lượng nhạc" },
+                            { en: "solve the issue peacefully", vn: "giải quyết vấn đề trong hòa bình" },
+                            { en: "maintain good relations", vn: "giữ mối quan hệ tốt đẹp" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Đóng chặt cửa sổ kính và đeo tai nghe chống ồn, nghe nhạc nhẹ để tập trung tốt hơn - 20 từ)",
+                        text: "I usually close all bedroom glass windows tightly and put on noise-cancelling headphones. Gentle acoustic music helps me focus better.",
+                        formatted: `→ I usually <span class="sub-hl">close all bedroom glass windows tightly</span> and put on <span class="sub-hl">noise-cancelling headphones</span>. Gentle acoustic music helps me focus better.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Lịch sự trao đổi với hàng xóm nếu tiếng ồn quá lớn vào đêm muộn để giải quyết hòa bình - 20 từ)",
+                        text: "If the noise is too loud late at night, I politely talk to my neighbors. We solve the issue peacefully.",
+                        formatted: `→ If the noise is too loud late at night, I politely <span class="sub-hl">talk to my neighbors</span>. We <span class="sub-hl">solve the issue peacefully</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Do you prefer living in a quiet place or a noisy place?",
+                qType: "Choice Question: Do you prefer living in a quiet place or a noisy place?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Thích nơi yên tĩnh - Thư giãn tâm trí và ngủ ngon sâu giấc mỗi đêm):</div>
+                    <div class="topic-formula-text">
+                        → I strongly prefer living in a quiet place. A peaceful atmosphere helps me <span class="formula-bracket-hl">[lợi ích thư giãn]</span> and sleep deeply every night.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Thích nơi sôi động - Năng động, tiện lợi, dễ dàng đi siêu thị và quán cà phê):</div>
+                    <div class="topic-formula-text">
+                        → I prefer a lively area because it's <span class="formula-bracket-hl">[tính từ ưu điểm]</span>. I can easily access supermarkets and cafes near my home.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🍃 [Yên tĩnh thư thái] (Cách 1):",
+                        items: [
+                            { en: "relax my mind", vn: "thư giãn tâm trí của tôi" },
+                            { en: "sleep deeply every night", vn: "ngủ sâu giấc mỗi đêm" },
+                            { en: "escape urban headaches", vn: "tránh khỏi những cơn đau đầu nơi đô thị" },
+                            { en: "recharge mental stamina", vn: "nạp lại năng lượng tinh thần" }
+                        ]
+                    },
+                    {
+                        title: "🏙️ [Sôi động tiện lợi] (Cách 2):",
+                        items: [
+                            { en: "very dynamic and convenient", vn: "rất năng động và tiện lợi" },
+                            { en: "access supermarkets and cafes", vn: "tiếp cận siêu thị và quán cà phê" },
+                            { en: "enjoy evening entertainment", vn: "tận hưởng các hoạt động giải trí buổi tối" },
+                            { en: "never feel lonely", vn: "không bao giờ thấy cô đơn" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Thích nơi yên tĩnh vì không khí bình yên giúp thư giãn tâm trí và ngủ sâu giấc mỗi đêm - 21 từ)",
+                        text: "I strongly prefer living in a quiet place. A peaceful atmosphere helps me relax my mind and sleep deeply every night.",
+                        formatted: `→ I strongly prefer living in a quiet place. A peaceful atmosphere helps me <span class="sub-hl">relax my mind</span> and <span class="sub-hl">sleep deeply every night</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Thích khu vực sôi động vì năng động, tiện lợi, dễ đi siêu thị và cà phê gần nhà - 21 từ)",
+                        text: "I prefer a lively area because it's very dynamic and convenient. I can easily access supermarkets and cafes near my home.",
+                        formatted: `→ I prefer a lively area because it's <span class="sub-hl">very dynamic and convenient</span>. I can easily <span class="sub-hl">access supermarkets and cafes near my home</span>.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 40,
+        title: "Chủ đề 40: Let's talk about public events",
+        introText: "Let’s talk about public events.",
+        questions: [
+            {
+                qNum: 1,
+                question: "What public events do you often participate in?",
+                qType: "Wh-question: What public events do you often participate in?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Giải chạy marathon từ thiện - Nâng cao thể lực và gặp gỡ nhiều người năng động):</div>
+                    <div class="topic-formula-text">
+                        → I often participate in <span class="formula-bracket-hl">[sự kiện thể thao]</span>. It's a great chance to <span class="formula-bracket-hl">[lợi ích sức khỏe]</span> and meet energetic people.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Hội sách cuối tuần và lễ hội âm nhạc đường phố - Đọc sách và tận hưởng không khí):</div>
+                    <div class="topic-formula-text">
+                        → I frequently join <span class="formula-bracket-hl">[sự kiện văn hóa]</span>. I love <span class="formula-bracket-hl">[hoạt động trải nghiệm]</span> and enjoying lively cultural atmospheres.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🏃 [Marathon từ thiện] (Cách 1):",
+                        items: [
+                            { en: "community charity marathons", vn: "các giải chạy marathon từ thiện cộng đồng" },
+                            { en: "improve my physical stamina", vn: "nâng cao thể lực dẻo dai" },
+                            { en: "meet energetic people", vn: "gặp gỡ những con người tràn đầy năng lượng" },
+                            { en: "support meaningful causes", vn: "ủng hộ những mục đích ý nghĩa" }
+                        ]
+                    },
+                    {
+                        title: "📚 [Hội sách & Âm nhạc] (Cách 2):",
+                        items: [
+                            { en: "weekend book fairs and street music festivals", vn: "hội sách cuối tuần và lễ hội âm nhạc đường phố" },
+                            { en: "reading new books", vn: "đọc những cuốn sách mới" },
+                            { en: "enjoying lively cultural atmospheres", vn: "tận hưởng bầu không khí văn hóa sôi động" },
+                            { en: "listening to live acoustic bands", vn: "lắng nghe các ban nhạc acoustic biểu diễn" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Tham gia chạy marathon từ thiện giúp tăng cường thể lực và gặp gỡ nhiều người năng động - 20 từ)",
+                        text: "I often participate in community charity marathons. It's a great chance to improve my physical stamina and meet energetic people.",
+                        formatted: `→ I often participate in <span class="sub-hl">community charity marathons</span>. It's a great chance to <span class="sub-hl">improve my physical stamina and meet energetic people</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Tham gia hội sách và lễ hội âm nhạc đường phố để đọc sách và tận hưởng không khí văn hóa - 20 từ)",
+                        text: "I frequently join weekend book fairs and street music festivals. I love reading new books and enjoying lively cultural atmospheres.",
+                        formatted: `→ I frequently join <span class="sub-hl">weekend book fairs and street music festivals</span>. I love <span class="sub-hl">reading new books and enjoying lively cultural atmospheres</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What is your favorite public event?",
+                qType: "Wh-question: What is your favorite public event?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Lễ hội đếm ngược năm mới - Đám đông cuồng nhiệt và ngắm pháo hoa nửa đêm):</div>
+                    <div class="topic-formula-text">
+                        → My favorite event is the New Year Countdown. I love the <span class="formula-bracket-hl">[không khí sự kiện]</span> and watching spectacular midnight fireworks displays together.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Hội chợ ẩm thực quốc tế - Trải nghiệm văn hóa và thưởng thức món ngon các nước):</div>
+                    <div class="topic-formula-text">
+                        → I love the international food festival most. It offers <span class="formula-bracket-hl">[trải nghiệm ẩm thực]</span> and delicious street foods from different countries.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🎆 [Đếm ngược & Pháo hoa] (Cách 1):",
+                        items: [
+                            { en: "cheerful crowds", vn: "đám đông vui tươi hò reo" },
+                            { en: "spectacular midnight fireworks displays", vn: "những màn pháo hoa nửa đêm ngoạn mục" },
+                            { en: "vibrant festive music", vn: "âm nhạc lễ hội sôi động" },
+                            { en: "share warm new year wishes", vn: "chia sẻ lời chúc năm mới ấm áp" }
+                        ]
+                    },
+                    {
+                        title: "🍜 [Ẩm thực quốc tế] (Cách 2):",
+                        items: [
+                            { en: "unique cultural experiences", vn: "những trải nghiệm văn hóa độc đáo" },
+                            { en: "delicious street foods from different countries", vn: "những món ăn đường phố ngon miệng từ nhiều quốc gia" },
+                            { en: "taste authentic foreign recipes", vn: "nếm thử các công thức nấu nướng nước ngoài chuẩn vị" },
+                            { en: "enjoy sweet traditional snacks", vn: "thưởng thức những món ăn vặt ngọt ngào truyền thống" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Thích lễ hội đếm ngược năm mới vì đám đông vui tươi và ngắm pháo hoa lúc nửa đêm - 20 từ)",
+                        text: "My favorite event is the New Year Countdown. I love the cheerful crowds and watching spectacular midnight fireworks displays together.",
+                        formatted: `→ My favorite event is the New Year Countdown. I love the <span class="sub-hl">cheerful crowds</span> and watching <span class="sub-hl">spectacular midnight fireworks displays together</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Yêu thích hội chợ ẩm thực quốc tế với trải nghiệm văn hóa và đồ ăn đường phố nhiều nước - 19 từ)",
+                        text: "I love the international food festival most. It offers unique cultural experiences and delicious street foods from different countries.",
+                        formatted: `→ I love the international food festival most. It offers <span class="sub-hl">unique cultural experiences</span> and <span class="sub-hl">delicious street foods from different countries</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Do you think public events should be organized more often?",
+                qType: "Yes/No Question: Do you think public events should be organized more often?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Có - Gắn kết cộng đồng và tạo sân chơi giải trí lành mạnh sau tuần bận rộn):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I do. These events <span class="formula-bracket-hl">[lợi ích gắn kết]</span> and provide healthy entertainment for local residents after a busy week.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Cần quản lý tốt - Tránh gây kẹt xe, xả rác và đảm bảo an toàn, vệ sinh):</div>
+                    <div class="topic-formula-text">
+                        → Only with proper management. Large events can cause <span class="formula-bracket-hl">[vấn đề phát sinh]</span>, so organizers must ensure safety and cleanliness.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🤝 [Gắn kết cộng đồng] (Cách 1):",
+                        items: [
+                            { en: "strengthen community bonds", vn: "thắt chặt các mối liên kết cộng đồng" },
+                            { en: "bring people closer together", vn: "mang mọi người lại gần nhau hơn" },
+                            { en: "provide healthy entertainment", vn: "mang lại sự giải trí lành mạnh" },
+                            { en: "relieve daily working pressure", vn: "giải tỏa áp lực công việc hằng ngày" }
+                        ]
+                    },
+                    {
+                        title: "🛡️ [An toàn & Vệ sinh] (Cách 2):",
+                        items: [
+                            { en: "traffic jams and littering", vn: "ùn tắc giao thông và xả rác" },
+                            { en: "ensure safety and cleanliness", vn: "đảm bảo an toàn và vệ sinh" },
+                            { en: "strict security regulations", vn: "quy định an ninh nghiêm ngặt" },
+                            { en: "manage public trash bins", vn: "quản lý các thùng rác công cộng" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Nên tổ chức thường xuyên vì giúp gắn kết cộng đồng và mang lại giải trí lành mạnh - 19 từ)",
+                        text: "Yes, I do. These events strengthen community bonds and provide healthy entertainment for local residents after a busy week.",
+                        formatted: `→ Yes, I do. These events <span class="sub-hl">strengthen community bonds</span> and <span class="sub-hl">provide healthy entertainment</span> for local residents after a busy week.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Chỉ nên tổ chức khi quản lý tốt để tránh kẹt xe, xả rác và đảm bảo an toàn, sạch sẽ - 19 từ)",
+                        text: "Only with proper management. Large events can cause traffic jams and littering, so organizers must ensure safety and cleanliness.",
+                        formatted: `→ Only with proper management. Large events can cause <span class="sub-hl">traffic jams and littering</span>, so organizers must <span class="sub-hl">ensure safety and cleanliness</span>.`
+                    }
+                ]
+            }
+        ]
     }
 ];
 
