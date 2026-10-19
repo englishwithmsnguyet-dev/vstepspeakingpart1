@@ -10224,6 +10224,314 @@ const practiceTopicsData = [
                 ]
             }
         ]
+    },
+    {
+        id: 37,
+        title: "Chủ đề 37: Let's talk about saving money",
+        introText: "Let’s talk about saving money.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Are you good at saving money?",
+                qType: "Yes/No Question: Are you good at saving money?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Có - Lập kế hoạch chi tiêu tháng cẩn thận và tiết kiệm đều đặn):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I think I'm quite good at saving. I always <span class="formula-bracket-hl">[thói quen tiết kiệm]</span> and save money every month.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Chưa tốt lắm - Hay chi tiêu bốc đồng vào quần áo mạng và đồ ăn vặt):</div>
+                    <div class="topic-formula-text">
+                        → Honestly, not really. I often <span class="formula-bracket-hl">[thói quen tiêu xài]</span>, so it's hard to keep large savings.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🏦 [Tiết kiệm có kế hoạch] (Cách 1):",
+                        items: [
+                            { en: "plan my monthly expenses carefully", vn: "lên kế hoạch chi tiêu tháng cẩn thận" },
+                            { en: "control my daily budget", vn: "kiểm soát ngân sách hằng ngày" },
+                            { en: "save money every month", vn: "tiết kiệm tiền mỗi tháng" },
+                            { en: "build a financial safety net", vn: "xây dựng quỹ an toàn tài chính" }
+                        ]
+                    },
+                    {
+                        title: "💸 [Chi tiêu bốc đồng] (Cách 2):",
+                        items: [
+                            { en: "spend money impulsively on online clothes and food", vn: "chi tiêu bốc đồng vào quần áo mạng và đồ ăn vặt" },
+                            { en: "order unnecessary fashion items", vn: "đặt mua đồ thời trang không cần thiết" },
+                            { en: "hard to keep large savings", vn: "khó giữ được khoản tiết kiệm lớn" },
+                            { en: "run out of cash easily", vn: "dễ bị hết tiền mặt" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Lên kế hoạch chi tiêu tháng cẩn thận và để dành tiền tiết kiệm đều đặn mỗi tháng - 20 từ)",
+                        text: "Yes, I think I'm quite good at saving. I always plan my monthly expenses carefully and save money every month.",
+                        formatted: `→ Yes, I think I'm quite good at saving. I always <span class="sub-hl">plan my monthly expenses carefully</span> and <span class="sub-hl">save money every month</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Chưa tốt lắm vì hay chi tiêu bốc đồng cho quần áo mạng và đồ ăn vặt - 20 từ)",
+                        text: "Honestly, not really. I often spend money impulsively on online clothes and food, so it's hard to keep large savings.",
+                        formatted: `→ Honestly, not really. I often <span class="sub-hl">spend money impulsively on online clothes and food</span>, so <span class="sub-hl">it's hard to keep large savings</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What do you usually use your savings for?",
+                qType: "Wh-question: What do you usually use your savings for?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Đóng tiền học tiếng Anh để chuẩn bị tương lai và đi du lịch gia đình):</div>
+                    <div class="topic-formula-text">
+                        → I usually use my savings to <span class="formula-bracket-hl">[mục tiêu học tập]</span>. It helps me <span class="formula-bracket-hl">[lợi ích tương lai]</span> and travel with family.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Lập quỹ khẩn cấp để chi trả viện phí và an tâm trước rủi ro bất ngờ):</div>
+                    <div class="topic-formula-text">
+                        → I keep my savings for <span class="formula-bracket-hl">[mục đích dự phòng]</span>. It gives me <span class="formula-bracket-hl">[cảm giác an toàn]</span> during unexpected life difficulties.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🎯 [Đầu tư học tập & Du lịch] (Cách 1):",
+                        items: [
+                            { en: "pay for English courses", vn: "trả tiền các khóa học tiếng Anh" },
+                            { en: "finance professional certifications", vn: "chi trả cho các chứng chỉ nghề nghiệp" },
+                            { en: "prepare for my future", vn: "chuẩn bị cho tương lai của tôi" },
+                            { en: "travel with family", vn: "đi du lịch cùng gia đình" }
+                        ]
+                    },
+                    {
+                        title: "🛡️ [Quỹ dự phòng an tâm] (Cách 2):",
+                        items: [
+                            { en: "emergency situations and medical bills", vn: "các tình huống khẩn cấp và viện phí y tế" },
+                            { en: "unexpected motorbike repairs", vn: "sửa chữa xe máy bất ngờ" },
+                            { en: "peace of mind", vn: "sự bình an trong tâm trí" },
+                            { en: "financial security in difficult times", vn: "sự an toàn tài chính lúc khó khăn" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Dùng đóng tiền các khóa học tiếng Anh chuẩn bị cho tương lai và du lịch cùng gia đình - 21 từ)",
+                        text: "I usually use my savings to pay for English courses. It helps me prepare for my future and travel with family.",
+                        formatted: `→ I usually use my savings to <span class="sub-hl">pay for English courses</span>. It helps me <span class="sub-hl">prepare for my future</span> and travel with family.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Dự phòng cho tình huống khẩn cấp và viện phí, mang lại sự an tâm trước biến cố - 20 từ)",
+                        text: "I keep my savings for emergency situations and medical bills. It gives me peace of mind during unexpected life difficulties.",
+                        formatted: `→ I keep my savings for <span class="sub-hl">emergency situations and medical bills</span>. It gives me <span class="sub-hl">peace of mind</span> during unexpected life difficulties.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Why is it difficult for people to save money these days?",
+                qType: "Wh-question: Why is it difficult for people to save money these days?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Chi phí sinh hoạt leo thang - Tiền thuê nhà, ăn uống và đi lại chiếm phần lớn):</div>
+                    <div class="topic-formula-text">
+                        → Firstly, the cost of living is rising fast. People must spend <span class="formula-bracket-hl">[khoản chi lớn]</span> on rent, food, and transport.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Sàn mua sắm mạng và quảng cáo kích thích mua sắm bốc đồng không cần thiết):</div>
+                    <div class="topic-formula-text">
+                        → Besides, online shopping platforms and attractive advertisements tempt people into <span class="formula-bracket-hl">[thói quen tiêu cực]</span>. They easily buy unnecessary items without thinking carefully.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "📈 [Chi phí sinh hoạt tăng] (Cách 1):",
+                        items: [
+                            { en: "most of their income", vn: "phần lớn thu nhập của họ" },
+                            { en: "high monthly apartment rent", vn: "tiền thuê căn hộ hằng tháng cao" },
+                            { en: "rising grocery expenses", vn: "chi phí thực phẩm ngày càng tăng" },
+                            { en: "costly fuel and transport", vn: "xăng xe và phương tiện đi lại tốn kém" }
+                        ]
+                    },
+                    {
+                        title: "📱 [Cám dỗ mua sắm online] (Cách 2):",
+                        items: [
+                            { en: "impulse spending", vn: "chi tiêu bốc đồng ngẫu hứng" },
+                            { en: "flash sale discount vouchers", vn: "mã giảm giá săn hàng chớp nhoáng" },
+                            { en: "buy unnecessary items without thinking carefully", vn: "mua những món đồ không cần thiết mà không suy nghĩ kỹ" },
+                            { en: "waste money on luxury goods", vn: "lãng phí tiền vào hàng xa xỉ" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Chi phí sinh hoạt tăng nhanh, mọi người phải chi phần lớn thu nhập cho tiền nhà, ăn uống - 20 từ)",
+                        text: "Firstly, the cost of living is rising fast. People must spend most of their income on rent, food, and transport.",
+                        formatted: `→ Firstly, the cost of living is rising fast. People must spend <span class="sub-hl">most of their income</span> on <span class="sub-hl">rent, food, and transport</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Mua sắm online và quảng cáo kích thích chi tiêu bốc đồng mua những món không cần thiết - 20 từ)",
+                        text: "Besides, online shopping platforms and attractive advertisements tempt people into impulse spending. They easily buy unnecessary items without thinking carefully.",
+                        formatted: `→ Besides, online shopping platforms and attractive advertisements tempt people into <span class="sub-hl">impulse spending</span>. They easily <span class="sub-hl">buy unnecessary items without thinking carefully</span>.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 38,
+        title: "Chủ đề 38: Let's talk about public speaking",
+        introText: "Let’s talk about public speaking.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Have you ever made a speech in public?",
+                qType: "Wh/General: Have you ever made a speech in public?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Đã từng - Thuyết trình báo cáo học thuật trước lớp đại học và rất tự hào):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I have. Last semester, I <span class="formula-bracket-hl">[hoạt động thuyết trình]</span> in front of my university class and felt very proud.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Chưa từng nói trước đám đông lớn - Chỉ mới phát biểu trong nhóm học tập nhỏ):</div>
+                    <div class="topic-formula-text">
+                        → No, I haven't. I've only shared ideas in <span class="formula-bracket-hl">[hoạt động nhóm nhỏ]</span>. Speaking before a big crowd still makes me nervous.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🎓 [Thuyết trình đại học] (Cách 1):",
+                        items: [
+                            { en: "gave an academic presentation", vn: "thuyết trình một bài báo cáo học thuật" },
+                            { en: "presented group research results", vn: "trình bày kết quả nghiên cứu nhóm" },
+                            { en: "felt very proud", vn: "cảm thấy rất tự hào" },
+                            { en: "spoke clearly before my class", vn: "nói rõ ràng trước lớp của tôi" }
+                        ]
+                    },
+                    {
+                        title: "👥 [Chia sẻ nhóm nhỏ] (Cách 2):",
+                        items: [
+                            { en: "small study groups", vn: "những nhóm học tập nhỏ" },
+                            { en: "informal project discussions", vn: "các buổi thảo luận dự án thân mật" },
+                            { en: "makes me nervous", vn: "khiến tôi cảm thấy hồi hộp lo lắng" },
+                            { en: "fear of public attention", vn: "sợ sự chú ý của đám đông" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Học kỳ trước đã thuyết trình bài báo cáo học thuật trước cả lớp đại học và thấy tự hào - 20 từ)",
+                        text: "Yes, I have. Last semester, I gave an academic presentation in front of my university class and felt very proud.",
+                        formatted: `→ Yes, I have. Last semester, I <span class="sub-hl">gave an academic presentation</span> in front of my university class and <span class="sub-hl">felt very proud</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Chưa từng nói trước đám đông lớn, chỉ chia sẻ ý tưởng trong các nhóm học tập nhỏ - 20 từ)",
+                        text: "No, I haven't. I've only shared ideas in small study groups. Speaking before a big crowd still makes me nervous.",
+                        formatted: `→ No, I haven't. I've only shared ideas in <span class="sub-hl">small study groups</span>. Speaking before a big crowd still <span class="sub-hl">makes me nervous</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What can you do to overcome the nervousness in public speaking?",
+                qType: "Wh-question: What can you do to overcome the nervousness in public speaking?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Luyện tập kỹ bài nói trước gương và hít thở thật sâu để giữ bình tĩnh):</div>
+                    <div class="topic-formula-text">
+                        → You should <span class="formula-bracket-hl">[hành động chuẩn bị]</span> before a mirror. Before stepping onto the stage, take deep breaths to stay calm.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Hiểu sâu nội dung và giao tiếp bằng mắt thân thiện để tăng sự tự tin):</div>
+                    <div class="topic-formula-text">
+                        → It's important to understand your content thoroughly. Also, <span class="formula-bracket-hl">[kỹ thuật giao tiếp]</span> to boost your confidence immediately.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🪞 [Luyện trước gương & Hít thở] (Cách 1):",
+                        items: [
+                            { en: "practice your speech carefully", vn: "luyện tập bài phát biểu cẩn thận" },
+                            { en: "rehearse speech keynotes", vn: "tập dượt những ý chính bài phát biểu" },
+                            { en: "take deep breaths to stay calm", vn: "hít thở sâu để giữ bình tĩnh" },
+                            { en: "relax your shoulder muscles", vn: "thư giãn cơ vai" }
+                        ]
+                    },
+                    {
+                        title: "👀 [Giao tiếp mắt & Tự tin] (Cách 2):",
+                        items: [
+                            { en: "make friendly eye contact with listeners", vn: "giao tiếp bằng mắt thân thiện với người nghe" },
+                            { en: "smile gently at kind faces", vn: "mỉm cười nhẹ nhàng với những gương mặt hiền hòa" },
+                            { en: "boost your confidence immediately", vn: "tăng ngay sự tự tin tức thì" },
+                            { en: "master your core slides", vn: "làm chủ các slide cốt lõi" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Nên luyện tập bài phát biểu trước gương và hít thở thật sâu trước khi bước lên sân khấu - 20 từ)",
+                        text: "You should practice your speech carefully before a mirror. Before stepping onto the stage, take deep breaths to stay calm.",
+                        formatted: `→ You should <span class="sub-hl">practice your speech carefully</span> before a mirror. Before stepping onto the stage, <span class="sub-hl">take deep breaths to stay calm</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Cần hiểu kỹ nội dung và nhìn vào ánh mắt thân thiện của khán giả để tăng ngay sự tự tin - 19 từ)",
+                        text: "It's important to understand your content thoroughly. Also, make friendly eye contact with listeners to boost your confidence immediately.",
+                        formatted: `→ It's important to understand your content thoroughly. Also, <span class="sub-hl">make friendly eye contact with listeners</span> to <span class="sub-hl">boost your confidence immediately</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "What are some benefits of public speaking?",
+                qType: "Wh-question: What are some benefits of public speaking?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Giúp xây dựng sự tự tin và nâng cao năng lực thuyết phục trong cuộc họp):</div>
+                    <div class="topic-formula-text">
+                        → Firstly, public speaking helps people <span class="formula-bracket-hl">[lợi ích kỹ năng]</span>. It makes them <span class="formula-bracket-hl">[tính từ cảm xúc]</span> in professional meetings.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Mở ra cơ hội thăng tiến tốt hơn và mở rộng mạng lưới quan hệ công việc):</div>
+                    <div class="topic-formula-text">
+                        → Besides, good speakers often enjoy <span class="formula-bracket-hl">[lợi ích sự nghiệp]</span>. They easily impress managers and build wider social networks for work.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "💪 [Tự tin & Thuyết phục] (Cách 1):",
+                        items: [
+                            { en: "build strong self-confidence", vn: "xây dựng sự tự tin mạnh mẽ" },
+                            { en: "express persuasive logical arguments", vn: "diễn đạt các lập luận logic đầy sức thuyết phục" },
+                            { en: "much more persuasive and confident", vn: "thuyết phục và tự tin hơn nhiều" },
+                            { en: "overcome social anxiety", vn: "vượt qua nỗi sợ giao tiếp xã hội" }
+                        ]
+                    },
+                    {
+                        title: "🚀 [Thăng tiến & Mạng lưới] (Cách 2):",
+                        items: [
+                            { en: "better promotion opportunities", vn: "cơ hội thăng chức tốt hơn" },
+                            { en: "gain leadership trust", vn: "nhận được sự tin tưởng từ cấp lãnh đạo" },
+                            { en: "build wider social networks for work", vn: "xây dựng các mối quan hệ xã hội rộng hơn cho công việc" },
+                            { en: "attract valuable career partners", vn: "thu hút những đối tác nghề nghiệp giá trị" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Xây dựng sự tự tin vững vàng, giúp bản thân thuyết phục và tự tin hơn trong các cuộc họp - 19 từ)",
+                        text: "Firstly, public speaking helps people build strong self-confidence. It makes them much more persuasive and confident in professional meetings.",
+                        formatted: `→ Firstly, public speaking helps people <span class="sub-hl">build strong self-confidence</span>. It makes them <span class="sub-hl">much more persuasive and confident</span> in professional meetings.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Mở ra cơ hội thăng tiến tốt hơn, tạo ấn tượng với quản lý và mở rộng quan hệ công việc - 19 từ)",
+                        text: "Besides, good speakers often enjoy better promotion opportunities. They easily impress managers and build wider social networks for work.",
+                        formatted: `→ Besides, good speakers often enjoy <span class="sub-hl">better promotion opportunities</span>. They easily impress managers and <span class="sub-hl">build wider social networks for work</span>.`
+                    }
+                ]
+            }
+        ]
     }
 ];
 
