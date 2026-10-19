@@ -8992,7 +8992,315 @@ const practiceTopicsData = [
             }
         ]
     }
-
+,
+    {
+        id: 29,
+        title: "Chủ đề 29: Let's talk about a room in your house",
+        introText: "Let’s talk about a room in your house.",
+        questions: [
+            {
+                qNum: 1,
+                question: "What is your favorite room in your house? Why?",
+                qType: "Wh-question: What is your favorite room in your house? Why?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Phòng ngủ - Yên tĩnh, ấm cúng, thư giãn và ngủ ngon):</div>
+                    <div class="topic-formula-text">
+                        → My favorite room is my bedroom because it's <span class="formula-bracket-hl">[tính từ không gian]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí]</span> and sleep well every night.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Phòng khách - Rộng rãi, sáng sủa, quây quần bên gia đình):</div>
+                    <div class="topic-formula-text">
+                        → I love the living room most because it's <span class="formula-bracket-hl">[tính từ không gian]</span>. It's a great space to <span class="formula-bracket-hl">[hoạt động gắn kết]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🛏️ [Phòng ngủ & Cảm xúc] (Cách 1):",
+                        items: [
+                            { en: "quiet and cozy", vn: "yên tĩnh và ấm cúng" },
+                            { en: "peaceful and warm", vn: "thanh bình và ấm áp" },
+                            { en: "relax after a busy day", vn: "thư giãn sau ngày bận rộn" },
+                            { en: "clear my mind", vn: "giải tỏa tâm trí" }
+                        ]
+                    },
+                    {
+                        title: "🛋️ [Phòng khách & Gắn kết] (Cách 2):",
+                        items: [
+                            { en: "bright and spacious", vn: "sáng sủa và rộng rãi" },
+                            { en: "large and airy", vn: "rộng rãi và thoáng mát" },
+                            { en: "gather with my lovely family", vn: "quây quần bên gia đình thân yêu" },
+                            { en: "chat with my parents", vn: "trò chuyện cùng bố mẹ" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Phòng ngủ - Yên tĩnh, ấm cúng, thư giãn và ngủ ngon - 20 từ)",
+                        text: "My favorite room is my bedroom because it's quiet and cozy. It helps me relax and sleep well every night.",
+                        formatted: `→ My favorite room is my bedroom because it's <span class="sub-hl">quiet and cozy</span>. It helps me <span class="sub-hl">relax</span> and sleep well every night.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Phòng khách - Sáng sủa, rộng rãi, quây quần bên gia đình - 21 từ)",
+                        text: "I love the living room most because it's bright and spacious. It's a great space to gather with my lovely family.",
+                        formatted: `→ I love the living room most because it's <span class="sub-hl">bright and spacious</span>. It's a great space to <span class="sub-hl">gather with my lovely family</span>.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What do you often do in the room?",
+                qType: "Wh-question: What do you often do in the room?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Đọc sách, nghe nhạc nhẹ để giải tỏa căng thẳng):</div>
+                    <div class="topic-formula-text">
+                        → In this room, I usually <span class="formula-bracket-hl">[hoạt động 1]</span> and <span class="formula-bracket-hl">[hoạt động 2]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí]</span> effectively.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Xem phim vui nhộn cùng gia đình và trò chuyện vui vẻ):</div>
+                    <div class="topic-formula-text">
+                        → I often <span class="formula-bracket-hl">[hoạt động giải trí]</span> with my <span class="formula-bracket-hl">[đối tượng]</span> in the evening. We share <span class="formula-bracket-hl">[điều chia sẻ]</span> and have lots of fun.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "📖 [Thư giãn cá nhân] (Cách 1):",
+                        items: [
+                            { en: "read favorite books", vn: "đọc những cuốn sách yêu thích" },
+                            { en: "listen to acoustic music", vn: "nghe nhạc nhẹ acoustic" },
+                            { en: "reduce daily stress", vn: "giảm bớt căng thẳng hằng ngày" },
+                            { en: "clear my mind", vn: "giải tỏa tâm trí" }
+                        ]
+                    },
+                    {
+                        title: "🎬 [Giải trí cùng người thân] (Cách 2):",
+                        items: [
+                            { en: "watch funny movies", vn: "xem các bộ phim hài hước" },
+                            { en: "family members", vn: "các thành viên trong gia đình" },
+                            { en: "daily stories", vn: "những câu chuyện hằng ngày" },
+                            { en: "have lots of fun", vn: "có rất nhiều niềm vui" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Đọc sách yêu thích, nghe nhạc nhẹ để giảm căng thẳng - 20 từ)",
+                        text: "In this room, I usually read favorite books and listen to acoustic music. It helps me reduce daily stress effectively.",
+                        formatted: `→ In this room, I usually <span class="sub-hl">read favorite books</span> and <span class="sub-hl">listen to acoustic music</span>. It helps me <span class="sub-hl">reduce daily stress</span> effectively.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Xem phim hài cùng người thân và tâm sự vui vẻ - 21 từ)",
+                        text: "I often watch funny movies with my family members in the evening. We share daily stories and have lots of fun.",
+                        formatted: `→ I often <span class="sub-hl">watch funny movies</span> with my <span class="sub-hl">family members</span> in the evening. We share <span class="sub-hl">daily stories</span> and have lots of fun.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Would you like to change anything in the room? Why or why not?",
+                qType: "Yes/No Question: Would you like to change anything in the room? Why or why not?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Có - Muốn thêm cây xanh và đèn ấm áp để phòng dễ chịu hơn):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I'd like to add <span class="formula-bracket-hl">[vật trang trí]</span>. It will make the space <span class="formula-bracket-hl">[tính từ cảm nhận]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Không - Hoàn toàn hài lòng vì phòng gọn gàng, ấm cúng và phù hợp nhu cầu):</div>
+                    <div class="topic-formula-text">
+                        → No, I'm completely satisfied with it now. The room is already <span class="formula-bracket-hl">[tính từ]</span> and <span class="formula-bracket-hl">[lợi ích tiện ích]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🪴 [Thêm cây xanh & Đèn] (Cách 1):",
+                        items: [
+                            { en: "some indoor plants and warm lights", vn: "vài cây cảnh trong nhà và đèn ánh sáng ấm" },
+                            { en: "a small wooden bookshelf", vn: "một kệ sách gỗ nhỏ" },
+                            { en: "much more comfortable and peaceful", vn: "dễ chịu và yên bình hơn nhiều" },
+                            { en: "fresher and brighter", vn: "tươi mới và sáng sủa hơn" }
+                        ]
+                    },
+                    {
+                        title: "✨ [Hài lòng hiện tại] (Cách 2):",
+                        items: [
+                            { en: "neat, cozy", vn: "gọn gàng, ấm cúng" },
+                            { en: "modern and clean", vn: "hiện đại và sạch sẽ" },
+                            { en: "very suitable for my daily lifestyle", vn: "rất phù hợp cho lối sống hằng ngày của tôi" },
+                            { en: "convenient for my work", vn: "tiện lợi cho công việc của tôi" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Có - Thêm vài chậu cây và đèn ấm để không gian dễ chịu hơn - 21 từ)",
+                        text: "Yes, I'd like to add some indoor plants and warm lights. It will make the space much more comfortable and peaceful.",
+                        formatted: `→ Yes, I'd like to add <span class="sub-hl">some indoor plants and warm lights</span>. It will make the space <span class="sub-hl">much more comfortable and peaceful</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Không - Rất hài lòng vì phòng đã gọn gàng, ấm cúng và tiện lợi - 20 từ)",
+                        text: "No, I'm completely satisfied with it now. The room is already neat, cozy, and very suitable for my daily lifestyle.",
+                        formatted: `→ No, I'm completely satisfied with it now. The room is already <span class="sub-hl">neat, cozy</span>, and very suitable for <span class="sub-hl">my daily lifestyle</span>.`
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 30,
+        title: "Chủ đề 30: Let's talk about childhood",
+        introText: "Let’s talk about childhood.",
+        questions: [
+            {
+                qNum: 1,
+                question: "Did you enjoy your childhood? Why?",
+                qType: "Wh/General: Did you enjoy your childhood? Why?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Có - Bố mẹ luôn yêu thương, chăm lo và động viên nhiệt tình):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I did. I had a wonderful childhood because my parents always <span class="formula-bracket-hl">[hành động yêu thương]</span>. I felt <span class="formula-bracket-hl">[tính từ cảm xúc]</span>.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Có - Tuổi thơ ở miền quê thanh bình, nhiều trò chơi ngoài trời cùng bạn bè):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I loved it so much. I grew up in <span class="formula-bracket-hl">[môi trường sống]</span> and enjoyed <span class="formula-bracket-hl">[hoạt động tuổi thơ]</span> with friends.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "👨‍👩‍👧 [Tình thương gia đình] (Cách 1):",
+                        items: [
+                            { en: "loved and supported me warmly", vn: "yêu thương và ủng hộ tôi ấm áp" },
+                            { en: "cared for my health and study", vn: "chăm lo cho sức khỏe và học tập của tôi" },
+                            { en: "truly happy", vn: "thực sự hạnh phúc" },
+                            { en: "safe and protected", vn: "an toàn và được chở che" }
+                        ]
+                    },
+                    {
+                        title: "🌾 [Tuổi thơ quê hương] (Cách 2):",
+                        items: [
+                            { en: "a peaceful countryside village", vn: "một làng quê yên bình" },
+                            { en: "a green friendly neighborhood", vn: "một xóm làng xanh tươi thân thiện" },
+                            { en: "exciting outdoor games", vn: "các trò chơi ngoài trời hào hứng" },
+                            { en: "memorable adventures", vn: "những cuộc phiêu lưu đáng nhớ" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Tuổi thơ êm đềm nhờ bố mẹ luôn yêu thương và hỗ trợ ấm áp - 21 từ)",
+                        text: "Yes, I did. I had a wonderful childhood because my parents always loved and supported me warmly. I felt truly happy.",
+                        formatted: `→ Yes, I did. I had a wonderful childhood because my parents always <span class="sub-hl">loved and supported me warmly</span>. I felt <span class="sub-hl">truly happy</span>.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Lớn lên ở làng quê yên bình với các trò chơi ngoài trời hào hứng - 21 từ)",
+                        text: "Yes, I loved it so much. I grew up in a peaceful countryside village and enjoyed exciting outdoor games with friends.",
+                        formatted: `→ Yes, I loved it so much. I grew up in <span class="sub-hl">a peaceful countryside village</span> and enjoyed <span class="sub-hl">exciting outdoor games</span> with friends.`
+                    }
+                ]
+            },
+            {
+                qNum: 2,
+                question: "What did you do when you were a child?",
+                qType: "Wh-question: What did you do when you were a child?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Chơi các trò chơi dân gian: trốn tìm, thả diều cùng bạn bè):</div>
+                    <div class="topic-formula-text">
+                        → When I was small, I often <span class="formula-bracket-hl">[hoạt động 1]</span> and <span class="formula-bracket-hl">[hoạt động 2]</span> with other kids. We had great memories.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Phụ bố mẹ tưới rau buổi chiều và đọc truyện tranh hài hước buổi tối):</div>
+                    <div class="topic-formula-text">
+                        → I usually <span class="formula-bracket-hl">[hoạt động phụ gia đình]</span> in the afternoon. In the evening, I loved <span class="formula-bracket-hl">[hoạt động giải trí]</span> before bedtime.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "🪁 [Trò chơi ngoài trời] (Cách 1):",
+                        items: [
+                            { en: "played hide and seek", vn: "chơi trốn tìm" },
+                            { en: "flew colorful kites", vn: "thả những cánh diều rực rỡ" },
+                            { en: "rode small bicycles", vn: "đạp xe đạp nhỏ" },
+                            { en: "great memories", vn: "những kỷ niệm tuyệt vời" }
+                        ]
+                    },
+                    {
+                        title: "🏡 [Làm việc nhà & Đọc truyện] (Cách 2):",
+                        items: [
+                            { en: "helped my parents water vegetables", vn: "giúp bố mẹ tưới rau" },
+                            { en: "fed backyard animals", vn: "cho vật nuôi sau nhà ăn" },
+                            { en: "reading funny comic books", vn: "đọc truyện tranh vui nhộn" },
+                            { en: "drawing simple pictures", vn: "vẽ những bức tranh giản dị" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Chơi trốn tìm và thả diều cùng lũ trẻ trong xóm - 21 từ)",
+                        text: "When I was small, I often played hide and seek and flew colorful kites with other kids. We had great memories.",
+                        formatted: `→ When I was small, I often <span class="sub-hl">played hide and seek</span> and <span class="sub-hl">flew colorful kites</span> with other kids. We had great memories.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Phụ bố mẹ tưới rau buổi chiều và đọc truyện tranh hài hước - 21 từ)",
+                        text: "I usually helped my parents water vegetables in the afternoon. In the evening, I loved reading funny comic books before bedtime.",
+                        formatted: `→ I usually <span class="sub-hl">helped my parents water vegetables</span> in the afternoon. In the evening, I loved <span class="sub-hl">reading funny comic books</span> before bedtime.`
+                    }
+                ]
+            },
+            {
+                qNum: 3,
+                question: "Did you have many friends when you were a child?",
+                qType: "Yes/No Question: Did you have many friends when you were a child?",
+                formula: `<div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 1 (Có nhiều bạn - Cùng chơi bóng đá và đạp xe cùng nhau sau giờ học):</div>
+                    <div class="topic-formula-text">
+                        → Yes, I did. I had lots of neighborhood friends, and we always <span class="formula-bracket-hl">[hoạt động tập thể]</span> together after school.
+                    </div>
+                </div>
+                <div class="topic-formula-row">
+                    <div class="topic-formula-title">- Cách 2 (Chỉ có vài bạn thân - Đi học chung và chia sẻ đồ chơi, kẹo ngọt):</div>
+                    <div class="topic-formula-text">
+                        → Not many, but I had <span class="formula-bracket-hl">[số lượng bạn thân]</span>. We went to school together and shared <span class="formula-bracket-hl">[điều chia sẻ]</span>.
+                    </div>
+                </div>`,
+                vocabGroups: [
+                    {
+                        title: "⚽ [Nhiều bạn bè xóm làng] (Cách 1):",
+                        items: [
+                            { en: "played football and rode bicycles", vn: "đá bóng và đạp xe" },
+                            { en: "explored green fields", vn: "khám phá những cánh đồng xanh" },
+                            { en: "lots of neighborhood friends", vn: "rất nhiều bạn bè hàng xóm" },
+                            { en: "after school", vn: "sau giờ tan học" }
+                        ]
+                    },
+                    {
+                        title: "👫 [Nhóm bạn thân thiết] (Cách 2):",
+                        items: [
+                            { en: "three close childhood friends", vn: "ba người bạn thân thời thơ ấu" },
+                            { en: "a few faithful classmates", vn: "vài bạn học thân thiết trung thành" },
+                            { en: "toys and sweet candies", vn: "đồ chơi và kẹo ngọt" },
+                            { en: "happy laughter", vn: "tiếng cười vui vẻ" }
+                        ]
+                    }
+                ],
+                samples: [
+                    {
+                        label: "Bài mẫu Cách 1 (Rất nhiều bạn xóm - Luôn đá bóng và đạp xe cùng nhau sau giờ học - 20 từ)",
+                        text: "Yes, I did. I had lots of neighborhood friends, and we always played football and rode bicycles together after school.",
+                        formatted: `→ Yes, I did. I had <span class="sub-hl">lots of neighborhood friends</span>, and we always <span class="sub-hl">played football and rode bicycles</span> together after school.`
+                    },
+                    {
+                        label: "Bài mẫu Cách 2 (Chỉ có ba người bạn thân - Cùng nhau đi học và chia sẻ đồ chơi, bánh kẹo - 20 từ)",
+                        text: "Not many, but I had three close childhood friends. We went to school together and shared toys and sweet candies.",
+                        formatted: `→ Not many, but I had <span class="sub-hl">three close childhood friends</span>. We went to school together and shared <span class="sub-hl">toys and sweet candies</span>.`
+                    }
+                ]
+            }
+        ]
+    }
 ];
 
 window.switchPracticeTopic = (topicId) => {
