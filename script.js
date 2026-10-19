@@ -11315,25 +11315,25 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Đã từng tham gia 2 hoạt động và cảm thấy ý nghĩa):</div>
                     <div class="topic-formula-text">
-                        → Yes, I have. Last summer, I <span class="formula-bracket-hl">[hoạt động 1]</span> and <span class="formula-bracket-hl">[hoạt động 2]</span>. It was a very meaningful experience.
+                        → Yes, I have. Last summer, I <span class="formula-bracket-hl">[hoạt động 1 - Ved]</span> and <span class="formula-bracket-hl">[hoạt động 2 - Ved]</span>. It was a very meaningful experience.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Trả lời CHƯA - Chưa có cơ hội do bận học nhưng dự định tham gia sớm):</div>
                     <div class="topic-formula-text">
-                        → Honestly, no, I haven't. I'm usually very busy with <span class="formula-bracket-hl">[lý do bận rộn]</span>, but I plan to <span class="formula-bracket-hl">[kế hoạch tham gia]</span> soon.
+                        → Honestly, no, I haven't. I'm usually very busy with <span class="formula-bracket-hl">[lý do bận rộn]</span>, but I plan to <span class="formula-bracket-hl">[kế hoạch tham gia - Vo]</span> soon.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🤝 [Gợi ý hoạt động tình nguyện]:",
+                        title: "🤝 [Gợi ý hoạt động tình nguyện - Nguyên mẫu]:",
                         items: [
-                            { en: "cleaned up local beaches", vn: "dọn sạch bãi biển địa phương" },
-                            { en: "planted green trees", vn: "trồng thêm cây xanh" },
-                            { en: "taught basic English to kids", vn: "dạy tiếng Anh cơ bản cho trẻ em" },
-                            { en: "cooked free meals for patients", vn: "nấu các bữa cơm miễn phí cho bệnh nhân" },
-                            { en: "collected warm clothes for the poor", vn: "quyên góp quần áo ấm cho người nghèo" },
-                            { en: "donated blood for hospitals", vn: "hiến máu cho các bệnh viện" }
+                            { en: "clean up local beaches", vn: "dọn sạch bãi biển địa phương" },
+                            { en: "plant green trees", vn: "trồng thêm cây xanh" },
+                            { en: "teach basic English to kids", vn: "dạy tiếng Anh cơ bản cho trẻ em" },
+                            { en: "cook free meals for patients", vn: "nấu các bữa cơm miễn phí cho bệnh nhân" },
+                            { en: "collect warm clothes for the poor", vn: "quyên góp quần áo ấm cho người nghèo" },
+                            { en: "donate blood for hospitals", vn: "hiến máu cho các bệnh viện" }
                         ]
                     },
                     {
