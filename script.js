@@ -4261,13 +4261,13 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Nói về 1 sở thích yêu thích nhất):</div>
                     <div class="topic-formula-text">
-                        → My favorite hobby is <span class="formula-bracket-hl">[hoạt động – Ving]</span> because it’s <span class="formula-bracket-hl">[tính từ mô tả hoạt động]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span> and makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
+                        → My favorite hobby is <span class="formula-bracket-hl">[hoạt động - Ving]</span> because it’s <span class="formula-bracket-hl">[tính từ mô tả hoạt động]</span>. It helps me <span class="formula-bracket-hl">[lợi ích - Vo]</span> and makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Nói về hoạt động thường làm lúc rảnh rỗi):</div>
                     <div class="topic-formula-text">
-                        → In my free time, I usually <span class="formula-bracket-hl">[hoạt động 1 – Vo]</span> because it helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>. I also <span class="formula-bracket-hl">[hoạt động 2 – Vo]</span> to <span class="formula-bracket-hl">[lợi ích 3]</span>.
+                        → In my free time, I usually <span class="formula-bracket-hl">[hoạt động 1 - Vo]</span> because it helps me <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span> and <span class="formula-bracket-hl">[lợi ích 2 - Vo]</span>. I also <span class="formula-bracket-hl">[hoạt động 2 - Vo]</span> to <span class="formula-bracket-hl">[lợi ích 3 - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4335,7 +4335,7 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Làm một mình khi cần yên tĩnh):</div>
                     <div class="topic-formula-text">
-                        → Actually, I prefer doing my hobbies alone because it’s <span class="formula-bracket-hl">[tính từ mô tả không gian]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span> and makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
+                        → Actually, I prefer doing my hobbies alone because it’s <span class="formula-bracket-hl">[tính từ mô tả không gian]</span>. It helps me <span class="formula-bracket-hl">[lợi ích - Vo]</span> and makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4416,13 +4416,13 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đơn giản, trực tiếp nhất):</div>
                     <div class="topic-formula-text">
-                        → I usually spend about <span class="formula-bracket-hl">[khoảng thời gian]</span> <span class="formula-bracket-hl">[thời điểm]</span> on my hobbies because it helps me <span class="formula-bracket-hl">[lợi ích]</span>. It also makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
+                        → I usually spend about <span class="formula-bracket-hl">[khoảng thời gian]</span> <span class="formula-bracket-hl">[thời điểm]</span> on my hobbies because it helps me <span class="formula-bracket-hl">[lợi ích - Vo]</span>. It also makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Cấu trúc có Although - chuẩn bài học):</div>
                     <div class="topic-formula-text">
-                        → Although I have a busy schedule, I still spend about <span class="formula-bracket-hl">[khoảng thời gian]</span> on my hobbies every day because it helps me <span class="formula-bracket-hl">[lợi ích]</span>. It also makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
+                        → Although I have a busy schedule, I still spend about <span class="formula-bracket-hl">[khoảng thời gian]</span> on my hobbies every day because it helps me <span class="formula-bracket-hl">[lợi ích - Vo]</span>. It also makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4496,7 +4496,7 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Nêu thiết bị chơi & người chơi cùng để giải trí):</div>
                     <div class="topic-formula-text">
-                        → Whenever I have free time, I love playing <span class="formula-bracket-hl">[tên trò chơi điện tử]</span> on my <span class="formula-bracket-hl">[thiết bị]</span> with <span class="formula-bracket-hl">[người chơi cùng]</span>. It’s a wonderful way to <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → Whenever I have free time, I love playing <span class="formula-bracket-hl">[tên trò chơi điện tử]</span> on my <span class="formula-bracket-hl">[thiết bị]</span> with <span class="formula-bracket-hl">[người chơi cùng]</span>. It’s a wonderful way to <span class="formula-bracket-hl">[lợi ích - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4569,13 +4569,13 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Dùng cấu trúc it helps me... and makes me feel...):</div>
                     <div class="topic-formula-text">
-                        → I often play that game because it helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>. It also makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
+                        → I often play that game because it helps me <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span> and <span class="formula-bracket-hl">[lợi ích 2 - Vo]</span>. It also makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Dùng cấu trúc The main reason is that it's a great way to...):</div>
                     <div class="topic-formula-text">
-                        → The main reason is that it’s a great way to <span class="formula-bracket-hl">[lợi ích 1]</span>. Besides, playing that game also helps me <span class="formula-bracket-hl">[lợi ích 2]</span> and feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
+                        → The main reason is that it’s a great way to <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span>. Besides, playing that game also helps me <span class="formula-bracket-hl">[lợi ích 2 - Vo]</span> and feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4617,13 +4617,13 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Cấu trúc chọn trực tiếp & dứt khoát):</div>
                     <div class="topic-formula-text">
-                        → I prefer playing video games <span class="formula-bracket-hl">[alone / with friends]</span> because it’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>. It allows <span class="formula-bracket-hl">[me / us]</span> to <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → I prefer playing video games <span class="formula-bracket-hl">[alone / with friends]</span> because it’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>. It allows <span class="formula-bracket-hl">[me / us]</span> to <span class="formula-bracket-hl">[lợi ích - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Cấu trúc so sánh nhượng bộ có Although - Điểm cao hơn):</div>
                     <div class="topic-formula-text">
-                        → Although playing <span class="formula-bracket-hl">[with friends / alone]</span> is <span class="formula-bracket-hl">[tính từ]</span>, I still prefer playing <span class="formula-bracket-hl">[alone / with friends]</span> because it’s much more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>. It helps <span class="formula-bracket-hl">[me / us]</span> <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → Although playing <span class="formula-bracket-hl">[with friends / alone]</span> is <span class="formula-bracket-hl">[tính từ]</span>, I still prefer playing <span class="formula-bracket-hl">[alone / with friends]</span> because it’s much more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>. It helps <span class="formula-bracket-hl">[me / us]</span> <span class="formula-bracket-hl">[lợi ích - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4676,13 +4676,13 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Nêu trực tiếp tên cuốn sách yêu thích & lý do):</div>
                     <div class="topic-formula-text">
-                        → I’m a big fan of <span class="formula-bracket-hl">[tên quyển sách]</span>. I like it because it’s very <span class="formula-bracket-hl">[tính từ mô tả quyển sách]</span>. It always helps me <span class="formula-bracket-hl">[lợi ích]</span> and makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span> whenever I read it.
+                        → I’m a big fan of <span class="formula-bracket-hl">[tên quyển sách]</span>. I like it because it’s very <span class="formula-bracket-hl">[tính từ mô tả quyển sách]</span>. It always helps me <span class="formula-bracket-hl">[lợi ích - Vo]</span> and makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span> whenever I read it.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Nêu thể loại sách yêu thích trước, rồi dẫn tới cuốn sách tâm đắc nhất):</div>
                     <div class="topic-formula-text">
-                        → To be honest, I really enjoy reading <span class="formula-bracket-hl">[thể loại sách]</span>, and my all-time favorite is <span class="formula-bracket-hl">[tên quyển sách]</span>. The main reason is that it provides a lot of valuable lessons and helps me <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → To be honest, I really enjoy reading <span class="formula-bracket-hl">[thể loại sách]</span>, and my all-time favorite is <span class="formula-bracket-hl">[tên quyển sách]</span>. The main reason is that it provides a lot of valuable lessons and helps me <span class="formula-bracket-hl">[lợi ích - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4752,13 +4752,13 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Cấu trúc chọn trực tiếp & dứt khoát):</div>
                     <div class="topic-formula-text">
-                        → I prefer <span class="formula-bracket-hl">[lựa chọn loại sách]</span>. It’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>, so I can <span class="formula-bracket-hl">[lợi ích 1]</span>. It’s also a good way to <span class="formula-bracket-hl">[lợi ích 2]</span>.
+                        → I prefer <span class="formula-bracket-hl">[lựa chọn loại sách]</span>. It’s more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>, so I can <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span>. It’s also a good way to <span class="formula-bracket-hl">[lợi ích 2 - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Cấu trúc so sánh nhượng bộ có Although - Điểm cao hơn):</div>
                     <div class="topic-formula-text">
-                        → Although <span class="formula-bracket-hl">[loại sách đối chiếu]</span> are <span class="formula-bracket-hl">[tính từ]</span>, I still prefer <span class="formula-bracket-hl">[đối tượng mình chọn]</span> because it is much more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → Although <span class="formula-bracket-hl">[loại sách đối chiếu]</span> are <span class="formula-bracket-hl">[tính từ]</span>, I still prefer <span class="formula-bracket-hl">[đối tượng mình chọn]</span> because it is much more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span>. It helps me <span class="formula-bracket-hl">[lợi ích - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4811,13 +4811,13 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Nêu thể loại sách giải trí - truyện tranh / tiểu thuyết):</div>
                     <div class="topic-formula-text">
-                        → Teenagers in my country often read <span class="formula-bracket-hl">[thể loại sách]</span>. These books are <span class="formula-bracket-hl">[tính từ mô tả]</span>, so they’re very popular. They help young people <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → Teenagers in my country often read <span class="formula-bracket-hl">[thể loại sách]</span>. These books are <span class="formula-bracket-hl">[tính từ mô tả]</span>, so they’re very popular. They help young people <span class="formula-bracket-hl">[lợi ích - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Nêu thể loại sách phát triển bản thân / kỹ năng):</div>
                     <div class="topic-formula-text">
-                        → Most teenagers in my country love reading <span class="formula-bracket-hl">[thể loại sách]</span> because they are very <span class="formula-bracket-hl">[tính từ mô tả]</span>. Reading them is a great way to <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>.
+                        → Most teenagers in my country love reading <span class="formula-bracket-hl">[thể loại sách]</span> because they are very <span class="formula-bracket-hl">[tính từ mô tả]</span>. Reading them is a great way to <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span> and <span class="formula-bracket-hl">[lợi ích 2 - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4879,13 +4879,13 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Thường xuyên nghe đài để cập nhật tin tức & thư giãn):</div>
                     <div class="topic-formula-text">
-                        → Yes, I do. I often listen to the radio <span class="formula-bracket-hl">[thời điểm]</span> because it helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>. It also makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
+                        → Yes, I do. I often listen to the radio <span class="formula-bracket-hl">[thời điểm]</span> because it helps me <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span> and <span class="formula-bracket-hl">[lợi ích 2 - Vo]</span>. It also makes me feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG / HIẾM KHI - Thích dùng điện thoại / podcast hơn):</div>
                     <div class="topic-formula-text">
-                        → To be honest, not really. I rarely listen to the radio because I prefer <span class="formula-bracket-hl">[hoạt động thay thế trên điện thoại]</span>. It’s much more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span> for me.
+                        → To be honest, not really. I rarely listen to the radio because I prefer <span class="formula-bracket-hl">[hoạt động thay thế trên điện thoại - Ving]</span>. It’s much more <span class="formula-bracket-hl">[tính từ so sánh hơn]</span> for me.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -4921,19 +4921,20 @@ const practiceTopicsData = [
                     {
                         title: "📱 [Hoạt động thay thế trên điện thoại] (Cách 2):",
                         items: [
-                            { en: "listening to music on my smartphone", vn: "nghe nhạc trên điện thoại thông minh" },
-                            { en: "listening to podcasts on Spotify", vn: "nghe podcast trên Spotify" },
-                            { en: "watching videos on YouTube", vn: "xem video trên YouTube" },
-                            { en: "reading online news", vn: "đọc báo mạng / lướt tin tức trực tuyến" }
+                            { en: "listen to music on my smartphone", vn: "nghe nhạc trên điện thoại thông minh" },
+                            { en: "listen to podcasts on Spotify", vn: "nghe podcast trên Spotify" },
+                            { en: "watch videos on YouTube", vn: "xem video trên YouTube" },
+                            { en: "read online news", vn: "đọc báo mạng / lướt tin tức trực tuyến" },
+                            { en: "watch short videos on TikTok", vn: "xem video ngắn trên TikTok" }
                         ]
                     },
                     {
                         title: "✨ [Tính từ so sánh hơn - Lý do chọn điện thoại] (Cách 2):",
                         items: [
-                            { en: "more convenient", vn: "tiện lợi hơn" },
-                            { en: "more modern", vn: "hiện đại hơn" },
-                            { en: "more interesting", vn: "thú vị hơn" },
-                            { en: "much easier to access", vn: "dễ dàng tiếp cận hơn nhiều" }
+                            { en: "convenient", vn: "tiện lợi hơn" },
+                            { en: "interesting", vn: "thú vị hơn" },
+                            { en: "modern and flexible", vn: "hiện đại và linh hoạt hơn" },
+                            { en: "entertaining", vn: "mang tính giải trí cao hơn" }
                         ]
                     }
                 ],
@@ -4963,37 +4964,46 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Kênh học tiếng Anh / tin tức - Cấu trúc theo mục đích):</div>
                     <div class="topic-formula-text">
-                        → Whenever I want to <span class="formula-bracket-hl">[mục đích]</span>, I usually tune in to <span class="formula-bracket-hl">[kênh phát thanh]</span> because it is extremely <span class="formula-bracket-hl">[tính từ mô tả]</span>.
+                        → Whenever I want to <span class="formula-bracket-hl">[mục đích - Vo]</span>, I usually tune in to <span class="formula-bracket-hl">[kênh phát thanh]</span> because it is extremely <span class="formula-bracket-hl">[tính từ mô tả]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "📻 [Kênh phát thanh & Nội dung kênh]:",
+                        title: "📻 [Kênh phát thanh] (Cách 1 & 2):",
                         items: [
-                            { en: "VOV3", vn: "kênh VOV3 → music and entertainment programs (chương trình âm nhạc & giải trí)" },
-                            { en: "VOV Traffic", vn: "kênh VOV Giao thông → traffic updates and news (cập nhật giao thông & tin tức)" },
-                            { en: "VOV1", vn: "kênh VOV1 → news and information (tin tức & thông tin xã hội)" },
-                            { en: "BBC Learning English", vn: "kênh BBC → English lessons and listening practice (bài học tiếng Anh & luyện nghe)" },
-                            { en: "VOA Learning English", vn: "kênh VOA → slow news and English lessons (tin tức đọc chậm & bài học)" }
+                            { en: "VOV Giao Thong", vn: "Kênh VOV Giao thông" },
+                            { en: "VOV1", vn: "Kênh Thời sự VOV1" },
+                            { en: "VOV3", vn: "Kênh Âm nhạc & Giải trí VOV3" },
+                            { en: "a local FM station", vn: "đài phát thanh FM địa phương" },
+                            { en: "an English radio channel", vn: "kênh phát thanh tiếng Anh" }
                         ]
                     },
                     {
-                        title: "🎯 [Mục đích nghe đài] (Dành cho Cách 2):",
+                        title: "📰 [Nội dung kênh] (Cách 1):",
                         items: [
-                            { en: "improve my English listening skills", vn: "nâng cao kỹ năng nghe tiếng Anh" },
-                            { en: "learn new English vocabulary", vn: "học thêm từ vựng tiếng Anh" },
-                            { en: "catch up on daily news", vn: "nắm bắt tin tức hàng ngày" },
-                            { en: "check traffic updates", vn: "kiểm tra tình hình giao thông" }
+                            { en: "traffic updates and news", vn: "cập nhật giao thông và tin tức" },
+                            { en: "daily news and stories", vn: "tin tức thời sự và câu chuyện hằng ngày" },
+                            { en: "great music and talk shows", vn: "âm nhạc hay và chương trình trò chuyện" },
+                            { en: "useful health tips", vn: "các mẹo chăm sóc sức khỏe hữu ích" }
+                        ]
+                    },
+                    {
+                        title: "🎯 [Mục đích nghe đài] (Cách 2):",
+                        items: [
+                            { en: "get the daily news", vn: "cập nhật tin tức hằng ngày" },
+                            { en: "enjoy good music", vn: "thưởng thức âm nhạc hay" },
+                            { en: "practice my English listening", vn: "luyện kỹ năng nghe tiếng Anh" },
+                            { en: "relax on my way to work", vn: "thư giãn trên đường đi làm" }
                         ]
                     },
                     {
                         title: "✨ [Tính từ mô tả kênh]:",
                         items: [
-                            { en: "relaxing", vn: "thư giãn" },
-                            { en: "useful / helpful", vn: "hữu ích" },
+                            { en: "useful", vn: "hữu ích" },
                             { en: "informative", vn: "nhiều thông tin bổ ích" },
-                            { en: "easy to understand", vn: "dễ hiểu" },
-                            { en: "interesting", vn: "thú vị" }
+                            { en: "interesting", vn: "thú vị" },
+                            { en: "relaxing", vn: "thư giãn" },
+                            { en: "entertaining", vn: "mang tính giải trí" }
                         ]
                     }
                 ],
@@ -5017,13 +5027,13 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Cấu trúc trực tiếp: Giúp ích & Cảm xúc mang lại):</div>
                     <div class="topic-formula-text">
-                        → Listening to the radio helps us <span class="formula-bracket-hl">[lợi ích 1]</span>. It’s also a good way to <span class="formula-bracket-hl">[lợi ích 2]</span>. Besides, it makes us feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
+                        → Listening to the radio helps us <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span>. It’s also a good way to <span class="formula-bracket-hl">[lợi ích 2 - Vo]</span>. Besides, it makes us feel <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Cấu trúc liệt kê: First, ... Second, ...):</div>
                     <div class="topic-formula-text">
-                        → There are many benefits of listening to the radio. First, it helps us <span class="formula-bracket-hl">[lợi ích 1]</span>. Second, it’s a wonderful way to <span class="formula-bracket-hl">[lợi ích 2]</span> and stay <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
+                        → There are many benefits of listening to the radio. First, it helps us <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span>. Second, it’s a wonderful way to <span class="formula-bracket-hl">[lợi ích 2 - Vo]</span> and stay <span class="formula-bracket-hl">[tính từ mô tả cảm xúc]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -5076,7 +5086,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Nêu trực tiếp thể loại yêu thích & lý do/cảm xúc mang lại):</div>
                     <div class="topic-formula-text">
-                        → I’m a big fan of <span class="formula-bracket-hl">[thể loại âm nhạc]</span> because it’s very <span class="formula-bracket-hl">[tính từ mô tả âm nhạc]</span>. Listening to it helps me <span class="formula-bracket-hl">[lợi ích]</span> and makes me feel <span class="formula-bracket-hl">[tính từ cảm xúc]</span>.
+                        → I’m a big fan of <span class="formula-bracket-hl">[thể loại âm nhạc]</span> because it’s very <span class="formula-bracket-hl">[tính từ mô tả âm nhạc]</span>. Listening to it helps me <span class="formula-bracket-hl">[lợi ích - Vo]</span> and makes me feel <span class="formula-bracket-hl">[tính từ cảm xúc]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -5143,44 +5153,44 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Khẳng định thời điểm cụ thể & thói quen cố định):</div>
                     <div class="topic-formula-text">
-                        → I often listen to music <span class="formula-bracket-hl">[thời điểm cụ thể trong ngày]</span> when I have free time because it helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>.
+                        → I often listen to music <span class="formula-bracket-hl">[thời điểm cụ thể trong ngày]</span> when I have free time because it helps me <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span> and <span class="formula-bracket-hl">[lợi ích 2 - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Cấu trúc kết hợp trong khi làm hoạt động khác - While + V-ing):</div>
                     <div class="topic-formula-text">
-                        → I usually listen to music while <span class="formula-bracket-hl">[hoạt động - Ving]</span>. It is a wonderful way to <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>.
+                        → I usually listen to music while <span class="formula-bracket-hl">[hoạt động - Ving]</span>. It is a wonderful way to <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span> and <span class="formula-bracket-hl">[lợi ích 2 - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "⏰ [Thời điểm trong ngày] (Dành cho Cách 1):",
+                        title: "⏰ [Thời điểm trong ngày] (Cách 1):",
                         items: [
-                            { en: "before going to bed", vn: "trước khi đi ngủ" },
                             { en: "in the evening", vn: "vào buổi tối" },
-                            { en: "after a long day at work / school", vn: "sau một ngày dài học tập / làm việc" },
-                            { en: "in my free time on weekends", vn: "trong thời gian rảnh rỗi vào cuối tuần" }
+                            { en: "before going to bed", vn: "trước khi đi ngủ" },
+                            { en: "in the morning", vn: "vào buổi sáng" },
+                            { en: "in my free time", vn: "vào thời gian rảnh rỗi" }
                         ]
                     },
                     {
-                        title: "🎧 [Hoạt động kết hợp: While + V-ing] (Dành cho Cách 2):",
+                        title: "🎧 [Hoạt động kết hợp] (Cách 2):",
                         items: [
-                            { en: "doing housework", vn: "làm việc nhà (lau dọn, giặt đồ)" },
-                            { en: "studying or working", vn: "học tập hoặc làm việc" },
-                            { en: "traveling on the bus", vn: "đi xe buýt / tàu điện" },
-                            { en: "cooking dinner", vn: "nấu bữa tối" },
-                            { en: "exercising or jogging", vn: "tập thể dục hoặc chạy bộ" }
+                            { en: "do housework", vn: "làm việc nhà (lau dọn, giặt đồ)" },
+                            { en: "study or work", vn: "học tập hoặc làm việc" },
+                            { en: "travel on the bus", vn: "đi xe buýt / tàu điện" },
+                            { en: "exercise or jog", vn: "tập thể dục hoặc chạy bộ" },
+                            { en: "cook dinner", vn: "nấu bữa tối" }
                         ]
                     },
                     {
                         title: "⭐ [Lợi ích khi nghe nhạc]:",
                         items: [
-                            { en: "clear my mind", vn: "làm cho đầu óc minh mẫn, nhẹ nhàng" },
-                            { en: "sleep better", vn: "ngủ ngon hơn" },
-                            { en: "pass the time", vn: "giải trí / giết thời gian" },
-                            { en: "boost my concentration", vn: "tăng cường khả năng tập trung" },
+                            { en: "relax after a long day", vn: "thư giãn sau một ngày dài" },
+                            { en: "reduce stress", vn: "giảm căng thẳng" },
+                            { en: "clear my mind", vn: "giải tỏa tâm trí" },
                             { en: "improve my mood", vn: "cải thiện tâm trạng" },
-                            { en: "relax after a busy day", vn: "thư giãn sau ngày bận rộn" }
+                            { en: "sleep better", vn: "ngủ ngon hơn" },
+                            { en: "stay energetic", vn: "duy trì sự năng động / tỉnh táo" }
                         ]
                     }
                 ],
@@ -5204,7 +5214,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Khẳng định trực tiếp vai trò thiết yếu - plays an essential part):</div>
                     <div class="topic-formula-text">
-                        → Yes, absolutely. Music plays an essential part in my life because it helps me <span class="formula-bracket-hl">[lợi ích]</span> and makes my life more <span class="formula-bracket-hl">[tính từ mô tả cuộc sống]</span>.
+                        → Yes, absolutely. Music plays an essential part in my life because it helps me <span class="formula-bracket-hl">[lợi ích - Vo]</span> and makes my life more <span class="formula-bracket-hl">[tính từ mô tả cuộc sống]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -5215,31 +5225,40 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
+                        title: "⭐ [Lợi ích thiết yếu của âm nhạc] (Cách 1):",
+                        items: [
+                            { en: "reduce stress", vn: "giảm căng thẳng" },
+                            { en: "relax after a busy day", vn: "thư giãn sau một ngày bận rộn" },
+                            { en: "improve my mood", vn: "cải thiện tâm trạng" },
+                            { en: "forget about my worries", vn: "quên đi những nỗi lo âu" },
+                            { en: "regain my energy", vn: "nạp lại năng lượng" }
+                        ]
+                    },
+                    {
                         title: "🌟 [Tính từ mô tả cuộc sống] (Cách 1):",
                         items: [
-                            { en: "colorful", vn: "muôn màu muôn vẻ / phong phú" },
-                            { en: "enjoyable", vn: "thú vị / tràn đầy niềm vui" },
-                            { en: "meaningful", vn: "ý nghĩa / sâu sắc" },
-                            { en: "peaceful", vn: "bình yên / thanh thản" }
+                            { en: "colorful and meaningful", vn: "nhiều màu sắc và ý nghĩa" },
+                            { en: "joyful and exciting", vn: "vui tươi và thú vị" },
+                            { en: "happy and relaxing", vn: "hạnh phúc và thư thái" },
+                            { en: "much more enjoyable", vn: "thú vị và đáng sống hơn rất nhiều" }
                         ]
                     },
                     {
-                        title: "🤫 [Thích yên tĩnh để tập trung] (Cách 2):",
+                        title: "🤫 [Sở thích không gian] (Cách 2):",
                         items: [
-                            { en: "complete silence", vn: "sự yên tĩnh hoàn toàn" },
-                            { en: "focus on my work and study", vn: "tập trung vào công việc và học tập" },
+                            { en: "quiet spaces", vn: "không gian yên tĩnh" },
+                            { en: "peaceful environments", vn: "môi trường thanh bình" },
+                            { en: "complete silence", vn: "sự tĩnh lặng hoàn toàn" },
+                            { en: "calm study rooms", vn: "phòng học yên ả" }
+                        ]
+                    },
+                    {
+                        title: "🎯 [Mục đích tập trung] (Cách 2):",
+                        items: [
+                            { en: "focus on my work", vn: "tập trung vào công việc" },
                             { en: "read books without noise", vn: "đọc sách không tiếng ồn" },
-                            { en: "a quiet peaceful space", vn: "một không gian yên tĩnh thanh bình" }
-                        ]
-                    },
-                    {
-                        title: "⭐ [Lợi ích thiết yếu của âm nhạc]:",
-                        items: [
-                            { en: "escape from daily stress", vn: "thoát khỏi căng thẳng thường nhật" },
-                            { en: "improve my mood", vn: "cải thiện tâm trạng" },
-                            { en: "regain my energy", vn: "lấy lại nguồn năng lượng tích cực" },
-                            { en: "forget about my worries", vn: "tạm quên đi những lo toan" },
-                            { en: "take a mental break", vn: "cho tâm trí được nghỉ ngơi" }
+                            { en: "rest my tired mind", vn: "cho tâm trí mệt mỏi được nghỉ ngơi" },
+                            { en: "study more effectively", vn: "học tập hiệu quả hơn" }
                         ]
                     }
                 ],
@@ -5270,7 +5289,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Nêu nhạc cụ biết chơi & thời điểm học / lợi ích):</div>
                     <div class="topic-formula-text">
-                        → Yes, I can. I can play the <span class="formula-bracket-hl">[tên nhạc cụ]</span>. I learned it <span class="formula-bracket-hl">[thời điểm học]</span>, and playing it helps me <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → Yes, I can. I can play the <span class="formula-bracket-hl">[tên nhạc cụ]</span>. I learned it <span class="formula-bracket-hl">[thời điểm học]</span>, and playing it helps me <span class="formula-bracket-hl">[lợi ích - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -5336,7 +5355,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Cấu trúc cảm nhận âm thanh du dương - Đàn Piano):</div>
                     <div class="topic-formula-text">
-                        → My favorite musical instrument is the <span class="formula-bracket-hl">[tên nhạc cụ]</span> because its sound is very <span class="formula-bracket-hl">[tính từ mô tả âm thanh]</span>. Listening to it always helps me <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → My favorite musical instrument is the <span class="formula-bracket-hl">[tên nhạc cụ]</span> because its sound is very <span class="formula-bracket-hl">[tính từ mô tả âm thanh]</span>. Listening to it always helps me <span class="formula-bracket-hl">[lợi ích - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -5347,33 +5366,41 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
+                        title: "🎸 [Tên nhạc cụ]:",
+                        items: [
+                            { en: "the piano", vn: "đàn piano (dương cầm)" },
+                            { en: "the guitar", vn: "đàn ghi-ta" },
+                            { en: "the violin", vn: "đàn vi-ô-lông (vĩ cầm)" },
+                            { en: "the flute", vn: "sáo trúc / sáo tây" },
+                            { en: "the ukulele", vn: "đàn ukulele" }
+                        ]
+                    },
+                    {
                         title: "🎵 [Tính từ mô tả âm thanh & đặc điểm]:",
                         items: [
                             { en: "soothing and gentle", vn: "êm dịu và nhẹ nhàng" },
-                            { en: "sweet and relaxing", vn: "ngọt ngào và thư thái" },
-                            { en: "melodious", vn: "du dương / êm tai" },
-                            { en: "convenient", vn: "tiện lợi / tiện dụng" },
-                            { en: "versatile", vn: "đa năng / linh hoạt" },
-                            { en: "portable", vn: "dễ dàng mang theo" }
+                            { en: "sweet and relaxing", vn: "ngọt ngào và thư giãn" },
+                            { en: "melodious", vn: "du dương" },
+                            { en: "convenient and portable", vn: "tiện lợi và dễ mang theo" }
                         ]
                     },
                     {
-                        title: "🏕️ [Dịp tụ họp & hoạt động ngoài trời] (Cách 2):",
+                        title: "🏕️ [Dịp tụ họp & Hoạt động ngoài trời] (Cách 2):",
                         items: [
-                            { en: "picnics and outdoor gatherings", vn: "các buổi dã ngoại và tụ tập ngoài trời" },
+                            { en: "picnics and outdoor gatherings", vn: "các buổi dã ngoại và tụ họp ngoài trời" },
                             { en: "camping trips", vn: "các chuyến đi cắm trại" },
                             { en: "birthday parties", vn: "các bữa tiệc sinh nhật" },
-                            { en: "friendly meetups", vn: "các buổi gặp mặt bạn bè" }
+                            { en: "friendly meetups", vn: "những buổi gặp gỡ bạn bè thân mật" }
                         ]
                     },
                     {
-                        title: "⭐ [Lợi ích khi nghe hoặc chơi nhạc cụ]:",
+                        title: "⭐ [Lợi ích khi nghe hoặc chơi nhạc cụ] (Cách 1):",
                         items: [
-                            { en: "calm my mind", vn: "làm tâm trí bình yên, tĩnh lặng" },
-                            { en: "reduce stress", vn: "giảm bớt căng thẳng" },
-                            { en: "clear my mind", vn: "giải tỏa áp lực đầu óc" },
+                            { en: "calm my mind", vn: "làm dịu tâm trí" },
+                            { en: "reduce stress", vn: "giảm căng thẳng" },
+                            { en: "clear my mind", vn: "giải tỏa đầu óc" },
                             { en: "enjoy my free time", vn: "tận hưởng thời gian rảnh" },
-                            { en: "pass the time", vn: "giải trí vui vẻ" }
+                            { en: "pass the time", vn: "giải trí nhẹ nhàng" }
                         ]
                     }
                 ],
@@ -5397,13 +5424,13 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đồng ý trực tiếp - Tốt cho phát triển trí não & tính kiên nhẫn):</div>
                     <div class="topic-formula-text">
-                        → Yes, I think so. Learning an instrument helps children <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>. It's also very good for their brain development.
+                        → Yes, I think so. Learning an instrument helps children <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span> and <span class="formula-bracket-hl">[lợi ích 2 - Vo]</span>. It's also very good for their brain development.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Cấu trúc nhượng bộ Although - Dù tốn thời gian nhưng xây dựng tính kỷ luật):</div>
                     <div class="topic-formula-text">
-                        → Although learning an instrument takes a lot of time and effort, I believe children should learn one because it helps them <span class="formula-bracket-hl">[lợi ích 1]</span> and build <span class="formula-bracket-hl">[lợi ích 2]</span>.
+                        → Although learning an instrument takes a lot of time and effort, I believe children should learn one because it helps them <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span> and <span class="formula-bracket-hl">[lợi ích 2 - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -5530,6 +5557,15 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
+                        title: "🍽️ [Loại đồ ăn]:",
+                        items: [
+                            { en: "traditional Vietnamese food", vn: "đồ ăn truyền thống Việt Nam" },
+                            { en: "fresh seafood dishes", vn: "các món hải sản tươi sống" },
+                            { en: "local specialty dishes", vn: "các món đặc sản địa phương" },
+                            { en: "healthy home-style dishes", vn: "các món ăn gia đình lành mạnh" }
+                        ]
+                    },
+                    {
                         title: "🍲 [Món ăn phổ biến]:",
                         items: [
                             { en: "beef noodle soup", vn: "phở bò" },
@@ -5537,18 +5573,17 @@ const practiceTopicsData = [
                             { en: "grilled pork with noodles", vn: "bún chả" },
                             { en: "grilled prawns", vn: "tôm nướng" },
                             { en: "fish hotpot", vn: "lẩu cá" },
-                            { en: "fried rice", vn: "cơm rang / cơm chiên" },
                             { en: "broken rice", vn: "cơm tấm" }
                         ]
                     },
                     {
-                        title: "🌿 [Tính từ mô tả]:",
+                        title: "🌿 [Tính từ mô tả món ăn]:",
                         items: [
-                            { en: "delicious / tasty", vn: "ngon miệng" },
+                            { en: "delicious and tasty", vn: "thơm ngon, đậm đà" },
                             { en: "fresh and tasty", vn: "tươi ngon" },
-                            { en: "healthy", vn: "lành mạnh" },
+                            { en: "healthy and clean", vn: "tốt cho sức khỏe và sạch sẽ" },
                             { en: "well-seasoned", vn: "nêm nếm vừa vặn" },
-                            { en: "crispy and hot", vn: "giòn và nóng hổi" }
+                            { en: "crispy and hot", vn: "giòn rụm và nóng hổi" }
                         ]
                     }
                 ],
@@ -5583,14 +5618,31 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "👌 [Cụm từ diễn đạt & Khẩu vị]:",
+                        title: "🍜 [Món yêu thích nhất] (Cách 1):",
                         items: [
-                            { en: "suit my taste", vn: "hợp khẩu vị của tôi" },
-                            { en: "almost all the dishes", vn: "hầu hết mọi món ăn" },
+                            { en: "beef noodle soup", vn: "phở bò" },
+                            { en: "crispy spring rolls", vn: "nem rán giòn rụm" },
+                            { en: "seafood hotpot", vn: "lẩu hải sản" },
+                            { en: "grilled pork with rice", vn: "cơm sườn nướng" },
+                            { en: "roasted chicken", vn: "gà quay" }
+                        ]
+                    },
+                    {
+                        title: "🌶️ [Loại món không thích] (Cách 2):",
+                        items: [
                             { en: "spicy food", vn: "đồ ăn cay" },
-                            { en: "too greasy / oily", vn: "quá ngấy / nhiều dầu mỡ" },
-                            { en: "chicken soup", vn: "súp gà / canh gà" },
-                            { en: "steamed vegetables", vn: "rau hấp / luộc thanh đạm" }
+                            { en: "greasy fried dishes", vn: "các món chiên nhiều dầu mỡ" },
+                            { en: "overly sweet desserts", vn: "các món tráng miệng quá ngọt" },
+                            { en: "raw seafood dishes", vn: "các món hải sản sống" }
+                        ]
+                    },
+                    {
+                        title: "🥗 [Món ăn thanh đạm] (Cách 2):",
+                        items: [
+                            { en: "chicken soup", vn: "súp gà thanh nhẹ" },
+                            { en: "steamed vegetables", vn: "rau củ hấp" },
+                            { en: "fresh green salad", vn: "rau trộn tươi mát" },
+                            { en: "boiled fish with herbs", vn: "cá hấp rau thơm" }
                         ]
                     }
                 ],
@@ -5627,22 +5679,22 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Trả lời CHƯA - Mẹ luôn nấu cơm tươi tại nhà và tránh đồ ăn nhanh dầu mỡ để giữ sức khỏe):</div>
                     <div class="topic-formula-text">
-                        → Honestly, no, I haven't. My mother always <span class="formula-bracket-hl">[hoạt động gia đình]</span>, and I prefer <span class="formula-bracket-hl">[lối sống lành mạnh - Ving]</span> to stay healthy.
+                        → Honestly, no, I haven't. My mother always <span class="formula-bracket-hl">[hoạt động gia đình - Vs/es]</span>, and I prefer <span class="formula-bracket-hl">[lối sống lành mạnh - Ving]</span> to stay healthy.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🍟 [Tên quán fast food]:",
+                        title: "🍟 [Tên quán fast food] (Cách 1):",
                         items: [
-                            { en: "KFC", vn: "quán gà rán KFC" },
-                            { en: "Lotteria", vn: "quán Lotteria" },
-                            { en: "Jollibee", vn: "quán Jollibee" },
-                            { en: "Pizza Hut", vn: "quán Pizza Hut" },
-                            { en: "McDonald's", vn: "quán McDonald's" }
+                            { en: "KFC", vn: "cửa hàng gà rán KFC" },
+                            { en: "Lotteria", vn: "cửa hàng Lotteria" },
+                            { en: "Jollibee", vn: "cửa hàng Jollibee" },
+                            { en: "Pizza Hut", vn: "nhà hàng Pizza Hut" },
+                            { en: "McDonald's", vn: "cửa hàng McDonald's" }
                         ]
                     },
                     {
-                        title: "👥 [Đối tượng đi cùng]:",
+                        title: "👥 [Đối tượng đi cùng] (Cách 1):",
                         items: [
                             { en: "friends", vn: "bạn bè" },
                             { en: "family", vn: "gia đình" },
@@ -5651,21 +5703,22 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "⭐ [Lý do & Tiện ích] (Cách 1):",
+                        title: "⭐ [Lý do chính & Lý do phụ] (Cách 1):",
                         items: [
-                            { en: "the food is delicious", vn: "đồ ăn thơm ngon" },
-                            { en: "the service is fast and convenient", vn: "phục vụ nhanh chóng và tiện lợi" },
+                            { en: "the food is delicious", vn: "đồ ăn rất ngon miệng" },
+                            { en: "the service is fast and convenient", vn: "dịch vụ nhanh chóng và tiện lợi" },
                             { en: "the price is affordable", vn: "giá cả phải chăng" },
-                            { en: "it saves a lot of time", vn: "tiết kiệm nhiều thời gian" }
+                            { en: "it saves a lot of time", vn: "tiết kiệm được rất nhiều thời gian" }
                         ]
                     },
                     {
-                        title: "🥗 [Ăn cơm nhà & Tốt sức khỏe] (Cách 2):",
+                        title: "🥗 [Hoạt động nấu ăn & Lối sống lành mạnh] (Cách 2):",
                         items: [
-                            { en: "cook fresh meals at home", vn: "nấu các bữa ăn tươi tại nhà" },
-                            { en: "avoiding oily fast food", vn: "tránh thức ăn nhanh nhiều dầu mỡ" },
-                            { en: "stay healthy and fit", vn: "giữ gìn sức khỏe và vóc dáng" },
-                            { en: "eat clean home-cooked dishes", vn: "ăn các món cơm nhà sạch sẽ" }
+                            { en: "cook fresh meals at home", vn: "nấu những bữa ăn tươi ngon tại nhà" },
+                            { en: "prepare healthy family dinners", vn: "chuẩn bị bữa tối gia đình lành mạnh" },
+                            { en: "avoid oily fast food", vn: "tránh thức ăn nhanh nhiều dầu mỡ" },
+                            { en: "eat clean home-cooked dishes", vn: "ăn các món cơm nhà sạch sẽ" },
+                            { en: "follow a balanced diet", vn: "theo đuổi chế độ ăn cân bằng" }
                         ]
                     }
                 ],
@@ -5695,36 +5748,54 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Dùng "My favorite fast food is" - Pizza phô mai thơm ngon, chia sẻ cùng bạn bè):</div>
                     <div class="topic-formula-text">
-                        → My favorite fast food is <span class="formula-bracket-hl">[tên món ăn]</span>. It's always <span class="formula-bracket-hl">[tính từ]</span>, and I often share it with my <span class="formula-bracket-hl">[đối tượng]</span> to <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → My favorite fast food is <span class="formula-bracket-hl">[tên món ăn]</span>. It's always <span class="formula-bracket-hl">[tính từ]</span>, and I often share it with my <span class="formula-bracket-hl">[đối tượng]</span> to <span class="formula-bracket-hl">[lợi ích - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
                         title: "🍗 [Tên món ăn nhanh]:",
                         items: [
-                            { en: "crispy fried chicken", vn: "gà rán giòn rụm" },
-                            { en: "cheese pizza", vn: "pizza phô mai béo ngậy" },
-                            { en: "beef burger", vn: "bánh burger bò" },
-                            { en: "french fries", vn: "khoai tây chiên giòn" },
-                            { en: "chicken nuggets", vn: "gà viên chiên giòn" }
+                            { en: "crispy fried chicken", vn: "gà rán giòn" },
+                            { en: "cheese pizza", vn: "bánh pizza phô mai" },
+                            { en: "beef burger", vn: "bánh mì kẹp thịt bò" },
+                            { en: "french fries", vn: "khoai tây chiên" },
+                            { en: "chicken nuggets", vn: "gà viên chiên" }
                         ]
                     },
                     {
                         title: "✨ [Tính từ mô tả món ăn]:",
                         items: [
-                            { en: "crunchy and tasty", vn: "giòn tan và thơm ngon" },
-                            { en: "delicious and hot", vn: "nóng hổi và ngon miệng" },
-                            { en: "flavorful", vn: "đậm đà hương vị" },
-                            { en: "rich in cheese", vn: "nhiều phô mai béo ngậy" }
+                            { en: "crunchy and tasty", vn: "giòn rụm và đậm vị" },
+                            { en: "delicious and hot", vn: "thơm ngon và nóng hổi" },
+                            { en: "flavorful", vn: "hương vị hấp dẫn" },
+                            { en: "rich in cheese", vn: "ngậy vị phô mai" }
                         ]
                     },
                     {
-                        title: "😊 [Cảm xúc & Lợi ích]:",
+                        title: "😊 [Tính từ cảm xúc] (Cách 1):",
                         items: [
                             { en: "happy and energetic", vn: "vui vẻ và tràn đầy năng lượng" },
-                            { en: "relaxed after a busy day", vn: "thư giãn sau ngày bận rộn" },
-                            { en: "have fun together", vn: "có khoảng thời gian vui vẻ bên nhau" },
-                            { en: "enjoy my free time", vn: "tận hưởng thời gian rảnh" }
+                            { en: "relaxed after a busy day", vn: "thư giãn sau một ngày bận rộn" },
+                            { en: "satisfied and cheerful", vn: "hài lòng và phấn chấn" },
+                            { en: "comfortable", vn: "thoải mái dễ chịu" }
+                        ]
+                    },
+                    {
+                        title: "👥 [Đối tượng chia sẻ] (Cách 2):",
+                        items: [
+                            { en: "close friends", vn: "bạn bè thân thiết" },
+                            { en: "best friends", vn: "những người bạn thân nhất" },
+                            { en: "younger siblings", vn: "các em nhỏ trong nhà" },
+                            { en: "classmates", vn: "bạn cùng lớp" }
+                        ]
+                    },
+                    {
+                        title: "⭐ [Lợi ích chia sẻ] (Cách 2):",
+                        items: [
+                            { en: "have fun together", vn: "cùng nhau vui vẻ" },
+                            { en: "enjoy my free time", vn: "tận hưởng thời gian rảnh" },
+                            { en: "relax at weekends", vn: "thư giãn vào dịp cuối tuần" },
+                            { en: "bond with each other", vn: "gắn kết tình cảm với nhau" }
                         ]
                     }
                 ],
@@ -5754,34 +5825,44 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Cấu trúc nhượng bộ Although - Tiện nhưng hại, nên ăn rau quả để khỏe mạnh):</div>
                     <div class="topic-formula-text">
-                        → Although fast food is <span class="formula-bracket-hl">[tính từ]</span>, eating it often is bad for our health. We should eat more <span class="formula-bracket-hl">[thực phẩm tốt]</span> to <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → Although fast food is <span class="formula-bracket-hl">[tính từ]</span>, eating it often is bad for our health. We should eat more <span class="formula-bracket-hl">[thực phẩm tốt]</span> to <span class="formula-bracket-hl">[lợi ích - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "⚠️ [Chất không tốt trong fast food]:",
+                        title: "⚠️ [Chất không tốt trong fast food] (Cách 1):",
                         items: [
                             { en: "fat and oil", vn: "chất béo và dầu mỡ" },
-                            { en: "oil and calories", vn: "dầu mỡ và nhiều calo" },
-                            { en: "sugar and salt", vn: "nhiều đường và muối" }
+                            { en: "oil and calories", vn: "dầu mỡ và lượng calo cao" },
+                            { en: "sugar and salt", vn: "đường và muối" },
+                            { en: "harmful preservatives", vn: "chất bảo quản có hại" }
                         ]
                     },
                     {
-                        title: "⚡ [Tác hại cho sức khỏe]:",
+                        title: "⚡ [Tác hại cho sức khỏe] (Cách 1):",
                         items: [
-                            { en: "weight gain", vn: "tăng cân / béo phì" },
-                            { en: "heart problems", vn: "bệnh tim mạch" },
-                            { en: "stomach pain", vn: "đau dạ dày" }
+                            { en: "weight gain", vn: "tình trạng tăng cân / béo phì" },
+                            { en: "heart problems", vn: "các vấn đề về tim mạch" },
+                            { en: "stomach pain", vn: "đau dạ dày" },
+                            { en: "high blood pressure", vn: "huyết áp cao" }
                         ]
                     },
                     {
-                        title: "🥦 [Thực phẩm lành mạnh & Lợi ích]:",
+                        title: "🥦 [Thực phẩm tốt] (Cách 2):",
                         items: [
-                            { en: "vegetables and fruits", vn: "rau xanh và hoa quả" },
+                            { en: "vegetables and fruits", vn: "rau xanh và trái cây" },
                             { en: "home-cooked food", vn: "cơm nhà tự nấu" },
-                            { en: "stay healthy", vn: "giữ gìn sức khỏe" },
+                            { en: "fresh fish and lean meat", vn: "cá tươi và thịt nạc" },
+                            { en: "healthy organic meals", vn: "các bữa ăn hữu cơ lành mạnh" }
+                        ]
+                    },
+                    {
+                        title: "💪 [Lợi ích sức khỏe] (Cách 2):",
+                        items: [
+                            { en: "stay healthy", vn: "giữ cơ thể khỏe mạnh" },
                             { en: "maintain a healthy lifestyle", vn: "duy trì lối sống lành mạnh" },
-                            { en: "avoid getting sick", vn: "tránh bị ốm đau" }
+                            { en: "avoid getting sick", vn: "tránh bị ốm vặt" },
+                            { en: "keep a fit body", vn: "giữ vóc dáng cân đối" }
                         ]
                     }
                 ],
@@ -5813,7 +5894,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời THÍCH - Nấu ăn sáng tạo và giúp thư giãn):</div>
                     <div class="topic-formula-text">
-                        → Yes, I do. I'm really into cooking because it's <span class="formula-bracket-hl">[tính từ]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span> after a busy day.
+                        → Yes, I do. I'm really into cooking because it's <span class="formula-bracket-hl">[tính từ]</span>. It helps me <span class="formula-bracket-hl">[lợi ích - Vo]</span> after a busy day.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -5824,31 +5905,40 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "✨ [Tính từ mô tả nấu ăn]:",
+                        title: "✨ [Tính từ mô tả nấu ăn] (Cách 1):",
                         items: [
-                            { en: "fun and creative", vn: "vui vẻ và sáng tạo" },
-                            { en: "relaxing", vn: "mang lại cảm giác thư giãn" },
-                            { en: "an essential life skill", vn: "kỹ năng sống thiết yếu" },
+                            { en: "fun and creative", vn: "vui và mang tính sáng tạo" },
+                            { en: "relaxing and enjoyable", vn: "thư giãn và thú vị" },
+                            { en: "an essential life skill", vn: "một kỹ năng sống thiết yếu" },
                             { en: "very interesting", vn: "rất thú vị" }
                         ]
                     },
                     {
-                        title: "⭐ [Lợi ích khi nấu ăn]:",
+                        title: "⭐ [Lợi ích khi nấu ăn] (Cách 1):",
                         items: [
-                            { en: "reduce stress", vn: "giảm bớt căng thẳng" },
-                            { en: "clear my mind", vn: "giúp đầu óc thanh thản" },
+                            { en: "reduce stress", vn: "giảm căng thẳng" },
+                            { en: "clear my mind", vn: "thư thái đầu óc" },
                             { en: "improve my mood", vn: "cải thiện tâm trạng" },
-                            { en: "prepare healthy meals", vn: "tự chuẩn bị bữa ăn lành mạnh" }
+                            { en: "prepare healthy meals", vn: "tự chuẩn bị các bữa ăn lành mạnh" },
+                            { en: "save daily money", vn: "tiết kiệm tiền sinh hoạt hằng ngày" }
                         ]
                     },
                     {
-                        title: "💼 [Lý do bận rộn & Người nấu]:",
+                        title: "💼 [Lý do bận rộn] (Cách 2):",
                         items: [
                             { en: "work", vn: "công việc" },
-                            { en: "study", vn: "học tập" },
-                            { en: "tight schedule", vn: "lịch trình bận rộn" },
-                            { en: "mother", vn: "mẹ tôi" },
-                            { en: "family", vn: "gia đình tôi" }
+                            { en: "studies", vn: "việc học tập" },
+                            { en: "tight schedule", vn: "lịch trình dày đặc" },
+                            { en: "part-time job", vn: "công việc làm thêm" }
+                        ]
+                    },
+                    {
+                        title: "👩‍🍳 [Người nấu ăn trong gia đình] (Cách 2):",
+                        items: [
+                            { en: "mother", vn: "mẹ" },
+                            { en: "grandmother", vn: "bà" },
+                            { en: "older sister", vn: "chị gái" },
+                            { en: "parents", vn: "bố mẹ" }
                         ]
                     }
                 ],
@@ -5885,28 +5975,38 @@ const practiceTopicsData = [
                     {
                         title: "🍲 [Món ăn nổi tiếng]:",
                         items: [
-                            { en: "beef noodle soup", vn: "phở bò truyền thống" },
-                            { en: "chicken noodle soup", vn: "phở gà thơm ngon" },
+                            { en: "beef noodle soup", vn: "phở bò" },
+                            { en: "chicken noodle soup", vn: "phở gà" },
                             { en: "Vietnamese bread", vn: "bánh mì Việt Nam" },
-                            { en: "broken rice", vn: "cơm tấm sườn nướng" },
-                            { en: "crispy spring rolls", vn: "nem rán giòn rụm" }
+                            { en: "broken rice", vn: "cơm tấm" },
+                            { en: "crispy spring rolls", vn: "nem rán / chả giò" }
                         ]
                     },
                     {
-                        title: "🌿 [Đặc điểm & Hương vị]:",
+                        title: "🌿 [Đặc điểm món ăn] (Cách 1):",
                         items: [
-                            { en: "a delicious broth", vn: "nước dùng thơm ngon đậm vị" },
-                            { en: "fresh beef and herbs", vn: "thịt bò và rau thơm tươi sạch" },
-                            { en: "delicious and convenient", vn: "thơm ngon và thuận tiện" },
-                            { en: "crispy and affordable", vn: "vỏ giòn và giá cả phải chăng" }
+                            { en: "a delicious broth", vn: "nước dùng thơm ngon đậm đà" },
+                            { en: "fresh beef and herbs", vn: "thịt bò tươi và rau thơm" },
+                            { en: "rich traditional flavors", vn: "hương vị truyền thống đậm đà" },
+                            { en: "soft rice noodles", vn: "bánh phở mềm ngon" }
                         ]
                     },
                     {
-                        title: "⏰ [Bữa ăn trong ngày]:",
+                        title: "⏰ [Bữa ăn trong ngày] (Cách 1):",
                         items: [
                             { en: "breakfast", vn: "bữa sáng" },
                             { en: "lunch", vn: "bữa trưa" },
+                            { en: "dinner", vn: "bữa tối" },
                             { en: "every meal", vn: "mọi bữa ăn trong ngày" }
+                        ]
+                    },
+                    {
+                        title: "✨ [Tính từ mô tả] (Cách 2):",
+                        items: [
+                            { en: "delicious and convenient", vn: "thơm ngon và tiện lợi" },
+                            { en: "crispy and affordable", vn: "giòn rụm và giá bình dân" },
+                            { en: "tasty and nutritious", vn: "ngon miệng và bổ dưỡng" },
+                            { en: "quick and cheap", vn: "nhanh gọn và rẻ" }
                         ]
                     }
                 ],
@@ -5930,34 +6030,51 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Thích ăn ở nhà - Cơm nhà sạch sẽ, giữ sức khỏe & tiết kiệm):</div>
                     <div class="topic-formula-text">
-                        → I prefer eating at home because home-cooked meals are <span class="formula-bracket-hl">[tính từ]</span>. It helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>.
+                        → I prefer eating at home because home-cooked meals are <span class="formula-bracket-hl">[tính từ]</span>. It helps me <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span> and <span class="formula-bracket-hl">[lợi ích 2 - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Thích ăn ngoài - Tiết kiệm thời gian nấu nướng & tụ tập bạn bè):</div>
                     <div class="topic-formula-text">
-                        → I prefer eating out because it saves time on cooking. Moreover, I can try <span class="formula-bracket-hl">[loại món ăn]</span> and <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → I prefer eating out because it saves time on cooking. Moreover, I can try <span class="formula-bracket-hl">[loại món ăn]</span> and <span class="formula-bracket-hl">[lợi ích - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🥗 [Đặc điểm bữa cơm nhà & Lợi ích] (Cách 1):",
+                        title: "🥗 [Tính từ mô tả bữa cơm nhà] (Cách 1):",
                         items: [
-                            { en: "clean and healthy", vn: "sạch sẽ và lành mạnh" },
-                            { en: "fresh and safe", vn: "tươi ngon và an toàn" },
-                            { en: "save money", vn: "tiết kiệm tiền" },
-                            { en: "stay healthy", vn: "giữ gìn sức khỏe" },
-                            { en: "spend time with my family", vn: "dành thời gian bên gia đình" }
+                            { en: "clean and healthy", vn: "sạch sẽ và tốt cho sức khỏe" },
+                            { en: "fresh and safe", vn: "tươi ngon và an toàn vệ sinh" },
+                            { en: "nutritious and warm", vn: "bổ dưỡng và ấm cúng" },
+                            { en: "delicious and cheap", vn: "ngon miệng và tiết kiệm" }
                         ]
                     },
                     {
-                        title: "🍽️ [Tiện ích ăn ngoài & Trải nghiệm] (Cách 2):",
+                        title: "⭐ [Lợi ích khi ăn ở nhà] (Cách 1):",
                         items: [
-                            { en: "different dishes", vn: "nhiều món ăn khác nhau" },
-                            { en: "new foods", vn: "các món ăn mới lạ" },
-                            { en: "hang out with my friends", vn: "tụ tập cùng bạn bè" },
-                            { en: "have fun together", vn: "vui vẻ bên nhau" },
-                            { en: "relax after work", vn: "thư giãn sau giờ làm việc" }
+                            { en: "save money", vn: "tiết kiệm tiền bạc" },
+                            { en: "stay healthy", vn: "giữ gìn sức khỏe" },
+                            { en: "spend time with my family", vn: "dành thời gian bên gia đình" },
+                            { en: "avoid food poisoning", vn: "tránh ngộ độc thực phẩm" },
+                            { en: "keep a balanced diet", vn: "duy trì chế độ ăn cân đối" }
+                        ]
+                    },
+                    {
+                        title: "🍽️ [Loại món ăn khi ăn ngoài] (Cách 2):",
+                        items: [
+                            { en: "different dishes", vn: "nhiều món ăn đa dạng khác nhau" },
+                            { en: "new foreign foods", vn: "các món ăn nước ngoài mới lạ" },
+                            { en: "local specialties", vn: "các món đặc sản địa phương" },
+                            { en: "fresh seafood hotpot", vn: "lẩu hải sản tươi sống" }
+                        ]
+                    },
+                    {
+                        title: "🎉 [Lợi ích khi ăn ngoài] (Cách 2):",
+                        items: [
+                            { en: "hang out with my friends", vn: "tụ tập đi chơi cùng bạn bè" },
+                            { en: "have fun together", vn: "cùng nhau vui vẻ" },
+                            { en: "relax after work", vn: "thư giãn sau giờ làm việc" },
+                            { en: "enjoy cozy restaurant spaces", vn: "tận hưởng không gian nhà hàng ấm cúng" }
                         ]
                     }
                 ],
@@ -5988,43 +6105,51 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời ĐÃ TỪNG - Tham gia lớp học, học thêm công thức mới):</div>
                     <div class="topic-formula-text">
-                        → Yes, I have. I attended a <span class="formula-bracket-hl">[loại lớp học]</span> last year. It was <span class="formula-bracket-hl">[tính từ]</span> and helped me <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → Yes, I have. I attended a <span class="formula-bracket-hl">[loại lớp học]</span> last year. It was <span class="formula-bracket-hl">[tính từ]</span> and helped me <span class="formula-bracket-hl">[lợi ích - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Trả lời CHƯA TỪNG - Thường học qua mạng, muốn tham gia trong tương lai):</div>
                     <div class="topic-formula-text">
-                        → No, I haven't. I usually learn cooking from <span class="formula-bracket-hl">[nguồn học]</span>. However, I want to join a class to <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → No, I haven't. I usually learn cooking from <span class="formula-bracket-hl">[nguồn học]</span>. However, I want to join a class to <span class="formula-bracket-hl">[lợi ích - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🍳 [Loại lớp học nấu ăn]:",
+                        title: "🍳 [Loại lớp học nấu ăn] (Cách 1):",
                         items: [
-                            { en: "basic cooking class", vn: "lớp nấu ăn cơ bản" },
+                            { en: "basic cooking class", vn: "lớp học nấu ăn cơ bản" },
                             { en: "baking class", vn: "lớp học làm bánh" },
-                            { en: "weekend cooking workshop", vn: "buổi workshop nấu ăn cuối tuần" },
+                            { en: "weekend cooking workshop", vn: "buổi học nấu ăn cuối tuần" },
                             { en: "traditional food course", vn: "khóa học nấu món truyền thống" }
                         ]
                     },
                     {
-                        title: "✨ [Tính từ & Lợi ích lớp học] (Cách 1):",
+                        title: "✨ [Tính từ mô tả lớp học] (Cách 1):",
                         items: [
                             { en: "very useful", vn: "rất hữu ích" },
                             { en: "fun and exciting", vn: "vui vẻ và hào hứng" },
-                            { en: "learn new recipes", vn: "học thêm nhiều công thức mới" },
-                            { en: "develop useful skills", vn: "phát triển kỹ năng hữu ích" },
-                            { en: "cook better", vn: "nấu nướng ngon hơn" }
+                            { en: "interesting and practical", vn: "thú vị và thiết thực" },
+                            { en: "well-organized", vn: "được tổ chức rất bài bản" }
                         ]
                     },
                     {
-                        title: "📱 [Kênh tự học & Mục tiêu] (Cách 2):",
+                        title: "📱 [Nguồn tự học nấu ăn] (Cách 2):",
                         items: [
-                            { en: "online videos", vn: "các video trên mạng" },
-                            { en: "my mother at home", vn: "mẹ tôi ở nhà" },
-                            { en: "cooking blogs", vn: "các trang blog dạy nấu ăn" },
-                            { en: "improve my skills", vn: "nâng cao kỹ năng của mình" },
-                            { en: "learn to cook properly", vn: "học nấu nướng bài bản đúng cách" }
+                            { en: "online videos", vn: "các video hướng dẫn trên mạng" },
+                            { en: "my mother at home", vn: "mẹ của tôi ở nhà" },
+                            { en: "cooking blogs", vn: "các trang blog ẩm thực" },
+                            { en: "YouTube cooking channels", vn: "các kênh dạy nấu ăn trên YouTube" }
+                        ]
+                    },
+                    {
+                        title: "⭐ [Lợi ích khi học nấu ăn] (Cách 1 & 2):",
+                        items: [
+                            { en: "learn new recipes", vn: "học thêm nhiều công thức nấu ăn mới" },
+                            { en: "develop useful skills", vn: "phát triển các kỹ năng hữu ích" },
+                            { en: "improve my skills", vn: "cải thiện kỹ năng bếp núc" },
+                            { en: "learn to cook properly", vn: "học cách nấu ăn bài bản" },
+                            { en: "prepare delicious meals for family", vn: "chuẩn bị bữa ngon cho gia đình" }
                         ]
                     }
                 ],
@@ -6048,34 +6173,51 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đi cùng người khác - Hỗ trợ nhau & Thực hành vui vẻ hơn):</div>
                     <div class="topic-formula-text">
-                        → I prefer going with my <span class="formula-bracket-hl">[đối tượng]</span> because we can <span class="formula-bracket-hl">[hành động hỗ trợ]</span>. It's more <span class="formula-bracket-hl">[tính từ]</span> to practice together.
+                        → I prefer going with my <span class="formula-bracket-hl">[đối tượng]</span> because we can <span class="formula-bracket-hl">[hành động hỗ trợ - Vo]</span>. It's more <span class="formula-bracket-hl">[tính từ]</span> to practice together.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Đi một mình - Tập trung cao độ & Tiếp thu bài học tốt hơn):</div>
                     <div class="topic-formula-text">
-                        → I prefer going alone because I can <span class="formula-bracket-hl">[lý do tự lập]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span> and learn better.
+                        → I prefer going alone because I can <span class="formula-bracket-hl">[lý do tự lập - Vo]</span>. It helps me <span class="formula-bracket-hl">[lợi ích - Vo]</span> and learn better.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "👥 [Người đi cùng & Hỗ trợ] (Cách 1):",
+                        title: "👥 [Đối tượng đi cùng] (Cách 1):",
                         items: [
                             { en: "best friend", vn: "bạn thân nhất" },
-                            { en: "sister", vn: "chị / em gái" },
-                            { en: "family", vn: "gia đình" },
-                            { en: "help each other", vn: "giúp đỡ lẫn nhau" },
-                            { en: "share our dishes", vn: "chia sẻ món ăn cùng nhau" },
-                            { en: "fun and exciting", vn: "vui vẻ và hào hứng" }
+                            { en: "sister", vn: "chị/em gái" },
+                            { en: "mother", vn: "mẹ" },
+                            { en: "close classmates", vn: "những người bạn cùng lớp thân thiết" }
                         ]
                     },
                     {
-                        title: "🎯 [Lý do tự lập & Lợi ích] (Cách 2):",
+                        title: "🤝 [Hành động hỗ trợ] (Cách 1):",
+                        items: [
+                            { en: "help each other", vn: "giúp đỡ lẫn nhau" },
+                            { en: "share our dishes", vn: "chia sẻ món ăn vừa nấu" },
+                            { en: "practice recipes together", vn: "cùng nhau thực hành công thức" },
+                            { en: "prepare ingredients quickly", vn: "chuẩn bị nguyên liệu nhanh chóng" }
+                        ]
+                    },
+                    {
+                        title: "✨ [Tính từ mô tả] (Cách 1):",
+                        items: [
+                            { en: "fun and exciting", vn: "vui vẻ và hào hứng" },
+                            { en: "enjoyable and memorable", vn: "thú vị và đáng nhớ" },
+                            { en: "interesting", vn: "thú vị" },
+                            { en: "relaxing", vn: "thư giãn" }
+                        ]
+                    },
+                    {
+                        title: "🎯 [Lý do tự lập & Lợi ích khi học một mình] (Cách 2):",
                         items: [
                             { en: "focus on the lesson", vn: "tập trung vào bài học" },
-                            { en: "follow the teacher easily", vn: "theo bài của giáo viên dễ dàng" },
-                            { en: "boost my concentration", vn: "nâng cao sự tập trung" },
-                            { en: "work independently", vn: "làm việc độc lập" }
+                            { en: "follow the teacher easily", vn: "dễ dàng theo sát giáo viên hướng dẫn" },
+                            { en: "practice every step by myself", vn: "tự tay thực hành từng bước" },
+                            { en: "boost my concentration", vn: "tăng cường sự tập trung" },
+                            { en: "work independently", vn: "rèn kỹ năng làm việc độc lập" }
                         ]
                     }
                 ],
@@ -6099,35 +6241,42 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Rất quan trọng - Rèn kỹ năng sống thiết yếu & Duy trì lối sống lành mạnh):</div>
                     <div class="topic-formula-text">
-                        → I think a cooking class is very important. It teaches people <span class="formula-bracket-hl">[kỹ năng học được]</span> and helps them <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → I think a cooking class is very important. It teaches people <span class="formula-bracket-hl">[kỹ năng học được]</span> and helps them <span class="formula-bracket-hl">[lợi ích - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Hữu ích nhưng không bắt buộc - Có thể tự học qua video mạng để tiết kiệm):</div>
                     <div class="topic-formula-text">
-                        → It's quite useful, but not necessary. People can easily learn cooking through <span class="formula-bracket-hl">[kênh tự học]</span> to <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → It's quite useful, but not necessary. People can easily learn cooking through <span class="formula-bracket-hl">[kênh tự học]</span> to <span class="formula-bracket-hl">[lợi ích - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🌟 [Kỹ năng thiết yếu & Lợi ích] (Cách 1):",
+                        title: "🌟 [Kỹ năng học được] (Cách 1):",
                         items: [
-                            { en: "essential life skills", vn: "các kỹ năng sống thiết yếu" },
-                            { en: "proper cooking methods", vn: "các phương pháp nấu ăn bài bản" },
-                            { en: "how to choose fresh ingredients", vn: "cách lựa chọn nguyên liệu tươi sạch" },
-                            { en: "maintain a healthy lifestyle", vn: "duy trì lối sống lành mạnh" },
-                            { en: "prepare healthy meals", vn: "tự chuẩn bị bữa ăn dinh dưỡng" },
-                            { en: "take care of their health", vn: "tự chăm sóc sức khỏe của mình" }
+                            { en: "essential life skills", vn: "những kỹ năng sống thiết yếu" },
+                            { en: "proper cooking methods", vn: "các phương pháp chế biến đúng cách" },
+                            { en: "how to choose fresh ingredients", vn: "cách chọn nguyên liệu tươi ngon" },
+                            { en: "useful kitchen safety rules", vn: "các quy tắc an toàn nhà bếp hữu ích" }
                         ]
                     },
                     {
-                        title: "💡 [Kênh tự học & Tiết kiệm] (Cách 2):",
+                        title: "📱 [Kênh tự học] (Cách 2):",
                         items: [
-                            { en: "free online videos", vn: "video hướng dẫn miễn phí trên mạng" },
+                            { en: "free online videos", vn: "các video trực tuyến miễn phí" },
                             { en: "cooking books", vn: "sách dạy nấu ăn" },
-                            { en: "family members", vn: "người thân trong gia đình" },
-                            { en: "save money", vn: "tiết kiệm tiền bạc" },
-                            { en: "study at home", vn: "tự học tại nhà" }
+                            { en: "family members", vn: "các thành viên trong gia đình" },
+                            { en: "social media tutorials", vn: "các bài hướng dẫn trên mạng xã hội" }
+                        ]
+                    },
+                    {
+                        title: "⭐ [Lợi ích] (Cách 1 & 2):",
+                        items: [
+                            { en: "maintain a healthy lifestyle", vn: "duy trì lối sống lành mạnh" },
+                            { en: "prepare healthy meals", vn: "chuẩn bị những bữa ăn tốt cho sức khỏe" },
+                            { en: "take care of their health", vn: "tự chăm sóc sức khỏe bản thân" },
+                            { en: "save money", vn: "tiết kiệm chi phí học phí" },
+                            { en: "study comfortably at home", vn: "học thoải mái ngay tại nhà" }
                         ]
                     }
                 ],
@@ -6158,36 +6307,60 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Duy trì thói quen ăn uống & rèn luyện tốt):</div>
                     <div class="topic-formula-text">
-                        → Yes, I do. I think I'm a healthy person because I usually <span class="formula-bracket-hl">[thói quen lành mạnh 1]</span> and <span class="formula-bracket-hl">[thói quen lành mạnh 2]</span>. It helps me <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → Yes, I do. I think I'm a healthy person because I usually <span class="formula-bracket-hl">[thói quen lành mạnh 1 - Vo]</span> and <span class="formula-bracket-hl">[thói quen lành mạnh 2 - Vo]</span>. It helps me <span class="formula-bracket-hl">[lợi ích - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Trả lời CHƯA HẲN - Bận rộn công việc, đôi khi thức khuya và đang cố cải thiện):</div>
                     <div class="topic-formula-text">
-                        → Not really. I'm often busy with my <span class="formula-bracket-hl">[lý do]</span>, so I sometimes <span class="formula-bracket-hl">[thói quen chưa tốt]</span>. However, I'm trying to <span class="formula-bracket-hl">[mục tiêu cải thiện]</span>.
+                        → Not really. I'm often busy with my <span class="formula-bracket-hl">[lý do]</span>, so I sometimes <span class="formula-bracket-hl">[thói quen chưa tốt - Vo]</span>. However, I'm trying to <span class="formula-bracket-hl">[mục tiêu cải thiện - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🥗 [Thói quen lành mạnh & Lợi ích] (Cách 1):",
+                        title: "🥗 [Thói quen lành mạnh] (Cách 1):",
                         items: [
-                            { en: "eat healthy food", vn: "ăn uống thực phẩm lành mạnh" },
+                            { en: "eat healthy food", vn: "ăn thực phẩm lành mạnh" },
                             { en: "exercise every day", vn: "tập thể dục mỗi ngày" },
                             { en: "drink enough water", vn: "uống đủ nước" },
                             { en: "get enough sleep", vn: "ngủ đủ giấc" },
-                            { en: "stay energetic", vn: "luôn tràn đầy năng lượng" },
-                            { en: "stay in good shape", vn: "giữ vóc dáng cân đối" }
+                            { en: "play sports regularly", vn: "chơi thể thao đều đặn" }
                         ]
                     },
                     {
-                        title: "⏳ [Lý do & Thói quen cần cải thiện] (Cách 2):",
+                        title: "⭐ [Lợi ích sức khỏe] (Cách 1):",
                         items: [
-                            { en: "work and studies", vn: "công việc và học tập" },
+                            { en: "stay energetic", vn: "luôn tràn đầy năng lượng" },
+                            { en: "stay in good shape", vn: "giữ vóc dáng cân đối" },
+                            { en: "prevent common illnesses", vn: "ngăn ngừa các bệnh vặt" },
+                            { en: "improve my physical health", vn: "cải thiện thể chất" }
+                        ]
+                    },
+                    {
+                        title: "⏳ [Lý do bận rộn] (Cách 2):",
+                        items: [
+                            { en: "work and studies", vn: "công việc và việc học" },
                             { en: "daily work", vn: "công việc hằng ngày" },
+                            { en: "university exams", vn: "các kỳ thi đại học" },
+                            { en: "tight schedule", vn: "lịch trình dày đặc" }
+                        ]
+                    },
+                    {
+                        title: "🍔 [Thói quen chưa tốt] (Cách 2):",
+                        items: [
                             { en: "stay up late", vn: "thức khuya" },
                             { en: "skip breakfast", vn: "bỏ bữa sáng" },
+                            { en: "eat fast food", vn: "ăn đồ ăn nhanh" },
+                            { en: "sit for long hours", vn: "ngồi làm việc nhiều giờ liền" }
+                        ]
+                    },
+                    {
+                        title: "🎯 [Mục tiêu cải thiện] (Cách 2):",
+                        items: [
                             { en: "exercise more", vn: "tập thể dục nhiều hơn" },
-                            { en: "sleep earlier", vn: "đi ngủ sớm hơn" }
+                            { en: "sleep earlier", vn: "đi ngủ sớm hơn" },
+                            { en: "eat more green vegetables", vn: "ăn nhiều rau xanh hơn" },
+                            { en: "build healthier habits", vn: "xây dựng thói quen lành mạnh hơn" }
                         ]
                     }
                 ],
@@ -6211,37 +6384,44 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Tập thể thao buổi sáng & Ăn nhiều rau xanh để giữ dáng):</div>
                     <div class="topic-formula-text">
-                        → To stay fit, I usually <span class="formula-bracket-hl">[hoạt động thể thao]</span> every morning. Moreover, I try to <span class="formula-bracket-hl">[thói quen ăn uống]</span> to <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → To stay fit, I usually <span class="formula-bracket-hl">[hoạt động thể thao - Vo]</span> every morning. Moreover, I try to <span class="formula-bracket-hl">[thói quen ăn uống - Vo]</span> to <span class="formula-bracket-hl">[lợi ích - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Ăn trái cây rau củ & Ngủ đủ giấc để học tập và làm việc hiệu quả):</div>
                     <div class="topic-formula-text">
-                        → I maintain my health by <span class="formula-bracket-hl">[chế độ ăn uống]</span> and getting enough sleep. It helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>.
+                        → I maintain my health by <span class="formula-bracket-hl">[chế độ ăn uống - Ving]</span> and getting enough sleep. It helps me <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span> and <span class="formula-bracket-hl">[lợi ích 2 - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏃 [Thể thao & Dinh dưỡng] (Cách 1):",
+                        title: "🏃 [Hoạt động thể thao] (Cách 1):",
                         items: [
                             { en: "go jogging in the park", vn: "chạy bộ trong công viên" },
                             { en: "do morning exercises", vn: "tập thể dục buổi sáng" },
                             { en: "go swimming", vn: "đi bơi" },
-                            { en: "eat more green vegetables", vn: "ăn nhiều rau xanh" },
-                            { en: "cut down on sugar", vn: "cắt giảm lượng đường" },
-                            { en: "keep fit", vn: "giữ dáng cân đối" },
-                            { en: "stay healthy", vn: "giữ gìn sức khỏe" }
+                            { en: "play badminton", vn: "chơi cầu lông" },
+                            { en: "work out at the gym", vn: "tập luyện tại phòng gym" }
                         ]
                     },
                     {
-                        title: "🍎 [Chế độ ăn & Lợi ích làm việc] (Cách 2):",
+                        title: "🍎 [Thói quen & Chế độ ăn uống] (Cách 1 & 2):",
                         items: [
-                            { en: "eating fresh fruits and vegetables", vn: "ăn hoa quả và rau củ tươi" },
-                            { en: "drinking plenty of water", vn: "uống nhiều nước" },
-                            { en: "avoiding fast food", vn: "tránh đồ ăn nhanh" },
+                            { en: "eat more green vegetables", vn: "ăn nhiều rau xanh hơn" },
+                            { en: "eat fresh fruits and vegetables", vn: "ăn hoa quả và rau củ tươi" },
+                            { en: "drink plenty of water", vn: "uống nhiều nước" },
+                            { en: "cut down on sugar", vn: "cắt giảm lượng đường" },
+                            { en: "avoid fast food", vn: "tránh đồ ăn nhanh" }
+                        ]
+                    },
+                    {
+                        title: "⭐ [Lợi ích cho cơ thể & công việc] (Cách 1 & 2):",
+                        items: [
+                            { en: "keep fit", vn: "giữ dáng thon gọn" },
+                            { en: "stay healthy", vn: "duy trì sức khỏe tốt" },
                             { en: "study and work effectively", vn: "học tập và làm việc hiệu quả" },
-                            { en: "clear my mind", vn: "thư thái đầu óc" },
-                            { en: "regain my energy", vn: "phục hồi năng lượng" }
+                            { en: "clear my mind", vn: "giúp đầu óc minh mẫn" },
+                            { en: "regain my energy", vn: "nạp lại năng lượng" }
                         ]
                     }
                 ],
@@ -6265,33 +6445,41 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Làm việc học tập hiệu quả & Dành thời gian chất lượng cho gia đình):</div>
                     <div class="topic-formula-text">
-                        → In my opinion, good health helps people <span class="formula-bracket-hl">[lợi ích 1]</span>. Moreover, it allows us to <span class="formula-bracket-hl">[lợi ích 2]</span> and enjoy life.
+                        → In my opinion, good health helps people <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span>. Moreover, it allows us to <span class="formula-bracket-hl">[lợi ích 2 - Vo]</span> and enjoy life.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Tránh bệnh tật, tiết kiệm viện phí & Tinh thần tự tin mỗi ngày):</div>
                     <div class="topic-formula-text">
-                        → Having good health helps us <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>. It also makes us feel <span class="formula-bracket-hl">[tính từ cảm xúc]</span> every day.
+                        → Having good health helps us <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span> and <span class="formula-bracket-hl">[lợi ích 2 - Vo]</span>. It also makes us feel <span class="formula-bracket-hl">[tính từ cảm xúc]</span> every day.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "💼 [Hiệu quả công việc & Cuộc sống] (Cách 1):",
+                        title: "💼 [Lợi ích cho công việc & cuộc sống] (Cách 1):",
                         items: [
                             { en: "work and study effectively", vn: "làm việc và học tập hiệu quả" },
-                            { en: "stay focused throughout the day", vn: "tập trung suốt cả ngày" },
-                            { en: "spend quality time with family", vn: "dành thời gian chất lượng cho gia đình" },
-                            { en: "pursue personal hobbies", vn: "theo đuổi sở thích cá nhân" }
+                            { en: "stay focused throughout the day", vn: "giữ sự tập trung suốt cả ngày" },
+                            { en: "spend quality time with family", vn: "dành thời gian chất lượng bên gia đình" },
+                            { en: "pursue personal hobbies", vn: "theo đuổi các sở thích cá nhân" }
                         ]
                     },
                     {
-                        title: "🛡️ [Phòng bệnh & Cảm xúc tích cực] (Cách 2):",
+                        title: "🛡️ [Lợi ích phòng bệnh & Tiết kiệm] (Cách 2):",
                         items: [
-                            { en: "avoid serious diseases", vn: "tránh các bệnh nghiêm trọng" },
-                            { en: "save medical money", vn: "tiết kiệm chi phí khám chữa bệnh" },
+                            { en: "avoid serious diseases", vn: "tránh được các căn bệnh nghiêm trọng" },
+                            { en: "save medical money", vn: "tiết kiệm chi phí y tế" },
                             { en: "stay energetic", vn: "luôn tràn đầy năng lượng" },
-                            { en: "happy and confident", vn: "hạnh phúc và tự tin" },
-                            { en: "relaxed and optimistic", vn: "thư thái và lạc quan" }
+                            { en: "live a longer life", vn: "sống lâu và khỏe mạnh hơn" }
+                        ]
+                    },
+                    {
+                        title: "😊 [Tính từ cảm xúc] (Cách 2):",
+                        items: [
+                            { en: "happy and confident", vn: "vui vẻ và tự tin" },
+                            { en: "relaxed and optimistic", vn: "thư thái và lạc quan" },
+                            { en: "cheerful and active", vn: "tươi vui và năng động" },
+                            { en: "peaceful", vn: "bình yên, an tâm" }
                         ]
                     }
                 ],
@@ -6322,36 +6510,59 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời HIẾM KHI - Hệ miễn dịch tốt, thường xuyên rèn luyện ngừa bệnh):</div>
                     <div class="topic-formula-text">
-                        → No, I rarely get sick because I have a <span class="formula-bracket-hl">[đặc điểm thể chất]</span>. I usually <span class="formula-bracket-hl">[thói quen tốt]</span> to <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → No, I rarely get sick because I have a <span class="formula-bracket-hl">[đặc điểm thể chất]</span>. I usually <span class="formula-bracket-hl">[thói quen tốt - Vo]</span> to <span class="formula-bracket-hl">[lợi ích - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Trả lời ĐÔI KHI - Bị cảm nhẹ khi thời tiết đổi mùa, nhanh hồi phục nhờ nghỉ ngơi):</div>
                     <div class="topic-formula-text">
-                        → Sometimes, I catch a <span class="formula-bracket-hl">[tên bệnh nhẹ]</span> when the weather changes. However, I quickly recover after <span class="formula-bracket-hl">[hành động tự chăm sóc]</span>.
+                        → Sometimes, I catch a <span class="formula-bracket-hl">[tên bệnh nhẹ]</span> when the weather changes. However, I quickly recover after <span class="formula-bracket-hl">[hành động tự chăm sóc - Ving]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🛡️ [Thể chất tốt & Phòng ngừa] (Cách 1):",
+                        title: "🛡️ [Đặc điểm thể chất] (Cách 1):",
                         items: [
                             { en: "strong immune system", vn: "hệ miễn dịch khỏe mạnh" },
-                            { en: "good physical condition", vn: "thể trạng sức khỏe tốt" },
-                            { en: "exercise regularly", vn: "tập thể dục đều đặn" },
-                            { en: "eat balanced meals", vn: "ăn uống cân bằng dinh dưỡng" },
-                            { en: "prevent some health problems", vn: "phòng ngừa một số vấn đề sức khỏe" },
-                            { en: "avoid getting sick", vn: "tránh bị ốm đau" }
+                            { en: "good physical condition", vn: "thể trạng tốt" },
+                            { en: "healthy body", vn: "cơ thể khỏe khoắn" },
+                            { en: "active lifestyle", vn: "lối sống năng động" }
                         ]
                     },
                     {
-                        title: "🤒 [Bệnh thường gặp & Tự chăm sóc] (Cách 2):",
+                        title: "🏃 [Thói quen tốt] (Cách 1):",
+                        items: [
+                            { en: "exercise regularly", vn: "tập thể dục đều đặn" },
+                            { en: "eat balanced meals", vn: "ăn các bữa ăn cân bằng dinh dưỡng" },
+                            { en: "take vitamins daily", vn: "bổ sung vitamin hằng ngày" },
+                            { en: "drink plenty of water", vn: "uống nhiều nước mỗi ngày" }
+                        ]
+                    },
+                    {
+                        title: "⭐ [Lợi ích phòng bệnh] (Cách 1):",
+                        items: [
+                            { en: "prevent some health problems", vn: "ngăn ngừa một số vấn đề sức khỏe" },
+                            { en: "avoid getting sick", vn: "tránh bị ốm" },
+                            { en: "stay healthy and strong", vn: "giữ cơ thể khỏe mạnh và dẻo dai" },
+                            { en: "protect my health", vn: "bảo vệ sức khỏe bản thân" }
+                        ]
+                    },
+                    {
+                        title: "🤒 [Tên bệnh nhẹ] (Cách 2):",
                         items: [
                             { en: "cold", vn: "cảm lạnh" },
-                            { en: "flu", vn: "cúm" },
+                            { en: "flu", vn: "cảm cúm" },
                             { en: "mild headache", vn: "đau đầu nhẹ" },
-                            { en: "taking some medicine and resting at home", vn: "uống thuốc và nghỉ ngơi tại nhà" },
-                            { en: "drinking plenty of warm water", vn: "uống nhiều nước ấm" },
-                            { en: "sleeping for a few hours", vn: "ngủ sâu vài tiếng" }
+                            { en: "sore throat", vn: "đau họng" }
+                        ]
+                    },
+                    {
+                        title: "🍵 [Hành động tự chăm sóc] (Cách 2):",
+                        items: [
+                            { en: "take some medicine and rest at home", vn: "uống thuốc và nghỉ ngơi tại nhà" },
+                            { en: "drink plenty of warm water", vn: "uống nhiều nước ấm" },
+                            { en: "sleep for a few hours", vn: "ngủ sâu vài tiếng" },
+                            { en: "eat hot chicken porridge", vn: "ăn cháo gà nóng" }
                         ]
                     }
                 ],
@@ -6375,35 +6586,49 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Chỉ đi khi ốm nặng - Bình thường tự nghỉ ngơi uống nước ấm tại nhà):</div>
                     <div class="topic-formula-text">
-                        → No, I only see a doctor when I'm <span class="formula-bracket-hl">[tình trạng sức khỏe]</span>. Normally, I just <span class="formula-bracket-hl">[hành động tự chăm sóc]</span> at home.
+                        → No, I only see a doctor when I'm <span class="formula-bracket-hl">[tình trạng sức khỏe]</span>. Normally, I just <span class="formula-bracket-hl">[hành động tự chăm sóc - Vo]</span> at home.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Đi định kỳ - Khám tổng quát để tầm soát bệnh sớm và bảo vệ sức khỏe):</div>
                     <div class="topic-formula-text">
-                        → I usually visit the doctor <span class="formula-bracket-hl">[tần suất]</span> for a health check-up. It helps me <span class="formula-bracket-hl">[lợi ích 1]</span> and <span class="formula-bracket-hl">[lợi ích 2]</span>.
+                        → I usually visit the doctor <span class="formula-bracket-hl">[tần suất]</span> for a health check-up. It helps me <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span> and <span class="formula-bracket-hl">[lợi ích 2 - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏠 [Tình trạng & Tự chăm sóc tại nhà] (Cách 1):",
+                        title: "🤒 [Tình trạng sức khỏe] (Cách 1):",
                         items: [
-                            { en: "seriously sick", vn: "ốm nặng" },
+                            { en: "seriously sick", vn: "bị ốm nặng" },
                             { en: "really unwell", vn: "thực sự không khỏe" },
-                            { en: "take a rest and drink warm water", vn: "nghỉ ngơi và uống nước ấm" },
-                            { en: "take some light medicine", vn: "uống thuốc nhẹ" },
-                            { en: "relax in bed", vn: "nằm nghỉ ngơi trên giường" }
+                            { en: "running a high fever", vn: "bị sốt cao" },
+                            { en: "in severe pain", vn: "bị đau nặng" }
                         ]
                     },
                     {
-                        title: "🩺 [Khám định kỳ & Tầm soát sớm] (Cách 2):",
+                        title: "🏠 [Hành động tự chăm sóc tại nhà] (Cách 1):",
+                        items: [
+                            { en: "take a rest and drink warm water", vn: "nghỉ ngơi và uống nước ấm" },
+                            { en: "take some light medicine", vn: "uống một ít thuốc nhẹ" },
+                            { en: "relax in bed", vn: "nằm nghỉ thư giãn trên giường" },
+                            { en: "eat nutritious hot soup", vn: "ăn súp nóng bổ dưỡng" }
+                        ]
+                    },
+                    {
+                        title: "📅 [Tần suất khám định kỳ] (Cách 2):",
                         items: [
                             { en: "twice a year", vn: "hai lần một năm" },
-                            { en: "once a year", vn: "một lần mỗi năm" },
-                            { en: "every six months", vn: "mỗi sáu tháng một lần" },
-                            { en: "detect illnesses early", vn: "phát hiện bệnh tật sớm" },
-                            { en: "protect my health", vn: "bảo vệ sức khỏe của mình" },
-                            { en: "receive medical advice", vn: "nhận lời khuyên y tế" }
+                            { en: "once a year", vn: "một lần một năm" },
+                            { en: "every six months", vn: "mỗi sáu tháng một lần" }
+                        ]
+                    },
+                    {
+                        title: "🩺 [Lợi ích khám sức khỏe định kỳ] (Cách 2):",
+                        items: [
+                            { en: "detect illnesses early", vn: "phát hiện sớm các căn bệnh" },
+                            { en: "protect my health", vn: "bảo vệ sức khỏe bản thân" },
+                            { en: "receive medical advice", vn: "nhận lời khuyên y tế từ bác sĩ" },
+                            { en: "prevent serious diseases", vn: "phòng ngừa các bệnh nguy hiểm" }
                         ]
                     }
                 ],
@@ -6427,33 +6652,42 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Do có nhiều dịch bệnh nên chủ động ăn sạch, tập luyện):</div>
                     <div class="topic-formula-text">
-                        → Yes, I do. People care more about their health because <span class="formula-bracket-hl">[lý do]</span>. Therefore, they <span class="formula-bracket-hl">[hành động bảo vệ sức khỏe]</span>.
+                        → Yes, I do. People care more about their health because <span class="formula-bracket-hl">[lý do]</span>. Therefore, they <span class="formula-bracket-hl">[hành động bảo vệ sức khỏe - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Nhiều người vẫn lơ là sức khỏe, thức khuya và ăn thức ăn nhanh vì bận rộn):</div>
                     <div class="topic-formula-text">
-                        → Not really. Many people still <span class="formula-bracket-hl">[thực trạng lơ là]</span>. They often stay up late, work overtime, and <span class="formula-bracket-hl">[thói quen xấu - Vo]</span> every day.
+                        → Not really. Many people still <span class="formula-bracket-hl">[thực trạng lơ là - Vo]</span>. They often stay up late, work overtime, and <span class="formula-bracket-hl">[thói quen xấu - Vo]</span> every day.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🌍 [Nguyên nhân & Hành động bảo vệ] (Cách 1):",
+                        title: "🌍 [Lý do quan tâm sức khỏe] (Cách 1):",
                         items: [
-                            { en: "there are more diseases nowadays", vn: "ngày nay có nhiều bệnh tật hơn" },
-                            { en: "pollution is getting worse", vn: "ô nhiễm môi trường ngày càng nghiêm trọng" },
-                            { en: "eat clean food and exercise more", vn: "ăn thực phẩm sạch và tập thể dục nhiều hơn" },
-                            { en: "buy organic products", vn: "mua thực phẩm hữu cơ" },
-                            { en: "go to fitness centers", vn: "đến các phòng tập gym / thể hình" }
+                            { en: "there are more diseases nowadays", vn: "ngày nay có nhiều dịch bệnh hơn" },
+                            { en: "pollution is getting worse", vn: "ô nhiễm môi trường ngày càng tệ hơn" },
+                            { en: "medical costs are rising", vn: "chi phí y tế ngày càng tăng cao" },
+                            { en: "health awareness is higher", vn: "nhận thức về sức khỏe được nâng cao" }
                         ]
                     },
                     {
-                        title: "⏰ [Lơ là sức khỏe & Thức khuya] (Cách 2):",
+                        title: "🥗 [Hành động bảo vệ sức khỏe] (Cách 1):",
                         items: [
-                            { en: "ignore their personal health", vn: "lơ là sức khỏe cá nhân" },
-                            { en: "eat unhealthy fast food", vn: "ăn thức ăn nhanh không lành mạnh" },
-                            { en: "stay up late working overtime", vn: "thức khuya làm thêm giờ" },
-                            { en: "skip regular morning exercise", vn: "bỏ tập thể dục buổi sáng đều đặn" }
+                            { en: "eat clean food and exercise more", vn: "ăn thực phẩm sạch và tập thể dục nhiều hơn" },
+                            { en: "buy organic products", vn: "mua các sản phẩm hữu cơ" },
+                            { en: "go to fitness centers", vn: "đến các trung tâm thể hình" },
+                            { en: "have regular health check-ups", vn: "đi khám sức khỏe định kỳ" }
+                        ]
+                    },
+                    {
+                        title: "⏰ [Thực trạng lơ là & Thói quen xấu] (Cách 2):",
+                        items: [
+                            { en: "ignore their personal health", vn: "bỏ bê sức khỏe cá nhân" },
+                            { en: "neglect physical exercise", vn: "xem nhẹ việc vận động thể chất" },
+                            { en: "eat unhealthy fast food", vn: "ăn đồ ăn nhanh không lành mạnh" },
+                            { en: "drink too much coffee and soda", vn: "uống quá nhiều cà phê và nước ngọt" },
+                            { en: "skip regular morning exercise", vn: "bỏ qua việc tập thể dục buổi sáng" }
                         ]
                     }
                 ],
@@ -6484,7 +6718,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Thứ Bảy / Cuối tuần - Ngủ nướng, nghỉ ngơi sau tuần bận rộn):</div>
                     <div class="topic-formula-text">
-                        → My favorite day of the week is <span class="formula-bracket-hl">[ngày trong tuần]</span> because I can <span class="formula-bracket-hl">[lý do chính]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                        → My favorite day of the week is <span class="formula-bracket-hl">[ngày trong tuần]</span> because I can <span class="formula-bracket-hl">[lý do chính - Vo]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -6495,14 +6729,22 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🗓️ [Ngày trong tuần & Lý do] (Cách 1):",
+                        title: "🗓️ [Ngày trong tuần]:",
                         items: [
-                            { en: "Saturday", vn: "thứ Bảy" },
-                            { en: "Sunday", vn: "Chủ nhật" },
+                            { en: "Saturday", vn: "Thứ Bảy" },
+                            { en: "Sunday", vn: "Chủ Nhật" },
+                            { en: "Friday", vn: "Thứ Sáu" }
+                        ]
+                    },
+                    {
+                        title: "🛌 [Lý do yêu thích] (Cách 1 & 2):",
+                        items: [
                             { en: "sleep in", vn: "ngủ nướng" },
                             { en: "wake up late", vn: "thức dậy muộn" },
                             { en: "rest after a busy week", vn: "nghỉ ngơi sau một tuần bận rộn" },
-                            { en: "have free time for myself", vn: "có thời gian rảnh cho bản thân" }
+                            { en: "have free time for myself", vn: "có thời gian rảnh cho bản thân" },
+                            { en: "the weekend is coming soon", vn: "kỳ nghỉ cuối tuần sắp đến" },
+                            { en: "my days off are coming", vn: "những ngày nghỉ của tôi đang tới gần" }
                         ]
                     },
                     {
@@ -6510,19 +6752,17 @@ const practiceTopicsData = [
                         items: [
                             { en: "relax after a long week", vn: "thư giãn sau một tuần dài" },
                             { en: "clear my mind", vn: "thư thái đầu óc" },
-                            { en: "enjoy my free time", vn: "tận hưởng thời gian rảnh rỗi" },
-                            { en: "regain my energy", vn: "phục hồi năng lượng" }
+                            { en: "enjoy my free time", vn: "tận hưởng thời gian rảnh" },
+                            { en: "regain my energy", vn: "nạp lại năng lượng" }
                         ]
                     },
                     {
-                        title: "✨ [Ngày yêu thích, Lý do & Cảm xúc] (Cách 2):",
+                        title: "😊 [Tính từ cảm xúc] (Cách 2):",
                         items: [
-                            { en: "Friday", vn: "thứ Sáu" },
-                            { en: "the weekend is coming soon", vn: "cuối tuần sắp đến gần" },
-                            { en: "my days off are coming", vn: "những ngày nghỉ sắp đến" },
-                            { en: "excited and cheerful", vn: "hào hứng và vui tươi" },
-                            { en: "happy and energetic", vn: "vui vẻ và tràn đầy năng lượng" },
-                            { en: "relaxed", vn: "thư thái" }
+                            { en: "excited and cheerful", vn: "hào hứng và vui vẻ" },
+                            { en: "happy and energetic", vn: "hạnh phúc và tràn đầy năng lượng" },
+                            { en: "relaxed and comfortable", vn: "thư thái và thoải mái" },
+                            { en: "refreshed", vn: "sảng khoái" }
                         ]
                     }
                 ],
@@ -6546,46 +6786,54 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đi cà phê, gặp gỡ bạn bè để giải trí và giảm căng thẳng):</div>
                     <div class="topic-formula-text">
-                        → On this day, I often <span class="formula-bracket-hl">[hoạt động ra ngoài]</span> with my <span class="formula-bracket-hl">[đối tượng]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí]</span> and <span class="formula-bracket-hl">[lợi ích sức khỏe]</span>.
+                        → On this day, I often <span class="formula-bracket-hl">[hoạt động ra ngoài - Vo]</span> with my <span class="formula-bracket-hl">[đối tượng]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí - Vo]</span> and <span class="formula-bracket-hl">[lợi ích sức khỏe - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Ở nhà nấu nướng, xem phim cùng gia đình để thư giãn):</div>
                     <div class="topic-formula-text">
-                        → I usually stay at home to <span class="formula-bracket-hl">[hoạt động tại nhà 1]</span> and <span class="formula-bracket-hl">[hoạt động tại nhà 2]</span>. It's a great way to <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                        → I usually stay at home to <span class="formula-bracket-hl">[hoạt động tại nhà 1 - Vo]</span> and <span class="formula-bracket-hl">[hoạt động tại nhà 2 - Vo]</span>. It's a great way to <span class="formula-bracket-hl">[lợi ích giải trí - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "☕ [Hoạt động ra ngoài & Đối tượng] (Cách 1):",
+                        title: "☕ [Hoạt động ra ngoài] (Cách 1):",
                         items: [
                             { en: "hang out at a coffee shop", vn: "đi chơi ở quán cà phê" },
                             { en: "walk in the park", vn: "đi dạo trong công viên" },
-                            { en: "chat with my best friends", vn: "tán gẫu cùng bạn thân" },
-                            { en: "my close friends", vn: "những người bạn thân" },
-                            { en: "my classmates", vn: "bạn cùng lớp" }
+                            { en: "eat out at a nice restaurant", vn: "ăn ngoài tại một nhà hàng ngon" },
+                            { en: "go shopping at the mall", vn: "đi mua sắm ở trung tâm thương mại" },
+                            { en: "watch a movie at the cinema", vn: "xem phim tại rạp" }
                         ]
                     },
                     {
-                        title: "🎉 [Lợi ích giải trí & Sức khỏe] (Cách 1):",
+                        title: "👥 [Đối tượng đi cùng] (Cách 1):",
+                        items: [
+                            { en: "close friends", vn: "những người bạn thân" },
+                            { en: "best friends", vn: "bạn thân nhất" },
+                            { en: "classmates", vn: "bạn cùng lớp" },
+                            { en: "family members", vn: "các thành viên gia đình" }
+                        ]
+                    },
+                    {
+                        title: "🏡 [Hoạt động tại nhà] (Cách 2):",
+                        items: [
+                            { en: "cook nice meals", vn: "nấu những bữa ăn ngon" },
+                            { en: "watch movies", vn: "xem phim" },
+                            { en: "listen to acoustic music", vn: "nghe nhạc acoustic nhẹ nhàng" },
+                            { en: "read my favorite books", vn: "đọc những cuốn sách yêu thích" },
+                            { en: "clean and decorate my room", vn: "dọn dẹp và trang trí phòng" }
+                        ]
+                    },
+                    {
+                        title: "🎉 [Lợi ích giải trí & Sức khỏe] (Cách 1 & 2):",
                         items: [
                             { en: "improve my mood", vn: "cải thiện tâm trạng" },
-                            { en: "have fun", vn: "vui vẻ" },
-                            { en: "pass the time", vn: "giết thời gian ý nghĩa" },
-                            { en: "reduce stress", vn: "giảm bớt căng thẳng" },
+                            { en: "have fun", vn: "vui vẻ giải trí" },
+                            { en: "reduce stress", vn: "giảm căng thẳng" },
                             { en: "clear my mind", vn: "thư thái đầu óc" },
-                            { en: "take a mental break", vn: "nghỉ ngơi tinh thần" }
-                        ]
-                    },
-                    {
-                        title: "🏡 [Hoạt động tại nhà & Lợi ích giải trí] (Cách 2):",
-                        items: [
-                            { en: "cook nice meals", vn: "nấu các bữa ăn ngon" },
-                            { en: "watch movies", vn: "xem phim" },
-                            { en: "listen to acoustic music", vn: "nghe nhạc nhẹ nhàng" },
-                            { en: "spend quality time with my family", vn: "dành thời gian quý giá bên gia đình" },
-                            { en: "enjoy my free time", vn: "tận hưởng thời gian rảnh" },
-                            { en: "relax after a busy week", vn: "thư giãn sau một tuần bận rộn" }
+                            { en: "take a mental break", vn: "nghỉ ngơi thư giãn tinh thần" },
+                            { en: "spend quality time with my family", vn: "dành thời gian chất lượng bên gia đình" }
                         ]
                     }
                 ],
@@ -6609,13 +6857,13 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Rất quan trọng - Tạo động lực giúp làm việc và học tập hiệu quả):</div>
                     <div class="topic-formula-text">
-                        → I think it's very important. It gives people something to <span class="formula-bracket-hl">[mục đích tích cực]</span> and helps them <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                        → I think it's very important. It gives people something to <span class="formula-bracket-hl">[mục đích tích cực - Vo]</span> and helps them <span class="formula-bracket-hl">[lợi ích giải trí - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Cần thiết - Cho bản thân nghỉ ngơi và nạp lại năng lượng cho tuần mới):</div>
                     <div class="topic-formula-text">
-                        → Having a special day is essential. It allows us to <span class="formula-bracket-hl">[lợi ích giải trí]</span> and <span class="formula-bracket-hl">[lợi ích sức khỏe]</span> for the upcoming week.
+                        → Having a special day is essential. It allows us to <span class="formula-bracket-hl">[lợi ích giải trí - Vo]</span> and <span class="formula-bracket-hl">[lợi ích sức khỏe - Vo]</span> for the upcoming week.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -6668,45 +6916,44 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Đi bộ mỗi tối sau bữa ăn để thư giãn và hỗ trợ tiêu hóa tốt):</div>
                     <div class="topic-formula-text">
-                        → Yes, I do. I usually take a walk <span class="formula-bracket-hl">[tần suất]</span> after dinner. It helps me <span class="formula-bracket-hl">[lợi ích giải trí]</span> and <span class="formula-bracket-hl">[lợi ích sức khỏe]</span>.
+                        → Yes, I do. I usually take a walk <span class="formula-bracket-hl">[tần suất]</span> after dinner. It helps me <span class="formula-bracket-hl">[lợi ích giải trí - Vo]</span> and <span class="formula-bracket-hl">[lợi ích sức khỏe - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Trả lời HIẾM KHI - Bận học/làm việc buổi tối, chỉ đi vào cuối tuần để hít thở không khí):</div>
                     <div class="topic-formula-text">
-                        → Not very often. I'm usually busy with my <span class="formula-bracket-hl">[lý do]</span> at night. I only go walking on <span class="formula-bracket-hl">[thời điểm rảnh]</span> to <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                        → Not very often. I'm usually busy with my <span class="formula-bracket-hl">[lý do]</span> at night. I only go walking on <span class="formula-bracket-hl">[thời điểm rảnh]</span> to <span class="formula-bracket-hl">[lợi ích giải trí - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "⏱️ [Tần suất & Thời điểm] (Cách 1):",
+                        title: "⏱️ [Tần suất & Thời điểm rảnh]:",
                         items: [
                             { en: "almost every evening", vn: "hầu như mỗi buổi tối" },
                             { en: "three or four times a week", vn: "ba hoặc bốn lần một tuần" },
-                            { en: "around seven in the evening", vn: "khoảng 7 giờ tối" }
+                            { en: "around seven in the evening", vn: "vào khoảng bảy giờ tối" },
+                            { en: "weekends", vn: "những ngày cuối tuần" },
+                            { en: "Sunday evenings", vn: "các buổi tối Chủ nhật" }
                         ]
                     },
                     {
-                        title: "🎉 [Lợi ích giải trí & Sức khỏe] (Cách 1):",
+                        title: "🎉 [Lợi ích giải trí & Sức khỏe] (Cách 1 & 2):",
                         items: [
                             { en: "relax after a busy day", vn: "thư giãn sau một ngày bận rộn" },
-                            { en: "enjoy the fresh air", vn: "tận hưởng không khí trong lành" },
-                            { en: "clear my mind", vn: "thư thái đầu óc" },
-                            { en: "digest better", vn: "hỗ trợ tiêu hóa tốt hơn" },
-                            { en: "sleep better", vn: "ngủ ngon hơn" },
-                            { en: "improve my physical health", vn: "cải thiện sức khỏe thể chất" }
+                            { en: "enjoy the fresh air", vn: "tận hưởng bầu không khí trong lành" },
+                            { en: "clear my mind", vn: "giải tỏa tâm trí" },
+                            { en: "digest better", vn: "tiêu hóa thức ăn tốt hơn" },
+                            { en: "sleep better", vn: "ngủ ngon giấc hơn" },
+                            { en: "get some fresh air", vn: "hít thở không khí thoáng đãng" }
                         ]
                     },
                     {
-                        title: "📚 [Lý do bận & Lợi ích giải trí] (Cách 2):",
+                        title: "📚 [Lý do bận rộn buổi tối] (Cách 2):",
                         items: [
-                            { en: "studies at night", vn: "việc học vào buổi tối" },
+                            { en: "studies", vn: "việc học tập" },
                             { en: "office work", vn: "công việc văn phòng" },
-                            { en: "weekends", vn: "những ngày cuối tuần" },
-                            { en: "Saturday evenings", vn: "buổi tối thứ Bảy" },
-                            { en: "get some fresh air", vn: "hít thở chút không khí trong lành" },
-                            { en: "reduce stress", vn: "giảm bớt căng thẳng" },
-                            { en: "unwind after study", vn: "thư giãn sau giờ học" }
+                            { en: "evening classes", vn: "các lớp học buổi tối" },
+                            { en: "homework and projects", vn: "bài tập về nhà và dự án" }
                         ]
                     }
                 ],
@@ -6736,30 +6983,44 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Khu phố yên tĩnh quanh nhà - Tiện lợi, không phải đi xa):</div>
                     <div class="topic-formula-text">
-                        → I usually stroll around my <span class="formula-bracket-hl">[khu vực]</span>. It's very <span class="formula-bracket-hl">[tính từ]</span>, so I don't need to <span class="formula-bracket-hl">[hành động phiền toái]</span>.
+                        → I usually stroll around my <span class="formula-bracket-hl">[khu vực]</span>. It's very <span class="formula-bracket-hl">[tính từ]</span>, so I don't need to <span class="formula-bracket-hl">[hành động phiền toái - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🌳 [Địa điểm & Đặc điểm công viên] (Cách 1):",
+                        title: "🌳 [Địa điểm đi bộ & Khu vực]:",
                         items: [
                             { en: "public park", vn: "công viên công cộng" },
-                            { en: "local lake", vn: "khu vực hồ nước gần nhà" },
-                            { en: "lots of green trees", vn: "nhiều cây xanh bóng mát" },
-                            { en: "wide walking paths", vn: "đường đi bộ rộng rãi" },
-                            { en: "peaceful", vn: "thanh bình, yên ả" },
-                            { en: "quiet and cool", vn: "yên tĩnh và mát mẻ" }
+                            { en: "local lake", vn: "hồ nước ở địa phương" },
+                            { en: "quiet neighborhood", vn: "khu phố yên tĩnh" },
+                            { en: "residential area", vn: "khu dân cư quanh nhà" }
                         ]
                     },
                     {
-                        title: "🏘️ [Khu vực quanh nhà & Tiện lợi] (Cách 2):",
+                        title: "🌿 [Đặc điểm không gian] (Cách 1):",
                         items: [
-                            { en: "quiet neighborhood", vn: "khu phố yên tĩnh quanh nhà" },
-                            { en: "residential area", vn: "khu dân cư" },
-                            { en: "convenient", vn: "tiện lợi" },
-                            { en: "close to home", vn: "gần ngay nhà" },
-                            { en: "travel far away from home", vn: "phải đi lại xa nhà" },
-                            { en: "ride a motorbike", vn: "phải chạy xe máy ra đường" }
+                            { en: "lots of green trees", vn: "nhiều cây xanh" },
+                            { en: "wide walking paths", vn: "lối đi bộ rộng rãi" },
+                            { en: "fresh air and flowers", vn: "không khí trong lành và nhiều hoa" },
+                            { en: "beautiful lakeside views", vn: "cảnh bờ hồ đẹp mắt" }
+                        ]
+                    },
+                    {
+                        title: "✨ [Tính từ mô tả] (Cách 1 & 2):",
+                        items: [
+                            { en: "peaceful", vn: "yên bình" },
+                            { en: "quiet and cool", vn: "yên tĩnh và mát mẻ" },
+                            { en: "convenient", vn: "thuận tiện" },
+                            { en: "clean and airy", vn: "sạch sẽ và thoáng đãng" }
+                        ]
+                    },
+                    {
+                        title: "🛵 [Hành động phiền toái không cần làm] (Cách 2):",
+                        items: [
+                            { en: "travel far away from home", vn: "đi xa khỏi nhà" },
+                            { en: "ride a motorbike", vn: "lái xe máy" },
+                            { en: "deal with noisy traffic", vn: "đối mặt với giao thông ồn ào" },
+                            { en: "spend time commuting", vn: "tốn thời gian di chuyển" }
                         ]
                     }
                 ],
@@ -6783,13 +7044,13 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Tập trung vào Lợi ích sức khỏe - Cải thiện thể chất, giữ dáng và ngủ ngon):</div>
                     <div class="topic-formula-text">
-                        → Walking helps people <span class="formula-bracket-hl">[lợi ích sức khỏe 1]</span> and <span class="formula-bracket-hl">[lợi ích sức khỏe 2]</span>. It also allows them to <span class="formula-bracket-hl">[lợi ích sức khỏe 3]</span> at night.
+                        → Walking helps people <span class="formula-bracket-hl">[lợi ích sức khỏe 1 - Vo]</span> and <span class="formula-bracket-hl">[lợi ích sức khỏe 2 - Vo]</span>. It also allows them to <span class="formula-bracket-hl">[lợi ích sức khỏe 3 - Vo]</span> at night.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Tập trung vào Lợi ích giải trí & Thư thái - Xua tan căng thẳng sau ngày làm việc):</div>
                     <div class="topic-formula-text">
-                        → In my opinion, it helps people <span class="formula-bracket-hl">[lợi ích giải trí 1]</span>. Moreover, it's an easy way to <span class="formula-bracket-hl">[lợi ích giải trí 2]</span> after a busy day.
+                        → In my opinion, it helps people <span class="formula-bracket-hl">[lợi ích giải trí 1 - Vo]</span>. Moreover, it's an easy way to <span class="formula-bracket-hl">[lợi ích giải trí 2 - Vo]</span> after a busy day.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -6842,40 +7103,59 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Đi mua sắm cuối tuần, xem như một cách thư giãn giải trí):</div>
                     <div class="topic-formula-text">
-                        → Yes, I do. I usually go shopping <span class="formula-bracket-hl">[tần suất]</span> to buy <span class="formula-bracket-hl">[mặt hàng]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                        → Yes, I do. I usually go shopping <span class="formula-bracket-hl">[tần suất]</span> to buy <span class="formula-bracket-hl">[mặt hàng]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Trả lời HIẾM KHI - Chỉ mua khi thực sự cần, ưu tiên mua online để tiết kiệm thời gian):</div>
                     <div class="topic-formula-text">
-                        → Not really. I only go shopping when I <span class="formula-bracket-hl">[tình huống]</span>. I prefer <span class="formula-bracket-hl">[hình thức mua sắm]</span> to save time.
+                        → Not really. I only go shopping when I <span class="formula-bracket-hl">[tình huống - Vo]</span>. I prefer <span class="formula-bracket-hl">[hình thức mua sắm - Ving]</span> to save time.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🛒 [Tần suất & Mặt hàng] (Cách 1):",
+                        title: "📅 [Tần suất đi mua sắm] (Cách 1):",
                         items: [
-                            { en: "at weekends", vn: "vào những ngày cuối tuần" },
-                            { en: "once or twice a week", vn: "một hoặc hai lần mỗi tuần" },
-                            { en: "daily groceries", vn: "đồ tạp hóa tiêu dùng hằng ngày" },
-                            { en: "fresh food and clothes", vn: "thực phẩm tươi sống và quần áo" }
+                            { en: "at weekends", vn: "vào các ngày cuối tuần" },
+                            { en: "once or twice a week", vn: "một hoặc hai lần một tuần" },
+                            { en: "every Sunday morning", vn: "vào mỗi sáng Chủ nhật" },
+                            { en: "twice a month", vn: "hai lần một tháng" }
+                        ]
+                    },
+                    {
+                        title: "🛒 [Mặt hàng thường mua] (Cách 1):",
+                        items: [
+                            { en: "daily groceries", vn: "nhu yếu phẩm hằng ngày" },
+                            { en: "fresh food and clothes", vn: "thực phẩm tươi sống và quần áo" },
+                            { en: "personal items", vn: "đồ dùng cá nhân" },
+                            { en: "household supplies", vn: "đồ dùng gia đình" }
                         ]
                     },
                     {
                         title: "🎉 [Lợi ích giải trí] (Cách 1):",
                         items: [
                             { en: "relax after a busy week", vn: "thư giãn sau một tuần bận rộn" },
-                            { en: "clear my mind", vn: "thư thái đầu óc" },
-                            { en: "enjoy my free time", vn: "tận hưởng thời gian rảnh rỗi" }
+                            { en: "clear my mind", vn: "giải tỏa tâm trí" },
+                            { en: "enjoy my free time", vn: "tận hưởng thời gian rảnh" },
+                            { en: "improve my mood", vn: "cải thiện tâm trạng" }
                         ]
                     },
                     {
-                        title: "📱 [Tình huống & Hình thức mua sắm] (Cách 2):",
+                        title: "🛍️ [Tình huống cần mua sắm] (Cách 2):",
                         items: [
-                            { en: "really need something", vn: "thực sự cần mua món đồ gì đó" },
-                            { en: "run out of food", vn: "hết sạch đồ ăn trong nhà" },
-                            { en: "shopping online", vn: "mua sắm trực tuyến qua mạng" },
-                            { en: "buying things on apps", vn: "mua đồ trên các ứng dụng điện thoại" }
+                            { en: "really need something", vn: "thực sự cần mua món đồ nào đó" },
+                            { en: "run out of food", vn: "hết thực phẩm dự trữ" },
+                            { en: "need new clothes for special events", vn: "cần quần áo mới cho dịp đặc biệt" },
+                            { en: "prepare for family dinners", vn: "chuẩn bị cho các bữa tối gia đình" }
+                        ]
+                    },
+                    {
+                        title: "📱 [Hình thức mua sắm ưu tiên] (Cách 2):",
+                        items: [
+                            { en: "shop online", vn: "mua sắm trực tuyến" },
+                            { en: "buy things on apps", vn: "mua đồ trên các ứng dụng điện thoại" },
+                            { en: "order from e-commerce websites", vn: "đặt hàng từ các trang thương mại điện tử" },
+                            { en: "use home delivery services", vn: "sử dụng dịch vụ giao hàng tận nhà" }
                         ]
                     }
                 ],
@@ -6899,36 +7179,42 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đi cùng mẹ/gia đình - Cùng chọn đồ tươi và dành thời gian ấm cúng bên nhau):</div>
                     <div class="topic-formula-text">
-                        → I usually go shopping with my <span class="formula-bracket-hl">[thành viên gia đình]</span>. We often <span class="formula-bracket-hl">[hành động cùng nhau]</span> and <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                        → I usually go shopping with my <span class="formula-bracket-hl">[thành viên gia đình]</span>. We often <span class="formula-bracket-hl">[hành động cùng nhau - Vo]</span> and <span class="formula-bracket-hl">[lợi ích giải trí - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Đi cùng bạn thân - Nhận lời khuyên chọn đồ thời trang và cải thiện tâm trạng):</div>
                     <div class="topic-formula-text">
-                        → I prefer going with my <span class="formula-bracket-hl">[đối tượng bạn bè]</span>. They give me <span class="formula-bracket-hl">[hành động hỗ trợ]</span> and help me <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                        → I prefer going with my <span class="formula-bracket-hl">[đối tượng bạn bè]</span>. They give me <span class="formula-bracket-hl">[hành động hỗ trợ]</span> and help me <span class="formula-bracket-hl">[lợi ích giải trí - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "👩‍👧 [Gia đình & Gắn kết] (Cách 1):",
+                        title: "👥 [Người đi mua sắm cùng] (Cách 1 & 2):",
                         items: [
-                            { en: "mother", vn: "mẹ của tôi" },
-                            { en: "sister", vn: "chị / em gái" },
+                            { en: "mother", vn: "mẹ" },
+                            { en: "sister", vn: "chị/em gái" },
                             { en: "family", vn: "gia đình" },
-                            { en: "choose fresh food together", vn: "cùng nhau lựa chọn thực phẩm tươi ngon" },
-                            { en: "spend quality time with each other", vn: "dành thời gian quý giá bên nhau" },
-                            { en: "enjoy our free time", vn: "tận hưởng thời gian rảnh rỗi" }
+                            { en: "best friends", vn: "những người bạn thân nhất" },
+                            { en: "close friends", vn: "bạn bè thân thiết" }
                         ]
                     },
                     {
-                        title: "👗 [Bạn bè & Lời khuyên] (Cách 2):",
+                        title: "🛍️ [Hoạt động & Hỗ trợ khi đi cùng] (Cách 1 & 2):",
                         items: [
-                            { en: "best friends", vn: "những người bạn thân nhất" },
-                            { en: "close friends", vn: "bạn bè thân thiết" },
-                            { en: "good advice on clothes", vn: "lời khuyên hữu ích về việc chọn đồ" },
-                            { en: "helpful fashion tips", vn: "các mẹo phối đồ thời trang" },
-                            { en: "improve my mood", vn: "cải thiện tâm trạng vui tươi" },
-                            { en: "have fun", vn: "vui vẻ bên nhau" }
+                            { en: "choose fresh food together", vn: "cùng nhau chọn thực phẩm tươi ngon" },
+                            { en: "compare prices carefully", vn: "cùng so sánh giá cả cẩn thận" },
+                            { en: "good advice on clothes", vn: "lời khuyên hữu ích về trang phục" },
+                            { en: "helpful fashion tips", vn: "những mẹo phối đồ thời trang hay" }
+                        ]
+                    },
+                    {
+                        title: "🎉 [Lợi ích giải trí & Gắn kết] (Cách 1 & 2):",
+                        items: [
+                            { en: "spend quality time with each other", vn: "dành thời gian chất lượng bên nhau" },
+                            { en: "enjoy our free time", vn: "tận hưởng thời gian rảnh rỗi" },
+                            { en: "improve my mood", vn: "cải thiện tâm trạng" },
+                            { en: "have fun", vn: "có nhiều niềm vui" }
                         ]
                     }
                 ],
@@ -6952,34 +7238,41 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời KHÔNG - Luôn lên danh sách trước khi mua để tiết kiệm và tránh lãng phí):</div>
                     <div class="topic-formula-text">
-                        → No, I don't. I always <span class="formula-bracket-hl">[thói quen chi tiêu]</span> before buying. It helps me <span class="formula-bracket-hl">[lợi ích tài chính]</span>.
+                        → No, I don't. I always <span class="formula-bracket-hl">[thói quen chi tiêu - Vo]</span> before buying. It helps me <span class="formula-bracket-hl">[lợi ích tài chính - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Trả lời ĐÔI KHI - Thỉnh thoảng mua sắm ngẫu hứng đồ giảm giá, đang cố kiểm soát):</div>
                     <div class="topic-formula-text">
-                        → Sometimes, I do. I occasionally buy <span class="formula-bracket-hl">[mặt hàng ngẫu hứng]</span> on sale. However, I'm trying to <span class="formula-bracket-hl">[mục tiêu kiểm soát]</span>.
+                        → Sometimes, I do. I occasionally buy <span class="formula-bracket-hl">[mặt hàng ngẫu hứng]</span> on sale. However, I'm trying to <span class="formula-bracket-hl">[mục tiêu kiểm soát - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "📝 [Thói quen chi tiêu & Lợi ích] (Cách 1):",
+                        title: "📝 [Thói quen chi tiêu hợp lý] (Cách 1):",
                         items: [
-                            { en: "make a shopping list", vn: "lập danh sách các món cần mua" },
-                            { en: "check my budget", vn: "kiểm tra lại ngân sách chi tiêu" },
-                            { en: "buy necessary things only", vn: "chỉ mua những món thực sự cần thiết" },
-                            { en: "save money and avoid overspending", vn: "tiết kiệm tiền và tránh chi tiêu quá tay" },
-                            { en: "manage my money well", vn: "quản lý tiền bạc một cách hiệu quả" }
+                            { en: "make a shopping list", vn: "lập danh sách mua sắm" },
+                            { en: "check my budget", vn: "kiểm tra ngân sách cá nhân" },
+                            { en: "buy necessary things only", vn: "chỉ mua những thứ thật sự cần thiết" },
+                            { en: "compare prices carefully", vn: "so sánh giá cả cẩn thận" }
                         ]
                     },
                     {
-                        title: "💸 [Chi tiêu ngẫu hứng & Kiểm soát] (Cách 2):",
+                        title: "💰 [Lợi ích tài chính & Mục tiêu kiểm soát] (Cách 1 & 2):",
+                        items: [
+                            { en: "save money and avoid overspending", vn: "tiết kiệm tiền và tránh vung tay quá trán" },
+                            { en: "manage my money well", vn: "quản lý tiền bạc hiệu quả" },
+                            { en: "control my monthly spending", vn: "kiểm soát chi tiêu hằng tháng" },
+                            { en: "save more money", vn: "tiết kiệm được nhiều tiền hơn" }
+                        ]
+                    },
+                    {
+                        title: "💸 [Mặt hàng ngẫu hứng] (Cách 2):",
                         items: [
                             { en: "unnecessary clothes", vn: "quần áo không thật sự cần thiết" },
-                            { en: "random online items", vn: "những món đồ ngẫu hứng trên mạng" },
-                            { en: "cute accessories", vn: "các món phụ kiện dễ thương" },
-                            { en: "control my monthly spending", vn: "kiểm soát các khoản chi tiêu hằng tháng" },
-                            { en: "save more money", vn: "tiết kiệm được nhiều tiền hơn" }
+                            { en: "random online items", vn: "những món đồ ngẫu nhiên trên mạng" },
+                            { en: "cute accessories", vn: "các phụ kiện nhỏ xinh" },
+                            { en: "trendy shoes and bags", vn: "giày dép và túi xách theo xu hướng" }
                         ]
                     }
                 ],
@@ -7010,7 +7303,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - So sánh giữa các nhãn hàng để quản lý tốt ngân sách chi tiêu):</div>
                     <div class="topic-formula-text">
-                        → Yes, I always check the price. It helps me <span class="formula-bracket-hl">[hành động so sánh]</span> and <span class="formula-bracket-hl">[lợi ích tài chính]</span>.
+                        → Yes, I always check the price. It helps me <span class="formula-bracket-hl">[hành động so sánh - Vo]</span> and <span class="formula-bracket-hl">[lợi ích tài chính - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -7021,22 +7314,39 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏷️ [So sánh & Quản lý ngân sách] (Cách 1):",
+                        title: "🏷️ [Hành động so sánh giá] (Cách 1):",
                         items: [
-                            { en: "compare different brands", vn: "so sánh giữa các thương hiệu khác nhau" },
-                            { en: "find the best deal", vn: "tìm kiếm mức giá ưu đãi nhất" },
-                            { en: "avoid wasting money", vn: "tránh lãng phí tiền bạc" },
-                            { en: "manage my monthly budget well", vn: "quản lý ngân sách hằng tháng hiệu quả" }
+                            { en: "compare different brands", vn: "so sánh các thương hiệu khác nhau" },
+                            { en: "find the best deal", vn: "tìm được mức giá ưu đãi nhất" },
+                            { en: "check product discounts", vn: "kiểm tra các chương trình giảm giá" },
+                            { en: "choose affordable options", vn: "lựa chọn các phương án vừa túi tiền" }
                         ]
                     },
                     {
-                        title: "⚖️ [Phân loại hàng hóa] (Cách 2):",
+                        title: "💰 [Lợi ích tài chính] (Cách 1):",
+                        items: [
+                            { en: "avoid wasting money", vn: "tránh lãng phí tiền bạc" },
+                            { en: "manage my monthly budget well", vn: "quản lý tốt ngân sách hằng tháng" },
+                            { en: "save money for important needs", vn: "tiết kiệm tiền cho các nhu cầu quan trọng" },
+                            { en: "spend money wisely", vn: "chi tiêu tiền bạc một cách thông minh" }
+                        ]
+                    },
+                    {
+                        title: "🍬 [Món đồ rẻ] (Cách 2):",
                         items: [
                             { en: "cheap daily food", vn: "đồ ăn hằng ngày giá rẻ" },
-                            { en: "small snacks", vn: "các món ăn vặt nhỏ" },
-                            { en: "expensive electronics", vn: "thiết bị điện tử đắt tiền" },
-                            { en: "high-end products", vn: "các sản phẩm cao cấp đắt đỏ" },
-                            { en: "valuable items", vn: "những món đồ có giá trị lớn" }
+                            { en: "small snacks", vn: "đồ ăn vặt nhỏ" },
+                            { en: "fresh vegetables", vn: "rau củ tươi" },
+                            { en: "bottled drinks", vn: "nước uống đóng chai" }
+                        ]
+                    },
+                    {
+                        title: "💻 [Món đồ đắt tiền] (Cách 2):",
+                        items: [
+                            { en: "expensive electronics", vn: "đồ điện tử đắt tiền" },
+                            { en: "high-end products", vn: "các sản phẩm cao cấp" },
+                            { en: "valuable items", vn: "những món đồ có giá trị lớn" },
+                            { en: "smartphones and laptops", vn: "điện thoại thông minh và máy tính xách tay" }
                         ]
                     }
                 ],
@@ -7060,7 +7370,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Chi phí sinh hoạt tăng nhanh nên chỉ mua đồ thiết yếu để tiết kiệm):</div>
                     <div class="topic-formula-text">
-                        → Yes, I do. Living costs are <span class="formula-bracket-hl">[tính từ]</span> now, so I only buy <span class="formula-bracket-hl">[loại mặt hàng]</span> to <span class="formula-bracket-hl">[mục đích tiết kiệm]</span>.
+                        → Yes, I do. Living costs are <span class="formula-bracket-hl">[tính từ]</span> now, so I only buy <span class="formula-bracket-hl">[loại mặt hàng]</span> to <span class="formula-bracket-hl">[mục đích tiết kiệm - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -7071,23 +7381,39 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "📈 [Chi phí & Ưu tiên] (Cách 1):",
+                        title: "📈 [Tính từ mô tả chi phí] (Cách 1):",
                         items: [
-                            { en: "rising quickly now", vn: "đang tăng lên nhanh chóng hiện nay" },
+                            { en: "rising quickly now", vn: "đang tăng nhanh hiện nay" },
                             { en: "very high", vn: "rất cao" },
-                            { en: "essential items", vn: "các mặt hàng thiết yếu" },
-                            { en: "basic necessities", vn: "các nhu yếu phẩm cơ bản" },
-                            { en: "save money for emergencies", vn: "tiết kiệm tiền cho các trường hợp khẩn cấp" },
-                            { en: "cut down on luxury goods", vn: "cắt giảm các mặt hàng xa xỉ" }
+                            { en: "increasingly expensive", vn: "ngày càng đắt đỏ" },
+                            { en: "much higher than before", vn: "cao hơn trước rất nhiều" }
                         ]
                     },
                     {
-                        title: "🛍️ [Mua đồ thiết yếu nhanh chóng] (Cách 2):",
+                        title: "🛒 [Loại mặt hàng thiết yếu] (Cách 1 & 2):",
                         items: [
-                            { en: "essential daily necessities", vn: "các nhu yếu phẩm thiết yếu hằng ngày" },
-                            { en: "worrying too much about small price changes", vn: "lo lắng quá nhiều về những thay đổi giá nhỏ" },
-                            { en: "buy fresh grocery items", vn: "mua thực phẩm tươi sống" },
-                            { en: "spend on urgent personal needs", vn: "chi tiêu cho các nhu cầu cá nhân cấp thiết" }
+                            { en: "essential items", vn: "các mặt hàng thiết yếu" },
+                            { en: "basic necessities", vn: "nhu yếu phẩm cơ bản" },
+                            { en: "essential daily necessities", vn: "nhu yếu phẩm hằng ngày" },
+                            { en: "fresh food and groceries", vn: "thực phẩm tươi sống và đồ tạp hóa" }
+                        ]
+                    },
+                    {
+                        title: "💰 [Mục đích tiết kiệm] (Cách 1):",
+                        items: [
+                            { en: "save money for emergencies", vn: "tiết kiệm tiền cho các tình huống khẩn cấp" },
+                            { en: "cut down on luxury goods", vn: "cắt giảm các mặt hàng xa xỉ" },
+                            { en: "balance my monthly budget", vn: "cân đối ngân sách hằng tháng" },
+                            { en: "avoid financial pressure", vn: "tránh áp lực tài chính" }
+                        ]
+                    },
+                    {
+                        title: "🛍️ [Hành động đắn đo không cần thiết] (Cách 2):",
+                        items: [
+                            { en: "worry too much about small price changes", vn: "lo lắng quá nhiều về những thay đổi giá nhỏ" },
+                            { en: "hesitate over a few cents", vn: "đắn đo vì vài đồng lẻ" },
+                            { en: "compare every single shop", vn: "so sánh từng cửa hàng một" },
+                            { en: "waste too much time thinking", vn: "tốn quá nhiều thời gian suy nghĩ" }
                         ]
                     }
                 ],
@@ -7122,21 +7448,30 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏷️ [Yếu tố thương hiệu & Quảng cáo] (Cách 1):",
+                        title: "🏷️ [Yếu tố đẩy giá] (Cách 1):",
                         items: [
-                            { en: "famous brand names and heavy advertising", vn: "thương hiệu nổi tiếng và quảng cáo rầm rộ" },
-                            { en: "fancy packaging", vn: "bao bì đóng gói bắt mắt sang trọng" },
-                            { en: "marketing costs", vn: "chi phí tiếp thị và quảng bá" },
-                            { en: "brand prestige", vn: "uy tín và đẳng cấp thương hiệu" }
+                            { en: "famous brand names and heavy advertising", vn: "tên tuổi thương hiệu nổi tiếng và chi phí quảng cáo lớn" },
+                            { en: "fancy packaging", vn: "bao bì đóng gói sang trọng" },
+                            { en: "high marketing costs", vn: "chi phí tiếp thị và quảng bá cao" },
+                            { en: "brand prestige", vn: "danh tiếng của thương hiệu" }
                         ]
                     },
                     {
-                        title: "⭐ [Chất lượng & Dịch vụ] (Cách 2):",
+                        title: "⭐ [Ưu điểm sản phẩm] (Cách 2):",
                         items: [
-                            { en: "durable materials", vn: "chất liệu bền bỉ, dùng lâu dài" },
-                            { en: "longer lifespan", vn: "tuổi thọ sản phẩm dài hơn" },
-                            { en: "better user experience", vn: "trải nghiệm sử dụng tốt hơn" },
-                            { en: "excellent warranty services for all customers", vn: "dịch vụ bảo hành chu đáo cho mọi khách hàng" }
+                            { en: "durable materials", vn: "chất liệu bền bỉ" },
+                            { en: "longer lifespan", vn: "tuổi thọ sử dụng lâu dài hơn" },
+                            { en: "better user experience", vn: "trải nghiệm người dùng tốt hơn" },
+                            { en: "advanced technology", vn: "công nghệ tiên tiến" }
+                        ]
+                    },
+                    {
+                        title: "🛡️ [Dịch vụ khách hàng] (Cách 2):",
+                        items: [
+                            { en: "excellent warranty services for all customers", vn: "dịch vụ bảo hành xuất sắc cho mọi khách hàng" },
+                            { en: "helpful customer support", vn: "hỗ trợ khách hàng tận tình" },
+                            { en: "free maintenance and repair", vn: "bảo trì và sửa chữa miễn phí" },
+                            { en: "easy return policies", vn: "chính sách đổi trả dễ dàng" }
                         ]
                     }
                 ],
@@ -7167,22 +7502,24 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Rất thích đi du lịch để khám phá vùng đất mới và xả stress):</div>
                     <div class="topic-formula-text">
-                        → Yes, I do. I'm a big fan of traveling because I can <span class="formula-bracket-hl">[hoạt động trải nghiệm]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                        → Yes, I do. I'm a big fan of traveling because I can <span class="formula-bracket-hl">[hoạt động trải nghiệm - Vo]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Dễ bị say xe trên đường dài, thích ở nhà nghỉ ngơi và nấu ăn):</div>
                     <div class="topic-formula-text">
-                        → Honestly, no, I don't. I easily <span class="formula-bracket-hl">[vấn đề sức khỏe khi đi lại]</span>, so I prefer staying home to <span class="formula-bracket-hl">[hoạt động thư giãn tại nhà - Vo]</span>.
+                        → Honestly, no, I don't. I easily <span class="formula-bracket-hl">[vấn đề sức khỏe khi đi lại - Vo]</span>, so I prefer staying home to <span class="formula-bracket-hl">[hoạt động thư giãn tại nhà - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "✈️ [Trải nghiệm & Khám phá] (Cách 1):",
+                        title: "✈️ [Hoạt động trải nghiệm khi du lịch] (Cách 1):",
                         items: [
                             { en: "explore new places", vn: "khám phá những vùng đất mới lạ" },
                             { en: "try delicious local food", vn: "thưởng thức các món đặc sản địa phương" },
-                            { en: "see beautiful landscapes", vn: "ngắm nhìn nhiều danh lam thắng cảnh đẹp" }
+                            { en: "see beautiful landscapes", vn: "ngắm nhìn nhiều danh lam thắng cảnh đẹp" },
+                            { en: "learn about different cultures", vn: "tìm hiểu về các nền văn hóa khác nhau" },
+                            { en: "meet friendly local people", vn: "gặp gỡ người dân địa phương thân thiện" }
                         ]
                     },
                     {
@@ -7195,12 +7532,21 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "🏡 [Say xe & Thích ở nhà] (Cách 2):",
+                        title: "🚌 [Vấn đề sức khỏe khi đi xa] (Cách 2):",
                         items: [
-                            { en: "get carsick on long journeys", vn: "bị say xe trên các chuyến đi dài" },
-                            { en: "cook good food and read books", vn: "nấu ăn ngon và đọc sách" },
-                            { en: "feel exhausted from long travel", vn: "cảm thấy kiệt sức vì di chuyển xa" },
-                            { en: "enjoy a peaceful weekend at home", vn: "tận hưởng cuối tuần yên bình tại nhà" }
+                            { en: "get carsick on long journeys", vn: "bị say xe trong những chuyến đi dài" },
+                            { en: "feel exhausted from long travel", vn: "cảm thấy kiệt sức vì di chuyển đường dài" },
+                            { en: "get tired in crowded places", vn: "cảm thấy mệt mỏi ở những nơi đông người" },
+                            { en: "suffer from motion sickness", vn: "bị chứng say tàu xe" }
+                        ]
+                    },
+                    {
+                        title: "🏡 [Hoạt động thư giãn tại nhà] (Cách 2):",
+                        items: [
+                            { en: "cook good food and read books", vn: "nấu đồ ăn ngon và đọc sách" },
+                            { en: "enjoy a peaceful weekend at home", vn: "tận hưởng cuối tuần bình yên tại nhà" },
+                            { en: "watch movies with my family", vn: "xem phim cùng gia đình" },
+                            { en: "listen to music and rest", vn: "nghe nhạc và nghỉ ngơi" }
                         ]
                     }
                 ],
@@ -7224,35 +7570,50 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đi theo nhóm/bạn bè - Chia sẻ chi phí và có nhiều khoảnh khắc vui vẻ cùng nhau):</div>
                     <div class="topic-formula-text">
-                        → I prefer traveling in a group with my <span class="formula-bracket-hl">[đối tượng]</span>. We can <span class="formula-bracket-hl">[hành động hỗ trợ]</span> and have <span class="formula-bracket-hl">[lợi ích giải trí]</span> together.
+                        → I prefer traveling in a group with my <span class="formula-bracket-hl">[đối tượng]</span>. We can <span class="formula-bracket-hl">[hành động hỗ trợ - Vo]</span> and have <span class="formula-bracket-hl">[lợi ích giải trí]</span> together.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Đi một mình - Tự do lên lịch trình và tận hưởng sự thư thái theo nhịp riêng):</div>
                     <div class="topic-formula-text">
-                        → I prefer traveling alone because I can <span class="formula-bracket-hl">[lý do tự do]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí]</span> at my own pace.
+                        → I prefer traveling alone because I can <span class="formula-bracket-hl">[lý do tự do - Vo]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí - Vo]</span> at my own pace.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "👥 [Đi nhóm & Gắn kết] (Cách 1):",
+                        title: "👥 [Đối tượng đi cùng] (Cách 1):",
                         items: [
-                            { en: "close friends", vn: "những người bạn thân thiết" },
-                            { en: "family members", vn: "các thành viên trong gia đình" },
-                            { en: "share travel costs", vn: "chia sẻ chi phí chuyến đi" },
-                            { en: "take nice photos for each other", vn: "chụp nhiều ảnh đẹp cho nhau" },
-                            { en: "have lots of fun together", vn: "có nhiều niềm vui cùng nhau" },
-                            { en: "enjoy memorable moments", vn: "tận hưởng những khoảnh khắc đáng nhớ" }
+                            { en: "close friends", vn: "những người bạn thân" },
+                            { en: "family members", vn: "các thành viên gia đình" },
+                            { en: "classmates", vn: "bạn cùng lớp" },
+                            { en: "colleagues", vn: "đồng nghiệp" }
                         ]
                     },
                     {
-                        title: "🚶 [Đi một mình & Tự do] (Cách 2):",
+                        title: "🤝 [Hành động hỗ trợ khi đi nhóm] (Cách 1):",
                         items: [
-                            { en: "plan my own schedule", vn: "tự lên kế hoạch và lịch trình của riêng mình" },
-                            { en: "choose any place freely", vn: "tự do lựa chọn bất kỳ điểm đến nào" },
-                            { en: "enjoy quiet moments", vn: "tận hưởng những khoảnh khắc yên tĩnh" },
-                            { en: "clear my mind at my own pace", vn: "thư thái đầu óc theo nhịp độ của riêng mình" },
-                            { en: "relax completely", vn: "thư giãn một cách trọn vẹn" }
+                            { en: "share travel costs", vn: "chia sẻ chi phí chuyến đi" },
+                            { en: "take nice photos for each other", vn: "chụp ảnh đẹp cho nhau" },
+                            { en: "help each other on the trip", vn: "giúp đỡ lẫn nhau trong chuyến đi" },
+                            { en: "try many local dishes", vn: "thử được nhiều món ăn địa phương" }
+                        ]
+                    },
+                    {
+                        title: "🚶 [Lý do thích tự do đi một mình] (Cách 2):",
+                        items: [
+                            { en: "plan my own schedule", vn: "tự lên lịch trình riêng" },
+                            { en: "choose any place freely", vn: "tự do chọn bất kỳ điểm đến nào" },
+                            { en: "change my plans easily", vn: "dễ dàng thay đổi kế hoạch" },
+                            { en: "enjoy quiet personal time", vn: "tận hưởng khoảng thời gian tĩnh lặng riêng" }
+                        ]
+                    },
+                    {
+                        title: "🎉 [Lợi ích giải trí] (Cách 1 & 2):",
+                        items: [
+                            { en: "lots of fun", vn: "nhiều niềm vui (điền sau 'have')" },
+                            { en: "memorable moments", vn: "những khoảnh khắc đáng nhớ (điền sau 'have')" },
+                            { en: "clear my mind", vn: "thư thái đầu óc (Cách 2 - Vo)" },
+                            { en: "relax completely", vn: "thư giãn hoàn toàn (Cách 2 - Vo)" }
                         ]
                     }
                 ],
@@ -7276,34 +7637,42 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Mùa hè - Thời tiết nắng ấm, lý tưởng để đi tắm biển):</div>
                     <div class="topic-formula-text">
-                        → I prefer traveling in <span class="formula-bracket-hl">[mùa trong năm]</span> because the weather is <span class="formula-bracket-hl">[đặc điểm thời tiết]</span>. It's perfect to <span class="formula-bracket-hl">[hoạt động du lịch]</span>.
+                        → I prefer traveling in <span class="formula-bracket-hl">[mùa trong năm]</span> because the weather is <span class="formula-bracket-hl">[đặc điểm thời tiết]</span>. It's perfect to <span class="formula-bracket-hl">[hoạt động du lịch - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Mùa thu - Tiết trời mát mẻ trong lành, thoải mái đi dạo thưởng ngoạn thiên nhiên):</div>
                     <div class="topic-formula-text">
-                        → I like traveling in <span class="formula-bracket-hl">[mùa trong năm]</span> because the air is <span class="formula-bracket-hl">[đặc điểm thời tiết]</span>. I can <span class="formula-bracket-hl">[hoạt động ngắm cảnh]</span> comfortably.
+                        → I like traveling in <span class="formula-bracket-hl">[mùa trong năm]</span> because the air is <span class="formula-bracket-hl">[đặc điểm thời tiết]</span>. I can <span class="formula-bracket-hl">[hoạt động ngắm cảnh - Vo]</span> comfortably.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "☀️ [Mùa hè & Biển] (Cách 1):",
+                        title: "🗓️ [Mùa trong năm] (Cách 1 & 2):",
                         items: [
                             { en: "summer", vn: "mùa hè" },
-                            { en: "sunny and warm", vn: "nắng ráo và ấm áp" },
-                            { en: "bright and clear", vn: "trời trong xanh sáng sủa" },
-                            { en: "visit beautiful beaches and swim", vn: "đến thăm bãi biển đẹp và tắm mát" },
-                            { en: "enjoy fresh seafood", vn: "thưởng thức hải sản tươi sống" }
+                            { en: "autumn", vn: "mùa thu" },
+                            { en: "spring", vn: "mùa xuân" },
+                            { en: "winter", vn: "mùa đông" }
                         ]
                     },
                     {
-                        title: "🍂 [Mùa thu & Dạo chơi] (Cách 2):",
+                        title: "☀️ [Đặc điểm thời tiết] (Cách 1 & 2):",
                         items: [
-                            { en: "autumn", vn: "mùa thu" },
-                            { en: "spring", vn: "mùa xuân" },
+                            { en: "sunny and warm", vn: "nắng ấm" },
+                            { en: "bright and clear", vn: "trong xanh và quang đãng" },
                             { en: "cool and fresh", vn: "mát mẻ và trong lành" },
-                            { en: "walk around and enjoy nature", vn: "đi dạo xung quanh và thưởng ngoạn thiên nhiên" },
-                            { en: "take photos easily", vn: "chụp ảnh dễ dàng thuận tiện" }
+                            { en: "mild and pleasant", vn: "ôn hòa và dễ chịu" }
+                        ]
+                    },
+                    {
+                        title: "🏖️ [Hoạt động du lịch & Ngắm cảnh] (Cách 1 & 2):",
+                        items: [
+                            { en: "visit beautiful beaches and swim", vn: "thăm các bãi biển đẹp và tắm biển" },
+                            { en: "enjoy fresh seafood", vn: "thưởng thức hải sản tươi sống" },
+                            { en: "walk around and enjoy nature", vn: "đi dạo quanh và thưởng ngoạn thiên nhiên" },
+                            { en: "take photos easily", vn: "dễ dàng chụp ảnh đẹp" },
+                            { en: "explore famous landmarks", vn: "khám phá các danh lam thắng cảnh nổi tiếng" }
                         ]
                     }
                 ],
@@ -7334,7 +7703,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đi du lịch biển/thành phố lớn cùng gia đình - Tắm biển và ăn hải sản tươi):</div>
                     <div class="topic-formula-text">
-                        → On my last holiday, I went to <span class="formula-bracket-hl">[địa điểm du lịch]</span> with my <span class="formula-bracket-hl">[đối tượng]</span>. We <span class="formula-bracket-hl">[hoạt động quá khứ]</span> and had great fun.
+                        → On my last holiday, I went to <span class="formula-bracket-hl">[địa điểm du lịch]</span> with my <span class="formula-bracket-hl">[đối tượng]</span>. We <span class="formula-bracket-hl">[hoạt động - V2/ed]</span> and had great fun.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -7345,26 +7714,62 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏖️ [Địa điểm & Hoạt động quá khứ] (Cách 1):",
+                        title: "🏖️ [Địa điểm du lịch] (Cách 1):",
                         items: [
                             { en: "Da Nang city", vn: "thành phố Đà Nẵng" },
                             { en: "Vung Tau beach", vn: "bãi biển Vũng Tàu" },
                             { en: "Phu Quoc island", vn: "đảo Phú Quốc" },
-                            { en: "family", vn: "gia đình" },
-                            { en: "close friends", vn: "bạn bè thân thiết" },
-                            { en: "swim in the sea", vn: "đã tắm biển" },
-                            { en: "ate fresh seafood", vn: "đã thưởng thức hải sản tươi sống" }
+                            { en: "Nha Trang city", vn: "thành phố Nha Trang" },
+                            { en: "Ha Long Bay", vn: "Vịnh Hạ Long" },
+                            { en: "Da Lat city", vn: "thành phố Đà Lạt" }
                         ]
                     },
                     {
-                        title: "🏡 [Quê hương & Người thân] (Cách 2):",
+                        title: "👥 [Đối tượng đi cùng] (Cách 1):",
+                        items: [
+                            { en: "family", vn: "gia đình" },
+                            { en: "close friends", vn: "bạn bè thân thiết" },
+                            { en: "best friends", vn: "những người bạn thân nhất" },
+                            { en: "classmates", vn: "bạn cùng lớp" },
+                            { en: "colleagues", vn: "đồng nghiệp" }
+                        ]
+                    },
+                    {
+                        title: "🏊 [Hoạt động trong kỳ nghỉ] (Cách 1):",
+                        items: [
+                            { en: "swim in the sea", vn: "tắm biển" },
+                            { en: "eat fresh seafood", vn: "thưởng thức hải sản tươi sống" },
+                            { en: "take beautiful photos", vn: "chụp nhiều bức ảnh đẹp" },
+                            { en: "walk along the beach", vn: "đi dạo dọc bờ biển" },
+                            { en: "visit famous landmarks", vn: "tham quan các thắng cảnh nổi tiếng" },
+                            { en: "buy local souvenirs", vn: "mua quà lưu niệm địa phương" }
+                        ]
+                    },
+                    {
+                        title: "🏡 [Nơi chốn] (Cách 2):",
                         items: [
                             { en: "hometown", vn: "quê hương" },
-                            { en: "peaceful village", vn: "làng quê yên bình" },
+                            { en: "peaceful village", vn: "ngôi làng yên bình" },
+                            { en: "countryside", vn: "vùng nông thôn" },
+                            { en: "native town", vn: "thị trấn quê nhà" }
+                        ]
+                    },
+                    {
+                        title: "👵 [Đối tượng người thân] (Cách 2):",
+                        items: [
                             { en: "grandparents", vn: "ông bà" },
                             { en: "relatives", vn: "họ hàng người thân" },
+                            { en: "uncle and aunt", vn: "chú thím / cậu mợ" },
+                            { en: "extended family", vn: "đại gia đình" }
+                        ]
+                    },
+                    {
+                        title: "✨ [Tính từ mô tả kỳ nghỉ] (Cách 2):",
+                        items: [
                             { en: "peaceful and relaxing", vn: "thanh bình và thư thái" },
-                            { en: "warm and cozy", vn: "ấm cúng và gần gũi" }
+                            { en: "warm and cozy", vn: "ấm cúng và gần gũi" },
+                            { en: "meaningful and memorable", vn: "ý nghĩa và đáng nhớ" },
+                            { en: "joyful and comfortable", vn: "vui vẻ và thoải mái" }
                         ]
                     }
                 ],
@@ -7388,7 +7793,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Rất thích kỳ nghỉ - Dịp nghỉ ngơi tốt và xua tan căng thẳng công việc):</div>
                     <div class="topic-formula-text">
-                        → Yes, I love holidays very much. They give me time to <span class="formula-bracket-hl">[lợi ích sức khỏe]</span> and <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                        → Yes, I love holidays very much. They give me time to <span class="formula-bracket-hl">[lợi ích sức khỏe - Vo]</span> and <span class="formula-bracket-hl">[lợi ích giải trí - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -7399,22 +7804,30 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🛌 [Sức khỏe & Giải trí] (Cách 1):",
+                        title: "🛌 [Lợi ích sức khỏe] (Cách 1):",
                         items: [
                             { en: "rest well", vn: "nghỉ ngơi thật tốt" },
                             { en: "sleep more", vn: "ngủ nhiều hơn" },
                             { en: "recover my health", vn: "phục hồi sức khỏe" },
-                            { en: "escape from daily work stress", vn: "thoát khỏi căng thẳng công việc hằng ngày" },
-                            { en: "clear my mind", vn: "thư thái đầu óc" }
+                            { en: "recharge my energy", vn: "nạp lại năng lượng" }
                         ]
                     },
                     {
-                        title: "🚫 [Đông đúc & Đắt đỏ dịp lễ] (Cách 2):",
+                        title: "🎉 [Lợi ích giải trí] (Cách 1):",
                         items: [
-                            { en: "overcrowded with noisy tourists", vn: "quá đông đúc du khách ồn ào" },
-                            { en: "suffer heavy traffic jams", vn: "chịu đựng tắc đường nghiêm trọng" },
-                            { en: "expensive hotel services", vn: "dịch vụ khách sạn đắt đỏ" },
-                            { en: "enjoy quiet rest at home", vn: "tận hưởng sự nghỉ ngơi yên tĩnh ở nhà" }
+                            { en: "escape from daily work stress", vn: "thoát khỏi căng thẳng công việc hằng ngày" },
+                            { en: "clear my mind", vn: "thư thái đầu óc" },
+                            { en: "spend time with my family", vn: "dành thời gian bên gia đình" },
+                            { en: "enjoy my personal hobbies", vn: "tận hưởng các sở thích cá nhân" }
+                        ]
+                    },
+                    {
+                        title: "🚫 [Thực trạng ngày lễ] (Cách 2):",
+                        items: [
+                            { en: "overcrowded with noisy tourists", vn: "quá đông đúc khách du lịch ồn ào" },
+                            { en: "full of heavy traffic jams", vn: "đầy những cảnh kẹt xe nghiêm trọng" },
+                            { en: "too noisy and chaotic", vn: "quá ồn ào và xô bồ" },
+                            { en: "packed with long queues", vn: "chật kín người xếp hàng dài" }
                         ]
                     }
                 ],
@@ -7438,33 +7851,69 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Về quê sum họp gia đình và cùng nhau nấu các bữa cơm truyền thống):</div>
                     <div class="topic-formula-text">
-                        → In my country, many people often <span class="formula-bracket-hl">[hành động về quê]</span> to visit <span class="formula-bracket-hl">[đối tượng]</span>. They usually <span class="formula-bracket-hl">[hoạt động truyền thống]</span> together.
+                        → In my country, many people often <span class="formula-bracket-hl">[hành động về quê - Vo]</span> to visit <span class="formula-bracket-hl">[đối tượng]</span>. They usually <span class="formula-bracket-hl">[hoạt động truyền thống - Vo]</span> together.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Đi du lịch nghỉ mát tại các bãi biển để xả stress và chụp ảnh):</div>
                     <div class="topic-formula-text">
-                        → Others like to <span class="formula-bracket-hl">[hoạt động du lịch]</span> to famous <span class="formula-bracket-hl">[địa điểm du lịch]</span>. It helps them <span class="formula-bracket-hl">[lợi ích giải trí]</span> and take photos.
+                        → Others like to <span class="formula-bracket-hl">[hoạt động du lịch - Vo]</span> to famous <span class="formula-bracket-hl">[địa điểm du lịch]</span>. It helps them <span class="formula-bracket-hl">[lợi ích giải trí - Vo]</span> and take photos.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏮 [Về quê & Hoạt động] (Cách 1):",
+                        title: "🏡 [Hành động về quê] (Cách 1):",
                         items: [
                             { en: "return to their hometowns", vn: "trở về quê hương" },
                             { en: "travel back home", vn: "quay trở về nhà" },
-                            { en: "family", vn: "gia đình và người thân" },
-                            { en: "cook traditional meals together", vn: "cùng nhau nấu các bữa ăn truyền thống" },
-                            { en: "celebrate together", vn: "cùng nhau ăn mừng vui vẻ" }
+                            { en: "go back to the countryside", vn: "trở về vùng quê" },
+                            { en: "visit their native villages", vn: "thăm lại làng quê" }
                         ]
                     },
                     {
-                        title: "🏖️ [Nghỉ mát & Giải trí] (Cách 2):",
+                        title: "👥 [Đối tượng thăm hỏi] (Cách 1):",
                         items: [
-                            { en: "go on vacation to famous beach cities", vn: "đi nghỉ mát tại các thành phố biển nổi tiếng" },
-                            { en: "take short trips", vn: "thực hiện những chuyến du lịch ngắn ngày" },
+                            { en: "family", vn: "gia đình" },
+                            { en: "parents and grandparents", vn: "bố mẹ và ông bà" },
+                            { en: "close relatives", vn: "họ hàng thân thiết" },
+                            { en: "loved ones", vn: "những người thân yêu" }
+                        ]
+                    },
+                    {
+                        title: "🏮 [Hoạt động truyền thống bên gia đình] (Cách 1):",
+                        items: [
+                            { en: "cook traditional meals", vn: "nấu các bữa ăn truyền thống" },
+                            { en: "celebrate warmly", vn: "ăn mừng ấm cúng" },
+                            { en: "share stories and laughter", vn: "chia sẻ câu chuyện và tiếng cười" },
+                            { en: "clean and decorate the house", vn: "dọn dẹp và trang trí nhà cửa" },
+                            { en: "visit local temples", vn: "đi lễ chùa địa phương" }
+                        ]
+                    },
+                    {
+                        title: "🏖️ [Hoạt động du lịch] (Cách 2):",
+                        items: [
+                            { en: "go on vacation", vn: "đi nghỉ mát" },
+                            { en: "take short trips", vn: "thực hiện các chuyến đi ngắn ngày" },
+                            { en: "travel with friends", vn: "đi du lịch cùng bạn bè" },
+                            { en: "organize family outings", vn: "tổ chức các chuyến dã ngoại gia đình" }
+                        ]
+                    },
+                    {
+                        title: "🌊 [Địa điểm du lịch] (Cách 2):",
+                        items: [
+                            { en: "beach cities", vn: "các thành phố biển" },
+                            { en: "mountain resorts", vn: "các khu nghỉ dưỡng trên núi" },
+                            { en: "scenic tourist spots", vn: "các điểm du lịch đẹp mắt" },
+                            { en: "peaceful islands", vn: "những hòn đảo yên bình" }
+                        ]
+                    },
+                    {
+                        title: "🎉 [Lợi ích giải trí] (Cách 2):",
+                        items: [
                             { en: "relax after hard work", vn: "thư giãn sau thời gian làm việc vất vả" },
-                            { en: "enjoy the festive atmosphere", vn: "hòa mình vào bầu không khí lễ hội náo nhiệt" }
+                            { en: "enjoy the festive atmosphere", vn: "hòa mình vào bầu không khí lễ hội" },
+                            { en: "reduce daily stress", vn: "giảm bớt căng thẳng thường nhật" },
+                            { en: "create happy memories", vn: "tạo nên những kỷ niệm vui vẻ" }
                         ]
                     }
                 ],
@@ -7501,26 +7950,35 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Trường tư thục - Cơ sở vật chất hiện đại, rèn tính tự lập):</div>
                     <div class="topic-formula-text">
-                        → I went to a <span class="formula-bracket-hl">[loại trường học]</span> in my hometown. It provided <span class="formula-bracket-hl">[tiện ích học tập]</span> and helped me <span class="formula-bracket-hl">[kỹ năng phát triển]</span>.
+                        → I went to a <span class="formula-bracket-hl">[loại trường học]</span> in my hometown. It provided <span class="formula-bracket-hl">[tiện ích học tập]</span> and helped me <span class="formula-bracket-hl">[kỹ năng phát triển - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏫 [Trường công lập & Đặc điểm] (Cách 1):",
+                        title: "🏫 [Loại trường học] (Cách 1 & 2):",
                         items: [
                             { en: "public school", vn: "trường công lập" },
-                            { en: "local primary school", vn: "trường tiểu học ở địa phương" },
-                            { en: "affordable tuition fees", vn: "học phí vừa phải hợp lý" },
-                            { en: "good learning environment", vn: "môi trường học tập tốt" }
+                            { en: "local primary school", vn: "trường tiểu học địa phương" },
+                            { en: "private school", vn: "trường tư thục" },
+                            { en: "bilingual school", vn: "trường song ngữ" }
                         ]
                     },
                     {
-                        title: "🏫 [Trường tư thục & Tiện ích] (Cách 2):",
+                        title: "📚 [Đặc điểm & Tiện ích học tập] (Cách 1 & 2):",
                         items: [
-                            { en: "private school", vn: "trường tư thục" },
-                            { en: "modern learning facilities", vn: "các cơ sở vật chất học tập hiện đại" },
-                            { en: "dynamic study programs", vn: "các chương trình học tập năng động" },
-                            { en: "become more independent", vn: "trở nên tự lập hơn trong cuộc sống" }
+                            { en: "affordable tuition fees", vn: "học phí phải chăng" },
+                            { en: "a good learning environment", vn: "môi trường học tập tốt" },
+                            { en: "modern learning facilities", vn: "cơ sở vật chất học tập hiện đại" },
+                            { en: "dynamic study programs", vn: "chương trình học năng động" }
+                        ]
+                    },
+                    {
+                        title: "🌱 [Kỹ năng phát triển] (Cách 2):",
+                        items: [
+                            { en: "become more independent", vn: "trở nên tự lập hơn" },
+                            { en: "build strong confidence", vn: "xây dựng sự tự tin vững vàng" },
+                            { en: "develop soft skills", vn: "phát triển các kỹ năng mềm" },
+                            { en: "improve my English communication", vn: "cải thiện giao tiếp tiếng Anh" }
                         ]
                     }
                 ],
@@ -7544,7 +8002,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Thích trường công lập - Học phí hợp lý, giảm bớt gánh nặng tài chính cho gia đình):</div>
                     <div class="topic-formula-text">
-                        → I prefer public schools because their fees are <span class="formula-bracket-hl">[đặc điểm chi phí]</span>. It helps many families <span class="formula-bracket-hl">[lợi ích tài chính]</span>.
+                        → I prefer public schools because their fees are <span class="formula-bracket-hl">[đặc điểm chi phí]</span>. It helps many families <span class="formula-bracket-hl">[lợi ích tài chính - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -7555,21 +8013,31 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "💰 [Chi phí & Lợi ích tài chính] (Cách 1):",
+                        title: "💰 [Đặc điểm chi phí trường công] (Cách 1):",
                         items: [
-                            { en: "very reasonable", vn: "rất hợp lý vừa phải" },
-                            { en: "affordable", vn: "vừa túi tiền số đông" },
-                            { en: "reduce financial pressure on their education", vn: "giảm bớt áp lực tài chính cho việc học" },
-                            { en: "save educational money", vn: "tiết kiệm chi phí học tập" }
+                            { en: "very reasonable", vn: "rất hợp lý" },
+                            { en: "affordable for most families", vn: "vừa túi tiền với đa số gia đình" },
+                            { en: "quite low and stable", vn: "khá thấp và ổn định" },
+                            { en: "supported by the government", vn: "được nhà nước hỗ trợ" }
+                        ]
+                    },
+                    {
+                        title: "🏦 [Lợi ích tài chính] (Cách 1):",
+                        items: [
+                            { en: "reduce financial pressure on their education", vn: "giảm áp lực tài chính cho việc học" },
+                            { en: "save educational money", vn: "tiết kiệm chi phí giáo dục" },
+                            { en: "manage household budgets easily", vn: "dễ dàng quản lý ngân sách gia đình" },
+                            { en: "invest in extra skill courses", vn: "đầu tư thêm vào các khóa học kỹ năng" }
                         ]
                     },
                     {
                         title: "🌟 [Ưu điểm trường tư] (Cách 2):",
                         items: [
-                            { en: "smaller class sizes", vn: "sĩ số lớp học ít hơn" },
-                            { en: "modern classrooms", vn: "các phòng học hiện đại" },
-                            { en: "better personal care for every student", vn: "sự quan tâm chăm sóc chu đáo cho từng học sinh" },
-                            { en: "great extracurricular activities", vn: "nhiều hoạt động ngoại khóa tuyệt vời" }
+                            { en: "smaller class sizes", vn: "sĩ số lớp học nhỏ hơn" },
+                            { en: "modern classrooms", vn: "phòng học hiện đại" },
+                            { en: "better personal care for every student", vn: "sự quan tâm cá nhân tốt hơn cho từng học sinh" },
+                            { en: "great extracurricular activities", vn: "nhiều hoạt động ngoại khóa tuyệt vời" },
+                            { en: "international learning environments", vn: "môi trường học tập quốc tế" }
                         ]
                     }
                 ],
@@ -7599,25 +8067,35 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Trường công lập - Nhà nước liên tục đầu tư nâng cấp cơ sở vật chất phục vụ đại chúng):</div>
                     <div class="topic-formula-text">
-                        → In my opinion, public schools will stay most common. The government is <span class="formula-bracket-hl">[hành động chính phủ]</span> to help all students study.
+                        → In my opinion, public schools will stay most common. The government is <span class="formula-bracket-hl">[hành động chính phủ - Ving]</span> to help all students study.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🚀 [Điều kiện & Mong muốn] (Cách 1):",
+                        title: "📈 [Điều kiện của phụ huynh] (Cách 1):",
                         items: [
-                            { en: "better incomes", vn: "thu nhập tốt hơn" },
+                            { en: "better incomes", vn: "mức thu nhập tốt hơn" },
                             { en: "higher living standards", vn: "mức sống cao hơn" },
-                            { en: "higher education quality", vn: "chất lượng giáo dục cao hơn" },
-                            { en: "international learning environments", vn: "môi trường học tập quốc tế" }
+                            { en: "fewer children in each family", vn: "ít con hơn trong mỗi gia đình" },
+                            { en: "stronger financial ability", vn: "khả năng tài chính vững vàng hơn" }
                         ]
                     },
                     {
-                        title: "🏛️ [Đầu tư công] (Cách 2):",
+                        title: "🎓 [Mong muốn giáo dục] (Cách 1):",
                         items: [
-                            { en: "upgrading modern facilities", vn: "nâng cấp cơ sở vật chất hiện đại" },
-                            { en: "improving learning equipment", vn: "cải thiện các trang thiết bị học đường" },
-                            { en: "keeping fees very low", vn: "giữ mức học phí ở mức rất thấp" }
+                            { en: "higher education quality", vn: "chất lượng giáo dục cao hơn" },
+                            { en: "international learning environments", vn: "môi trường học tập quốc tế" },
+                            { en: "modern school facilities", vn: "cơ sở vật chất trường học hiện đại" },
+                            { en: "bilingual study programs", vn: "chương trình học song ngữ" }
+                        ]
+                    },
+                    {
+                        title: "🏛️ [Hành động đầu tư của chính phủ] (Cách 2):",
+                        items: [
+                            { en: "upgrade modern facilities", vn: "nâng cấp cơ sở vật chất hiện đại" },
+                            { en: "improve learning equipment", vn: "cải thiện trang thiết bị học tập" },
+                            { en: "keep tuition fees very low", vn: "giữ mức học phí ở mức rất thấp" },
+                            { en: "train high-quality teachers", vn: "đào tạo đội ngũ giáo viên chất lượng cao" }
                         ]
                     }
                 ],
@@ -7659,21 +8137,39 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "📖 [Cảm nhận & Ngữ pháp] (Cách 1):",
+                        title: "📖 [Tính từ cảm nhận việc học] (Cách 1 & 2):",
                         items: [
-                            { en: "quite challenging", vn: "khá là thử thách" },
-                            { en: "a bit difficult", vn: "hơi khó khăn" },
-                            { en: "grammar rules and tests", vn: "các quy tắc ngữ pháp và bài kiểm tra" },
-                            { en: "textbook exercises", vn: "bài tập trong sách giáo khoa" }
+                            { en: "quite challenging", vn: "khá thử thách" },
+                            { en: "a bit difficult and boring", vn: "hơi khó và nhàm chán" },
+                            { en: "fun and exciting", vn: "vui vẻ và hào hứng" },
+                            { en: "interesting and lively", vn: "thú vị và sinh động" }
                         ]
                     },
                     {
-                        title: "🎶 [Phương pháp sinh động & Cảm xúc] (Cách 2):",
+                        title: "📝 [Nội dung học cũ] (Cách 1):",
                         items: [
-                            { en: "fun and exciting", vn: "vui vẻ và hào hứng" },
+                            { en: "grammar rules and tests", vn: "các quy tắc ngữ pháp và bài kiểm tra" },
+                            { en: "textbook exercises", vn: "các bài tập trong sách giáo khoa" },
+                            { en: "paper exams", vn: "các bài kiểm tra trên giấy" },
+                            { en: "long vocabulary lists", vn: "danh sách từ vựng dài" }
+                        ]
+                    },
+                    {
+                        title: "🎶 [Phương pháp học vui nhộn] (Cách 2):",
+                        items: [
                             { en: "lively songs and games", vn: "các bài hát và trò chơi sinh động" },
-                            { en: "very motivated", vn: "rất có động lực và hứng thú" },
-                            { en: "enthusiastic", vn: "nhiệt huyết, say mê" }
+                            { en: "colorful flashcards and stories", vn: "thẻ từ vựng nhiều màu sắc và câu chuyện" },
+                            { en: "group role-play activities", vn: "các hoạt động đóng vai theo nhóm" },
+                            { en: "animated English videos", vn: "các video hoạt hình tiếng Anh" }
+                        ]
+                    },
+                    {
+                        title: "😊 [Tính từ cảm xúc] (Cách 2):",
+                        items: [
+                            { en: "very motivated", vn: "rất có động lực" },
+                            { en: "enthusiastic", vn: "nhiệt tình, hào hứng" },
+                            { en: "excited and confident", vn: "hào hứng và tự tin" },
+                            { en: "curious and happy", vn: "tò mò và vui vẻ" }
                         ]
                     }
                 ],
@@ -7697,32 +8193,51 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Học qua phim ảnh có phụ đề - Vừa cải thiện kỹ năng nghe vừa thư giãn giải trí):</div>
                     <div class="topic-formula-text">
-                        → I usually learn English by <span class="formula-bracket-hl">[phương pháp trực tuyến]</span>. It helps me <span class="formula-bracket-hl">[lợi ích học tập]</span> and <span class="formula-bracket-hl">[lợi ích giải trí]</span> at the same time.
+                        → I usually learn English by <span class="formula-bracket-hl">[phương pháp trực tuyến - Ving]</span>. It helps me <span class="formula-bracket-hl">[lợi ích học tập - Vo]</span> and <span class="formula-bracket-hl">[lợi ích giải trí - Vo]</span> at the same time.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Dùng ứng dụng điện thoại & Tự luyện nói hằng ngày để rèn sự tự tin):</div>
                     <div class="topic-formula-text">
-                        → I often use <span class="formula-bracket-hl">[công cụ học]</span> on my smartphone. Moreover, I try to <span class="formula-bracket-hl">[thói quen luyện tập]</span> to <span class="formula-bracket-hl">[mục tiêu cải thiện]</span>.
+                        → I often use <span class="formula-bracket-hl">[công cụ học]</span> on my smartphone. Moreover, I try to <span class="formula-bracket-hl">[thói quen luyện tập - Vo]</span> to <span class="formula-bracket-hl">[mục tiêu cải thiện - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🎬 [Phim ảnh & Giải trí song hành] (Cách 1):",
+                        title: "🎬 [Phương pháp học trực tuyến] (Cách 1):",
                         items: [
-                            { en: "watching movies with subtitles", vn: "xem phim có phụ đề tiếng Anh" },
-                            { en: "listening to English songs", vn: "nghe các bài hát tiếng Anh" },
-                            { en: "improve my listening skills", vn: "cải thiện kỹ năng nghe" },
-                            { en: "relax at the same time", vn: "thư giãn đồng thời" }
+                            { en: "watch movies with subtitles", vn: "xem phim có phụ đề tiếng Anh" },
+                            { en: "listen to English songs", vn: "nghe các bài hát tiếng Anh" },
+                            { en: "watch English videos on YouTube", vn: "xem video tiếng Anh trên YouTube" },
+                            { en: "listen to daily English podcasts", vn: "nghe podcast tiếng Anh hằng ngày" }
                         ]
                     },
                     {
-                        title: "📱 [Ứng dụng & Luyện nói] (Cách 2):",
+                        title: "📱 [Công cụ học trên điện thoại] (Cách 2):",
                         items: [
                             { en: "English learning apps", vn: "các ứng dụng học tiếng Anh" },
-                            { en: "vocabulary flashcards", vn: "thẻ học từ vựng thông minh" },
-                            { en: "practice speaking every day", vn: "luyện tập nói hằng ngày" },
-                            { en: "build my confidence", vn: "xây dựng sự tự tin của bản thân" }
+                            { en: "vocabulary flashcards", vn: "thẻ học từ vựng" },
+                            { en: "online dictionaries", vn: "từ điển trực tuyến" },
+                            { en: "bilingual reading apps", vn: "ứng dụng đọc truyện song ngữ" }
+                        ]
+                    },
+                    {
+                        title: "🗣️ [Thói quen luyện tập hằng ngày] (Cách 2):",
+                        items: [
+                            { en: "practice speaking every day", vn: "luyện nói mỗi ngày" },
+                            { en: "learn ten new words daily", vn: "học mười từ mới mỗi ngày" },
+                            { en: "repeat after native speakers", vn: "nhại lại theo người bản xứ" },
+                            { en: "record my own voice", vn: "ghi âm lại giọng nói của mình" }
+                        ]
+                    },
+                    {
+                        title: "⭐ [Lợi ích học tập & Mục tiêu cải thiện] (Cách 1 & 2):",
+                        items: [
+                            { en: "improve my listening skills", vn: "cải thiện kỹ năng nghe" },
+                            { en: "expand my vocabulary", vn: "mở rộng vốn từ vựng" },
+                            { en: "relax at the same time", vn: "thư giãn cùng lúc" },
+                            { en: "build my confidence", vn: "xây dựng sự tự tin" },
+                            { en: "speak more naturally", vn: "nói tiếng Anh tự nhiên hơn" }
                         ]
                     }
                 ],
@@ -7746,32 +8261,50 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Kỹ năng Nói - Lo lắng về phát âm, thiếu người luyện tập giao tiếp hằng ngày):</div>
                     <div class="topic-formula-text">
-                        → In my opinion, speaking is the hardest skill. I often <span class="formula-bracket-hl">[khó khăn khi nói]</span> and lack a <span class="formula-bracket-hl">[môi trường luyện tập]</span>.
+                        → In my opinion, speaking is the hardest skill. I often <span class="formula-bracket-hl">[khó khăn khi nói - Vo]</span> and lack a <span class="formula-bracket-hl">[môi trường luyện tập]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Kỹ năng Nghe - Người bản xứ nói nhanh, nuốt âm khó bắt kịp từng từ):</div>
                     <div class="topic-formula-text">
-                        → For me, listening is the most difficult skill. Native speakers usually <span class="formula-bracket-hl">[đặc điểm nói nhanh]</span>, so I can't <span class="formula-bracket-hl">[khó khăn khi nghe]</span>.
+                        → For me, listening is the most difficult skill. Native speakers usually <span class="formula-bracket-hl">[đặc điểm nói nhanh - Vo]</span>, so I can't <span class="formula-bracket-hl">[khó khăn khi nghe - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
                         title: "🗣️ [Khó khăn khi nói] (Cách 1):",
                         items: [
-                            { en: "worry about pronunciation mistakes", vn: "lo sợ mắc lỗi phát âm" },
-                            { en: "hesitate to talk", vn: "ngập ngừng rụt rè khi nói" },
-                            { en: "daily speaking partner", vn: "bạn đồng hành luyện nói mỗi ngày" },
-                            { en: "native speaking environment", vn: "môi trường giao tiếp bản xứ" }
+                            { en: "worry about pronunciation mistakes", vn: "lo lắng về lỗi phát âm" },
+                            { en: "hesitate to express my ideas", vn: "ngập ngừng khi diễn đạt ý tưởng" },
+                            { en: "forget vocabulary when speaking", vn: "quên từ vựng khi đang nói" },
+                            { en: "feel shy in front of others", vn: "cảm thấy ngại ngùng trước người khác" }
+                        ]
+                    },
+                    {
+                        title: "🏫 [Môi trường luyện tập thiếu hụt] (Cách 1):",
+                        items: [
+                            { en: "daily speaking partner", vn: "người bạn luyện nói hằng ngày" },
+                            { en: "native speaking environment", vn: "môi trường giao tiếp bản xứ" },
+                            { en: "English communication club", vn: "câu lạc bộ giao tiếp tiếng Anh" },
+                            { en: "real-life practice chance", vn: "cơ hội thực hành thực tế" }
+                        ]
+                    },
+                    {
+                        title: "🎙️ [Đặc điểm nói của người bản xứ] (Cách 2):",
+                        items: [
+                            { en: "speak very fast", vn: "nói rất nhanh" },
+                            { en: "connect words together", vn: "nối âm các từ với nhau" },
+                            { en: "use unfamiliar accents", vn: "sử dụng giọng điệu vùng miền lạ" },
+                            { en: "use idioms and slang", vn: "sử dụng thành ngữ và tiếng lóng" }
                         ]
                     },
                     {
                         title: "🎧 [Khó khăn khi nghe] (Cách 2):",
                         items: [
-                            { en: "speak very fast", vn: "nói rất nhanh" },
-                            { en: "connect words together", vn: "nối âm các từ lại với nhau" },
-                            { en: "catch every word", vn: "bắt kịp từng từ một" },
-                            { en: "understand their ideas easily", vn: "hiểu được ý của họ một cách dễ dàng" }
+                            { en: "catch every word", vn: "bắt kịp từng từ" },
+                            { en: "understand their ideas easily", vn: "hiểu ý của họ một cách dễ dàng" },
+                            { en: "follow long conversations", vn: "theo kịp các cuộc hội thoại dài" },
+                            { en: "recognize connected sounds", vn: "nhận diện các âm nối" }
                         ]
                     }
                 ],
@@ -7802,7 +8335,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Học qua các kênh YouTube để cải thiện phát âm và vốn từ vựng):</div>
                     <div class="topic-formula-text">
-                        → Yes, I do. I usually learn English on <span class="formula-bracket-hl">[kênh học trực tuyến]</span>. It helps me <span class="formula-bracket-hl">[lợi ích học tập]</span>.
+                        → Yes, I do. I usually learn English on <span class="formula-bracket-hl">[kênh học trực tuyến]</span>. It helps me <span class="formula-bracket-hl">[lợi ích học tập - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -7813,21 +8346,43 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🌐 [Kênh trực tuyến & Lợi ích] (Cách 1):",
+                        title: "🌐 [Kênh học trực tuyến] (Cách 1):",
                         items: [
                             { en: "YouTube channels", vn: "các kênh học trên YouTube" },
                             { en: "free learning websites", vn: "các trang web học tiếng Anh miễn phí" },
-                            { en: "improve my pronunciation", vn: "cải thiện cách phát âm của mình" },
-                            { en: "expand my vocabulary", vn: "mở rộng vốn từ vựng" }
+                            { en: "mobile learning apps", vn: "các ứng dụng học trên điện thoại" },
+                            { en: "online English forums", vn: "các diễn đàn tiếng Anh trực tuyến" },
+                            { en: "English podcast platforms", vn: "các nền tảng nghe podcast tiếng Anh" }
                         ]
                     },
                     {
-                        title: "🏫 [Học trực tiếp trên lớp] (Cách 2):",
+                        title: "📈 [Lợi ích học tập] (Cách 1):",
                         items: [
-                            { en: "attending offline classes", vn: "tham gia các lớp học trực tiếp" },
+                            { en: "improve my pronunciation", vn: "cải thiện cách phát âm của mình" },
+                            { en: "expand my vocabulary", vn: "mở rộng vốn từ vựng" },
+                            { en: "practice my listening skills", vn: "luyện tập kỹ năng nghe" },
+                            { en: "master basic grammar rules", vn: "nắm vững các quy tắc ngữ pháp cơ bản" },
+                            { en: "learn natural expressions", vn: "học các cách diễn đạt tự nhiên" }
+                        ]
+                    },
+                    {
+                        title: "🏫 [Hình thức học ưa thích] (Cách 2):",
+                        items: [
+                            { en: "attend offline classes", vn: "tham gia các lớp học trực tiếp" },
+                            { en: "join a local English center", vn: "tham gia một trung tâm tiếng Anh địa phương" },
+                            { en: "study in traditional classrooms", vn: "học tập trong các phòng học truyền thống" },
+                            { en: "take face-to-face courses", vn: "theo học các khóa học trực tiếp" },
+                            { en: "learn with a private tutor", vn: "học cùng với gia sư riêng" }
+                        ]
+                    },
+                    {
+                        title: "🗣️ [Mục đích tương tác] (Cách 2):",
+                        items: [
                             { en: "interact directly with native teachers", vn: "tương tác trực tiếp với giáo viên bản ngữ" },
                             { en: "practice speaking in real classrooms", vn: "luyện nói trong lớp học thực tế" },
-                            { en: "focus better with classmates", vn: "tập trung tốt hơn cùng bạn cùng lớp" }
+                            { en: "focus better with classmates", vn: "tập trung tốt hơn cùng bạn cùng lớp" },
+                            { en: "get immediate feedback on mistakes", vn: "nhận phản hồi sửa lỗi ngay lập tức" },
+                            { en: "join lively group discussions", vn: "tham gia thảo luận nhóm sôi nổi" }
                         ]
                     }
                 ],
@@ -7857,26 +8412,48 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Kho tài liệu phong phú, miễn phí - Nhiều bài giảng video giúp rèn kỹ năng nghe):</div>
                     <div class="topic-formula-text">
-                        → I really like the rich materials online. There are many <span class="formula-bracket-hl">[loại tài liệu]</span> to help me <span class="formula-bracket-hl">[lợi ích học tập]</span>.
+                        → I really like the rich materials online. There are many <span class="formula-bracket-hl">[loại tài liệu]</span> to help me <span class="formula-bracket-hl">[lợi ích học tập - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "⏰ [Linh hoạt & Tiện lợi] (Cách 1):",
+                        title: "⏰ [Thời gian & Địa điểm học] (Cách 1):",
                         items: [
                             { en: "anytime and anywhere", vn: "bất cứ lúc nào và ở bất cứ nơi đâu" },
                             { en: "in my free time at home", vn: "vào thời gian rảnh rỗi tại nhà" },
-                            { en: "convenient and comfortable", vn: "tiện lợi và thoải mái" },
-                            { en: "stress-free", vn: "không bị căng thẳng áp lực" }
+                            { en: "early in the morning", vn: "vào buổi sáng sớm" },
+                            { en: "late at night in my bedroom", vn: "vào đêm muộn trong phòng ngủ" },
+                            { en: "at a quiet coffee shop", vn: "tại một quán cà phê yên tĩnh" }
                         ]
                     },
                     {
-                        title: "📚 [Tài liệu phong phú & Luyện nghe] (Cách 2):",
+                        title: "✨ [Tính từ mô tả ưu điểm] (Cách 1):",
+                        items: [
+                            { en: "convenient and comfortable", vn: "tiện lợi và thoải mái" },
+                            { en: "stress-free", vn: "không bị căng thẳng áp lực" },
+                            { en: "flexible and time-saving", vn: "linh hoạt và tiết kiệm thời gian" },
+                            { en: "easy and relaxing", vn: "dễ dàng và thư thái" },
+                            { en: "suitable for my busy schedule", vn: "phù hợp với lịch trình bận rộn của tôi" }
+                        ]
+                    },
+                    {
+                        title: "📚 [Loại tài liệu trực tuyến] (Cách 2):",
                         items: [
                             { en: "free video lessons", vn: "nhiều bài học video miễn phí" },
                             { en: "interactive practice exercises", vn: "các bài tập thực hành tương tác" },
+                            { en: "useful English podcasts", vn: "các kênh podcast tiếng Anh bổ ích" },
+                            { en: "online vocabulary flashcards", vn: "các bộ thẻ từ vựng trực tuyến" },
+                            { en: "bilingual news articles", vn: "các bài báo song ngữ" }
+                        ]
+                    },
+                    {
+                        title: "🎯 [Lợi ích học tập] (Cách 2):",
+                        items: [
                             { en: "practice my listening skills", vn: "thực hành rèn luyện kỹ năng nghe" },
-                            { en: "learn new words naturally", vn: "học từ mới một cách tự nhiên" }
+                            { en: "learn new words naturally", vn: "học từ mới một cách tự nhiên" },
+                            { en: "improve my speaking fluency", vn: "cải thiện độ trôi chảy khi nói" },
+                            { en: "review grammar easily", vn: "ôn tập ngữ pháp dễ dàng" },
+                            { en: "prepare well for exams", vn: "chuẩn bị tốt cho các kỳ thi" }
                         ]
                     }
                 ],
@@ -7906,26 +8483,38 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Ba đến bốn lần một tuần - Những ngày bận rộn chỉ ôn vài thẻ từ vựng):</div>
                     <div class="topic-formula-text">
-                        → I usually study online <span class="formula-bracket-hl">[tần suất]</span>. On busy days, I only <span class="formula-bracket-hl">[hành động ngắn]</span> to keep my habit.
+                        → I usually study online <span class="formula-bracket-hl">[tần suất]</span>. On busy days, I only <span class="formula-bracket-hl">[hành động ngắn - Vo]</span> to keep my habit.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "📅 [Tần suất & Thời gian] (Cách 1):",
+                        title: "📅 [Tần suất học trực tuyến] (Cách 1 & 2):",
                         items: [
                             { en: "almost every day", vn: "hầu như mỗi ngày" },
                             { en: "every single evening", vn: "mỗi một buổi tối" },
-                            { en: "about thirty minutes", vn: "khoảng 30 phút" },
-                            { en: "one hour after dinner", vn: "một tiếng sau bữa tối" }
+                            { en: "three or four times a week", vn: "ba hoặc bốn lần một tuần" },
+                            { en: "five times a week", vn: "năm lần một tuần" },
+                            { en: "every weekend morning", vn: "mỗi sáng cuối tuần" }
                         ]
                     },
                     {
-                        title: "⏳ [Tần suất & Thói quen ngắn] (Cách 2):",
+                        title: "⏳ [Khoảng thời gian luyện tập] (Cách 1):",
                         items: [
-                            { en: "three or four times a week", vn: "ba hoặc bốn lần một tuần" },
+                            { en: "about thirty minutes", vn: "khoảng 30 phút" },
+                            { en: "one hour after dinner", vn: "một tiếng sau bữa tối" },
+                            { en: "around forty-five minutes", vn: "khoảng 45 phút" },
+                            { en: "twenty minutes before bedtime", vn: "20 phút trước giờ đi ngủ" },
+                            { en: "at least half an hour", vn: "ít nhất nửa tiếng đồng hồ" }
+                        ]
+                    },
+                    {
+                        title: "⚡ [Hành động ôn tập ngắn] (Cách 2):",
+                        items: [
                             { en: "review a few flashcards", vn: "ôn lại một vài thẻ từ vựng" },
                             { en: "listen to a short podcast", vn: "nghe một mẩu podcast ngắn" },
-                            { en: "keep my habit", vn: "duy trì thói quen học tập của mình" }
+                            { en: "watch a five-minute video", vn: "xem một video ngắn dài năm phút" },
+                            { en: "learn five new words", vn: "học năm từ vựng mới" },
+                            { en: "do a quick grammar quiz", vn: "làm một bài trắc nghiệm ngữ pháp nhanh" }
                         ]
                     }
                 ],
@@ -7962,26 +8551,38 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Dùng vài tiếng mỗi ngày nhưng chủ động giới hạn thời gian để bảo vệ mắt):</div>
                     <div class="topic-formula-text">
-                        → I use it several hours a day. However, I'm trying to <span class="formula-bracket-hl">[hành động giới hạn]</span> to protect my eyes.
+                        → I use it several hours a day. However, I'm trying to <span class="formula-bracket-hl">[hành động giới hạn - Vo]</span> to protect my eyes.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "📲 [Mục đích thiết yếu] (Cách 1):",
+                        title: "📲 [Mục đích thiết yếu - Danh từ] (Cách 1):",
                         items: [
                             { en: "daily communication", vn: "liên lạc thường ngày" },
                             { en: "work and my studies", vn: "công việc và việc học của tôi" },
-                            { en: "keeping in touch with family", vn: "giữ liên lạc với gia đình người thân" },
-                            { en: "checking important updates", vn: "kiểm tra các cập nhật quan trọng" }
+                            { en: "online learning", vn: "việc học tập trực tuyến" },
+                            { en: "personal entertainment", vn: "giải trí cá nhân" },
+                            { en: "daily schedule management", vn: "quản lý lịch trình hằng ngày" }
                         ]
                     },
                     {
-                        title: "⏱️ [Giới hạn thời gian màn hình] (Cách 2):",
+                        title: "💬 [Hoạt động liên lạc thường ngày] (Mở rộng Cách 1):",
+                        items: [
+                            { en: "keep in touch with family", vn: "giữ liên lạc với gia đình người thân" },
+                            { en: "check important updates", vn: "kiểm tra các cập nhật quan trọng" },
+                            { en: "contact my colleagues", vn: "liên hệ với đồng nghiệp" },
+                            { en: "send quick messages", vn: "gửi các tin nhắn nhanh" },
+                            { en: "read daily news", vn: "đọc tin tức hằng ngày" }
+                        ]
+                    },
+                    {
+                        title: "⏱️ [Hành động giới hạn thời gian] (Cách 2):",
                         items: [
                             { en: "limit my screen time", vn: "hạn chế thời gian nhìn vào màn hình" },
                             { en: "reduce phone use at night", vn: "giảm bớt dùng điện thoại vào ban đêm" },
-                            { en: "protect my eyes", vn: "bảo vệ đôi mắt của mình" },
-                            { en: "avoid eye strain", vn: "tránh bị mỏi mắt" }
+                            { en: "avoid eye strain", vn: "tránh bị mỏi mắt" },
+                            { en: "turn off unnecessary notifications", vn: "tắt các thông báo không cần thiết" },
+                            { en: "put my phone away before bed", vn: "cất điện thoại đi trước giờ ngủ" }
                         ]
                     }
                 ],
@@ -8005,31 +8606,54 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Giải trí thư giãn - Nghe nhạc yêu thích và lướt mạng xã hội sau ngày bận rộn):</div>
                     <div class="topic-formula-text">
-                        → I mostly use my phone to <span class="formula-bracket-hl">[hoạt động giải trí 1]</span> and <span class="formula-bracket-hl">[hoạt động giải trí 2]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                        → I mostly use my phone to <span class="formula-bracket-hl">[hoạt động giải trí 1 - Vo]</span> and <span class="formula-bracket-hl">[hoạt động giải trí 2 - Vo]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Phục vụ học tập - Tra cứu thông tin hữu ích và trao đổi tài liệu với bạn học):</div>
                     <div class="topic-formula-text">
-                        → I mainly use it for my studies. I often <span class="formula-bracket-hl">[hoạt động học tập]</span> and <span class="formula-bracket-hl">[hoạt động trao đổi]</span> with my classmates.
+                        → I mainly use it for my studies. I often <span class="formula-bracket-hl">[hoạt động học tập - Vo]</span> and <span class="formula-bracket-hl">[hoạt động trao đổi - Vo]</span> with my classmates.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🎵 [Giải trí trên điện thoại] (Cách 1):",
+                        title: "🎵 [Hoạt động giải trí] (Cách 1):",
                         items: [
                             { en: "listen to favorite songs", vn: "nghe những bài hát yêu thích" },
                             { en: "check social media", vn: "lướt các trang mạng xã hội" },
                             { en: "watch funny short videos", vn: "xem các video ngắn hài hước" },
-                            { en: "relax after a busy day", vn: "thư giãn sau một ngày bận rộn" }
+                            { en: "play mobile games", vn: "chơi các trò chơi trên điện thoại" },
+                            { en: "chat with close friends", vn: "trò chuyện với bạn bè thân thiết" }
                         ]
                     },
                     {
-                        title: "📑 [Học tập & Tra cứu] (Cách 2):",
+                        title: "😊 [Lợi ích giải trí] (Cách 1):",
+                        items: [
+                            { en: "relax after a busy day", vn: "thư giãn sau một ngày bận rộn" },
+                            { en: "reduce daily stress", vn: "giảm bớt căng thẳng hằng ngày" },
+                            { en: "clear my mind", vn: "giải tỏa tâm trí" },
+                            { en: "improve my mood", vn: "cải thiện tâm trạng của mình" },
+                            { en: "recharge my energy", vn: "nạp lại năng lượng" }
+                        ]
+                    },
+                    {
+                        title: "📑 [Hoạt động học tập] (Cách 2):",
                         items: [
                             { en: "search for useful information", vn: "tìm kiếm những thông tin hữu ích" },
-                            { en: "exchange study materials with my classmates", vn: "trao đổi tài liệu học tập cùng bạn học" },
-                            { en: "read educational articles", vn: "đọc các bài viết kiến thức giáo dục" }
+                            { en: "read educational articles", vn: "đọc các bài viết kiến thức giáo dục" },
+                            { en: "look up new English words", vn: "tra cứu các từ vựng tiếng Anh mới" },
+                            { en: "watch online lectures", vn: "xem các bài giảng trực tuyến" },
+                            { en: "review digital flashcards", vn: "ôn tập qua thẻ từ vựng điện tử" }
+                        ]
+                    },
+                    {
+                        title: "🤝 [Hoạt động trao đổi] (Cách 2):",
+                        items: [
+                            { en: "exchange study materials", vn: "trao đổi tài liệu học tập" },
+                            { en: "discuss group assignments", vn: "thảo luận bài tập nhóm" },
+                            { en: "share lecture notes", vn: "chia sẻ ghi chép bài giảng" },
+                            { en: "practice English speaking", vn: "luyện nói tiếng Anh" },
+                            { en: "prepare for class presentations", vn: "chuẩn bị cho các bài thuyết trình trên lớp" }
                         ]
                     }
                 ],
@@ -8053,30 +8677,44 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời CÓ NHƯNG CẦN QUY TẮC NGHIÊM NGẶT - Tra cứu tài liệu dưới sự hướng dẫn của giáo viên):</div>
                     <div class="topic-formula-text">
-                        → Yes, but with strict rules. Students should use phones to <span class="formula-bracket-hl">[mục đích học tập]</span> under the teacher's guidance.
+                        → Yes, but with strict rules. Students should use phones to <span class="formula-bracket-hl">[mục đích học tập - Vo]</span> under the teacher's guidance.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG NÊN - Điện thoại dễ gây xao nhãng, khiến học sinh mất tập trung vào bài học):</div>
                     <div class="topic-formula-text">
-                        → No, I don't think so. Phones easily cause <span class="formula-bracket-hl">[tác hại tiêu cực]</span>, so students cannot <span class="formula-bracket-hl">[ảnh hưởng xấu]</span> during class.
+                        → No, I don't think so. Phones easily cause <span class="formula-bracket-hl">[tác hại tiêu cực]</span>, so students cannot <span class="formula-bracket-hl">[ảnh hưởng xấu - Vo]</span> during class.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🧑‍🏫 [Quy tắc & Học tập] (Cách 1):",
+                        title: "🧑‍🏫 [Mục đích học tập trên lớp] (Cách 1):",
                         items: [
                             { en: "search for lesson materials", vn: "tìm kiếm tài liệu phục vụ bài học" },
                             { en: "look up new vocabulary", vn: "tra cứu từ vựng mới" },
-                            { en: "teacher's careful guidance", vn: "sự hướng dẫn cẩn thận của thầy cô" }
+                            { en: "join interactive class quizzes", vn: "tham gia các câu đố tương tác trên lớp" },
+                            { en: "read digital textbooks", vn: "đọc sách giáo khoa điện tử" },
+                            { en: "check academic information", vn: "kiểm tra thông tin học thuật" }
                         ]
                     },
                     {
-                        title: "📵 [Xao nhãng & Bất lợi] (Cách 2):",
+                        title: "📵 [Tác hại tiêu cực] (Cách 2):",
                         items: [
                             { en: "major distractions", vn: "sự xao nhãng lớn" },
-                            { en: "gaming addiction", vn: "nghiện chơi game" },
-                            { en: "focus on their lessons during class", vn: "tập trung vào bài học trong giờ lên lớp" }
+                            { en: "gaming addiction", vn: "tình trạng nghiện chơi game" },
+                            { en: "noisy social media notifications", vn: "các thông báo mạng xã hội ồn ào" },
+                            { en: "serious class disruptions", vn: "sự gián đoạn lớp học nghiêm trọng" },
+                            { en: "poor study habits", vn: "những thói quen học tập xấu" }
+                        ]
+                    },
+                    {
+                        title: "⚠️ [Ảnh hưởng xấu đến việc học] (Cách 2):",
+                        items: [
+                            { en: "focus on their lessons", vn: "tập trung vào bài học của họ" },
+                            { en: "listen to the teacher carefully", vn: "lắng nghe giáo viên giảng bài cẩn thận" },
+                            { en: "understand difficult subjects", vn: "hiểu được các môn học khó" },
+                            { en: "participate in class activities", vn: "tham gia vào các hoạt động trên lớp" },
+                            { en: "take proper lecture notes", vn: "ghi chép bài giảng đầy đủ" }
                         ]
                     }
                 ],
@@ -8107,32 +8745,45 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Giáo viên - Mong muốn dạy dỗ học sinh và lan tỏa tri thức hữu ích):</div>
                     <div class="topic-formula-text">
-                        → When I was a child, I dreamed of becoming a <span class="formula-bracket-hl">[nghề nghiệp mơ ước]</span>. I wanted to <span class="formula-bracket-hl">[lý do ước mơ]</span>.
+                        → When I was a child, I dreamed of becoming a <span class="formula-bracket-hl">[nghề nghiệp mơ ước]</span>. I wanted to <span class="formula-bracket-hl">[lý do ước mơ - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Bác sĩ - Mong muốn khám chữa bệnh và cứu giúp người khác):</div>
                     <div class="topic-formula-text">
-                        → As a child, my dream job was to be a <span class="formula-bracket-hl">[nghề nghiệp mơ ước]</span> because I loved <span class="formula-bracket-hl">[lý do ước mơ]</span>.
+                        → As a child, my dream job was to be a <span class="formula-bracket-hl">[nghề nghiệp mơ ước]</span> because I loved <span class="formula-bracket-hl">[lý do ước mơ - Ving]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "👩‍🏫 [Giáo viên & Dạy học] (Cách 1):",
+                        title: "👩‍🏫 [Nghề nghiệp mơ ước] (Cách 1 & 2):",
                         items: [
                             { en: "teacher", vn: "giáo viên" },
                             { en: "primary school teacher", vn: "giáo viên tiểu học" },
-                            { en: "teach young children", vn: "dạy dỗ các em nhỏ" },
-                            { en: "share useful knowledge", vn: "chia sẻ kiến thức hữu ích" }
+                            { en: "doctor", vn: "bác sĩ" },
+                            { en: "nurse", vn: "y tá" },
+                            { en: "airline pilot", vn: "phi công hàng không" },
+                            { en: "scientist", vn: "nhà khoa học" }
                         ]
                     },
                     {
-                        title: "🩺 [Bác sĩ & Giúp đỡ] (Cách 2):",
+                        title: "📚 [Lý do ước mơ (Giáo dục)] (Cách 1):",
                         items: [
-                            { en: "doctor", vn: "bác sĩ" },
-                            { en: "nurse", vn: "y tá" },
-                            { en: "helping sick people", vn: "giúp đỡ người đau ốm bệnh tật" },
-                            { en: "saving lives", vn: "cứu giúp sinh mạng mọi người" }
+                            { en: "teach young children", vn: "dạy dỗ các em nhỏ" },
+                            { en: "share useful knowledge", vn: "chia sẻ kiến thức hữu ích" },
+                            { en: "inspire students every day", vn: "truyền cảm hứng cho học sinh mỗi ngày" },
+                            { en: "work in a friendly school", vn: "làm việc trong ngôi trường thân thiện" },
+                            { en: "help kids learn new things", vn: "giúp trẻ em học hỏi những điều mới" }
+                        ]
+                    },
+                    {
+                        title: "🩺 [Lý do ước mơ (Y tế & Xã hội)] (Cách 2):",
+                        items: [
+                            { en: "help sick people", vn: "giúp đỡ người đau ốm bệnh tật" },
+                            { en: "save lives", vn: "cứu giúp sinh mạng mọi người" },
+                            { en: "take care of patients", vn: "chăm sóc các bệnh nhân" },
+                            { en: "improve community health", vn: "nâng cao sức khỏe cộng đồng" },
+                            { en: "cure serious illnesses", vn: "chữa trị các căn bệnh nghiêm trọng" }
                         ]
                     }
                 ],
@@ -8156,32 +8807,44 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Làm nhân viên pha chế ở quán cà phê để kiếm thêm thu nhập và tích lũy kinh nghiệm):</div>
                     <div class="topic-formula-text">
-                        → Yes, I do. I work as a <span class="formula-bracket-hl">[công việc làm thêm]</span> at weekends. It helps me <span class="formula-bracket-hl">[lợi ích tài chính]</span> and gain experience.
+                        → Yes, I do. I work as a <span class="formula-bracket-hl">[công việc làm thêm]</span> at weekends. It helps me <span class="formula-bracket-hl">[lợi ích tài chính - Vo]</span> and gain experience.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Trả lời CHƯA CÓ NHƯNG MUỐN THỬ - Muốn rèn luyện các kỹ năng hữu ích và mở rộng quan hệ bạn bè):</div>
                     <div class="topic-formula-text">
-                        → No, I don't, but I would love to have one. A weekend job can help me <span class="formula-bracket-hl">[kỹ năng phát triển]</span> and make friends.
+                        → No, I don't, but I would love to have one. A weekend job can help me <span class="formula-bracket-hl">[kỹ năng phát triển - Vo]</span> and make friends.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "☕ [Việc làm thêm & Lợi ích] (Cách 1):",
+                        title: "☕ [Công việc làm thêm cuối tuần] (Cách 1):",
                         items: [
                             { en: "barista at a coffee shop", vn: "nhân viên pha chế ở quán cà phê" },
                             { en: "waiter at a restaurant", vn: "nhân viên phục vụ ở nhà hàng" },
-                            { en: "earn extra money", vn: "kiếm thêm thu nhập trang trải" },
-                            { en: "gain practical experience", vn: "tích lũy kinh nghiệm thực tế" }
+                            { en: "part-time English tutor", vn: "gia sư tiếng Anh bán thời gian" },
+                            { en: "cashier at a supermarket", vn: "nhân viên thu ngân tại siêu thị" },
+                            { en: "sales assistant at a clothing store", vn: "nhân viên bán hàng tại cửa hàng quần áo" }
                         ]
                     },
                     {
-                        title: "💼 [Kỹ năng & Mở rộng quan hệ] (Cách 2):",
+                        title: "💰 [Lợi ích tài chính] (Cách 1):",
+                        items: [
+                            { en: "earn extra money", vn: "kiếm thêm thu nhập trang trải" },
+                            { en: "pay my daily expenses", vn: "chi trả các khoản sinh hoạt phí hằng ngày" },
+                            { en: "support my parents financially", vn: "hỗ trợ tài chính cho bố mẹ" },
+                            { en: "save money for tuition fees", vn: "tiết kiệm tiền đóng học phí" },
+                            { en: "become financially independent", vn: "trở nên tự lập về tài chính" }
+                        ]
+                    },
+                    {
+                        title: "💼 [Kỹ năng phát triển] (Cách 2):",
                         items: [
                             { en: "develop useful skills", vn: "phát triển các kỹ năng hữu ích" },
-                            { en: "manage my time", vn: "học cách quản lý thời gian" },
+                            { en: "manage my time better", vn: "quản lý thời gian của bản thân tốt hơn" },
                             { en: "build my confidence", vn: "xây dựng sự tự tin" },
-                            { en: "make new friends", vn: "kết giao thêm nhiều bạn mới" }
+                            { en: "improve my communication skills", vn: "cải thiện kỹ năng giao tiếp" },
+                            { en: "learn practical problem-solving skills", vn: "học kỹ năng giải quyết vấn đề thực tế" }
                         ]
                     }
                 ],
@@ -8216,20 +8879,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "💡 [Lĩnh vực mới & Cơ hội] (Cách 1):",
+                        title: "💡 [Lĩnh vực hiện tại (Công nghệ & Kinh tế)] (Cách 1):",
                         items: [
                             { en: "the technology field", vn: "lĩnh vực công nghệ" },
                             { en: "business and marketing", vn: "kinh doanh và tiếp thị" },
-                            { en: "modern design", vn: "thiết kế hiện đại" }
+                            { en: "modern graphic design", vn: "thiết kế đồ họa hiện đại" },
+                            { en: "finance and banking", vn: "tài chính và ngân hàng" },
+                            { en: "international trade", vn: "thương mại quốc tế" }
                         ]
                     },
                     {
-                        title: "🎯 [Đam mê kiên định] (Cách 2):",
+                        title: "🌐 [Lĩnh vực hiện tại (Dịch vụ & Truyền thông)] (Cách 1):",
+                        items: [
+                            { en: "digital media", vn: "truyền thông kỹ thuật số" },
+                            { en: "tourism and hospitality", vn: "du lịch và nhà hàng khách sạn" },
+                            { en: "human resources management", vn: "quản trị nhân sự" },
+                            { en: "e-commerce business", vn: "kinh doanh thương mại điện tử" }
+                        ]
+                    },
+                    {
+                        title: "🎯 [Lĩnh vực đam mê kiên định] (Cách 2):",
                         items: [
                             { en: "teaching", vn: "công việc giảng dạy" },
                             { en: "medical care", vn: "ngành chăm sóc y tế" },
-                            { en: "achieve this goal", vn: "đạt được mục tiêu này" },
-                            { en: "childhood dream", vn: "ước mơ thời thơ ấu" }
+                            { en: "scientific research", vn: "nghiên cứu khoa học" },
+                            { en: "environmental protection", vn: "bảo vệ môi trường" },
+                            { en: "foreign language education", vn: "giáo dục ngoại ngữ" }
                         ]
                     }
                 ],
@@ -8271,22 +8946,40 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🛵 [Xe máy & Tiện lợi] (Cách 1):",
+                        title: "🏢 [Nơi đến hằng ngày] (Cách 1):",
                         items: [
                             { en: "work", vn: "chỗ làm việc" },
                             { en: "university", vn: "trường đại học" },
-                            { en: "very convenient", vn: "rất thuận tiện" },
-                            { en: "flexible on busy streets", vn: "linh hoạt trên các đường phố đông đúc" },
-                            { en: "save a lot of travel time", vn: "tiết kiệm nhiều thời gian đi lại" }
+                            { en: "school", vn: "trường học" },
+                            { en: "my office", vn: "văn phòng của tôi" },
+                            { en: "my English center", vn: "trung tâm tiếng Anh của tôi" }
                         ]
                     },
                     {
-                        title: "🚌 [Xe buýt & An toàn] (Cách 2):",
+                        title: "🛵 [Tính từ ưu điểm của xe máy] (Cách 1):",
                         items: [
-                            { en: "the ticket is very cheap", vn: "giá vé rất rẻ" },
+                            { en: "very convenient", vn: "rất thuận tiện" },
+                            { en: "flexible on busy streets", vn: "linh hoạt trên các đường phố đông đúc" },
+                            { en: "fast and easy to park", vn: "nhanh chóng và dễ đỗ xe" },
+                            { en: "suitable for short distances", vn: "phù hợp cho những quãng đường ngắn" }
+                        ]
+                    },
+                    {
+                        title: "🎫 [Đặc điểm chi phí vé xe buýt] (Cách 2):",
+                        items: [
+                            { en: "very cheap", vn: "rất rẻ" },
                             { en: "affordable", vn: "vừa túi tiền" },
-                            { en: "very comfortable and safe for me", vn: "rất thoải mái và an toàn đối với tôi" },
-                            { en: "environmentally friendly", vn: "thân thiện với môi trường" }
+                            { en: "extremely economical", vn: "cực kỳ tiết kiệm" },
+                            { en: "discounted for students", vn: "được giảm giá cho sinh viên" }
+                        ]
+                    },
+                    {
+                        title: "🚌 [Tính từ ưu điểm của xe buýt] (Cách 2):",
+                        items: [
+                            { en: "comfortable", vn: "thoải mái" },
+                            { en: "environmentally friendly", vn: "thân thiện với môi trường" },
+                            { en: "clean and air-conditioned", vn: "sạch sẽ và có máy điều hòa" },
+                            { en: "relaxing", vn: "thư thái dễ chịu" }
                         ]
                     }
                 ],
@@ -8310,32 +9003,54 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đi chung xe cùng bạn học/đồng nghiệp để san sẻ chi phí tiền xăng):</div>
                     <div class="topic-formula-text">
-                        → To save money, I often <span class="formula-bracket-hl">[hành động tiết kiệm]</span>. It helps me <span class="formula-bracket-hl">[lợi ích tài chính]</span> on petrol.
+                        → To save money, I often <span class="formula-bracket-hl">[hành động tiết kiệm - Vo]</span>. It helps me <span class="formula-bracket-hl">[lợi ích tài chính - Vo]</span> on petrol.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Đạp xe hoặc đi bộ với các cự ly gần - Vừa tiết kiệm chi phí vừa nâng cao sức khỏe):</div>
                     <div class="topic-formula-text">
-                        → For short distances, I usually <span class="formula-bracket-hl">[hành động di chuyển xanh]</span>. It helps me save costs and <span class="formula-bracket-hl">[lợi ích sức khỏe]</span>.
+                        → For short distances, I usually <span class="formula-bracket-hl">[hành động di chuyển xanh - Vo]</span>. It helps me save costs and <span class="formula-bracket-hl">[lợi ích sức khỏe - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🚗 [Đi chung xe & Tiết kiệm] (Cách 1):",
+                        title: "🚗 [Hành động đi lại tiết kiệm] (Cách 1):",
                         items: [
                             { en: "share rides with my classmates", vn: "đi chung xe với các bạn cùng lớp" },
                             { en: "carpool with colleagues", vn: "đi chung xe cùng đồng nghiệp" },
-                            { en: "save a lot of money on petrol", vn: "tiết kiệm được nhiều tiền xăng xe" },
-                            { en: "cut down on daily expenses", vn: "cắt giảm các khoản chi tiêu hằng ngày" }
+                            { en: "buy a monthly bus pass", vn: "mua vé xe buýt tháng" },
+                            { en: "maintain my motorbike regularly", vn: "bảo dưỡng xe máy định kỳ" },
+                            { en: "plan my travel routes carefully", vn: "lên lộ trình di chuyển cẩn thận" }
                         ]
                     },
                     {
-                        title: "🚲 [Đi xe đạp & Sức khỏe] (Cách 2):",
+                        title: "💰 [Lợi ích tài chính] (Cách 1):",
+                        items: [
+                            { en: "save a lot of money", vn: "tiết kiệm được nhiều tiền" },
+                            { en: "cut down on daily expenses", vn: "cắt giảm các khoản chi tiêu hằng ngày" },
+                            { en: "reduce monthly fuel costs", vn: "giảm chi phí nhiên liệu hằng tháng" },
+                            { en: "split transport bills easily", vn: "chia sẻ chi phí đi lại dễ dàng" },
+                            { en: "manage my budget better", vn: "quản lý ngân sách cá nhân tốt hơn" }
+                        ]
+                    },
+                    {
+                        title: "🚲 [Hành động di chuyển xanh] (Cách 2):",
                         items: [
                             { en: "ride a bicycle", vn: "đạp xe đạp" },
                             { en: "walk on foot", vn: "đi bộ" },
+                            { en: "use a public city bike", vn: "sử dụng xe đạp công cộng của thành phố" },
+                            { en: "ride an electric bicycle", vn: "đi xe đạp điện" },
+                            { en: "take a morning walk", vn: "đi bộ vào buổi sáng" }
+                        ]
+                    },
+                    {
+                        title: "💪 [Lợi ích sức khỏe] (Cách 2):",
+                        items: [
                             { en: "improve my physical health every day", vn: "cải thiện sức khỏe thể chất mỗi ngày" },
-                            { en: "stay in good shape", vn: "duy trì vóc dáng khỏe đẹp" }
+                            { en: "stay in good shape", vn: "duy trì vóc dáng khỏe đẹp" },
+                            { en: "strengthen my leg muscles", vn: "tăng cường cơ bắp chân" },
+                            { en: "keep my body active", vn: "giữ cho cơ thể luôn năng động" },
+                            { en: "protect the green environment", vn: "bảo vệ môi trường xanh" }
                         ]
                     }
                 ],
@@ -8359,32 +9074,52 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đi máy bay - Tốc độ cực nhanh, tiết kiệm tối đa thời gian di chuyển đường dài):</div>
                     <div class="topic-formula-text">
-                        → For long distances, I prefer traveling by plane. It's <span class="formula-bracket-hl">[tính từ]</span> and helps me <span class="formula-bracket-hl">[lợi ích thời gian]</span>.
+                        → For long distances, I prefer traveling by plane. It's <span class="formula-bracket-hl">[tính từ]</span> and helps me <span class="formula-bracket-hl">[lợi ích thời gian - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Đi tàu hỏa - Rất an toàn, thoải mái ngắm nhìn phong cảnh tuyệt đẹp qua cửa sổ):</div>
                     <div class="topic-formula-text">
-                        → I prefer taking a train because it's <span class="formula-bracket-hl">[tính từ]</span>. I can <span class="formula-bracket-hl">[hoạt động ngắm cảnh]</span> through the window.
+                        → I prefer taking a train because it's <span class="formula-bracket-hl">[tính từ]</span>. I can <span class="formula-bracket-hl">[hoạt động ngắm cảnh - Vo]</span> through the window.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "✈️ [Máy bay & Tốc độ] (Cách 1):",
+                        title: "✈️ [Tính từ ưu điểm của máy bay] (Cách 1):",
                         items: [
                             { en: "extremely fast", vn: "cực kỳ nhanh chóng" },
                             { en: "modern and comfortable", vn: "hiện đại và tiện nghi" },
-                            { en: "save a lot of travel time", vn: "tiết kiệm được rất nhiều thời gian di chuyển" },
-                            { en: "avoid feeling tired", vn: "tránh cảm giác mệt mỏi" }
+                            { en: "safe and reliable", vn: "an toàn và đáng tin cậy" },
+                            { en: "convenient for long trips", vn: "thuận tiện cho những chuyến đi xa" }
                         ]
                     },
                     {
-                        title: "🚆 [Tàu hỏa & Ngắm cảnh] (Cách 2):",
+                        title: "⏱️ [Lợi ích thời gian & Sức khỏe] (Cách 1):",
                         items: [
-                            { en: "it's very safe", vn: "nó rất an toàn" },
+                            { en: "save a lot of travel time", vn: "tiết kiệm được rất nhiều thời gian di chuyển" },
+                            { en: "avoid feeling tired", vn: "tránh cảm giác mệt mỏi" },
+                            { en: "reach distant cities quickly", vn: "đến các thành phố xa xôi nhanh chóng" },
+                            { en: "have more time for sightseeing", vn: "có thêm thời gian để tham quan" },
+                            { en: "prevent motion sickness", vn: "ngăn ngừa tình trạng say xe" }
+                        ]
+                    },
+                    {
+                        title: "🚆 [Tính từ ưu điểm của tàu hỏa] (Cách 2):",
+                        items: [
+                            { en: "very safe", vn: "rất an toàn" },
                             { en: "smooth and peaceful", vn: "êm ái và thanh bình" },
-                            { en: "enjoy beautiful landscapes through the window", vn: "ngắm nhìn các phong cảnh đẹp qua cửa sổ" },
-                            { en: "take nice photos", vn: "chụp nhiều bức ảnh đẹp" }
+                            { en: "spacious and affordable", vn: "rộng rãi và vừa túi tiền" },
+                            { en: "relaxing and steady", vn: "thư thái và ổn định" }
+                        ]
+                    },
+                    {
+                        title: "🏞️ [Hoạt động trên tàu hỏa] (Cách 2):",
+                        items: [
+                            { en: "enjoy beautiful landscapes", vn: "ngắm nhìn các phong cảnh đẹp" },
+                            { en: "take nice photos", vn: "chụp nhiều bức ảnh đẹp" },
+                            { en: "watch green fields and mountains", vn: "ngắm những cánh đồng xanh và núi non" },
+                            { en: "admire peaceful countryside views", vn: "chiêm ngưỡng khung cảnh làng quê yên bình" },
+                            { en: "see coastal scenery", vn: "ngắm nhìn cảnh biển dọc đường" }
                         ]
                     }
                 ],
@@ -8421,25 +9156,55 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Thường đi xe khách/tàu hỏa, muốn trải nghiệm bay trong tương lai):</div>
                     <div class="topic-formula-text">
-                        → No, I haven't. I usually travel by <span class="formula-bracket-hl">[phương tiện quen thuộc]</span>. However, I want to <span class="formula-bracket-hl">[mong muốn trải nghiệm]</span> in the future.
+                        → No, I haven't. I usually travel by <span class="formula-bracket-hl">[phương tiện quen thuộc]</span>. However, I want to <span class="formula-bracket-hl">[mong muốn trải nghiệm - Vo]</span> in the future.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "✈️ [Điểm đến & Cảm nhận] (Cách 1):",
+                        title: "✈️ [Điểm đến du lịch] (Cách 1):",
                         items: [
                             { en: "Da Nang city", vn: "thành phố Đà Nẵng" },
                             { en: "Phu Quoc island", vn: "đảo Phú Quốc" },
-                            { en: "my family", vn: "gia đình tôi" },
-                            { en: "very fast and exciting", vn: "rất nhanh chóng và hào hứng" }
+                            { en: "Ha Noi capital", vn: "thủ đô Hà Nội" },
+                            { en: "Nha Trang beach city", vn: "thành phố biển Nha Trang" },
+                            { en: "Ho Chi Minh City", vn: "Thành phố Hồ Chí Minh" }
                         ]
                     },
                     {
-                        title: "🚌 [Phương tiện & Trải nghiệm] (Cách 2):",
+                        title: "👨‍👩‍👧 [Đối tượng đi cùng] (Cách 1):",
+                        items: [
+                            { en: "family", vn: "gia đình" },
+                            { en: "close friends", vn: "những người bạn thân" },
+                            { en: "parents", vn: "bố mẹ" },
+                            { en: "colleagues", vn: "đồng nghiệp" }
+                        ]
+                    },
+                    {
+                        title: "✨ [Tính từ cảm nhận chuyến bay] (Cách 1):",
+                        items: [
+                            { en: "very fast and exciting", vn: "rất nhanh chóng và hào hứng" },
+                            { en: "smooth and comfortable", vn: "êm ái và thoải mái" },
+                            { en: "memorable and fun", vn: "đáng nhớ và vui vẻ" },
+                            { en: "safe and convenient", vn: "an toàn và thuận tiện" }
+                        ]
+                    },
+                    {
+                        title: "🚌 [Phương tiện quen thuộc] (Cách 2):",
                         items: [
                             { en: "coach or train", vn: "xe khách hoặc tàu hỏa" },
+                            { en: "public bus", vn: "xe buýt công cộng" },
+                            { en: "personal motorbike", vn: "xe máy cá nhân" },
+                            { en: "family car", vn: "xe ô tô gia đình" }
+                        ]
+                    },
+                    {
+                        title: "🌟 [Mong muốn trải nghiệm] (Cách 2):",
+                        items: [
                             { en: "experience flying soon", vn: "sớm trải nghiệm cảm giác đi máy bay" },
-                            { en: "take a flight", vn: "thực hiện một chuyến bay" }
+                            { en: "take a flight", vn: "thực hiện một chuyến bay" },
+                            { en: "fly to a foreign country", vn: "bay sang một đất nước khác" },
+                            { en: "see white clouds from above", vn: "ngắm mây trắng từ trên cao" },
+                            { en: "travel by plane with my family", vn: "đi du lịch bằng máy bay cùng gia đình" }
                         ]
                     }
                 ],
@@ -8474,19 +9239,40 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🛫 [Dịch vụ & Nhân viên] (Cách 1):",
+                        title: "👩‍✈️ [Đặc điểm tiếp viên hàng không] (Cách 1):",
                         items: [
                             { en: "very polite", vn: "rất lịch sự chu đáo" },
-                            { en: "fast check-in services for all passengers", vn: "dịch vụ làm thủ tục nhanh chóng cho mọi hành khách" },
-                            { en: "helpful and professional", vn: "nhiệt tình và chuyên nghiệp" }
+                            { en: "helpful and professional", vn: "nhiệt tình và chuyên nghiệp" },
+                            { en: "friendly and caring", vn: "thân thiện và biết quan tâm" },
+                            { en: "well-trained and attentive", vn: "được đào tạo bài bản và tận tình" }
                         ]
                     },
                     {
-                        title: "⏳ [Chậm chuyến & Nỗ lực] (Cách 2):",
+                        title: "🛫 [Tiện ích dịch vụ sân bay] (Cách 1):",
                         items: [
-                            { en: "delayed during busy holidays", vn: "bị hoãn lại trong những dịp lễ bận rộn" },
-                            { en: "improve this issue", vn: "cải thiện vấn đề này" },
-                            { en: "rescheduled unexpectedly", vn: "bị đổi lịch trình đột xuất" }
+                            { en: "fast check-in services", vn: "dịch vụ làm thủ tục nhanh chóng" },
+                            { en: "comfortable waiting lounges", vn: "phòng chờ thoải mái tiện nghi" },
+                            { en: "convenient online check-in", vn: "thủ tục check-in trực tuyến thuận tiện" },
+                            { en: "clear flight information boards", vn: "bảng thông tin chuyến bay rõ ràng" },
+                            { en: "free wireless Internet", vn: "mạng không dây miễn phí" }
+                        ]
+                    },
+                    {
+                        title: "⏳ [Vấn đề thường gặp của chuyến bay] (Cách 2):",
+                        items: [
+                            { en: "delayed", vn: "bị hoãn chuyến (trễ giờ)" },
+                            { en: "rescheduled unexpectedly", vn: "bị đổi lịch trình đột xuất" },
+                            { en: "overbooked", vn: "bị đặt quá số chỗ" },
+                            { en: "crowded and noisy", vn: "đông đúc và ồn ào" }
+                        ]
+                    },
+                    {
+                        title: "📅 [Thời điểm cao điểm] (Cách 2):",
+                        items: [
+                            { en: "busy holidays", vn: "những dịp lễ bận rộn" },
+                            { en: "Tet holiday", vn: "kỳ nghỉ Tết Nguyên đán" },
+                            { en: "summer vacations", vn: "những kỳ nghỉ hè" },
+                            { en: "peak travel seasons", vn: "các mùa du lịch cao điểm" }
                         ]
                     }
                 ],
@@ -8510,30 +9296,52 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Tiết kiệm thời gian quý báu và là phương tiện an toàn nhất cho chuyến đi xa):</div>
                     <div class="topic-formula-text">
-                        → In my opinion, planes help travelers <span class="formula-bracket-hl">[lợi ích thời gian]</span>. It's also considered the <span class="formula-bracket-hl">[lợi ích an toàn]</span> for long trips.
+                        → In my opinion, planes help travelers <span class="formula-bracket-hl">[lợi ích thời gian - Vo]</span>. It's also considered the <span class="formula-bracket-hl">[lợi ích an toàn]</span> for long trips.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Rất thoải mái, thư giãn trên ghế điều hòa và ngắm cảnh bầu trời):</div>
                     <div class="topic-formula-text">
-                        → Traveling by plane is <span class="formula-bracket-hl">[đặc điểm tiện nghi]</span>. Passengers can <span class="formula-bracket-hl">[hoạt động thư giãn]</span> and enjoy beautiful sky views.
+                        → Traveling by plane is <span class="formula-bracket-hl">[đặc điểm tiện nghi]</span>. Passengers can <span class="formula-bracket-hl">[hoạt động thư giãn - Vo]</span> and enjoy beautiful sky views.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "⏱️ [Thời gian & An toàn] (Cách 1):",
+                        title: "⏱️ [Lợi ích thời gian] (Cách 1):",
                         items: [
                             { en: "save valuable travel time", vn: "tiết kiệm thời gian đi lại quý báu" },
-                            { en: "safest transport for long journeys", vn: "phương tiện an toàn nhất cho các hành trình dài" },
-                            { en: "reach distant places quickly", vn: "đến những nơi xa xôi nhanh chóng" }
+                            { en: "reach distant places quickly", vn: "đến những nơi xa xôi nhanh chóng" },
+                            { en: "travel across countries in hours", vn: "di chuyển giữa các quốc gia chỉ trong vài giờ" },
+                            { en: "avoid long exhausting road trips", vn: "tránh những chuyến đi đường bộ dài mệt mỏi" },
+                            { en: "spend more time at their destination", vn: "dành được nhiều thời gian hơn tại điểm đến" }
                         ]
                     },
                     {
-                        title: "☁️ [Tiện nghi & Thư giãn] (Cách 2):",
+                        title: "🛡️ [Đánh giá độ an toàn & Tối ưu] (Cách 1):",
+                        items: [
+                            { en: "safest transport", vn: "phương tiện giao thông an toàn nhất" },
+                            { en: "most reliable option", vn: "lựa chọn đáng tin cậy nhất" },
+                            { en: "most efficient vehicle", vn: "phương tiện hiệu quả nhất" },
+                            { en: "best travel choice", vn: "lựa chọn di chuyển tốt nhất" }
+                        ]
+                    },
+                    {
+                        title: "💺 [Đặc điểm tiện nghi] (Cách 2):",
                         items: [
                             { en: "very comfortable", vn: "rất thoải mái tiện nghi" },
+                            { en: "modern and pleasant", vn: "hiện đại và dễ chịu" },
+                            { en: "smooth and relaxing", vn: "êm ái và thư giãn" },
+                            { en: "clean and well-equipped", vn: "sạch sẽ và trang bị đầy đủ" }
+                        ]
+                    },
+                    {
+                        title: "☁️ [Hoạt động thư giãn trên máy bay] (Cách 2):",
+                        items: [
                             { en: "relax in air-conditioned seats", vn: "thư giãn trên những chiếc ghế điều hòa mát mẻ" },
-                            { en: "enjoy beautiful sky views through windows", vn: "ngắm nhìn khung cảnh bầu trời tuyệt đẹp qua cửa sổ" }
+                            { en: "take a short nap", vn: "chợp mắt nghỉ ngơi một chút" },
+                            { en: "read magazines or books", vn: "đọc tạp chí hoặc sách" },
+                            { en: "enjoy tasty in-flight meals", vn: "thưởng thức các bữa ăn ngon trên máy bay" },
+                            { en: "listen to soft music", vn: "nghe những bản nhạc êm dịu" }
                         ]
                     }
                 ],
@@ -8570,24 +9378,45 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Ô nhiễm khói bụi từ xe cộ và người đi đường vượt đèn đỏ gây tai nạn):</div>
                     <div class="topic-formula-text">
-                        → In my city, we often face <span class="formula-bracket-hl">[vấn đề ô nhiễm]</span>. Moreover, some drivers <span class="formula-bracket-hl">[hành vi vi phạm]</span>, causing dangerous accidents.
+                        → In my city, we often face <span class="formula-bracket-hl">[vấn đề ô nhiễm]</span>. Moreover, some drivers <span class="formula-bracket-hl">[hành vi vi phạm - Vo]</span>, causing dangerous accidents.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🚦 [Ùn tắc & Giờ cao điểm] (Cách 1):",
+                        title: "🚦 [Vấn đề giao thông chính] (Cách 1):",
                         items: [
-                            { en: "traffic congestion during rush hours", vn: "ùn tắc giao thông trong các khung giờ cao điểm" },
-                            { en: "too many motorbikes and cars", vn: "quá nhiều xe máy và xe ô tô" },
-                            { en: "crowded narrow streets", vn: "các đường phố chật hẹp đông đúc" }
+                            { en: "traffic congestion", vn: "ùn tắc giao thông" },
+                            { en: "heavy traffic jams", vn: "kẹt xe nghiêm trọng" },
+                            { en: "slow-moving traffic", vn: "dòng xe cộ di chuyển chậm chạp" },
+                            { en: "overcrowded intersections", vn: "các ngã tư quá tải đông đúc" }
                         ]
                     },
                     {
-                        title: "🛑 [Khói bụi & Vi phạm] (Cách 2):",
+                        title: "🛵 [Nguyên nhân phương tiện] (Cách 1):",
+                        items: [
+                            { en: "too many motorbikes and cars", vn: "quá nhiều xe máy và xe ô tô" },
+                            { en: "thousands of private vehicles", vn: "hàng ngàn phương tiện cá nhân" },
+                            { en: "heavy trucks and buses", vn: "nhiều xe tải lớn và xe buýt" },
+                            { en: "endless lines of commuters", vn: "những hàng dài người đi làm nối đuôi nhau" }
+                        ]
+                    },
+                    {
+                        title: "💨 [Vấn đề ô nhiễm & Đường sá] (Cách 2):",
                         items: [
                             { en: "air pollution from vehicles", vn: "ô nhiễm không khí do khói bụi xe cộ" },
+                            { en: "loud noise pollution", vn: "ô nhiễm tiếng ồn lớn" },
+                            { en: "thick exhaust fumes and dust", vn: "khói thải đặc quánh và bụi bẩn" },
+                            { en: "flooded roads after heavy rain", vn: "đường sá ngập nước sau mưa lớn" }
+                        ]
+                    },
+                    {
+                        title: "🛑 [Hành vi vi phạm giao thông] (Cách 2):",
+                        items: [
                             { en: "run red lights", vn: "vượt đèn đỏ" },
-                            { en: "dangerous road accidents", vn: "các vụ tai nạn giao thông nguy hiểm" }
+                            { en: "drive over the speed limit", vn: "lái xe vượt quá tốc độ quy định" },
+                            { en: "ride on the pavement", vn: "chạy xe leo lên vỉa hè" },
+                            { en: "use mobile phones while driving", vn: "sử dụng điện thoại khi đang lái xe" },
+                            { en: "ignore traffic signs", vn: "phớt lờ các biển báo giao thông" }
                         ]
                     }
                 ],
@@ -8611,7 +9440,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Lãng phí thời gian, dễ trễ giờ làm và cảm thấy mệt mỏi căng thẳng):</div>
                     <div class="topic-formula-text">
-                        → Traffic problems waste a lot of time. People often <span class="formula-bracket-hl">[hậu quả công việc]</span> and feel very <span class="formula-bracket-hl">[tính từ cảm xúc tiêu cực]</span>.
+                        → Traffic problems waste a lot of time. People often <span class="formula-bracket-hl">[hậu quả công việc - Vo]</span> and feel very <span class="formula-bracket-hl">[tính từ cảm xúc tiêu cực]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -8622,19 +9451,40 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "⏳ [Trễ giờ & Mệt mỏi] (Cách 1):",
+                        title: "⏳ [Hậu quả công việc & Sinh hoạt] (Cách 1):",
                         items: [
                             { en: "arrive late for work", vn: "đến nơi làm việc bị muộn" },
-                            { en: "very tired and stressed daily", vn: "rất mệt mỏi và căng thẳng mỗi ngày" },
-                            { en: "miss important appointments", vn: "bỏ lỡ các cuộc hẹn quan trọng" }
+                            { en: "miss important appointments", vn: "bỏ lỡ các cuộc hẹn quan trọng" },
+                            { en: "get stuck on the road for hours", vn: "bị kẹt trên đường hàng giờ liền" },
+                            { en: "come home very late at night", vn: "trở về nhà rất muộn vào buổi tối" },
+                            { en: "lose daily work productivity", vn: "giảm năng suất làm việc hằng ngày" }
                         ]
                     },
                     {
-                        title: "😷 [Tác hại sức khỏe] (Cách 2):",
+                        title: "😫 [Tính từ cảm xúc tiêu cực] (Cách 1):",
+                        items: [
+                            { en: "tired and stressed", vn: "mệt mỏi và căng thẳng" },
+                            { en: "exhausted and impatient", vn: "kiệt sức và mất kiên nhẫn" },
+                            { en: "annoyed and frustrated", vn: "khó chịu và bực bội" },
+                            { en: "uncomfortable in hot weather", vn: "khó chịu trong thời tiết nắng nóng" }
+                        ]
+                    },
+                    {
+                        title: "💨 [Nguyên nhân độc hại từ giao thông] (Cách 2):",
                         items: [
                             { en: "toxic dust and fumes", vn: "bụi bẩn và khói thải độc hại" },
-                            { en: "breathing problems for many local residents", vn: "các vấn đề hô hấp cho nhiều người dân địa phương" },
-                            { en: "headaches and eye irritation", vn: "đau đầu và cay mắt" }
+                            { en: "polluted street air", vn: "không khí đường phố bị ô nhiễm" },
+                            { en: "heavy vehicle smoke", vn: "khói xe dày đặc" },
+                            { en: "harmful fine dust", vn: "bụi mịn có hại cho cơ thể" }
+                        ]
+                    },
+                    {
+                        title: "😷 [Vấn đề sức khỏe] (Cách 2):",
+                        items: [
+                            { en: "breathing problems", vn: "các vấn đề về đường hô hấp" },
+                            { en: "headaches and eye irritation", vn: "đau đầu và cay mắt" },
+                            { en: "serious lung diseases", vn: "các bệnh phổi nghiêm trọng" },
+                            { en: "chronic coughs and allergies", vn: "ho mãn tính và dị ứng" }
                         ]
                     }
                 ],
@@ -8658,30 +9508,53 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Phát triển giao thông công cộng, khi người dân đi xe buýt tàu điện thì đường sẽ bớt đông):</div>
                     <div class="topic-formula-text">
-                        → The government should <span class="formula-bracket-hl">[giải pháp hạ tầng]</span>. When people use buses and trains, roads will be <span class="formula-bracket-hl">[kết quả tích cực]</span>.
+                        → The government should <span class="formula-bracket-hl">[giải pháp hạ tầng - Vo]</span>. When people use buses and trains, roads will be <span class="formula-bracket-hl">[kết quả tích cực]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Mở rộng đường chật hẹp và phạt nghiêm người vi phạm để khuyến khích tuân thủ luật):</div>
                     <div class="topic-formula-text">
-                        → We need to <span class="formula-bracket-hl">[hành động mở rộng]</span> and <span class="formula-bracket-hl">[biện pháp xử phạt]</span>. It will encourage citizens to obey laws.
+                        → We need to <span class="formula-bracket-hl">[hành động mở rộng - Vo]</span> and <span class="formula-bracket-hl">[biện pháp xử phạt - Vo]</span>. It will encourage citizens to obey laws.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🚇 [Giao thông công cộng] (Cách 1):",
+                        title: "🚇 [Giải pháp giao thông công cộng] (Cách 1):",
                         items: [
                             { en: "develop modern public transport systems", vn: "phát triển hệ thống giao thông công cộng hiện đại" },
-                            { en: "much less crowded", vn: "bớt đông đúc chật chội hơn nhiều" },
-                            { en: "safer and smoother", vn: "an toàn và thông thoáng hơn" }
+                            { en: "build more metro lines", vn: "xây dựng thêm nhiều tuyến tàu điện ngầm" },
+                            { en: "improve public bus services", vn: "cải thiện chất lượng dịch vụ xe buýt công cộng" },
+                            { en: "reduce bus ticket prices", vn: "giảm giá vé xe buýt" },
+                            { en: "limit private cars in city centers", vn: "hạn chế xe ô tô cá nhân vào trung tâm thành phố" }
                         ]
                     },
                     {
-                        title: "🚧 [Mở rộng đường & Xử phạt] (Cách 2):",
+                        title: "✨ [Kết quả tích cực cho đường phố] (Cách 1):",
+                        items: [
+                            { en: "much less crowded", vn: "bớt đông đúc chật chội hơn nhiều" },
+                            { en: "safer and smoother", vn: "an toàn và thông thoáng hơn" },
+                            { en: "cleaner and quieter", vn: "sạch sẽ và yên tĩnh hơn" },
+                            { en: "free from heavy traffic jams", vn: "không còn cảnh kẹt xe nghiêm trọng" }
+                        ]
+                    },
+                    {
+                        title: "🚧 [Hành động nâng cấp hạ tầng] (Cách 2):",
                         items: [
                             { en: "widen narrow roads", vn: "mở rộng các tuyến đường chật hẹp" },
+                            { en: "build more flyovers and bridges", vn: "xây thêm nhiều cầu vượt và cầu lớn" },
+                            { en: "upgrade old street infrastructure", vn: "nâng cấp cơ sở hạ tầng đường phố cũ" },
+                            { en: "install smart traffic lights", vn: "lắp đặt hệ thống đèn giao thông thông minh" },
+                            { en: "create separate lanes for buses", vn: "tạo làn đường riêng cho xe buýt" }
+                        ]
+                    },
+                    {
+                        title: "⚖️ [Biện pháp xử phạt & Quản lý] (Cách 2):",
+                        items: [
                             { en: "strictly fine traffic violators", vn: "xử phạt nghiêm khắc những người vi phạm luật giao thông" },
-                            { en: "obey traffic laws", vn: "tuân thủ luật an toàn giao thông" }
+                            { en: "install more security cameras", vn: "lắp đặt thêm nhiều camera giám sát" },
+                            { en: "educate people about road safety", vn: "giáo dục người dân về an toàn giao thông" },
+                            { en: "punish drunk drivers heavily", vn: "xử phạt nặng người lái xe khi say xỉn" },
+                            { en: "increase traffic police patrols", vn: "tăng cường cảnh sát giao thông tuần tra" }
                         ]
                     }
                 ],
@@ -8723,21 +9596,42 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🌊 [Thành phố & Cảnh đẹp] (Cách 1):",
+                        title: "📍 [Tên địa danh quê hương] (Cách 1):",
                         items: [
                             { en: "Da Nang city", vn: "thành phố Đà Nẵng" },
-                            { en: "central Vietnam", vn: "miền Trung Việt Nam" },
-                            { en: "beautiful beaches", vn: "những bãi biển tuyệt đẹp" },
-                            { en: "fresh seafood", vn: "hải sản tươi ngon" }
+                            { en: "Can Tho city", vn: "thành phố Cần Thơ" },
+                            { en: "Hue city", vn: "thành phố Huế" },
+                            { en: "Nha Trang city", vn: "thành phố Nha Trang" },
+                            { en: "Da Lat city", vn: "thành phố Đà Lạt" }
                         ]
                     },
                     {
-                        title: "🌾 [Vị trí & Khoảng cách] (Cách 2):",
+                        title: "🗺️ [Vùng miền địa lý] (Cách 1 & 2):",
                         items: [
+                            { en: "central Vietnam", vn: "miền Trung Việt Nam" },
                             { en: "the Mekong Delta", vn: "đồng bằng sông Cửu Long" },
+                            { en: "southern Vietnam", vn: "miền Nam Việt Nam" },
+                            { en: "northern Vietnam", vn: "miền Bắc Việt Nam" },
+                            { en: "the Central Highlands", vn: "vùng Tây Nguyên" }
+                        ]
+                    },
+                    {
+                        title: "🌊 [Đặc sản & Cảnh đẹp nổi tiếng] (Cách 1):",
+                        items: [
+                            { en: "beautiful beaches", vn: "những bãi biển tuyệt đẹp" },
+                            { en: "fresh seafood", vn: "hải sản tươi ngon" },
+                            { en: "fresh green fields", vn: "những cánh đồng xanh tươi mát" },
+                            { en: "ancient temples and pagodas", vn: "những ngôi đền và chùa cổ kính" },
+                            { en: "sweet tropical fruits", vn: "trái cây nhiệt đới ngọt lành" }
+                        ]
+                    },
+                    {
+                        title: "🚌 [Khoảng cách & Thời gian di chuyển] (Cách 2):",
+                        items: [
                             { en: "two hours by bus", vn: "hai tiếng đi xe buýt" },
                             { en: "eighty kilometers", vn: "khoảng 80 cây số" },
-                            { en: "fresh green fields", vn: "những cánh đồng xanh tươi mát" }
+                            { en: "three hours by coach", vn: "ba tiếng đi xe khách" },
+                            { en: "one hundred kilometers", vn: "khoảng 100 cây số" }
                         ]
                     }
                 ],
@@ -8772,20 +9666,39 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🍃 [Không khí & Nhịp sống] (Cách 1):",
+                        title: "🍃 [Đặc điểm không khí] (Cách 1):",
                         items: [
                             { en: "fresh and clean", vn: "trong lành và sạch sẽ" },
                             { en: "cool and pleasant", vn: "mát mẻ và dễ chịu" },
-                            { en: "slow and calm", vn: "chậm rãi và êm đềm" },
-                            { en: "peaceful atmosphere", vn: "bầu không khí thanh bình" }
+                            { en: "pure and breezy", vn: "tinh khiết và lộng gió" },
+                            { en: "free from city dust", vn: "không có khói bụi đô thị" }
                         ]
                     },
                     {
-                        title: "🍲 [Con người & Món ăn] (Cách 2):",
+                        title: "🏡 [Tính từ mô tả nhịp sống] (Cách 1):",
+                        items: [
+                            { en: "slow and calm", vn: "chậm rãi và êm đềm" },
+                            { en: "simple and relaxing", vn: "giản dị và thư thái" },
+                            { en: "quiet and stress-free", vn: "yên tĩnh và không áp lực" },
+                            { en: "safe and harmonious", vn: "an toàn và hòa thuận" }
+                        ]
+                    },
+                    {
+                        title: "🤝 [Tính cách người dân địa phương] (Cách 2):",
                         items: [
                             { en: "very warm and hospitable", vn: "rất ấm áp và hiếu khách" },
-                            { en: "delicious and cheap", vn: "rất ngon miệng và giá cả rẻ" },
-                            { en: "full of unique flavors", vn: "đậm đà hương vị độc đáo" }
+                            { en: "kind-hearted and helpful", vn: "tốt bụng và hay giúp đỡ" },
+                            { en: "friendly and honest", vn: "thân thiện và thật thà" },
+                            { en: "generous and polite", vn: "hào phóng và lịch sự" }
+                        ]
+                    },
+                    {
+                        title: "🍲 [Đặc điểm món ăn truyền thống] (Cách 2):",
+                        items: [
+                            { en: "delicious and cheap", vn: "ngon miệng và giá rẻ" },
+                            { en: "full of unique flavors", vn: "đậm đà hương vị độc đáo" },
+                            { en: "fresh and healthy", vn: "tươi ngon và tốt cho sức khỏe" },
+                            { en: "rich in local culture", vn: "đậm đà bản sắc văn hóa địa phương" }
                         ]
                     }
                 ],
@@ -8809,30 +9722,53 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Tắm biển, tham quan các danh lam thắng cảnh và chụp ảnh):</div>
                     <div class="topic-formula-text">
-                        → Tourists can visit famous <span class="formula-bracket-hl">[loại địa điểm]</span>. They can also <span class="formula-bracket-hl">[hoạt động trải nghiệm]</span> and take nice photos.
+                        → Tourists can visit famous <span class="formula-bracket-hl">[loại địa điểm]</span>. They can also <span class="formula-bracket-hl">[hoạt động trải nghiệm - Vo]</span> and take nice photos.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Khám phá chợ đêm nhộn nhịp và thưởng thức ẩm thực đường phố đặc sản):</div>
                     <div class="topic-formula-text">
-                        → Visitors can explore lively <span class="formula-bracket-hl">[địa điểm ăn uống]</span>. It's a great experience to <span class="formula-bracket-hl">[hoạt động ẩm thực]</span> at night.
+                        → Visitors can explore lively <span class="formula-bracket-hl">[địa điểm ăn uống]</span>. It's a great experience to <span class="formula-bracket-hl">[hoạt động ẩm thực - Vo]</span> at night.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏖️ [Thắng cảnh & Trải nghiệm] (Cách 1):",
+                        title: "🏖️ [Loại địa điểm tham quan] (Cách 1):",
                         items: [
-                            { en: "sandy beaches and mountains", vn: "những bãi biển cát trắng và núi non hùng vĩ" },
-                            { en: "swim in the sea", vn: "tắm mát dưới làn nước biển" },
-                            { en: "take nice photos", vn: "chụp nhiều bức ảnh kỷ niệm đẹp" }
+                            { en: "sandy beaches and mountains", vn: "những bãi biển cát trắng và núi non" },
+                            { en: "ancient pagodas and temples", vn: "những ngôi chùa và đền đài cổ kính" },
+                            { en: "traditional craft villages", vn: "các làng nghề truyền thống" },
+                            { en: "green fruit gardens", vn: "những vườn trái cây xanh mát" },
+                            { en: "historical museums", vn: "các bảo tàng lịch sử" }
                         ]
                     },
                     {
-                        title: "🍢 [Chợ đêm & Ẩm thực] (Cách 2):",
+                        title: "🚣 [Hoạt động trải nghiệm] (Cách 1):",
                         items: [
-                            { en: "lively local night markets", vn: "các khu chợ đêm địa phương nhộn nhịp" },
-                            { en: "taste unique street food at cheap prices", vn: "thưởng thức các món ăn đường phố độc đáo với giá rẻ" },
-                            { en: "buy local souvenirs", vn: "mua quà lưu niệm đặc sản" }
+                            { en: "swim in the sea", vn: "tắm mát dưới làn nước biển" },
+                            { en: "take a boat trip on the river", vn: "đi thuyền dạo trên sông" },
+                            { en: "go camping on the hills", vn: "cắm trại trên những ngọn đồi" },
+                            { en: "watch the beautiful sunset", vn: "ngắm cảnh hoàng hôn tuyệt đẹp" },
+                            { en: "cycle around peaceful villages", vn: "đạp xe quanh những ngôi làng yên bình" }
+                        ]
+                    },
+                    {
+                        title: "🏮 [Địa điểm ăn uống & Mua sắm] (Cách 2):",
+                        items: [
+                            { en: "local night markets", vn: "các khu chợ đêm địa phương" },
+                            { en: "walking streets", vn: "các tuyến phố đi bộ" },
+                            { en: "seaside seafood restaurants", vn: "các nhà hàng hải sản ven biển" },
+                            { en: "traditional food courts", vn: "các khu ẩm thực truyền thống" }
+                        ]
+                    },
+                    {
+                        title: "🍢 [Hoạt động ẩm thực & Mua quà] (Cách 2):",
+                        items: [
+                            { en: "taste unique street food at cheap prices", vn: "thưởng thức món ăn đường phố độc đáo với giá rẻ" },
+                            { en: "buy local souvenirs", vn: "mua quà lưu niệm đặc sản" },
+                            { en: "try fresh grilled seafood", vn: "nếm thử hải sản nướng tươi sống" },
+                            { en: "drink local iced coffee", vn: "uống cà phê sữa đá địa phương" },
+                            { en: "enjoy sweet traditional desserts", vn: "thưởng thức các món chè ngọt truyền thống" }
                         ]
                     }
                 ],
@@ -8869,24 +9805,45 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Chỉ biết sơ - Đều bận rộn hằng ngày, chỉ mỉm cười chào hỏi khi gặp):</div>
                     <div class="topic-formula-text">
-                        → Not very well. We are all busy with our <span class="formula-bracket-hl">[lý do]</span>, so we usually <span class="formula-bracket-hl">[hành động xã giao]</span>.
+                        → Not very well. We are all busy with our <span class="formula-bracket-hl">[lý do]</span>, so we usually <span class="formula-bracket-hl">[hành động xã giao - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏡 [Gắn bó lâu năm & Tốt bụng] (Cách 1):",
+                        title: "⏳ [Khoảng thời gian sống gần nhau] (Cách 1):",
                         items: [
                             { en: "many years", vn: "nhiều năm qua" },
                             { en: "more than ten years", vn: "hơn mười năm" },
-                            { en: "very kind, polite, and friendly to my family", vn: "rất tốt bụng, lịch sự và thân thiện với gia đình tôi" }
+                            { en: "about five years", vn: "khoảng năm năm" },
+                            { en: "almost my whole life", vn: "gần như cả cuộc đời tôi" }
                         ]
                     },
                     {
-                        title: "🤝 [Bận rộn & Chào hỏi] (Cách 2):",
+                        title: "💖 [Tính từ mô tả hàng xóm] (Cách 1):",
+                        items: [
+                            { en: "kind, polite, and friendly", vn: "tốt bụng, lịch sự và thân thiện" },
+                            { en: "warm-hearted and helpful", vn: "ấm áp và hay giúp đỡ" },
+                            { en: "generous and caring", vn: "hào phóng và biết quan tâm" },
+                            { en: "respectful and quiet", vn: "tôn trọng và yên tĩnh" }
+                        ]
+                    },
+                    {
+                        title: "💼 [Lý do bận rộn] (Cách 2):",
                         items: [
                             { en: "daily work", vn: "công việc hằng ngày" },
                             { en: "busy schedules", vn: "lịch trình bận rộn" },
-                            { en: "just smile and say hello when meeting", vn: "chỉ mỉm cười và chào hỏi khi gặp gỡ" }
+                            { en: "university studies", vn: "việc học đại học" },
+                            { en: "family responsibilities", vn: "trách nhiệm gia đình" }
+                        ]
+                    },
+                    {
+                        title: "🤝 [Hành động xã giao] (Cách 2):",
+                        items: [
+                            { en: "just smile and say hello when meeting", vn: "chỉ mỉm cười và chào hỏi khi gặp gỡ" },
+                            { en: "nod politely in the elevator", vn: "gật đầu chào lịch sự trong thang máy" },
+                            { en: "wave hands when passing by", vn: "vẫy tay chào khi đi ngang qua" },
+                            { en: "have a brief chat at weekends", vn: "trò chuyện ngắn gọn vào dịp cuối tuần" },
+                            { en: "respect each other's privacy", vn: "tôn trọng sự riêng tư của nhau" }
                         ]
                     }
                 ],
@@ -8910,7 +9867,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Rất hòa thuận - Thường trò chuyện buổi tối và chia sẻ hoa quả, đồ ăn ngon):</div>
                     <div class="topic-formula-text">
-                        → Yes, we get along very well. We often <span class="formula-bracket-hl">[hoạt động gắn kết 1]</span> and <span class="formula-bracket-hl">[hoạt động gắn kết 2]</span>.
+                        → Yes, we get along very well. We often <span class="formula-bracket-hl">[hoạt động gắn kết 1 - Vo]</span> and <span class="formula-bracket-hl">[hoạt động gắn kết 2 - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -8921,20 +9878,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🍉 [Trò chuyện & Chia sẻ đồ ăn] (Cách 1):",
+                        title: "🍉 [Hoạt động gắn kết hàng xóm] (Cách 1):",
                         items: [
                             { en: "chat in the evening", vn: "trò chuyện vào buổi tối" },
                             { en: "share homegrown fruits and delicious food together", vn: "chia sẻ trái cây nhà trồng và thức ăn ngon cùng nhau" },
-                            { en: "have small weekend gatherings", vn: "có những buổi gặp gỡ tụ tập nhỏ cuối tuần" }
+                            { en: "have small weekend gatherings", vn: "có những buổi gặp gỡ tụ tập nhỏ cuối tuần" },
+                            { en: "drink tea together on the porch", vn: "uống trà cùng nhau trước hiên nhà" },
+                            { en: "invite each other to family parties", vn: "mời nhau tham dự các bữa tiệc gia đình" },
+                            { en: "exercise together in the morning", vn: "tập thể dục cùng nhau vào buổi sáng" }
                         ]
                     },
                     {
-                        title: "🏢 [Bận rộn & Chào hỏi xã giao] (Cách 2):",
+                        title: "🏢 [Khác biệt lịch trình & Lối sống] (Cách 2):",
                         items: [
                             { en: "different work schedules", vn: "lịch trình công việc khác nhau" },
-                            { en: "a quick polite greeting", vn: "lời chào hỏi lịch sự nhanh chóng" },
-                            { en: "keep private personal lives", vn: "giữ cuộc sống cá nhân riêng tư" },
-                            { en: "rarely meet during weekdays", vn: "hiếm khi gặp nhau trong các ngày trong tuần" }
+                            { en: "busy personal lives", vn: "cuộc sống cá nhân bận rộn" },
+                            { en: "long working hours", vn: "những giờ làm việc kéo dài" },
+                            { en: "little free time on weekdays", vn: "rất ít thời gian rảnh vào các ngày trong tuần" }
+                        ]
+                    },
+                    {
+                        title: "👋 [Lời chào hỏi xã giao - Danh từ] (Cách 2):",
+                        items: [
+                            { en: "a quick polite greeting", vn: "một lời chào hỏi lịch sự nhanh chóng" },
+                            { en: "a friendly smile", vn: "một nụ cười thân thiện" },
+                            { en: "a brief hello", vn: "một câu chào ngắn gọn" },
+                            { en: "a polite nod", vn: "một cái gật đầu lịch sự" }
                         ]
                     }
                 ],
@@ -8958,31 +9927,44 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Rất hay giúp đỡ - Sẵn sàng trông nhà và nhận bưu phẩm giúp khi đi vắng):</div>
                     <div class="topic-formula-text">
-                        → Yes, they're extremely helpful. Whenever my family is away, they willingly <span class="formula-bracket-hl">[hành động giúp đỡ]</span>.
+                        → Yes, they're extremely helpful. Whenever my family is away, they willingly <span class="formula-bracket-hl">[hành động giúp đỡ - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Không hẳn - Mọi người sống khép kín trong căn hộ, bận rộn công việc riêng nên hiếm khi nhờ giúp):</div>
                     <div class="topic-formula-text">
-                        → Unfortunately, not really. Most neighbors in my building <span class="formula-bracket-hl">[lối sống khép kín]</span>, so we rarely <span class="formula-bracket-hl">[hành động nhờ vả - Vo]</span>.
+                        → Unfortunately, not really. Most neighbors in my building <span class="formula-bracket-hl">[lối sống khép kín - Vo]</span>, so we rarely <span class="formula-bracket-hl">[hành động nhờ vả - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "📦 [Trông nhà & Nhận bưu phẩm] (Cách 1):",
+                        title: "📦 [Hành động giúp đỡ của hàng xóm] (Cách 1):",
                         items: [
                             { en: "keep an eye on our house and receive packages", vn: "trông chừng nhà cửa và nhận bưu phẩm giúp" },
-                            { en: "water our plants", vn: "tưới cây giúp" },
-                            { en: "lend necessary tools", vn: "cho mượn dụng cụ cần thiết" }
+                            { en: "water our plants", vn: "tưới cây giúp gia đình tôi" },
+                            { en: "lend necessary tools", vn: "cho mượn các dụng cụ cần thiết" },
+                            { en: "feed our pets", vn: "cho thú cưng ăn giúp" },
+                            { en: "help us fix minor household problems", vn: "giúp chúng tôi sửa các sự cố nhỏ trong nhà" }
                         ]
                     },
                     {
-                        title: "🚪 [Sống khép kín & Ít nhờ vả] (Cách 2):",
+                        title: "🚪 [Lối sống khép kín nơi chung cư] (Cách 2):",
                         items: [
                             { en: "keep their apartment doors closed", vn: "đóng kín cửa căn hộ" },
-                            { en: "ask for any mutual help", vn: "nhờ vả bất kỳ sự giúp đỡ lẫn nhau nào" },
                             { en: "mind their own business", vn: "chỉ quan tâm chuyện riêng của mình" },
-                            { en: "work long busy hours", vn: "làm việc nhiều giờ bận rộn" }
+                            { en: "work long busy hours", vn: "làm việc nhiều giờ bận rộn" },
+                            { en: "prefer private personal lives", vn: "ưa thích cuộc sống cá nhân riêng tư" },
+                            { en: "come home very late at night", vn: "trở về nhà rất muộn vào ban đêm" }
+                        ]
+                    },
+                    {
+                        title: "🙋 [Hành động nhờ vả hỗ trợ] (Cách 2):",
+                        items: [
+                            { en: "ask for any mutual help", vn: "nhờ vả bất kỳ sự giúp đỡ lẫn nhau nào" },
+                            { en: "borrow household items", vn: "mượn đồ dùng sinh hoạt trong nhà" },
+                            { en: "bother each other at home", vn: "làm phiền nhau tại nhà" },
+                            { en: "visit each other's apartments", vn: "ghé thăm căn hộ của nhau" },
+                            { en: "rely on neighbors for daily favors", vn: "nhờ cậy hàng xóm những việc vặt hằng ngày" }
                         ]
                     }
                 ],
@@ -9014,32 +9996,52 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Phòng ngủ - Yên tĩnh, ấm cúng, thư giãn và ngủ ngon):</div>
                     <div class="topic-formula-text">
-                        → My favorite room is my bedroom because it's <span class="formula-bracket-hl">[tính từ không gian]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí]</span> and sleep well every night.
+                        → My favorite room is my bedroom because it's <span class="formula-bracket-hl">[tính từ không gian]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí - Vo]</span> and sleep well every night.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Phòng khách - Rộng rãi, sáng sủa, quây quần bên gia đình):</div>
                     <div class="topic-formula-text">
-                        → I love the living room most because it's <span class="formula-bracket-hl">[tính từ không gian]</span>. It's a great space to <span class="formula-bracket-hl">[hoạt động gắn kết]</span>.
+                        → I love the living room most because it's <span class="formula-bracket-hl">[tính từ không gian]</span>. It's a great space to <span class="formula-bracket-hl">[hoạt động gắn kết - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🛏️ [Phòng ngủ & Cảm xúc] (Cách 1):",
+                        title: "🛏️ [Tính từ không gian phòng ngủ] (Cách 1):",
                         items: [
                             { en: "quiet and cozy", vn: "yên tĩnh và ấm cúng" },
                             { en: "peaceful and warm", vn: "thanh bình và ấm áp" },
-                            { en: "relax after a busy day", vn: "thư giãn sau ngày bận rộn" },
-                            { en: "clear my mind", vn: "giải tỏa tâm trí" }
+                            { en: "private and comfortable", vn: "riêng tư và thoải mái" },
+                            { en: "neat and softly lit", vn: "gọn gàng và có ánh đèn dịu nhẹ" }
                         ]
                     },
                     {
-                        title: "🛋️ [Phòng khách & Gắn kết] (Cách 2):",
+                        title: "😌 [Lợi ích thư giãn] (Cách 1):",
+                        items: [
+                            { en: "relax after a busy day", vn: "thư giãn sau ngày bận rộn" },
+                            { en: "clear my mind", vn: "giải tỏa tâm trí" },
+                            { en: "recharge my energy", vn: "nạp lại năng lượng" },
+                            { en: "forget daily worries", vn: "quên đi những nỗi lo thường nhật" },
+                            { en: "enjoy my personal time", vn: "tận hưởng thời gian cá nhân" }
+                        ]
+                    },
+                    {
+                        title: "🛋️ [Tính từ không gian phòng khách] (Cách 2):",
                         items: [
                             { en: "bright and spacious", vn: "sáng sủa và rộng rãi" },
-                            { en: "large and airy", vn: "rộng rãi và thoáng mát" },
+                            { en: "large and airy", vn: "rộng lớn và thoáng mát" },
+                            { en: "modern and welcoming", vn: "hiện đại và ấm cúng hiếu khách" },
+                            { en: "clean and well-decorated", vn: "sạch sẽ và được trang trí đẹp mắt" }
+                        ]
+                    },
+                    {
+                        title: "👨‍👩‍👧 [Hoạt động gắn kết gia đình] (Cách 2):",
+                        items: [
                             { en: "gather with my lovely family", vn: "quây quần bên gia đình thân yêu" },
-                            { en: "chat with my parents", vn: "trò chuyện cùng bố mẹ" }
+                            { en: "chat with my parents", vn: "trò chuyện cùng bố mẹ" },
+                            { en: "watch television together", vn: "xem tivi cùng nhau" },
+                            { en: "welcome guests and relatives", vn: "đón tiếp khách và họ hàng" },
+                            { en: "enjoy weekend tea together", vn: "thưởng thức trà cuối tuần cùng nhau" }
                         ]
                     }
                 ],
@@ -9063,32 +10065,54 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đọc sách, nghe nhạc nhẹ để giải tỏa căng thẳng):</div>
                     <div class="topic-formula-text">
-                        → In this room, I usually <span class="formula-bracket-hl">[hoạt động 1]</span> and <span class="formula-bracket-hl">[hoạt động 2]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí]</span> effectively.
+                        → In this room, I usually <span class="formula-bracket-hl">[hoạt động 1 - Vo]</span> and <span class="formula-bracket-hl">[hoạt động 2 - Vo]</span>. It helps me <span class="formula-bracket-hl">[lợi ích giải trí - Vo]</span> effectively.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Xem phim vui nhộn cùng gia đình và trò chuyện vui vẻ):</div>
                     <div class="topic-formula-text">
-                        → I often <span class="formula-bracket-hl">[hoạt động giải trí]</span> with my <span class="formula-bracket-hl">[đối tượng]</span> in the evening. We share <span class="formula-bracket-hl">[điều chia sẻ]</span> and have lots of fun.
+                        → I often <span class="formula-bracket-hl">[hoạt động giải trí - Vo]</span> with my <span class="formula-bracket-hl">[đối tượng]</span> in the evening. We share <span class="formula-bracket-hl">[điều chia sẻ]</span> and have lots of fun.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "📖 [Thư giãn cá nhân] (Cách 1):",
+                        title: "📖 [Hoạt động thư giãn cá nhân] (Cách 1):",
                         items: [
                             { en: "read favorite books", vn: "đọc những cuốn sách yêu thích" },
                             { en: "listen to acoustic music", vn: "nghe nhạc nhẹ acoustic" },
-                            { en: "reduce daily stress", vn: "giảm bớt căng thẳng hằng ngày" },
-                            { en: "clear my mind", vn: "giải tỏa tâm trí" }
+                            { en: "study English online", vn: "học tiếng Anh trực tuyến" },
+                            { en: "write in my daily journal", vn: "viết nhật ký hằng ngày" },
+                            { en: "watch movies on my laptop", vn: "xem phim trên máy tính xách tay" }
                         ]
                     },
                     {
-                        title: "🎬 [Giải trí cùng người thân] (Cách 2):",
+                        title: "🧘 [Lợi ích giải trí] (Cách 1):",
+                        items: [
+                            { en: "reduce daily stress", vn: "giảm bớt căng thẳng hằng ngày" },
+                            { en: "clear my mind", vn: "giải tỏa tâm trí" },
+                            { en: "improve my mood", vn: "cải thiện tâm trạng" },
+                            { en: "relax after work", vn: "thư giãn sau giờ làm việc" },
+                            { en: "regain positive energy", vn: "lấy lại nguồn năng lượng tích cực" }
+                        ]
+                    },
+                    {
+                        title: "🎬 [Hoạt động giải trí chung] (Cách 2):",
                         items: [
                             { en: "watch funny movies", vn: "xem các bộ phim hài hước" },
-                            { en: "family members", vn: "các thành viên trong gia đình" },
-                            { en: "daily stories", vn: "những câu chuyện hằng ngày" },
-                            { en: "have lots of fun", vn: "có rất nhiều niềm vui" }
+                            { en: "eat fresh fruits", vn: "ăn trái cây tươi" },
+                            { en: "play board games", vn: "chơi các trò chơi cờ bàn" },
+                            { en: "watch evening news programs", vn: "xem các chương trình thời sự buổi tối" },
+                            { en: "drink warm tea", vn: "uống trà ấm" }
+                        ]
+                    },
+                    {
+                        title: "👨‍👩‍👧 [Đối tượng & Điều chia sẻ] (Cách 2):",
+                        items: [
+                            { en: "family members", vn: "các thành viên trong gia đình (đối tượng)" },
+                            { en: "parents and siblings", vn: "bố mẹ và anh chị em (đối tượng)" },
+                            { en: "daily stories", vn: "những câu chuyện hằng ngày (điều chia sẻ)" },
+                            { en: "funny life experiences", vn: "những trải nghiệm cuộc sống vui nhộn (điều chia sẻ)" },
+                            { en: "future family plans", vn: "những kế hoạch gia đình tương lai (điều chia sẻ)" }
                         ]
                     }
                 ],
@@ -9123,21 +10147,40 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🪴 [Thêm cây xanh & Đèn] (Cách 1):",
+                        title: "🪴 [Vật trang trí & Nội thất muốn thêm] (Cách 1):",
                         items: [
                             { en: "some indoor plants and warm lights", vn: "vài cây cảnh trong nhà và đèn ánh sáng ấm" },
                             { en: "a small wooden bookshelf", vn: "một kệ sách gỗ nhỏ" },
-                            { en: "much more comfortable and peaceful", vn: "dễ chịu và yên bình hơn nhiều" },
-                            { en: "fresher and brighter", vn: "tươi mới và sáng sủa hơn" }
+                            { en: "beautiful wall paintings", vn: "những bức tranh treo tường đẹp mắt" },
+                            { en: "a soft floor carpet", vn: "một tấm thảm trải sàn êm ái" },
+                            { en: "a bigger study desk", vn: "một chiếc bàn học rộng hơn" }
                         ]
                     },
                     {
-                        title: "✨ [Hài lòng hiện tại] (Cách 2):",
+                        title: "✨ [Tính từ cảm nhận không gian mới] (Cách 1):",
+                        items: [
+                            { en: "much more comfortable and peaceful", vn: "dễ chịu và yên bình hơn nhiều" },
+                            { en: "fresher and brighter", vn: "tươi mới và sáng sủa hơn" },
+                            { en: "cozier and more relaxing", vn: "ấm cúng và thư giãn hơn" },
+                            { en: "more modern and inspiring", vn: "hiện đại và truyền cảm hứng hơn" }
+                        ]
+                    },
+                    {
+                        title: "🏡 [Tính từ mô tả phòng hiện tại] (Cách 2):",
                         items: [
                             { en: "neat, cozy", vn: "gọn gàng, ấm cúng" },
                             { en: "modern and clean", vn: "hiện đại và sạch sẽ" },
+                            { en: "bright and airy", vn: "sáng sủa và thoáng đãng" },
+                            { en: "well-organized and quiet", vn: "ngăn nắp và yên tĩnh" }
+                        ]
+                    },
+                    {
+                        title: "👍 [Đặc điểm tiện ích phù hợp] (Cách 2):",
+                        items: [
                             { en: "very suitable for my daily lifestyle", vn: "rất phù hợp cho lối sống hằng ngày của tôi" },
-                            { en: "convenient for my work", vn: "tiện lợi cho công việc của tôi" }
+                            { en: "convenient for my work", vn: "tiện lợi cho công việc của tôi" },
+                            { en: "perfect for my study needs", vn: "hoàn hảo cho nhu cầu học tập của tôi" },
+                            { en: "comfortable for resting at night", vn: "thoải mái để nghỉ ngơi vào ban đêm" }
                         ]
                     }
                 ],
@@ -9168,7 +10211,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Có - Bố mẹ luôn yêu thương, chăm lo và động viên nhiệt tình):</div>
                     <div class="topic-formula-text">
-                        → Yes, I did. I had a wonderful childhood because my parents always <span class="formula-bracket-hl">[hành động yêu thương - Ved]</span>. I felt <span class="formula-bracket-hl">[tính từ cảm xúc]</span>.
+                        → Yes, I did. I had a wonderful childhood because my parents always <span class="formula-bracket-hl">[hành động yêu thương - V2/ed]</span>. I felt <span class="formula-bracket-hl">[tính từ cảm xúc]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -9179,21 +10222,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "👨‍👩‍👧 [Tình thương gia đình] (Cách 1):",
+                        title: "👨‍👩‍👧 [Hành động yêu thương của bố mẹ] (Cách 1):",
                         items: [
                             { en: "love and support me warmly", vn: "yêu thương và ủng hộ tôi ấm áp" },
                             { en: "care for my health and study", vn: "chăm lo cho sức khỏe và học tập của tôi" },
-                            { en: "truly happy", vn: "thực sự hạnh phúc" },
-                            { en: "safe and protected", vn: "an toàn và được chở che" }
+                            { en: "encourage my childhood dreams", vn: "khuyến khích những ước mơ tuổi thơ của tôi" },
+                            { en: "spend quality time with me", vn: "dành thời gian chất lượng bên tôi" },
+                            { en: "buy me interesting storybooks", vn: "mua cho tôi những cuốn truyện thú vị" }
                         ]
                     },
                     {
-                        title: "🌾 [Tuổi thơ vất vả & Giúp đỡ gia đình] (Cách 2):",
+                        title: "😊 [Tính từ cảm xúc tuổi thơ] (Cách 1):",
+                        items: [
+                            { en: "truly happy", vn: "thực sự hạnh phúc" },
+                            { en: "safe and protected", vn: "an toàn và được chở che" },
+                            { en: "deeply loved and carefree", vn: "được yêu thương sâu sắc và vô lo vô nghĩ" },
+                            { en: "cheerful every single day", vn: "vui tươi mỗi ngày" }
+                        ]
+                    },
+                    {
+                        title: "🌾 [Công việc vất vả phụ giúp gia đình] (Cách 2):",
                         items: [
                             { en: "work hard on the farm", vn: "làm việc vất vả trên đồng ruộng" },
-                            { en: "support struggling parents", vn: "phụ giúp bố mẹ đang chật vật" },
-                            { en: "face financial difficulties", vn: "đối mặt với khó khăn tài chính" },
-                            { en: "miss simple childhood joys", vn: "bỏ lỡ những niềm vui tuổi thơ giản dị" }
+                            { en: "support my struggling parents", vn: "phụ giúp bố mẹ đang chật vật" },
+                            { en: "do heavy housework all day", vn: "làm việc nhà nặng nhọc cả ngày" },
+                            { en: "take care of younger siblings", vn: "chăm sóc các em nhỏ trong nhà" },
+                            { en: "help sell goods at local markets", vn: "phụ bán hàng tại các khu chợ địa phương" }
                         ]
                     }
                 ],
@@ -9217,32 +10271,45 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Chơi các trò chơi dân gian: trốn tìm, thả diều cùng bạn bè):</div>
                     <div class="topic-formula-text">
-                        → When I was small, I often <span class="formula-bracket-hl">[hoạt động 1 - Ved]</span> and <span class="formula-bracket-hl">[hoạt động 2 - Ved]</span> with other kids. We had great memories.
+                        → When I was small, I often <span class="formula-bracket-hl">[hoạt động 1 - V2/ed]</span> and <span class="formula-bracket-hl">[hoạt động 2 - V2/ed]</span> with other kids. We had great memories.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Phụ bố mẹ tưới rau buổi chiều và đọc truyện tranh hài hước buổi tối):</div>
                     <div class="topic-formula-text">
-                        → I usually <span class="formula-bracket-hl">[hoạt động phụ gia đình - Ved]</span> in the afternoon. In the evening, I loved <span class="formula-bracket-hl">[hoạt động giải trí]</span> before bedtime.
+                        → I usually <span class="formula-bracket-hl">[hoạt động phụ gia đình - V2/ed]</span> in the afternoon. In the evening, I loved <span class="formula-bracket-hl">[hoạt động giải trí - Ving]</span> before bedtime.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🪁 [Trò chơi ngoài trời] (Cách 1):",
+                        title: "🪁 [Trò chơi ngoài trời tuổi thơ] (Cách 1):",
                         items: [
                             { en: "play hide and seek", vn: "chơi trốn tìm" },
                             { en: "fly colorful kites", vn: "thả những cánh diều rực rỡ" },
                             { en: "ride small bicycles", vn: "đạp xe đạp nhỏ" },
-                            { en: "great memories", vn: "những kỷ niệm tuyệt vời" }
+                            { en: "skip rope in the yard", vn: "nhảy dây ngoài sân" },
+                            { en: "play marbles with neighbors", vn: "chơi bắn bi cùng các bạn hàng xóm" },
+                            { en: "swim in the village river", vn: "bơi lội trên dòng sông quê" }
                         ]
                     },
                     {
-                        title: "🏡 [Làm việc nhà & Đọc truyện] (Cách 2):",
+                        title: "🏡 [Hoạt động phụ gia đình] (Cách 2):",
                         items: [
                             { en: "help my parents water vegetables", vn: "giúp bố mẹ tưới rau" },
                             { en: "feed backyard animals", vn: "cho vật nuôi sau nhà ăn" },
-                            { en: "reading funny comic books", vn: "đọc truyện tranh vui nhộn" },
-                            { en: "drawing simple pictures", vn: "vẽ những bức tranh giản dị" }
+                            { en: "sweep the house floor", vn: "quét dọn sàn nhà" },
+                            { en: "wash dishes after meals", vn: "rửa bát đĩa sau bữa ăn" },
+                            { en: "pick fruits in the garden", vn: "hái trái cây trong vườn" }
+                        ]
+                    },
+                    {
+                        title: "📚 [Hoạt động giải trí buổi tối] (Cách 2):",
+                        items: [
+                            { en: "read funny comic books", vn: "đọc truyện tranh vui nhộn" },
+                            { en: "draw simple pictures", vn: "vẽ những bức tranh giản dị" },
+                            { en: "watch animated cartoons", vn: "xem các bộ phim hoạt hình" },
+                            { en: "listen to my grandmother's fairy tales", vn: "nghe bà kể chuyện cổ tích" },
+                            { en: "play with paper toys", vn: "chơi đồ chơi gấp giấy" }
                         ]
                     }
                 ],
@@ -9266,7 +10333,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Có nhiều bạn - Cùng chơi bóng đá và đạp xe cùng nhau sau giờ học):</div>
                     <div class="topic-formula-text">
-                        → Yes, I did. I had lots of neighborhood friends, and we always <span class="formula-bracket-hl">[hoạt động tập thể - Ved]</span> together after school.
+                        → Yes, I did. I had lots of neighborhood friends, and we always <span class="formula-bracket-hl">[hoạt động tập thể - V2/ed]</span> together after school.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -9277,21 +10344,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "⚽ [Nhiều bạn bè xóm làng] (Cách 1):",
+                        title: "⚽ [Hoạt động tập thể cùng bạn bè] (Cách 1):",
                         items: [
                             { en: "play football and ride bicycles", vn: "đá bóng và đạp xe" },
                             { en: "explore green fields", vn: "khám phá những cánh đồng xanh" },
-                            { en: "lots of neighborhood friends", vn: "rất nhiều bạn bè hàng xóm" },
-                            { en: "after school", vn: "sau giờ tan học" }
+                            { en: "play traditional folk games", vn: "chơi các trò chơi dân gian truyền thống" },
+                            { en: "fly kites on the grass", vn: "thả diều trên bãi cỏ" },
+                            { en: "climb fruit trees in the garden", vn: "trèo cây hái quả trong vườn" }
                         ]
                     },
                     {
-                        title: "👫 [Nhóm bạn thân thiết] (Cách 2):",
+                        title: "👫 [Số lượng bạn thân thời thơ ấu] (Cách 2):",
                         items: [
                             { en: "three close childhood friends", vn: "ba người bạn thân thời thơ ấu" },
                             { en: "a few faithful classmates", vn: "vài bạn học thân thiết trung thành" },
+                            { en: "two best friends next door", vn: "hai người bạn thân nhất sát vách nhà" },
+                            { en: "a small group of close friends", vn: "một nhóm nhỏ những người bạn thân" }
+                        ]
+                    },
+                    {
+                        title: "🍬 [Điều chia sẻ cùng bạn thân] (Cách 2):",
+                        items: [
                             { en: "toys and sweet candies", vn: "đồ chơi và kẹo ngọt" },
-                            { en: "happy laughter", vn: "tiếng cười vui vẻ" }
+                            { en: "happy laughter", vn: "tiếng cười vui vẻ" },
+                            { en: "interesting comic books", vn: "những cuốn truyện tranh thú vị" },
+                            { en: "delicious school snacks", vn: "những món quà vặt ngon lành ở trường" },
+                            { en: "innocent childhood secrets", vn: "những bí mật tuổi thơ hồn nhiên" }
                         ]
                     }
                 ],
@@ -9322,7 +10400,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Có - Kiên nhẫn lắng nghe và luôn hỗ trợ bạn bè khi khó khăn):</div>
                     <div class="topic-formula-text">
-                        → Yes, I believe I'm a good friend. I always <span class="formula-bracket-hl">[hành động lắng nghe]</span> and support them in difficult times.
+                        → Yes, I believe I'm a good friend. I always <span class="formula-bracket-hl">[hành động lắng nghe - Vo]</span> and support them in difficult times.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -9333,21 +10411,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "👂 [Lắng nghe & Hỗ trợ] (Cách 1):",
+                        title: "👂 [Hành động lắng nghe & Thấu hiểu] (Cách 1):",
                         items: [
-                            { en: "listen to their stories patiently", vn: "kiên nhẫn lắng nghe tâm sự" },
+                            { en: "listen to their stories patiently", vn: "kiên nhẫn lắng nghe tâm sự của họ" },
                             { en: "give sincere advice", vn: "đưa ra lời khuyên chân thành" },
-                            { en: "support them in difficult times", vn: "hỗ trợ họ khi khó khăn" },
-                            { en: "share everything honestly", vn: "chia sẻ mọi điều thật lòng" }
+                            { en: "share everything honestly", vn: "chia sẻ mọi điều thật lòng" },
+                            { en: "keep their personal secrets", vn: "giữ kín những bí mật cá nhân của họ" },
+                            { en: "remember their important birthdays", vn: "nhớ các ngày sinh nhật quan trọng của họ" }
                         ]
                     },
                     {
-                        title: "📱 [Bận rộn & Ít quan tâm bạn bè] (Cách 2):",
+                        title: "💼 [Lý do bận rộn] (Cách 2):",
                         items: [
                             { en: "busy with demanding work", vn: "bận rộn với công việc áp lực" },
+                            { en: "occupied with university exams", vn: "bận bịu với các kỳ thi đại học" },
+                            { en: "tired after long working hours", vn: "mệt mỏi sau nhiều giờ làm việc dài" },
+                            { en: "focused on family responsibilities", vn: "tập trung vào trách nhiệm gia đình" }
+                        ]
+                    },
+                    {
+                        title: "📱 [Hành động quan tâm bạn bè] (Cách 2):",
+                        items: [
                             { en: "text first or hang out with them", vn: "chủ động nhắn tin hay đi chơi cùng bạn bè" },
-                            { en: "forget important birthdays", vn: "quên các ngày sinh nhật quan trọng" },
-                            { en: "lose regular daily contact", vn: "mất liên lạc thường nhật" }
+                            { en: "call them on weekends", vn: "gọi điện hỏi thăm họ vào cuối tuần" },
+                            { en: "join their birthday parties", vn: "tham gia các bữa tiệc sinh nhật của họ" },
+                            { en: "meet them for coffee", vn: "gặp gỡ họ để uống cà phê" },
+                            { en: "keep regular daily contact", vn: "giữ liên lạc thường xuyên hằng ngày" }
                         ]
                     }
                 ],
@@ -9377,26 +10466,45 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Thích kết bạn với người vui vẻ, hài hước và có chung sở thích):</div>
                     <div class="topic-formula-text">
-                        → I love hanging out with <span class="formula-bracket-hl">[tính từ tính cách]</span> people. We can easily <span class="formula-bracket-hl">[hoạt động chung]</span> and share lots of happiness.
+                        → I love hanging out with <span class="formula-bracket-hl">[tính từ tính cách]</span> people. We can easily <span class="formula-bracket-hl">[hoạt động chung - Vo]</span> and share lots of happiness.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "💖 [Chân thành & Tử tế] (Cách 1):",
+                        title: "💖 [Tính từ tính cách chân thành] (Cách 1):",
                         items: [
                             { en: "honest and kind-hearted", vn: "thành thật và tốt bụng" },
                             { en: "sincere and trustworthy", vn: "chân thành và đáng tin cậy" },
-                            { en: "safe, positive", vn: "an toàn, tích cực" },
-                            { en: "peaceful and relaxed", vn: "bình yên và thư thái" }
+                            { en: "caring and polite", vn: "chu đáo và lịch sự" },
+                            { en: "open-minded and loyal", vn: "cởi mở và trung thành" }
                         ]
                     },
                     {
-                        title: "😄 [Vui vẻ & Chung sở thích] (Cách 2):",
+                        title: "😌 [Cảm xúc tích cực khi ở bên bạn] (Cách 1):",
+                        items: [
+                            { en: "safe, positive", vn: "an toàn, tích cực" },
+                            { en: "peaceful and relaxed", vn: "bình yên và thư thái" },
+                            { en: "respected and understood", vn: "được tôn trọng và thấu hiểu" },
+                            { en: "happy and warm", vn: "hạnh phúc và ấm áp" }
+                        ]
+                    },
+                    {
+                        title: "😄 [Tính từ tính cách năng động] (Cách 2):",
                         items: [
                             { en: "cheerful and humorous", vn: "vui vẻ và hài hước" },
                             { en: "optimistic and energetic", vn: "lạc quan và tràn đầy năng lượng" },
+                            { en: "friendly and outgoing", vn: "thân thiện và hòa đồng" },
+                            { en: "creative and talkative", vn: "sáng tạo và hoạt ngôn" }
+                        ]
+                    },
+                    {
+                        title: "🎯 [Hoạt động chung cùng bạn bè] (Cách 2):",
+                        items: [
                             { en: "discuss common hobbies", vn: "thảo luận về sở thích chung" },
-                            { en: "enjoy weekend activities", vn: "tận hưởng các hoạt động cuối tuần" }
+                            { en: "enjoy weekend activities", vn: "tận hưởng các hoạt động cuối tuần" },
+                            { en: "play sports together", vn: "chơi thể thao cùng nhau" },
+                            { en: "travel to new places", vn: "đi du lịch đến những vùng đất mới" },
+                            { en: "try delicious street food", vn: "thưởng thức các món ăn đường phố ngon miệng" }
                         ]
                     }
                 ],
@@ -9420,7 +10528,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Có - Vẫn nhắn tin trên mạng xã hội và hẹn cà phê vào dịp Tết):</div>
                     <div class="topic-formula-text">
-                        → Yes, I still do. We often <span class="formula-bracket-hl">[hình thức liên lạc]</span> and meet for coffee during <span class="formula-bracket-hl">[dịp gặp gỡ]</span> together.
+                        → Yes, I still do. We often <span class="formula-bracket-hl">[hình thức liên lạc - Vo]</span> and meet for coffee during <span class="formula-bracket-hl">[dịp gặp gỡ]</span> together.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -9431,21 +10539,40 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "📱 [Giữ liên lạc] (Cách 1):",
+                        title: "📱 [Hình thức giữ liên lạc] (Cách 1):",
                         items: [
                             { en: "chat on social media", vn: "nhắn tin trên mạng xã hội" },
                             { en: "send holiday greetings", vn: "gửi lời chúc các dịp lễ" },
-                            { en: "annual Tet holidays", vn: "kỳ nghỉ Tết hằng năm" },
-                            { en: "summer vacations", vn: "những kỳ nghỉ hè" }
+                            { en: "make video calls on Zalo", vn: "gọi video trên ứng dụng Zalo" },
+                            { en: "comment on each other's photos", vn: "bình luận vào ảnh của nhau" },
+                            { en: "share life updates online", vn: "chia sẻ cập nhật cuộc sống trực tuyến" }
                         ]
                     },
                     {
-                        title: "🏙️ [Mất liên lạc do bận rộn] (Cách 2):",
+                        title: "🎉 [Dịp gặp gỡ trực tiếp] (Cách 1):",
+                        items: [
+                            { en: "annual Tet holidays", vn: "kỳ nghỉ Tết hằng năm" },
+                            { en: "summer vacations", vn: "những kỳ nghỉ hè" },
+                            { en: "class reunions", vn: "các buổi họp lớp" },
+                            { en: "wedding parties", vn: "các bữa tiệc cưới" }
+                        ]
+                    },
+                    {
+                        title: "🏙️ [Khoảng cách nơi sống] (Cách 2):",
                         items: [
                             { en: "different big cities", vn: "các thành phố lớn khác nhau" },
-                            { en: "faraway provinces", vn: "các tỉnh ở xa" },
+                            { en: "faraway provinces", vn: "các tỉnh thành ở xa" },
+                            { en: "different countries", vn: "các quốc gia khác nhau" },
+                            { en: "distant neighborhoods", vn: "các khu vực cách xa nhau" }
+                        ]
+                    },
+                    {
+                        title: "⏳ [Lý do bận rộn hiện tại] (Cách 2):",
+                        items: [
                             { en: "demanding jobs and families", vn: "công việc bận rộn và gia đình" },
-                            { en: "daily busy schedules", vn: "lịch trình bận rộn hằng ngày" }
+                            { en: "daily busy schedules", vn: "lịch trình bận rộn hằng ngày" },
+                            { en: "personal career goals", vn: "mục tiêu sự nghiệp cá nhân" },
+                            { en: "university studies and part-time work", vn: "việc học đại học và công việc làm thêm" }
                         ]
                     }
                 ],
@@ -9476,7 +10603,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Có - Thấu hiểu sâu sắc đối phương và tận hưởng khoảnh khắc lãng mạn):</div>
                     <div class="topic-formula-text">
-                        → Yes, I do. Dating is a wonderful opportunity to <span class="formula-bracket-hl">[mục đích hẹn hò]</span> and enjoy <span class="formula-bracket-hl">[trải nghiệm cảm xúc]</span> together.
+                        → Yes, I do. Dating is a wonderful opportunity to <span class="formula-bracket-hl">[mục đích hẹn hò - Vo]</span> and enjoy <span class="formula-bracket-hl">[trải nghiệm cảm xúc]</span> together.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -9487,21 +10614,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🌹 [Yêu thích hẹn hò] (Cách 1):",
+                        title: "🌹 [Mục đích hẹn hò] (Cách 1):",
                         items: [
-                            { en: "understand another person deeply", vn: "thấu hiểu sâu sắc đối phương" },
+                            { en: "understand another person deeply", vn: "thấu hiểu sâu sắc một người khác" },
                             { en: "explore different personalities", vn: "tìm hiểu những tính cách khác nhau" },
-                            { en: "sweet romantic moments", vn: "những khoảnh khắc lãng mạn ngọt ngào" },
-                            { en: "special weekend dates", vn: "những buổi hẹn hò cuối tuần đặc biệt" }
+                            { en: "share daily joys and sorrows", vn: "chia sẻ những niềm vui và nỗi buồn thường ngày" },
+                            { en: "build a meaningful relationship", vn: "xây dựng một mối quan hệ ý nghĩa" },
+                            { en: "learn how to care for someone", vn: "học cách quan tâm chăm sóc một ai đó" }
                         ]
                     },
                     {
-                        title: "🎯 [Ưu tiên sự nghiệp & Độc thân] (Cách 2):",
+                        title: "💑 [Trải nghiệm cảm xúc hẹn hò] (Cách 1):",
                         items: [
-                            { en: "my university study and career", vn: "việc học đại học và sự nghiệp" },
-                            { en: "personal skill development", vn: "phát triển kỹ năng cá nhân" },
-                            { en: "peaceful independent life", vn: "cuộc sống độc lập thanh bình" },
-                            { en: "quality time with friends", vn: "thời gian chất lượng bên bạn bè" }
+                            { en: "sweet romantic moments", vn: "những khoảnh khắc lãng mạn ngọt ngào" },
+                            { en: "special weekend dates", vn: "những buổi hẹn hò cuối tuần đặc biệt" },
+                            { en: "cozy dinner conversations", vn: "những cuộc trò chuyện ấm cúng bên bữa tối" },
+                            { en: "unforgettable youth memories", vn: "những kỷ niệm thanh xuân khó quên" }
+                        ]
+                    },
+                    {
+                        title: "🎯 [Mục tiêu cá nhân ưu tiên] (Cách 2):",
+                        items: [
+                            { en: "my university study and career", vn: "việc học đại học và sự nghiệp của tôi" },
+                            { en: "personal skill development", vn: "việc phát triển kỹ năng cá nhân" },
+                            { en: "financial independence", vn: "sự tự chủ về tài chính" },
+                            { en: "my personal hobbies and health", vn: "sở thích cá nhân và sức khỏe của tôi" },
+                            { en: "quality time with family and friends", vn: "thời gian chất lượng bên gia đình và bạn bè" }
                         ]
                     }
                 ],
@@ -9536,21 +10674,31 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "✨ [Ấm áp & Chân thành] (Cách 1):",
+                        title: "✨ [Tính từ tính cách người yêu lý tưởng] (Cách 1):",
                         items: [
                             { en: "warm-hearted and sincere", vn: "ấm áp và chân thành" },
                             { en: "caring and thoughtful", vn: "chu đáo và biết quan tâm" },
-                            { en: "very important", vn: "rất quan trọng" },
-                            { en: "really attractive", vn: "thực sự cuốn hút" }
+                            { en: "honest and loyal", vn: "trung thực và chung thủy" },
+                            { en: "gentle and supportive", vn: "dịu dàng và luôn ủng hộ" }
                         ]
                     },
                     {
-                        title: "🏡 [Kiên nhẫn & Tôn trọng gia đình] (Cách 2):",
+                        title: "🌟 [Tính từ đánh giá khiếu hài hước] (Cách 1):",
+                        items: [
+                            { en: "very important", vn: "rất quan trọng" },
+                            { en: "really attractive", vn: "thực sự cuốn hút" },
+                            { en: "essential in a relationship", vn: "thiết yếu trong một mối quan hệ" },
+                            { en: "helpful to reduce stress", vn: "hữu ích để giảm bớt căng thẳng" }
+                        ]
+                    },
+                    {
+                        title: "🏡 [Phẩm chất tốt đẹp mong muốn - Danh từ] (Cách 2):",
                         items: [
                             { en: "deep understanding, patience", vn: "sự thấu hiểu sâu sắc, tính kiên nhẫn" },
                             { en: "a responsible mindset", vn: "tư duy có trách nhiệm" },
-                            { en: "respect for family", vn: "tôn trọng gia đình" },
-                            { en: "polite and gentle manners", vn: "cách cư xử lịch sự và hòa nhã" }
+                            { en: "polite and gentle manners", vn: "cách cư xử lịch sự và hòa nhã" },
+                            { en: "a kind heart and honesty", vn: "một trái tim nhân hậu và sự trung thực" },
+                            { en: "strong career ambition", vn: "ý chí phấn đấu sự nghiệp vững vàng" }
                         ]
                     }
                 ],
@@ -9574,32 +10722,43 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Chọn quán cà phê yên tĩnh ấm cúng và chăm chú lắng nghe đối phương):</div>
                     <div class="topic-formula-text">
-                        → In my opinion, you should choose a <span class="formula-bracket-hl">[địa điểm hẹn hò]</span>. Also, <span class="formula-bracket-hl">[hành động giao tiếp]</span> during the conversation.
+                        → In my opinion, you should choose a <span class="formula-bracket-hl">[địa điểm hẹn hò]</span>. Also, <span class="formula-bracket-hl">[hành động giao tiếp - Vo]</span> during the conversation.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Hãy là chính mình, ăn mặc gọn gàng, đến đúng giờ và tôn trọng thời gian):</div>
                     <div class="topic-formula-text">
-                        → My best tip is to be yourself. You should <span class="formula-bracket-hl">[hành động lịch sự]</span> and show respect for their time.
+                        → My best tip is to be yourself. You should <span class="formula-bracket-hl">[hành động lịch sự - Vo]</span> and show respect for their time.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "☕ [Chọn địa điểm & Lắng nghe] (Cách 1):",
+                        title: "☕ [Địa điểm hẹn hò lý tưởng] (Cách 1):",
                         items: [
                             { en: "cozy quiet coffee shop", vn: "quán cà phê ấm cúng yên tĩnh" },
                             { en: "peaceful flower garden", vn: "vườn hoa thanh bình" },
-                            { en: "listen to your partner attentively", vn: "chăm chú lắng nghe đối phương" },
-                            { en: "show genuine interest", vn: "thể hiện sự quan tâm chân thật" }
+                            { en: "romantic riverside restaurant", vn: "nhà hàng ven sông lãng mạn" },
+                            { en: "scenic lakeside park", vn: "công viên ven hồ có cảnh đẹp" }
                         ]
                     },
                     {
-                        title: "👔 [Lịch sự & Đúng giờ] (Cách 2):",
+                        title: "🗣️ [Hành động giao tiếp tinh tế] (Cách 1):",
+                        items: [
+                            { en: "listen to your partner attentively", vn: "chăm chú lắng nghe đối phương" },
+                            { en: "show genuine interest", vn: "thể hiện sự quan tâm chân thật" },
+                            { en: "maintain warm eye contact", vn: "duy trì giao tiếp ánh mắt ấm áp" },
+                            { en: "ask open-ended questions", vn: "đặt những câu hỏi gợi mở" },
+                            { en: "share honest stories", vn: "chia sẻ những câu chuyện chân thành" }
+                        ]
+                    },
+                    {
+                        title: "👔 [Hành động lịch sự khi hẹn hò] (Cách 2):",
                         items: [
                             { en: "dress neatly, arrive punctually", vn: "ăn mặc gọn gàng, đến đúng giờ" },
                             { en: "speak politely and gently", vn: "nói chuyện lịch sự và nhẹ nhàng" },
-                            { en: "show respect for their time", vn: "thể hiện sự tôn trọng thời gian của họ" },
-                            { en: "avoid looking at phones", vn: "tránh nhìn vào điện thoại" }
+                            { en: "avoid looking at phones", vn: "tránh nhìn vào điện thoại" },
+                            { en: "keep a friendly smile", vn: "luôn giữ nụ cười thân thiện" },
+                            { en: "prepare a small thoughtful gift", vn: "chuẩn bị một món quà nhỏ chu đáo" }
                         ]
                     }
                 ],
@@ -9630,7 +10789,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Dùng hằng ngày cho công việc - Gửi tài liệu và nhận thông báo công ty):</div>
                     <div class="topic-formula-text">
-                        → Yes, I do. I use email every day to <span class="formula-bracket-hl">[mục đích công việc]</span> and receive official company announcements.
+                        → Yes, I do. I use email every day to <span class="formula-bracket-hl">[mục đích công việc - Vo]</span> and receive official company announcements.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -9641,21 +10800,33 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "💼 [Công việc & Trao đổi] (Cách 1):",
+                        title: "💼 [Mục đích công việc] (Cách 1):",
                         items: [
                             { en: "send work documents to colleagues", vn: "gửi tài liệu công việc cho đồng nghiệp" },
                             { en: "exchange project information", vn: "trao đổi thông tin dự án" },
-                            { en: "receive official company announcements", vn: "nhận thông báo chính thức từ công ty" },
-                            { en: "communicate with clients", vn: "giao tiếp với khách hàng" }
+                            { en: "communicate with clients", vn: "giao tiếp với khách hàng" },
+                            { en: "submit weekly work reports", vn: "nộp báo cáo công việc hằng tuần" },
+                            { en: "schedule formal meetings", vn: "lên lịch các cuộc họp trang trọng" }
                         ]
                     },
                     {
-                        title: "💬 [Nhắn tin mạng xã hội & Zalo] (Cách 2):",
+                        title: "🎓 [Mục đích học tập & Hành chính] (Cách 1):",
                         items: [
-                            { en: "chatting on Zalo and social media", vn: "nhắn tin trên Zalo và mạng xã hội" },
+                            { en: "contact university professors", vn: "liên hệ với các giảng viên đại học" },
+                            { en: "submit class assignments", vn: "nộp bài tập trên lớp" },
+                            { en: "apply for job internships", vn: "ứng tuyển các vị trí thực tập" },
+                            { en: "register for online courses", vn: "đăng ký các khóa học trực tuyến" },
+                            { en: "send formal requests", vn: "gửi các yêu cầu hành chính trang trọng" }
+                        ]
+                    },
+                    {
+                        title: "💬 [Kênh liên lạc ưa thích] (Cách 2):",
+                        items: [
+                            { en: "chat on Zalo and social media", vn: "nhắn tin trên Zalo và mạng xã hội" },
                             { en: "exchange instant phone messages", vn: "trao đổi tin nhắn điện thoại tức thì" },
-                            { en: "avoid formal email writing", vn: "tránh cách viết email trang trọng" },
-                            { en: "connect quickly with close friends", vn: "kết nối nhanh chóng với bạn thân" }
+                            { en: "make quick video calls", vn: "thực hiện các cuộc gọi video nhanh" },
+                            { en: "send voice messages on Messenger", vn: "gửi tin nhắn thoại trên Messenger" },
+                            { en: "call friends directly on the phone", vn: "gọi điện trực tiếp cho bạn bè" }
                         ]
                     }
                 ],
@@ -9690,21 +10861,31 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "⚡ [Ưu điểm Email] (Cách 1):",
+                        title: "⚡ [Tính từ ưu điểm của Email] (Cách 1):",
                         items: [
                             { en: "much faster and more convenient", vn: "nhanh hơn và tiện lợi hơn nhiều" },
                             { en: "instant and modern", vn: "tức thì và hiện đại" },
-                            { en: "send urgent messages in seconds", vn: "gửi tin nhắn khẩn cấp trong vài giây" },
-                            { en: "zero cost", vn: "hoàn toàn miễn phí" }
+                            { en: "time-saving and efficient", vn: "tiết kiệm thời gian và hiệu quả" },
+                            { en: "easy to store and search", vn: "dễ dàng lưu trữ và tìm kiếm" },
+                            { en: "eco-friendly and paperless", vn: "thân thiện với môi trường và không tốn giấy" }
                         ]
                     },
                     {
-                        title: "✉️ [Ý nghĩa Thư tay] (Cách 2):",
+                        title: "✉️ [Giá trị cảm xúc của Thư tay] (Cách 2):",
                         items: [
                             { en: "warm personal feelings", vn: "những cảm xúc cá nhân ấm áp" },
-                            { en: "sentimental value", vn: "giá trị tình cảm" },
-                            { en: "deep care and sincere respect", vn: "sự quan tâm sâu sắc và tôn trọng chân thành" },
-                            { en: "lasting sweet memories", vn: "những kỷ niệm ngọt ngào lâu bền" }
+                            { en: "sentimental value", vn: "giá trị tình cảm sâu sắc" },
+                            { en: "lasting sweet memories", vn: "những kỷ niệm ngọt ngào lâu bền" },
+                            { en: "a unique personal touch", vn: "dấu ấn cá nhân độc đáo" }
+                        ]
+                    },
+                    {
+                        title: "💝 [Ý nghĩa tinh thần của Thư tay] (Cách 2):",
+                        items: [
+                            { en: "true thoughtfulness and patience", vn: "sự chu đáo và lòng kiên nhẫn thực sự" },
+                            { en: "sincere emotional warmth", vn: "sự ấm áp tình cảm chân thành" },
+                            { en: "authentic handwritten beauty", vn: "nét đẹp chữ viết tay mộc mạc" },
+                            { en: "precious personal effort", vn: "tâm huyết cá nhân đáng trân quý" }
                         ]
                     }
                 ],
@@ -9739,21 +10920,31 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🚀 [Xu hướng thay thế] (Cách 1):",
+                        title: "🚀 [Lợi thế nổi bật của Email] (Cách 1):",
                         items: [
                             { en: "incredibly fast and convenient", vn: "cực kỳ nhanh và tiện lợi" },
                             { en: "paperless and green", vn: "không tốn giấy và bảo vệ môi trường" },
-                            { en: "save a lot of time", vn: "tiết kiệm rất nhiều thời gian" },
-                            { en: "modern business habits", vn: "thói quen kinh doanh hiện đại" }
+                            { en: "completely free and instant", vn: "hoàn toàn miễn phí và tức thì" },
+                            { en: "practical for global work", vn: "thiết thực cho công việc toàn cầu" },
+                            { en: "easy to manage every day", vn: "dễ dàng quản lý hằng ngày" }
                         ]
                     },
                     {
-                        title: "💝 [Giá trị bền vững] (Cách 2):",
+                        title: "🎂 [Dịp đặc biệt cá nhân] (Cách 2):",
                         items: [
                             { en: "birthdays and romantic occasions", vn: "sinh nhật và những dịp lãng mạn" },
+                            { en: "wedding anniversaries", vn: "những ngày kỷ niệm ngày cưới" },
+                            { en: "graduation ceremonies", vn: "những buổi lễ tốt nghiệp" },
+                            { en: "Valentine's Day", vn: "ngày lễ Tình nhân" }
+                        ]
+                    },
+                    {
+                        title: "🏮 [Dịp lễ truyền thống] (Cách 2):",
+                        items: [
                             { en: "traditional anniversaries", vn: "các ngày kỷ niệm truyền thống" },
-                            { en: "meaningful sentimental value", vn: "giá trị tình cảm đầy ý nghĩa" },
-                            { en: "treasured keepsakes", vn: "những kỷ vật được trân quý" }
+                            { en: "Lunar New Year holidays", vn: "những ngày Tết Nguyên đán" },
+                            { en: "Vietnamese Teachers' Day", vn: "ngày Nhà giáo Việt Nam" },
+                            { en: "Christmas Eve", vn: "đêm Giáng sinh" }
                         ]
                     }
                 ],
@@ -9784,32 +10975,53 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Có - Thường viết khi đến điểm du lịch nổi tiếng để lưu kỷ niệm đẹp):</div>
                     <div class="topic-formula-text">
-                        → Yes, I do. Whenever I travel to <span class="formula-bracket-hl">[địa điểm du lịch]</span>, I write postcards to <span class="formula-bracket-hl">[mục đích gửi]</span>.
+                        → Yes, I do. Whenever I travel to <span class="formula-bracket-hl">[địa điểm du lịch]</span>, I write postcards to <span class="formula-bracket-hl">[mục đích gửi - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Không thường xuyên - Thích chia sẻ ảnh chụp tức thì trên mạng xã hội hơn):</div>
                     <div class="topic-formula-text">
-                        → Not really. Nowadays, I usually <span class="formula-bracket-hl">[thói quen hiện đại]</span> with friends on social media because it's <span class="formula-bracket-hl">[tính từ]</span>.
+                        → Not really. Nowadays, I usually <span class="formula-bracket-hl">[thói quen hiện đại - Vo]</span> with friends on social media because it's <span class="formula-bracket-hl">[tính từ]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏝️ [Kỷ niệm du lịch] (Cách 1):",
+                        title: "🏝️ [Địa điểm du lịch] (Cách 1):",
                         items: [
                             { en: "famous tourist destinations", vn: "các điểm du lịch nổi tiếng" },
                             { en: "scenic mountain towns", vn: "các thị trấn vùng núi tuyệt đẹp" },
-                            { en: "save wonderful holiday memories", vn: "lưu giữ những kỷ niệm kỳ nghỉ tuyệt vời" },
-                            { en: "send sweet wishes", vn: "gửi gắm những lời chúc ngọt ngào" }
+                            { en: "peaceful coastal cities", vn: "các thành phố biển yên bình" },
+                            { en: "historical ancient capitals", vn: "các vùng cố đô lịch sử" },
+                            { en: "foreign countries", vn: "các quốc gia nước ngoài" }
                         ]
                     },
                     {
-                        title: "📸 [Ảnh mạng xã hội] (Cách 2):",
+                        title: "💌 [Mục đích viết bưu thiếp] (Cách 1):",
+                        items: [
+                            { en: "save wonderful holiday memories", vn: "lưu giữ những kỷ niệm kỳ nghỉ tuyệt vời" },
+                            { en: "send sweet wishes", vn: "gửi gắm những lời chúc ngọt ngào" },
+                            { en: "share my travel joy with family", vn: "chia sẻ niềm vui du lịch với gia đình" },
+                            { en: "keep a physical souvenir", vn: "giữ lại một món quà lưu niệm hữu hình" },
+                            { en: "surprise my best friends", vn: "tạo bất ngờ cho những người bạn thân" }
+                        ]
+                    },
+                    {
+                        title: "📸 [Thói quen chia sẻ hiện đại] (Cách 2):",
                         items: [
                             { en: "share instant travel pictures", vn: "chia sẻ hình ảnh du lịch tức thì" },
                             { en: "post travel moments", vn: "đăng các khoảnh khắc du lịch" },
+                            { en: "upload short travel videos", vn: "đăng tải các video du lịch ngắn" },
+                            { en: "send digital photos via Zalo", vn: "gửi ảnh kỹ thuật số qua Zalo" },
+                            { en: "make live video calls", vn: "thực hiện các cuộc gọi video trực tiếp" }
+                        ]
+                    },
+                    {
+                        title: "⚡ [Tính từ ưu điểm mạng xã hội] (Cách 2):",
+                        items: [
                             { en: "much faster", vn: "nhanh hơn nhiều" },
-                            { en: "more convenient and interactive", vn: "tiện lợi và có tính tương tác hơn" }
+                            { en: "more convenient and interactive", vn: "tiện lợi và có tính tương tác hơn" },
+                            { en: "completely free and easy", vn: "hoàn toàn miễn phí và dễ dàng" },
+                            { en: "instant and modern", vn: "tức thì và hiện đại" }
                         ]
                     }
                 ],
@@ -9839,26 +11051,45 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Gửi cho bố mẹ và ông bà - Thể hiện sự hiếu thảo và lời chúc sức khỏe ấm áp):</div>
                     <div class="topic-formula-text">
-                        → I always send them to my <span class="formula-bracket-hl">[đối tượng gia đình]</span>. It's a sweet way to <span class="formula-bracket-hl">[mục đích tình cảm]</span>.
+                        → I always send them to my <span class="formula-bracket-hl">[đối tượng gia đình]</span>. It's a sweet way to <span class="formula-bracket-hl">[mục đích tình cảm - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏖️ [Gửi bạn thân] (Cách 1):",
+                        title: "👫 [Đối tượng bạn bè] (Cách 1):",
                         items: [
                             { en: "close friends", vn: "bạn bè thân thiết" },
                             { en: "favorite classmates", vn: "những người bạn cùng lớp yêu thích" },
-                            { en: "pictures of stunning landscapes and exciting travel feelings", vn: "ảnh phong cảnh tuyệt mỹ và cảm xúc du lịch hào hứng" },
-                            { en: "fun local stories", vn: "những câu chuyện thú vị ở địa phương" }
+                            { en: "childhood pen pals", vn: "những người bạn qua thư thời thơ ấu" },
+                            { en: "friendly office colleagues", vn: "những đồng nghiệp thân thiện ở văn phòng" }
                         ]
                     },
                     {
-                        title: "🏡 [Gửi gia đình & Ông bà] (Cách 2):",
+                        title: "🏖️ [Điều chia sẻ trên bưu thiếp] (Cách 1):",
+                        items: [
+                            { en: "pictures of stunning landscapes and exciting travel feelings", vn: "ảnh phong cảnh tuyệt mỹ và cảm xúc du lịch hào hứng" },
+                            { en: "fun local stories", vn: "những câu chuyện thú vị ở địa phương" },
+                            { en: "impressive cultural experiences", vn: "những trải nghiệm văn hóa ấn tượng" },
+                            { en: "photos of famous historical landmarks", vn: "hình ảnh các địa danh lịch sử nổi tiếng" }
+                        ]
+                    },
+                    {
+                        title: "🏡 [Đối tượng gia đình] (Cách 2):",
                         items: [
                             { en: "beloved parents and grandparents", vn: "bố mẹ và ông bà kính yêu" },
+                            { en: "older sister and brother", vn: "chị gái và anh trai" },
+                            { en: "close relatives in my hometown", vn: "họ hàng thân thiết ở quê nhà" },
+                            { en: "younger cousins", vn: "các em họ nhỏ tuổi" }
+                        ]
+                    },
+                    {
+                        title: "💝 [Mục đích tình cảm] (Cách 2):",
+                        items: [
                             { en: "send warm health wishes", vn: "gửi những lời chúc sức khỏe ấm áp" },
                             { en: "express my love and care", vn: "bày tỏ tình cảm yêu thương và sự quan tâm" },
-                            { en: "show deep gratitude", vn: "thể hiện lòng biết ơn sâu sắc" }
+                            { en: "show deep gratitude", vn: "thể hiện lòng biết ơn sâu sắc" },
+                            { en: "make them smile happily", vn: "làm cho họ mỉm cười hạnh phúc" },
+                            { en: "let them know I miss them", vn: "cho họ biết rằng tôi rất nhớ họ" }
                         ]
                     }
                 ],
@@ -9882,32 +11113,52 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Lưu giữ kỷ niệm du lịch đặc biệt và có giá trị sưu tầm hình ảnh thắng cảnh đẹp):</div>
                     <div class="topic-formula-text">
-                        → First, postcards help us <span class="formula-bracket-hl">[lợi ích lưu giữ]</span>. They have <span class="formula-bracket-hl">[đặc điểm thẩm mỹ]</span> and high collection value.
+                        → First, postcards help us <span class="formula-bracket-hl">[lợi ích lưu giữ - Vo]</span>. They have <span class="formula-bracket-hl">[đặc điểm thẩm mỹ]</span> and high collection value.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Mang lại niềm vui bất ngờ và gắn kết tình cảm chân thành qua khoảng cách xa):</div>
                     <div class="topic-formula-text">
-                        → They bring <span class="formula-bracket-hl">[cảm xúc bất ngờ]</span> to the receiver. Postcards effectively <span class="formula-bracket-hl">[lợi ích kết nối]</span> across long distances.
+                        → They bring <span class="formula-bracket-hl">[cảm xúc bất ngờ]</span> to the receiver. Postcards effectively <span class="formula-bracket-hl">[lợi ích kết nối - Vo]</span> across long distances.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🖼️ [Lưu giữ & Sưu tầm] (Cách 1):",
+                        title: "🖼️ [Lợi ích lưu giữ kỷ niệm] (Cách 1):",
                         items: [
                             { en: "preserve special travel memories", vn: "gìn giữ những kỷ niệm du lịch đặc biệt" },
                             { en: "remember exciting adventures", vn: "nhớ về những chuyến phiêu lưu hào hứng" },
-                            { en: "beautiful local landmark photos", vn: "hình ảnh danh lam thắng cảnh địa phương tuyệt đẹp" },
-                            { en: "unique postcard art", vn: "nghệ thuật bưu thiếp độc đáo" }
+                            { en: "keep meaningful souvenirs", vn: "giữ lại những món quà lưu niệm ý nghĩa" },
+                            { en: "decorate our study desks", vn: "trang trí góc bàn học của chúng ta" },
+                            { en: "record our travel journeys", vn: "ghi dấu lại những hành trình du lịch" }
                         ]
                     },
                     {
-                        title: "💌 [Gắn kết yêu thương] (Cách 2):",
+                        title: "🎨 [Đặc điểm thẩm mỹ của bưu thiếp] (Cách 1):",
+                        items: [
+                            { en: "beautiful local landmark photos", vn: "hình ảnh danh lam thắng cảnh địa phương tuyệt đẹp" },
+                            { en: "unique postcard art", vn: "nghệ thuật bưu thiếp độc đáo" },
+                            { en: "colorful traditional drawings", vn: "những bức tranh vẽ truyền thống đầy màu sắc" },
+                            { en: "charming vintage designs", vn: "những thiết kế cổ điển duyên dáng" }
+                        ]
+                    },
+                    {
+                        title: "😊 [Cảm xúc bất ngờ cho người nhận] (Cách 2):",
                         items: [
                             { en: "a joyful emotional surprise", vn: "sự bất ngờ đầy cảm xúc và niềm vui" },
                             { en: "heartwarming happiness", vn: "niềm hạnh phúc ấm lòng" },
+                            { en: "a sweet sense of being cared for", vn: "cảm giác ngọt ngào khi được quan tâm" },
+                            { en: "genuine excitement", vn: "sự hào hứng chân thành" }
+                        ]
+                    },
+                    {
+                        title: "💌 [Lợi ích kết nối tình cảm] (Cách 2):",
+                        items: [
                             { en: "strengthen loving connections", vn: "thắt chặt các mối liên kết yêu thương" },
-                            { en: "shorten geographical distances", vn: "rút ngắn khoảng cách địa lý" }
+                            { en: "shorten geographical distances", vn: "rút ngắn khoảng cách địa lý" },
+                            { en: "warm up close friendships", vn: "hâm nóng những tình bạn thân thiết" },
+                            { en: "maintain strong family bonds", vn: "duy trì sợi dây gắn kết gia đình bền chặt" },
+                            { en: "deliver sincere personal feelings", vn: "truyền tải những tình cảm cá nhân chân thành" }
                         ]
                     }
                 ],
@@ -9949,21 +11200,33 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🍂 [Mùa thu mát mẻ] (Cách 1):",
+                        title: "🍂 [Tính từ cảm giác thời tiết] (Cách 1):",
                         items: [
                             { en: "very comfortable and pleasant", vn: "rất thoải mái và dễ chịu" },
                             { en: "mild and sunny", vn: "ôn hòa và có nắng nhẹ" },
-                            { en: "outdoor activities", vn: "các hoạt động ngoài trời" },
-                            { en: "daily leisure walks", vn: "những buổi đi dạo thư giãn hằng ngày" }
+                            { en: "fresh and breezy", vn: "trong lành và có gió mát" },
+                            { en: "cool and refreshing", vn: "mát mẻ và sảng khoái" },
+                            { en: "neither too hot nor too cold", vn: "không quá nóng cũng không quá lạnh" }
                         ]
                     },
                     {
-                        title: "🌧️ [Ngày mưa se lạnh] (Cách 2):",
+                        title: "🌧️ [Thú vui & Đồ uống ngày mưa - Danh từ] (Cách 2):",
                         items: [
                             { en: "a hot cup of tea", vn: "một tách trà nóng" },
                             { en: "warm herbal drinks", vn: "đồ uống thảo mộc ấm áp" },
-                            { en: "very peaceful", vn: "rất đỗi bình yên" },
-                            { en: "cozy and quiet", vn: "ấm cúng và tĩnh lặng" }
+                            { en: "a good novel", vn: "một cuốn tiểu thuyết hay" },
+                            { en: "soft acoustic music", vn: "những bản nhạc acoustic êm dịu" },
+                            { en: "a cozy warm blanket", vn: "một chiếc chăn ấm áp dễ chịu" }
+                        ]
+                    },
+                    {
+                        title: "🏠 [Hoạt động thư giãn ngày mưa] (Mở rộng Cách 2):",
+                        items: [
+                            { en: "drink hot tea", vn: "uống trà nóng" },
+                            { en: "read favorite storybooks", vn: "đọc những cuốn truyện yêu thích" },
+                            { en: "listen to gentle rain sounds", vn: "lắng nghe tiếng mưa rơi nhẹ nhàng" },
+                            { en: "watch classic movies", vn: "xem những bộ phim kinh điển" },
+                            { en: "rest under a warm blanket", vn: "nghỉ ngơi dưới chiếc chăn ấm" }
                         ]
                     }
                 ],
@@ -9987,32 +11250,54 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đi dạo trong công viên - Hít thở không khí trong lành và giữ sức khỏe):</div>
                     <div class="topic-formula-text">
-                        → During this pleasant weather, I often <span class="formula-bracket-hl">[hoạt động ngoài trời]</span>. It helps me <span class="formula-bracket-hl">[lợi ích sức khỏe]</span>.
+                        → During this pleasant weather, I often <span class="formula-bracket-hl">[hoạt động ngoài trời - Vo]</span>. It helps me <span class="formula-bracket-hl">[lợi ích sức khỏe - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Đọc tiểu thuyết và nghe nhạc nhẹ ở nhà - Giảm bớt căng thẳng thường nhật):</div>
                     <div class="topic-formula-text">
-                        → On rainy days, I usually <span class="formula-bracket-hl">[hoạt động trong nhà]</span> at home. It helps me <span class="formula-bracket-hl">[lợi ích giải trí]</span>.
+                        → On rainy days, I usually <span class="formula-bracket-hl">[hoạt động trong nhà - Vo]</span> at home. It helps me <span class="formula-bracket-hl">[lợi ích giải trí - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🌳 [Đi dạo ngoài trời] (Cách 1):",
+                        title: "🌳 [Hoạt động ngoài trời] (Cách 1):",
                         items: [
                             { en: "take a walk in the park", vn: "đi dạo trong công viên" },
                             { en: "ride bicycles around the lake", vn: "đạp xe quanh hồ" },
-                            { en: "breathe fresh air and stay healthy", vn: "hít thở không khí trong lành và giữ sức khỏe" },
-                            { en: "regain positive energy", vn: "lấy lại năng lượng tích cực" }
+                            { en: "go jogging with my friends", vn: "chạy bộ cùng bạn bè" },
+                            { en: "have a weekend picnic", vn: "tổ chức dã ngoại cuối tuần" },
+                            { en: "drink coffee at an outdoor cafe", vn: "uống cà phê ở quán ngoài trời" }
                         ]
                     },
                     {
-                        title: "📖 [Thư giãn trong nhà] (Cách 2):",
+                        title: "💪 [Lợi ích sức khỏe & Tinh thần] (Cách 1):",
+                        items: [
+                            { en: "breathe fresh air and stay healthy", vn: "hít thở không khí trong lành và giữ sức khỏe" },
+                            { en: "regain positive energy", vn: "lấy lại năng lượng tích cực" },
+                            { en: "keep my body fit", vn: "giữ cho cơ thể cân đối" },
+                            { en: "enjoy nature beauty", vn: "tận hưởng vẻ đẹp thiên nhiên" },
+                            { en: "refresh my mind", vn: "làm mới tâm trí của mình" }
+                        ]
+                    },
+                    {
+                        title: "📖 [Hoạt động trong nhà] (Cách 2):",
                         items: [
                             { en: "read novels and listen to gentle music", vn: "đọc tiểu thuyết và nghe nhạc nhẹ" },
-                            { en: "watch lighthearted series", vn: "xem những bộ phim nhẹ nhàng" },
+                            { en: "watch lighthearted series", vn: "xem những bộ phim dài tập nhẹ nhàng" },
+                            { en: "cook hot meals for my family", vn: "nấu những bữa ăn nóng hổi cho gia đình" },
+                            { en: "make a cup of hot chocolate", vn: "pha một tách sô-cô-la nóng" },
+                            { en: "play board games with siblings", vn: "chơi cờ bàn cùng anh chị em" }
+                        ]
+                    },
+                    {
+                        title: "🧘 [Lợi ích giải trí] (Cách 2):",
+                        items: [
                             { en: "reduce daily stress", vn: "giảm bớt căng thẳng hằng ngày" },
-                            { en: "clear my busy mind", vn: "giải tỏa tâm trí bận rộn" }
+                            { en: "clear my busy mind", vn: "giải tỏa tâm trí bận rộn" },
+                            { en: "feel cozy and relaxed", vn: "cảm thấy ấm cúng và thư thái" },
+                            { en: "forget work pressure", vn: "quên đi áp lực công việc" },
+                            { en: "recharge my mental energy", vn: "nạp lại năng lượng tinh thần" }
                         ]
                     }
                 ],
@@ -10036,7 +11321,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Có - Nắng đẹp làm tâm trạng bừng sáng, tràn đầy năng lượng làm việc):</div>
                     <div class="topic-formula-text">
-                        → Yes, it does. Sunny and clear days usually <span class="formula-bracket-hl">[tác động cảm xúc]</span>. I feel <span class="formula-bracket-hl">[tính từ cảm xúc]</span> all day.
+                        → Yes, it does. Sunny and clear days usually <span class="formula-bracket-hl">[tác động cảm xúc - Vo]</span>. I feel <span class="formula-bracket-hl">[tính từ cảm xúc]</span> all day.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -10047,21 +11332,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "☀️ [Tác động tích cực] (Cách 1):",
+                        title: "☀️ [Tác động tích cực của nắng đẹp] (Cách 1):",
                         items: [
                             { en: "brighten my mood immediately", vn: "làm bừng sáng tâm trạng ngay lập tức" },
                             { en: "boost my motivation", vn: "thúc đẩy động lực của tôi" },
-                            { en: "more energetic and productive", vn: "năng động và làm việc hiệu quả hơn" },
-                            { en: "optimistic and cheerful", vn: "lạc quan và vui tươi" }
+                            { en: "bring me positive energy", vn: "mang lại cho tôi nguồn năng lượng tích cực" },
+                            { en: "make me feel wide awake", vn: "làm cho tôi cảm thấy tỉnh táo hoàn toàn" },
+                            { en: "inspire me to go outside", vn: "truyền cảm hứng cho tôi bước ra ngoài" }
                         ]
                     },
                     {
-                        title: "💼 [Tâm trạng phụ thuộc công việc] (Cách 2):",
+                        title: "😄 [Tính từ cảm xúc tích cực] (Cách 1):",
+                        items: [
+                            { en: "more energetic and productive", vn: "năng động và làm việc hiệu quả hơn" },
+                            { en: "optimistic and cheerful", vn: "lạc quan và vui tươi" },
+                            { en: "active and enthusiastic", vn: "tích cực và đầy nhiệt huyết" },
+                            { en: "happy and refreshed", vn: "vui vẻ và sảng khoái" }
+                        ]
+                    },
+                    {
+                        title: "💼 [Yếu tố quyết định tâm trạng - Danh từ] (Cách 2):",
                         items: [
                             { en: "my daily work productivity", vn: "hiệu suất công việc hằng ngày của tôi" },
                             { en: "harmonious family relationships", vn: "các mối quan hệ gia đình hòa thuận" },
-                            { en: "maintain an optimistic mindset", vn: "duy trì tinh thần lạc quan" },
-                            { en: "control personal emotions well", vn: "kiểm soát cảm xúc cá nhân tốt" }
+                            { en: "my personal health condition", vn: "tình trạng sức khỏe cá nhân của tôi" },
+                            { en: "academic study results", vn: "kết quả học tập trên trường" },
+                            { en: "positive interactions with friends", vn: "những tương tác tích cực với bạn bè" }
                         ]
                     }
                 ],
@@ -10092,7 +11388,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Có - Dùng hằng tuần khi đi chợ mua thực phẩm tươi sống):</div>
                     <div class="topic-formula-text">
-                        → Yes, I have. I use plastic bags almost every week when I <span class="formula-bracket-hl">[hoạt động mua sắm]</span>.
+                        → Yes, I have. I use plastic bags almost every week when I <span class="formula-bracket-hl">[hoạt động mua sắm - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -10103,21 +11399,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🛒 [Đi chợ thường ngày] (Cách 1):",
+                        title: "🛒 [Hoạt động mua sắm thường ngày] (Cách 1):",
                         items: [
                             { en: "buy fresh food at traditional local markets", vn: "mua thực phẩm tươi ở chợ truyền thống địa phương" },
                             { en: "carry daily groceries home", vn: "mang đồ tạp hóa hằng ngày về nhà" },
-                            { en: "shop for kitchen cooking ingredients", vn: "mua sắm nguyên liệu nấu ăn cho bếp" },
-                            { en: "convenient everyday carry", vn: "đồ đựng tiện lợi hằng ngày" }
+                            { en: "shop for kitchen cooking ingredients", vn: "mua sắm nguyên liệu nấu ăn cho nhà bếp" },
+                            { en: "buy takeaway breakfast", vn: "mua đồ ăn sáng mang đi" },
+                            { en: "pick up fruits and vegetables", vn: "mua trái cây và rau củ" }
                         ]
                     },
                     {
-                        title: "🛍️ [Ngừng dùng túi nilon & Dùng túi vải] (Cách 2):",
+                        title: "🚯 [Loại rác nhựa dùng một lần] (Cách 2):",
                         items: [
                             { en: "single-use plastic bags", vn: "túi nilon dùng một lần" },
+                            { en: "disposable nylon bags", vn: "túi nilon dùng rồi bỏ" },
+                            { en: "non-biodegradable plastic wrappers", vn: "bao bì nhựa khó phân hủy" },
+                            { en: "thin supermarket plastic bags", vn: "những chiếc túi nhựa mỏng ở siêu thị" }
+                        ]
+                    },
+                    {
+                        title: "🛍️ [Đồ dùng thân thiện môi trường] (Cách 2):",
+                        items: [
                             { en: "reusable cloth tote bags", vn: "túi vải tote có thể tái sử dụng" },
-                            { en: "reduce harmful plastic waste", vn: "giảm thiểu rác thải nhựa có hại" },
-                            { en: "protect marine environments", vn: "bảo vệ môi trường biển" }
+                            { en: "eco-friendly canvas bags", vn: "những chiếc túi vải bố thân thiện môi trường" },
+                            { en: "woven plastic shopping baskets", vn: "giỏ đi chợ đan bằng nhựa bền" },
+                            { en: "biodegradable paper bags", vn: "những chiếc túi giấy tự phân hủy" },
+                            { en: "foldable shopping bags", vn: "túi đi chợ có thể gấp gọn" }
                         ]
                     }
                 ],
@@ -10141,32 +11448,43 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đựng thịt tươi và cá sống - Giữ đồ sạch sẽ và chống rò rỉ nước):</div>
                     <div class="topic-formula-text">
-                        → I mainly use them to <span class="formula-bracket-hl">[mục đích sử dụng]</span>. They keep other items clean and prevent water leakage.
+                        → I mainly use them to <span class="formula-bracket-hl">[mục đích sử dụng - Vo]</span>. They keep other items clean and prevent water leakage.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Tái sử dụng làm túi đựng rác sinh hoạt trong nhà bếp):</div>
                     <div class="topic-formula-text">
-                        → I often reuse small plastic bags as <span class="formula-bracket-hl">[mục đích tái chế]</span>. It's a convenient way to <span class="formula-bracket-hl">[lợi ích]</span>.
+                        → I often reuse small plastic bags as <span class="formula-bracket-hl">[mục đích tái chế]</span>. It's a convenient way to <span class="formula-bracket-hl">[lợi ích - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🥩 [Đựng thực phẩm sống] (Cách 1):",
+                        title: "🥩 [Mục đích đựng đồ tươi sống] (Cách 1):",
                         items: [
                             { en: "hold fresh meat and raw fish", vn: "đựng thịt tươi và cá sống" },
-                            { en: "store wet green vegetables", vn: "chứa các loại rau xanh ướt" },
-                            { en: "keep other items clean and hygienic", vn: "giữ các đồ khác sạch sẽ và vệ sinh" },
-                            { en: "prevent water leakage", vn: "ngăn nước rò rỉ ra ngoài" }
+                            { en: "store wet green vegetables", vn: "chứa các loại rau xanh còn ướt" },
+                            { en: "pack frozen food items", vn: "đóng gói các mặt hàng thực phẩm đông lạnh" },
+                            { en: "carry takeaway soup and drinks", vn: "mang canh và đồ uống mua mang về" },
+                            { en: "protect dry items on rainy days", vn: "bảo vệ đồ khô ráo vào những ngày mưa" }
                         ]
                     },
                     {
-                        title: "🗑️ [Túi lót thùng rác] (Cách 2):",
+                        title: "🗑️ [Mục đích tái sử dụng túi nhựa] (Cách 2):",
                         items: [
                             { en: "household trash liners", vn: "túi lót thùng rác gia đình" },
+                            { en: "small kitchen waste bags", vn: "túi đựng rác nhỏ trong nhà bếp" },
+                            { en: "storage bags for old shoes", vn: "túi cất giữ giày dép cũ" },
+                            { en: "protective covers for dirty items", vn: "vỏ bọc bảo vệ cho các món đồ bẩn" }
+                        ]
+                    },
+                    {
+                        title: "♻️ [Lợi ích khi tái sử dụng] (Cách 2):",
+                        items: [
                             { en: "collect daily kitchen waste cleanly", vn: "thu gom rác bếp hằng ngày sạch sẽ" },
                             { en: "keep garbage bins odor-free", vn: "giữ thùng rác không bị bốc mùi" },
-                            { en: "save household expenses", vn: "tiết kiệm chi tiêu gia đình" }
+                            { en: "save household expenses", vn: "tiết kiệm chi tiêu gia đình" },
+                            { en: "reduce daily plastic waste", vn: "giảm lượng rác thải nhựa hằng ngày" },
+                            { en: "give plastic bags a second life", vn: "cho túi nhựa một vòng đời sử dụng thứ hai" }
                         ]
                     }
                 ],
@@ -10190,7 +11508,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Thích túi vải hơn - Bền chắc, thân thiện môi trường, giảm ô nhiễm rác nhựa):</div>
                     <div class="topic-formula-text">
-                        → I strongly prefer canvas bags because they're <span class="formula-bracket-hl">[ưu điểm túi vải]</span>. They help <span class="formula-bracket-hl">[lợi ích môi trường]</span> effectively.
+                        → I strongly prefer canvas bags because they're <span class="formula-bracket-hl">[ưu điểm túi vải]</span>. They help <span class="formula-bracket-hl">[lợi ích môi trường - Vo]</span> effectively.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -10201,21 +11519,40 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "👜 [Ưu thế túi vải] (Cách 1):",
+                        title: "👜 [Tính từ ưu điểm của túi vải] (Cách 1 & 2):",
                         items: [
                             { en: "durable and eco-friendly", vn: "bền chắc và thân thiện môi trường" },
                             { en: "reusable and washable", vn: "tái sử dụng và giặt sạch được" },
-                            { en: "reduce harmful single-use plastic pollution", vn: "giảm thiểu ô nhiễm rác nhựa dùng một lần độc hại" },
-                            { en: "protect marine animals", vn: "bảo vệ các sinh vật biển" }
+                            { en: "sturdy and stylish", vn: "chắc chắn và thời trang" },
+                            { en: "strong enough for heavy items", vn: "đủ bền chắc cho những món đồ nặng" }
                         ]
                     },
                     {
-                        title: "⚖️ [Linh hoạt theo công năng] (Cách 2):",
+                        title: "🌍 [Lợi ích bảo vệ môi trường] (Cách 1):",
+                        items: [
+                            { en: "reduce harmful single-use plastic pollution", vn: "giảm thiểu ô nhiễm rác nhựa dùng một lần độc hại" },
+                            { en: "protect marine animals", vn: "bảo vệ các sinh vật biển" },
+                            { en: "keep our living environment clean", vn: "giữ môi trường sống của chúng ta sạch đẹp" },
+                            { en: "promote a green lifestyle", vn: "thúc đẩy lối sống xanh" },
+                            { en: "save natural resources", vn: "tiết kiệm tài nguyên thiên nhiên" }
+                        ]
+                    },
+                    {
+                        title: "🐟 [Các loại đồ ướt cần túi nilon] (Cách 2):",
                         items: [
                             { en: "wet seafood", vn: "hải sản tươi ướt" },
                             { en: "raw watery groceries", vn: "thực phẩm tươi sống nhiều nước" },
-                            { en: "sturdy and stylish", vn: "chắc chắn và phong cách" },
-                            { en: "dry study books", vn: "sách vở tài liệu khô" }
+                            { en: "fresh meat and tofu", vn: "thịt tươi và đậu phụ" },
+                            { en: "chilled drinks with ice", vn: "đồ uống ướp lạnh có đá" }
+                        ]
+                    },
+                    {
+                        title: "📚 [Các loại đồ khô hợp túi vải] (Cách 2):",
+                        items: [
+                            { en: "dry study books", vn: "sách vở tài liệu khô" },
+                            { en: "clothes and personal items", vn: "quần áo và đồ dùng cá nhân" },
+                            { en: "laptops and notebooks", vn: "máy tính xách tay và sổ ghi chép" },
+                            { en: "packaged supermarket goods", vn: "hàng hóa đóng gói ở siêu thị" }
                         ]
                     }
                 ],
@@ -10246,32 +11583,44 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Có - Lập kế hoạch chi tiêu tháng cẩn thận và tiết kiệm đều đặn):</div>
                     <div class="topic-formula-text">
-                        → Yes, I think I'm quite good at saving. I always <span class="formula-bracket-hl">[thói quen tiết kiệm]</span> and save money every month.
+                        → Yes, I think I'm quite good at saving. I always <span class="formula-bracket-hl">[thói quen tiết kiệm - Vo]</span> and save money every month.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Chưa tốt lắm - Hay chi tiêu bốc đồng vào quần áo mạng và đồ ăn vặt):</div>
                     <div class="topic-formula-text">
-                        → Honestly, not really. I often <span class="formula-bracket-hl">[thói quen tiêu xài]</span>, so it's hard to keep large savings.
+                        → Honestly, not really. I often <span class="formula-bracket-hl">[thói quen tiêu xài - Vo]</span>, so it's hard to keep large savings.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏦 [Tiết kiệm có kế hoạch] (Cách 1):",
+                        title: "🏦 [Thói quen quản lý chi tiêu] (Cách 1):",
                         items: [
                             { en: "plan my monthly expenses carefully", vn: "lên kế hoạch chi tiêu tháng cẩn thận" },
                             { en: "control my daily budget", vn: "kiểm soát ngân sách hằng ngày" },
-                            { en: "save money every month", vn: "tiết kiệm tiền mỗi tháng" },
-                            { en: "build a financial safety net", vn: "xây dựng quỹ an toàn tài chính" }
+                            { en: "track every single expense", vn: "theo dõi từng khoản chi tiêu nhỏ" },
+                            { en: "compare prices before buying", vn: "so sánh giá cả trước khi mua" },
+                            { en: "cook meals at home", vn: "tự nấu ăn tại nhà" }
                         ]
                     },
                     {
-                        title: "💸 [Chi tiêu bốc đồng] (Cách 2):",
+                        title: "💰 [Thói quen tích lũy tài chính] (Cách 1):",
+                        items: [
+                            { en: "build a financial safety net", vn: "xây dựng quỹ an toàn tài chính" },
+                            { en: "set aside twenty percent of my income", vn: "để dành ra 20 phần trăm thu nhập" },
+                            { en: "put money into a bank account", vn: "gửi tiền vào tài khoản ngân hàng" },
+                            { en: "avoid buying unnecessary things", vn: "tránh mua những món đồ không cần thiết" },
+                            { en: "cut down on luxury items", vn: "cắt giảm các mặt hàng xa xỉ" }
+                        ]
+                    },
+                    {
+                        title: "💸 [Thói quen tiêu xài bốc đồng] (Cách 2):",
                         items: [
                             { en: "spend money impulsively on online clothes and food", vn: "chi tiêu bốc đồng vào quần áo mạng và đồ ăn vặt" },
                             { en: "order unnecessary fashion items", vn: "đặt mua đồ thời trang không cần thiết" },
-                            { en: "hard to keep large savings", vn: "khó giữ được khoản tiết kiệm lớn" },
-                            { en: "run out of cash easily", vn: "dễ bị hết tiền mặt" }
+                            { en: "eat out at expensive restaurants", vn: "ăn ngoài tại các nhà hàng đắt đỏ" },
+                            { en: "buy trendy gadgets online", vn: "mua các thiết bị công nghệ theo trào lưu trên mạng" },
+                            { en: "shop whenever I feel stressed", vn: "mua sắm mỗi khi cảm thấy căng thẳng" }
                         ]
                     }
                 ],
@@ -10295,7 +11644,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đóng tiền học tiếng Anh để chuẩn bị tương lai và đi du lịch gia đình):</div>
                     <div class="topic-formula-text">
-                        → I usually use my savings to <span class="formula-bracket-hl">[mục tiêu học tập]</span>. It helps me <span class="formula-bracket-hl">[lợi ích tương lai]</span> and travel with family.
+                        → I usually use my savings to <span class="formula-bracket-hl">[mục tiêu học tập - Vo]</span>. It helps me <span class="formula-bracket-hl">[lợi ích tương lai - Vo]</span> and travel with family.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -10306,21 +11655,41 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🎯 [Đầu tư học tập & Du lịch] (Cách 1):",
+                        title: "🎯 [Mục tiêu học tập & Đầu tư bản thân] (Cách 1):",
                         items: [
                             { en: "pay for English courses", vn: "trả tiền các khóa học tiếng Anh" },
                             { en: "finance professional certifications", vn: "chi trả cho các chứng chỉ nghề nghiệp" },
-                            { en: "prepare for my future", vn: "chuẩn bị cho tương lai của tôi" },
-                            { en: "travel with family", vn: "đi du lịch cùng gia đình" }
+                            { en: "buy a new laptop for work", vn: "mua một chiếc máy tính xách tay mới cho công việc" },
+                            { en: "attend skill training workshops", vn: "tham gia các buổi đào tạo kỹ năng" },
+                            { en: "pay my university tuition fees", vn: "đóng học phí đại học của tôi" }
                         ]
                     },
                     {
-                        title: "🛡️ [Quỹ dự phòng an tâm] (Cách 2):",
+                        title: "🚀 [Lợi ích tương lai] (Cách 1):",
+                        items: [
+                            { en: "prepare for my future", vn: "chuẩn bị cho tương lai của tôi" },
+                            { en: "get a better job", vn: "có được một công việc tốt hơn" },
+                            { en: "achieve financial independence", vn: "đạt được sự tự lập về tài chính" },
+                            { en: "improve my career prospects", vn: "nâng cao triển vọng nghề nghiệp" },
+                            { en: "support my parents later", vn: "hỗ trợ bố mẹ tôi sau này" }
+                        ]
+                    },
+                    {
+                        title: "🛡️ [Mục đích dự phòng khẩn cấp] (Cách 2):",
                         items: [
                             { en: "emergency situations and medical bills", vn: "các tình huống khẩn cấp và viện phí y tế" },
-                            { en: "unexpected motorbike repairs", vn: "sửa chữa xe máy bất ngờ" },
+                            { en: "unexpected motorbike repairs", vn: "việc sửa chữa xe máy bất ngờ" },
+                            { en: "sudden family needs", vn: "những nhu cầu gia đình đột xuất" },
+                            { en: "rainy days in the future", vn: "những ngày khó khăn trong tương lai" }
+                        ]
+                    },
+                    {
+                        title: "😌 [Cảm giác an tâm về tài chính] (Cách 2):",
+                        items: [
                             { en: "peace of mind", vn: "sự bình an trong tâm trí" },
-                            { en: "financial security in difficult times", vn: "sự an toàn tài chính lúc khó khăn" }
+                            { en: "financial security", vn: "sự an toàn về tài chính" },
+                            { en: "strong confidence", vn: "sự tự tin vững vàng" },
+                            { en: "a sense of independence", vn: "cảm giác tự chủ không phụ thuộc" }
                         ]
                     }
                 ],
@@ -10355,21 +11724,31 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "📈 [Chi phí sinh hoạt tăng] (Cách 1):",
+                        title: "📈 [Khoản chi lớn trong thu nhập] (Cách 1):",
                         items: [
                             { en: "most of their income", vn: "phần lớn thu nhập của họ" },
-                            { en: "high monthly apartment rent", vn: "tiền thuê căn hộ hằng tháng cao" },
-                            { en: "rising grocery expenses", vn: "chi phí thực phẩm ngày càng tăng" },
-                            { en: "costly fuel and transport", vn: "xăng xe và phương tiện đi lại tốn kém" }
+                            { en: "a large part of their salary", vn: "một phần lớn tiền lương của họ" },
+                            { en: "almost all their monthly earnings", vn: "hầu hết thu nhập hằng tháng của họ" },
+                            { en: "a huge amount of money", vn: "một khoản tiền rất lớn" }
                         ]
                     },
                     {
-                        title: "📱 [Cám dỗ mua sắm online] (Cách 2):",
+                        title: "🏠 [Các khoản chi phí đắt đỏ] (Mở rộng Cách 1):",
+                        items: [
+                            { en: "high monthly apartment rent", vn: "tiền thuê căn hộ hằng tháng cao" },
+                            { en: "rising grocery expenses", vn: "chi phí thực phẩm ngày càng tăng" },
+                            { en: "costly fuel and transport", vn: "xăng xe và phương tiện đi lại tốn kém" },
+                            { en: "expensive electricity and water bills", vn: "hóa đơn tiền điện và nước đắt đỏ" }
+                        ]
+                    },
+                    {
+                        title: "📱 [Thói quen tiêu dùng tiêu cực - Danh từ] (Cách 2):",
                         items: [
                             { en: "impulse spending", vn: "chi tiêu bốc đồng ngẫu hứng" },
-                            { en: "flash sale discount vouchers", vn: "mã giảm giá săn hàng chớp nhoáng" },
-                            { en: "buy unnecessary items without thinking carefully", vn: "mua những món đồ không cần thiết mà không suy nghĩ kỹ" },
-                            { en: "waste money on luxury goods", vn: "lãng phí tiền vào hàng xa xỉ" }
+                            { en: "flash sale discount traps", vn: "bẫy săn mã giảm giá chớp nhoáng" },
+                            { en: "unplanned online purchases", vn: "những khoản mua sắm trực tuyến không có kế hoạch" },
+                            { en: "bad spending habits", vn: "những thói quen chi tiêu xấu" },
+                            { en: "heavy credit card debt", vn: "nợ thẻ tín dụng chồng chất" }
                         ]
                     }
                 ],
@@ -10400,7 +11779,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đã từng - Thuyết trình báo cáo học thuật trước lớp đại học và rất tự hào):</div>
                     <div class="topic-formula-text">
-                        → Yes, I have. Last semester, I <span class="formula-bracket-hl">[hoạt động thuyết trình]</span> in front of my university class and felt very proud.
+                        → Yes, I have. Last semester, I <span class="formula-bracket-hl">[hoạt động thuyết trình - V2/ed]</span> in front of my university class and felt very proud.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -10411,21 +11790,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🎓 [Thuyết trình đại học] (Cách 1):",
+                        title: "🎓 [Hoạt động thuyết trình] (Cách 1):",
                         items: [
-                            { en: "gave an academic presentation", vn: "thuyết trình một bài báo cáo học thuật" },
-                            { en: "presented group research results", vn: "trình bày kết quả nghiên cứu nhóm" },
-                            { en: "felt very proud", vn: "cảm thấy rất tự hào" },
-                            { en: "spoke clearly before my class", vn: "nói rõ ràng trước lớp của tôi" }
+                            { en: "give an academic presentation", vn: "thuyết trình một bài báo cáo học thuật" },
+                            { en: "present group research results", vn: "trình bày kết quả nghiên cứu nhóm" },
+                            { en: "speak clearly before my class", vn: "nói rõ ràng trước lớp của tôi" },
+                            { en: "deliver a short English speech", vn: "phát biểu một bài nói tiếng Anh ngắn" },
+                            { en: "introduce a team project", vn: "giới thiệu một dự án nhóm" }
                         ]
                     },
                     {
-                        title: "👥 [Chia sẻ nhóm nhỏ] (Cách 2):",
+                        title: "👥 [Hoạt động nhóm nhỏ] (Cách 2):",
                         items: [
                             { en: "small study groups", vn: "những nhóm học tập nhỏ" },
                             { en: "informal project discussions", vn: "các buổi thảo luận dự án thân mật" },
-                            { en: "makes me nervous", vn: "khiến tôi cảm thấy hồi hộp lo lắng" },
-                            { en: "fear of public attention", vn: "sợ sự chú ý của đám đông" }
+                            { en: "familiar classroom teams", vn: "các đội nhóm quen thuộc trong lớp" },
+                            { en: "online group meetings", vn: "các cuộc họp nhóm trực tuyến" },
+                            { en: "friendly club gatherings", vn: "các buổi sinh hoạt câu lạc bộ thân thiện" }
+                        ]
+                    },
+                    {
+                        title: "😰 [Rào cản tâm lý khi nói trước đám đông] (Mở rộng Cách 2):",
+                        items: [
+                            { en: "fear of public attention", vn: "nỗi sợ sự chú ý của đám đông" },
+                            { en: "lack of stage experience", vn: "sự thiếu kinh nghiệm đứng trên sân khấu" },
+                            { en: "shyness in front of strangers", vn: "sự nhút nhát trước người lạ" },
+                            { en: "worry about making mistakes", vn: "nỗi lo lắng về việc mắc lỗi" }
                         ]
                     }
                 ],
@@ -10449,32 +11839,44 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Luyện tập kỹ bài nói trước gương và hít thở thật sâu để giữ bình tĩnh):</div>
                     <div class="topic-formula-text">
-                        → You should <span class="formula-bracket-hl">[hành động chuẩn bị]</span> before a mirror. Before stepping onto the stage, take deep breaths to stay calm.
+                        → You should <span class="formula-bracket-hl">[hành động chuẩn bị - Vo]</span> before a mirror. Before stepping onto the stage, take deep breaths to stay calm.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Hiểu sâu nội dung và giao tiếp bằng mắt thân thiện để tăng sự tự tin):</div>
                     <div class="topic-formula-text">
-                        → It's important to understand your content thoroughly. Also, <span class="formula-bracket-hl">[kỹ thuật giao tiếp]</span> to boost your confidence immediately.
+                        → It's important to understand your content thoroughly. Also, <span class="formula-bracket-hl">[kỹ thuật giao tiếp - Vo]</span> to boost your confidence immediately.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🪞 [Luyện trước gương & Hít thở] (Cách 1):",
+                        title: "🪞 [Hành động chuẩn bị bài nói] (Cách 1):",
                         items: [
                             { en: "practice your speech carefully", vn: "luyện tập bài phát biểu cẩn thận" },
                             { en: "rehearse speech keynotes", vn: "tập dượt những ý chính bài phát biểu" },
-                            { en: "take deep breaths to stay calm", vn: "hít thở sâu để giữ bình tĩnh" },
-                            { en: "relax your shoulder muscles", vn: "thư giãn cơ vai" }
+                            { en: "master your core slides", vn: "làm chủ các slide cốt lõi" },
+                            { en: "prepare clear outline notes", vn: "chuẩn bị dàn ý ghi chú rõ ràng" },
+                            { en: "record and check your voice", vn: "ghi âm và kiểm tra giọng nói của bạn" }
                         ]
                     },
                     {
-                        title: "👀 [Giao tiếp mắt & Tự tin] (Cách 2):",
+                        title: "🧘 [Mẹo thư giãn cơ thể trước giờ nói] (Mở rộng Cách 1):",
+                        items: [
+                            { en: "relax your shoulder muscles", vn: "thư giãn cơ vai" },
+                            { en: "drink a sip of warm water", vn: "uống một ngụm nước ấm" },
+                            { en: "focus on slow breathing", vn: "tập trung vào nhịp thở chậm rãi" },
+                            { en: "think of positive results", vn: "nghĩ về những kết quả tích cực" },
+                            { en: "speak at a steady pace", vn: "nói với tốc độ ổn định" }
+                        ]
+                    },
+                    {
+                        title: "👀 [Kỹ thuật giao tiếp trên sân khấu] (Cách 2):",
                         items: [
                             { en: "make friendly eye contact with listeners", vn: "giao tiếp bằng mắt thân thiện với người nghe" },
                             { en: "smile gently at kind faces", vn: "mỉm cười nhẹ nhàng với những gương mặt hiền hòa" },
-                            { en: "boost your confidence immediately", vn: "tăng ngay sự tự tin tức thì" },
-                            { en: "master your core slides", vn: "làm chủ các slide cốt lõi" }
+                            { en: "use natural hand gestures", vn: "sử dụng cử chỉ tay tự nhiên" },
+                            { en: "interact warmly with the audience", vn: "tương tác ấm áp với khán giả" },
+                            { en: "keep a confident standing posture", vn: "giữ tư thế đứng tự tin" }
                         ]
                     }
                 ],
@@ -10498,7 +11900,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Giúp xây dựng sự tự tin và nâng cao năng lực thuyết phục trong cuộc họp):</div>
                     <div class="topic-formula-text">
-                        → Firstly, public speaking helps people <span class="formula-bracket-hl">[lợi ích kỹ năng]</span>. It makes them <span class="formula-bracket-hl">[tính từ cảm xúc]</span> in professional meetings.
+                        → Firstly, public speaking helps people <span class="formula-bracket-hl">[lợi ích kỹ năng - Vo]</span>. It makes them <span class="formula-bracket-hl">[tính từ cảm xúc]</span> in professional meetings.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -10509,21 +11911,31 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "💪 [Tự tin & Thuyết phục] (Cách 1):",
+                        title: "💪 [Lợi ích kỹ năng cá nhân] (Cách 1):",
                         items: [
                             { en: "build strong self-confidence", vn: "xây dựng sự tự tin mạnh mẽ" },
                             { en: "express persuasive logical arguments", vn: "diễn đạt các lập luận logic đầy sức thuyết phục" },
-                            { en: "much more persuasive and confident", vn: "thuyết phục và tự tin hơn nhiều" },
-                            { en: "overcome social anxiety", vn: "vượt qua nỗi sợ giao tiếp xã hội" }
+                            { en: "overcome social anxiety", vn: "vượt qua nỗi sợ giao tiếp xã hội" },
+                            { en: "improve critical thinking skills", vn: "cải thiện kỹ năng tư duy phản biện" },
+                            { en: "communicate ideas clearly", vn: "truyền đạt ý tưởng một cách rõ ràng" }
                         ]
                     },
                     {
-                        title: "🚀 [Thăng tiến & Mạng lưới] (Cách 2):",
+                        title: "✨ [Tính từ phong thái chuyên nghiệp] (Cách 1):",
+                        items: [
+                            { en: "much more persuasive and confident", vn: "thuyết phục và tự tin hơn nhiều" },
+                            { en: "calm and professional", vn: "bình tĩnh và chuyên nghiệp" },
+                            { en: "active and respected", vn: "chủ động và được tôn trọng" },
+                            { en: "impressive and articulate", vn: "ấn tượng và ăn nói lưu loát" }
+                        ]
+                    },
+                    {
+                        title: "🚀 [Lợi ích phát triển sự nghiệp - Danh từ] (Cách 2):",
                         items: [
                             { en: "better promotion opportunities", vn: "cơ hội thăng chức tốt hơn" },
-                            { en: "gain leadership trust", vn: "nhận được sự tin tưởng từ cấp lãnh đạo" },
-                            { en: "build wider social networks for work", vn: "xây dựng các mối quan hệ xã hội rộng hơn cho công việc" },
-                            { en: "attract valuable career partners", vn: "thu hút những đối tác nghề nghiệp giá trị" }
+                            { en: "strong leadership trust", vn: "sự tin tưởng vững chắc từ cấp lãnh đạo" },
+                            { en: "valuable career partnerships", vn: "những mối quan hệ đối tác nghề nghiệp giá trị" },
+                            { en: "high professional reputation", vn: "uy tín chuyên môn cao" }
                         ]
                     }
                 ],
@@ -10565,21 +11977,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🚗 [Tiếng còi xe & Giao thông] (Cách 1):",
+                        title: "🚗 [Nguồn tiếng ồn giao thông] (Cách 1):",
                         items: [
                             { en: "heavy street traffic and motorbikes", vn: "giao thông đông đúc và xe máy" },
-                            { en: "continuous vehicle engines", vn: "động cơ xe chạy liên tục" },
-                            { en: "loud honking sounds", vn: "tiếng còi bấm inh ỏi" },
-                            { en: "very annoying and stressful", vn: "rất khó chịu và căng thẳng" }
+                            { en: "continuous vehicle engines", vn: "động cơ xe cộ chạy liên tục" },
+                            { en: "crowded main roads", vn: "những trục đường chính đông đúc" },
+                            { en: "passing buses and heavy trucks", vn: "xe buýt và xe tải lớn chạy ngang qua" },
+                            { en: "busy street intersections", vn: "các ngã tư đường phố nhộn nhịp" }
                         ]
                     },
                     {
-                        title: "🏗️ [Công trình xây dựng] (Cách 2):",
+                        title: "🏗️ [Nguồn tiếng ồn xây dựng] (Cách 2):",
                         items: [
                             { en: "nearby building construction sites", vn: "các công trường xây dựng gần nhà" },
                             { en: "home repair noises", vn: "tiếng sửa chữa nhà cửa" },
-                            { en: "noisy machines and power drills", vn: "máy móc ồn ào và máy khoan điện" },
-                            { en: "disrupt my sleep", vn: "làm gián đoạn giấc ngủ của tôi" }
+                            { en: "road maintenance work", vn: "công việc bảo trì sửa chữa đường sá" },
+                            { en: "new apartment projects", vn: "các dự án chung cư mới" },
+                            { en: "local carpentry workshops", vn: "các xưởng mộc ở địa phương" }
+                        ]
+                    },
+                    {
+                        title: "🔊 [Nguồn tiếng ồn sinh hoạt khu phố] (Mở rộng):",
+                        items: [
+                            { en: "late-night karaoke singing", vn: "tiếng hát karaoke vào đêm muộn" },
+                            { en: "crowded morning markets", vn: "các khu chợ sáng đông đúc" },
+                            { en: "street vendors' loudspeakers", vn: "loa phóng thanh của người bán hàng rong" },
+                            { en: "barking dogs next door", vn: "tiếng chó sủa ở nhà bên cạnh" }
                         ]
                     }
                 ],
@@ -10603,32 +12026,44 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đóng kín cửa sổ và đeo tai nghe chống ồn nghe nhạc nhẹ):</div>
                     <div class="topic-formula-text">
-                        → I usually <span class="formula-bracket-hl">[biện pháp cách âm]</span> and put on noise-cancelling headphones. Gentle acoustic music helps me focus better.
+                        → I usually <span class="formula-bracket-hl">[biện pháp cách âm - Vo]</span> and put on noise-cancelling headphones. Gentle acoustic music helps me focus better.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Lịch sự nhắc nhở hàng xóm nếu quá ồn vào đêm muộn để giải quyết trong hòa bình):</div>
                     <div class="topic-formula-text">
-                        → If the noise is too loud late at night, I politely <span class="formula-bracket-hl">[hành động giải quyết]</span>. We solve the issue peacefully.
+                        → If the noise is too loud late at night, I politely <span class="formula-bracket-hl">[hành động giải quyết - Vo]</span>. We solve the issue peacefully.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🎧 [Đóng cửa & Đeo tai nghe] (Cách 1):",
+                        title: "🎧 [Biện pháp cách âm tại nhà] (Cách 1):",
                         items: [
                             { en: "close all bedroom glass windows tightly", vn: "đóng chặt toàn bộ cửa kính phòng ngủ" },
-                            { en: "noise-cancelling headphones", vn: "tai nghe chống ồn" },
-                            { en: "gentle acoustic music", vn: "nhạc nhẹ acoustic" },
-                            { en: "focus better on my study", vn: "tập trung tốt hơn vào việc học" }
+                            { en: "shut my room door completely", vn: "đóng kín cửa phòng của tôi" },
+                            { en: "hang thick soundproof curtains", vn: "treo rèm cửa dày cách âm" },
+                            { en: "move to a quieter room", vn: "chuyển sang một căn phòng yên tĩnh hơn" },
+                            { en: "use soft foam earplugs", vn: "sử dụng nút bịt tai bằng xốp mềm" }
                         ]
                     },
                     {
-                        title: "🗣️ [Nhắc nhở hòa nhã] (Cách 2):",
+                        title: "🗣️ [Hành động trao đổi hòa nhã] (Cách 2):",
                         items: [
                             { en: "talk to my neighbors", vn: "nói chuyện với hàng xóm của tôi" },
                             { en: "request lower music volume", vn: "yêu cầu vặn nhỏ âm lượng nhạc" },
-                            { en: "solve the issue peacefully", vn: "giải quyết vấn đề trong hòa bình" },
-                            { en: "maintain good relations", vn: "giữ mối quan hệ tốt đẹp" }
+                            { en: "send a polite message on Zalo", vn: "gửi một tin nhắn lịch sự qua Zalo" },
+                            { en: "remind them about the late hour", vn: "nhắc nhở họ rằng trời đã khuya" },
+                            { en: "explain my early work schedule", vn: "giải thích lịch đi làm sớm của tôi" }
+                        ]
+                    },
+                    {
+                        title: "🛡️ [Biện pháp hỗ trợ thêm] (Mở rộng Cách 2):",
+                        items: [
+                            { en: "maintain good relations", vn: "giữ mối quan hệ tốt đẹp" },
+                            { en: "contact the building management", vn: "liên hệ ban quản lý tòa nhà" },
+                            { en: "ask the security guard for help", vn: "nhờ nhân viên bảo vệ hỗ trợ" },
+                            { en: "suggest quiet hours at night", vn: "đề xuất khung giờ yên tĩnh vào ban đêm" },
+                            { en: "go to a quiet library to study", vn: "đến thư viện yên tĩnh để học tập" }
                         ]
                     }
                 ],
@@ -10652,7 +12087,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Thích nơi yên tĩnh - Thư giãn tâm trí và ngủ ngon sâu giấc mỗi đêm):</div>
                     <div class="topic-formula-text">
-                        → I strongly prefer living in a quiet place. A peaceful atmosphere helps me <span class="formula-bracket-hl">[lợi ích thư giãn]</span> and sleep deeply every night.
+                        → I strongly prefer living in a quiet place. A peaceful atmosphere helps me <span class="formula-bracket-hl">[lợi ích thư giãn - Vo]</span> and sleep deeply every night.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -10663,21 +12098,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🍃 [Yên tĩnh thư thái] (Cách 1):",
+                        title: "🍃 [Lợi ích thư giãn nơi yên tĩnh] (Cách 1):",
                         items: [
                             { en: "relax my mind", vn: "thư giãn tâm trí của tôi" },
-                            { en: "sleep deeply every night", vn: "ngủ sâu giấc mỗi đêm" },
                             { en: "escape urban headaches", vn: "tránh khỏi những cơn đau đầu nơi đô thị" },
-                            { en: "recharge mental stamina", vn: "nạp lại năng lượng tinh thần" }
+                            { en: "recharge mental stamina", vn: "nạp lại năng lượng tinh thần" },
+                            { en: "focus better on my work", vn: "tập trung tốt hơn vào công việc" },
+                            { en: "enjoy peaceful family time", vn: "tận hưởng thời gian gia đình bình yên" }
                         ]
                     },
                     {
-                        title: "🏙️ [Sôi động tiện lợi] (Cách 2):",
+                        title: "🏙️ [Tính từ ưu điểm nơi sôi động] (Cách 2):",
                         items: [
                             { en: "very dynamic and convenient", vn: "rất năng động và tiện lợi" },
-                            { en: "access supermarkets and cafes", vn: "tiếp cận siêu thị và quán cà phê" },
+                            { en: "modern and exciting", vn: "hiện đại và hào hứng" },
+                            { en: "full of positive energy", vn: "tràn đầy năng lượng tích cực" },
+                            { en: "well-connected and vibrant", vn: "kết nối giao thông tốt và nhộn nhịp" }
+                        ]
+                    },
+                    {
+                        title: "🛒 [Tiện ích sinh hoạt nơi sôi động] (Mở rộng Cách 2):",
+                        items: [
                             { en: "enjoy evening entertainment", vn: "tận hưởng các hoạt động giải trí buổi tối" },
-                            { en: "never feel lonely", vn: "không bao giờ thấy cô đơn" }
+                            { en: "never feel lonely", vn: "không bao giờ cảm thấy cô đơn" },
+                            { en: "save daily travel time", vn: "tiết kiệm thời gian di chuyển hằng ngày" },
+                            { en: "meet friends easily at weekends", vn: "dễ dàng gặp gỡ bạn bè vào cuối tuần" },
+                            { en: "use modern public services", vn: "sử dụng các dịch vụ công cộng hiện đại" }
                         ]
                     }
                 ],
@@ -10708,32 +12154,52 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Giải chạy marathon từ thiện - Nâng cao thể lực và gặp gỡ nhiều người năng động):</div>
                     <div class="topic-formula-text">
-                        → I often participate in <span class="formula-bracket-hl">[sự kiện thể thao]</span>. It's a great chance to <span class="formula-bracket-hl">[lợi ích sức khỏe]</span> and meet energetic people.
+                        → I often participate in <span class="formula-bracket-hl">[sự kiện thể thao]</span>. It's a great chance to <span class="formula-bracket-hl">[lợi ích sức khỏe - Vo]</span> and meet energetic people.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Hội sách cuối tuần và lễ hội âm nhạc đường phố - Đọc sách và tận hưởng không khí):</div>
                     <div class="topic-formula-text">
-                        → I frequently join <span class="formula-bracket-hl">[sự kiện văn hóa]</span>. I love <span class="formula-bracket-hl">[hoạt động trải nghiệm]</span> and enjoying lively cultural atmospheres.
+                        → I frequently join <span class="formula-bracket-hl">[sự kiện văn hóa]</span>. I love <span class="formula-bracket-hl">[hoạt động trải nghiệm - Ving]</span> and enjoying lively cultural atmospheres.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏃 [Marathon từ thiện] (Cách 1):",
+                        title: "🏃 [Sự kiện thể thao & Cộng đồng] (Cách 1):",
                         items: [
                             { en: "community charity marathons", vn: "các giải chạy marathon từ thiện cộng đồng" },
-                            { en: "improve my physical stamina", vn: "nâng cao thể lực dẻo dai" },
-                            { en: "meet energetic people", vn: "gặp gỡ những con người tràn đầy năng lượng" },
-                            { en: "support meaningful causes", vn: "ủng hộ những mục đích ý nghĩa" }
+                            { en: "local weekend cycling races", vn: "các giải đua xe đạp cuối tuần ở địa phương" },
+                            { en: "university sports festivals", vn: "các ngày hội thể thao sinh viên" },
+                            { en: "outdoor yoga sessions", vn: "các buổi tập yoga ngoài trời" }
                         ]
                     },
                     {
-                        title: "📚 [Hội sách & Âm nhạc] (Cách 2):",
+                        title: "💪 [Lợi ích sức khỏe & Xã hội] (Cách 1):",
+                        items: [
+                            { en: "improve my physical stamina", vn: "nâng cao thể lực dẻo dai" },
+                            { en: "support meaningful causes", vn: "ủng hộ những mục đích ý nghĩa" },
+                            { en: "stay fit and active", vn: "giữ cơ thể cân đối và năng động" },
+                            { en: "challenge my personal limits", vn: "thử thách giới hạn của bản thân" },
+                            { en: "spread healthy lifestyle habits", vn: "lan tỏa thói quen sống lành mạnh" }
+                        ]
+                    },
+                    {
+                        title: "📚 [Sự kiện văn hóa & Giải trí] (Cách 2):",
                         items: [
                             { en: "weekend book fairs and street music festivals", vn: "hội sách cuối tuần và lễ hội âm nhạc đường phố" },
-                            { en: "reading new books", vn: "đọc những cuốn sách mới" },
-                            { en: "enjoying lively cultural atmospheres", vn: "tận hưởng bầu không khí văn hóa sôi động" },
-                            { en: "listening to live acoustic bands", vn: "lắng nghe các ban nhạc acoustic biểu diễn" }
+                            { en: "traditional lantern festivals", vn: "các lễ hội đèn lồng truyền thống" },
+                            { en: "local art exhibitions", vn: "các buổi triển lãm nghệ thuật địa phương" },
+                            { en: "spring flower festivals", vn: "các lễ hội hoa xuân" }
+                        ]
+                    },
+                    {
+                        title: "🎶 [Hoạt động trải nghiệm sự kiện] (Cách 2):",
+                        items: [
+                            { en: "read new books", vn: "đọc những cuốn sách mới" },
+                            { en: "listen to live acoustic bands", vn: "lắng nghe các ban nhạc acoustic biểu diễn" },
+                            { en: "enjoy lively cultural atmospheres", vn: "tận hưởng bầu không khí văn hóa sôi động" },
+                            { en: "buy discounted novels", vn: "mua những cuốn tiểu thuyết giảm giá" },
+                            { en: "take photos with friends", vn: "chụp ảnh kỷ niệm cùng bạn bè" }
                         ]
                     }
                 ],
@@ -10768,21 +12234,31 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🎆 [Đếm ngược & Pháo hoa] (Cách 1):",
+                        title: "🎆 [Không khí lễ hội đếm ngược] (Cách 1):",
                         items: [
                             { en: "cheerful crowds", vn: "đám đông vui tươi hò reo" },
-                            { en: "spectacular midnight fireworks displays", vn: "những màn pháo hoa nửa đêm ngoạn mục" },
                             { en: "vibrant festive music", vn: "âm nhạc lễ hội sôi động" },
-                            { en: "share warm new year wishes", vn: "chia sẻ lời chúc năm mới ấm áp" }
+                            { en: "exciting stage performances", vn: "những màn trình diễn sân khấu hào hứng" },
+                            { en: "energetic holiday atmosphere", vn: "bầu không khí kỳ nghỉ tràn đầy năng lượng" }
                         ]
                     },
                     {
-                        title: "🍜 [Ẩm thực quốc tế] (Cách 2):",
+                        title: "🍜 [Trải nghiệm tại lễ hội ẩm thực] (Cách 2):",
                         items: [
                             { en: "unique cultural experiences", vn: "những trải nghiệm văn hóa độc đáo" },
-                            { en: "delicious street foods from different countries", vn: "những món ăn đường phố ngon miệng từ nhiều quốc gia" },
+                            { en: "lively cooking demonstrations", vn: "những màn trình diễn nấu ăn sinh động" },
+                            { en: "colorful international food stalls", vn: "những gian hàng ẩm thực quốc tế đầy màu sắc" },
+                            { en: "a fun weekend atmosphere", vn: "bầu không khí cuối tuần vui nhộn" }
+                        ]
+                    },
+                    {
+                        title: "🎉 [Hoạt động yêu thích tại sự kiện] (Mở rộng):",
+                        items: [
+                            { en: "share warm new year wishes", vn: "chia sẻ lời chúc năm mới ấm áp" },
                             { en: "taste authentic foreign recipes", vn: "nếm thử các công thức nấu nướng nước ngoài chuẩn vị" },
-                            { en: "enjoy sweet traditional snacks", vn: "thưởng thức những món ăn vặt ngọt ngào truyền thống" }
+                            { en: "enjoy sweet traditional snacks", vn: "thưởng thức những món ăn vặt ngọt ngào truyền thống" },
+                            { en: "sing along with famous singers", vn: "hát theo các ca sĩ nổi tiếng" },
+                            { en: "celebrate special moments with friends", vn: "ăn mừng những khoảnh khắc đặc biệt cùng bạn bè" }
                         ]
                     }
                 ],
@@ -10806,7 +12282,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Có - Gắn kết cộng đồng và tạo sân chơi giải trí lành mạnh sau tuần bận rộn):</div>
                     <div class="topic-formula-text">
-                        → Yes, I do. These events <span class="formula-bracket-hl">[lợi ích gắn kết]</span> and provide healthy entertainment for local residents after a busy week.
+                        → Yes, I do. These events <span class="formula-bracket-hl">[lợi ích gắn kết - Vo]</span> and provide healthy entertainment for local residents after a busy week.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -10817,21 +12293,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🤝 [Gắn kết cộng đồng] (Cách 1):",
+                        title: "🤝 [Lợi ích gắn kết cộng đồng] (Cách 1):",
                         items: [
                             { en: "strengthen community bonds", vn: "thắt chặt các mối liên kết cộng đồng" },
                             { en: "bring people closer together", vn: "mang mọi người lại gần nhau hơn" },
-                            { en: "provide healthy entertainment", vn: "mang lại sự giải trí lành mạnh" },
-                            { en: "relieve daily working pressure", vn: "giải tỏa áp lực công việc hằng ngày" }
+                            { en: "relieve daily working pressure", vn: "giải tỏa áp lực công việc hằng ngày" },
+                            { en: "promote local cultural pride", vn: "thúc đẩy niềm tự hào văn hóa địa phương" },
+                            { en: "attract more tourists to the city", vn: "thu hút thêm nhiều du khách đến thành phố" }
                         ]
                     },
                     {
-                        title: "🛡️ [An toàn & Vệ sinh] (Cách 2):",
+                        title: "⚠️ [Vấn đề phát sinh từ sự kiện lớn] (Cách 2):",
                         items: [
                             { en: "traffic jams and littering", vn: "ùn tắc giao thông và xả rác" },
-                            { en: "ensure safety and cleanliness", vn: "đảm bảo an toàn và vệ sinh" },
-                            { en: "strict security regulations", vn: "quy định an ninh nghiêm ngặt" },
-                            { en: "manage public trash bins", vn: "quản lý các thùng rác công cộng" }
+                            { en: "excessive noise pollution", vn: "ô nhiễm tiếng ồn quá mức" },
+                            { en: "overcrowded public streets", vn: "đường phố công cộng quá tải đông đúc" },
+                            { en: "security and crowd risks", vn: "các rủi ro về an ninh và đám đông" }
+                        ]
+                    },
+                    {
+                        title: "🛡️ [Biện pháp quản lý sự kiện] (Mở rộng Cách 2):",
+                        items: [
+                            { en: "enforce strict security regulations", vn: "thực thi các quy định an ninh nghiêm ngặt" },
+                            { en: "manage public trash bins", vn: "quản lý các thùng rác công cộng" },
+                            { en: "control traffic flow carefully", vn: "điều tiết lưu lượng giao thông cẩn thận" },
+                            { en: "limit loud music late at night", vn: "hạn chế nhạc lớn vào đêm muộn" },
+                            { en: "assign enough security guards", vn: "bố trí đủ nhân viên an ninh" }
                         ]
                     }
                 ],
@@ -10868,26 +12355,36 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Không khéo tay và đồ thủ công dễ bám bụi trong phòng ngủ nhỏ):</div>
                     <div class="topic-formula-text">
-                        → Honestly, no, I don't. I'm not good with my hands, and handmade items easily <span class="formula-bracket-hl">[bất tiện thực tế]</span> in my small bedroom.
+                        → Honestly, no, I don't. I'm not good with my hands, and handmade items easily <span class="formula-bracket-hl">[bất tiện thực tế - Vo]</span> in my small bedroom.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏺 [Tinh xảo & Văn hóa] (Cách 1):",
+                        title: "✨ [Tính từ ưu điểm] (Cách 1):",
                         items: [
                             { en: "very unique and delicate", vn: "rất độc đáo và tinh xảo" },
-                            { en: "rich local culture and great patience", vn: "văn hóa địa phương phong phú và sự kiên nhẫn tuyệt vời" },
-                            { en: "skilled traditional craftsmanship", vn: "tay nghề thủ công truyền thống khéo léo" },
-                            { en: "authentic folk value", vn: "giá trị dân gian đích thực" }
+                            { en: "creative and eye-catching", vn: "sáng tạo và bắt mắt" },
+                            { en: "beautiful and meaningful", vn: "đẹp mắt và đầy ý nghĩa" },
+                            { en: "eco-friendly and artistic", vn: "thân thiện môi trường và mang tính nghệ thuật" }
                         ]
                     },
                     {
-                        title: "🧹 [Không khéo tay & Dễ bám bụi] (Cách 2):",
+                        title: "🏺 [Giá trị văn hóa] (Cách 1):",
                         items: [
-                            { en: "collect dust and take up space", vn: "bám bụi và tốn diện tích" },
+                            { en: "rich local culture", vn: "văn hóa địa phương phong phú" },
+                            { en: "skilled traditional craftsmanship", vn: "tay nghề thủ công truyền thống khéo léo" },
+                            { en: "authentic folk values", vn: "những giá trị dân gian đích thực" },
+                            { en: "national cultural identity", vn: "bản sắc văn hóa dân tộc" }
+                        ]
+                    },
+                    {
+                        title: "🧹 [Bất tiện thực tế] (Cách 2):",
+                        items: [
+                            { en: "collect dust", vn: "bám bụi bẩn" },
+                            { en: "take up space", vn: "chiếm diện tích" },
+                            { en: "get damaged or broken", vn: "bị hư hỏng hoặc rơi vỡ" },
                             { en: "require careful maintenance", vn: "đòi hỏi việc bảo quản kỹ lưỡng" },
-                            { en: "prefer simple modern decorations", vn: "thích trang trí hiện đại giản dị" },
-                            { en: "lack artistic patience", vn: "thiếu sự kiên nhẫn nghệ thuật" }
+                            { en: "make the room look cluttered", vn: "làm căn phòng trông bừa bộn" }
                         ]
                     }
                 ],
@@ -10911,32 +12408,34 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đã từng - Tự đan một chiếc khăn len ấm áp tặng mẹ vào mùa đông):</div>
                     <div class="topic-formula-text">
-                        → Yes, I have. In high school, I <span class="formula-bracket-hl">[hoạt động làm thủ công - Ved]</span> for my mother. She loved it very much.
+                        → Yes, I have. In high school, I <span class="formula-bracket-hl">[hoạt động làm thủ công - V2/ed]</span> for my mother. She loved it very much.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Chưa từng làm nhiều - Không khéo tay nên thích mua đồ ở tiệm quà tặng):</div>
                     <div class="topic-formula-text">
-                        → No, not really. I'm not very skillful with my hands, so I usually <span class="formula-bracket-hl">[hành động thay thế]</span> instead.
+                        → No, not really. I'm not very skillful with my hands, so I usually <span class="formula-bracket-hl">[hành động thay thế - Vo]</span> instead.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🧣 [Tự đan khăn len] (Cách 1):",
+                        title: "🧣 [Hoạt động làm thủ công] (Cách 1):",
                         items: [
                             { en: "knit a warm wool scarf", vn: "đan một chiếc khăn len ấm áp" },
-                            { en: "sew small fabric bags", vn: "may những chiếc túi vải nhỏ" },
-                            { en: "love it very much", vn: "rất yêu thích món quà" },
-                            { en: "felt a deep sense of joy", vn: "cảm thấy niềm vui sâu sắc" }
+                            { en: "sew a small fabric bag", vn: "may một chiếc túi vải nhỏ" },
+                            { en: "make a handmade birthday card", vn: "làm một tấm thiệp sinh nhật thủ công" },
+                            { en: "fold colorful paper cranes", vn: "gấp những con hạc giấy nhiều màu sắc" },
+                            { en: "paint a small ceramic cup", vn: "vẽ trang trí một chiếc cốc gốm nhỏ" }
                         ]
                     },
                     {
-                        title: "🛍️ [Mua quà thủ công tại tiệm] (Cách 2):",
+                        title: "🛍️ [Hành động thay thế] (Cách 2):",
                         items: [
                             { en: "buy craft gifts from local shops", vn: "mua quà thủ công từ các cửa hàng địa phương" },
-                            { en: "not very skillful with my hands", vn: "không quá khéo léo với đôi bàn tay" },
+                            { en: "order ready-made souvenirs online", vn: "đặt mua đồ lưu niệm làm sẵn trên mạng" },
                             { en: "support talented local artisans", vn: "ủng hộ những nghệ nhân địa phương tài năng" },
-                            { en: "admire intricate artworks", vn: "ngưỡng mộ các tác phẩm nghệ thuật phức tạp" }
+                            { en: "choose modern factory-made items", vn: "chọn các món đồ sản xuất công nghiệp hiện đại" },
+                            { en: "admire intricate artworks at exhibitions", vn: "ngưỡng mộ các tác phẩm tinh xảo tại triển lãm" }
                         ]
                     }
                 ],
@@ -10960,7 +12459,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Rất nên dạy - Rèn tính kiên nhẫn, óc sáng tạo và tránh xa màn hình điện thoại):</div>
                     <div class="topic-formula-text">
-                        → Yes, I strongly agree. Making handicrafts helps children <span class="formula-bracket-hl">[lợi ích kỹ năng]</span>. It keeps them away from smartphone screens effectively.
+                        → Yes, I strongly agree. Making handicrafts helps children <span class="formula-bracket-hl">[lợi ích kỹ năng - Vo]</span>. It keeps them away from smartphone screens effectively.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -10971,21 +12470,23 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "💡 [Rèn luyện tính kiên nhẫn & Sáng tạo] (Cách 1):",
+                        title: "💡 [Lợi ích kỹ năng] (Cách 1):",
                         items: [
-                            { en: "develop patience and creativity", vn: "phát triển tính kiên nhẫn và sáng tạo" },
+                            { en: "develop patience and creativity", vn: "phát triển tính kiên nhẫn và sự sáng tạo" },
                             { en: "train fine motor skills", vn: "rèn luyện kỹ năng vận động tinh" },
-                            { en: "keeps them away from smartphone screens", vn: "giúp các em tránh xa màn hình điện thoại" },
-                            { en: "stimulate artistic imagination", vn: "kích thích trí tưởng tượng nghệ thuật" }
+                            { en: "stimulate artistic imagination", vn: "kích thích trí tưởng tượng nghệ thuật" },
+                            { en: "express their personal ideas", vn: "thể hiện những ý tưởng cá nhân" },
+                            { en: "appreciate the value of manual labor", vn: "trân trọng giá trị của lao động thủ công" }
                         ]
                     },
                     {
-                        title: "⚽ [Ưu tiên kiến thức & Thể thao] (Cách 2):",
+                        title: "⚽ [Ưu tiên môn học] (Cách 2):",
                         items: [
                             { en: "focus on core academic subjects", vn: "tập trung vào các môn văn hóa cốt lõi" },
+                            { en: "prioritize foreign languages and IT", vn: "ưu tiên ngoại ngữ và công nghệ thông tin" },
                             { en: "encourage outdoor physical exercise", vn: "khuyến khích tập luyện thể chất ngoài trời" },
                             { en: "reduce heavy academic pressure", vn: "giảm bớt áp lực học tập nặng nề" },
-                            { en: "develop practical life skills", vn: "phát triển kỹ năng sống thiết thực" }
+                            { en: "teach practical daily life skills", vn: "dạy các kỹ năng sống thiết thực hằng ngày" }
                         ]
                     }
                 ],
@@ -11022,26 +12523,36 @@ const practiceTopicsData = [
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Bàn ăn gia đình - Mẹ luôn nấu những bữa cơm truyền thống thơm ngon từ đồ chợ tươi):</div>
                     <div class="topic-formula-text">
-                        → My favorite place is my family dining table. My mother always <span class="formula-bracket-hl">[hành động nấu nướng]</span> with fresh market ingredients.
+                        → My favorite place is my family dining table. My mother always <span class="formula-bracket-hl">[hành động nấu nướng - Vs/es]</span> with fresh market ingredients.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🍜 [Quán ăn phố cổ lâu đời] (Cách 1):",
+                        title: "🏪 [Địa điểm quán ăn] (Cách 1):",
                         items: [
-                            { en: "family-run eateries in the old quarter", vn: "quán ăn gia đình ở khu phố cổ" },
-                            { en: "serve authentic pho at very affordable prices", vn: "phục vụ phở chuẩn vị với giá rất bình dân" },
-                            { en: "crispy fried spring rolls", vn: "nem rán giòn rụm thơm ngon" },
-                            { en: "traditional cooking recipes", vn: "công thức nấu nướng truyền thống" }
+                            { en: "family-run eateries in the old quarter", vn: "các quán ăn gia đình ở khu phố cổ" },
+                            { en: "busy local street food stalls", vn: "các quầy ẩm thực đường phố nhộn nhịp" },
+                            { en: "traditional restaurants near my house", vn: "những nhà hàng truyền thống gần nhà tôi" },
+                            { en: "local morning market food courts", vn: "khu ăn uống trong chợ sáng địa phương" }
                         ]
                     },
                     {
-                        title: "🍚 [Bữa cơm nhà ấm áp] (Cách 2):",
+                        title: "🍜 [Món ăn đặc trưng] (Cách 1):",
                         items: [
-                            { en: "cooks flavorful traditional meals", vn: "nấu những bữa ăn truyền thống đậm đà" },
-                            { en: "fresh market ingredients", vn: "nguyên liệu mua tươi từ chợ" },
-                            { en: "braised fish and sour vegetable soup", vn: "cá kho tộ và canh chua rau muống" },
-                            { en: "warm family dinner atmosphere", vn: "không khí bữa tối gia đình ấm cúng" }
+                            { en: "authentic beef pho", vn: "phở bò chuẩn vị" },
+                            { en: "crispy fried spring rolls", vn: "nem rán giòn rụm thơm ngon" },
+                            { en: "spicy Hue beef noodle soup", vn: "bún bò Huế cay đậm đà" },
+                            { en: "grilled pork with rice noodles", vn: "bún chả thịt nướng" }
+                        ]
+                    },
+                    {
+                        title: "🍚 [Hành động nấu nướng] (Cách 2):",
+                        items: [
+                            { en: "cook flavorful traditional meals", vn: "nấu những bữa ăn truyền thống đậm đà" },
+                            { en: "prepare braised fish and sour soup", vn: "chuẩn bị món cá kho và canh chua" },
+                            { en: "make delicious home-cooked dishes", vn: "làm những món ăn nhà nấu thơm ngon" },
+                            { en: "boil fresh vegetables and pork", vn: "luộc rau xanh tươi và thịt heo" },
+                            { en: "follow secret family cooking recipes", vn: "nấu theo công thức gia truyền" }
                         ]
                     }
                 ],
@@ -11076,21 +12587,21 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🥖 [Phở & Bánh mì quốc hồn] (Cách 1):",
+                        title: "🥖 [Hương vị đặc trưng] (Cách 1):",
                         items: [
                             { en: "rich savory broth, crispy bread", vn: "nước dùng đậm đà thơm phức, vỏ bánh mì giòn rụm" },
                             { en: "aromatic herbs and tender beef slices", vn: "rau thơm thảo mộc và từng lát thịt bò mềm" },
-                            { en: "convenience", vn: "sự tiện lợi khi thưởng thức" },
-                            { en: "globally famous Vietnamese cuisine", vn: "ẩm thực Việt Nam nổi tiếng toàn cầu" }
+                            { en: "balanced flavors of meat and vegetables", vn: "hương vị cân bằng giữa thịt và rau củ" },
+                            { en: "fresh ingredients and unique local spices", vn: "nguyên liệu tươi ngon và gia vị bản địa độc đáo" }
                         ]
                     },
                     {
-                        title: "🥓 [Bún chả & Chả giò giòn] (Cách 2):",
+                        title: "🥓 [Yếu tố cuốn hút] (Cách 2):",
                         items: [
                             { en: "grilled pork and sweet-sour dipping sauce", vn: "thịt heo nướng thơm và nước chấm chua ngọt" },
-                            { en: "crispy golden rolls", vn: "nem rán vàng ươm giòn rụm" },
-                            { en: "delightful dining experience", vn: "trải nghiệm ăn uống thú vị tuyệt vời" },
-                            { en: "fresh rice noodles and salad", vn: "bún tươi và rau sống thanh mát" }
+                            { en: "crispy golden rolls and fresh herbs", vn: "những cuốn chả giò vàng giòn và rau thơm tươi" },
+                            { en: "soft rice noodles and smoky meat", vn: "bún tươi mềm và thịt nướng thơm lừng" },
+                            { en: "harmonious blend of sour and sweet tastes", vn: "sự hòa quyện hài hòa giữa vị chua và ngọt" }
                         ]
                     }
                 ],
@@ -11125,21 +12636,30 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🥬 [Nguyên liệu tươi & Ninh sôi kỹ] (Cách 1):",
+                        title: "🥬 [Nguyên liệu tươi] (Cách 1):",
                         items: [
                             { en: "fresh vegetables and meat", vn: "rau củ và thịt tươi mới" },
-                            { en: "boiled thoroughly at high temperatures", vn: "ninh đun sôi kỹ ở nhiệt độ cao" },
-                            { en: "natural cooking seasonings", vn: "gia vị nấu nướng từ tự nhiên" },
-                            { en: "safe food hygiene practices", vn: "các thực hành vệ sinh an toàn thực phẩm" }
+                            { en: "clean local farm produce", vn: "nông sản địa phương sạch sẽ" },
+                            { en: "natural herbs and cooking spices", vn: "các loại thảo mộc và gia vị tự nhiên" },
+                            { en: "freshly bought market ingredients", vn: "nguyên liệu vừa mua tươi từ chợ" }
                         ]
                     },
                     {
-                        title: "🛡️ [Vấn đề vỉa hè & Tiêu chí sạch] (Cách 2):",
+                        title: "💨 [Vấn đề môi trường] (Cách 2):",
                         items: [
                             { en: "roadside dust", vn: "bụi bặm ven đường phố" },
+                            { en: "heavy traffic smoke", vn: "khói xe giao thông dày đặc" },
+                            { en: "limited dishwashing water", vn: "nguồn nước rửa bát đĩa hạn chế" },
+                            { en: "hot outdoor weather", vn: "thời tiết ngoài trời nắng nóng" }
+                        ]
+                    },
+                    {
+                        title: "🛡️ [Tiêu chí quán] (Cách 2):",
+                        items: [
                             { en: "clean, well-reviewed eateries", vn: "các quán ăn sạch sẽ và được đánh giá uy tín" },
-                            { en: "protect personal health", vn: "bảo vệ sức khỏe bản thân" },
-                            { en: "observe clean food prep areas", vn: "quan sát khu chế biến thức ăn sạch sẽ" }
+                            { en: "reputable indoor restaurants", vn: "các nhà hàng trong nhà có uy tín" },
+                            { en: "places with hygienic food prep areas", vn: "những nơi có khu chế biến thức ăn hợp vệ sinh" },
+                            { en: "busy stalls with fresh daily ingredients", vn: "những quán đông khách dùng nguyên liệu tươi mỗi ngày" }
                         ]
                     }
                 ],
@@ -11170,7 +12690,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Đã từng - Đến làng gốm Bát Tràng, tự nặn bình gốm nhỏ rất vui):</div>
                     <div class="topic-formula-text">
-                        → Yes, I have. Last summer, I visited <span class="formula-bracket-hl">[tên làng nghề]</span>. I <span class="formula-bracket-hl">[hoạt động trải nghiệm - Ved]</span> and had great fun.
+                        → Yes, I have. Last summer, I visited <span class="formula-bracket-hl">[tên làng nghề]</span>. I <span class="formula-bracket-hl">[hoạt động trải nghiệm - V2/ed]</span> and had great fun.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -11181,21 +12701,31 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏺 [Trải nghiệm nặn gốm] (Cách 1):",
+                        title: "🏮 [Tên làng nghề] (Cách 1):",
                         items: [
                             { en: "Bat Trang pottery village", vn: "làng gốm Bát Tràng" },
-                            { en: "make a small ceramic vase", vn: "tự nặn một chiếc bình gốm nhỏ" },
-                            { en: "learn ancient ceramic crafting", vn: "học chế tác gốm cổ truyền" },
-                            { en: "had great fun", vn: "đã có rất nhiều niềm vui" }
+                            { en: "Van Phuc silk village", vn: "làng lụa Vạn Phúc" },
+                            { en: "Dong Ho folk painting village", vn: "làng tranh dân gian Đông Hồ" },
+                            { en: "Chuong conical hat village", vn: "làng nón Chuông" }
                         ]
                     },
                     {
-                        title: "📺 [Xem phim tài liệu] (Cách 2):",
+                        title: "🏺 [Hoạt động trải nghiệm] (Cách 1):",
                         items: [
-                            { en: "cultural travel documentaries", vn: "phim tài liệu du lịch văn hóa" },
-                            { en: "traditional craft showcases", vn: "các chương trình giới thiệu làng nghề" },
-                            { en: "visit a craft village soon", vn: "sớm đến thăm một làng nghề thủ công" },
-                            { en: "explore rural workshops", vn: "khám phá những xưởng thủ công thôn quê" }
+                            { en: "make a small ceramic vase", vn: "tự nặn một chiếc bình gốm nhỏ" },
+                            { en: "learn ancient ceramic crafting", vn: "học cách chế tác gốm cổ truyền" },
+                            { en: "paint colorful patterns on bowls", vn: "vẽ các họa tiết đầy màu sắc lên bát gốm" },
+                            { en: "talk with skilled local artisans", vn: "trò chuyện với những nghệ nhân địa phương lành nghề" },
+                            { en: "buy lovely handmade souvenirs", vn: "mua những món quà lưu niệm thủ công xinh xắn" }
+                        ]
+                    },
+                    {
+                        title: "📺 [Chương trình] (Cách 2):",
+                        items: [
+                            { en: "cultural travel documentaries", vn: "các bộ phim tài liệu du lịch văn hóa" },
+                            { en: "traditional craft showcases", vn: "các chương trình giới thiệu làng nghề truyền thống" },
+                            { en: "local heritage TV programs", vn: "các chương trình truyền hình về di sản địa phương" },
+                            { en: "online travel vlogs about craft villages", vn: "các vlog du lịch trực tuyến về làng nghề" }
                         ]
                     }
                 ],
@@ -11219,32 +12749,50 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Làng lụa Vạn Phúc và làng gốm Bát Tràng nổi tiếng với lụa và gốm sứ):</div>
                     <div class="topic-formula-text">
-                        → The most famous ones are <span class="formula-bracket-hl">[hai làng nghề nổi tiếng]</span>. They're well-known for <span class="formula-bracket-hl">[sản phẩm đặc trưng]</span>.
+                        → The most famous ones are <span class="formula-bracket-hl">[hai làng nghề nổi tiếng]</span>. They're well-known for <span class="formula-bracket-hl">[sản phẩm đặc trưng 1]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Làng hương Thủy Xuân ở Huế đẹp như tranh với những bó hương thơm rực rỡ):</div>
                     <div class="topic-formula-text">
-                        → Many tourists love <span class="formula-bracket-hl">[tên làng nghề]</span>. This picturesque village offers <span class="formula-bracket-hl">[sản phẩm đặc trưng]</span> and great photos.
+                        → Many tourists love <span class="formula-bracket-hl">[tên làng nghề]</span>. This picturesque village offers <span class="formula-bracket-hl">[sản phẩm đặc trưng 2]</span> and great photos.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏮 [Làng lụa & Làng gốm] (Cách 1):",
+                        title: "🏘️ [Hai làng nghề nổi tiếng] (Cách 1):",
                         items: [
                             { en: "Van Phuc silk village and Bat Trang pottery village", vn: "làng lụa Vạn Phúc và làng gốm Bát Tràng" },
-                            { en: "smooth shiny natural silk", vn: "lụa tự nhiên óng ả mềm mịn" },
-                            { en: "silk and ceramics", vn: "lụa tơ tằm và đồ gốm sứ" },
-                            { en: "centuries of artisan history", vn: "hàng thế kỷ lịch sử nghệ nhân" }
+                            { en: "Dong Ho painting village and Non Nuoc stone village", vn: "làng tranh Đông Hồ và làng đá Non Nước" },
+                            { en: "Kim Bong carpentry village and Thanh Ha pottery village", vn: "làng mộc Kim Bồng và làng gốm Thanh Hà" },
+                            { en: "Phu Vinh bamboo village and Chuong hat village", vn: "làng mây tre đan Phú Vinh và làng nón Chuông" }
                         ]
                     },
                     {
-                        title: "🌸 [Làng hương Thủy Xuân] (Cách 2):",
+                        title: "🏺 [Sản phẩm đặc trưng 1] (Cách 1):",
+                        items: [
+                            { en: "silk and ceramics", vn: "lụa tơ tằm và đồ gốm sứ" },
+                            { en: "smooth shiny natural silk and fine pottery", vn: "lụa tự nhiên óng ả và gốm sứ tinh xảo" },
+                            { en: "delicate handmade household items", vn: "các vật dụng gia đình thủ công tinh tế" },
+                            { en: "high-quality traditional handicrafts", vn: "các mặt hàng thủ công truyền thống chất lượng cao" }
+                        ]
+                    },
+                    {
+                        title: "🌸 [Tên làng nghề] (Cách 2):",
                         items: [
                             { en: "Thuy Xuan incense village in Hue", vn: "làng hương Thủy Xuân ở Huế" },
+                            { en: "Quang Phu Cau incense village in Hanoi", vn: "làng hương Quảng Phú Cầu ở Hà Nội" },
+                            { en: "Sa Dec flower village in Dong Thap", vn: "làng hoa Sa Đéc ở Đồng Tháp" },
+                            { en: "Sinh folk painting village in Hue", vn: "làng tranh dân gian Làng Sình ở Huế" }
+                        ]
+                    },
+                    {
+                        title: "✨ [Sản phẩm đặc trưng 2] (Cách 2):",
+                        items: [
                             { en: "colorful fragrant incense sticks", vn: "những bó hương thơm ngát rực rỡ sắc màu" },
-                            { en: "picturesque tourist village", vn: "ngôi làng du lịch đẹp như tranh" },
-                            { en: "great photos", vn: "những bức ảnh chụp tuyệt đẹp" }
+                            { en: "traditional conical hats and souvenirs", vn: "nón lá truyền thống và quà lưu niệm" },
+                            { en: "vibrant handmade craft displays", vn: "những gian trưng bày đồ thủ công rực rỡ" },
+                            { en: "authentic cultural experiences", vn: "những trải nghiệm văn hóa bản địa đích thực" }
                         ]
                     }
                 ],
@@ -11268,32 +12816,54 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Quảng bá du lịch làng nghề và hỗ trợ tài chính để nghệ nhân truyền nghề):</div>
                     <div class="topic-formula-text">
-                        → The government should <span class="formula-bracket-hl">[giải pháp 1]</span>. Also, financial support helps elderly artisans <span class="formula-bracket-hl">[giải pháp truyền nghề]</span> to young people.
+                        → The government should <span class="formula-bracket-hl">[giải pháp 1 - Vo]</span>. Also, financial support helps elderly artisans <span class="formula-bracket-hl">[giải pháp truyền nghề - Vo]</span> to young people.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Cải tiến mẫu mã hiện đại và đưa hàng thủ công lên sàn thương mại điện tử):</div>
                     <div class="topic-formula-text">
-                        → Artisans should <span class="formula-bracket-hl">[giải pháp cải tiến mẫu mã]</span>. Selling handmade goods on e-commerce platforms can <span class="formula-bracket-hl">[lợi ích kinh tế]</span>.
+                        → Artisans should <span class="formula-bracket-hl">[giải pháp cải tiến mẫu mã - Vo]</span>. Selling handmade goods on e-commerce platforms can <span class="formula-bracket-hl">[lợi ích kinh tế - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏛️ [Quảng bá du lịch & Hỗ trợ] (Cách 1):",
+                        title: "🏛️ [Giải pháp chính phủ] (Cách 1):",
                         items: [
                             { en: "promote craft village tourism widely", vn: "quảng bá rộng rãi du lịch làng nghề" },
-                            { en: "pass down skills to young people", vn: "truyền dạy kỹ năng cho người trẻ" },
-                            { en: "preserve traditional techniques", vn: "bảo tồn các kỹ thuật truyền thống" },
-                            { en: "subsidize craft workshop costs", vn: "trợ cấp chi phí xưởng chế tác" }
+                            { en: "subsidize local craft workshop costs", vn: "trợ cấp chi phí cho các xưởng thủ công địa phương" },
+                            { en: "organize annual traditional craft festivals", vn: "tổ chức các lễ hội thủ công truyền thống thường niên" },
+                            { en: "invest in rural tourism infrastructure", vn: "đầu tư vào cơ sở hạ tầng du lịch nông thôn" },
+                            { en: "protect historical craft heritage sites", vn: "bảo vệ các di tích di sản làng nghề lịch sử" }
                         ]
                     },
                     {
-                        title: "🛒 [Đổi mới mẫu mã & Bán online] (Cách 2):",
+                        title: "🤝 [Giải pháp truyền nghề] (Cách 1):",
                         items: [
-                            { en: "modernize product designs creatively", vn: "hiện đại hóa mẫu mã sản phẩm sáng tạo" },
-                            { en: "selling handmade goods on e-commerce platforms", vn: "bán hàng thủ công trên sàn thương mại điện tử" },
+                            { en: "pass down skills", vn: "truyền dạy kỹ năng nghề" },
+                            { en: "teach traditional techniques", vn: "dạy các kỹ thuật chế tác truyền thống" },
+                            { en: "share valuable crafting secrets", vn: "chia sẻ những bí quyết làm nghề quý báu" },
+                            { en: "offer free training classes", vn: "mở các lớp đào tạo nghề miễn phí" },
+                            { en: "inspire a love for folk arts", vn: "truyền cảm hứng yêu nghệ thuật dân gian" }
+                        ]
+                    },
+                    {
+                        title: "🎨 [Giải pháp cải tiến mẫu mã] (Cách 2):",
+                        items: [
+                            { en: "modernize product designs creatively", vn: "hiện đại hóa mẫu mã sản phẩm một cách sáng tạo" },
+                            { en: "create eco-friendly everyday items", vn: "tạo ra các vật dụng hằng ngày thân thiện môi trường" },
+                            { en: "improve product quality and packaging", vn: "nâng cao chất lượng và bao bì sản phẩm" },
+                            { en: "combine traditional styles with modern trends", vn: "kết hợp phong cách truyền thống với xu hướng hiện đại" },
+                            { en: "diversify souvenir collections", vn: "đa dạng hóa các bộ sưu tập quà lưu niệm" }
+                        ]
+                    },
+                    {
+                        title: "🛒 [Lợi ích kinh tế] (Cách 2):",
+                        items: [
                             { en: "increase sales and attract worldwide customers", vn: "tăng doanh số và thu hút khách hàng toàn cầu" },
-                            { en: "reach young modern buyers", vn: "tiếp cận người mua trẻ tuổi hiện đại" }
+                            { en: "reach young modern buyers easily", vn: "dễ dàng tiếp cận người mua trẻ tuổi hiện đại" },
+                            { en: "create stable incomes for local families", vn: "tạo thu nhập ổn định cho các gia đình địa phương" },
+                            { en: "expand export markets internationally", vn: "mở rộng thị trường xuất khẩu quốc tế" },
+                            { en: "boost rural economic development", vn: "thúc đẩy phát triển kinh tế nông thôn" }
                         ]
                     }
                 ],
@@ -11324,7 +12894,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Đã từng tham gia 2 hoạt động và cảm thấy ý nghĩa):</div>
                     <div class="topic-formula-text">
-                        → Yes, I have. Last summer, I <span class="formula-bracket-hl">[hoạt động 1 - Ved]</span> and <span class="formula-bracket-hl">[hoạt động 2 - Ved]</span>. It was a very meaningful experience.
+                        → Yes, I have. Last summer, I <span class="formula-bracket-hl">[hoạt động 1 - V2/ed]</span> and <span class="formula-bracket-hl">[hoạt động 2 - V2/ed]</span>. It was a very meaningful experience.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -11335,7 +12905,7 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🤝 [Gợi ý hoạt động tình nguyện - Nguyên mẫu]:",
+                        title: "🤝 [Hoạt động tình nguyện] (Cách 1):",
                         items: [
                             { en: "clean up local beaches", vn: "dọn sạch bãi biển địa phương" },
                             { en: "plant green trees", vn: "trồng thêm cây xanh" },
@@ -11346,12 +12916,22 @@ const practiceTopicsData = [
                         ]
                     },
                     {
-                        title: "⏳ [Lý do bận rộn & Kế hoạch tương lai] (Cách 2):",
+                        title: "⏳ [Lý do bận rộn] (Cách 2):",
                         items: [
+                            { en: "my university study", vn: "việc học đại học của tôi" },
                             { en: "my university study and exams", vn: "việc học đại học và thi cử" },
-                            { en: "my tight work schedule", vn: "lịch làm việc bận rộn của tôi" },
-                            { en: "join a local volunteer club", vn: "tham gia một câu lạc bộ tình nguyện địa phương" },
-                            { en: "participate in charity projects", vn: "tham gia các dự án từ thiện" }
+                            { en: "my tight work schedule", vn: "lịch làm việc dày đặc của tôi" },
+                            { en: "my part-time job and family duties", vn: "công việc làm thêm và việc gia đình" }
+                        ]
+                    },
+                    {
+                        title: "🌱 [Kế hoạch tham gia] (Cách 2):",
+                        items: [
+                            { en: "join a volunteer club", vn: "tham gia một câu lạc bộ tình nguyện" },
+                            { en: "join a local volunteer club", vn: "tham gia câu lạc bộ tình nguyện địa phương" },
+                            { en: "participate in charity projects", vn: "tham gia vào các dự án từ thiện" },
+                            { en: "donate books and clothes to children", vn: "quyên góp sách vở và quần áo cho trẻ em" },
+                            { en: "help out at a local soup kitchen", vn: "phụ giúp tại một bếp ăn từ thiện địa phương" }
                         ]
                     }
                 ],
@@ -11386,21 +12966,21 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "☀️ [Mùa hè xanh & Hiến máu] (Cách 1):",
+                        title: "☀️ [Chiến dịch tình nguyện] (Cách 1):",
                         items: [
                             { en: "the Green Summer campaign", vn: "chiến dịch Mùa hè xanh" },
-                            { en: "donate blood for local hospitals", vn: "hiến máu cho các bệnh viện địa phương" },
                             { en: "rural volunteer expeditions", vn: "các chuyến tình nguyện về vùng nông thôn" },
-                            { en: "support remote communities", vn: "hỗ trợ các cộng đồng vùng sâu vùng xa" }
+                            { en: "local charity fundraising events", vn: "các sự kiện gây quỹ từ thiện địa phương" },
+                            { en: "environmental clean-up programs", vn: "các chương trình làm sạch môi trường" }
                         ]
                     },
                     {
-                        title: "💼 [Người lớn bận rộn ít tham gia] (Cách 2):",
+                        title: "🎓 [Đối tượng tích cực] (Cách 2):",
                         items: [
                             { en: "energetic young university students", vn: "các bạn sinh viên đại học trẻ trung năng nổ" },
-                            { en: "busy office workers with tight schedules", vn: "dân văn phòng bận rộn với lịch trình dày đặc" },
-                            { en: "lack free personal time", vn: "thiếu thời gian cá nhân rảnh rỗi" },
-                            { en: "focus on daily earnings", vn: "tập trung vào việc kiếm sống hằng ngày" }
+                            { en: "active high school youth union members", vn: "các đoàn viên học sinh cấp ba năng động" },
+                            { en: "retired seniors with free time", vn: "những người lớn tuổi đã nghỉ hưu có thời gian rảnh" },
+                            { en: "dedicated local charity groups", vn: "các nhóm từ thiện địa phương tận tâm" }
                         ]
                     }
                 ],
@@ -11424,32 +13004,52 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Phát triển kỹ năng làm việc nhóm, giao tiếp giúp tự tin và trưởng thành hơn):</div>
                     <div class="topic-formula-text">
-                        → Volunteers can <span class="formula-bracket-hl">[lợi ích kỹ năng]</span>. Working with diverse teammates makes them <span class="formula-bracket-hl">[tính từ cảm xúc và sự chín chắn]</span>.
+                        → Volunteers can <span class="formula-bracket-hl">[lợi ích kỹ năng - Vo]</span>. Working with diverse teammates makes them <span class="formula-bracket-hl">[tính từ cảm xúc và sự chín chắn]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 2 (Nuôi dưỡng sự thấu cảm sâu sắc và trách nhiệm xã hội, giúp sống có ý nghĩa hơn):</div>
                     <div class="topic-formula-text">
-                        → Community service fosters <span class="formula-bracket-hl">[phẩm chất đạo đức]</span>. It helps people appreciate their lives and live <span class="formula-bracket-hl">[lối sống tích cực]</span>.
+                        → Community service fosters <span class="formula-bracket-hl">[phẩm chất đạo đức]</span>. It helps people appreciate their lives and <span class="formula-bracket-hl">[lối sống tích cực - Vo]</span>.
                     </div>
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🤝 [Kỹ năng mềm & Tự tin] (Cách 1):",
+                        title: "🤝 [Lợi ích kỹ năng] (Cách 1):",
                         items: [
                             { en: "develop essential teamwork and communication skills", vn: "phát triển kỹ năng làm việc nhóm và giao tiếp thiết yếu" },
-                            { en: "much more confident and mature", vn: "tự tin và trưởng thành hơn nhiều" },
                             { en: "adapt to challenging conditions", vn: "thích nghi với các điều kiện thử thách" },
-                            { en: "build lasting friendships", vn: "xây dựng tình bạn bền chặt" }
+                            { en: "build lasting friendships", vn: "xây dựng những tình bạn bền chặt" },
+                            { en: "gain practical real-life experience", vn: "tích lũy kinh nghiệm thực tế đời sống" },
+                            { en: "improve problem-solving abilities", vn: "cải thiện khả năng giải quyết vấn đề" }
                         ]
                     },
                     {
-                        title: "💖 [Thấu cảm & Sống ý nghĩa] (Cách 2):",
+                        title: "🌟 [Tính từ cảm xúc và sự chín chắn] (Cách 1):",
+                        items: [
+                            { en: "much more confident and mature", vn: "tự tin và trưởng thành hơn nhiều" },
+                            { en: "more open-minded and sociable", vn: "cởi mở và hòa đồng hơn" },
+                            { en: "flexible and responsible", vn: "linh hoạt và có trách nhiệm" },
+                            { en: "independent and resilient", vn: "độc lập và kiên cường" }
+                        ]
+                    },
+                    {
+                        title: "💖 [Phẩm chất đạo đức] (Cách 2):",
                         items: [
                             { en: "deep empathy and social responsibility", vn: "sự thấu cảm sâu sắc và tinh thần trách nhiệm xã hội" },
-                            { en: "live much more meaningfully", vn: "sống ý nghĩa hơn nhiều" },
-                            { en: "appreciate good fortunes in life", vn: "biết ơn những may mắn trong cuộc sống" },
-                            { en: "spread positive energy", vn: "lan tỏa năng lượng tích cực" }
+                            { en: "kindness and mutual compassion", vn: "lòng tốt và sự cảm thông lẫn nhau" },
+                            { en: "gratitude and community spirit", vn: "lòng biết ơn và tinh thần cộng đồng" },
+                            { en: "generosity toward disadvantaged people", vn: "sự hào phóng đối với những người kém may mắn" }
+                        ]
+                    },
+                    {
+                        title: "🌱 [Lối sống tích cực] (Cách 2):",
+                        items: [
+                            { en: "live much more meaningfully", vn: "sống có ý nghĩa hơn nhiều" },
+                            { en: "spread positive energy to others", vn: "lan tỏa năng lượng tích cực đến mọi người" },
+                            { en: "contribute positively to society", vn: "đóng góp tích cực cho xã hội" },
+                            { en: "cherish simple daily blessings", vn: "trân trọng những may mắn giản dị hằng ngày" },
+                            { en: "care more about people around them", vn: "quan tâm nhiều hơn đến mọi người xung quanh" }
                         ]
                     }
                 ],
@@ -11491,21 +13091,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "👨‍👩‍👧 [Nấu ăn & Sum họp gia đình] (Cách 1):",
+                        title: "👨‍👩‍👧 [Hoạt động đem lại niềm vui] (Cách 1):",
                         items: [
-                            { en: "cooking delicious meals at home", vn: "nấu các bữa ăn ngon tại nhà" },
-                            { en: "gathering with family members", vn: "sum họp cùng các thành viên gia đình" },
-                            { en: "enjoy warm conversations", vn: "tận hưởng những cuộc trò chuyện ấm áp" },
-                            { en: "feel peaceful and cheerful", vn: "cảm thấy bình yên và được yêu thương" }
+                            { en: "cook delicious meals at home", vn: "nấu các bữa ăn ngon tại nhà" },
+                            { en: "gather with family members", vn: "sum họp cùng các thành viên gia đình" },
+                            { en: "enjoy warm conversations with parents", vn: "tận hưởng những cuộc trò chuyện ấm áp với bố mẹ" },
+                            { en: "hang out with close friends", vn: "đi chơi cùng những người bạn thân" },
+                            { en: "listen to gentle acoustic music", vn: "lắng nghe những bản nhạc acoustic nhẹ nhàng" }
                         ]
                     },
                     {
-                        title: "🎯 [Hoàn thành mục tiêu & Tự hào] (Cách 2):",
+                        title: "🎯 [Kết quả công việc] (Cách 2):",
                         items: [
                             { en: "complete difficult tasks successfully", vn: "hoàn thành các nhiệm vụ khó khăn thành công" },
-                            { en: "receive positive feedback from teachers", vn: "nhận phản hồi tích cực từ thầy cô" },
+                            { en: "receive positive feedback from teachers", vn: "nhận được phản hồi tích cực từ thầy cô" },
+                            { en: "make continuous personal progress", vn: "tiến bộ liên tục trong cuộc sống" },
+                            { en: "pass important university exams", vn: "vượt qua các kỳ thi đại học quan trọng" },
+                            { en: "learn a useful new skill", vn: "học được một kỹ năng mới hữu ích" }
+                        ]
+                    },
+                    {
+                        title: "😊 [Tính từ cảm xúc] (Cách 2):",
+                        items: [
+                            { en: "extremely motivated", vn: "vô cùng có động lực" },
                             { en: "extremely motivated and confident", vn: "vô cùng có động lực và tự tin" },
-                            { en: "make continuous personal progress", vn: "tiến bộ liên tục trong cuộc sống" }
+                            { en: "cheerful and satisfied", vn: "vui tươi và hài lòng" },
+                            { en: "energetic and fulfilled", vn: "tràn đầy năng lượng và mãn nguyện" }
                         ]
                     }
                 ],
@@ -11529,7 +13140,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Chia sẻ niềm vui với người thân yêu để nhân đôi hạnh phúc và nhận lời chúc mừng):</div>
                     <div class="topic-formula-text">
-                        → Yes, I always do. Whenever good things happen, I <span class="formula-bracket-hl">[hành động chia sẻ - Vo]</span>. Sharing happiness <span class="formula-bracket-hl">[tác động tích cực]</span>.
+                        → Yes, I always do. Whenever good things happen, I <span class="formula-bracket-hl">[hành động chia sẻ - Vo]</span>. Sharing happiness <span class="formula-bracket-hl">[tác động tích cực - Vs/es]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -11540,21 +13151,43 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🎉 [Chia sẻ & Nhân đôi niềm vui] (Cách 1):",
+                        title: "📞 [Hành động chia sẻ] (Cách 1):",
                         items: [
                             { en: "call my parents and best friends", vn: "gọi điện cho bố mẹ và bạn thân" },
-                            { en: "doubles the joy and strengthens bonds", vn: "nhân đôi niềm vui và gắn kết tình cảm" },
-                            { en: "celebrate small achievements together", vn: "cùng nhau ăn mừng những thành tựu nhỏ" },
-                            { en: "spread positive energy to everyone", vn: "lan tỏa năng lượng tích cực đến mọi người" }
+                            { en: "celebrate small achievements with family", vn: "cùng gia đình ăn mừng những thành tựu nhỏ" },
+                            { en: "treat my close friends to coffee", vn: "mời bạn thân đi uống cà phê" },
+                            { en: "share exciting news over dinner", vn: "chia sẻ tin vui trong bữa cơm tối" },
+                            { en: "send happy messages to loved ones", vn: "gửi tin nhắn báo tin vui cho người thân" }
                         ]
                     },
                     {
-                        title: "🤫 [Giữ kín riêng tư & Tự chiêm nghiệm] (Cách 2):",
+                        title: "🎉 [Tác động tích cực] (Cách 1):",
+                        items: [
+                            { en: "double the joy and strengthen bonds", vn: "nhân đôi niềm vui và gắn kết tình cảm" },
+                            { en: "spread positive energy to everyone", vn: "lan tỏa năng lượng tích cực đến mọi người" },
+                            { en: "bring family members closer together", vn: "mang các thành viên gia đình lại gần nhau hơn" },
+                            { en: "make memorable moments more special", vn: "làm cho những khoảnh khắc đáng nhớ thêm đặc biệt" },
+                            { en: "create a warm and cheerful atmosphere", vn: "tạo nên bầu không khí ấm áp và vui tươi" }
+                        ]
+                    },
+                    {
+                        title: "🤫 [Thói quen giữ riêng] (Cách 2):",
                         items: [
                             { en: "keep good news to myself", vn: "giữ tin vui cho riêng mình" },
-                            { en: "posting everything on social media", vn: "đăng tải mọi thứ lên mạng xã hội" },
-                            { en: "enjoy peaceful quiet moments", vn: "tận hưởng những khoảnh khắc yên bình" },
+                            { en: "enjoy peaceful quiet moments alone", vn: "tự mình tận hưởng những khoảnh khắc yên bình" },
+                            { en: "write my feelings in a personal diary", vn: "viết cảm xúc của mình vào nhật ký cá nhân" },
+                            { en: "celebrate quietly with my parents", vn: "ăn mừng nhẹ nhàng kín đáo cùng bố mẹ" },
                             { en: "avoid unnecessary public attention", vn: "tránh sự chú ý không cần thiết của công chúng" }
+                        ]
+                    },
+                    {
+                        title: "📱 [Hành vi chia sẻ ồn ào] (Cách 2):",
+                        items: [
+                            { en: "post everything on social media", vn: "đăng tải mọi thứ lên mạng xã hội" },
+                            { en: "show off personal achievements online", vn: "khoe khoang thành tích cá nhân trên mạng" },
+                            { en: "talk loudly about my success", vn: "nói ồn ào về thành công của bản thân" },
+                            { en: "throw noisy and expensive parties", vn: "tổ chức những bữa tiệc ồn ào và tốn kém" },
+                            { en: "seek attention from strangers", vn: "tìm kiếm sự chú ý từ người lạ" }
                         ]
                     }
                 ],
@@ -11589,21 +13222,23 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "💳 [Đảm bảo tài chính & Chăm sóc y tế] (Cách 1):",
+                        title: "💳 [Lợi ích tài chính] (Cách 1):",
                         items: [
-                            { en: "pay for high healthcare services", vn: "chi trả dịch vụ y tế chất lượng cao" },
-                            { en: "provide a comfortable living condition", vn: "cung cấp điều kiện sống tiện nghi" },
-                            { en: "reduce financial anxiety", vn: "giảm bớt lo âu tài chính" },
-                            { en: "support beloved family members", vn: "hỗ trợ các thành viên thân yêu trong gia đình" }
+                            { en: "pay for good healthcare services", vn: "chi trả các dịch vụ y tế tốt" },
+                            { en: "provide comfortable living conditions", vn: "mang lại điều kiện sống tiện nghi" },
+                            { en: "reduce daily financial anxiety", vn: "giảm bớt nỗi lo âu tài chính hằng ngày" },
+                            { en: "support beloved family members", vn: "hỗ trợ những người thân yêu trong gia đình" },
+                            { en: "enjoy relaxing family vacations", vn: "tận hưởng những kỳ nghỉ gia đình thư giãn" }
                         ]
                     },
                     {
-                        title: "💖 [Tình bạn chân thành & Bình yên nội tâm] (Cách 2):",
+                        title: "💖 [Giá trị tinh thần không mua được bằng tiền] (Cách 2):",
                         items: [
-                            { en: "genuine friendship and deep love", vn: "tình bạn chân chính và tình yêu sâu sắc" },
+                            { en: "genuine friendship", vn: "tình bạn chân chính" },
                             { en: "good physical health", vn: "sức khỏe thể chất tốt" },
-                            { en: "cherish simple daily blessings", vn: "trân trọng những phước lành giản dị hằng ngày" },
-                            { en: "build lasting emotional connections", vn: "xây dựng sự gắn kết cảm xúc bền lâu" }
+                            { en: "deep family love and trust", vn: "tình yêu thương và sự tin tưởng sâu sắc của gia đình" },
+                            { en: "lasting emotional connections", vn: "sự gắn kết cảm xúc bền lâu" },
+                            { en: "true peace of mind", vn: "sự bình yên thực sự trong tâm hồn" }
                         ]
                     }
                 ],
@@ -11645,21 +13280,31 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🎬 [Rạp hiện đại & Trung tâm thương mại] (Cách 1):",
+                        title: "🎬 [Tiện ích rạp phim hiện đại] (Cách 1):",
                         items: [
-                            { en: "modern cinema complexes like CGV", vn: "các cụm rạp hiện đại như CGV" },
-                            { en: "large IMAX projection screens", vn: "màn hình chiếu IMAX cỡ lớn" },
-                            { en: "attract lots of young moviegoers", vn: "thu hút nhiều khán giả trẻ" },
-                            { en: "offer comfortable seating areas", vn: "cung cấp các khu vực ghế ngồi thoải mái" }
+                            { en: "modern cinema complexes like CGV", vn: "các cụm rạp chiếu phim hiện đại như CGV" },
+                            { en: "large IMAX projection theaters", vn: "các phòng chiếu IMAX màn hình lớn" },
+                            { en: "luxury movie theaters with soft seats", vn: "các rạp phim sang trọng với ghế ngồi êm ái" },
+                            { en: "popular entertainment centers", vn: "các trung tâm giải trí phổ biến" }
                         ]
                     },
                     {
-                        title: "🏡 [Thị trấn nhỏ & Xem phim online] (Cách 2):",
+                        title: "🏢 [Cơ sở giải trí thiếu hụt] (Cách 2):",
                         items: [
                             { en: "commercial movie theaters", vn: "các rạp chiếu phim thương mại" },
+                            { en: "modern entertainment complexes", vn: "các khu phức hợp giải trí hiện đại" },
+                            { en: "big shopping malls and cinemas", vn: "các trung tâm thương mại lớn và rạp phim" },
+                            { en: "public cultural centers", vn: "các trung tâm văn hóa công cộng" }
+                        ]
+                    },
+                    {
+                        title: "🏡 [Hoạt động xem phim thay thế] (Cách 2):",
+                        items: [
                             { en: "stream movies online at home", vn: "xem phim trực tuyến tại nhà" },
-                            { en: "travel to nearby big cities", vn: "di chuyển đến các thành phố lớn lân cận" },
-                            { en: "watch television entertainment shows", vn: "xem các chương trình giải trí truyền hình" }
+                            { en: "watch television entertainment shows", vn: "xem các chương trình giải trí trên truyền hình" },
+                            { en: "travel to nearby big cities for movies", vn: "đi đến các thành phố lớn lân cận để xem phim" },
+                            { en: "enjoy blockbuster films on laptops", vn: "thưởng thức phim bom tấn trên máy tính xách tay" },
+                            { en: "gather to watch family TV series", vn: "quây quần xem phim truyền hình dài tập cùng gia đình" }
                         ]
                     }
                 ],
@@ -11694,21 +13339,41 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🍿 [Đi xem phim cùng bạn bè] (Cách 1):",
+                        title: "🗓️ [Tần suất đi xem] (Cách 1):",
                         items: [
                             { en: "once or twice a month", vn: "một hoặc hai lần mỗi tháng" },
-                            { en: "enjoy exciting new blockbuster films", vn: "thưởng thức các bộ phim bom tấn mới hào hứng" },
-                            { en: "eat delicious sweet popcorn", vn: "ăn bắp rang bơ ngọt thơm ngon" },
-                            { en: "relax together on Saturday nights", vn: "cùng nhau thư giãn vào tối thứ Bảy" }
+                            { en: "every weekend", vn: "vào mỗi dịp cuối tuần" },
+                            { en: "on Saturday nights", vn: "vào các buổi tối thứ Bảy" },
+                            { en: "whenever a big movie comes out", vn: "mỗi khi có một bộ phim lớn ra rạp" }
                         ]
                     },
                     {
-                        title: "🛋️ [Hiếm khi đi & Xem Netflix tại nhà] (Cách 2):",
+                        title: "🍿 [Mục đích thưởng thức] (Cách 1):",
+                        items: [
+                            { en: "enjoy exciting new blockbuster films", vn: "thưởng thức các bộ phim bom tấn mới hào hứng" },
+                            { en: "eat delicious sweet popcorn together", vn: "cùng nhau ăn bắp rang bơ ngọt thơm ngon" },
+                            { en: "relax after stressful study weeks", vn: "thư giãn sau những tuần học tập căng thẳng" },
+                            { en: "experience vivid sound and giant screens", vn: "trải nghiệm âm thanh sống động và màn hình khổng lồ" },
+                            { en: "chat about our favorite actors", vn: "trò chuyện về những diễn viên yêu thích" }
+                        ]
+                    },
+                    {
+                        title: "💸 [Lý do chi phí] (Cách 2):",
                         items: [
                             { en: "quite expensive for my budget", vn: "khá đắt đỏ so với ngân sách của tôi" },
-                            { en: "watching Netflix films on my sofa", vn: "xem phim Netflix trên ghế sofa" },
-                            { en: "save travel time and money", vn: "tiết kiệm thời gian di chuyển và tiền bạc" },
-                            { en: "pause favorite movies anytime", vn: "tạm dừng phim yêu thích bất kỳ lúc nào" }
+                            { en: "a bit costly for students", vn: "hơi tốn kém đối với sinh viên" },
+                            { en: "rising in price on weekends", vn: "tăng giá cao vào những ngày cuối tuần" },
+                            { en: "not very affordable for frequent visits", vn: "không mấy phải chăng nếu đi thường xuyên" }
+                        ]
+                    },
+                    {
+                        title: "🛋️ [Thói quen xem phim ở nhà] (Cách 2):",
+                        items: [
+                            { en: "watch Netflix films on my sofa", vn: "xem phim trên ứng dụng Netflix tại ghế sofa" },
+                            { en: "stream free movies on my laptop", vn: "xem phim miễn phí trực tuyến trên máy tính" },
+                            { en: "enjoy cozy movie nights at home", vn: "tận hưởng những buổi tối xem phim ấm cúng tại nhà" },
+                            { en: "save travel time and ticket money", vn: "tiết kiệm thời gian đi lại và tiền mua vé" },
+                            { en: "pause favorite movies anytime I want", vn: "tạm dừng bộ phim yêu thích bất cứ lúc nào" }
                         ]
                     }
                 ],
@@ -11732,7 +13397,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Thích xem tại rạp - Màn hình lớn và hiệu ứng âm thanh sống động mang lại trải nghiệm đỉnh cao):</div>
                     <div class="topic-formula-text">
-                        → I strongly prefer the cinema. The giant screen and <span class="formula-bracket-hl">[hiệu ứng nghe nhìn]</span> deliver an <span class="formula-bracket-hl">[tính từ trải nghiệm]</span> with delicious popcorn.
+                        → I strongly prefer the cinema. The giant screen and <span class="formula-bracket-hl">[hiệu ứng nghe nhìn]</span> deliver an <span class="formula-bracket-hl">[trải nghiệm điện ảnh]</span> with delicious popcorn.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -11743,21 +13408,40 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🎥 [Màn hình khổng lồ & Âm thanh sống động] (Cách 1):",
+                        title: "🔊 [Hiệu ứng nghe nhìn] (Cách 1):",
                         items: [
                             { en: "vivid surround sound effects", vn: "các hiệu ứng âm thanh vòm sống động" },
-                            { en: "unforgettable cinematic experience", vn: "trải nghiệm điện ảnh khó quên" },
-                            { en: "immerse in action scenes", vn: "đắm chìm trong các cảnh hành động" },
-                            { en: "enjoy top visual quality", vn: "thưởng thức chất lượng hình ảnh đỉnh cao" }
+                            { en: "sharp 3D visual technology", vn: "công nghệ hình ảnh 3D sắc nét" },
+                            { en: "powerful speaker systems", vn: "hệ thống loa công suất lớn" },
+                            { en: "dark and focused theater atmosphere", vn: "không gian phòng chiếu tối và tập trung" }
                         ]
                     },
                     {
-                        title: "🍿 [Tiện lợi & Riêng tư tại nhà] (Cách 2):",
+                        title: "🎥 [Trải nghiệm điện ảnh] (Cách 1):",
+                        items: [
+                            { en: "unforgettable cinematic experience", vn: "trải nghiệm điện ảnh khó quên" },
+                            { en: "exciting entertainment atmosphere", vn: "bầu không khí giải trí đầy hào hứng" },
+                            { en: "immersive action movie journey", vn: "hành trình đắm chìm vào các bộ phim hành động" },
+                            { en: "amazing weekend night out", vn: "buổi tối cuối tuần đi chơi tuyệt vời" }
+                        ]
+                    },
+                    {
+                        title: "🏠 [Ưu điểm tiện nghi] (Cách 2):",
                         items: [
                             { en: "much more comfortable and private", vn: "thoải mái và riêng tư hơn nhiều" },
-                            { en: "eat homemade snacks freely", vn: "tự do ăn đồ ăn vặt tự làm" },
-                            { en: "avoid noisy cinema crowds", vn: "tránh đám đông ồn ào ở rạp" },
-                            { en: "save monthly entertainment money", vn: "tiết kiệm tiền giải trí hằng tháng" }
+                            { en: "completely free and relaxing", vn: "hoàn toàn miễn phí và thư giãn" },
+                            { en: "cozy and convenient", vn: "ấm cúng và tiện lợi" },
+                            { en: "quiet and stress-free", vn: "yên tĩnh và không bị làm phiền" }
+                        ]
+                    },
+                    {
+                        title: "🍿 [Lợi ích tự do] (Cách 2):",
+                        items: [
+                            { en: "eat homemade snacks freely", vn: "tự do ăn các món ăn vặt tự làm" },
+                            { en: "avoid noisy cinema crowds", vn: "tránh được đám đông ồn ào ở rạp" },
+                            { en: "save monthly entertainment money", vn: "tiết kiệm tiền giải trí hằng tháng" },
+                            { en: "lie comfortably on my soft bed", vn: "nằm thoải mái trên chiếc giường êm ái" },
+                            { en: "discuss the plot freely with family", vn: "tự do bàn luận cốt truyện cùng gia đình" }
                         ]
                     }
                 ],
@@ -11799,21 +13483,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🌳 [Không khí trong lành & Sức khỏe] (Cách 1):",
+                        title: "🌳 [Lợi ích hoạt động ngoài trời] (Cách 1):",
                         items: [
                             { en: "breathe fresh open air", vn: "hít thở không khí ngoài trời trong lành" },
-                            { en: "improve my physical health", vn: "cải thiện sức khỏe thể chất" },
-                            { en: "escape from study pressure", vn: "thoát khỏi áp lực học tập" },
-                            { en: "stay energetic and fit", vn: "luôn tràn đầy năng lượng và cân đối" }
+                            { en: "improve my physical health", vn: "cải thiện sức khỏe thể chất của tôi" },
+                            { en: "escape from daily study pressure", vn: "thoát khỏi áp lực học tập hằng ngày" },
+                            { en: "stay energetic and fit", vn: "luôn tràn đầy năng lượng và cân đối" },
+                            { en: "connect closely with green nature", vn: "kết nối gần gũi với thiên nhiên xanh mát" }
                         ]
                     },
                     {
-                        title: "❄️ [Tránh nắng nóng & Thích ở trong phòng] (Cách 2):",
+                        title: "☀️ [Thực trạng thời tiết] (Cách 2):",
                         items: [
                             { en: "extremely hot and humid", vn: "cực kỳ nóng bức và oi ả" },
+                            { en: "unpredictable with sudden heavy rains", vn: "thất thường với những cơn mưa lớn bất chợt" },
+                            { en: "dusty and polluted in big cities", vn: "bụi bặm và ô nhiễm ở các thành phố lớn" },
+                            { en: "burning hot during summer afternoons", vn: "nắng nóng gay gắt vào các buổi chiều hè" }
+                        ]
+                    },
+                    {
+                        title: "❄️ [Hoạt động thư giãn trong phòng] (Cách 2):",
+                        items: [
+                            { en: "read books", vn: "đọc sách" },
                             { en: "read books and listen to music", vn: "đọc sách và nghe nhạc" },
-                            { en: "suffer unpleasant sunburns", vn: "bị cháy nắng khó chịu" },
-                            { en: "enjoy quiet cool indoor spaces", vn: "tận hưởng không gian mát mẻ yên tĩnh trong nhà" }
+                            { en: "watch movies on my laptop", vn: "xem phim trên máy tính xách tay" },
+                            { en: "play board games with friends", vn: "chơi cờ bàn cùng bạn bè" },
+                            { en: "avoid unpleasant sunburns", vn: "tránh bị cháy nắng khó chịu" }
                         ]
                     }
                 ],
@@ -11848,21 +13543,33 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏃 [Chạy bộ & Tập thể dục công viên] (Cách 1):",
+                        title: "🏃 [Hoạt động thể thao công viên] (Cách 1):",
                         items: [
                             { en: "jog around the lake", vn: "chạy bộ quanh hồ nước" },
                             { en: "do light stretching exercises", vn: "tập các động tác giãn cơ nhẹ nhàng" },
-                            { en: "recharge morning batteries", vn: "nạp lại năng lượng buổi sáng" },
-                            { en: "enjoy the cool morning breeze", vn: "tận hưởng làn gió mát ban mai" }
+                            { en: "play badminton with neighbors", vn: "đánh cầu lông cùng hàng xóm" },
+                            { en: "take a brisk morning walk", vn: "đi bộ nhanh vào buổi sáng" },
+                            { en: "practice outdoor yoga", vn: "tập yoga ngoài trời" }
                         ]
                     },
                     {
-                        title: "🚴 [Đạp xe dạo phố cuối tuần] (Cách 2):",
+                        title: "🚴 [Hoạt động cùng bạn bè] (Cách 2):",
                         items: [
-                            { en: "ride bicycles with close friends", vn: "đạp xe cùng bạn thân" },
-                            { en: "explore quiet peaceful streets", vn: "khám phá những con phố thanh bình yên tĩnh" },
-                            { en: "clear my mind after busy study", vn: "thư thái tâm trí sau giờ học bận rộn" },
-                            { en: "watch beautiful city sunsets", vn: "ngắm hoàng hôn tuyệt đẹp trên phố" }
+                            { en: "ride bicycles with close friends", vn: "đạp xe cùng những người bạn thân" },
+                            { en: "stroll through peaceful tree-lined streets", vn: "dạo bước qua những con phố rợp bóng cây" },
+                            { en: "go camping in suburban parks", vn: "đi cắm trại ở các công viên ngoại ô" },
+                            { en: "take outdoor photos together", vn: "cùng nhau chụp ảnh dã ngoại" },
+                            { en: "have a small weekend picnic", vn: "tổ chức một buổi dã ngoại nhỏ cuối tuần" }
+                        ]
+                    },
+                    {
+                        title: "🌿 [Lợi ích tinh thần] (Cách 2):",
+                        items: [
+                            { en: "clear my mind after busy study days", vn: "thư thái tâm trí sau những ngày học bận rộn" },
+                            { en: "recharge my energy for a new week", vn: "nạp lại năng lượng cho một tuần mới" },
+                            { en: "watch beautiful city sunsets", vn: "ngắm cảnh hoàng hôn tuyệt đẹp trên phố" },
+                            { en: "reduce daily stress effectively", vn: "giảm căng thẳng hằng ngày một cách hiệu quả" },
+                            { en: "enjoy the cool evening breeze", vn: "tận hưởng làn gió mát buổi chiều tối" }
                         ]
                     }
                 ],
@@ -11897,21 +13604,30 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🌱 [Gần gũi thiên nhiên & Vận động năng nổ] (Cách 1):",
+                        title: "🌱 [Tính từ thể chất & Tinh thần] (Cách 1):",
                         items: [
                             { en: "physically fit and mentally healthy", vn: "thể chất cân đối và tinh thần khỏe khoắn" },
-                            { en: "stay away from electronic screens", vn: "tránh xa màn hình thiết bị điện tử" },
-                            { en: "enjoy warm natural sunshine", vn: "tận hưởng ánh nắng ấm áp tự nhiên" },
-                            { en: "boost personal immune system", vn: "tăng cường hệ thống miễn dịch cá nhân" }
+                            { en: "energetic and cheerful", vn: "tràn đầy năng lượng và vui tươi" },
+                            { en: "strong and refreshed", vn: "khỏe mạnh và sảng khoái" },
+                            { en: "relaxed and optimistic", vn: "thư thái và lạc quan" }
                         ]
                     },
                     {
-                        title: "🏠 [Yên tĩnh & Thoải mái trong nhà] (Cách 2):",
+                        title: "🏠 [Ưu điểm không gian trong nhà] (Cách 2):",
                         items: [
                             { en: "very peaceful and completely safe", vn: "rất yên bình và hoàn toàn an toàn" },
+                            { en: "comfortable and air-conditioned", vn: "thoải mái và có máy điều hòa mát mẻ" },
+                            { en: "quiet and private", vn: "yên tĩnh và riêng tư" },
+                            { en: "convenient and relaxing", vn: "tiện lợi và thư giãn" }
+                        ]
+                    },
+                    {
+                        title: "🌧️ [Lo ngại thời tiết] (Cách 2):",
+                        items: [
                             { en: "sudden rain or burning sunshine", vn: "mưa bất chợt hoặc nắng gắt" },
-                            { en: "focus on reading and drawing", vn: "tập trung vào đọc sách và vẽ tranh" },
-                            { en: "enjoy comfortable air conditioning", vn: "tận hưởng điều hòa thoải mái" }
+                            { en: "traffic dust and air pollution", vn: "khói bụi giao thông và ô nhiễm không khí" },
+                            { en: "extreme summer heatwaves", vn: "những đợt nắng nóng gay gắt mùa hè" },
+                            { en: "getting wet in stormy weather", vn: "bị ướt mưa trong thời tiết giông bão" }
                         ]
                     }
                 ],
@@ -11953,21 +13669,31 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🍀 [Số 7 & Ngày sinh nhật] (Cách 1):",
+                        title: "🎂 [Ý nghĩa đặc biệt] (Cách 1):",
                         items: [
                             { en: "my lucky birthday date", vn: "ngày sinh nhật may mắn của tôi" },
-                            { en: "good luck and positive confidence", vn: "sự may mắn và sự tự tin tích cực" },
-                            { en: "achieve successful test results", vn: "đạt kết quả thi cử thành công" },
-                            { en: "feel protected and inspired", vn: "cảm thấy được bảo vệ và truyền cảm hứng" }
+                            { en: "my birth month", vn: "tháng sinh của tôi" },
+                            { en: "a symbol of good fortune in my family", vn: "biểu tượng may mắn trong gia đình tôi" },
+                            { en: "the number of days in a week", vn: "số ngày trong một tuần" }
                         ]
                     },
                     {
-                        title: "👑 [Số 9 & Biểu tượng trường tồn] (Cách 2):",
+                        title: "🍀 [Cảm xúc tốt đẹp] (Cách 1):",
+                        items: [
+                            { en: "good luck and positive confidence", vn: "sự may mắn và sự tự tin tích cực" },
+                            { en: "great peace of mind", vn: "sự an tâm to lớn" },
+                            { en: "cheerful energy during exams", vn: "nguồn năng lượng vui vẻ trong các kỳ thi" },
+                            { en: "strong motivation and hope", vn: "động lực mạnh mẽ và niềm hy vọng" }
+                        ]
+                    },
+                    {
+                        title: "👑 [Ý nghĩa biểu tượng] (Cách 2):",
                         items: [
                             { en: "long-lasting prosperity", vn: "sự thịnh vượng trường tồn" },
                             { en: "highest ultimate success", vn: "thành công đỉnh cao tột bậc" },
-                            { en: "symbolize perfect complete harmony", vn: "tượng trưng cho sự hài hòa trọn vẹn hoàn hảo" },
-                            { en: "bring great peace of mind", vn: "mang lại sự an tâm to lớn" }
+                            { en: "perfect complete harmony", vn: "sự hài hòa trọn vẹn hoàn hảo" },
+                            { en: "eternal luck and happiness", vn: "vận may và niềm hạnh phúc vĩnh cửu" },
+                            { en: "wealth and strong authority", vn: " sự giàu có và uy quyền vững chắc" }
                         ]
                     }
                 ],
@@ -12002,21 +13728,22 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "💰 [Số 8 & Tài lộc làm ăn] (Cách 1):",
+                        title: "📱 [Ứng dụng thực tế] (Cách 1):",
                         items: [
                             { en: "lucky phone numbers and license plates", vn: "số điện thoại may mắn và biển số xe" },
-                            { en: "symbolize financial wealth and growth", vn: "tượng trưng cho tiền tài và sự tăng trưởng tài chính" },
-                            { en: "attract smooth business deals", vn: "thu hút những thương vụ làm ăn suôn sẻ" },
-                            { en: "bring great financial fortune", vn: "mang lại vận may tài chính to lớn" }
+                            { en: "bank account numbers and house addresses", vn: "số tài khoản ngân hàng và địa chỉ nhà" },
+                            { en: "important business opening dates", vn: "ngày khai trương kinh doanh quan trọng" },
+                            { en: "hotel floor numbers and room keys", vn: "số tầng khách sạn và chìa khóa phòng" }
                         ]
                     },
                     {
-                        title: "⛵ [Số 6 & Thuận buồm xuôi gió] (Cách 2):",
+                        title: "⛵ [Ý nghĩa may mắn] (Cách 2):",
                         items: [
-                            { en: "smooth progress and good fortune", vn: "sự tiến triển trôi chảy và vận may tốt lành" },
+                            { en: "smooth progress", vn: "sự tiến triển trôi chảy" },
+                            { en: "good fortune", vn: "vận may tốt lành" },
                             { en: "harmonious family relationships", vn: "các mối quan hệ gia đình hòa thuận" },
-                            { en: "wish for smooth career journeys", vn: "cầu chúc hành trình sự nghiệp thuận buồm xuôi gió" },
-                            { en: "avoid unexpected troubles", vn: "tránh các rắc rối bất ngờ" }
+                            { en: "abundant financial blessings", vn: "phước lành tài chính dồi dào" },
+                            { en: "favorable career opportunities", vn: "những cơ hội sự nghiệp thuận lợi" }
                         ]
                     }
                 ],
@@ -12051,21 +13778,23 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🧧 [Cặp số 6 & 8 Lộc Phát] (Cách 1):",
+                        title: "🧧 [Khái niệm may mắn] (Cách 1):",
                         items: [
-                            { en: "smooth luck and rising wealth", vn: "vận may hanh thông và tài lộc thăng tiến" },
-                            { en: "financial blessings for businessmen", vn: "phước lành tài chính cho người làm kinh doanh" },
-                            { en: "bring peaceful family happiness", vn: "mang lại niềm hạnh phúc gia đình êm ấm" },
-                            { en: "popular for phone SIM cards", vn: "rất được chuộng cho SIM điện thoại" }
+                            { en: "smooth luck", vn: "vận may hanh thông" },
+                            { en: "rising wealth", vn: "tài lộc thăng tiến" },
+                            { en: "financial blessings for businessmen", vn: "phước lành tài chính cho người kinh doanh" },
+                            { en: "peaceful family happiness", vn: "hạnh phúc gia đình êm ấm" },
+                            { en: "prosperous career growth", vn: "sự phát triển sự nghiệp thịnh vượng" }
                         ]
                     },
                     {
-                        title: "💪 [Nỗ lực thực tế & Không mê tín] (Cách 2):",
+                        title: "💪 [Yếu tố thực tế] (Cách 2):",
                         items: [
-                            { en: "hard work and practical skills", vn: "sự chăm chỉ và kỹ năng thực tế" },
-                            { en: "superstitious beliefs in lucky digits", vn: "niềm tin mê tín vào các con số may mắn" },
-                            { en: "focus on continuous self-improvement", vn: "tập trung vào việc tự hoàn thiện bản thân liên tục" },
-                            { en: "rely on genuine personal efforts", vn: "dựa vào những nỗ lực cá nhân thực sự" }
+                            { en: "hard work", vn: "sự làm việc chăm chỉ" },
+                            { en: "practical skills", vn: "kỹ năng thực tế" },
+                            { en: "continuous self-improvement", vn: "việc tự hoàn thiện bản thân liên tục" },
+                            { en: "genuine personal efforts", vn: "những nỗ lực cá nhân thực sự" },
+                            { en: "strong determination and discipline", vn: "sự quyết tâm và tính kỷ luật vững vàng" }
                         ]
                     }
                 ],
@@ -12107,21 +13836,23 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "📋 [Lập kế hoạch & Đúng hạn] (Cách 1):",
+                        title: "📋 [Phương pháp quản lý] (Cách 1):",
                         items: [
                             { en: "write a clear daily to-do list", vn: "viết danh sách công việc hằng ngày rõ ràng" },
                             { en: "prioritize important urgent tasks", vn: "ưu tiên các nhiệm vụ quan trọng cấp bách" },
-                            { en: "meet strict deadlines easily", vn: "đáp ứng các hạn chót nghiêm ngặt dễ dàng" },
-                            { en: "maintain high work productivity", vn: "duy trì hiệu suất làm việc cao" }
+                            { en: "set specific study hours", vn: "đặt ra các khung giờ học tập cụ thể" },
+                            { en: "avoid distractions from my phone", vn: "tránh sự xao nhãng từ điện thoại" },
+                            { en: "finish difficult assignments early", vn: "hoàn thành sớm các bài tập khó" }
                         ]
                     },
                     {
-                        title: "⏳ [Trì hoãn & Dễ phân tâm] (Cách 2):",
+                        title: "⏳ [Thói quen xấu] (Cách 2):",
                         items: [
-                            { en: "procrastinate on challenging tasks", vn: "chần chừ trước những nhiệm vụ khó" },
+                            { en: "procrastinate on challenging tasks", vn: "chần chừ trì hoãn trước những nhiệm vụ khó" },
                             { en: "waste time browsing social media", vn: "lãng phí thời gian lướt mạng xã hội" },
-                            { en: "struggle with tight schedules", vn: "chật vật với lịch trình bận rộn" },
-                            { en: "learn to set realistic goals", vn: "học cách đặt mục tiêu thực tế" }
+                            { en: "stay up late watching movies", vn: "thức khuya xem phim" },
+                            { en: "forget important study deadlines", vn: "quên các hạn chót học tập quan trọng" },
+                            { en: "leave homework until the last minute", vn: "để bài tập về nhà đến tận phút chót" }
                         ]
                     }
                 ],
@@ -12156,21 +13887,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "📱 [Ứng dụng lịch & Đặt báo thức] (Cách 1):",
+                        title: "📱 [Hành động lên lịch & Nhắc nhở] (Cách 1):",
                         items: [
                             { en: "schedule all study appointments", vn: "lên lịch cho mọi cuộc hẹn học tập" },
                             { en: "set helpful reminder notifications", vn: "cài đặt các thông báo nhắc nhở hữu ích" },
-                            { en: "track daily progress conveniently", vn: "theo dõi tiến độ hằng ngày tiện lợi" },
-                            { en: "avoid missing important events", vn: "tránh bỏ lỡ các sự kiện quan trọng" }
+                            { en: "track daily progress conveniently", vn: "theo dõi tiến độ hằng ngày một cách tiện lợi" },
+                            { en: "organize weekly deadlines by color", vn: "sắp xếp các hạn chót trong tuần theo màu sắc" },
+                            { en: "sync my timetable across devices", vn: "đồng bộ hóa thời khóa biểu trên các thiết bị" }
                         ]
                     },
                     {
-                        title: "📓 [Sổ tay giấy & Gạch bỏ mục tiêu] (Cách 2):",
+                        title: "📓 [Hoạt động ghi chép] (Cách 2):",
                         items: [
                             { en: "jot down daily action plans", vn: "ghi nhanh các kế hoạch hành động trong ngày" },
-                            { en: "organize study hours neatly", vn: "sắp xếp giờ học ngăn nắp" },
+                            { en: "organize study hours neatly", vn: "sắp xếp giờ học một cách ngăn nắp" },
+                            { en: "list top three daily priorities", vn: "liệt kê ba ưu tiên hàng đầu mỗi ngày" },
+                            { en: "write detailed weekly goals", vn: "viết các mục tiêu hàng tuần chi tiết" },
+                            { en: "plan my morning routine carefully", vn: "lên kế hoạch lịch trình buổi sáng cẩn thận" }
+                        ]
+                    },
+                    {
+                        title: "✨ [Cảm giác hài lòng] (Cách 2):",
+                        items: [
                             { en: "a great sense of accomplishment", vn: "cảm giác thành tựu tuyệt vời" },
-                            { en: "keep mind highly focused", vn: "giữ tâm trí tập trung cao độ" }
+                            { en: "high personal motivation", vn: "động lực cá nhân cao" },
+                            { en: "clear mental focus", vn: "sự tập trung tinh thần rõ rệt" },
+                            { en: "peace of mind every evening", vn: "sự an tâm vào mỗi buổi tối" }
                         ]
                     }
                 ],
@@ -12194,7 +13936,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Giảm căng thẳng & Cân bằng cuộc sống - Tránh tình trạng quá tải và có thời gian thư giãn):</div>
                     <div class="topic-formula-text">
-                        → Time management is extremely essential. It helps people <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span> and maintain <span class="formula-bracket-hl">[lợi ích 2]</span> without feeling overwhelmed.
+                        → Time management is extremely essential. It helps people <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span> and <span class="formula-bracket-hl">[lợi ích 2 - Vo]</span> without feeling overwhelmed.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -12205,21 +13947,23 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🧘 [Giảm áp lực & Cân bằng lối sống] (Cách 1):",
+                        title: "🧘 [Lợi ích cân bằng cuộc sống] (Cách 1):",
                         items: [
                             { en: "avoid unnecessary stress", vn: "tránh sự căng thẳng không cần thiết" },
-                            { en: "a healthy work-life balance", vn: "sự cân bằng lành mạnh giữa công việc và cuộc sống" },
-                            { en: "enjoy guilt-free leisure time", vn: "tận hưởng thời gian rảnh rỗi thoải mái" },
-                            { en: "prevent mental exhaustion", vn: "ngăn ngừa kiệt sức tinh thần" }
+                            { en: "maintain a healthy work-life balance", vn: "duy trì sự cân bằng lành mạnh giữa công việc và cuộc sống" },
+                            { en: "enjoy guilt-free leisure time", vn: "tận hưởng thời gian giải trí thoải mái" },
+                            { en: "prevent mental exhaustion", vn: "ngăn ngừa sự kiệt sức về tinh thần" },
+                            { en: "have enough time for family and rest", vn: "có đủ thời gian cho gia đình và nghỉ ngơi" }
                         ]
                     },
                     {
-                        title: "🚀 [Thành công sự nghiệp & Uy tín] (Cách 2):",
+                        title: "🚀 [Lợi ích sự nghiệp] (Cách 2):",
                         items: [
                             { en: "achieve ambitious long-term goals", vn: "đạt được những mục tiêu dài hạn đầy tham vọng" },
                             { en: "build professional personal credibility", vn: "xây dựng uy tín cá nhân chuyên nghiệp" },
                             { en: "gain high respect from colleagues", vn: "nhận được sự tôn trọng lớn từ đồng nghiệp" },
-                            { en: "open promising promotion opportunities", vn: "mở ra những cơ hội thăng tiến đầy triển vọng" }
+                            { en: "open promising promotion opportunities", vn: "mở ra những cơ hội thăng tiến đầy triển vọng" },
+                            { en: "boost daily work productivity", vn: "nâng cao năng suất làm việc hằng ngày" }
                         ]
                     }
                 ],
@@ -12261,21 +14005,23 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "👨‍👩‍👦 [Coi trọng gia đình & Bữa cơm sum họp] (Cách 1):",
+                        title: "👨‍👩‍👦 [Hoạt động gia đình] (Cách 1):",
                         items: [
-                            { en: "cooking dinner for my parents", vn: "nấu bữa tối cho bố mẹ" },
-                            { en: "sharing daily stories with family members", vn: "chia sẻ những mẩu chuyện hằng ngày với người thân" },
-                            { en: "cherish warm household bonds", vn: "trân trọng tình cảm gia đình ấm cúng" },
-                            { en: "care for family health", vn: "chăm sóc sức khỏe gia đình" }
+                            { en: "cook dinner for my parents", vn: "nấu bữa tối cho bố mẹ" },
+                            { en: "share daily stories with family members", vn: "chia sẻ những câu chuyện hằng ngày với người thân" },
+                            { en: "clean and decorate our house together", vn: "cùng nhau dọn dẹp và trang trí nhà cửa" },
+                            { en: "watch evening TV shows with my parents", vn: "xem các chương trình tivi buổi tối cùng bố mẹ" },
+                            { en: "take care of my family's health", vn: "chăm sóc sức khỏe cho cả gia đình" }
                         ]
                     },
                     {
-                        title: "💼 [Độc lập & Xây dựng sự nghiệp] (Cách 2):",
+                        title: "💼 [Ưu tiên cuộc sống độc lập] (Cách 2):",
                         items: [
-                            { en: "building my professional career", vn: "xây dựng sự nghiệp chuyên môn" },
-                            { en: "networking with ambitious colleagues", vn: "giao lưu kết nối với những đồng nghiệp cầu tiến" },
+                            { en: "build my professional career", vn: "xây dựng sự nghiệp chuyên môn của mình" },
+                            { en: "network with ambitious colleagues", vn: "giao lưu kết nối với những đồng nghiệp cầu tiến" },
                             { en: "pursue personal life adventures", vn: "theo đuổi những chuyến phiêu lưu cuộc sống cá nhân" },
-                            { en: "live an active outgoing lifestyle", vn: "sống một phong cách sống năng động hướng ngoại" }
+                            { en: "explore new cities with friends", vn: "khám phá những thành phố mới cùng bạn bè" },
+                            { en: "attend professional skill workshops", vn: "tham gia các buổi hội thảo kỹ năng chuyên môn" }
                         ]
                     }
                 ],
@@ -12310,21 +14056,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "💖 [Nhân ái & Thấu hiểu sâu sắc] (Cách 1):",
+                        title: "💖 [Phẩm chất tính cách] (Cách 1):",
                         items: [
-                            { en: "caring and deeply understanding", vn: "biết quan tâm và thấu hiểu sâu sắc" },
+                            { en: "caring", vn: "biết quan tâm chăm sóc" },
+                            { en: "deeply understanding", vn: "thấu hiểu sâu sắc" },
                             { en: "patient in daily conversations", vn: "kiên nhẫn trong các cuộc trò chuyện thường nhật" },
-                            { en: "encourage partner through hard times", vn: "động viên bạn đời vượt qua giai đoạn khó khăn" },
-                            { en: "create a loving peaceful home", vn: "tạo dựng một mái ấm yêu thương bình yên" }
+                            { en: "faithful and honest", vn: "chung thủy và chân thành" },
+                            { en: "gentle and empathetic", vn: "dịu dàng và giàu lòng thấu cảm" }
                         ]
                     },
                     {
-                        title: "💡 [Độc lập & Quán xuyến tài chính] (Cách 2):",
+                        title: "🌟 [Phẩm chất hiện đại] (Cách 2):",
                         items: [
                             { en: "strong independence and financial wisdom", vn: "sự độc lập vững vàng và sự thông thái tài chính" },
-                            { en: "manage household expenses wisely", vn: "quản lý chi tiêu gia đình thông minh" },
+                            { en: "high emotional intelligence", vn: "trí tuệ cảm xúc cao" },
+                            { en: "confidence and self-respect", vn: "sự tự tin và lòng tự trọng" },
+                            { en: "practical life management skills", vn: "kỹ năng quán xuyến cuộc sống thực tế" }
+                        ]
+                    },
+                    {
+                        title: "💡 [Năng lực quán xuyến] (Cách 2):",
+                        items: [
+                            { en: "manage household expenses wisely", vn: "quản lý chi tiêu gia đình một cách thông minh" },
                             { en: "balance work and family duties", vn: "cân bằng giữa công việc và trách nhiệm gia đình" },
-                            { en: "respect mutual equality", vn: "tôn trọng sự bình đẳng đôi bên" }
+                            { en: "create a loving and peaceful home", vn: "tạo dựng một mái ấm yêu thương và bình yên" },
+                            { en: "educate children with patience", vn: "giáo dục con cái bằng sự kiên nhẫn" },
+                            { en: "solve family conflicts calmly", vn: "giải quyết các bất đồng gia đình một cách êm đẹp" }
                         ]
                     }
                 ],
@@ -12348,7 +14105,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Chắc chắn sẽ thay đổi, trở nên điềm đạm, kiên nhẫn và chín chắn hơn nhờ vốn sống):</div>
                     <div class="topic-formula-text">
-                        → Yes, I think so. Life experiences will make me <span class="formula-bracket-hl">[tính cách thay đổi 1]</span> and <span class="formula-bracket-hl">[tính cách thay đổi 2]</span> when facing difficult challenges.
+                        → Yes, I think so. Life experiences will make me <span class="formula-bracket-hl">[tính cách thay đổi 1 - Vo]</span> and <span class="formula-bracket-hl">[tính cách thay đổi 2 - Vo]</span> when facing difficult challenges.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -12359,21 +14116,23 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🧘 [Điềm tĩnh & Chín chắn hơn] (Cách 1):",
+                        title: "🧘 [Sự thay đổi tích cực] (Cách 1):",
                         items: [
-                            { en: "much more mature and patient", vn: "chín chắn và kiên nhẫn hơn nhiều" },
-                            { en: "calm in stressful situations", vn: "điềm tĩnh trong các tình huống căng thẳng" },
+                            { en: "become much more mature and patient", vn: "trở nên chín chắn và kiên nhẫn hơn nhiều" },
+                            { en: "stay calm in stressful situations", vn: "giữ được sự điềm tĩnh trong các tình huống căng thẳng" },
                             { en: "listen to others with empathy", vn: "lắng nghe người khác với sự thấu cảm" },
-                            { en: "gain valuable life wisdom", vn: "tích lũy vốn sống quý báu" }
+                            { en: "gain valuable life wisdom", vn: "tích lũy vốn sống quý báu" },
+                            { en: "control my personal emotions better", vn: "kiểm soát cảm xúc cá nhân tốt hơn" }
                         ]
                     },
                     {
-                        title: "☀️ [Giá trị cốt lõi & Giữ nguyên bản sắc] (Cách 2):",
+                        title: "☀️ [Giá trị cốt lõi] (Cách 2):",
                         items: [
-                            { en: "cheerful optimism and genuine honesty", vn: "tinh thần lạc quan vui vẻ và sự trung thực chân thành" },
-                            { en: "stay true to personal principles", vn: "trung thành với các nguyên tắc cá nhân" },
-                            { en: "protect authentic identity", vn: "bảo vệ bản sắc chân thật" },
-                            { en: "remain positive through all ages", vn: "giữ tinh thần tích cực qua mọi độ tuổi" }
+                            { en: "cheerful optimism", vn: "tinh thần lạc quan vui vẻ" },
+                            { en: "genuine honesty", vn: "sự trung thực chân thành" },
+                            { en: "kindness toward other people", vn: "lòng tốt đối với mọi người" },
+                            { en: "strong family devotion", vn: "sự gắn bó hết lòng vì gia đình" },
+                            { en: "passion for lifelong learning", vn: "niềm đam mê học hỏi suốt đời" }
                         ]
                     }
                 ],
@@ -12404,7 +14163,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Đạt được học bổng đại học hoặc giải thưởng sau nhiều tháng nỗ lực học tập):</div>
                     <div class="topic-formula-text">
-                        → Yes, I have. Last year, I <span class="formula-bracket-hl">[thành tựu đạt được - Ved]</span> after months of hard study. I felt <span class="formula-bracket-hl">[tính từ cảm xúc]</span>.
+                        → Yes, I have. Last year, I <span class="formula-bracket-hl">[thành tựu đạt được - V2/ed]</span> after months of hard study. I felt <span class="formula-bracket-hl">[tính từ cảm xúc]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -12415,21 +14174,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏆 [Thành tựu học tập & Tự hào] (Cách 1):",
+                        title: "🏆 [Thành tựu đạt được] (Cách 1):",
                         items: [
                             { en: "win a university scholarship", vn: "giành được một suất học bổng đại học" },
                             { en: "pass a difficult English exam", vn: "vượt qua kỳ thi tiếng Anh khó khăn" },
-                            { en: "extremely proud and grateful", vn: "vô cùng tự hào và biết ơn" },
-                            { en: "gain strong personal confidence", vn: "có thêm sự tự tin cá nhân mạnh mẽ" }
+                            { en: "get high scores in my final exams", vn: "đạt điểm cao trong kỳ thi cuối kỳ" },
+                            { en: "win first prize in a school contest", vn: "giành giải nhất trong một cuộc thi ở trường" },
+                            { en: "complete a challenging group project", vn: "hoàn thành một dự án nhóm đầy thử thách" }
                         ]
                     },
                     {
-                        title: "🌱 [Kiên trì học hỏi mỗi ngày] (Cách 2):",
+                        title: "😊 [Tính từ cảm xúc] (Cách 1):",
+                        items: [
+                            { en: "extremely proud and grateful", vn: "vô cùng tự hào và biết ơn" },
+                            { en: "very happy and confident", vn: "rất hạnh phúc và tự tin" },
+                            { en: "deeply satisfied and relieved", vn: "vô cùng hài lòng và nhẹ nhõm" },
+                            { en: "delighted with my own effort", vn: "vui sướng với nỗ lực của chính mình" }
+                        ]
+                    },
+                    {
+                        title: "🌱 [Hành động nỗ lực hằng ngày] (Cách 2):",
                         items: [
                             { en: "study hard at university", vn: "học tập chăm chỉ ở trường đại học" },
                             { en: "practice practical job skills", vn: "rèn luyện các kỹ năng công việc thực tế" },
                             { en: "pursue future career goals", vn: "theo đuổi các mục tiêu sự nghiệp tương lai" },
-                            { en: "stay patient and determined", vn: "luôn kiên nhẫn và quyết tâm" }
+                            { en: "improve my foreign language skills", vn: "cải thiện kỹ năng ngoại ngữ của bản thân" },
+                            { en: "read useful professional books", vn: "đọc những cuốn sách chuyên ngành bổ ích" }
                         ]
                     }
                 ],
@@ -12464,21 +14234,23 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "👨‍👩‍👧 [Bố mẹ yêu thương & Đồng hành] (Cách 1):",
+                        title: "👨‍👩‍👧 [Hành động ủng hộ của bố mẹ] (Cách 1):",
                         items: [
                             { en: "encourage my personal dreams", vn: "khuyến khích những ước mơ cá nhân của tôi" },
                             { en: "give helpful life advice", vn: "đưa ra những lời khuyên cuộc sống hữu ích" },
                             { en: "feel happy for my progress", vn: "cảm thấy hạnh phúc trước sự tiến bộ của tôi" },
-                            { en: "celebrate with a warm dinner", vn: "ăn mừng bằng một bữa tối ấm cúng" }
+                            { en: "celebrate with a warm dinner", vn: "ăn mừng bằng một bữa tối ấm cúng" },
+                            { en: "support me unconditionally", vn: "ủng hộ tôi vô điều kiện" }
                         ]
                     },
                     {
-                        title: "🎉 [Bạn thân & Cùng ăn mừng] (Cách 2):",
+                        title: "🎉 [Hoạt động ăn mừng cùng bạn thân] (Cách 2):",
                         items: [
                             { en: "go out for delicious coffee", vn: "ra ngoài uống cà phê ngon" },
                             { en: "enjoy a small party", vn: "tận hưởng một bữa tiệc nhỏ" },
                             { en: "double our joyful feelings", vn: "nhân đôi cảm xúc vui vẻ của chúng tôi" },
-                            { en: "motivate each other to study", vn: "thúc đẩy nhau cùng học tập" }
+                            { en: "motivate each other to study", vn: "thúc đẩy nhau cùng học tập" },
+                            { en: "take commemorative photos", vn: "chụp những bức ảnh kỷ niệm" }
                         ]
                     }
                 ],
@@ -12513,21 +14285,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "💪 [Chăm chỉ & Kỷ luật tự giác] (Cách 1):",
+                        title: "💪 [Phẩm chất thành công] (Cách 1):",
                         items: [
                             { en: "hard work", vn: "sự làm việc chăm chỉ" },
                             { en: "strong self-discipline", vn: "tính kỷ luật tự giác mạnh mẽ" },
-                            { en: "overcome difficult obstacles", vn: "vượt qua những chướng ngại vật khó khăn" },
-                            { en: "never give up on goals", vn: "không bao giờ từ bỏ mục tiêu" }
+                            { en: "great patience", vn: "sự kiên nhẫn to lớn" },
+                            { en: "high determination", vn: "sự quyết tâm cao độ" }
                         ]
                     },
                     {
-                        title: "📚 [Cầu tiến & Học hỏi không ngừng] (Cách 2):",
+                        title: "⛰️ [Lợi ích vượt khó] (Cách 1):",
+                        items: [
+                            { en: "overcome difficult obstacles", vn: "vượt qua những chướng ngại vật khó khăn" },
+                            { en: "never give up on goals", vn: "không bao giờ từ bỏ mục tiêu" },
+                            { en: "achieve long-term ambitions", vn: "đạt được những hoài bão dài hạn" },
+                            { en: "stay strong after failures", vn: "giữ vững tinh thần sau những thất bại" },
+                            { en: "turn dreams into reality", vn: "biến ước mơ thành hiện thực" }
+                        ]
+                    },
+                    {
+                        title: "📚 [Thói quen tốt trong công việc] (Cách 2):",
                         items: [
                             { en: "learn new professional skills", vn: "học hỏi các kỹ năng chuyên môn mới" },
                             { en: "maintain a positive attitude", vn: "duy trì một thái độ tích cực" },
                             { en: "adapt quickly to modern changes", vn: "thích nghi nhanh với những thay đổi hiện đại" },
-                            { en: "learn valuable lessons from mistakes", vn: "rút ra bài học quý giá từ những sai lầm" }
+                            { en: "learn valuable lessons from mistakes", vn: "rút ra bài học quý giá từ những sai lầm" },
+                            { en: "manage their time effectively", vn: "quản lý thời gian của họ một cách hiệu quả" }
                         ]
                     }
                 ],
@@ -12569,21 +14352,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "📱 [Mạng xã hội & Điện thoại] (Cách 1):",
+                        title: "📱 [Nền tảng trực tuyến] (Cách 1):",
                         items: [
                             { en: "Facebook and YouTube", vn: "Facebook và YouTube" },
-                            { en: "watch funny videos online", vn: "xem các video vui nhộn trực tuyến" },
-                            { en: "browse daily news feeds", vn: "lướt bảng tin hằng ngày" },
-                            { en: "appear every few minutes", vn: "xuất hiện sau mỗi vài phút" }
+                            { en: "popular social media platforms", vn: "các nền tảng mạng xã hội phổ biến" },
+                            { en: "TikTok and Instagram", vn: "TikTok và Instagram" },
+                            { en: "online news websites", vn: "các trang web tin tức trực tuyến" }
                         ]
                     },
                     {
-                        title: "🏙️ [Biển quảng cáo đường phố & Siêu thị] (Cách 2):",
+                        title: "🎬 [Hoạt động giải trí] (Cách 1):",
+                        items: [
+                            { en: "watch funny videos online", vn: "xem các video vui nhộn trực tuyến" },
+                            { en: "browse daily news feeds", vn: "lướt bảng tin hằng ngày" },
+                            { en: "listen to music on my phone", vn: "nghe nhạc trên điện thoại" },
+                            { en: "read entertainment articles", vn: "đọc các bài báo giải trí" },
+                            { en: "play mobile games", vn: "chơi trò chơi trên điện thoại" }
+                        ]
+                    },
+                    {
+                        title: "🏙️ [Vị trí ngoài trời] (Cách 2):",
                         items: [
                             { en: "large street billboards", vn: "các tấm biển quảng cáo lớn trên phố" },
                             { en: "digital screens in shopping malls", vn: "màn hình kỹ thuật số trong trung tâm thương mại" },
-                            { en: "catch public attention easily", vn: "dễ dàng thu hút sự chú ý của công chúng" },
-                            { en: "promote new fashion brands", vn: "quảng bá các thương hiệu thời trang mới" }
+                            { en: "public buses and bus stops", vn: "xe buýt công cộng và trạm dừng xe buýt" },
+                            { en: "LED boards at busy intersections", vn: "bảng đèn LED ở các ngã tư đông đúc" },
+                            { en: "supermarket entrance banners", vn: "băng rôn trước cổng siêu thị" }
                         ]
                     }
                 ],
@@ -12618,21 +14412,31 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏷️ [Săn khuyến mãi & Tìm sản phẩm] (Cách 1):",
+                        title: "🏷️ [Nội dung quảng cáo hấp dẫn] (Cách 1):",
                         items: [
                             { en: "attractive discount vouchers for clothes", vn: "các mã giảm giá quần áo hấp dẫn" },
-                            { en: "check product details and prices", vn: "kiểm tra thông tin chi tiết và giá sản phẩm" },
-                            { en: "read honest customer reviews", vn: "đọc đánh giá chân thực của khách hàng" },
-                            { en: "save money on online shopping", vn: "tiết kiệm tiền khi mua sắm trực tuyến" }
+                            { en: "special flash sales on books", vn: "các đợt giảm giá chớp nhoáng cho sách vở" },
+                            { en: "new English learning courses", vn: "các khóa học tiếng Anh mới" },
+                            { en: "useful technological gadgets", vn: "các thiết bị công nghệ hữu ích" }
                         ]
                     },
                     {
-                        title: "🛡️ [Tránh phiền nhiễu & Bảo mật] (Cách 2):",
+                        title: "🔍 [Mục đích tìm hiểu] (Cách 1):",
+                        items: [
+                            { en: "check product details and prices", vn: "kiểm tra thông tin chi tiết và giá sản phẩm" },
+                            { en: "read honest customer reviews", vn: "đọc đánh giá chân thực của khách hàng" },
+                            { en: "save money on online shopping", vn: "tiết kiệm tiền khi mua sắm trực tuyến" },
+                            { en: "compare prices between different shops", vn: "so sánh giá cả giữa các cửa hàng khác nhau" },
+                            { en: "get free shipping codes", vn: "nhận mã miễn phí vận chuyển" }
+                        ]
+                    },
+                    {
+                        title: "🛡️ [Mối lo ngại bảo mật] (Cách 2):",
                         items: [
                             { en: "dangerous computer viruses and scams", vn: "vi-rút máy tính nguy hiểm và lừa đảo" },
-                            { en: "protect personal data privacy", vn: "bảo vệ quyền riêng tư dữ liệu cá nhân" },
-                            { en: "skip ads immediately", vn: "bỏ qua quảng cáo ngay lập tức" },
-                            { en: "avoid wasting precious time", vn: "tránh lãng phí thời gian quý báu" }
+                            { en: "personal data leaks", vn: "việc rò rỉ dữ liệu cá nhân" },
+                            { en: "fake shopping links", vn: "các đường link mua sắm giả mạo" },
+                            { en: "online financial fraud", vn: "gian lận tài chính trực tuyến" }
                         ]
                     }
                 ],
@@ -12667,21 +14471,40 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "😄 [Quảng cáo hài hước & Âm nhạc bắt tai] (Cách 1):",
+                        title: "😄 [Loại quảng cáo yêu thích] (Cách 1):",
                         items: [
                             { en: "funny and creative advertisements", vn: "những quảng cáo hài hước và sáng tạo" },
-                            { en: "laugh after a tiring day", vn: "cười sảng khoái sau một ngày mệt mỏi" },
-                            { en: "remember the brand", vn: "ghi nhớ thương hiệu" },
-                            { en: "reduce daily work pressure", vn: "giảm bớt áp lực công việc hằng ngày" }
+                            { en: "humorous animated commercials", vn: "các quảng cáo hoạt hình vui nhộn" },
+                            { en: "short musical video ads", vn: "các quảng cáo video âm nhạc ngắn" },
+                            { en: "colorful food and drink commercials", vn: "các quảng cáo đồ ăn thức uống đầy màu sắc" }
                         ]
                     },
                     {
-                        title: "🧧 [Quảng cáo Tết & Tình cảm gia đình] (Cách 2):",
+                        title: "🎵 [Lợi ích tinh thần & Ghi nhớ] (Cách 1):",
+                        items: [
+                            { en: "laugh after a tiring day", vn: "cười sảng khoái sau một ngày mệt mỏi" },
+                            { en: "remember the brand", vn: "ghi nhớ thương hiệu" },
+                            { en: "reduce daily work pressure", vn: "giảm bớt áp lực công việc hằng ngày" },
+                            { en: "feel cheerful and relaxed", vn: "cảm thấy vui vẻ và thư giãn" },
+                            { en: "discover interesting new products", vn: "khám phá những sản phẩm mới thú vị" }
+                        ]
+                    },
+                    {
+                        title: "🧧 [Loại quảng cáo cảm xúc] (Cách 2):",
                         items: [
                             { en: "touching storytelling commercials", vn: "các quảng cáo kể chuyện đầy xúc động" },
+                            { en: "emotional family short films", vn: "những thước phim ngắn giàu cảm xúc về gia đình" },
+                            { en: "traditional Tet holiday ads", vn: "các quảng cáo dịp Tết cổ truyền" },
+                            { en: "inspirational community videos", vn: "các video truyền cảm hứng cộng đồng" }
+                        ]
+                    },
+                    {
+                        title: "💖 [Thông điệp ý nghĩa] (Cách 2):",
+                        items: [
                             { en: "meaningful and warm messages", vn: "những thông điệp ý nghĩa và ấm áp" },
-                            { en: "remind people to return home", vn: "nhắc nhở mọi người trở về nhà" },
-                            { en: "cherish precious family moments", vn: "trân trọng những khoảnh khắc gia đình quý giá" }
+                            { en: "deep humanistic values", vn: "những giá trị nhân văn sâu sắc" },
+                            { en: "sweet reminders of home reunion", vn: "những lời nhắc nhở ngọt ngào về sự đoàn viên" },
+                            { en: "great appreciation for parents", vn: "lòng biết ơn sâu sắc đối với cha mẹ" }
                         ]
                     }
                 ],
@@ -12723,21 +14546,23 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🍲 [Bữa tối sum họp gia đình] (Cách 1):",
+                        title: "🍲 [Hoạt động sum họp bữa tối] (Cách 1):",
                         items: [
                             { en: "gather around the dining table", vn: "quây quần bên bàn ăn" },
                             { en: "chat happily together", vn: "trò chuyện vui vẻ cùng nhau" },
                             { en: "enjoy warm delicious dishes", vn: "thưởng thức những món ăn nóng hổi thơm ngon" },
-                            { en: "strengthen close family bonds", vn: "thắt chặt tình cảm gia đình gắn bó" }
+                            { en: "strengthen close family bonds", vn: "thắt chặt tình cảm gia đình gắn bó" },
+                            { en: "share interesting daily stories", vn: "chia sẻ những câu chuyện thú vị trong ngày" }
                         ]
                     },
                     {
-                        title: "🥐 [Bữa sáng giàu năng lượng] (Cách 2):",
+                        title: "🥐 [Lợi ích của bữa sáng] (Cách 2):",
                         items: [
                             { en: "recharge my morning energy", vn: "nạp đầy năng lượng buổi sáng" },
                             { en: "focus better", vn: "tập trung tốt hơn" },
                             { en: "enjoy a hot bowl of pho", vn: "thưởng thức một bát phở nóng hổi" },
-                            { en: "keep my body active", vn: "giữ cho cơ thể luôn năng động" }
+                            { en: "keep my body active", vn: "giữ cho cơ thể luôn năng động" },
+                            { en: "improve my memory and mood", vn: "cải thiện trí nhớ và tâm trạng của tôi" }
                         ]
                     }
                 ],
@@ -12772,21 +14597,39 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🍚 [Thực đơn bữa cơm Việt Nam] (Cách 1):",
+                        title: "🍖 [Món mặn chính] (Cách 1):",
                         items: [
                             { en: "braised pork or fried fish", vn: "thịt kho hoặc cá rán" },
-                            { en: "a bowl of vegetable soup", vn: "một bát canh rau" },
-                            { en: "fresh boiled green vegetables", vn: "rau xanh luộc tươi ngon" },
-                            { en: "spicy fish dipping sauce", vn: "nước mắm chấm cay nồng" }
+                            { en: "roasted chicken or beef stir-fry", vn: "gà rang hoặc thịt bò xào" },
+                            { en: "stuffed tofu with tomato sauce", vn: "đậu phụ nhồi thịt sốt cà chua" },
+                            { en: "boiled pork with fish sauce", vn: "thịt luộc chấm nước mắm" }
                         ]
                     },
                     {
-                        title: "🍉 [Hài hòa dinh dưỡng & Tráng miệng] (Cách 2):",
+                        title: "🥬 [Món rau & Canh] (Cách 1):",
+                        items: [
+                            { en: "a bowl of vegetable soup", vn: "một bát canh rau" },
+                            { en: "fresh boiled green vegetables", vn: "rau xanh luộc tươi ngon" },
+                            { en: "sour fish soup", vn: "canh chua cá" },
+                            { en: "stir-fried morning glory with garlic", vn: "rau muống xào tỏi" }
+                        ]
+                    },
+                    {
+                        title: "🍱 [Nhóm thức ăn chính] (Cách 2):",
                         items: [
                             { en: "savory meat dishes and greens", vn: "các món thịt đậm đà và rau xanh" },
+                            { en: "fresh seafood and hot soup", vn: "hải sản tươi sống và canh nóng" },
+                            { en: "healthy home-cooked dishes", vn: "các món ăn gia đình lành mạnh" },
+                            { en: "protein-rich meat and fiber-rich vegetables", vn: "thịt giàu đạm và rau giàu chất xơ" }
+                        ]
+                    },
+                    {
+                        title: "🍉 [Món tráng miệng] (Cách 2):",
+                        items: [
                             { en: "sweet tropical fresh fruits", vn: "trái cây nhiệt đới tươi ngọt" },
-                            { en: "share dishes from common plates", vn: "cùng gắp thức ăn chung trên đĩa" },
-                            { en: "provide healthy daily vitamins", vn: "cung cấp vitamin lành mạnh hằng ngày" }
+                            { en: "juicy watermelon or mango slices", vn: "những miếng dưa hấu hoặc xoài mọng nước" },
+                            { en: "homemade yogurt or sweet soup", vn: "sữa chua nhà làm hoặc chè ngọt" },
+                            { en: "freshly peeled oranges and bananas", vn: "cam tươi bóc vỏ và chuối" }
                         ]
                     }
                 ],
@@ -12821,21 +14664,23 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "💪 [Cung cấp dinh dưỡng & Sức khỏe] (Cách 1):",
+                        title: "💪 [Vai trò dinh dưỡng & Sức khỏe] (Cách 1):",
                         items: [
                             { en: "provide essential nutrients and energy", vn: "cung cấp dưỡng chất và năng lượng thiết yếu" },
                             { en: "stay healthy and productive", vn: "duy trì sự khỏe mạnh và năng suất" },
                             { en: "boost my immune system", vn: "tăng cường hệ miễn dịch của tôi" },
-                            { en: "prevent common physical illnesses", vn: "ngăn ngừa các căn bệnh thể chất thông thường" }
+                            { en: "prevent common physical illnesses", vn: "ngăn ngừa các căn bệnh thể chất thông thường" },
+                            { en: "maintain strong physical endurance", vn: "duy trì sức bền thể chất dẻo dai" }
                         ]
                     },
                     {
-                        title: "❤️ [Gắn kết gia đình & Thư giãn] (Cách 2):",
+                        title: "❤️ [Lợi ích gắn kết & Tinh thần] (Cách 2):",
                         items: [
                             { en: "connect deeply with my family", vn: "kết nối sâu sắc với gia đình" },
                             { en: "relieve daily work stress", vn: "giải tỏa căng thẳng công việc hằng ngày" },
                             { en: "enjoy warm peaceful moments", vn: "tận hưởng những khoảnh khắc bình yên ấm áp" },
-                            { en: "feel cared for at home", vn: "cảm thấy được quan tâm chăm sóc tại nhà" }
+                            { en: "feel cared for at home", vn: "cảm thấy được quan tâm chăm sóc tại nhà" },
+                            { en: "recharge my emotional energy", vn: "nạp lại nguồn năng lượng cảm xúc" }
                         ]
                     }
                 ],
@@ -12877,21 +14722,39 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🌸 [Tết Nguyên Đán & Đón năm mới] (Cách 1):",
+                        title: "🌸 [Tên lễ hội truyền thống] (Cách 1):",
                         items: [
                             { en: "Lunar New Year, or Tet", vn: "Tết Nguyên Đán" },
-                            { en: "the arrival of spring and family reunion", vn: "sự khởi đầu của mùa xuân và đoàn viên gia đình" },
-                            { en: "bring warm wishes for luck", vn: "mang lại những lời chúc may mắn ấm áp" },
-                            { en: "mark a fresh new beginning", vn: "đánh dấu một khởi đầu mới mẻ" }
+                            { en: "the traditional Tet Holiday", vn: "kỳ nghỉ Tết cổ truyền" },
+                            { en: "the Vietnamese Spring Festival", vn: "Lễ hội Mùa xuân của người Việt" },
+                            { en: "Hung Kings' Temple Festival", vn: "Lễ hội Đền Hùng" }
                         ]
                     },
                     {
-                        title: "🏮 [Tết Trung Thu & Đoàn viên] (Cách 2):",
+                        title: "🧧 [Ý nghĩa lễ hội] (Cách 1):",
+                        items: [
+                            { en: "the arrival of spring and family reunion", vn: "sự khởi đầu của mùa xuân và đoàn viên gia đình" },
+                            { en: "a fresh new beginning and good fortune", vn: "một khởi đầu mới mẻ và vận may tốt lành" },
+                            { en: "gratitude toward ancestors and parents", vn: "lòng biết ơn đối với tổ tiên và cha mẹ" },
+                            { en: "peace, health, and prosperity", vn: "sự bình an, sức khỏe và thịnh vượng" }
+                        ]
+                    },
+                    {
+                        title: "🏮 [Tên lễ hội mùa thu] (Cách 2):",
                         items: [
                             { en: "The Mid-Autumn Festival", vn: "Tết Trung Thu" },
+                            { en: "The Full Moon Festival", vn: "Lễ hội Trăng Rằm" },
+                            { en: "The Children's Lantern Festival", vn: "Lễ hội Rước đèn Thiếu nhi" },
+                            { en: "The Traditional Mooncake Festival", vn: "Lễ hội Bánh Trung thu truyền thống" }
+                        ]
+                    },
+                    {
+                        title: "🌕 [Ý nghĩa gắn kết] (Cách 2):",
+                        items: [
                             { en: "children's joy and warm family gatherings", vn: "niềm vui của trẻ thơ và sum họp gia đình ấm áp" },
-                            { en: "admire the bright full moon", vn: "ngắm nhìn ánh trăng rằm sáng tỏ" },
-                            { en: "preserve beautiful folk customs", vn: "gìn giữ những phong tục dân gian tươi đẹp" }
+                            { en: "loving family togetherness under the full moon", vn: "sự sum vầy gia đình yêu thương dưới ánh trăng rằm" },
+                            { en: "warm family gatherings and mooncakes", vn: "những buổi sum họp gia đình ấm áp và bánh trung thu" },
+                            { en: "preserving beautiful folk cultural values", vn: "việc gìn giữ những giá trị văn hóa dân gian tươi đẹp" }
                         ]
                     }
                 ],
@@ -12926,21 +14789,23 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🧧 [Trang trí nhà & Chúc Tết] (Cách 1):",
+                        title: "🧧 [Hoạt động chuẩn bị & Sum họp] (Cách 1):",
                         items: [
                             { en: "decorate their houses with peach blossoms", vn: "trang trí nhà cửa bằng hoa đào" },
                             { en: "visit relatives and give lucky money", vn: "thăm họ hàng và trao lì xì may mắn" },
                             { en: "prepare delicious square sticky rice cakes", vn: "chuẩn bị những chiếc bánh chưng thơm ngon" },
-                            { en: "pray at peaceful local pagodas", vn: "cầu bình an tại các ngôi chùa địa phương" }
+                            { en: "pray at peaceful local pagodas", vn: "cầu bình an tại các ngôi chùa địa phương" },
+                            { en: "clean and repaint their homes", vn: "dọn dẹp và sơn sửa lại nhà cửa" }
                         ]
                     },
                     {
-                        title: "🎆 [Bữa cơm tất niên & Xem pháo hoa] (Cách 2):",
+                        title: "🎆 [Hoạt động ăn uống & Lễ hội] (Cách 2):",
                         items: [
                             { en: "enjoy big traditional feast meals", vn: "thưởng thức những mâm cỗ truyền thống thịnh soạn" },
                             { en: "admire colorful fireworks displays", vn: "chiêm ngưỡng những màn trình diễn pháo hoa rực rỡ" },
                             { en: "enjoy exciting lion dances", vn: "thưởng thức những màn múa lân sôi động" },
-                            { en: "wear brand-new traditional ao dai", vn: "mặc những bộ áo dài truyền thống mới tinh" }
+                            { en: "wear brand-new traditional ao dai", vn: "mặc những bộ áo dài truyền thống mới tinh" },
+                            { en: "walk around colorful spring flower markets", vn: "dạo quanh các chợ hoa xuân rực rỡ" }
                         ]
                     }
                 ],
@@ -12975,21 +14840,23 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🏛️ [Gìn giữ bản sắc văn hóa dân tộc] (Cách 1):",
+                        title: "🏛️ [Hành động gìn giữ văn hóa] (Cách 1):",
                         items: [
                             { en: "preserve this sacred family tradition", vn: "gìn giữ truyền thống gia đình thiêng liêng này" },
                             { en: "cherish national cultural roots", vn: "trân trọng cội nguồn văn hóa dân tộc" },
                             { en: "pass down meaningful customs", vn: "truyền lại những phong tục ý nghĩa" },
-                            { en: "value warm reunion moments", vn: "đề cao những khoảnh khắc đoàn viên ấm áp" }
+                            { en: "value warm reunion moments", vn: "đề cao những khoảnh khắc đoàn viên ấm áp" },
+                            { en: "celebrate it with great pride", vn: "tổ chức lễ hội với niềm tự hào lớn lao" }
                         ]
                     },
                     {
-                        title: "⏳ [Giản lược nghi lễ & Hiện đại hóa] (Cách 2):",
+                        title: "⏳ [Thay đổi hiện đại] (Cách 2):",
                         items: [
                             { en: "simplify complicated traditional rituals", vn: "đơn giản hóa các nghi lễ truyền thống phức tạp" },
                             { en: "choose relaxing vacations", vn: "chọn các kỳ nghỉ thư giãn" },
                             { en: "reduce heavy cooking workloads", vn: "giảm bớt khối lượng nấu nướng nặng nhọc" },
-                            { en: "adapt to fast-paced urban lifestyles", vn: "thích nghi với lối sống đô thị nhịp độ nhanh" }
+                            { en: "adapt to fast-paced urban lifestyles", vn: "thích nghi với lối sống đô thị nhịp độ nhanh" },
+                            { en: "order ready-made traditional food", vn: "đặt mua các món ăn truyền thống làm sẵn" }
                         ]
                     }
                 ],
@@ -13031,21 +14898,39 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🌟 [Nghệ sĩ tài năng & Nhân ái] (Cách 1):",
+                        title: "🌟 [Tên người nổi tiếng] (Cách 1):",
                         items: [
                             { en: "the famous singer My Tam", vn: "nữ ca sĩ nổi tiếng Mỹ Tâm" },
-                            { en: "her outstanding musical talent", vn: "tài năng âm nhạc xuất chúng của cô ấy" },
-                            { en: "help poor people generously", vn: "hào phóng giúp đỡ những người nghèo khó" },
-                            { en: "maintain a clean personal image", vn: "giữ gìn hình ảnh cá nhân trong sạch" }
+                            { en: "the talented rapper Den Vau", vn: "nam rapper tài năng Đen Vâu" },
+                            { en: "Miss H'Hen Nie", vn: "Hoa hậu H'Hen Niê" },
+                            { en: "the popular singer Ha Anh Tuan", vn: "nam ca sĩ nổi tiếng Hà Anh Tuấn" }
                         ]
                     },
                     {
-                        title: "🏡 [Ngưỡng mộ người thân đời thực] (Cách 2):",
+                        title: "💎 [Phẩm chất đáng quý] (Cách 1):",
+                        items: [
+                            { en: "her outstanding musical talent", vn: "tài năng âm nhạc xuất chúng của cô ấy" },
+                            { en: "a clean and humble lifestyle", vn: "lối sống trong sạch và khiêm tốn" },
+                            { en: "strong dedication to art", vn: "sự cống hiến hết mình cho nghệ thuật" },
+                            { en: "a warm and kind-hearted personality", vn: "nhân cách ấm áp và giàu lòng nhân ái" }
+                        ]
+                    },
+                    {
+                        title: "🏡 [Người thân đáng kính] (Cách 2):",
                         items: [
                             { en: "my hard-working parents", vn: "bố mẹ tần tảo chăm chỉ của tôi" },
+                            { en: "my devoted mother", vn: "người mẹ tận tụy của tôi" },
+                            { en: "my wise grandfather", vn: "người ông thông thái của tôi" },
+                            { en: "my dedicated university teachers", vn: "những người thầy cô đại học tâm huyết của tôi" }
+                        ]
+                    },
+                    {
+                        title: "❤️ [Đức tính cao đẹp] (Cách 2):",
+                        items: [
                             { en: "their endless love and daily sacrifice", vn: "tình yêu thương và sự hy sinh hằng ngày vô bờ bến của họ" },
-                            { en: "focus on real-life role models", vn: "tập trung vào những tấm gương ngoài đời thực" },
-                            { en: "teach me valuable moral lessons", vn: "dạy cho tôi những bài học đạo đức quý giá" }
+                            { en: "their incredible patience and wisdom", vn: "sự kiên nhẫn và trí tuệ tuyệt vời của họ" },
+                            { en: "their strong moral values", vn: "những giá trị đạo đức vững chắc của họ" },
+                            { en: "their unconditional support for our family", vn: "sự hy sinh vô điều kiện của họ dành cho gia đình" }
                         ]
                     }
                 ],
@@ -13069,7 +14954,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời ĐÃ TỪNG - Gặp một ca sĩ nổi tiếng tại sự kiện âm nhạc và xin chụp ảnh kỷ niệm):</div>
                     <div class="topic-formula-text">
-                        → Yes, I have. Last year, I met <span class="formula-bracket-hl">[nhân vật nổi tiếng]</span> at a music concert and <span class="formula-bracket-hl">[hoạt động kỷ niệm - Ved]</span> together.
+                        → Yes, I have. Last year, I met <span class="formula-bracket-hl">[nhân vật nổi tiếng]</span> at a music concert and <span class="formula-bracket-hl">[hoạt động kỷ niệm - V2/ed]</span> together.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -13080,21 +14965,41 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "📸 [Gặp gỡ tại sự kiện âm nhạc] (Cách 1):",
+                        title: "🎤 [Nhân vật nổi tiếng] (Cách 1):",
                         items: [
                             { en: "a famous pop singer", vn: "một ca sĩ nhạc pop nổi tiếng" },
-                            { en: "ask for a quick photo", vn: "xin chụp chung một bức ảnh nhanh" },
-                            { en: "get a warm autograph", vn: "xin được chữ ký thân thiện" },
-                            { en: "feel extremely excited and lucky", vn: "cảm thấy vô cùng hào hứng và may mắn" }
+                            { en: "my favorite television actor", vn: "diễn viên truyền hình yêu thích của tôi" },
+                            { en: "a well-known football player", vn: "một cầu thủ bóng đá nổi tiếng" },
+                            { en: "a popular comedian", vn: "một danh hài được yêu mến" }
                         ]
                     },
                     {
-                        title: "📺 [Chỉ xem qua truyền hình & Mạng xã hội] (Cách 2):",
+                        title: "📸 [Hoạt động kỷ niệm] (Cách 1):",
+                        items: [
+                            { en: "ask for a quick photo", vn: "xin chụp chung một bức ảnh nhanh" },
+                            { en: "get a warm autograph", vn: "xin được chữ ký thân thiện" },
+                            { en: "shake hands happily", vn: "bắt tay nhau vui vẻ" },
+                            { en: "exchange a few friendly words", vn: "trao đổi vài lời hỏi thăm thân thiện" },
+                            { en: "sing along to hit songs", vn: "hát theo những bản nhạc đình đám" }
+                        ]
+                    },
+                    {
+                        title: "📺 [Phương tiện truyền thông] (Cách 2):",
                         items: [
                             { en: "television screens and social media", vn: "màn hình tivi và mạng xã hội" },
-                            { en: "attend concerts", vn: "tham dự các buổi hòa nhạc" },
-                            { en: "live in a quiet province", vn: "sống ở một tỉnh lẻ yên bình" },
-                            { en: "enjoy their performances from home", vn: "thưởng thức màn trình diễn của họ từ nhà" }
+                            { en: "YouTube and Facebook videos", vn: "các video trên YouTube và Facebook" },
+                            { en: "entertainment news websites", vn: "các trang web tin tức giải trí" },
+                            { en: "popular television game shows", vn: "các chương trình trò chơi truyền hình ăn khách" }
+                        ]
+                    },
+                    {
+                        title: "🎫 [Hoạt động sự kiện] (Cách 2):",
+                        items: [
+                            { en: "attend live music concerts", vn: "tham dự các buổi hòa nhạc trực tiếp" },
+                            { en: "join crowded fan meetings", vn: "tham gia các buổi họp mặt người hâm mộ đông đúc" },
+                            { en: "go to showbiz events", vn: "đi đến các sự kiện giải trí" },
+                            { en: "buy expensive concert tickets", vn: "mua vé xem hòa nhạc đắt đỏ" },
+                            { en: "travel to big cities for shows", vn: "đi đến các thành phố lớn để xem biểu diễn" }
                         ]
                     }
                 ],
@@ -13129,21 +15034,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🕊️ [Yêu thích cuộc sống bình dị & Riêng tư] (Cách 1):",
+                        title: "🔒 [Điều bị mất khi nổi tiếng] (Cách 1):",
                         items: [
                             { en: "personal privacy and freedom", vn: "quyền riêng tư và sự tự do cá nhân" },
-                            { en: "living a peaceful normal life", vn: "sống một cuộc đời bình thường yên ả" },
-                            { en: "avoid stressful public gossip", vn: "tránh những lời bàn tán căng thẳng của dư luận" },
-                            { en: "enjoy quiet moments with friends", vn: "tận hưởng những khoảnh khắc yên tĩnh bên bạn bè" }
+                            { en: "a peaceful daily routine", vn: "nhịp sống bình yên thường nhật" },
+                            { en: "comfortable private moments", vn: "những khoảnh khắc riêng tư thoải mái" },
+                            { en: "true peace of mind", vn: "sự bình yên thực sự trong tâm hồn" }
                         ]
                     },
                     {
-                        title: "✨ [Tạo sức ảnh hưởng & Giúp đỡ cộng đồng] (Cách 2):",
+                        title: "🕊️ [Lối sống mong muốn] (Cách 1):",
+                        items: [
+                            { en: "live a peaceful normal life", vn: "sống một cuộc đời bình thường yên ả" },
+                            { en: "avoid stressful public gossip", vn: "tránh những lời bàn tán căng thẳng của dư luận" },
+                            { en: "enjoy quiet moments with friends", vn: "tận hưởng những khoảnh khắc yên tĩnh bên bạn bè" },
+                            { en: "focus on my simple happiness", vn: "tập trung vào niềm hạnh phúc giản dị của mình" },
+                            { en: "walk freely on the streets", vn: "tự do dạo bước trên đường phố" }
+                        ]
+                    },
+                    {
+                        title: "✨ [Lợi ích cá nhân & Cộng đồng] (Cách 2):",
                         items: [
                             { en: "earn a high income", vn: "kiếm được mức thu nhập cao" },
                             { en: "inspire young people positively", vn: "truyền cảm hứng tích cực cho giới trẻ" },
                             { en: "support meaningful charity projects", vn: "ủng hộ các dự án từ thiện ý nghĩa" },
-                            { en: "share useful professional knowledge", vn: "chia sẻ kiến thức chuyên môn hữu ích" }
+                            { en: "share useful professional knowledge", vn: "chia sẻ kiến thức chuyên môn hữu ích" },
+                            { en: "help disadvantaged children", vn: "giúp đỡ những trẻ em có hoàn cảnh khó khăn" }
                         ]
                     }
                 ],
@@ -13185,21 +15101,33 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🤝 [Nhóm bạn thân gắn bó lâu năm] (Cách 1):",
+                        title: "🤝 [Hoạt động gắn kết bạn thân] (Cách 1):",
                         items: [
                             { en: "confide our deepest secrets", vn: "tâm sự những bí mật sâu kín nhất" },
                             { en: "help each other", vn: "giúp đỡ lẫn nhau" },
                             { en: "hang out at coffee shops", vn: "đi chơi ở các quán cà phê" },
-                            { en: "maintain a strong lifelong bond", vn: "duy trì mối gắn kết bền chặt suốt đời" }
+                            { en: "maintain a strong lifelong bond", vn: "duy trì mối gắn kết bền chặt suốt đời" },
+                            { en: "celebrate birthdays together", vn: "cùng nhau tổ chức mừng sinh nhật" }
                         ]
                     },
                     {
-                        title: "🧘 [Hướng nội & Thích độc lập] (Cách 2):",
+                        title: "🧘 [Thói quen cá nhân] (Cách 2):",
                         items: [
                             { en: "enjoy my own quiet company", vn: "tận hưởng khoảng lặng của riêng mình" },
-                            { en: "socializing in large groups", vn: "giao lưu trong các nhóm đông" },
                             { en: "keep polite relationships with colleagues", vn: "giữ mối quan hệ lịch sự với đồng nghiệp" },
-                            { en: "spend free time with family", vn: "dành thời gian rảnh rỗi bên gia đình" }
+                            { en: "spend free time with family", vn: "dành thời gian rảnh rỗi bên gia đình" },
+                            { en: "read books alone at home", vn: "đọc sách một mình ở nhà" },
+                            { en: "focus on my personal hobbies", vn: "tập trung vào các sở thích cá nhân" }
+                        ]
+                    },
+                    {
+                        title: "🎉 [Hoạt động giao lưu] (Cách 2):",
+                        items: [
+                            { en: "socialize in large groups", vn: "giao lưu trong các nhóm đông" },
+                            { en: "attend noisy night parties", vn: "tham dự những bữa tiệc đêm ồn ào" },
+                            { en: "gather at crowded places", vn: "tụ tập ở những nơi đông người" },
+                            { en: "make too many casual acquaintances", vn: "kết giao quá nhiều mối quan hệ xã giao" },
+                            { en: "go out every single weekend", vn: "ra ngoài đi chơi vào mỗi dịp cuối tuần" }
                         ]
                     }
                 ],
@@ -13234,21 +15162,23 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🎓 [Học cùng trường & Cùng tiến bộ] (Cách 1):",
+                        title: "🎓 [Hoạt động học tập & Sinh hoạt] (Cách 1):",
                         items: [
                             { en: "prepare for exams in the library", vn: "ôn thi trong thư viện" },
                             { en: "eat lunch together", vn: "ăn trưa cùng nhau" },
                             { en: "discuss difficult group projects", vn: "thảo luận các dự án nhóm khó" },
-                            { en: "create wonderful student memories", vn: "tạo nên những kỷ niệm sinh viên tuyệt vời" }
+                            { en: "create wonderful student memories", vn: "tạo nên những kỷ niệm sinh viên tuyệt vời" },
+                            { en: "share useful learning materials", vn: "chia sẻ các tài liệu học tập bổ ích" }
                         ]
                     },
                     {
-                        title: "📱 [Khác trường nhưng luôn giữ liên lạc] (Cách 2):",
+                        title: "📱 [Cách giữ liên lạc & Gặp mặt] (Cách 2):",
                         items: [
                             { en: "make video calls every weekend", vn: "gọi điện video vào mỗi cuối tuần" },
                             { en: "meet up during holidays", vn: "gặp mặt trong các kỳ nghỉ lễ" },
-                            { en: "pursue different academic majors", vn: "theo đuổi các chuyên ngành học thuật khác nhau" },
-                            { en: "keep our friendship very strong", vn: "giữ cho tình bạn luôn bền chặt" }
+                            { en: "chat daily in our group", vn: "trò chuyện hằng ngày trong nhóm chat" },
+                            { en: "keep our friendship very strong", vn: "giữ cho tình bạn luôn bền chặt" },
+                            { en: "go to our favorite cafe", vn: "đến quán cà phê quen thuộc của chúng tôi" }
                         ]
                     }
                 ],
@@ -13283,21 +15213,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "💖 [Điểm tựa tinh thần & Sẻ chia] (Cách 1):",
+                        title: "💖 [Vai trò tinh thần] (Cách 1):",
                         items: [
                             { en: "offer warm emotional support", vn: "mang lại chỗ dựa tinh thần ấm áp" },
-                            { en: "much more colorful and joyful", vn: "rực rỡ sắc màu và tràn ngập niềm vui hơn nhiều" },
                             { en: "reduce feelings of loneliness", vn: "giảm bớt cảm giác cô đơn" },
-                            { en: "give honest and helpful advice", vn: "đưa ra những lời khuyên chân thành và hữu ích" }
+                            { en: "give honest and helpful advice", vn: "đưa ra những lời khuyên chân thành và hữu ích" },
+                            { en: "listen to my daily worries", vn: "lắng nghe những nỗi lo thường ngày của tôi" },
+                            { en: "encourage me through hard times", vn: "động viên tôi vượt qua những lúc khó khăn" }
                         ]
                     },
                     {
-                        title: "🌟 [Cùng nhau học hỏi & Trưởng thành] (Cách 2):",
+                        title: "🌈 [Tính từ mô tả cuộc sống] (Cách 1):",
+                        items: [
+                            { en: "much more colorful and joyful", vn: "rực rỡ sắc màu và tràn ngập niềm vui hơn nhiều" },
+                            { en: "meaningful and happier", vn: "ý nghĩa và hạnh phúc hơn" },
+                            { en: "full of laughter and warmth", vn: "tràn ngập tiếng cười và sự ấm áp" },
+                            { en: "less stressful and lonely", vn: "bớt căng thẳng và cô đơn hơn" }
+                        ]
+                    },
+                    {
+                        title: "🌟 [Lợi ích phát triển bản thân] (Cách 2):",
                         items: [
                             { en: "learn valuable life perspectives", vn: "học hỏi những góc nhìn cuộc sống quý giá" },
                             { en: "become a more empathetic person", vn: "trở thành một người biết thấu cảm hơn" },
                             { en: "build strong social confidence", vn: "xây dựng sự tự tin xã hội vững vàng" },
-                            { en: "grow together toward future goals", vn: "cùng nhau trưởng thành hướng tới mục tiêu tương lai" }
+                            { en: "grow together toward future goals", vn: "cùng nhau trưởng thành hướng tới mục tiêu tương lai" },
+                            { en: "improve my communication skills", vn: "cải thiện kỹ năng giao tiếp của bản thân" }
                         ]
                     }
                 ],
@@ -13339,21 +15280,39 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🌾 [Cánh đồng xanh & Vật nuôi] (Cách 1):",
+                        title: "🌾 [Cảnh vật thực vật] (Cách 1):",
                         items: [
                             { en: "vast green rice fields and fruit orchards", vn: "những cánh đồng lúa xanh bao la và vườn cây ăn quả" },
-                            { en: "cows and chickens", vn: "bò và gà" },
                             { en: "fresh organic vegetable gardens", vn: "những khu vườn rau hữu cơ tươi tốt" },
-                            { en: "hard-working local farmers", vn: "những người nông dân địa phương chăm chỉ" }
+                            { en: "golden ripe cornfields", vn: "những cánh đồng ngô chín vàng" },
+                            { en: "lush green tea hills", vn: "những đồi chè xanh mướt" }
                         ]
                     },
                     {
-                        title: "🚜 [Vườn rau sạch & Máy móc nông nghiệp] (Cách 2):",
+                        title: "🐄 [Các loài vật nuôi] (Cách 1):",
+                        items: [
+                            { en: "cows and chickens", vn: "bò và gà" },
+                            { en: "buffaloes, ducks, and pigs", vn: "trâu, vịt và lợn" },
+                            { en: "sheep and goats", vn: "cừu và dê" },
+                            { en: "fish swimming in large ponds", vn: "đàn cá bơi lội trong các ao lớn" }
+                        ]
+                    },
+                    {
+                        title: "🏡 [Khu vực canh tác] (Cách 2):",
                         items: [
                             { en: "modern glass greenhouses for vegetables", vn: "nhà kính hiện đại trồng rau xanh" },
+                            { en: "golden ripe wheat fields", vn: "những cánh đồng lúa mì chín vàng" },
+                            { en: "clean strawberry and tomato gardens", vn: "những khu vườn dâu tây và cà chua sạch" },
+                            { en: "large dairy cattle pastures", vn: "những đồng cỏ chăn nuôi bò sữa rộng lớn" }
+                        ]
+                    },
+                    {
+                        title: "🚜 [Thiết bị nông nghiệp] (Cách 2):",
+                        items: [
                             { en: "big tractors and water pumps", vn: "những chiếc máy kéo lớn và máy bơm nước" },
                             { en: "automatic water irrigation systems", vn: "hệ thống tưới nước tự động" },
-                            { en: "golden ripe wheat fields", vn: "những cánh đồng lúa mì chín vàng" }
+                            { en: "modern harvesting machines", vn: "các loại máy gặt đập hiện đại" },
+                            { en: "solar panels and wind turbines", vn: "các tấm pin mặt trời và tua-bin gió" }
                         ]
                     }
                 ],
@@ -13388,21 +15347,23 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🍓 [Không khí trong lành & Hái trái cây] (Cách 1):",
+                        title: "🍓 [Trải nghiệm thiên nhiên & Nông trại] (Cách 1):",
                         items: [
                             { en: "breathe pure countryside air", vn: "hít thở bầu không khí miền quê trong lành" },
                             { en: "pick fresh ripe fruits directly", vn: "trực tiếp hái những trái chín tươi ngon" },
                             { en: "taste organic farm products", vn: "thưởng thức các nông sản hữu cơ" },
-                            { en: "take beautiful nature photos", vn: "chụp những bức ảnh thiên nhiên tuyệt đẹp" }
+                            { en: "take beautiful nature photos", vn: "chụp những bức ảnh thiên nhiên tuyệt đẹp" },
+                            { en: "feed cute farm animals", vn: "cho những con vật nuôi dễ thương ăn" }
                         ]
                     },
                     {
-                        title: "🌿 [Rời xa phố thị & Phục hồi năng lượng] (Cách 2):",
+                        title: "🌿 [Lợi ích giải tỏa & Tinh thần] (Cách 2):",
                         items: [
                             { en: "escape from noisy city traffic", vn: "thoát khỏi giao thông thành phố ồn ào" },
                             { en: "recharge my mental energy peacefully", vn: "nạp lại năng lượng tinh thần một cách yên bình" },
                             { en: "understand hard agricultural work", vn: "thấu hiểu công việc nhà nông vất vả" },
-                            { en: "enjoy slow and simple living", vn: "tận hưởng lối sống chậm rãi và giản dị" }
+                            { en: "enjoy slow and simple living", vn: "tận hưởng lối sống chậm rãi và giản dị" },
+                            { en: "relieve all my study stress", vn: "giải tỏa mọi căng thẳng học tập của tôi" }
                         ]
                     }
                 ],
@@ -13426,7 +15387,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Trụ cột nền kinh tế, đảm bảo an ninh lương thực và tạo việc làm cho hàng triệu người):</div>
                     <div class="topic-formula-text">
-                        → Yes, it's extremely important. Farming <span class="formula-bracket-hl">[vai trò lương thực 1 - Vs]</span> and <span class="formula-bracket-hl">[vai trò kinh tế 2 - Vs]</span> across our entire country.
+                        → Yes, it's extremely important. Farming <span class="formula-bracket-hl">[vai trò lương thực 1 - Vs/es]</span> and <span class="formula-bracket-hl">[vai trò kinh tế 2 - Vs/es]</span> across our entire country.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -13437,21 +15398,23 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🌾 [An ninh lương thực & Kinh tế] (Cách 1):",
+                        title: "🌾 [Vai trò lương thực & Kinh tế] (Cách 1):",
                         items: [
                             { en: "provide daily food for millions of citizens", vn: "cung cấp lương thực hằng ngày cho hàng triệu người dân" },
                             { en: "create jobs for rural workers", vn: "tạo việc làm cho người lao động nông thôn" },
                             { en: "boost national rice exports", vn: "thúc đẩy xuất khẩu gạo quốc gia" },
-                            { en: "support sustainable economic growth", vn: "hỗ trợ tăng trưởng kinh tế bền vững" }
+                            { en: "support sustainable economic growth", vn: "hỗ trợ tăng trưởng kinh tế bền vững" },
+                            { en: "ensure national food security", vn: "đảm bảo an ninh lương thực quốc gia" }
                         ]
                     },
                     {
-                        title: "🏭 [Chuyển dịch sang Công nghiệp & Dịch vụ] (Cách 2):",
+                        title: "🏭 [Ngành kinh tế mới] (Cách 2):",
                         items: [
                             { en: "modern high-tech manufacturing", vn: "ngành sản xuất công nghệ cao hiện đại" },
                             { en: "international tourism services", vn: "các dịch vụ du lịch quốc tế" },
-                            { en: "attract young workers to cities", vn: "thu hút lao động trẻ về các thành phố" },
-                            { en: "develop digital economy sectors", vn: "phát triển các lĩnh vực kinh tế số" }
+                            { en: "digital economy sectors", vn: "các lĩnh vực kinh tế số" },
+                            { en: "information technology and finance", vn: "công nghệ thông tin và tài chính" },
+                            { en: "industrial factory production", vn: "sản xuất công nghiệp tại các nhà máy" }
                         ]
                     }
                 ],
@@ -13493,21 +15456,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🎒 [Mang túi xách & Tiện lợi] (Cách 1):",
+                        title: "🎒 [Loại túi thường dùng] (Cách 1):",
                         items: [
                             { en: "a lightweight canvas backpack", vn: "một chiếc ba lô vải bố nhẹ nhàng" },
-                            { en: "hold my daily personal belongings", vn: "đựng các đồ dùng cá nhân hằng ngày của tôi" },
                             { en: "a stylish leather crossbody bag", vn: "một chiếc túi đeo chéo bằng da thời trang" },
-                            { en: "keep my hands completely free", vn: "giữ cho đôi tay hoàn toàn rảnh rỗi" }
+                            { en: "a convenient cotton tote bag", vn: "một chiếc túi vải tote tiện lợi" },
+                            { en: "a compact shoulder bag", vn: "một chiếc túi đeo vai nhỏ gọn" }
                         ]
                     },
                     {
-                        title: "👖 [Gọn nhẹ & Không mang túi] (Cách 2):",
+                        title: "✨ [Mục đích sử dụng] (Cách 1):",
+                        items: [
+                            { en: "hold my daily personal belongings", vn: "đựng các đồ dùng cá nhân hằng ngày của tôi" },
+                            { en: "keep my hands completely free", vn: "giữ cho đôi tay hoàn toàn rảnh rỗi" },
+                            { en: "carry my laptop and books safely", vn: "mang theo máy tính xách tay và sách vở an toàn" },
+                            { en: "organize small items neatly", vn: "sắp xếp các vật dụng nhỏ gọn gàng" },
+                            { en: "match my casual outfits", vn: "phối hợp với trang phục thường ngày của tôi" }
+                        ]
+                    },
+                    {
+                        title: "👖 [Thói quen gọn nhẹ] (Cách 2):",
                         items: [
                             { en: "put my smartphone and keys", vn: "bỏ điện thoại thông minh và chìa khóa" },
-                            { en: "use digital banking payment apps", vn: "sử dụng các ứng dụng thanh toán ngân hàng số" },
-                            { en: "move around much more freely", vn: "di chuyển xung quanh tự do thoải mái hơn nhiều" },
-                            { en: "avoid forgetting bags at cafes", vn: "tránh để quên túi ở các quán cà phê" }
+                            { en: "keep a thin cardholder wallet", vn: "giữ một chiếc ví đựng thẻ mỏng" },
+                            { en: "carry some small cash", vn: "mang theo một ít tiền mặt nhỏ" },
+                            { en: "slip my wireless earphones", vn: "nhét chiếc tai nghe không dây" },
+                            { en: "hold only my phone for digital payments", vn: "chỉ cầm điện thoại để thanh toán điện tử" }
                         ]
                     }
                 ],
@@ -13547,16 +15521,18 @@ const practiceTopicsData = [
                             { en: "my smartphone, wallet, and house keys", vn: "điện thoại, ví tiền và chìa khóa nhà" },
                             { en: "a reusable bottle of water", vn: "một bình nước tái sử dụng" },
                             { en: "a small pack of tissues", vn: "một gói khăn giấy nhỏ" },
-                            { en: "wireless headphones for music", vn: "tai nghe không dây để nghe nhạc" }
+                            { en: "wireless headphones for music", vn: "tai nghe không dây để nghe nhạc" },
+                            { en: "lip balm and sunscreen", vn: "son dưỡng môi và kem chống nắng" }
                         ]
                     },
                     {
-                        title: "💻 [Dụng cụ học tập & Công việc] (Cách 2):",
+                        title: "💻 [Thiết bị học tập & Phụ kiện] (Cách 2):",
                         items: [
                             { en: "my laptop and a paper notebook", vn: "máy tính xách tay và một cuốn sổ giấy" },
                             { en: "a portable power bank", vn: "một cục sạc dự phòng nhỏ gọn" },
                             { en: "English textbooks and documents", vn: "sách giáo trình tiếng Anh và tài liệu" },
-                            { en: "a compact folding umbrella", vn: "một chiếc ô gấp nhỏ gọn" }
+                            { en: "a compact folding umbrella", vn: "một chiếc ô gấp nhỏ gọn" },
+                            { en: "a pencil case and charger cables", vn: "hộp bút và dây cáp sạc" }
                         ]
                     }
                 ],
@@ -13591,21 +15567,41 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🌿 [Túi vải bền đẹp & Sống xanh] (Cách 1):",
+                        title: "👜 [Ưu điểm túi vải] (Cách 1):",
                         items: [
                             { en: "very durable, washable, and stylish", vn: "rất bền, giặt được và hợp thời trang" },
-                            { en: "reduce harmful plastic waste", vn: "giảm thiểu rác thải nhựa độc hại" },
-                            { en: "carry heavy groceries safely", vn: "đựng hàng tạp hóa nặng một cách an toàn" },
-                            { en: "protect our green environment", vn: "bảo vệ môi trường xanh của chúng ta" }
+                            { en: "eco-friendly and reusable", vn: "thân thiện với môi trường và tái sử dụng được" },
+                            { en: "strong and comfortable to carry", vn: "chắc chắn và thoải mái khi mang theo" },
+                            { en: "fashionable for young people", vn: "hợp thời trang đối với giới trẻ" }
                         ]
                     },
                     {
-                        title: "🛍️ [Chống thấm nước & Đựng thực phẩm tươi] (Cách 2):",
+                        title: "🌿 [Lợi ích môi trường] (Cách 1):",
+                        items: [
+                            { en: "reduce harmful plastic waste", vn: "giảm thiểu rác thải nhựa độc hại" },
+                            { en: "carry heavy groceries safely", vn: "đựng hàng tạp hóa nặng một cách an toàn" },
+                            { en: "protect our green environment", vn: "bảo vệ môi trường xanh của chúng ta" },
+                            { en: "save money on shopping bags", vn: "tiết kiệm tiền mua túi đựng hàng" },
+                            { en: "promote a green lifestyle", vn: "thúc đẩy lối sống xanh" }
+                        ]
+                    },
+                    {
+                        title: "💧 [Đặc tính tiện lợi của túi nilon] (Cách 2):",
                         items: [
                             { en: "waterproof, light, and very convenient", vn: "chống thấm nước, nhẹ và rất tiện lợi" },
+                            { en: "cheap and easy to find", vn: "rẻ và dễ tìm" },
+                            { en: "flexible and leak-proof", vn: "dẻo dai và chống rò rỉ nước" },
+                            { en: "easy to fold and carry", vn: "dễ gấp gọn và mang theo" }
+                        ]
+                    },
+                    {
+                        title: "🛍️ [Hoạt động mua sắm] (Cách 2):",
+                        items: [
                             { en: "buy wet fish and fresh meat", vn: "mua cá ướt và thịt tươi sống" },
-                            { en: "reuse clean bags for household trash", vn: "tái sử dụng túi sạch để đựng rác sinh hoạt" },
-                            { en: "keep dirty items separate", vn: "giữ các đồ vật bẩn tách biệt" }
+                            { en: "shop at traditional wet markets", vn: "đi chợ truyền thống" },
+                            { en: "carry frozen food from supermarkets", vn: "đựng thực phẩm đông lạnh từ siêu thị" },
+                            { en: "keep dirty items separate", vn: "giữ các đồ vật bẩn tách biệt" },
+                            { en: "pack takeaway soup and drinks", vn: "đựng canh và đồ uống mang về" }
                         ]
                     }
                 ],
@@ -13647,21 +15643,40 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "⌚ [Sở hữu Smartwatch & Theo dõi sức khỏe] (Cách 1):",
+                        title: "⌚ [Tên đồng hồ thông minh] (Cách 1):",
                         items: [
                             { en: "a modern Apple Watch", vn: "một chiếc đồng hồ Apple Watch hiện đại" },
-                            { en: "track my daily running steps", vn: "theo dõi số bước chạy bộ hằng ngày" },
-                            { en: "check urgent phone notifications", vn: "kiểm tra các thông báo điện thoại khẩn cấp" },
-                            { en: "monitor my heart rate", vn: "theo dõi nhịp tim của tôi" }
+                            { en: "a sporty Samsung Galaxy Watch", vn: "một chiếc đồng hồ Samsung Galaxy năng động" },
+                            { en: "a lightweight Xiaomi smart band", vn: "một chiếc vòng đeo tay thông minh Xiaomi nhẹ nhàng" },
+                            { en: "a waterproof fitness smartwatch", vn: "một chiếc đồng hồ thông minh thể thao chống nước" }
                         ]
                     },
                     {
-                        title: "🕰️ [Giá cao & Thích đồng hồ truyền thống] (Cách 2):",
+                        title: "🏃 [Mục đích sử dụng] (Cách 1):",
+                        items: [
+                            { en: "track my daily running steps", vn: "theo dõi số bước chạy bộ hằng ngày" },
+                            { en: "check urgent phone notifications", vn: "kiểm tra các thông báo điện thoại khẩn cấp" },
+                            { en: "monitor my heart rate", vn: "theo dõi nhịp tim của tôi" },
+                            { en: "measure my sleep quality", vn: "đo chất lượng giấc ngủ của tôi" },
+                            { en: "set convenient morning alarms", vn: "đặt báo thức buổi sáng tiện lợi" }
+                        ]
+                    },
+                    {
+                        title: "💸 [Nhược điểm] (Cách 2):",
                         items: [
                             { en: "quite expensive for a student", vn: "khá đắt đỏ đối với một sinh viên" },
+                            { en: "inconvenient to charge every night", vn: "bất tiện vì phải sạc pin vào mỗi tối" },
+                            { en: "easily distracted by constant notifications", vn: "dễ gây xao nhãng bởi các thông báo liên tục" },
+                            { en: "too fragile for outdoor activities", vn: "quá mỏng manh cho các hoạt động ngoài trời" }
+                        ]
+                    },
+                    {
+                        title: "🕰️ [Lựa chọn thay thế] (Cách 2):",
+                        items: [
                             { en: "a classic analog wristwatch", vn: "một chiếc đồng hồ đeo tay kim cổ điển" },
-                            { en: "avoid charging batteries every night", vn: "tránh việc phải sạc pin vào mỗi tối" },
-                            { en: "check time on my smartphone", vn: "xem giờ trên điện thoại thông minh" }
+                            { en: "a durable Casio digital watch", vn: "một chiếc đồng hồ điện tử Casio bền bỉ" },
+                            { en: "an elegant leather-strap watch", vn: "một chiếc đồng hồ dây da thanh lịch" },
+                            { en: "a simple mechanical watch", vn: "một chiếc đồng hồ cơ đơn giản" }
                         ]
                     }
                 ],
@@ -13696,21 +15711,23 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "💓 [Theo dõi chỉ số sức khỏe & Vận động] (Cách 1):",
+                        title: "💓 [Lợi ích sức khỏe] (Cách 1):",
                         items: [
                             { en: "monitor heart rate and sleep quality", vn: "theo dõi nhịp tim và chất lượng giấc ngủ" },
                             { en: "count burned calories during workouts", vn: "đếm lượng calo tiêu thụ trong lúc tập luyện" },
                             { en: "encourage regular physical exercise", vn: "khuyến khích tập luyện thể chất đều đặn" },
-                            { en: "maintain an active lifestyle", vn: "duy trì một lối sống năng động" }
+                            { en: "maintain an active lifestyle", vn: "duy trì một lối sống năng động" },
+                            { en: "track daily walking distances", vn: "theo dõi quãng đường đi bộ hằng ngày" }
                         ]
                     },
                     {
-                        title: "📲 [Nhận thông báo & Nghe gọi tiện lợi] (Cách 2):",
+                        title: "📲 [Tiện ích liên lạc] (Cách 2):",
                         items: [
                             { en: "read instant text messages", vn: "đọc tin nhắn văn bản tức thì" },
                             { en: "answer important phone calls quickly", vn: "trả lời các cuộc gọi quan trọng nhanh chóng" },
                             { en: "set vibration alarm reminders", vn: "cài đặt báo thức rung nhắc việc" },
-                            { en: "find misplaced smartphones easily", vn: "tìm điện thoại để quên một cách dễ dàng" }
+                            { en: "find misplaced smartphones easily", vn: "tìm điện thoại để quên một cách dễ dàng" },
+                            { en: "control music playback while running", vn: "điều khiển phát nhạc trong khi đang chạy bộ" }
                         ]
                     }
                 ],
@@ -13745,21 +15762,31 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "👑 [Vẻ đẹp cổ điển & Giá trị vĩnh cửu] (Cách 1):",
+                        title: "👑 [Giá trị thẩm mỹ] (Cách 1):",
                         items: [
                             { en: "timeless elegance and luxury fashion", vn: "vẻ thanh lịch vượt thời gian và thời trang sang trọng" },
-                            { en: "daily battery charging", vn: "việc sạc pin hằng ngày" },
-                            { en: "match formal business suits perfectly", vn: "phối hợp hoàn hảo với những bộ vest công sở" },
-                            { en: "hold lasting collection value", vn: "lưu giữ giá trị sưu tầm bền lâu" }
+                            { en: "fine craftsmanship and classic beauty", vn: "tay nghề chế tác tinh xảo và vẻ đẹp cổ điển" },
+                            { en: "lasting collection value", vn: "giá trị sưu tầm bền lâu" },
+                            { en: "professional business style", vn: "phong cách doanh nhân chuyên nghiệp" }
                         ]
                     },
                     {
-                        title: "🚀 [Xu hướng công nghệ tương lai] (Cách 2):",
+                        title: "🔋 [Bất tiện công nghệ] (Cách 1):",
+                        items: [
+                            { en: "daily battery charging", vn: "việc sạc pin hằng ngày" },
+                            { en: "complicated software updates", vn: "việc cập nhật phần mềm phức tạp" },
+                            { en: "Bluetooth connection with smartphones", vn: "kết nối Bluetooth với điện thoại thông minh" },
+                            { en: "expensive screen repairs", vn: "việc sửa chữa màn hình đắt đỏ" }
+                        ]
+                    },
+                    {
+                        title: "🚀 [Ưu điểm vượt trội] (Cách 2):",
                         items: [
                             { en: "combine multiple smart functions", vn: "kết hợp nhiều chức năng thông minh" },
                             { en: "support modern digital lifestyles", vn: "hỗ trợ lối sống kỹ thuật số hiện đại" },
                             { en: "offer customizable watch faces", vn: "cung cấp mặt đồng hồ tùy chỉnh đa dạng" },
-                            { en: "become much more affordable", vn: "trở nên hợp túi tiền hơn nhiều" }
+                            { en: "become much more affordable", vn: "trở nên hợp túi tiền hơn nhiều" },
+                            { en: "connect seamlessly with other devices", vn: "kết nối mượt mà với các thiết bị khác" }
                         ]
                     }
                 ],
@@ -13801,21 +15828,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🪴 [Làm đẹp không gian & Thư giãn] (Cách 1):",
+                        title: "🪴 [Lợi ích không gian & Tinh thần] (Cách 1):",
                         items: [
                             { en: "decorate my small balcony nicely", vn: "trang trí ban công nhỏ của tôi thật đẹp" },
                             { en: "relax my eyes after studying", vn: "thư giãn đôi mắt sau giờ học" },
                             { en: "bring fresh natural energy indoors", vn: "mang nguồn năng lượng tự nhiên tươi mát vào nhà" },
-                            { en: "feel peaceful every morning", vn: "cảm thấy bình yên vào mỗi buổi sáng" }
+                            { en: "feel peaceful every morning", vn: "cảm thấy bình yên vào mỗi buổi sáng" },
+                            { en: "purify the indoor air", vn: "thanh lọc bầu không khí trong nhà" }
                         ]
                     },
                     {
-                        title: "⏳ [Bận rộn & Thiếu kỹ năng chăm cây] (Cách 2):",
+                        title: "⏳ [Khó khăn chăm sóc] (Cách 2):",
                         items: [
                             { en: "forget to water plants regularly", vn: "quên tưới nước cho cây đều đặn" },
-                            { en: "basic gardening skills", vn: "kỹ năng làm vườn cơ bản" },
                             { en: "worry about annoying garden insects", vn: "lo lắng về các loài côn trùng phiền phức" },
-                            { en: "admire public park trees instead", vn: "ngắm cây xanh ở công viên công cộng để thay thế" }
+                            { en: "admire public park trees instead", vn: "ngắm cây xanh ở công viên công cộng để thay thế" },
+                            { en: "come home too late in the evening", vn: "về nhà quá muộn vào buổi tối" },
+                            { en: "let potted plants wither", vn: "để các chậu cây bị héo úa" }
+                        ]
+                    },
+                    {
+                        title: "🧤 [Yếu tố thiếu hụt] (Cách 2):",
+                        items: [
+                            { en: "basic gardening skills", vn: "kỹ năng làm vườn cơ bản" },
+                            { en: "enough free time and patience", vn: "đủ thời gian rảnh rỗi và sự kiên nhẫn" },
+                            { en: "sunny outdoor balcony space", vn: "không gian ban công ngoài trời nhiều nắng" },
+                            { en: "proper gardening tools and soil", vn: "dụng cụ làm vườn và đất trồng phù hợp" }
                         ]
                     }
                 ],
@@ -13839,7 +15877,7 @@ const practiceTopicsData = [
                 formula: `<div class="topic-formula-row">
                     <div class="topic-formula-title">- Cách 1 (Trả lời ĐÃ TỪNG - Chăm sóc một chậu cây nhỏ trên bàn học hoặc vườn rau cùng mẹ tại nhà):</div>
                     <div class="topic-formula-text">
-                        → Yes, I have. Last summer, I <span class="formula-bracket-hl">[hoạt động trồng cây - Ved]</span> on my study desk and <span class="formula-bracket-hl">[hoạt động chăm sóc - Ved]</span> carefully.
+                        → Yes, I have. Last summer, I <span class="formula-bracket-hl">[hoạt động trồng cây - V2/ed]</span> on my study desk and <span class="formula-bracket-hl">[hoạt động chăm sóc - V2/ed]</span> carefully.
                     </div>
                 </div>
                 <div class="topic-formula-row">
@@ -13850,21 +15888,32 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🌵 [Chăm sóc chậu cây nhỏ trên bàn] (Cách 1):",
+                        title: "🌵 [Hoạt động trồng & Chăm sóc cây] (Cách 1):",
                         items: [
                             { en: "grow a small cactus pot", vn: "trồng một chậu xương rồng nhỏ" },
                             { en: "water it twice a week", vn: "tưới nước cho cây hai lần một tuần" },
                             { en: "put it near sunny windows", vn: "đặt cây gần cửa sổ nhiều nắng" },
-                            { en: "feel happy seeing new leaves", vn: "cảm thấy vui khi nhìn thấy những chiếc lá mới" }
+                            { en: "wipe dust off the green leaves", vn: "lau bụi trên những chiếc lá xanh" },
+                            { en: "add organic fertilizer monthly", vn: "bón phân hữu cơ hằng tháng" }
                         ]
                     },
                     {
-                        title: "🏢 [Phòng trọ nhỏ & Dự định tương lai] (Cách 2):",
+                        title: "☀️ [Điều kiện tự nhiên thiếu hụt] (Cách 2):",
                         items: [
                             { en: "natural sunlight and balcony space", vn: "ánh nắng tự nhiên và không gian ban công" },
+                            { en: "good air ventilation", vn: "sự thông thoáng không khí tốt" },
+                            { en: "outdoor gardening areas", vn: "khu vực làm vườn ngoài trời" },
+                            { en: "large open windows", vn: "những khung cửa sổ rộng mở" }
+                        ]
+                    },
+                    {
+                        title: "🏡 [Dự định tương lai] (Cách 2):",
+                        items: [
                             { en: "grow indoor plants", vn: "trồng những loại cây trong nhà" },
                             { en: "move to a bigger apartment", vn: "chuyển đến một căn hộ rộng rãi hơn" },
-                            { en: "learn simple plant care tips", vn: "học các mẹo chăm sóc cây đơn giản" }
+                            { en: "learn simple plant care tips", vn: "học các mẹo chăm sóc cây đơn giản" },
+                            { en: "buy some easy-care succulents", vn: "mua một vài chậu sen đá dễ chăm sóc" },
+                            { en: "create a mini green corner", vn: "tạo một góc xanh nhỏ xinh" }
                         ]
                     }
                 ],
@@ -13899,21 +15948,23 @@ const practiceTopicsData = [
                 </div>`,
                 vocabGroups: [
                     {
-                        title: "🌍 [Lọc không khí & Bảo vệ môi trường] (Cách 1):",
+                        title: "🌍 [Vai trò môi trường & Sức khỏe] (Cách 1):",
                         items: [
                             { en: "produce fresh oxygen every day", vn: "tạo ra khí oxy trong lành mỗi ngày" },
                             { en: "reduce harmful urban air pollution", vn: "giảm thiểu ô nhiễm không khí đô thị độc hại" },
                             { en: "provide cool shade in summer", vn: "cung cấp bóng mát vào mùa hè" },
-                            { en: "prevent dangerous floods and erosion", vn: "ngăn chặn lũ lụt và xói mòn nguy hiểm" }
+                            { en: "prevent dangerous floods and erosion", vn: "ngăn chặn lũ lụt và xói mòn nguy hiểm" },
+                            { en: "improve human mental well-being", vn: "cải thiện sức khỏe tinh thần của con người" }
                         ]
                     },
                     {
-                        title: "🦟 [Lưu ý khi đặt cây trong phòng ngủ kín] (Cách 2):",
+                        title: "🦟 [Tác hại trong phòng ngủ kín] (Cách 2):",
                         items: [
                             { en: "release carbon dioxide gas", vn: "thải ra khí cacbonic" },
                             { en: "attract mosquitoes", vn: "thu hút muỗi" },
                             { en: "cause mild breathing discomfort", vn: "gây cảm giác hơi khó thở nhẹ" },
-                            { en: "take up narrow living space", vn: "chiếm diện tích sinh hoạt chật hẹp" }
+                            { en: "take up narrow living space", vn: "chiếm diện tích sinh hoạt chật hẹp" },
+                            { en: "increase indoor humidity at night", vn: "làm tăng độ ẩm trong phòng vào ban đêm" }
                         ]
                     }
                 ],
