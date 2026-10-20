@@ -407,9 +407,21 @@ document.addEventListener('DOMContentLoaded', () => {
         startBtn.disabled = true;
         startBtn.innerHTML = `<span>Đang vào lớp...</span> <i class="fa-solid fa-spinner fa-spin"></i>`;
         
-        entryInput.value = `${nameVal} - ${classVal}`;
+        const logData = `${state.studentName || nameVal} - Lớp: ${formattedClass}`;
+        if (entryInput) entryInput.value = logData;
         window.submitted = true;
-        trackingForm.submit();
+        try {
+            if (trackingForm) trackingForm.submit();
+        } catch (e) {}
+        try {
+            const fd = new FormData();
+            fd.append("entry.388968236", logData);
+            fetch("https://docs.google.com/forms/d/e/1FAIpQLSc8BwUzOGfw66DF-LUYd2uMkFxhj3Q6aKlzEpck2lJA1hobhQ/formResponse", {
+                method: "POST",
+                mode: "no-cors",
+                body: fd
+            }).catch(() => {});
+        } catch (e) {}
         
         // Fallback timeout in case iframe block prevents onload
         setTimeout(() => {
