@@ -946,6 +946,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function activateTab(target, item) {
+        if (typeof stopAllActive25sTimers === 'function') stopAllActive25sTimers();
         if (state.studentClass === 'CB219' && target !== 'overview' && target !== 'yes-no') {
             alert('🔒 Mục này chưa được mở cho lớp CB219.\nHiện tại bạn được mở: Phần Tổng Quan và 2 câu đầu của Yes/No Questions.');
             return;
@@ -1817,6 +1818,292 @@ document.addEventListener('DOMContentLoaded', () => {
         return html;
     };
 
+    // ==========================================================================
+    // 25-SECOND COUNTDOWN TIMER ENGINE (VÍ DỤ THỰC HÀNH & LUYỆN TẬP PHẢN XẠ)
+    // ==========================================================================
+    window._timed25sSessions = window._timed25sSessions || {};
+
+    function playExamTone(freq, duration, type = 'sine') {
+        try {
+            const AudioContext = window.AudioContext || window.webkitAudioContext;
+            if (!AudioContext) return;
+            if (!window._examAudioCtx) {
+                window._examAudioCtx = new AudioContext();
+            }
+            if (window._examAudioCtx.state === 'suspended') {
+                window._examAudioCtx.resume();
+            }
+            const ctx = window._examAudioCtx;
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.type = type;
+            osc.frequency.setValueAtTime(freq, ctx.currentTime);
+            gain.gain.setValueAtTime(0.2, ctx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + duration);
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            osc.start(ctx.currentTime);
+            osc.stop(ctx.currentTime + duration);
+        } catch (e) {
+            console.warn('Exam audio synth notice:', e);
+        }
+    }
+
+    function playExamDoubleBeep() {
+        playExamTone(880, 0.15);
+        setTimeout(() => playExamTone(880, 0.15), 200);
+    }
+
+    function playExamTimeUpChime() {
+        playExamTone(523.25, 0.15); // C5
+        setTimeout(() => {
+            playExamTone(659.25, 0.15); // E5
+            setTimeout(() => {
+                playExamTone(783.99, 0.35); // G5
+            }, 120);
+        }, 120);
+    }
+
+    function stopAllActive25sTimers() {
+        if (window._timed25sSessions) {
+            Object.keys(window._timed25sSessions).forEach(id => {
+                if (window._timed25sSessions[id] && window._timed25sSessions[id].isRecording) {
+                    stop25sTimer(id, true);
+                }
+            });
+        }
+    }
+    window.stopAllActive25sTimers = stopAllActive25sTimers;
+
+    window.render25sTimerWidget = (widgetId, label = 'CHẾ ĐỘ ĐẾM GIỜ 25S (LUYỆN PHẢN XẠ)') => {
+        return `
+            <div class="timed-25s-widget" id="timed-widget-${widgetId}" style="background: linear-gradient(135deg, rgba(124, 58, 237, 0.05), rgba(99, 102, 241, 0.04)); border: 1.5px solid rgba(124, 58, 237, 0.22); border-radius: 14px; padding: 0.85rem 1.15rem; margin: 0.85rem 0 1rem 0;">
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.65rem;">
+                    <div style="font-weight: 800; font-size: 0.88rem; color: #7c3aed; display: flex; align-items: center; gap: 0.4rem;">
+                        <i class="fa-solid fa-stopwatch" style="color:#ef4444;"></i> ${label}
+                    </div>
+                    <span id="${widgetId}-phase-badge" class="topic-exam-phase-badge" style="font-size: 0.78rem; padding: 0.2rem 0.65rem;">
+                        ⏱️ Sẵn sàng trả lời
+                    </span>
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;">
+                    <div style="display: flex; align-items: center; gap: 0.85rem;">
+                        <div id="${widgetId}-digits" class="topic-exam-digits" style="font-size: 2.2rem; min-width: 95px; font-weight: 800; letter-spacing: 1px;">00:25</div>
+                        <div id="${widgetId}-wave" class="topic-mic-wave" style="height: 24px;">
+                            <div class="topic-mic-bar"></div>
+                            <div class="topic-mic-bar"></div>
+                            <div class="topic-mic-bar"></div>
+                            <div class="topic-mic-bar"></div>
+                            <div class="topic-mic-bar"></div>
+                            <div class="topic-mic-bar"></div>
+                            <span style="font-size: 0.75rem; font-weight: 700; color: #ef4444; margin-left: 0.25rem;">
+                                <span class="topic-recording-dot"></span> ĐANG THU ÂM
+                            </span>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                        <button type="button" id="${widgetId}-start-btn" class="btn" onclick="start25sTimer('${widgetId}')" style="background: linear-gradient(135deg, #7c3aed, #4f46e5); color: white; border: none; font-weight: 700; font-size: 0.88rem; padding: 0.55rem 1.15rem; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 0.35rem; box-shadow: 0 3px 10px rgba(124, 58, 237, 0.25);">
+                            <i class="fa-solid fa-play"></i> Bắt đầu đếm giờ (25s)
+                        </button>
+                        <button type="button" id="${widgetId}-stop-btn" class="btn" onclick="stop25sTimer('${widgetId}')" style="display: none; background: #ef4444; color: white; border: none; font-weight: 700; font-size: 0.88rem; padding: 0.55rem 1.15rem; border-radius: 8px; cursor: pointer; align-items: center; gap: 0.35rem; box-shadow: 0 3px 10px rgba(239, 68, 68, 0.25);">
+                            <i class="fa-solid fa-square"></i> Dừng bài nói
+                        </button>
+                        <button type="button" id="${widgetId}-reset-btn" class="btn" onclick="reset25sTimer('${widgetId}')" style="display: none; background: var(--bg-card); color: var(--text-main); border: 1px solid var(--border); font-weight: 700; font-size: 0.88rem; padding: 0.55rem 1.15rem; border-radius: 8px; cursor: pointer; align-items: center; gap: 0.35rem;">
+                            <i class="fa-solid fa-rotate-left"></i> Luyện lại
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Playback Box -->
+                <div id="${widgetId}-playback-box" style="display: none; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px dashed var(--border); align-items: center; gap: 0.65rem; flex-wrap: wrap;">
+                    <audio id="${widgetId}-player" controls style="flex: 1; min-width: 200px; height: 36px; border-radius: 6px;"></audio>
+                    <a id="${widgetId}-download" class="btn-audio-sample" download="VSTEP_Speaking_25s.webm" style="background: #10b981; font-size: 0.82rem; padding: 0.45rem 0.85rem; text-decoration: none; cursor: pointer;">
+                        <i class="fa-solid fa-download"></i> Tải bài nói (.webm)
+                    </a>
+                </div>
+            </div>
+        `;
+    };
+
+    window.start25sTimer = async (widgetId) => {
+        stopAllActive25sTimers();
+        if (typeof stopAllActiveRecordings === 'function') stopAllActiveRecordings();
+
+        let session = window._timed25sSessions[widgetId] || {};
+        window._timed25sSessions[widgetId] = session;
+        session.timeLeft = 25;
+        session.totalTime = 25;
+        session.isRecording = true;
+        session.chunks = [];
+
+        // UI update immediately
+        const digitsEl = document.getElementById(`${widgetId}-digits`);
+        const badgeEl = document.getElementById(`${widgetId}-phase-badge`);
+        const waveEl = document.getElementById(`${widgetId}-wave`);
+        const startBtn = document.getElementById(`${widgetId}-start-btn`);
+        const stopBtn = document.getElementById(`${widgetId}-stop-btn`);
+        const resetBtn = document.getElementById(`${widgetId}-reset-btn`);
+        const playbackBox = document.getElementById(`${widgetId}-playback-box`);
+
+        if (digitsEl) {
+            digitsEl.textContent = '00:25';
+            digitsEl.classList.remove('warning', 'danger');
+        }
+        if (badgeEl) {
+            badgeEl.className = 'topic-exam-phase-badge recording';
+            badgeEl.innerHTML = '<span class="topic-recording-dot"></span> Đang trả lời (25s)';
+        }
+        if (waveEl) waveEl.classList.add('active');
+        if (startBtn) startBtn.style.display = 'none';
+        if (stopBtn) stopBtn.style.display = 'inline-flex';
+        if (resetBtn) resetBtn.style.display = 'none';
+        if (playbackBox) playbackBox.style.display = 'none';
+
+        // Start Microphone Recording if available
+        try {
+            if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                session.stream = stream;
+
+                let options = { mimeType: 'audio/webm' };
+                if (typeof MediaRecorder !== 'undefined' && MediaRecorder.isTypeSupported) {
+                    if (!MediaRecorder.isTypeSupported('audio/webm') && MediaRecorder.isTypeSupported('audio/mp4')) {
+                        options = { mimeType: 'audio/mp4' };
+                    }
+                }
+
+                const recorder = new MediaRecorder(stream, options);
+                session.recorder = recorder;
+
+                recorder.ondataavailable = (e) => {
+                    if (e.data && e.data.size > 0) {
+                        session.chunks.push(e.data);
+                    }
+                };
+
+                recorder.onstop = () => {
+                    if (session.chunks && session.chunks.length > 0) {
+                        const blob = new Blob(session.chunks, { type: recorder.mimeType || 'audio/webm' });
+                        if (session.blobUrl) URL.revokeObjectURL(session.blobUrl);
+                        session.blobUrl = URL.createObjectURL(blob);
+
+                        const player = document.getElementById(`${widgetId}-player`);
+                        const downloadBtn = document.getElementById(`${widgetId}-download`);
+                        const pBox = document.getElementById(`${widgetId}-playback-box`);
+
+                        if (player) player.src = session.blobUrl;
+                        if (downloadBtn) {
+                            downloadBtn.href = session.blobUrl;
+                            const student = (document.getElementById('display-name')?.textContent || 'HocVien').trim().replace(/\\s+/g, '_');
+                            downloadBtn.download = `VSTEP_Speaking_25s_${widgetId}_${student}.webm`;
+                        }
+                        if (pBox) pBox.style.display = 'flex';
+                    }
+                };
+
+                recorder.start(1000);
+            }
+        } catch (err) {
+            console.warn('Microphone permission or support notice in 25s timer:', err);
+        }
+
+        playExamDoubleBeep();
+
+        // 25s Interval
+        session.interval = setInterval(() => {
+            session.timeLeft--;
+            const cur = session.timeLeft;
+
+            if (digitsEl) {
+                const mm = String(Math.floor(cur / 60)).padStart(2, '0');
+                const ss = String(cur % 60).padStart(2, '0');
+                digitsEl.textContent = `${mm}:${ss}`;
+
+                if (cur <= 8 && cur > 3) {
+                    digitsEl.classList.add('warning');
+                } else if (cur <= 3) {
+                    digitsEl.classList.remove('warning');
+                    digitsEl.classList.add('danger');
+                }
+            }
+
+            if (cur <= 0) {
+                playExamTimeUpChime();
+                stop25sTimer(widgetId);
+            }
+        }, 1000);
+    };
+
+    window.stop25sTimer = (widgetId, silent = false) => {
+        const session = window._timed25sSessions[widgetId];
+        if (!session) return;
+
+        session.isRecording = false;
+        if (session.interval) {
+            clearInterval(session.interval);
+            session.interval = null;
+        }
+
+        if (session.recorder && session.recorder.state !== 'inactive') {
+            try { session.recorder.stop(); } catch(e) {}
+        }
+        if (session.stream) {
+            try { session.stream.getTracks().forEach(t => t.stop()); } catch(e) {}
+            session.stream = null;
+        }
+
+        const badgeEl = document.getElementById(`${widgetId}-phase-badge`);
+        const waveEl = document.getElementById(`${widgetId}-wave`);
+        const startBtn = document.getElementById(`${widgetId}-start-btn`);
+        const stopBtn = document.getElementById(`${widgetId}-stop-btn`);
+        const resetBtn = document.getElementById(`${widgetId}-reset-btn`);
+
+        if (badgeEl) {
+            badgeEl.className = 'topic-exam-phase-badge done';
+            badgeEl.innerHTML = '<i class="fa-solid fa-circle-check"></i> Đã hoàn thành bài nói';
+        }
+        if (waveEl) waveEl.classList.remove('active');
+        if (startBtn) startBtn.style.display = 'none';
+        if (stopBtn) stopBtn.style.display = 'none';
+        if (resetBtn) resetBtn.style.display = 'inline-flex';
+    };
+
+    window.reset25sTimer = (widgetId) => {
+        const session = window._timed25sSessions[widgetId] || {};
+        if (session.isRecording) {
+            stop25sTimer(widgetId, true);
+        }
+        session.timeLeft = 25;
+        session.totalTime = 25;
+        session.chunks = [];
+
+        const digitsEl = document.getElementById(`${widgetId}-digits`);
+        const badgeEl = document.getElementById(`${widgetId}-phase-badge`);
+        const waveEl = document.getElementById(`${widgetId}-wave`);
+        const startBtn = document.getElementById(`${widgetId}-start-btn`);
+        const stopBtn = document.getElementById(`${widgetId}-stop-btn`);
+        const resetBtn = document.getElementById(`${widgetId}-reset-btn`);
+        const playbackBox = document.getElementById(`${widgetId}-playback-box`);
+        const player = document.getElementById(`${widgetId}-player`);
+
+        if (digitsEl) {
+            digitsEl.textContent = '00:25';
+            digitsEl.classList.remove('warning', 'danger');
+        }
+        if (badgeEl) {
+            badgeEl.className = 'topic-exam-phase-badge';
+            badgeEl.innerHTML = '⏱️ Sẵn sàng trả lời';
+        }
+        if (waveEl) waveEl.classList.remove('active');
+        if (startBtn) startBtn.style.display = 'inline-flex';
+        if (stopBtn) stopBtn.style.display = 'none';
+        if (resetBtn) resetBtn.style.display = 'none';
+        if (playbackBox) playbackBox.style.display = 'none';
+        if (player) { player.src = ''; }
+    };
+
     const ynStage = document.getElementById('yn-stage');
     const ynNumEl = document.getElementById('yn-current-num');
     const ynTotalEl = document.getElementById('yn-total-num');
@@ -1901,6 +2188,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <div class="ex-label" style="font-size:1.1rem; color:var(--text-main); margin-bottom:0.75rem; text-transform:none;">
                                 ❓ Câu hỏi: <strong>${d.exQ}</strong>
                             </div>
+                            ${render25sTimerWidget('yn-ex', 'CHẾ ĐỘ ĐẾM GIỜ 25S (VÍ DỤ THỰC HÀNH)')}
                             <div style="margin-top:0.75rem;">
                                 <button class="btn-audio-sample" style="background:#8b5cf6; margin-bottom:0.5rem; cursor:pointer;" onclick="toggleSampleAnswer(this)">
                                     <i class="fa-solid fa-eye"></i> Nhấn xem câu trả lời mẫu
@@ -1920,6 +2208,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     document.getElementById('yn-prev')?.addEventListener('click', () => {
+        if (typeof stopAllActive25sTimers === 'function') stopAllActive25sTimers();
         if (state.studentClass === 'CB219') {
             if (state.ynIndex > 0) {
                 state.ynIndex--;
@@ -1931,6 +2220,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderYnSlide();
     });
     document.getElementById('yn-next')?.addEventListener('click', () => {
+        if (typeof stopAllActive25sTimers === 'function') stopAllActive25sTimers();
         if (state.studentClass === 'CB219') {
             if (state.ynIndex < 1) {
                 state.ynIndex++;
@@ -2197,6 +2487,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <div class="ex-label" style="font-size:1.1rem; color:var(--text-main); margin-bottom:0.75rem; text-transform:none;">
                                 ❓ Câu hỏi: <strong>${d.exQ}</strong>
                             </div>
+                            ${render25sTimerWidget('choice-ex', 'CHẾ ĐỘ ĐẾM GIỜ 25S (VÍ DỤ THỰC HÀNH)')}
                             <div style="margin-top:0.75rem;">
                                 <button class="btn-audio-sample" style="background:#8b5cf6; margin-bottom:0.5rem; cursor:pointer;" onclick="toggleSampleAnswer(this)">
                                     <i class="fa-solid fa-eye"></i> Nhấn xem câu trả lời mẫu
@@ -2217,6 +2508,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     cTabs.forEach(tab => {
         tab.addEventListener('click', () => {
+            if (typeof stopAllActive25sTimers === 'function') stopAllActive25sTimers();
             cTabs.forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
             renderChoice(tab.getAttribute('data-opt'));
@@ -4082,11 +4374,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (typeof window !== 'undefined' && window.event && window.event.currentTarget && window.event.currentTarget.classList) {
             window.event.currentTarget.classList.add('active');
         }
+        if (typeof stopAllActive25sTimers === 'function') stopAllActive25sTimers();
         if (!whShowcase) return;
         const list = whBank[cat] || [];
         whShowcase.innerHTML = `
             <div class="wh-grid fade-in" style="grid-template-columns: 1fr; gap: 1.5rem;">
-                ${list.map(item => `
+                ${list.map((item, idx) => `
                     <div class="f-card-clean" style="max-width:100%; margin:0; background:var(--bg-card); padding:1.5rem; border-radius:20px; border:1px solid var(--border); box-shadow:var(--shadow-sm);">
                         <div class="f-title" style="margin-bottom:1.5rem;">${formatTitleHighlight(item.title)}</div>
                         ${getExamplesBlockHTML(item)}
@@ -4113,6 +4406,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <div class="ex-label" style="font-size:1.1rem; color:var(--text-main); margin-bottom:0.75rem; text-transform:none;">
                                         ❓ Câu hỏi: <strong>${item.exQ}</strong>
                                     </div>
+                                    ${render25sTimerWidget('wh-ex-' + cat + '-' + idx, 'CHẾ ĐỘ ĐẾM GIỜ 25S (VÍ DỤ THỰC HÀNH)')}
                                     <div style="margin-top:0.75rem;">
                                         <button class="btn-audio-sample" style="background:#8b5cf6; margin-bottom:0.5rem; cursor:pointer;" onclick="toggleSampleAnswer(this)">
                                             <i class="fa-solid fa-eye"></i> Nhấn xem câu trả lời mẫu
@@ -4334,15 +4628,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     const recordBox = document.getElementById('record-box-' + type);
                     if (recordBox) {
                         recordBox.style.display = 'block';
-                        const playback = document.getElementById('audio-playback-' + type);
-                        if(playback) { playback.style.display = 'none'; playback.src = ''; }
-                        const submitBtn = document.getElementById('btn-submit-' + type);
-                        if(submitBtn) { submitBtn.style.display = 'none'; }
-                        const btnRecord = document.getElementById('btn-record-' + type);
-                        if(btnRecord) {
-                            btnRecord.innerHTML = '<i class="fa-solid fa-microphone"></i> Bắt đầu Ghi âm';
-                            btnRecord.style.background = '#ef4444';
-                            btnRecord.style.boxShadow = '0 4px 10px rgba(239,68,68,0.3)';
+                        if (typeof reset25sTimer === 'function') {
+                            reset25sTimer('wheel-' + type);
                         }
                     }
                 }
@@ -16881,6 +17168,9 @@ function playExamTimeUpChime() {
 }
 
 function stopAllActiveRecordings() {
+    if (typeof stopAllActive25sTimers === 'function') {
+        stopAllActive25sTimers();
+    }
     if (window._topicTimers) {
         Object.keys(window._topicTimers).forEach(qNum => {
             if (window._topicTimers[qNum] && window._topicTimers[qNum].isRecording) {

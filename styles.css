@@ -1381,3 +1381,25 @@ body.dark-theme .topic-q-type-badge {
     from { opacity: 0; transform: translateY(15px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* 25s Countdown Timer Widget (Ví dụ thực hành & Luyện tập phản xạ) */
+.timed-25s-widget {
+    transition: all 0.25s ease;
+}
+.timed-25s-widget:hover {
+    border-color: rgba(124, 58, 237, 0.4) !important;
+    box-shadow: 0 4px 16px rgba(124, 58, 237, 0.1) !important;
+}
+@media (max-width: 640px) {
+    .timed-25s-widget {
+        padding: 0.75rem 0.85rem !important;
+    }
+    .timed-25s-widget .topic-exam-digits {
+        font-size: 1.8rem !important;
+        min-width: 80px !important;
+    }
+    .timed-25s-widget button.btn {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+}
