@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // App State
     const state = {
         studentName: 'Khách',
+        studentClass: '',
+        accessLevel: 'FULL',
         isAudio: true,
         isDark: false,
         ynIndex: 0,
@@ -361,6 +363,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }
+
+        if (state.studentClass === 'CB219') {
+            navItems.forEach(item => {
+                const target = item.getAttribute('data-target');
+                if (target !== 'overview' && target !== 'yes-no') {
+                    item.classList.add('locked');
+                    const link = item.querySelector('a');
+                    if (link && !link.querySelector('.lock-tag')) {
+                        const lockTag = document.createElement('span');
+                        lockTag.className = 'lock-tag';
+                        lockTag.innerHTML = '<i class="fa-solid fa-lock"></i>';
+                        lockTag.title = 'Chưa mở cho lớp CB219';
+                        link.appendChild(lockTag);
+                    }
+                }
+            });
+
+            // Ensure active tab is allowed
+            const currentActive = document.querySelector('.nav-item.active');
+            const currentTarget = currentActive ? currentActive.getAttribute('data-target') : 'overview';
+            if (currentTarget !== 'overview' && currentTarget !== 'yes-no') {
+                const overviewItem = document.querySelector('.nav-item[data-target="overview"]');
+                if (overviewItem) activateTab('overview', overviewItem);
+            }
+
+            state.ynIndex = 0;
+            renderYnSlide();
+        }
     };
 
     const enterRoom = () => {
@@ -384,6 +414,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (isTeacher) {
             state.studentName = 'Cô Nguyệt';
+            state.studentClass = 'GV';
             state.accessLevel = 'FULL';
         } else if (validClasses.includes(formattedClass)) {
             const roster = CLASS_STUDENTS[formattedClass];
@@ -395,8 +426,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     return;
                 }
                 state.studentName = matchedStudent;
+            } else {
+                state.studentName = nameVal;
             }
-            state.accessLevel = partialClasses.includes(formattedClass) ? 'PARTIAL' : 'FULL';
+            state.studentClass = formattedClass;
+            state.accessLevel = (formattedClass === 'CB219') ? 'CB219' : (partialClasses.includes(formattedClass) ? 'PARTIAL' : 'FULL');
         } else {
             loginError.textContent = 'Mã lớp không hợp lệ. Vui lòng nhập lại!';
             loginError.style.display = 'block';
@@ -478,6 +512,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function activateTab(target, item) {
+        if (state.studentClass === 'CB219' && target !== 'overview' && target !== 'yes-no') {
+            alert('🔒 Mục này chưa được mở cho lớp CB219.\nHiện tại bạn được mở: Phần Tổng Quan và 2 câu đầu của Yes/No Questions.');
+            return;
+        }
+
         navItems.forEach(i => i.classList.remove('active'));
         item.classList.add('active');
         
@@ -513,6 +552,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     window.switchTab = function(target) {
+        if (state.studentClass === 'CB219' && target !== 'overview' && target !== 'yes-no') {
+            alert('🔒 Mục này chưa được mở cho lớp CB219.\nHiện tại bạn được mở: Phần Tổng Quan và 2 câu đầu của Yes/No Questions.');
+            return;
+        }
         const item = document.querySelector(`.nav-item[data-target="${target}"]`);
         if (item) activateTab(target, item);
     };
@@ -1337,13 +1380,64 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const ynStage = document.getElementById('yn-stage');
     const ynNumEl = document.getElementById('yn-current-num');
+    const ynTotalEl = document.getElementById('yn-total-num');
+    const ynPrevBtn = document.getElementById('yn-prev');
+    const ynNextBtn = document.getElementById('yn-next');
 
     const renderYnSlide = () => {
         if (!ynStage) return;
+
+        const isCB219 = (state.studentClass === 'CB219');
+        if (isCB219) {
+            if (state.ynIndex > 1) state.ynIndex = 1;
+            if (state.ynIndex < 0) state.ynIndex = 0;
+            if (ynTotalEl) ynTotalEl.textContent = '2';
+            if (ynPrevBtn) {
+                ynPrevBtn.disabled = (state.ynIndex === 0);
+                ynPrevBtn.style.opacity = (state.ynIndex === 0) ? '0.4' : '1';
+                ynPrevBtn.style.cursor = (state.ynIndex === 0) ? 'not-allowed' : 'pointer';
+            }
+            if (ynNextBtn) {
+                ynNextBtn.disabled = (state.ynIndex >= 1);
+                ynNextBtn.style.opacity = (state.ynIndex >= 1) ? '0.4' : '1';
+                ynNextBtn.style.cursor = (state.ynIndex >= 1) ? 'not-allowed' : 'pointer';
+                ynNextBtn.title = (state.ynIndex >= 1) ? 'Câu 3 đến 7 chưa mở cho lớp CB219' : 'Câu tiếp';
+            }
+        } else {
+            if (ynTotalEl) ynTotalEl.textContent = `${ynFormulas.length}`;
+            if (ynPrevBtn) {
+                ynPrevBtn.disabled = false;
+                ynPrevBtn.style.opacity = '1';
+                ynPrevBtn.style.cursor = 'pointer';
+            }
+            if (ynNextBtn) {
+                ynNextBtn.disabled = false;
+                ynNextBtn.style.opacity = '1';
+                ynNextBtn.style.cursor = 'pointer';
+                ynNextBtn.title = 'Câu tiếp';
+            }
+        }
+
         const d = ynFormulas[state.ynIndex];
         if (ynNumEl) ynNumEl.textContent = state.ynIndex + 1;
+
+        let cbNoticeHtml = '';
+        if (isCB219) {
+            cbNoticeHtml = `
+                <div style="margin-bottom: 1.25rem; background: rgba(59, 130, 246, 0.08); border: 1.5px dashed #3b82f6; border-radius: 10px; padding: 0.75rem 1rem; display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem; color: #1d4ed8; font-weight: 600; font-size: 0.92rem;">
+                        <i class="fa-solid fa-circle-info"></i> Lớp CB219: Mở 2 câu đầu tiên (Câu ${state.ynIndex + 1} / 2)
+                    </div>
+                    <div style="font-size: 0.85rem; color: #64748b;">
+                        Các câu 3 - 7 sẽ được mở theo tiến độ bài học
+                    </div>
+                </div>
+            `;
+        }
+
         ynStage.innerHTML = `
             <div class="f-card-clean fade-in">
+                ${cbNoticeHtml}
                 <div class="f-title" style="margin-bottom:1.5rem;">${formatTitleHighlight(d.title)}</div>
                 ${getExamplesBlockHTML(d)}
                 
@@ -1387,10 +1481,26 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     document.getElementById('yn-prev')?.addEventListener('click', () => {
+        if (state.studentClass === 'CB219') {
+            if (state.ynIndex > 0) {
+                state.ynIndex--;
+                renderYnSlide();
+            }
+            return;
+        }
         state.ynIndex = (state.ynIndex - 1 + ynFormulas.length) % ynFormulas.length;
         renderYnSlide();
     });
     document.getElementById('yn-next')?.addEventListener('click', () => {
+        if (state.studentClass === 'CB219') {
+            if (state.ynIndex < 1) {
+                state.ynIndex++;
+                renderYnSlide();
+            } else {
+                alert('🔒 Các câu hỏi từ 3 đến 7 chưa được mở cho lớp CB219.');
+            }
+            return;
+        }
         state.ynIndex = (state.ynIndex + 1) % ynFormulas.length;
         renderYnSlide();
     });
@@ -3665,6 +3775,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Random Practice Selector
     
     window.spinWheel = (type) => {
+        if (state.studentClass === 'CB219' && type !== 'yn') {
+            alert('🔒 Phần luyện tập này chưa được mở cho lớp CB219.');
+            return;
+        }
+
         let pool = [];
         let qEl, hintEl, btn;
 
@@ -3677,7 +3792,8 @@ document.addEventListener('DOMContentLoaded', () => {
             hintEl = document.getElementById('wheel-hint');
             btn = document.getElementById('spin-btn');
         } else if (type === 'yn') {
-            pool = typeof ynFormulas !== 'undefined' ? ynFormulas : [];
+            const rawYn = typeof ynFormulas !== 'undefined' ? ynFormulas : [];
+            pool = (state.studentClass === 'CB219') ? rawYn.slice(0, 2) : rawYn;
             qEl = document.getElementById('wheel-q-yn');
             hintEl = document.getElementById('wheel-hint-yn');
             btn = document.getElementById('spin-btn-yn');
