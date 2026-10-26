@@ -14,7 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
         isDark: false,
         ynIndex: 0,
         selectedVoiceURI: null,
-        unlockedTabs: {}
+        unlockedTabs: {},
+        favoriteBenefits: [],
+        completedTopics: [],
+        benefitsReviewMode: 'fav',
+        currentBenefitsFilter: 'all',
+        lastSavedTime: null
     };
 
     // DOM References
@@ -346,6 +351,412 @@ document.addEventListener('DOMContentLoaded', () => {
             .trim();
     };
 
+    // ========================================================
+    // LEARNING PROGRESS & FAVORITE BENEFITS SYSTEM
+    // ========================================================
+    const PROGRESS_KEY = 'vstep_sp1_learning_progress';
+
+    function showToast(message, duration = 2800) {
+        let toast = document.getElementById('toast-notice');
+        if (!toast) {
+            toast = document.createElement('div');
+            toast.id = 'toast-notice';
+            toast.className = 'toast-notice';
+            document.body.appendChild(toast);
+        }
+        toast.innerHTML = `<i class="fa-solid fa-circle-check" style="color:#10b981;"></i> <span>${message}</span>`;
+        toast.style.display = 'flex';
+        clearTimeout(window._toastTimer);
+        window._toastTimer = setTimeout(() => {
+            if (toast) toast.style.display = 'none';
+        }, duration);
+    }
+
+    function saveLearningProgress(silent = true) {
+        try {
+            const curTab = document.querySelector('.nav-item.active')?.getAttribute('data-target') || 'overview';
+            const curTopic = parseInt(document.getElementById('practice-topic-select')?.value || '1');
+            const data = {
+                version: 1,
+                studentName: state.studentName || 'Khách',
+                studentClass: state.studentClass || '',
+                accessLevel: state.accessLevel || 'FULL',
+                currentTab: curTab,
+                ynIndex: state.ynIndex || 0,
+                currentPracticeTopicId: curTopic,
+                completedTopics: state.completedTopics || [],
+                favoriteBenefits: state.favoriteBenefits || [],
+                benefitsReviewMode: state.benefitsReviewMode || 'fav',
+                theme: state.isDark ? 'dark' : 'light',
+                voiceMode: localStorage.getItem('vstep_voice_mode') || 'classic',
+                lastSavedTime: new Date().toISOString()
+            };
+            localStorage.setItem(PROGRESS_KEY, JSON.stringify(data));
+            state.lastSavedTime = data.lastSavedTime;
+            updateProgressUI();
+            if (!silent) {
+                showToast('💾 Tiến độ học tập đã được lưu thành công!');
+            }
+        } catch (e) {
+            console.error('saveLearningProgress error:', e);
+        }
+    }
+
+    function loadLearningProgress() {
+        try {
+            const raw = localStorage.getItem(PROGRESS_KEY);
+            if (!raw) return null;
+            return JSON.parse(raw);
+        } catch (e) {
+            return null;
+        }
+    }
+
+    window.saveLearningProgress = saveLearningProgress;
+    window.loadLearningProgress = loadLearningProgress;
+
+    window.openProgressModal = () => {
+        const modal = document.getElementById('progress-modal');
+        if (!modal) return;
+        updateProgressUI();
+        modal.style.display = 'flex';
+    };
+
+    window.closeProgressModal = () => {
+        const modal = document.getElementById('progress-modal');
+        if (modal) modal.style.display = 'none';
+    };
+
+    window.clearLearningProgressConfirm = () => {
+        if (confirm('⚠️ Bạn có chắc chắn muốn đặt lại toàn bộ tiến độ học tập và cụm từ yêu thích không?')) {
+            localStorage.removeItem(PROGRESS_KEY);
+            state.favoriteBenefits = [];
+            state.completedTopics = [];
+            state.lastSavedTime = null;
+            alert('🗑 Đã đặt lại toàn bộ tiến độ!');
+            window.location.reload();
+        }
+    };
+
+    function updateProgressUI() {
+        const saved = loadLearningProgress();
+        const favCount = (state.favoriteBenefits || []).length;
+        const topicCount = (state.completedTopics || []).length;
+
+        // Sidebar badge
+        const sideSummary = document.getElementById('sidebar-progress-text');
+        if (sideSummary) sideSummary.textContent = `${topicCount} CĐ • ${favCount} cụm`;
+
+        const sideBadge = document.getElementById('sidebar-progress-badge');
+        if (sideBadge) sideBadge.classList.remove('hidden');
+
+        // Progress Modal Elements
+        const studentEl = document.getElementById('progress-modal-student');
+        if (studentEl) studentEl.textContent = `Học viên: ${state.studentName || 'Khách'}`;
+
+        const classEl = document.getElementById('progress-modal-class');
+        if (classEl) classEl.textContent = `Lớp: ${state.studentClass || 'Chưa cập nhật'}`;
+
+        const favEl = document.getElementById('progress-modal-fav-count');
+        if (favEl) favEl.textContent = String(favCount);
+
+        const topicsEl = document.getElementById('progress-modal-topics-count');
+        if (topicsEl) topicsEl.textContent = `${topicCount} / 60`;
+
+        const timeEl = document.getElementById('progress-modal-last-saved');
+        if (timeEl) {
+            if (state.lastSavedTime || (saved && saved.lastSavedTime)) {
+                const t = new Date(state.lastSavedTime || saved.lastSavedTime);
+                timeEl.innerHTML = `<i class="fa-regular fa-clock"></i> Lần lưu gần nhất: ${t.toLocaleTimeString('vi-VN')} ${t.toLocaleDateString('vi-VN')}`;
+            } else {
+                timeEl.innerHTML = `<i class="fa-regular fa-clock"></i> Lần lưu gần nhất: Chưa lưu`;
+            }
+        }
+    }
+
+    window.resumeSavedSession = () => {
+        const saved = loadLearningProgress();
+        if (!saved) return;
+        if (studentInput) studentInput.value = saved.studentName || '';
+        if (studentClassInput) studentClassInput.value = saved.studentClass || '';
+        enterRoom();
+    };
+
+    function checkSavedSessionOnStart() {
+        const saved = loadLearningProgress();
+        if (!saved || !saved.studentName) return;
+
+        const box = document.getElementById('saved-session-box');
+        const infoEl = document.getElementById('saved-session-info');
+        const detailsEl = document.getElementById('saved-session-details');
+
+        if (box && infoEl && detailsEl) {
+            infoEl.textContent = `${saved.studentName} - Lớp ${saved.studentClass || 'N/A'}`;
+            const fCount = (saved.favoriteBenefits || []).length;
+            const tCount = (saved.completedTopics || []).length;
+            const tabName = titles[saved.currentTab] || saved.currentTab || 'Overview';
+            detailsEl.textContent = `Đã chọn ${fCount} cụm lợi ích • Hoàn thành ${tCount} / 60 chủ đề • Tab gần nhất: ${tabName}`;
+            box.style.display = 'block';
+
+            if (studentInput && !studentInput.value) studentInput.value = saved.studentName;
+            if (studentClassInput && !studentClassInput.value) studentClassInput.value = saved.studentClass || '';
+        }
+    }
+
+    // ========================================================
+    // FAVORITE BENEFITS SYSTEM
+    // ========================================================
+    function setupBenefitCards() {
+        const benefitsTab = document.getElementById('benefits');
+        if (!benefitsTab) return;
+
+        const cards = benefitsTab.querySelectorAll('div[style*="display: flex; align-items: center; justify-content: space-between"]');
+        cards.forEach(card => {
+            const enEl = card.querySelector('strong');
+            const vnEl = card.querySelector('div > div');
+            if (!enEl) return;
+
+            const enText = enEl.textContent.trim();
+            const vnText = vnEl ? vnEl.textContent.trim() : '';
+
+            card.dataset.benefitEn = enText;
+            card.dataset.benefitVn = vnText;
+            card.style.cursor = 'pointer';
+            card.classList.add('benefit-card-wrapper');
+
+            // Check if favorite button already exists
+            let favBtn = card.querySelector('.benefit-fav-btn');
+            if (!favBtn) {
+                favBtn = document.createElement('button');
+                favBtn.type = 'button';
+                favBtn.className = 'benefit-fav-btn';
+                favBtn.title = 'Bấm để chọn / bỏ chọn cụm yêu thích này để trả bài';
+                favBtn.innerHTML = '<i class="fa-regular fa-star"></i>';
+
+                const rightBtn = card.querySelector('button.icon-btn');
+                if (rightBtn && rightBtn.parentElement === card) {
+                    card.insertBefore(favBtn, rightBtn);
+                } else {
+                    card.appendChild(favBtn);
+                }
+
+                card.addEventListener('click', (e) => {
+                    if (e.target.closest('button.icon-btn')) return; // Allow audio play
+                    toggleBenefitCard(card, enText, vnText);
+                });
+            }
+
+            // Sync visual state from state.favoriteBenefits
+            const isFav = (state.favoriteBenefits || []).some(b => b.en.toLowerCase() === enText.toLowerCase());
+            if (isFav) {
+                card.classList.add('benefit-favorited');
+                favBtn.classList.add('active');
+                favBtn.innerHTML = '<i class="fa-solid fa-star" style="color: #f59e0b;"></i>';
+                showBenefitFavBadge(card, true);
+            } else {
+                card.classList.remove('benefit-favorited');
+                favBtn.classList.remove('active');
+                favBtn.innerHTML = '<i class="fa-regular fa-star"></i>';
+                showBenefitFavBadge(card, false);
+            }
+        });
+
+        updateFavoriteBenefitsUI();
+    }
+
+    function toggleBenefitCard(card, en, vn) {
+        if (!state.favoriteBenefits) state.favoriteBenefits = [];
+        const idx = state.favoriteBenefits.findIndex(b => b.en.toLowerCase() === en.toLowerCase());
+        const favBtn = card.querySelector('.benefit-fav-btn');
+
+        if (idx >= 0) {
+            state.favoriteBenefits.splice(idx, 1);
+            card.classList.remove('benefit-favorited');
+            if (favBtn) {
+                favBtn.classList.remove('active');
+                favBtn.innerHTML = '<i class="fa-regular fa-star"></i>';
+            }
+            showBenefitFavBadge(card, false);
+            showToast(`Đã bỏ chọn cụm: "${en}"`);
+        } else {
+            state.favoriteBenefits.push({ en, vn });
+            card.classList.add('benefit-favorited');
+            if (favBtn) {
+                favBtn.classList.add('active');
+                favBtn.innerHTML = '<i class="fa-solid fa-star" style="color: #f59e0b;"></i>';
+            }
+            showBenefitFavBadge(card, true);
+            showToast(`⭐ Đã chọn cụm: "${en}" để trả bài`);
+        }
+
+        saveLearningProgress(true);
+        updateFavoriteBenefitsUI();
+
+        if (state.currentBenefitsFilter === 'fav') {
+            filterBenefitsMode('fav');
+        }
+    }
+
+    function showBenefitFavBadge(card, show) {
+        const leftDiv = card.querySelector('div');
+        if (!leftDiv) return;
+        let badge = leftDiv.querySelector('.fav-badge');
+        if (show) {
+            if (!badge) {
+                badge = document.createElement('span');
+                badge.className = 'fav-badge';
+                badge.innerHTML = '<i class="fa-solid fa-check"></i> Đã chọn để trả bài';
+                leftDiv.appendChild(badge);
+            }
+        } else {
+            if (badge) badge.remove();
+        }
+    }
+
+    function updateFavoriteBenefitsUI() {
+        const count = (state.favoriteBenefits || []).length;
+        const countEl = document.getElementById('fav-benefit-count');
+        if (countEl) countEl.textContent = `${count} cụm`;
+
+        const filterNumEl = document.getElementById('filter-fav-num');
+        if (filterNumEl) filterNumEl.textContent = String(count);
+
+        const reviewFavCountEl = document.getElementById('review-fav-count');
+        if (reviewFavCountEl) reviewFavCountEl.textContent = String(count);
+
+        const reviewStatusEl = document.getElementById('review-pool-status');
+        if (reviewStatusEl) {
+            if (count > 0 && state.benefitsReviewMode === 'fav') {
+                reviewStatusEl.innerHTML = `🎯 Đang trả bài: <strong>${count} cụm từ yêu thích</strong> bạn đã chọn`;
+                reviewStatusEl.style.color = '#059669';
+            } else if (count === 0 && state.benefitsReviewMode === 'fav') {
+                reviewStatusEl.innerHTML = `💡 Chưa chọn cụm yêu thích nào (Hệ thống tạm dùng toàn bộ 64 cụm để trả bài. Hãy nhấp ⭐ trên các thẻ cụm từ để chọn!)`;
+                reviewStatusEl.style.color = '#d97706';
+            } else {
+                reviewStatusEl.innerHTML = `📚 Đang trả bài toàn bộ 64 cụm từ trong bảng`;
+                reviewStatusEl.style.color = '#2563eb';
+            }
+        }
+
+        updateProgressUI();
+    }
+
+    window.filterBenefitsMode = (mode) => {
+        state.currentBenefitsFilter = mode;
+        const allBtn = document.getElementById('filter-all-benefits-btn');
+        const favBtn = document.getElementById('filter-fav-benefits-btn');
+        const benefitsTab = document.getElementById('benefits');
+        if (!benefitsTab) return;
+
+        const cards = benefitsTab.querySelectorAll('.benefit-card-wrapper');
+
+        if (mode === 'all') {
+            if (allBtn) {
+                allBtn.style.background = 'var(--primary)';
+                allBtn.style.color = 'white';
+            }
+            if (favBtn) {
+                favBtn.style.background = 'rgba(245, 158, 11, 0.1)';
+                favBtn.style.color = '#d97706';
+            }
+            cards.forEach(c => c.style.display = 'flex');
+            benefitsTab.querySelectorAll('h3').forEach(h => h.style.display = 'inline-block');
+        } else {
+            const favCount = (state.favoriteBenefits || []).length;
+            if (favCount === 0) {
+                alert('💡 Bạn chưa chọn cụm từ yêu thích nào! Hãy nhấp vào các thẻ cụm từ (hoặc biểu tượng ngôi sao) để chọn các cụm bạn muốn học.');
+                window.filterBenefitsMode('all');
+                return;
+            }
+            if (favBtn) {
+                favBtn.style.background = '#f59e0b';
+                favBtn.style.color = 'white';
+            }
+            if (allBtn) {
+                allBtn.style.background = 'transparent';
+                allBtn.style.color = 'var(--text-muted)';
+            }
+            cards.forEach(c => {
+                const en = c.dataset.benefitEn;
+                const isFav = (state.favoriteBenefits || []).some(b => b.en.toLowerCase() === en.toLowerCase());
+                c.style.display = isFav ? 'flex' : 'none';
+            });
+        }
+    };
+
+    window.setReviewBenefitsMode = (mode) => {
+        state.benefitsReviewMode = mode;
+        const favBtn = document.getElementById('review-mode-fav-btn');
+        const allBtn = document.getElementById('review-mode-all-btn');
+
+        if (mode === 'fav') {
+            if (favBtn) {
+                favBtn.style.background = '#f59e0b';
+                favBtn.style.color = 'white';
+            }
+            if (allBtn) {
+                allBtn.style.background = 'var(--bg-card)';
+                allBtn.style.color = 'var(--text-muted)';
+            }
+        } else {
+            if (allBtn) {
+                allBtn.style.background = 'var(--primary)';
+                allBtn.style.color = 'white';
+            }
+            if (favBtn) {
+                favBtn.style.background = 'var(--bg-card)';
+                favBtn.style.color = 'var(--text-muted)';
+            }
+        }
+        updateFavoriteBenefitsUI();
+        saveLearningProgress(true);
+    };
+
+    window.scrollToReviewGame = () => {
+        const reviewEl = document.getElementById('review-section');
+        if (reviewEl) {
+            reviewEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
+
+    // ========================================================
+    // TOPIC COMPLETION & PRACTICE TRACKING
+    // ========================================================
+    window.toggleCurrentTopicCompleted = (topicId) => {
+        if (!state.completedTopics) state.completedTopics = [];
+        const tId = parseInt(topicId);
+        const idx = state.completedTopics.indexOf(tId);
+
+        if (idx >= 0) {
+            state.completedTopics.splice(idx, 1);
+            showToast(`Đã bỏ đánh dấu hoàn thành Chủ đề ${tId}`);
+        } else {
+            state.completedTopics.push(tId);
+            showToast(`🎉 Đã đánh dấu hoàn thành Chủ đề ${tId}!`);
+        }
+
+        saveLearningProgress(true);
+        updateTopicSelectCompletedMarks();
+        renderPracticeTopic(tId);
+    };
+
+    function updateTopicSelectCompletedMarks() {
+        const sel = document.getElementById('practice-topic-select');
+        if (!sel) return;
+        const completed = state.completedTopics || [];
+
+        Array.from(sel.options).forEach(opt => {
+            const val = parseInt(opt.value);
+            const isDone = completed.includes(val);
+            let cleanText = opt.textContent.replace(/^✅\s*/, '').replace(/^🎯\s*/, '');
+            if (isDone) {
+                opt.textContent = `✅ ${cleanText}`;
+            } else {
+                opt.textContent = `🎯 ${cleanText}`;
+            }
+        });
+    }
+
     window.finishLogin = () => {
         const val = state.studentName || studentInput.value.trim();
         displayName.textContent = val;
@@ -391,6 +802,26 @@ document.addEventListener('DOMContentLoaded', () => {
             state.ynIndex = 0;
             renderYnSlide();
         }
+
+        // Restore saved progress if same student
+        const saved = loadLearningProgress();
+        if (saved && saved.studentName === (state.studentName || val)) {
+            state.favoriteBenefits = saved.favoriteBenefits || [];
+            state.completedTopics = saved.completedTopics || [];
+            if (saved.ynIndex !== undefined && state.studentClass !== 'CB219') {
+                state.ynIndex = saved.ynIndex;
+            }
+            state.benefitsReviewMode = saved.benefitsReviewMode || 'fav';
+            if (saved.currentPracticeTopicId && typeof renderPracticeTopic === 'function') {
+                const sel = document.getElementById('practice-topic-select');
+                if (sel) sel.value = String(saved.currentPracticeTopicId);
+            }
+        }
+
+        setupBenefitCards();
+        updateFavoriteBenefitsUI();
+        updateTopicSelectCompletedMarks();
+        saveLearningProgress(true);
     };
 
     const enterRoom = () => {
@@ -474,9 +905,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (userProfile) {
         userProfile.classList.add('hidden');
     }
-    if (studentInput) studentInput.value = '';
-    if (studentClassInput) studentClassInput.value = '';
     if (loginError) loginError.style.display = 'none';
+
+    // Kiểm tra và hiển thị tiến độ học tập đã lưu trước đó nếu có
+    checkSavedSessionOnStart();
 
     startBtn?.addEventListener('click', enterRoom);
     studentInput?.addEventListener('keypress', (e) => { if (e.key === 'Enter') enterRoom(); });
@@ -547,6 +979,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderPracticeTopic(tId);
             }
         }
+        if (target === 'benefits') {
+            setupBenefitCards();
+            updateFavoriteBenefitsUI();
+        }
+        saveLearningProgress(true);
         if (window.innerWidth <= 768) sidebar.classList.remove('open');
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -3987,6 +4424,12 @@ document.addEventListener('DOMContentLoaded', () => {
     let reviewWords = [];
     
     function extractReviewWords(tabId) {
+        if (tabId === 'benefits') {
+            const mode = state.benefitsReviewMode || 'fav';
+            if (mode === 'fav' && state.favoriteBenefits && state.favoriteBenefits.length > 0) {
+                return [...state.favoriteBenefits];
+            }
+        }
         let currentWords = [];
         const cards = document.querySelectorAll('#' + tabId + ' .icon-btn');
         cards.forEach(btn => {
@@ -4032,13 +4475,18 @@ document.addEventListener('DOMContentLoaded', () => {
             if (currentIndex >= words.length) {
                 sfx.win();
                 shootConfetti();
+                const isFavBenefits = (tabId === 'benefits' && (state.benefitsReviewMode || 'fav') === 'fav' && state.favoriteBenefits && state.favoriteBenefits.length > 0);
+                const titleMsg = isFavBenefits 
+                    ? `🎉 Xuất sắc! Bạn đã trả bài xong ${words.length} cụm từ yêu thích!`
+                    : 'Tuyệt vời! Bạn đã ôn xong tất cả các từ.';
                 container.innerHTML = `
                     <div class="fade-in" style="text-align:center; padding: 2rem;">
                         <i class="fa-solid fa-trophy" style="font-size:4rem; color:#f59e0b; margin-bottom:1rem;"></i>
-                        <h3 style="font-size:1.5rem; margin-bottom:1rem;">Tuyệt vời! Bạn đã ôn xong tất cả các từ.</h3>
-                        <button class="btn btn-primary" onclick="startReviewGame('flashcards', '${tabId}')"><i class="fa-solid fa-rotate-right"></i> Ôn tập lại</button>
+                        <h3 style="font-size:1.5rem; margin-bottom:1rem; color:var(--text-main);">${titleMsg}</h3>
+                        <button class="btn btn-primary" onclick="startReviewGame('flashcards', '${tabId}')"><i class="fa-solid fa-rotate-right"></i> Trả bài lại</button>
                     </div>
                 `;
+                saveLearningProgress(true);
                 return;
             }
             const word = words[currentIndex];
@@ -16185,6 +16633,9 @@ function renderPracticeTopic(topicId) {
                         <button class="btn-audio-sample" onclick="openFullTopicExamModal(${topic.id})" style="background: linear-gradient(135deg, #ef4444, #dc2626); box-shadow: 0 4px 12px rgba(239, 68, 68, 0.35);">
                             <i class="fa-solid fa-stopwatch"></i> Thi Thử Cả Chủ Đề (90s)
                         </button>
+                        <button class="btn-audio-sample" onclick="toggleCurrentTopicCompleted(${topic.id})" style="background: ${(state.completedTopics || []).includes(topic.id) ? 'linear-gradient(135deg, #10b981, #059669)' : 'var(--bg-card)'}; color: ${(state.completedTopics || []).includes(topic.id) ? 'white' : 'var(--text-main)'}; border: 1.5px solid ${(state.completedTopics || []).includes(topic.id) ? '#10b981' : 'var(--border)'}; cursor: pointer;">
+                            <i class="fa-solid ${(state.completedTopics || []).includes(topic.id) ? 'fa-circle-check' : 'fa-check'}"></i> ${(state.completedTopics || []).includes(topic.id) ? 'Đã hoàn thành' : 'Đánh dấu đã học'}
+                        </button>
                     </div>
                 </div>
                 <div style="font-size: 1.05rem; color: var(--text-main); line-height: 1.7; font-style: italic; background: var(--bg-card); padding: 0.85rem 1.25rem; border-radius: 12px; border: 1px dashed var(--border);">
@@ -16198,6 +16649,24 @@ function renderPracticeTopic(topicId) {
         let vocabHtml = '';
         q.vocabGroups.forEach(vg => {
             if (vg.type === 'note' || vg.note) {
+                let favPillsHtml = '';
+                if ((vg.note.includes('Lợi Ích') || vg.note.includes('lợi ích')) && state.favoriteBenefits && state.favoriteBenefits.length > 0) {
+                    favPillsHtml = `
+                        <div style="margin-top: 0.65rem; padding-top: 0.5rem; border-top: 1px dashed rgba(217, 70, 239, 0.35); font-size: 0.9rem;">
+                            <div style="font-weight: 700; color: #a21caf; margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.4rem;">
+                                <i class="fa-solid fa-star" style="color: #f59e0b;"></i> Cụm lợi ích bạn đã chọn trong Bảng Lợi Ích:
+                            </div>
+                            <div style="display: flex; flex-wrap: wrap; gap: 0.45rem;">
+                                ${state.favoriteBenefits.map(b => `
+                                    <span style="background: #fdf4ff; border: 1px solid #f0abfc; color: #86198f; padding: 0.2rem 0.65rem; border-radius: 6px; font-weight: 700; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.3rem;" onclick="speakText('${b.en.replace(/'/g, "\\'")}')" title="Nhấp để nghe phát âm">
+                                        <i class="fa-solid fa-volume-high" style="font-size: 0.75rem; color: #d946ef;"></i> ${b.en}
+                                    </span>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+
                 vocabHtml += `
                     <div style="margin-bottom: 1.25rem; background: rgba(67, 97, 238, 0.05); border-left: 4px solid var(--primary); padding: 0.85rem 1.15rem; border-radius: 12px; border: 1px solid rgba(67, 97, 238, 0.15); border-left-width: 4px;">
                         <div style="font-weight: 800; font-size: 0.95rem; color: var(--primary); margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.4rem;">
@@ -16205,6 +16674,7 @@ function renderPracticeTopic(topicId) {
                         </div>
                         <div style="font-size: 0.95rem; line-height: 1.65; color: var(--text-main);">
                             ${vg.note}
+                            ${favPillsHtml}
                         </div>
                     </div>
                 `;
@@ -16495,6 +16965,7 @@ window.startTopicQuestionRecording = async (qNum) => {
                 badge.className = 'topic-exam-phase-badge done';
                 badge.innerHTML = '<i class="fa-solid fa-circle-check"></i> Đã hoàn thành bài nói';
             }
+            saveLearningProgress(true);
 
             const startBtn = document.getElementById(`btn-topic-start-${qNum}`);
             const stopBtn = document.getElementById(`btn-topic-stop-${qNum}`);
@@ -16798,6 +17269,13 @@ window.startFullTopicRecording = async (topicId) => {
             if (badge) {
                 badge.className = 'topic-exam-phase-badge done';
                 badge.innerHTML = '<i class="fa-solid fa-circle-check"></i> ĐÃ HOÀN THÀNH BÀI THI 🎉';
+            }
+
+            if (!state.completedTopics) state.completedTopics = [];
+            if (!state.completedTopics.includes(topicId)) {
+                state.completedTopics.push(topicId);
+                updateTopicSelectCompletedMarks();
+                saveLearningProgress(true);
             }
 
             const startBtn = document.getElementById('btn-full-start');

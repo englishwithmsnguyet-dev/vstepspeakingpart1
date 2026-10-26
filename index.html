@@ -36,6 +36,22 @@
             <p class="login-subtitle">Vui lòng điền Họ tên và Lớp học của bạn để bắt đầu học. Kết quả luyện tập sẽ được ghi nhận và gửi báo cáo cho giáo viên.</p>
             
             <div class="login-form">
+                <!-- Hộp tiếp tục phiên học đã lưu -->
+                <div id="saved-session-box" style="display: none; background: rgba(16, 185, 129, 0.08); border: 1.5px dashed #10b981; border-radius: 12px; padding: 0.85rem 1rem; margin-bottom: 1rem; text-align: left;">
+                    <div style="font-size: 0.82rem; font-weight: 700; color: #059669; text-transform: uppercase; margin-bottom: 0.25rem;">
+                        <i class="fa-solid fa-clock-rotate-left"></i> TIẾN ĐỘ ĐÃ LƯU TRƯỚC ĐÓ:
+                    </div>
+                    <div style="font-weight: 800; color: var(--text-main); font-size: 1rem;" id="saved-session-info">
+                        Học viên
+                    </div>
+                    <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.25rem;" id="saved-session-details">
+                        Chưa có chi tiết
+                    </div>
+                    <button type="button" id="resume-btn" onclick="resumeSavedSession()" style="margin-top: 0.65rem; width: 100%; padding: 0.65rem 1rem; background: linear-gradient(135deg, #10b981, #059669); color: white; border: none; border-radius: 8px; font-weight: 700; font-size: 0.95rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem; box-shadow: 0 4px 10px rgba(16, 185, 129, 0.25);">
+                        <i class="fa-solid fa-play"></i> TIẾP TỤC HỌC TẬP NGAY
+                    </button>
+                </div>
+
                 <input type="text" id="student-name" placeholder="HỌ VÀ TÊN" autocomplete="off" spellcheck="false" required>
                 <input type="text" id="student-class" placeholder="LỚP HỌC" autocomplete="off" spellcheck="false" required>
                 <p id="login-error" class="login-error" style="display: none;"></p>
@@ -68,6 +84,14 @@
                     <span class="label">Student</span>
                     <strong id="display-name">Guest</strong>
                 </div>
+            </div>
+
+            <!-- Mini badge tiến độ học tập trên Sidebar -->
+            <div id="sidebar-progress-badge" class="hidden" onclick="openProgressModal()" style="margin: 0.5rem 1rem 0; padding: 0.45rem 0.75rem; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 10px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-size: 0.78rem; color: #059669; transition: all 0.2s;" title="Nhấp để xem và quản lý tiến độ học tập">
+                <span style="font-weight: 700; display: flex; align-items: center; gap: 0.35rem;">
+                    <i class="fa-solid fa-circle-check"></i> <span id="sidebar-progress-text">0 CĐ • 0 cụm</span>
+                </span>
+                <span style="font-size: 0.7rem; color: #059669; opacity: 0.85; font-weight: 600;">Lưu <i class="fa-solid fa-chevron-right" style="font-size: 0.65rem;"></i></span>
             </div>
 
             <div class="menu-label">LESSON CONTENTS</div>
@@ -143,6 +167,9 @@
                 <div class="current-title" id="top-title">OVERVIEW</div>
                 <a href="https://www.facebook.com/nguyetpham28" target="_blank" class="galaxy-text">ENGLISH WITH MISS NGUYET</a>
                 <div class="top-actions" style="display:flex; align-items:center; gap:0.5rem;">
+                    <button class="icon-btn" id="progress-btn" title="Tiến độ học tập &amp; Lưu dữ liệu" onclick="openProgressModal()" style="font-size:0.82rem; font-weight:700; padding:0 0.65rem; width:auto; border-radius:8px; display:flex; align-items:center; gap:0.35rem; border:1.5px solid #10b981; background:rgba(16, 185, 129, 0.08); color:#059669; cursor:pointer;">
+                        <i class="fa-solid fa-cloud-arrow-up" style="color:#10b981;"></i> <span id="progress-btn-label">Tiến Độ</span>
+                    </button>
                     <button class="icon-btn" id="voice-mode-toggle" title="Đổi chế độ giọng đọc" style="font-size:0.82rem; font-weight:600; padding:0 0.65rem; width:auto; border-radius:8px; display:flex; align-items:center; gap:0.35rem; border:1px solid var(--border); background:var(--bg-card); color:var(--text-main); cursor:pointer;">
                         <i class="fa-solid fa-microphone-lines" style="color:var(--primary);"></i> <span id="voice-mode-label">Giọng Gốc</span>
                     </button>
@@ -772,6 +799,32 @@
                         <p>Danh sách đầy đủ các cụm từ chỉ lợi ích được biên soạn, phân loại theo từng nhóm chủ đề. Nhấp vào loa để nghe phát âm.</p>
                     </div>
 
+                    <!-- TOOLBAR CHỌN CỤM YÊU THÍCH ĐỂ TRẢ BÀI -->
+                    <div class="benefits-fav-toolbar" style="background: var(--bg-card); border: 2px solid rgba(245, 158, 11, 0.35); border-radius: 16px; padding: 1.25rem 1.5rem; margin: 1.5rem 0 2rem; box-shadow: 0 4px 15px rgba(245, 158, 11, 0.08); position: sticky; top: 75px; z-index: 40; backdrop-filter: blur(12px);">
+                        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+                            <div>
+                                <div style="font-size: 1.12rem; font-weight: 800; color: var(--text-main); display: flex; align-items: center; gap: 0.5rem;">
+                                    <i class="fa-solid fa-star" style="color: #f59e0b; font-size: 1.25rem;"></i> CỤM TỪ YÊU THÍCH ĐÃ CHỌN ĐỂ TRẢ BÀI:
+                                    <span id="fav-benefit-count" style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; padding: 0.2rem 0.85rem; border-radius: 50px; font-size: 0.95rem; font-weight: 800; box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);">0 cụm</span>
+                                </div>
+                                <div style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.35rem; line-height: 1.5;">
+                                    💡 <strong>Hướng dẫn:</strong> Bấm trực tiếp vào các thẻ cụm từ bên dưới (hoặc biểu tượng <i class="fa-regular fa-star" style="color: #f59e0b;"></i>) để chọn cụm bạn tâm đắc. Hệ thống sẽ <strong>tự động lưu</strong> và <strong>chỉ trả bài các cụm bạn đã chọn</strong>!
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;">
+                                <button type="button" class="btn" id="filter-all-benefits-btn" onclick="filterBenefitsMode('all')" style="padding: 0.55rem 0.95rem; font-size: 0.88rem; font-weight: 700; border-radius: 10px; border: 1.5px solid var(--border); background: var(--primary); color: white; cursor: pointer;">
+                                    Tất cả (64)
+                                </button>
+                                <button type="button" class="btn" id="filter-fav-benefits-btn" onclick="filterBenefitsMode('fav')" style="padding: 0.55rem 0.95rem; font-size: 0.88rem; font-weight: 700; border-radius: 10px; border: 1.5px solid #f59e0b; background: rgba(245, 158, 11, 0.1); color: #d97706; cursor: pointer;">
+                                    <i class="fa-solid fa-star"></i> Đã chọn (<span id="filter-fav-num">0</span>)
+                                </button>
+                                <button type="button" class="btn" onclick="scrollToReviewGame()" style="padding: 0.55rem 1.25rem; font-size: 0.92rem; font-weight: 800; border-radius: 50px; border: none; background: linear-gradient(135deg, #10b981, #059669); color: white; cursor: pointer; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35); display: flex; align-items: center; gap: 0.4rem;">
+                                    <i class="fa-solid fa-graduation-cap"></i> TRẢ BÀI NGAY <i class="fa-solid fa-arrow-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                     <div style="padding-bottom: 2rem;">
                         <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; display: inline-block;">LỢI ÍCH GIẢI TRÍ</h3>
                         <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
@@ -1363,18 +1416,31 @@
                         </div>
                     </div>
 
-                    <!-- Góc Ôn Tập (Review Section) -->
+                    <!-- Góc Trả Bài & Ôn Tập (Review Section) -->
                     <div id="review-section" style="margin-top: 3rem; padding-top: 2rem; border-top: 2px dashed var(--border);">
                         <div class="section-intro">
-                            <h2 style="color: var(--primary);"><i class="fa-solid fa-gamepad"></i> GÓC ÔN TẬP TỪ VỰNG</h2>
-                            <p>Chọn một trò chơi bên dưới để kiểm tra trí nhớ của bạn!</p>
+                            <h2 style="color: #7c3aed; font-size: 1.6rem;"><i class="fa-solid fa-graduation-cap"></i> GÓC TRẢ BÀI CỤM TỪ VỰNG</h2>
+                            <p id="review-pool-status" style="font-size: 1.05rem; font-weight: 600; color: #059669; margin-top: 0.4rem;">
+                                🎯 Hệ thống sẽ tự động trả bài theo đúng các cụm từ bạn đã chọn yêu thích ở trên!
+                            </p>
+                        </div>
+
+                        <!-- Lựa chọn nguồn từ vựng để trả bài -->
+                        <div style="display: flex; justify-content: center; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                            <div style="font-weight: 700; color: var(--text-main); font-size: 0.95rem;">Nguồn từ vựng trả bài:</div>
+                            <button type="button" id="review-mode-fav-btn" class="btn" onclick="setReviewBenefitsMode('fav')" style="padding: 0.45rem 1.15rem; font-size: 0.88rem; font-weight: 700; border-radius: 20px; border: 1.5px solid #f59e0b; background: #f59e0b; color: white; cursor: pointer; transition: all 0.2s;">
+                                ⭐ Các cụm yêu thích đã chọn (<span id="review-fav-count">0</span> cụm)
+                            </button>
+                            <button type="button" id="review-mode-all-btn" class="btn" onclick="setReviewBenefitsMode('all')" style="padding: 0.45rem 1.15rem; font-size: 0.88rem; font-weight: 700; border-radius: 20px; border: 1.5px solid var(--border); background: var(--bg-card); color: var(--text-muted); cursor: pointer; transition: all 0.2s;">
+                                📚 Tất cả 64 cụm trong bảng
+                            </button>
                         </div>
                         
                         <div class="game-menu" style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 2rem; flex-wrap: wrap;">
-                            <button class="btn" onclick="startReviewGame('flashcards', 'benefits')" style="background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; border:none; box-shadow: 0 4px 10px rgba(59,130,246,0.3);"><i class="fa-solid fa-clone"></i> Lật Thẻ</button>
-                            <button class="btn" onclick="startReviewGame('matching', 'benefits')" style="background: linear-gradient(135deg, #10b981, #059669); color: white; border:none; box-shadow: 0 4px 10px rgba(16,185,129,0.3);"><i class="fa-solid fa-link"></i> Nối Từ</button>
-                            <button class="btn" onclick="startReviewGame('quiz', 'benefits')" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; border:none; box-shadow: 0 4px 10px rgba(139,92,246,0.3);"><i class="fa-solid fa-clipboard-question"></i> Trắc Nghiệm</button>
-                            <button class="btn" onclick="startReviewGame('spelling', 'benefits')" style="background: linear-gradient(135deg, #ec4899, #be185d); color: white; border:none; box-shadow: 0 4px 10px rgba(236,72,153,0.3);"><i class="fa-solid fa-keyboard"></i> Gõ Từ</button>
+                            <button class="btn" onclick="startReviewGame('flashcards', 'benefits')" style="background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; border:none; box-shadow: 0 4px 10px rgba(59,130,246,0.3); padding: 0.75rem 1.5rem; font-size: 1rem; font-weight: 700; border-radius: 12px;"><i class="fa-solid fa-clone"></i> Lật Thẻ Trả Bài</button>
+                            <button class="btn" onclick="startReviewGame('matching', 'benefits')" style="background: linear-gradient(135deg, #10b981, #059669); color: white; border:none; box-shadow: 0 4px 10px rgba(16,185,129,0.3); padding: 0.75rem 1.5rem; font-size: 1rem; font-weight: 700; border-radius: 12px;"><i class="fa-solid fa-link"></i> Nối Từ</button>
+                            <button class="btn" onclick="startReviewGame('quiz', 'benefits')" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; border:none; box-shadow: 0 4px 10px rgba(139,92,246,0.3); padding: 0.75rem 1.5rem; font-size: 1rem; font-weight: 700; border-radius: 12px;"><i class="fa-solid fa-clipboard-question"></i> Trắc Nghiệm</button>
+                            <button class="btn" onclick="startReviewGame('spelling', 'benefits')" style="background: linear-gradient(135deg, #ec4899, #be185d); color: white; border:none; box-shadow: 0 4px 10px rgba(236,72,153,0.3); padding: 0.75rem 1.5rem; font-size: 1rem; font-weight: 700; border-radius: 12px;"><i class="fa-solid fa-keyboard"></i> Gõ Từ</button>
                         </div>
 
                         <div class="game-stage" style="background: var(--bg-card); border: 2px solid var(--border); border-radius: 20px; padding: 2rem; min-height: 400px; position: relative; overflow: hidden; box-shadow: inset 0 2px 10px rgba(0,0,0,0.02);">
@@ -18583,7 +18649,51 @@
         </main>
     </div>
 
+    <!-- Modal Tiến Độ Học Tập -->
+    <div id="progress-modal" class="progress-modal-overlay" style="display: none;" onclick="if(event.target === this) closeProgressModal();">
+        <div class="progress-modal-card fade-in">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+                <div style="font-size: 1.25rem; font-weight: 800; color: var(--text-main); display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fa-solid fa-chart-line" style="color: var(--primary);"></i> TIẾN ĐỘ HỌC TẬP
+                </div>
+                <button type="button" class="icon-btn" onclick="closeProgressModal()" style="border: none; background: transparent; font-size: 1.2rem; cursor: pointer; color: var(--text-muted);"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div style="background: var(--bg-body); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 1.25rem;">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.25rem; flex-wrap: wrap; gap: 0.5rem;">
+                    <strong style="font-size: 1.05rem; color: var(--text-main);" id="progress-modal-student">Học viên: Khách</strong>
+                    <span id="progress-modal-class" style="background: rgba(67, 97, 238, 0.12); color: var(--primary); padding: 0.2rem 0.6rem; border-radius: 6px; font-weight: 700; font-size: 0.85rem;">Lớp: -</span>
+                </div>
+                <div style="font-size: 0.82rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.35rem; margin-top: 0.35rem;" id="progress-modal-last-saved">
+                    <i class="fa-regular fa-clock"></i> Lần lưu gần nhất: Chưa lưu
+                </div>
+            </div>
+
+            <div class="progress-stats-grid">
+                <div class="progress-stat-box">
+                    <div class="stat-lbl"><i class="fa-solid fa-star" style="color: #f59e0b;"></i> Cụm lợi ích đã chọn</div>
+                    <div class="stat-val" id="progress-modal-fav-count" style="color: #f59e0b;">0</div>
+                    <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.2rem;">sẵn sàng để trả bài</div>
+                </div>
+                <div class="progress-stat-box">
+                    <div class="stat-lbl"><i class="fa-solid fa-circle-check" style="color: #10b981;"></i> Chủ đề hoàn thành</div>
+                    <div class="stat-val" id="progress-modal-topics-count" style="color: #10b981;">0 / 60</div>
+                    <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.2rem;">trong phần luyện tập</div>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 0.65rem; margin-top: 1.5rem;">
+                <button type="button" class="btn" onclick="saveLearningProgress(false)" style="background: linear-gradient(135deg, #10b981, #059669); color: white; border: none; padding: 0.85rem 1.25rem; border-radius: 12px; font-weight: 700; font-size: 0.95rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);">
+                    <i class="fa-solid fa-floppy-disk"></i> LƯU TIẾN ĐỘ NGAY
+                </button>
+                <button type="button" class="btn" onclick="clearLearningProgressConfirm()" style="background: transparent; color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.3); padding: 0.7rem 1.25rem; border-radius: 12px; font-weight: 600; font-size: 0.88rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.4rem;">
+                    <i class="fa-solid fa-trash-can"></i> Đặt lại / Xoá toàn bộ tiến độ
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script src="audio/manifest.js"></script>
-    <script src="script.js?v=20261020_v2"></script>
+    <script src="script.js?v=20261027_v1"></script>
 </body>
 </html>

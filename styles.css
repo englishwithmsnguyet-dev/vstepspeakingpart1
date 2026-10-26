@@ -1254,3 +1254,130 @@ body.dark-theme .topic-q-type-badge {
 .login-btn:active {
     transform: scale(0.98);
 }
+
+/* ========================================================
+   FAVORITE BENEFITS & TRẢ BÀI STYLES
+   ======================================================== */
+.benefit-card-wrapper {
+    position: relative;
+    transition: all 0.25s ease;
+}
+.benefit-card-wrapper:hover {
+    border-color: rgba(245, 158, 11, 0.5) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06) !important;
+}
+.benefit-favorited {
+    border: 2px solid #f59e0b !important;
+    background: rgba(245, 158, 11, 0.08) !important;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.15) !important;
+}
+.benefit-fav-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.35rem 0.5rem;
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    transition: transform 0.2s, color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 0.25rem;
+}
+.benefit-fav-btn:hover {
+    transform: scale(1.2);
+    color: #f59e0b;
+}
+.benefit-fav-btn.active {
+    color: #f59e0b;
+}
+.fav-badge {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #d97706;
+    background: rgba(245, 158, 11, 0.15);
+    padding: 0.2rem 0.55rem;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-top: 0.35rem;
+}
+
+/* ========================================================
+   LEARNING PROGRESS & MODAL STYLES
+   ======================================================== */
+.progress-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+.progress-modal-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+.progress-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.85rem;
+    margin: 1.25rem 0;
+}
+.progress-stat-box {
+    background: var(--bg-body);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+}
+.progress-stat-box .stat-val {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-top: 0.25rem;
+}
+.progress-stat-box .stat-lbl {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+.toast-notice {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: #1e293b;
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.92rem;
+    font-weight: 600;
+    z-index: 9999;
+    animation: slideUpFade 0.3s ease;
+    border-left: 4px solid #10b981;
+}
+@keyframes slideUpFade {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
