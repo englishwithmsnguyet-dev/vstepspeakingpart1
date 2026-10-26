@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         accessLevel: 'FULL',
         isAudio: true,
         isDark: false,
+        voiceMode: 'studio',
         ynIndex: 0,
         selectedVoiceURI: null,
         unlockedTabs: {},
@@ -181,20 +182,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             if (!bestVoice) {
                 const preferredNames = [
-                    "Microsoft Guy",
-                    "Google UK English Male",
-                    "Google US English Male",
-                    "Alex",
-                    "Daniel",
-                    "Google US English",
-                    "Samantha"
+                    "Microsoft Ava",
+                    "Ava",
+                    "Microsoft Jenny",
+                    "Jenny",
+                    "Microsoft Aria",
+                    "Aria",
+                    "Google US English Female",
+                    "Google UK English Female",
+                    "Samantha",
+                    "Victoria",
+                    "Karen",
+                    "Google US English"
                 ];
                 for (let name of preferredNames) {
-                    bestVoice = voices.find(v => v.name && v.name.includes(name));
+                    bestVoice = voices.find(v => v.name && v.name.toLowerCase().includes(name.toLowerCase()));
                     if (bestVoice) break;
                 }
                 if (!bestVoice) {
-                    bestVoice = voices.find(v => v.lang && (v.lang.startsWith("en-US") || v.lang.startsWith("en-GB")) && v.name && v.name.includes("Male"));
+                    bestVoice = voices.find(v => v.lang && (v.lang.startsWith("en-US") || v.lang.startsWith("en-GB")) && v.name && v.name.toLowerCase().includes("female"));
                 }
                 if (!bestVoice) {
                     bestVoice = voices.find(v => v.lang && (v.lang.startsWith("en-US") || v.lang.startsWith("en-GB")));
@@ -210,8 +216,8 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 utt.lang = 'en-US';
             }
-            utt.rate = 1.0; // Tốc độ chuẩn ban đầu
-            utt.pitch = 1.25; // Cao độ sáng, trẻ trung, năng động gốc trên máy tính
+            utt.rate = 1.0; // Tốc độ chuẩn
+            utt.pitch = 1.0; // Cao độ nữ tự nhiên
             
             utt.onend = () => { window._activeUtterance = null; };
             utt.onerror = () => { window._activeUtterance = null; };
@@ -221,62 +227,60 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (window.speechSynthesis.paused) window.speechSynthesis.resume();
             }, 10);
         } catch (e) {
-            console.error("Error in classic TTS:", e);
+            console.error("Error in fallback TTS:", e);
         }
     };
 
-    // Global AI Speech - Hỗ trợ cả 2 chế độ (Giọng Gốc Máy Tính & Giọng Phòng Thu Studio)
+    // Global AI Speech - Cố định Giọng Nữ Phòng Thu Studio (Neural MP3 - Ava Nữ)
     window._currentAudio = null;
     window.speakText = (txt, forcedMode) => {
         if (!state.isAudio) return;
 
-        const mode = forcedMode || state.voiceMode;
+        const mode = forcedMode || state.voiceMode || 'studio';
         let cleanTxt = (txt || '').replace(/<[^>]*>/g, '').replace(/^→\s*/, '').replace(/[\r\n]+/g, ' ').trim();
         if (!cleanTxt) return;
 
-        if (mode === 'studio') {
-            const manifest = window.studioAudioManifest || studioAudioManifest || {};
-            const audioPath = manifest[cleanTxt] || manifest[cleanTxt.toLowerCase()];
-            if (audioPath) {
-                try {
-                    if (window._currentAudio) {
-                        window._currentAudio.pause();
-                        window._currentAudio.currentTime = 0;
-                    }
-                    if ('speechSynthesis' in window) {
-                        window.speechSynthesis.cancel();
-                    }
-                    const audio = new Audio(audioPath);
-                    window._currentAudio = audio;
-                    const playPromise = audio.play();
-                    if (playPromise !== undefined) {
-                        playPromise.catch(err => {
-                            console.warn("Studio audio play blocked, fallback to classic:", err);
-                            speakClassicTTS(cleanTxt);
-                        });
-                    }
-                    return;
-                } catch (e) {
-                    console.warn("Audio tag error:", e);
+        // Ưu tiên phát File âm thanh Studio AI Neural MP3 (Ava Nữ)
+        const manifest = window.studioAudioManifest || studioAudioManifest || {};
+        const audioPath = manifest[cleanTxt] || manifest[cleanTxt.toLowerCase()];
+        if (audioPath) {
+            try {
+                if (window._currentAudio) {
+                    window._currentAudio.pause();
+                    window._currentAudio.currentTime = 0;
                 }
+                if ('speechSynthesis' in window) {
+                    window.speechSynthesis.cancel();
+                }
+                const audio = new Audio(audioPath);
+                window._currentAudio = audio;
+                const playPromise = audio.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch(err => {
+                        console.warn("Studio audio play blocked, fallback to speech synthesis:", err);
+                        speakClassicTTS(cleanTxt);
+                    });
+                }
+                return;
+            } catch (e) {
+                console.warn("Audio tag error:", e);
             }
         }
 
-        // Chế độ 'classic' (Mặc định) hoặc fallback
+        // Dự phòng khi file MP3 chưa có hoặc lỗi: phát TTS với giọng đọc Nữ
         speakClassicTTS(cleanTxt);
     };
 
-    // Hàm Nghe Thử & Chọn Chế Độ Giọng
-    window.previewVoice = (mode) => {
+    // Hàm Nghe Thử & Thiết lập giọng đọc
+    window.previewVoice = (mode = 'studio') => {
         const sampleSentence = "Sure. I often play sports in the afternoon whenever I have free time. It allows me to relax after a busy day and stay healthy.";
         window.speakText(sampleSentence, mode);
     };
 
-    window.setVoiceMode = (mode) => {
-        state.voiceMode = mode;
-        localStorage.setItem('vstep_voice_mode', mode);
+    window.setVoiceMode = (mode = 'studio') => {
+        state.voiceMode = 'studio';
+        localStorage.setItem('vstep_voice_mode', 'studio');
         updateVoiceUI();
-        window.previewVoice(mode);
     };
 
     const voiceModeToggle = document.getElementById('voice-mode-toggle');
@@ -284,20 +288,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentVoiceBadge = document.getElementById('current-voice-badge');
 
     const updateVoiceUI = () => {
-        const mode = state.voiceMode;
         if (voiceModeLabel) {
-            voiceModeLabel.textContent = mode === 'studio' ? 'Giọng Studio' : 'Giọng Gốc';
+            voiceModeLabel.textContent = 'Giọng Nữ Studio';
         }
         if (currentVoiceBadge) {
-            currentVoiceBadge.textContent = mode === 'studio' ? 'Đang dùng: Giọng Phòng Thu Studio' : 'Đang dùng: Giọng Gốc Máy Tính';
-            currentVoiceBadge.style.background = mode === 'studio' ? '#8b5cf6' : '#4361ee';
+            currentVoiceBadge.textContent = 'Đang dùng: Giọng Nữ Phòng Thu Studio (Ava)';
+            currentVoiceBadge.style.background = '#8b5cf6';
         }
     };
 
     if (voiceModeToggle) {
         voiceModeToggle.addEventListener('click', () => {
-            const nextMode = state.voiceMode === 'studio' ? 'classic' : 'studio';
-            window.setVoiceMode(nextMode);
+            window.setVoiceMode('studio');
         });
     }
     updateVoiceUI();
@@ -388,7 +390,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 favoriteBenefits: state.favoriteBenefits || [],
                 benefitsReviewMode: state.benefitsReviewMode || 'fav',
                 theme: state.isDark ? 'dark' : 'light',
-                voiceMode: localStorage.getItem('vstep_voice_mode') || 'classic',
+                voiceMode: 'studio',
                 lastSavedTime: new Date().toISOString()
             };
             localStorage.setItem(PROGRESS_KEY, JSON.stringify(data));
