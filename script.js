@@ -463,7 +463,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (favEl) favEl.textContent = String(favCount);
 
         const topicsEl = document.getElementById('progress-modal-topics-count');
-        if (topicsEl) topicsEl.textContent = `${topicCount} / 60`;
+        if (topicsEl) topicsEl.textContent = `${topicCount} / ${practiceTopicsData.length}`; // Dynamic total
 
         const timeEl = document.getElementById('progress-modal-last-saved');
         if (timeEl) {
@@ -16888,8 +16888,5887 @@ const practiceTopicsData = [
             }
         ]
     }
+,
+
+    {
+        "id": 61,
+        "title": "Chủ đề 61: Let's talk about street food",
+        "topicName": "Street food",
+        "introText": "Let’s talk about street food.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "Do you like eating street food?",
+                "qType": "Yes/No Question: Do you like eating street food?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Trả lời CÓ - Thích ăn vỉa hè vì ngon, giá rẻ và tiện tụ tập bạn bè):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, definitely. I’m a huge fan of street food because it is <span class=\"formula-bracket-hl\">[tính từ hương vị & giá cả]</span>. In addition, it is a great way to <span class=\"formula-bracket-hl\">[lợi ích - Vo]</span> with my close friends.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Trả lời KHÔNG - Lo ngại vấn đề an toàn thực phẩm, thích ăn cơm nhà):</div>\n                    <div class=\"topic-formula-text\">\n                        → Well, to be honest, not really. I rarely eat street food because I am concerned about <span class=\"formula-bracket-hl\">[vấn đề vệ sinh]</span>. I prefer eating <span class=\"formula-bracket-hl\">[món ăn nhà nấu]</span> to protect my digestive health.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🍜 [Hương vị & Giá cả] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "tasty and very affordable",
+                                "vn": "ngon miệng và giá cả rất hợp lý"
+                            },
+                            {
+                                "en": "flavorful and budget-friendly",
+                                "vn": "đậm đà hương vị và hợp túi tiền"
+                            },
+                            {
+                                "en": "freshly cooked and delicious",
+                                "vn": "vừa nấu nóng hổi và rất ngon"
+                            },
+                            {
+                                "en": "crispy and full of flavor",
+                                "vn": "giòn rụm và đậm đà hương vị"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "⭐ [Cụm Lợi ích]:",
+                        "note": "Sử dụng các cụm từ trong <button type=\"button\" onclick=\"switchTab('benefits')\" style=\"background: none; border: none; padding: 0; color: #d946ef; font-weight: 800; text-decoration: underline; cursor: pointer; font-size: 0.95rem; font-family: inherit;\"><i class=\"fa-solid fa-arrow-up-right-from-square\"></i> Bảng Lợi Ích</button> <em>(Ví dụ: hang out and chat, relax after stressful hours, discover authentic local snacks)</em>."
+                    },
+                    {
+                        "title": "🛡️ [Vệ sinh an toàn & Cơm nhà] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "poor food hygiene and road dust",
+                                "vn": "vệ sinh thực phẩm kém và bụi đường"
+                            },
+                            {
+                                "en": "unhealthy cooking oil and bacteria",
+                                "vn": "dầu chiên không tốt cho sức khỏe và vi khuẩn"
+                            },
+                            {
+                                "en": "clean home-cooked dishes",
+                                "vn": "các món ăn sạch sẽ nấu tại nhà"
+                            },
+                            {
+                                "en": "nutritious meals made by my mother",
+                                "vn": "các bữa ăn giàu dinh dưỡng do mẹ nấu"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Thích ăn vỉa hè vì ngon, rẻ và dễ tụ tập bạn bè - 25 từ)",
+                        "text": "Yes, definitely. I am a huge fan of street food because it is tasty and very affordable. In addition, it is a great way to hang out and chat with my close friends.",
+                        "formatted": "→ Yes, definitely. I’m a huge fan of street food because it is <span class=\"sub-hl\">tasty and very affordable</span>. In addition, it is a great way to <span class=\"sub-hl\">hang out and chat</span> with my close friends."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Lo ngại vệ sinh và bụi đường, thích ăn cơm nhà - 24 từ)",
+                        "text": "Well, to be honest, not really. I rarely eat street food because I am concerned about poor food hygiene and road dust. I prefer eating clean home-cooked dishes to protect my digestive health.",
+                        "formatted": "→ Well, to be honest, not really. I rarely eat street food because I am concerned about <span class=\"sub-hl\">poor food hygiene and road dust</span>. I prefer eating <span class=\"sub-hl\">clean home-cooked dishes</span> to protect my digestive health."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "What are some famous street foods?",
+                "qType": "Wh-Question: What are some famous street foods?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Kể tên các món ăn đường phố Việt Nam quen thuộc như bánh mì, phở cuốn, bánh tráng nướng):</div>\n                    <div class=\"topic-formula-text\">\n                        → In Vietnam, there are many iconic street foods such as <span class=\"formula-bracket-hl\">[tên món 1]</span> and <span class=\"formula-bracket-hl\">[tên món 2]</span>. They are famous because they are <span class=\"formula-bracket-hl\">[đặc tính nổi bật]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Kể tên đồ uống vỉa hè và đồ ăn vặt tuổi teen):</div>\n                    <div class=\"topic-formula-text\">\n                        → I would say popular snacks like <span class=\"formula-bracket-hl\">[món ăn vặt 1]</span> and <span class=\"formula-bracket-hl\">[món ăn vặt 2]</span> are extremely well-known. You can easily find them <span class=\"formula-bracket-hl\">[địa điểm bán]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🥖 [Món ăn nổi tiếng & Đặc tính] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "Vietnamese baguette (banh mi)",
+                                "vn": "bánh mì kẹp thịt Việt Nam"
+                            },
+                            {
+                                "en": "grilled pork skewers and pho rolls",
+                                "vn": "thịt xiên nướng và phở cuốn"
+                            },
+                            {
+                                "en": "crispy Vietnamese pancakes (banh xeo)",
+                                "vn": "bánh xèo giòn tan"
+                            },
+                            {
+                                "en": "rich in flavor and extremely convenient to grab",
+                                "vn": "đậm đà hương vị và vô cùng tiện lợi mang đi"
+                            },
+                            {
+                                "en": "widely loved by both locals and tourists",
+                                "vn": "được cả người bản địa và du khách quốc tế yêu thích"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🧋 [Món ăn vặt & Địa điểm] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "grilled rice paper (Vietnamese pizza)",
+                                "vn": "bánh tráng nướng"
+                            },
+                            {
+                                "en": "milk tea and iced lemon tea",
+                                "vn": "trà sữa và trà chanh chém gió"
+                            },
+                            {
+                                "en": "spicy rice paper salad (banh trang tron)",
+                                "vn": "bánh tráng trộn cay thơm"
+                            },
+                            {
+                                "en": "at every street corner and near school gates",
+                                "vn": "ở mọi góc phố và gần cổng trường học"
+                            },
+                            {
+                                "en": "along lively night markets and pedestrian streets",
+                                "vn": "dọc theo các khu chợ đêm sôi động và phố đi bộ"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Bánh mì kẹp thịt và bánh xèo giòn tan - 26 từ)",
+                        "text": "In Vietnam, there are many iconic street foods such as Vietnamese baguette and crispy Vietnamese pancakes. They are famous because they are rich in flavor and extremely convenient to grab.",
+                        "formatted": "→ In Vietnam, there are many iconic street foods such as <span class=\"sub-hl\">Vietnamese baguette</span> and <span class=\"sub-hl\">crispy Vietnamese pancakes</span>. They are famous because they are <span class=\"sub-hl\">rich in flavor and extremely convenient to grab</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Bánh tráng nướng và trà chanh gần cổng trường - 27 từ)",
+                        "text": "I would say popular snacks like grilled rice paper and iced lemon tea are extremely well-known. You can easily find them at every street corner and near school gates.",
+                        "formatted": "→ I would say popular snacks like <span class=\"sub-hl\">grilled rice paper</span> and <span class=\"sub-hl\">iced lemon tea</span> are extremely well-known. You can easily find them <span class=\"sub-hl\">at every street corner and near school gates</span>."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "What are the benefits of eating street food?",
+                "qType": "Wh-Question: What are the benefits of eating street food?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Nhanh chóng, tiết kiệm tiền và phù hợp người bận rộn):</div>\n                    <div class=\"topic-formula-text\">\n                        → The biggest advantage is that it helps people <span class=\"formula-bracket-hl\">[lợi ích kinh tế & thời gian 1 - Vo]</span>. Besides, it is very convenient for those who <span class=\"formula-bracket-hl\">[đặc điểm lối sống]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Trải nghiệm văn hóa bản địa và gắn kết xã hội):</div>\n                    <div class=\"topic-formula-text\">\n                        → Eating street food allows us to <span class=\"formula-bracket-hl\">[trải nghiệm văn hóa 1 - Vo]</span>. Furthermore, it creates great opportunities to <span class=\"formula-bracket-hl\">[gắn kết xã hội 2 - Vo]</span> in a relaxed atmosphere.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "💰 [Lợi ích kinh tế & Thời gian] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "save money and save preparation time",
+                                "vn": "tiết kiệm tiền và tiết kiệm thời gian chuẩn bị"
+                            },
+                            {
+                                "en": "grab a quick bite without waiting",
+                                "vn": "ăn nhanh một bữa lót dạ mà không phải chờ đợi"
+                            },
+                            {
+                                "en": "have a tight daily schedule",
+                                "vn": "có lịch trình hàng ngày bận rộn"
+                            },
+                            {
+                                "en": "live on a tight student budget",
+                                "vn": "sống bằng ngân sách sinh viên eo hẹp"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🌏 [Văn hóa & Xã hội] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "explore authentic local culinary culture",
+                                "vn": "khám phá văn hóa ẩm thực bản địa đích thực"
+                            },
+                            {
+                                "en": "taste traditional regional flavors",
+                                "vn": "thưởng thức các hương vị truyền thống vùng miền"
+                            },
+                            {
+                                "en": "socialize with friends and locals comfortably",
+                                "vn": "giao lưu thoải mái với bạn bè và người dân địa phương"
+                            },
+                            {
+                                "en": "enjoy lively outdoor street vibes",
+                                "vn": "tận hưởng bầu không khí đường phố ngoài trời sôi động"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Tiết kiệm tiền và tiện lợi cho người có lịch trình bận rộn - 24 từ)",
+                        "text": "The biggest advantage is that it helps people save money and save preparation time. Besides, it is very convenient for those who have a tight daily schedule.",
+                        "formatted": "→ The biggest advantage is that it helps people <span class=\"sub-hl\">save money and save preparation time</span>. Besides, it is very convenient for those who <span class=\"sub-hl\">have a tight daily schedule</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Khám phá văn hóa ẩm thực và giao lưu bạn bè thoải mái - 24 từ)",
+                        "text": "Eating street food allows us to explore authentic local culinary culture. Furthermore, it creates great opportunities to socialize with friends and locals comfortably in a relaxed atmosphere.",
+                        "formatted": "→ Eating street food allows us to <span class=\"sub-hl\">explore authentic local culinary culture</span>. Furthermore, it creates great opportunities to <span class=\"sub-hl\">socialize with friends and locals comfortably</span> in a relaxed atmosphere."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 62,
+        "title": "Chủ đề 62: Let's talk about coffee shops",
+        "topicName": "Coffee shops",
+        "introText": "Let’s talk about coffee shops.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "Do you like going to coffee shops?",
+                "qType": "Yes/No Question: Do you like going to coffee shops?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Trả lời CÓ - Rất thích đến quán vì không gian đẹp và đồ uống thơm ngon):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, absolutely. I love visiting coffee shops because they offer <span class=\"formula-bracket-hl\">[không gian lý tưởng]</span> and <span class=\"formula-bracket-hl\">[đặc điểm đồ uống]</span>. It is my favorite place to <span class=\"formula-bracket-hl\">[lợi ích - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Trả lời KHÔNG - Thích uống cà phê tự pha ở nhà để tiết kiệm tiền):</div>\n                    <div class=\"topic-formula-text\">\n                        → Well, to be honest, not really. I rarely visit cafes because they can be <span class=\"formula-bracket-hl\">[nhược điểm quán]</span>. I prefer making <span class=\"formula-bracket-hl\">[đồ uống tự pha]</span> at home to save my budget.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "☕ [Không gian & Đồ uống] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "a cozy and aesthetic ambiance",
+                                "vn": "một không gian ấm cúng và đẹp mắt"
+                            },
+                            {
+                                "en": "a peaceful environment with gentle music",
+                                "vn": "môi trường yên tĩnh với âm nhạc du dương"
+                            },
+                            {
+                                "en": "delicious drinks and aromatic coffee",
+                                "vn": "đồ uống ngon miệng và cà phê thơm lừng"
+                            },
+                            {
+                                "en": "unwind and boost my creative energy",
+                                "vn": "thư giãn và thúc đẩy năng lượng sáng tạo"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🏠 [Tiết kiệm & Nhược điểm] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "quite noisy and expensive",
+                                "vn": "khá ồn ào và tốn kém"
+                            },
+                            {
+                                "en": "overcrowded on weekends",
+                                "vn": "quá đông đúc vào dịp cuối tuần"
+                            },
+                            {
+                                "en": "homemade drip coffee",
+                                "vn": "cà phê phin tự pha tại nhà"
+                            },
+                            {
+                                "en": "fresh herbal tea in my living room",
+                                "vn": "trà thảo mộc tươi tại phòng khách"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Thích vì không gian ấm cúng và nạp lại năng lượng - 25 từ)",
+                        "text": "Yes, absolutely. I love visiting coffee shops because they offer a cozy and aesthetic ambiance and delicious drinks and aromatic coffee. It is my favorite place to unwind and boost my creative energy.",
+                        "formatted": "→ Yes, absolutely. I love visiting coffee shops because they offer <span class=\"sub-hl\">a cozy and aesthetic ambiance</span> and <span class=\"sub-hl\">delicious drinks and aromatic coffee</span>. It is my favorite place to <span class=\"sub-hl\">unwind and boost my creative energy</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Không thích vì ồn và đắt, thích tự pha ở nhà - 24 từ)",
+                        "text": "Well, to be honest, not really. I rarely visit cafes because they can be quite noisy and expensive. I prefer making homemade drip coffee at home to save my budget.",
+                        "formatted": "→ Well, to be honest, not really. I rarely visit cafes because they can be <span class=\"sub-hl\">quite noisy and expensive</span>. I prefer making <span class=\"sub-hl\">homemade drip coffee</span> at home to save my budget."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "Who do you often go there with?",
+                "qType": "Wh-Question: Who do you often go there with?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Đi cùng bạn thân hoặc đồng nghiệp để trò chuyện):</div>\n                    <div class=\"topic-formula-text\">\n                        → I usually go there with <span class=\"formula-bracket-hl\">[đối tượng đi cùng]</span>. We often gather to <span class=\"formula-bracket-hl\">[hoạt động chung - Vo]</span> and strengthen our relationship.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Đi một mình để tập trung làm việc hoặc học tập):</div>\n                    <div class=\"topic-formula-text\">\n                        → Most of the time, I prefer going <span class=\"formula-bracket-hl\">[đi một mình]</span>. It gives me personal space to <span class=\"formula-bracket-hl\">[hoạt động cá nhân - Vo]</span> without any distractions.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "👥 [Đi cùng người khác] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "my close university friends",
+                                "vn": "bạn thân thời đại học của tôi"
+                            },
+                            {
+                                "en": "my coworkers and classmates",
+                                "vn": "đồng nghiệp và bạn cùng lớp của tôi"
+                            },
+                            {
+                                "en": "catch up on daily stories and gossip",
+                                "vn": "tâm sự chuyện thường ngày và trò chuyện phiếm"
+                            },
+                            {
+                                "en": "share life updates and support each other",
+                                "vn": "chia sẻ những điều mới trong cuộc sống và hỗ trợ nhau"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🎧 [Đi một mình] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "by myself on quiet weekday mornings",
+                                "vn": "một mình vào những buổi sáng ngày trong tuần thanh tĩnh"
+                            },
+                            {
+                                "en": "alone with my laptop and headphones",
+                                "vn": "một mình cùng laptop và tai nghe"
+                            },
+                            {
+                                "en": "focus completely on my study projects",
+                                "vn": "tập trung hoàn toàn vào các dự án học tập"
+                            },
+                            {
+                                "en": "read my favorite novel peacefully",
+                                "vn": "đọc cuốn tiểu thuyết yêu thích trong bình yên"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Đi với bạn thân đại học để tâm sự và gắn kết - 22 từ)",
+                        "text": "I usually go there with my close university friends. We often gather to catch up on daily stories and gossip and strengthen our relationship.",
+                        "formatted": "→ I usually go there with <span class=\"sub-hl\">my close university friends</span>. We often gather to <span class=\"sub-hl\">catch up on daily stories and gossip</span> and strengthen our relationship."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Đi một mình với laptop để tập trung học tập - 23 từ)",
+                        "text": "Most of the time, I prefer going alone with my laptop and headphones. It gives me personal space to focus completely on my study projects without any distractions.",
+                        "formatted": "→ Most of the time, I prefer going <span class=\"sub-hl\">alone with my laptop and headphones</span>. It gives me personal space to <span class=\"sub-hl\">focus completely on my study projects</span> without any distractions."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "What do you usually do at a coffee shop?",
+                "qType": "Wh-Question: What do you usually do at a coffee shop?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Làm việc, học bài hoặc đọc sách):</div>\n                    <div class=\"topic-formula-text\">\n                        → When I am at a cafe, I mainly <span class=\"formula-bracket-hl\">[hoạt động học/làm việc 1 - Vo]</span> and sip my drink. The quiet ambiance really helps me <span class=\"formula-bracket-hl\">[hiệu quả đạt được - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Trò chuyện cùng bạn bè, chụp ảnh sống ảo):</div>\n                    <div class=\"topic-formula-text\">\n                        → I usually spend time <span class=\"formula-bracket-hl\">[hoạt động giải trí - V-ing]</span> with my friends. In addition, we love <span class=\"formula-bracket-hl\">[hoạt động chụp ảnh - V-ing]</span> to share on social media.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "💻 [Học tập & Làm việc] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "work on my online assignments",
+                                "vn": "làm các bài tập trực tuyến"
+                            },
+                            {
+                                "en": "prepare lecture notes on my laptop",
+                                "vn": "chuẩn bị tài liệu bài giảng trên máy tính xách tay"
+                            },
+                            {
+                                "en": "stay productive and boost concentration",
+                                "vn": "duy trì năng suất và tăng cường khả năng tập trung"
+                            },
+                            {
+                                "en": "generate fresh creative ideas",
+                                "vn": "nảy sinh những ý tưởng sáng tạo mới"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "📸 [Trò chuyện & Chụp ảnh] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "chatting and sharing funny stories",
+                                "vn": "trò chuyện và chia sẻ những câu chuyện hài hước"
+                            },
+                            {
+                                "en": "listening to soothing background melodies",
+                                "vn": "lắng nghe những giai điệu nền êm dịu"
+                            },
+                            {
+                                "en": "taking aesthetic photos of the vintage decor",
+                                "vn": "chụp những bức ảnh nghệ thuật về phong cách cổ điển của quán"
+                            },
+                            {
+                                "en": "posting nice selfies on Facebook and Instagram",
+                                "vn": "đăng ảnh selfie đẹp lên Facebook và Instagram"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Làm bài tập và tăng cường tập trung - 23 từ)",
+                        "text": "When I am at a cafe, I mainly work on my online assignments and sip my drink. The quiet ambiance really helps me stay productive and boost concentration.",
+                        "formatted": "→ When I am at a cafe, I mainly <span class=\"sub-hl\">work on my online assignments</span> and sip my drink. The quiet ambiance really helps me <span class=\"sub-hl\">stay productive and boost concentration</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Trò chuyện và chụp ảnh không gian đẹp - 25 từ)",
+                        "text": "I usually spend time chatting and sharing funny stories with my friends. In addition, we love taking aesthetic photos of the vintage decor to share on social media.",
+                        "formatted": "→ I usually spend time <span class=\"sub-hl\">chatting and sharing funny stories</span> with my friends. In addition, we love <span class=\"sub-hl\">taking aesthetic photos of the vintage decor</span> to share on social media."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 63,
+        "title": "Chủ đề 63: Let's talk about childhood hobbies",
+        "topicName": "Childhood hobbies",
+        "introText": "Let’s talk about childhood hobbies.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "What was your favorite childhood hobby?",
+                "qType": "Wh-Question: What was your favorite childhood hobby?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Sở thích trò chơi vận động ngoài trời như đá bóng, nhảy dây, thả diều):</div>\n                    <div class=\"topic-formula-text\">\n                        → When I was a child, my all-time favorite hobby was <span class=\"formula-bracket-hl\">[sở thích vận động - V-ing]</span>. I usually played it <span class=\"formula-bracket-hl\">[địa điểm & thời gian]</span> with my neighborhood pals.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Sở thích trong nhà như vẽ tranh, đọc truyện tranh, xếp lego):</div>\n                    <div class=\"topic-formula-text\">\n                        → Back in my childhood, I was really fond of <span class=\"formula-bracket-hl\">[sở thích nghệ thuật/trí tuệ - V-ing]</span>. I could easily spend hours <span class=\"formula-bracket-hl\">[hành động chi tiết - V-ing]</span> in my bedroom.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🪁 [Sở thích ngoài trời] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "flying paper kites in open paddy fields",
+                                "vn": "thả diều giấy trên những cánh đồng lúa rộng lớn"
+                            },
+                            {
+                                "en": "playing soccer on the village playground",
+                                "vn": "chơi bóng đá trên sân chơi của làng"
+                            },
+                            {
+                                "en": "playing hide-and-seek after school",
+                                "vn": "chơi trốn tìm sau giờ tan học"
+                            },
+                            {
+                                "en": "riding bicycles around the neighborhood",
+                                "vn": "đạp xe đạp quanh xóm"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🎨 [Sở thích trong nhà] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "drawing anime characters and landscapes",
+                                "vn": "vẽ các nhân vật hoạt hình và phong cảnh"
+                            },
+                            {
+                                "en": "reading colorful comic books like Doraemon",
+                                "vn": "đọc truyện tranh nhiều màu sắc như Doraemon"
+                            },
+                            {
+                                "en": "building colorful Lego castles",
+                                "vn": "lắp ráp lâu đài lego nhiều màu sắc"
+                            },
+                            {
+                                "en": "collecting postage stamps and stickers",
+                                "vn": "sưu tầm tem thư và nhãn dán"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Thả diều trên cánh đồng cùng bạn bè - 24 từ)",
+                        "text": "When I was a child, my all-time favorite hobby was flying paper kites in open paddy fields. I usually played it on breezy summer afternoons with my neighborhood pals.",
+                        "formatted": "→ When I was a child, my all-time favorite hobby was <span class=\"sub-hl\">flying paper kites in open paddy fields</span>. I usually played it <span class=\"sub-hl\">on breezy summer afternoons</span> with my neighborhood pals."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Đọc truyện tranh Doraemon trong phòng ngủ - 22 từ)",
+                        "text": "Back in my childhood, I was really fond of reading colorful comic books like Doraemon. I could easily spend hours reading comic stories in my bedroom.",
+                        "formatted": "→ Back in my childhood, I was really fond of <span class=\"sub-hl\">reading colorful comic books like Doraemon</span>. I could easily spend hours <span class=\"sub-hl\">reading comic stories</span> in my bedroom."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "Why did you like it?",
+                "qType": "Wh-Question (Reason): Why did you like it?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Giúp giải tỏa căng thẳng học tập và kết nối bạn bè):</div>\n                    <div class=\"topic-formula-text\">\n                        → I loved it simply because it was <span class=\"formula-bracket-hl\">[tính từ cảm xúc]</span>. Moreover, it allowed me to <span class=\"formula-bracket-hl\">[lợi ích thể chất & xã hội - Vo]</span> after school.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Kích thích trí tưởng tượng và sáng tạo):</div>\n                    <div class=\"topic-formula-text\">\n                        → I was fascinated by it because it helped <span class=\"formula-bracket-hl\">[phát triển trí tuệ/kỹ năng - Vo]</span>. It made me feel <span class=\"formula-bracket-hl\">[cảm xúc tích cực]</span> whenever I completed a piece.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "😄 [Cảm xúc & Thể chất] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "tremendously fun and exciting",
+                                "vn": "vô cùng vui vẻ và hào hứng"
+                            },
+                            {
+                                "en": "stay physically active and laugh out loud",
+                                "vn": "vận động thể chất và cười sảng khoái"
+                            },
+                            {
+                                "en": "strengthen my bond with peer friends",
+                                "vn": "gắn kết chặt chẽ với bạn bè đồng trang lứa"
+                            },
+                            {
+                                "en": "escape stressful exam periods",
+                                "vn": "tránh xa những kỳ thi cử căng thẳng"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "💡 [Trí tuệ & Cảm xúc] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "spark my imagination and artistic creativity",
+                                "vn": "thúc đẩy trí tưởng tượng và sự sáng tạo nghệ thuật"
+                            },
+                            {
+                                "en": "explore endless fantasy worlds",
+                                "vn": "khám phá những thế giới tưởng tượng bất tận"
+                            },
+                            {
+                                "en": "proud and deeply satisfied",
+                                "vn": "tự hào và vô cùng mãn nguyện"
+                            },
+                            {
+                                "en": "calm and completely absorbed",
+                                "vn": "bình tĩnh và hoàn toàn bị cuốn hút"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Vui vẻ và giúp vận động thể chất cười sảng khoái - 23 từ)",
+                        "text": "I loved it simply because it was tremendously fun and exciting. Moreover, it allowed me to stay physically active and laugh out loud after school.",
+                        "formatted": "→ I loved it simply because it was <span class=\"sub-hl\">tremendously fun and exciting</span>. Moreover, it allowed me to <span class=\"sub-hl\">stay physically active and laugh out loud</span> after school."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Thúc đẩy trí tưởng tượng và cảm thấy tự hào - 23 từ)",
+                        "text": "I was fascinated by it because it helped spark my imagination and artistic creativity. It made me feel proud and deeply satisfied whenever I completed a piece.",
+                        "formatted": "→ I was fascinated by it because it helped <span class=\"sub-hl\">spark my imagination and artistic creativity</span>. It made me feel <span class=\"sub-hl\">proud and deeply satisfied</span> whenever I completed a piece."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "Do you still like it now that you are older? Why/Why not?",
+                "qType": "Yes/No + Reason: Do you still like it now that you are older?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Vẫn thích nhưng ít có thời gian chơi vì bận học và làm):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, I still cherish it deeply. However, due to <span class=\"formula-bracket-hl\">[áp lực thời gian]</span>, I rarely do it nowadays, but it always brings back <span class=\"formula-bracket-hl\">[cảm xúc hoài niệm]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Không còn thích nữa vì sở thích đã thay đổi theo tuổi tác):</div>\n                    <div class=\"topic-formula-text\">\n                        → Honestly, not anymore. As I grew up, my interests shifted toward <span class=\"formula-bracket-hl\">[sở thích người lớn]</span> because they are more practical for <span class=\"formula-bracket-hl\">[mục tiêu cuộc sống]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "⏳ [Vẫn thích nhưng bận] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "my heavy workload and tight study schedule",
+                                "vn": "khối lượng công việc lớn và lịch học bận rộn"
+                            },
+                            {
+                                "en": "sweet and warm childhood memories",
+                                "vn": "những kỷ niệm tuổi thơ ngọt ngào và ấm áp"
+                            },
+                            {
+                                "en": "a sense of peaceful nostalgia",
+                                "vn": "cảm giác hoài niệm bình yên"
+                            },
+                            {
+                                "en": "play it whenever I return to my hometown",
+                                "vn": "chơi lại mỗi khi tôi về thăm quê hương"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "💼 [Sở thích thay đổi] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "reading business books and going to the gym",
+                                "vn": "đọc sách kinh doanh và tập thể hình"
+                            },
+                            {
+                                "en": "learning practical professional skills",
+                                "vn": "học các kỹ năng chuyên môn thực tế"
+                            },
+                            {
+                                "en": "my career advancement and personal finance",
+                                "vn": "sự thăng tiến nghề nghiệp và tài chính cá nhân"
+                            },
+                            {
+                                "en": "adult responsibilities and future plans",
+                                "vn": "những trách nhiệm của người lớn và các kế hoạch tương lai"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Vẫn yêu thích và gợi lại kỷ niệm tuổi thơ ấm áp - 25 từ)",
+                        "text": "Yes, I still cherish it deeply. However, due to my heavy workload and tight study schedule, I rarely do it nowadays, but it always brings back sweet and warm childhood memories.",
+                        "formatted": "→ Yes, I still cherish it deeply. However, due to <span class=\"sub-hl\">my heavy workload and tight study schedule</span>, I rarely do it nowadays, but it always brings back <span class=\"sub-hl\">sweet and warm childhood memories</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Không còn thích nữa, chuyển sang đọc sách phát triển bản thân - 25 từ)",
+                        "text": "Honestly, not anymore. As I grew up, my interests shifted toward learning practical professional skills because they are more practical for my career advancement and personal finance.",
+                        "formatted": "→ Honestly, not anymore. As I grew up, my interests shifted toward <span class=\"sub-hl\">learning practical professional skills</span> because they are more practical for <span class=\"sub-hl\">my career advancement and personal finance</span>."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 64,
+        "title": "Chủ đề 64: Let's talk about free time activities",
+        "topicName": "Free time activities",
+        "introText": "Let’s talk about free time activities.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "How do you spend your free time?",
+                "qType": "Wh-Question: How do you spend your free time?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Hoạt động thư giãn tại nhà như nghe nhạc, xem phim, nấu nướng):</div>\n                    <div class=\"topic-formula-text\">\n                        → In my spare time, I usually <span class=\"formula-bracket-hl\">[hoạt động tại nhà 1 - Vo]</span> and <span class=\"formula-bracket-hl\">[hoạt động tại nhà 2 - Vo]</span>. These activities help me <span class=\"formula-bracket-hl\">[lợi ích - Vo]</span> after a hectic week.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Hoạt động ngoài trời như chơi thể thao, dạo phố, tụ tập bạn bè):</div>\n                    <div class=\"topic-formula-text\">\n                        → Whenever I have leisure time, I prefer to <span class=\"formula-bracket-hl\">[hoạt động ngoài trời 1 - Vo]</span> or <span class=\"formula-bracket-hl\">[hoạt động ngoài trời 2 - Vo]</span> because I want to <span class=\"formula-bracket-hl\">[mục đích sức khỏe/tâm trạng - Vo]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🛋️ [Thư giãn tại nhà] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "listen to acoustic melodies",
+                                "vn": "nghe những giai điệu acoustic mộc mạc"
+                            },
+                            {
+                                "en": "watch entertaining comedy movies on Netflix",
+                                "vn": "xem các bộ phim hài giải trí trên Netflix"
+                            },
+                            {
+                                "en": "cook tasty dishes for my family",
+                                "vn": "nấu những món ngon cho gia đình"
+                            },
+                            {
+                                "en": "recharge my batteries and refresh my mind",
+                                "vn": "nạp lại năng lượng và làm tươi mới tâm trí"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🚴 [Hoạt động ngoài trời] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "jog around the local lake",
+                                "vn": "chạy bộ quanh hồ gần nhà"
+                            },
+                            {
+                                "en": "play badminton with my neighbors",
+                                "vn": "chơi cầu lông cùng hàng xóm"
+                            },
+                            {
+                                "en": "hang out at peaceful coffee shops",
+                                "vn": "tụ tập tại các quán cà phê yên tĩnh"
+                            },
+                            {
+                                "en": "stay in good shape and breathe fresh air",
+                                "vn": "giữ vóc dáng cân đối và hít thở không khí trong lành"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Nghe nhạc và xem phim để nạp lại năng lượng - 24 từ)",
+                        "text": "In my spare time, I usually listen to acoustic melodies and watch entertaining comedy movies on Netflix. These activities help me recharge my batteries and refresh my mind after a hectic week.",
+                        "formatted": "→ In my spare time, I usually <span class=\"sub-hl\">listen to acoustic melodies</span> and <span class=\"sub-hl\">watch entertaining comedy movies on Netflix</span>. These activities help me <span class=\"sub-hl\">recharge my batteries and refresh my mind</span> after a hectic week."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Chạy bộ quanh hồ để giữ dáng và hít thở không khí trong lành - 24 từ)",
+                        "text": "Whenever I have leisure time, I prefer to jog around the local lake or play badminton with my neighbors because I want to stay in good shape and breathe fresh air.",
+                        "formatted": "→ Whenever I have leisure time, I prefer to <span class=\"sub-hl\">jog around the local lake</span> or <span class=\"sub-hl\">play badminton with my neighbors</span> because I want to <span class=\"sub-hl\">stay in good shape and breathe fresh air</span>."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "Do you like reading books?",
+                "qType": "Yes/No Question: Do you like reading books?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Trả lời CÓ - Đọc sách để mở rộng kiến thức và rèn luyện sự tập trung):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, I do. I am quite keen on reading because it helps me <span class=\"formula-bracket-hl\">[mở rộng kiến thức - Vo]</span> and <span class=\"formula-bracket-hl\">[lợi ích tinh thần - Vo]</span> before going to bed.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Trả lời KHÔNG - Dễ buồn ngủ, thích xem video hoặc podcast hơn):</div>\n                    <div class=\"topic-formula-text\">\n                        → To be completely honest, not really. Reading long texts makes me <span class=\"formula-bracket-hl\">[cảm giác tiêu cực]</span>. I prefer listening to <span class=\"formula-bracket-hl\">[kênh thông tin thay thế]</span> to absorb knowledge faster.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "📖 [Lợi ích đọc sách] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "broaden my horizons and learn new things",
+                                "vn": "mở rộng tầm nhìn và học hỏi điều mới"
+                            },
+                            {
+                                "en": "enrich my vocabulary and life perspective",
+                                "vn": "làm phong phú vốn từ vựng và nhân sinh quan"
+                            },
+                            {
+                                "en": "calm my mind and improve concentration",
+                                "vn": "xoa dịu tâm trí và cải thiện sự tập trung"
+                            },
+                            {
+                                "en": "develop creative and analytical thinking",
+                                "vn": "phát triển tư duy sáng tạo và phân tích"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🎧 [Kênh thông tin thay thế] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "feel sleepy and exhausted very quickly",
+                                "vn": "cảm thấy buồn ngủ và mệt mỏi rất nhanh"
+                            },
+                            {
+                                "en": "educational YouTube videos and audiobooks",
+                                "vn": "các video giáo dục trên YouTube và sách nói"
+                            },
+                            {
+                                "en": "informative podcasts while commuting",
+                                "vn": "các podcast giàu thông tin trong lúc di chuyển"
+                            },
+                            {
+                                "en": "visual and interactive learning content",
+                                "vn": "nội dung học tập trực quan và mang tính tương tác"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Thích đọc để mở rộng tầm nhìn và xoa dịu tâm trí - 25 từ)",
+                        "text": "Yes, I do. I am quite keen on reading because it helps me broaden my horizons and learn new things and calm my mind and improve concentration before going to bed.",
+                        "formatted": "→ Yes, I do. I am quite keen on reading because it helps me <span class=\"sub-hl\">broaden my horizons and learn new things</span> and <span class=\"sub-hl\">calm my mind and improve concentration</span> before going to bed."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Dễ buồn ngủ khi đọc, thích nghe podcast giàu thông tin - 24 từ)",
+                        "text": "To be completely honest, not really. Reading long texts makes me feel sleepy and exhausted very quickly. I prefer listening to informative podcasts while commuting to absorb knowledge faster.",
+                        "formatted": "→ To be completely honest, not really. Reading long texts makes me <span class=\"sub-hl\">feel sleepy and exhausted very quickly</span>. I prefer listening to <span class=\"sub-hl\">informative podcasts while commuting</span> to absorb knowledge faster."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "What kinds of books do you like to read?",
+                "qType": "Wh-Question: What kinds of books do you like to read?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Sách kỹ năng sống, phát triển bản thân):</div>\n                    <div class=\"topic-formula-text\">\n                        → I enjoy reading <span class=\"formula-bracket-hl\">[thể loại sách kỹ năng]</span>. They provide me with <span class=\"formula-bracket-hl\">[giá trị nhận được]</span> to improve my daily lifestyle.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Sách văn học, tiểu thuyết trinh thám hoặc truyện tranh):</div>\n                    <div class=\"topic-formula-text\">\n                        → My favorite genres are <span class=\"formula-bracket-hl\">[thể loại văn học]</span>. The fascinating storylines always keep me <span class=\"formula-bracket-hl\">[trạng thái cảm xúc]</span> from start to finish.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🧠 [Sách kỹ năng] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "self-help and personal growth books",
+                                "vn": "sách tự lực và phát triển bản thân"
+                            },
+                            {
+                                "en": "financial management and psychology books",
+                                "vn": "sách quản lý tài chính và tâm lý học"
+                            },
+                            {
+                                "en": "practical tips and positive motivation",
+                                "vn": "lời khuyên thực tế và động lực sống tích cực"
+                            },
+                            {
+                                "en": "valuable lessons on emotional intelligence",
+                                "vn": "những bài học quý báu về trí tuệ cảm xúc"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "📚 [Sách văn học] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "mystery novels and thrilling detective stories",
+                                "vn": "tiểu thuyết bí ẩn và truyện trinh thám hồi hộp"
+                            },
+                            {
+                                "en": "romantic fiction and classic literature",
+                                "vn": "truyện lãng mạn và văn học kinh điển"
+                            },
+                            {
+                                "en": "deeply hooked and curious about the ending",
+                                "vn": "hoàn toàn bị lôi cuốn và tò mò về cái kết"
+                            },
+                            {
+                                "en": "entertained and emotionally touched",
+                                "vn": "được giải trí và xúc động sâu sắc"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Sách phát triển bản thân mang lại lời khuyên thực tế - 22 từ)",
+                        "text": "I enjoy reading self-help and personal growth books. They provide me with practical tips and positive motivation to improve my daily lifestyle.",
+                        "formatted": "→ I enjoy reading <span class=\"sub-hl\">self-help and personal growth books</span>. They provide me with <span class=\"sub-hl\">practical tips and positive motivation</span> to improve my daily lifestyle."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Tiểu thuyết trinh thám khiến hồi hộp và lôi cuốn - 22 từ)",
+                        "text": "My favorite genres are mystery novels and thrilling detective stories. The fascinating storylines always keep me deeply hooked and curious about the ending from start to finish.",
+                        "formatted": "→ My favorite genres are <span class=\"sub-hl\">mystery novels and thrilling detective stories</span>. The fascinating storylines always keep me <span class=\"sub-hl\">deeply hooked and curious about the ending</span> from start to finish."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 65,
+        "title": "Chủ đề 65: Let's talk about game shows",
+        "topicName": "Game shows",
+        "introText": "Let’s talk about game shows.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "What gameshow do you often watch?",
+                "qType": "Wh-Question: What gameshow do you often watch?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Chương trình kiến thức trí tuệ như Ai là triệu phú, Đường lên đỉnh Olympia):</div>\n                    <div class=\"topic-formula-text\">\n                        → I frequently tune in to <span class=\"formula-bracket-hl\">[tên gameshow trí tuệ]</span>. It is an intellectual show where contestants <span class=\"formula-bracket-hl\">[hoạt động trong show]</span> to win prizes.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Chương trình thực tế hài hước như Running Man, 2 Ngày 1 Đêm):</div>\n                    <div class=\"topic-formula-text\">\n                        → My go-to gameshow is <span class=\"formula-bracket-hl\">[tên gameshow giải trí]</span>. It features famous celebrities who <span class=\"formula-bracket-hl\">[hoạt động vui nhộn]</span> in various locations.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "💡 [Gameshow trí tuệ] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "Who Wants to Be a Millionaire",
+                                "vn": "Ai là triệu phú"
+                            },
+                            {
+                                "en": "Road to Mount Olympia",
+                                "vn": "Đường lên đỉnh Olympia"
+                            },
+                            {
+                                "en": "answer challenging trivia questions",
+                                "vn": "trả lời những câu hỏi kiến thức đầy thử thách"
+                            },
+                            {
+                                "en": "test their quick memory and general knowledge",
+                                "vn": "kiểm tra trí nhớ nhanh và kiến thức tổng quát"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🎭 [Gameshow giải trí] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "\"2 Days 1 Night\" (2 Ngay 1 Dem)",
+                                "vn": "Chương trình \"2 Ngày 1 Đêm\""
+                            },
+                            {
+                                "en": "\"Running Man Vietnam\"",
+                                "vn": "Chương trình \"Running Man Việt Nam\""
+                            },
+                            {
+                                "en": "complete hilarious outdoor physical challenges",
+                                "vn": "hoàn thành các thử thách thể lực ngoài trời vui nhộn"
+                            },
+                            {
+                                "en": "showcase witty humor and teamwork spirit",
+                                "vn": "thể hiện sự hài hước dí dỏm và tinh thần đồng đội"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Xem Ai là triệu phú để theo dõi câu hỏi hóc búa - 23 từ)",
+                        "text": "I frequently tune in to Who Wants to Be a Millionaire. It is an intellectual show where contestants answer challenging trivia questions to win prizes.",
+                        "formatted": "→ I frequently tune in to <span class=\"sub-hl\">Who Wants to Be a Millionaire</span>. It is an intellectual show where contestants <span class=\"sub-hl\">answer challenging trivia questions</span> to win prizes."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Xem 2 Ngày 1 Đêm với các thử thách hài hước - 24 từ)",
+                        "text": "My go-to gameshow is \"2 Days 1 Night\". It features famous celebrities who complete hilarious outdoor physical challenges in various locations.",
+                        "formatted": "→ My go-to gameshow is <span class=\"sub-hl\">\"2 Days 1 Night\"</span>. It features famous celebrities who <span class=\"sub-hl\">complete hilarious outdoor physical challenges</span> in various locations."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "Would you prefer to watch it alone or with someone else?",
+                "qType": "Preference: Would you prefer to watch it alone or with someone else?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Thích xem cùng gia đình hoặc bạn bè để cùng cười và bàn luận):</div>\n                    <div class=\"topic-formula-text\">\n                        → I definitely prefer watching it with <span class=\"formula-bracket-hl\">[người xem cùng]</span>. It creates <span class=\"formula-bracket-hl\">[không khí ấm cúng]</span> and we can <span class=\"formula-bracket-hl\">[hành động tương tác - Vo]</span> together.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Thích xem một mình để tập trung suy nghĩ đáp án):</div>\n                    <div class=\"topic-formula-text\">\n                        → Actually, I would rather watch it by myself. Being alone lets me <span class=\"formula-bracket-hl\">[lợi ích khi xem một mình 1 - Vo]</span> and <span class=\"formula-bracket-hl\">[lợi ích 2 - Vo]</span> without any background interruptions.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "👨‍👩‍👧‍👦 [Xem cùng người khác] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "my family members during dinner time",
+                                "vn": "các thành viên gia đình trong bữa ăn tối"
+                            },
+                            {
+                                "en": "a cheerful and cozy family atmosphere",
+                                "vn": "bầu không khí gia đình vui vẻ và ấm cúng"
+                            },
+                            {
+                                "en": "guess the answers and laugh out loud",
+                                "vn": "đoán câu trả lời và cười sảng khoái"
+                            },
+                            {
+                                "en": "cheer for our favorite contestants",
+                                "vn": "cổ vũ cho những người chơi mà mình yêu thích"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🧘 [Xem một mình] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "focus deeply on every question",
+                                "vn": "tập trung sâu vào từng câu hỏi"
+                            },
+                            {
+                                "en": "test my own cognitive abilities privately",
+                                "vn": "tự kiểm tra năng lực nhận thức của bản thân một cách riêng tư"
+                            },
+                            {
+                                "en": "pause or rewind anytime I want",
+                                "vn": "tạm dừng hoặc tua lại bất cứ lúc nào tôi muốn"
+                            },
+                            {
+                                "en": "enjoy my peaceful evening solitude",
+                                "vn": "tận hưởng sự yên tĩnh tĩnh lặng của buổi tối"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Xem cùng gia đình để cùng cười và đoán đáp án - 23 từ)",
+                        "text": "I definitely prefer watching it with my family members during dinner time. It creates a cheerful and cozy family atmosphere and we can guess the answers and laugh out loud together.",
+                        "formatted": "→ I definitely prefer watching it with <span class=\"sub-hl\">my family members during dinner time</span>. It creates <span class=\"sub-hl\">a cheerful and cozy family atmosphere</span> and we can <span class=\"sub-hl\">guess the answers and laugh out loud</span> together."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Xem một mình để tập trung suy nghĩ đáp án - 22 từ)",
+                        "text": "Actually, I would rather watch it by myself. Being alone lets me focus deeply on every question and test my own cognitive abilities privately without any background interruptions.",
+                        "formatted": "→ Actually, I would rather watch it by myself. Being alone lets me <span class=\"sub-hl\">focus deeply on every question</span> and <span class=\"sub-hl\">test my own cognitive abilities privately</span> without any background interruptions."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "What are the benefits of watching a gameshow?",
+                "qType": "Wh-Question: What are the benefits of watching a gameshow?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Giải trí tuyệt vời, xua tan căng thẳng):</div>\n                    <div class=\"topic-formula-text\">\n                        → The main benefit is that it offers <span class=\"formula-bracket-hl\">[giá trị giải trí]</span>, which helps viewers <span class=\"formula-bracket-hl\">[lợi ích tinh thần - Vo]</span> after exhausting hours of study or work.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Mở rộng kiến thức xã hội và kích thích tư duy):</div>\n                    <div class=\"topic-formula-text\">\n                        → Besides entertainment, it serves as an effective way to <span class=\"formula-bracket-hl\">[lợi ích tri thức - Vo]</span>. It encourages viewers to <span class=\"formula-bracket-hl\">[kích thích tư duy - Vo]</span> in an enjoyable format.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "😂 [Giải trí & Tinh thần] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "wholesome entertainment and hearty laughs",
+                                "vn": "sự giải trí lành mạnh và những tiếng cười sảng khoái"
+                            },
+                            {
+                                "en": "relieve daily stress and uplift their mood",
+                                "vn": "giải tỏa căng thẳng hàng ngày và nâng cao tâm trạng"
+                            },
+                            {
+                                "en": "bond people together across generations",
+                                "vn": "gắn kết mọi người qua nhiều thế hệ"
+                            },
+                            {
+                                "en": "forget worries after a long workday",
+                                "vn": "quên đi âu lo sau một ngày làm việc dài"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🧠 [Tri thức & Tư duy] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "gain useful general knowledge and trivia",
+                                "vn": "tiếp thu kiến thức tổng quát và thông tin bổ ích"
+                            },
+                            {
+                                "en": "think critically under time pressure",
+                                "vn": "tư duy phản biện dưới áp lực thời gian"
+                            },
+                            {
+                                "en": "learn about historical facts and world cultures",
+                                "vn": "tìm hiểu về các sự kiện lịch sử và nền văn hóa thế giới"
+                            },
+                            {
+                                "en": "sharpen problem-solving skills quickly",
+                                "vn": "mài giũa kỹ năng giải quyết vấn đề một cách nhanh chóng"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Giải trí lành mạnh và nâng cao tâm trạng - 24 từ)",
+                        "text": "The main benefit is that it offers wholesome entertainment and hearty laughs, which helps viewers relieve daily stress and uplift their mood after exhausting hours of study or work.",
+                        "formatted": "→ The main benefit is that it offers <span class=\"sub-hl\">wholesome entertainment and hearty laughs</span>, which helps viewers <span class=\"sub-hl\">relieve daily stress and uplift their mood</span> after exhausting hours of study or work."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Tiếp thu kiến thức tổng quát và tư duy dưới áp lực thời gian - 24 từ)",
+                        "text": "Besides entertainment, it serves as an effective way to gain useful general knowledge and trivia. It encourages viewers to think critically under time pressure in an enjoyable format.",
+                        "formatted": "→ Besides entertainment, it serves as an effective way to <span class=\"sub-hl\">gain useful general knowledge and trivia</span>. It encourages viewers to <span class=\"sub-hl\">think critically under time pressure</span> in an enjoyable format."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 66,
+        "title": "Chủ đề 66: Let's talk about buses",
+        "topicName": "Buses",
+        "introText": "Let’s talk about buses.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "Have you ever traveled by bus?",
+                "qType": "Present Perfect: Have you ever traveled by bus?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Trả lời CÓ - Đi xe buýt thường xuyên khi đi học hoặc đi làm):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, many times. In fact, I used to ride the bus <span class=\"formula-bracket-hl\">[tần suất & mục đích]</span>. It was my primary way to <span class=\"formula-bracket-hl\">[hành trình di chuyển - Vo]</span> without driving in heavy traffic.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Trả lời HIẾM KHI HOẶC CHỈ MỘT VÀI LẦN - Đi trong những chuyến dã ngoại hoặc khi xe máy hỏng):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, but only a couple of times. I once took a bus when <span class=\"formula-bracket-hl\">[hoàn cảnh cụ thể]</span>. Generally, I prefer <span class=\"formula-bracket-hl\">[phương tiện cá nhân]</span> for greater flexibility.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🚌 [Đi thường xuyên] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "on a daily basis during my university years",
+                                "vn": "hàng ngày trong suốt những năm tháng đại học của tôi"
+                            },
+                            {
+                                "en": "commute between my home and campus",
+                                "vn": "đi lại giữa nhà và khuôn viên trường"
+                            },
+                            {
+                                "en": "travel across the city economically",
+                                "vn": "di chuyển khắp thành phố một cách tiết kiệm"
+                            },
+                            {
+                                "en": "avoid terrible traffic jams in peak hours",
+                                "vn": "tránh được cảnh tắc đường kinh hoàng vào giờ cao điểm"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🛵 [Hiếm khi đi & Xe cá nhân] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "my motorbike broke down on a rainy day",
+                                "vn": "xe máy của tôi bị hỏng vào một ngày mưa"
+                            },
+                            {
+                                "en": "I visited a neighboring province for a festival",
+                                "vn": "tôi đi đến một tỉnh lân cận để tham dự lễ hội"
+                            },
+                            {
+                                "en": "riding my private motorbike",
+                                "vn": "đi xe máy cá nhân của mình"
+                            },
+                            {
+                                "en": "driving my compact car",
+                                "vn": "lái chiếc xe ô tô nhỏ gọn của mình"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Đi xe buýt hàng ngày thời đại học - 25 từ)",
+                        "text": "Yes, many times. In fact, I used to ride the bus on a daily basis during my university years. It was my primary way to commute between my home and campus without driving in heavy traffic.",
+                        "formatted": "→ Yes, many times. In fact, I used to ride the bus <span class=\"sub-hl\">on a daily basis during my university years</span>. It was my primary way to <span class=\"sub-hl\">commute between my home and campus</span> without driving in heavy traffic."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Chỉ đi khi xe máy hỏng, thích đi xe máy cá nhân - 24 từ)",
+                        "text": "Yes, but only a couple of times. I once took a bus when my motorbike broke down on a rainy day. Generally, I prefer riding my private motorbike for greater flexibility.",
+                        "formatted": "→ Yes, but only a couple of times. I once took a bus when <span class=\"sub-hl\">my motorbike broke down on a rainy day</span>. Generally, I prefer <span class=\"sub-hl\">riding my private motorbike</span> for greater flexibility."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "Is bus service good in your country?",
+                "qType": "Evaluation: Is bus service good in your country?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Đánh giá TỐT VÀ ĐANG CẢI THIỆN - Xe mới, có điều hòa, chạy điện sạch):</div>\n                    <div class=\"topic-formula-text\">\n                        → Overall, I think bus service is quite decent and improving fast. Many modern buses now feature <span class=\"formula-bracket-hl\">[tiện ích hiện đại]</span> and the fares are <span class=\"formula-bracket-hl\">[đặc điểm giá vé]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Đánh giá CẦN CẢI THIỆN - Thường chậm giờ, chen chúc vào giờ cao điểm):</div>\n                    <div class=\"topic-formula-text\">\n                        → To be fair, it still has room for improvement. During rush hours, buses are often <span class=\"formula-bracket-hl\">[nhược điểm 1]</span> and sometimes arrive <span class=\"formula-bracket-hl\">[nhược điểm 2]</span> due to gridlock.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "✨ [Tiện ích hiện đại & Tốt] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "cool air conditioning and free Wi-Fi",
+                                "vn": "điều hòa mát lạnh và Wi-Fi miễn phí"
+                            },
+                            {
+                                "en": "eco-friendly electric engines (VinBus)",
+                                "vn": "động cơ điện thân thiện với môi trường (VinBus)"
+                            },
+                            {
+                                "en": "extremely cheap and subsidized for students",
+                                "vn": "cực kỳ rẻ và được trợ giá cho sinh viên"
+                            },
+                            {
+                                "en": "polite drivers and clean interiors",
+                                "vn": "tài xế lịch sự và nội thất sạch sẽ"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "⚠️ [Điểm cần khắc phục] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "extremely crowded and packed with passengers",
+                                "vn": "vô cùng đông đúc và chật ních hành khách"
+                            },
+                            {
+                                "en": "behind schedule and unpredictable",
+                                "vn": "trễ giờ so với lịch trình và khó đoán"
+                            },
+                            {
+                                "en": "stuck in endless city traffic jams",
+                                "vn": "bị kẹt trong những vụ tắc đường kéo dài của thành phố"
+                            },
+                            {
+                                "en": "lack of dedicated bus lanes",
+                                "vn": "thiếu làn đường dành riêng cho xe buýt"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Dịch vụ tốt, xe điện hiện đại và giá rất rẻ - 25 từ)",
+                        "text": "Overall, I think bus service is quite decent and improving fast. Many modern buses now feature eco-friendly electric engines and the fares are extremely cheap and subsidized for students.",
+                        "formatted": "→ Overall, I think bus service is quite decent and improving fast. Many modern buses now feature <span class=\"sub-hl\">eco-friendly electric engines</span> and the fares are <span class=\"sub-hl\">extremely cheap and subsidized for students</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Cần cải thiện vì hay đông đúc và trễ giờ - 24 từ)",
+                        "text": "To be fair, it still has room for improvement. During rush hours, buses are often extremely crowded and packed with passengers and sometimes arrive behind schedule and unpredictable due to gridlock.",
+                        "formatted": "→ To be fair, it still has room for improvement. During rush hours, buses are often <span class=\"sub-hl\">extremely crowded and packed with passengers</span> and sometimes arrive <span class=\"sub-hl\">behind schedule and unpredictable</span> due to gridlock."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "What are the benefits of traveling by bus?",
+                "qType": "Wh-Question: What are the benefits of traveling by bus?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Bảo vệ môi trường và giảm ùn tắc giao thông):</div>\n                    <div class=\"topic-formula-text\">\n                        → Traveling by bus is great for the planet because it helps <span class=\"formula-bracket-hl\">[lợi ích môi trường 1 - Vo]</span> and <span class=\"formula-bracket-hl\">[giảm ùn tắc 2 - Vo]</span> on crowded urban streets.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Tiết kiệm chi phí đi lại và an toàn hơn tự lái xe):</div>\n                    <div class=\"topic-formula-text\">\n                        → From a personal perspective, it enables commuters to <span class=\"formula-bracket-hl\">[tiết kiệm chi phí 1 - Vo]</span>. Furthermore, you can <span class=\"formula-bracket-hl\">[thư giãn trong hành trình 2 - Vo]</span> instead of worrying about driving safely.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🌱 [Môi trường & Giao thông] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "cut down harmful carbon emissions",
+                                "vn": "cắt giảm khí thải carbon độc hại"
+                            },
+                            {
+                                "en": "alleviate severe city traffic congestion",
+                                "vn": "giảm thiểu tình trạng tắc nghẽn giao thông nghiêm trọng"
+                            },
+                            {
+                                "en": "reduce the huge number of private motorbikes",
+                                "vn": "giảm bớt số lượng xe máy cá nhân khổng lồ"
+                            },
+                            {
+                                "en": "promote sustainable green urban mobility",
+                                "vn": "thúc đẩy giao thông đô thị xanh bền vững"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "💵 [Tiết kiệm & An toàn cá nhân] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "save substantial fuel and parking expenses",
+                                "vn": "tiết kiệm đáng kể chi phí xăng dầu và gửi xe"
+                            },
+                            {
+                                "en": "listen to podcasts or take a quick nap",
+                                "vn": "nghe podcast hoặc chợp mắt một lát"
+                            },
+                            {
+                                "en": "stay shielded from harsh sun and heavy rain",
+                                "vn": "được che chắn khỏi nắng gắt và mưa to"
+                            },
+                            {
+                                "en": "enjoy a safer journey compared to two-wheelers",
+                                "vn": "tận hưởng chuyến đi an toàn hơn nhiều so với xe hai bánh"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Cắt giảm khí thải carbon và giảm thiểu tắc đường - 23 từ)",
+                        "text": "Traveling by bus is great for the planet because it helps cut down harmful carbon emissions and alleviate severe city traffic congestion on crowded urban streets.",
+                        "formatted": "→ Traveling by bus is great for the planet because it helps <span class=\"sub-hl\">cut down harmful carbon emissions</span> and <span class=\"sub-hl\">alleviate severe city traffic congestion</span> on crowded urban streets."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Tiết kiệm tiền xăng và có thời gian nghe nhạc, chợp mắt - 24 từ)",
+                        "text": "From a personal perspective, it enables commuters to save substantial fuel and parking expenses. Furthermore, you can listen to podcasts or take a quick nap instead of worrying about driving safely.",
+                        "formatted": "→ From a personal perspective, it enables commuters to <span class=\"sub-hl\">save substantial fuel and parking expenses</span>. Furthermore, you can <span class=\"sub-hl\">listen to podcasts or take a quick nap</span> instead of worrying about driving safely."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 67,
+        "title": "Chủ đề 67: Let's talk about your favorite singer",
+        "topicName": "Your favorite singer",
+        "introText": "Let’s talk about your favorite singer.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "Who is your favorite singer?",
+                "qType": "Wh-Question: Who is your favorite singer?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Ca sĩ Việt Nam nổi tiếng như Sơn Tùng M-TP, Mỹ Tâm, Vũ):</div>\n                    <div class=\"topic-formula-text\">\n                        → My favorite singer is <span class=\"formula-bracket-hl\">[tên ca sĩ]</span>, who is a famous Vietnamese artist known for <span class=\"formula-bracket-hl\">[phong cách âm nhạc]</span>. I have been following their music for <span class=\"formula-bracket-hl\">[khoảng thời gian]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Ca sĩ quốc tế như Taylor Swift, Adele, Ed Sheeran):</div>\n                    <div class=\"topic-formula-text\">\n                        → If I have to pick one, it would definitely be <span class=\"formula-bracket-hl\">[tên ca sĩ quốc tế]</span>. She/He is a world-renowned superstar admired for <span class=\"formula-bracket-hl\">[điểm nổi bật]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🎤 [Ca sĩ Việt Nam] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "Son Tung M-TP",
+                                "vn": "Sơn Tùng M-TP"
+                            },
+                            {
+                                "en": "My Tam, a legendary pop icon",
+                                "vn": "Mỹ Tâm, một biểu tượng nhạc pop huyền thoại"
+                            },
+                            {
+                                "en": "catchy pop-dance tracks and trendy fashion",
+                                "vn": "những bản nhạc pop-dance bắt tai và thời trang dẫn đầu xu hướng"
+                            },
+                            {
+                                "en": "emotional indie-pop acoustic ballads",
+                                "vn": "những bản ballad acoustic indie-pop đầy cảm xúc"
+                            },
+                            {
+                                "en": "nearly five years since my high school days",
+                                "vn": "gần 5 năm kể từ thời học cấp 3 của tôi"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🌟 [Ca sĩ quốc tế] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "Taylor Swift",
+                                "vn": "Taylor Swift"
+                            },
+                            {
+                                "en": "Adele",
+                                "vn": "Adele"
+                            },
+                            {
+                                "en": "phenomenal songwriting talent and storytelling lyrics",
+                                "vn": "tài năng sáng tác phi thường và ca từ kể chuyện sâu sắc"
+                            },
+                            {
+                                "en": "powerful, soul-touching vocals",
+                                "vn": "chất giọng nội lực chạm đến tâm hồn"
+                            },
+                            {
+                                "en": "inspiring global concert tours",
+                                "vn": "những chuyến lưu diễn hòa nhạc toàn cầu truyền cảm hứng"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Sơn Tùng M-TP với các bài hit pop bắt tai - 24 từ)",
+                        "text": "My favorite singer is Son Tung M-TP, who is a famous Vietnamese artist known for catchy pop-dance tracks and trendy fashion. I have been following their music for nearly five years.",
+                        "formatted": "→ My favorite singer is <span class=\"sub-hl\">Son Tung M-TP</span>, who is a famous Vietnamese artist known for <span class=\"sub-hl\">catchy pop-dance tracks and trendy fashion</span>. I have been following their music for <span class=\"sub-hl\">nearly five years</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Taylor Swift với tài năng viết nhạc kể chuyện tuyệt vời - 23 từ)",
+                        "text": "If I have to pick one, it would definitely be Taylor Swift. She is a world-renowned superstar admired for phenomenal songwriting talent and storytelling lyrics across the world.",
+                        "formatted": "→ If I have to pick one, it would definitely be <span class=\"sub-hl\">Taylor Swift</span>. She is a world-renowned superstar admired for <span class=\"sub-hl\">phenomenal songwriting talent and storytelling lyrics</span> across the world."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "Why do you like him/her?",
+                "qType": "Wh-Question (Reason): Why do you like him/her?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Chất giọng truyền cảm và giai điệu chữa lành tâm hồn):</div>\n                    <div class=\"topic-formula-text\">\n                        → I adore him/her primarily because of <span class=\"formula-bracket-hl\">[chất giọng/âm nhạc]</span>. Whenever I feel down, listening to his/her songs helps me <span class=\"formula-bracket-hl\">[lợi ích cảm xúc - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Sự nỗ lực cống hiến và lối sống truyền cảm hứng):</div>\n                    <div class=\"topic-formula-text\">\n                        → Beyond the voice, I truly respect his/her <span class=\"formula-bracket-hl\">[phẩm chất cá nhân]</span>. He/She has inspired me to <span class=\"formula-bracket-hl\">[bài học động lực - Vo]</span> in my own personal path.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🎶 [Giọng hát & Âm nhạc] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "warm, soothing vocals and meaningful lyrics",
+                                "vn": "chất giọng ấm áp, êm dịu và ca từ giàu ý nghĩa"
+                            },
+                            {
+                                "en": "infectious energy and upbeat rhythm",
+                                "vn": "năng lượng lan tỏa và tiết tấu sôi động"
+                            },
+                            {
+                                "en": "heal negative emotions and feel motivated",
+                                "vn": "chữa lành những cảm xúc tiêu cực và cảm thấy có động lực"
+                            },
+                            {
+                                "en": "find comfort and peace of mind",
+                                "vn": "tìm thấy sự an ủi và bình yên trong tâm hồn"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "💪 [Phẩm chất & Truyền cảm hứng] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "tireless dedication and professional work ethic",
+                                "vn": "sự cống hiến không ngừng nghỉ và đạo đức nghề nghiệp chuyên nghiệp"
+                            },
+                            {
+                                "en": "humble personality and charity activities",
+                                "vn": "tính cách khiêm tốn và các hoạt động từ thiện"
+                            },
+                            {
+                                "en": "pursue my lifelong dreams with confidence",
+                                "vn": "tự tin theo đuổi ước mơ cả đời của mình"
+                            },
+                            {
+                                "en": "never give up in difficult times",
+                                "vn": "không bao giờ bỏ cuộc trong những giai đoạn khó khăn"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Giọng hát ấm áp giúp chữa lành cảm xúc tiêu cực - 23 từ)",
+                        "text": "I adore him primarily because of his warm, soothing vocals and meaningful lyrics. Whenever I feel down, listening to his songs helps me heal negative emotions and feel motivated.",
+                        "formatted": "→ I adore him primarily because of his <span class=\"sub-hl\">warm, soothing vocals and meaningful lyrics</span>. Whenever I feel down, listening to his songs helps me <span class=\"sub-hl\">heal negative emotions and feel motivated</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Đạo đức nghề nghiệp và truyền động lực theo đuổi ước mơ - 24 từ)",
+                        "text": "Beyond the voice, I truly respect her tireless dedication and professional work ethic. She has inspired me to pursue my lifelong dreams with confidence in my own personal path.",
+                        "formatted": "→ Beyond the voice, I truly respect her <span class=\"sub-hl\">tireless dedication and professional work ethic</span>. She has inspired me to <span class=\"sub-hl\">pursue my lifelong dreams with confidence</span> in my own personal path."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "Can you describe him/her?",
+                "qType": "Description: Can you describe him/her?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Miêu tả ngoại hình cuốn hút và phong cách thời trang ấn tượng):</div>\n                    <div class=\"topic-formula-text\">\n                        → In terms of appearance, he/she is <span class=\"formula-bracket-hl\">[vóc dáng & khuôn mặt]</span> with a bright smile. On stage, he/she always rocks <span class=\"formula-bracket-hl\">[phong cách thời trang]</span> that captivates fans.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Miêu tả phong thái biểu diễn và tính cách ngoài đời):</div>\n                    <div class=\"topic-formula-text\">\n                        → He/She is known for <span class=\"formula-bracket-hl\">[thần thái biểu diễn]</span> on stage. Off the stage, fans love him/her for being <span class=\"formula-bracket-hl\">[tính cách đời thường]</span> towards everyone.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "✨ [Ngoại hình & Thời trang] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "quite tall and fit with charming facial features",
+                                "vn": "khá cao ráo và cân đối với các đường nét khuôn mặt cuốn hút"
+                            },
+                            {
+                                "en": "graceful with fair skin and sparkling eyes",
+                                "vn": "duyên dáng với làn da trắng sáng và đôi mắt lấp lánh"
+                            },
+                            {
+                                "en": "trendy, sophisticated outfits",
+                                "vn": "những bộ trang phục hợp mốt và tinh tế"
+                            },
+                            {
+                                "en": "stylish street style jackets and cool accessories",
+                                "vn": "áo khoác phong cách đường phố sành điệu và phụ kiện cực chất"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "💖 [Phong thái & Tính cách] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "magnetic charisma and incredible stage presence",
+                                "vn": "sức hút mê hoặc và phong thái sân khấu đỉnh cao"
+                            },
+                            {
+                                "en": "very warm-hearted, witty, and approachable",
+                                "vn": "rất ấm áp, hóm hỉnh và gần gũi"
+                            },
+                            {
+                                "en": "deeply respectful and caring towards fans",
+                                "vn": "vô cùng tôn trọng và quan tâm chu đáo tới người hâm mộ"
+                            },
+                            {
+                                "en": "down-to-earth despite huge fame",
+                                "vn": "khiêm tốn giản dị dù sở hữu danh tiếng khổng lồ"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Cao ráo, nụ cười sáng và thời trang sành điệu - 24 từ)",
+                        "text": "In terms of appearance, he is quite tall and fit with charming facial features with a bright smile. On stage, he always rocks trendy, sophisticated outfits that captivates fans.",
+                        "formatted": "→ In terms of appearance, he is <span class=\"sub-hl\">quite tall and fit with charming facial features</span> with a bright smile. On stage, he always rocks <span class=\"sub-hl\">trendy, sophisticated outfits</span> that captivates fans."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Thần thái sân khấu mê hoặc và tính cách giản dị gần gũi - 23 từ)",
+                        "text": "She is known for magnetic charisma and incredible stage presence on stage. Off the stage, fans love her for being down-to-earth despite huge fame towards everyone.",
+                        "formatted": "→ She is known for <span class=\"sub-hl\">magnetic charisma and incredible stage presence</span> on stage. Off the stage, fans love her for being <span class=\"sub-hl\">down-to-earth despite huge fame</span> towards everyone."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 68,
+        "title": "Chủ đề 68: Let's talk about Vietnamese actors",
+        "topicName": "Vietnamese actors",
+        "introText": "Let’s talk about Vietnamese actors.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "Who is your favorite actor in Vietnam? Why do you like them?",
+                "qType": "Wh-Question: Who is your favorite actor in Vietnam? Why do you like them?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Chọn diễn viên thực lực nổi tiếng như Thái Hòa, Trấn Thành, Hồng Đăng):</div>\n                    <div class=\"topic-formula-text\">\n                        → My favorite Vietnamese actor is definitely <span class=\"formula-bracket-hl\">[tên diễn viên]</span>. I admire him/her because of <span class=\"formula-bracket-hl\">[năng lực diễn xuất]</span>, which brings characters to life.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Chọn nữ diễn viên tài năng như Ninh Dương Lan Ngọc, Kaity Nguyễn, Thanh Hương):</div>\n                    <div class=\"topic-formula-text\">\n                        → I really love actress <span class=\"formula-bracket-hl\">[tên nữ diễn viên]</span>. She always impresses me with her <span class=\"formula-bracket-hl\">[sự đa dạng vai diễn & cảm xúc]</span> in every movie project.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🎬 [Diễn viên nam & Diễn xuất] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "Thai Hoa, the \"King of Vietnamese Box Office\"",
+                                "vn": "Thái Hòa, \"ông hoàng phòng vé Việt Nam\""
+                            },
+                            {
+                                "en": "Tran Thanh, a versatile actor and director",
+                                "vn": "Trấn Thành, một diễn viên và đạo diễn đa tài"
+                            },
+                            {
+                                "en": "natural comedic timing and intense emotional depth",
+                                "vn": "khả năng diễn hài tự nhiên và chiều sâu cảm xúc mãnh liệt"
+                            },
+                            {
+                                "en": "outstanding ability to portray complex emotions",
+                                "vn": "khả năng vượt trội trong việc lột tả những cảm xúc phức tạp"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🌟 [Nữ diễn viên & Đa dạng vai] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "Ninh Duong Lan Ngoc",
+                                "vn": "Ninh Dương Lan Ngọc"
+                            },
+                            {
+                                "en": "Kaity Nguyen, a talented young actress",
+                                "vn": "Kaity Nguyễn, một nữ diễn viên trẻ tài năng"
+                            },
+                            {
+                                "en": "versatile acting range and expressive eyes",
+                                "vn": "biên độ diễn xuất đa dạng và đôi mắt giàu biểu cảm"
+                            },
+                            {
+                                "en": "dedication to transform into different personalities",
+                                "vn": "sự tận tâm để hóa thân vào các tính cách nhân vật khác nhau"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Thái Hòa với khả năng diễn xuất cảm xúc mãnh liệt - 24 từ)",
+                        "text": "My favorite Vietnamese actor is definitely Thai Hoa. I admire him because of his natural comedic timing and intense emotional depth, which brings characters to life.",
+                        "formatted": "→ My favorite Vietnamese actor is definitely <span class=\"sub-hl\">Thai Hoa</span>. I admire him because of his <span class=\"sub-hl\">natural comedic timing and intense emotional depth</span>, which brings characters to life."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Kaity Nguyễn với đôi mắt biểu cảm và diễn xuất đa dạng - 23 từ)",
+                        "text": "I really love actress Kaity Nguyen. She always impresses me with her versatile acting range and expressive eyes in every movie project she participates in.",
+                        "formatted": "→ I really love actress <span class=\"sub-hl\">Kaity Nguyen</span>. She always impresses me with her <span class=\"sub-hl\">versatile acting range and expressive eyes</span> in every movie project she participates in."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "What factors make an actor famous?",
+                "qType": "Wh-Question: What factors make an actor famous?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Tài năng diễn xuất tự nhiên và sự chăm chỉ cống hiến):</div>\n                    <div class=\"topic-formula-text\">\n                        → In my view, the most crucial factor is <span class=\"formula-bracket-hl\">[tài năng & kỹ năng]</span>. In addition, an actor needs <span class=\"formula-bracket-hl\">[sự cống hiến và đam mê]</span> to earn long-term recognition.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Ngoại hình thu hút kết hợp sức mạnh truyền thông mạng xã hội):</div>\n                    <div class=\"topic-formula-text\">\n                        → Besides pure talent, I believe <span class=\"formula-bracket-hl\">[ngoại hình & sức hút]</span> play a major role. Moreover, having <span class=\"formula-bracket-hl\">[chiến lược truyền thông tốt]</span> helps them build a huge fanbase.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🎭 [Tài năng & Cống hiến] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "exceptional acting skills and emotional authenticity",
+                                "vn": "kỹ năng diễn xuất xuất sắc và cảm xúc chân thật"
+                            },
+                            {
+                                "en": "relentless hard work and professional dedication",
+                                "vn": "sự làm việc chăm chỉ không ngừng và cống hiến nghề nghiệp"
+                            },
+                            {
+                                "en": "the courage to take on challenging roles",
+                                "vn": "sự can đảm đón nhận những vai diễn đầy thử thách"
+                            },
+                            {
+                                "en": "continuous self-improvement and humility",
+                                "vn": "sự nỗ lực hoàn thiện bản thân liên tục và lòng khiêm tốn"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "📱 [Ngoại hình & Truyền thông] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "an attractive appearance and charismatic charm",
+                                "vn": "ngoại hình cuốn hút và sức quyến rũ đặc biệt"
+                            },
+                            {
+                                "en": "a strong presence on social media platforms",
+                                "vn": "sự hiện diện mạnh mẽ trên các nền tảng mạng xã hội"
+                            },
+                            {
+                                "en": "clever public relations and viral marketing",
+                                "vn": "chiến lược quan hệ công chúng khéo léo và tiếp thị lan truyền"
+                            },
+                            {
+                                "en": "opportunities to star in blockbuster movies",
+                                "vn": "cơ hội được đóng vai chính trong các bộ phim bom tấn"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Diễn xuất xuất sắc và làm việc chăm chỉ không ngừng - 24 từ)",
+                        "text": "In my view, the most crucial factor is exceptional acting skills and emotional authenticity. In addition, an actor needs relentless hard work and professional dedication to earn long-term recognition.",
+                        "formatted": "→ In my view, the most crucial factor is <span class=\"sub-hl\">exceptional acting skills and emotional authenticity</span>. In addition, an actor needs <span class=\"sub-hl\">relentless hard work and professional dedication</span> to earn long-term recognition."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Ngoại hình cuốn hút và mạng xã hội mạnh mẽ - 23 từ)",
+                        "text": "Besides pure talent, I believe an attractive appearance and charismatic charm play a major role. Moreover, having a strong presence on social media platforms helps them build a huge fanbase.",
+                        "formatted": "→ Besides pure talent, I believe <span class=\"sub-hl\">an attractive appearance and charismatic charm</span> play a major role. Moreover, having <span class=\"sub-hl\">a strong presence on social media platforms</span> helps them build a huge fanbase."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "Is the film industry in your country developing? Why?",
+                "qType": "Yes/No + Reason: Is the film industry in your country developing? Why?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Khẳng định ĐANG PHÁT TRIỂN MẠNH - Phim chất lượng cao, doanh thu trăm tỷ):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, definitely. Vietnamese cinema is growing remarkably because filmmakers now invest heavily in <span class=\"formula-bracket-hl\">[kỹ xảo & kịch bản]</span>. As a result, many domestic films have achieved <span class=\"formula-bracket-hl\">[thành tựu doanh thu]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Phát triển nhưng còn đối mặt với thách thức về kịch bản và sự cạnh tranh quốc tế):</div>\n                    <div class=\"topic-formula-text\">\n                        → It is certainly progressing, but it still faces challenges. While technical quality is better, there is still a shortage of <span class=\"formula-bracket-hl\">[yếu tố thiếu hụt]</span> to compete with <span class=\"formula-bracket-hl\">[phim bom tấn quốc tế]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "📈 [Phát triển mạnh & Doanh thu cao] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "modern cinematography and creative screenplays",
+                                "vn": "kỹ thuật quay phim hiện đại và kịch bản sáng tạo"
+                            },
+                            {
+                                "en": "record-breaking box office revenues",
+                                "vn": "doanh thu phòng vé phá vỡ mọi kỷ lục"
+                            },
+                            {
+                                "en": "international film festival nominations",
+                                "vn": "các đề cử tại các liên hoan phim quốc tế"
+                            },
+                            {
+                                "en": "great trust and support from local audiences",
+                                "vn": "sự tin tưởng và ủng hộ to lớn từ khán giả trong nước"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "⚖️ [Thách thức & Cạnh tranh] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "original, logically written movie scripts",
+                                "vn": "kịch bản phim gốc được viết một cách logic"
+                            },
+                            {
+                                "en": "Hollywood and Korean cinematic blockbusters",
+                                "vn": "các bom tấn điện ảnh Hollywood và Hàn Quốc"
+                            },
+                            {
+                                "en": "heavy investment in professional stunt scenes",
+                                "vn": "đầu tư lớn vào các cảnh quay hành động chuyên nghiệp"
+                            },
+                            {
+                                "en": "diverse film genres like sci-fi or fantasy",
+                                "vn": "các thể loại phim đa dạng như khoa học viễn tưởng hay kỳ ảo"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Phát triển mạnh nhờ kịch bản tốt và doanh thu phá kỷ lục - 25 từ)",
+                        "text": "Yes, definitely. Vietnamese cinema is growing remarkably because filmmakers now invest heavily in modern cinematography and creative screenplays. As a result, many domestic films have achieved record-breaking box office revenues.",
+                        "formatted": "→ Yes, definitely. Vietnamese cinema is growing remarkably because filmmakers now invest heavily in <span class=\"sub-hl\">modern cinematography and creative screenplays</span>. As a result, many domestic films have achieved <span class=\"sub-hl\">record-breaking box office revenues</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Tiến bộ nhưng vẫn thiếu kịch bản gốc logic để đấu lại phim ngoại - 26 từ)",
+                        "text": "It is certainly progressing, but it still faces challenges. While technical quality is better, there is still a shortage of original, logically written movie scripts to compete with Hollywood and Korean cinematic blockbusters.",
+                        "formatted": "→ It is certainly progressing, but it still faces challenges. While technical quality is better, there is still a shortage of <span class=\"sub-hl\">original, logically written movie scripts</span> to compete with <span class=\"sub-hl\">Hollywood and Korean cinematic blockbusters</span>."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 69,
+        "title": "Chủ đề 69: Let's talk about green tea",
+        "topicName": "Green tea",
+        "introText": "Let’s talk about green tea.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "Do you often drink green tea?",
+                "qType": "Yes/No Question: Do you often drink green tea?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Trả lời CÓ - Thường xuyên uống vì tốt cho sức khỏe và giúp tỉnh táo):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, I do. I drink green tea <span class=\"formula-bracket-hl\">[tần suất]</span> because it is <span class=\"formula-bracket-hl\">[tính chất sức khỏe]</span>. It provides a natural boost to <span class=\"formula-bracket-hl\">[lợi ích - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Trả lời KHÔNG - Vị hơi đắng, thích uống nước lọc hoặc cà phê sữa):</div>\n                    <div class=\"topic-formula-text\">\n                        → Well, to be honest, not very often. I find its taste <span class=\"formula-bracket-hl\">[cảm nhận hương vị]</span>. Instead, I usually stick to <span class=\"formula-bracket-hl\">[đồ uống ưa thích khác]</span> throughout the day.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🍵 [Thường xuyên uống & Lợi ích] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "almost every single morning",
+                                "vn": "hầu như mỗi buổi sáng"
+                            },
+                            {
+                                "en": "packed with healthy antioxidants",
+                                "vn": "chứa đầy chất chống oxy hóa lành mạnh"
+                            },
+                            {
+                                "en": "stay sharp and boost metabolism",
+                                "vn": "giữ đầu óc tỉnh táo và thúc đẩy trao đổi chất"
+                            },
+                            {
+                                "en": "purify my body and relax my mind",
+                                "vn": "thanh lọc cơ thể và thư giãn tâm trí"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🥛 [Không hay uống & Thay thế] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "a bit too bitter and dry for my liking",
+                                "vn": "hơi quá đắng và chát so với sở thích của tôi"
+                            },
+                            {
+                                "en": "cause slight insomnia if consumed late",
+                                "vn": "gây mất ngủ nhẹ nếu uống muộn"
+                            },
+                            {
+                                "en": "pure mineral water and fruit smoothies",
+                                "vn": "nước khoáng tinh khiết và sinh tố hoa quả"
+                            },
+                            {
+                                "en": "sweet iced coffee with condensed milk",
+                                "vn": "cà phê sữa đá ngọt ngào"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Uống mỗi sáng vì giàu chất chống oxy hóa và giúp tỉnh táo - 24 từ)",
+                        "text": "Yes, I do. I drink green tea almost every single morning because it is packed with healthy antioxidants. It provides a natural boost to stay sharp and boost metabolism.",
+                        "formatted": "→ Yes, I do. I drink green tea <span class=\"sub-hl\">almost every single morning</span> because it is <span class=\"sub-hl\">packed with healthy antioxidants</span>. It provides a natural boost to <span class=\"sub-hl\">stay sharp and boost metabolism</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Vị hơi đắng chát, thích uống nước khoáng và sinh tố - 23 từ)",
+                        "text": "Well, to be honest, not very often. I find its taste a bit too bitter and dry for my liking. Instead, I usually stick to pure mineral water and fruit smoothies throughout the day.",
+                        "formatted": "→ Well, to be honest, not very often. I find its taste <span class=\"sub-hl\">a bit too bitter and dry for my liking</span>. Instead, I usually stick to <span class=\"sub-hl\">pure mineral water and fruit smoothies</span> throughout the day."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "When do you usually drink it?",
+                "qType": "Wh-Question: When do you usually drink it?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Uống vào buổi sáng sau khi ăn sáng để khởi đầu ngày mới tỉnh táo):</div>\n                    <div class=\"topic-formula-text\">\n                        → I usually enjoy a cup <span class=\"formula-bracket-hl\">[thời điểm buổi sáng]</span>. It really helps me <span class=\"formula-bracket-hl\">[lợi ích khởi đầu - Vo]</span> before kicking off my study sessions.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Uống vào buổi chiều hoặc sau bữa ăn nhiều dầu mỡ để tiêu hóa tốt):</div>\n                    <div class=\"topic-formula-text\">\n                        → I tend to drink it <span class=\"formula-bracket-hl\">[thời điểm buổi chiều/sau ăn]</span>. Having warm green tea at that time is great to <span class=\"formula-bracket-hl\">[lợi ích tiêu hóa - Vo]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "☀️ [Uống buổi sáng] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "right after finishing my breakfast",
+                                "vn": "ngay sau khi ăn xong bữa sáng"
+                            },
+                            {
+                                "en": "during my early morning study break",
+                                "vn": "trong giờ nghỉ học buổi sáng sớm"
+                            },
+                            {
+                                "en": "shake off morning sleepiness and gain energy",
+                                "vn": "xua tan cơn buồn ngủ buổi sáng và nạp năng lượng"
+                            },
+                            {
+                                "en": "prepare my mind for a focused workday",
+                                "vn": "chuẩn bị tâm trí cho một ngày làm việc tập trung"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🍵 [Uống buổi chiều & Sau ăn] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "around mid-afternoon around 3 PM",
+                                "vn": "vào khoảng giữa buổi chiều tầm 3 giờ"
+                            },
+                            {
+                                "en": "right after greasy heavy lunches",
+                                "vn": "ngay sau những bữa trưa nhiều dầu mỡ"
+                            },
+                            {
+                                "en": "aid my digestion and refresh my breath",
+                                "vn": "hỗ trợ tiêu hóa và làm thơm mát hơi thở"
+                            },
+                            {
+                                "en": "unwind gently with light biscuits",
+                                "vn": "thư giãn nhẹ nhàng cùng bánh quy giòn"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Uống sau bữa sáng để xua tan buồn ngủ - 22 từ)",
+                        "text": "I usually enjoy a cup right after finishing my breakfast. It really helps me shake off morning sleepiness and gain energy before kicking off my study sessions.",
+                        "formatted": "→ I usually enjoy a cup <span class=\"sub-hl\">right after finishing my breakfast</span>. It really helps me <span class=\"sub-hl\">shake off morning sleepiness and gain energy</span> before kicking off my study sessions."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Uống sau bữa trưa dầu mỡ để hỗ trợ tiêu hóa - 23 từ)",
+                        "text": "I tend to drink it right after greasy heavy lunches. Having warm green tea at that time is great to aid my digestion and refresh my breath.",
+                        "formatted": "→ I tend to drink it <span class=\"sub-hl\">right after greasy heavy lunches</span>. Having warm green tea at that time is great to <span class=\"sub-hl\">aid my digestion and refresh my breath</span>."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "Do people in your country often drink green tea?",
+                "qType": "Yes/No Question: Do people in your country often drink green tea?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Khẳng định RẤT PHỔ BIẾN - Nét văn hóa lâu đời ở mọi gia đình và quán nước vỉa hè):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, absolutely. Green tea is <span class=\"formula-bracket-hl\">[vị thế văn hóa ẩm thực]</span> in Vietnam. From family living rooms to <span class=\"formula-bracket-hl\">[địa điểm thưởng thức trà]</span>, people drink it daily to show hospitality.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Phổ biến ở người lớn tuổi, giới trẻ chuộng trà sữa và cà phê hơn):</div>\n                    <div class=\"topic-formula-text\">\n                        → It depends on the generation. While elderly people drink hot green tea <span class=\"formula-bracket-hl\">[thói quen người lớn tuổi]</span>, younger folks often lean toward <span class=\"formula-bracket-hl\">[đồ uống giới trẻ]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🎋 [Văn hóa thưởng trà truyền thống] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "an indispensable cultural tradition",
+                                "vn": "một nét truyền thống văn hóa không thể thiếu"
+                            },
+                            {
+                                "en": "a deeply rooted beverage of daily hospitality",
+                                "vn": "thức uống tiếp khách hàng ngày ăn sâu vào tiềm thức"
+                            },
+                            {
+                                "en": "humble roadside iced tea stalls (tra da via he)",
+                                "vn": "những quán trà đá vỉa hè mộc mạc"
+                            },
+                            {
+                                "en": "welcome guests warmly during festivals",
+                                "vn": "đón tiếp khách quý nồng hậu trong dịp lễ tết"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "👥 [Khác biệt thế hệ] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "as a daily peaceful ritual every dawn",
+                                "vn": "như một thói quen thanh bình hàng ngày vào mỗi bình minh"
+                            },
+                            {
+                                "en": "to preserve their long-term health",
+                                "vn": "để bảo vệ sức khỏe lâu dài của mình"
+                            },
+                            {
+                                "en": "sweet bubble milk tea and fancy iced coffee",
+                                "vn": "trà sữa trân châu ngọt ngào và cà phê đá hiện đại"
+                            },
+                            {
+                                "en": "trendy fruit infusions in modern cafes",
+                                "vn": "trà trái cây thời thượng tại các quán cà phê sang trọng"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Văn hóa truyền thống, uống ở quán trà đá vỉa hè và tại nhà - 24 từ)",
+                        "text": "Yes, absolutely. Green tea is an indispensable cultural tradition in Vietnam. From family living rooms to humble roadside iced tea stalls, people drink it daily to show hospitality.",
+                        "formatted": "→ Yes, absolutely. Green tea is <span class=\"sub-hl\">an indispensable cultural tradition</span> in Vietnam. From family living rooms to <span class=\"sub-hl\">humble roadside iced tea stalls</span>, people drink it daily to show hospitality."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Người già uống giữ gìn sức khỏe, giới trẻ chuộng trà sữa - 24 từ)",
+                        "text": "It depends on the generation. While elderly people drink hot green tea as a daily peaceful ritual every dawn, younger folks often lean toward sweet bubble milk tea and fancy iced coffee.",
+                        "formatted": "→ It depends on the generation. While elderly people drink hot green tea <span class=\"sub-hl\">as a daily peaceful ritual every dawn</span>, younger folks often lean toward <span class=\"sub-hl\">sweet bubble milk tea and fancy iced coffee</span>."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 70,
+        "title": "Chủ đề 70: Let's talk about crowded places",
+        "topicName": "Crowded places",
+        "introText": "Let’s talk about crowded places.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "Have you ever been to a crowded place?",
+                "qType": "Present Perfect: Have you ever been to a crowded place?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Từng đến các sự kiện lễ hội, chợ đêm hoặc phố đi bộ đông đúc):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, quite frequently. Just recently, I went to <span class=\"formula-bracket-hl\">[địa điểm đông đúc]</span> during <span class=\"formula-bracket-hl\">[dịp đặc biệt]</span>. There were thousands of people packed together.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Từng trải nghiệm ga tàu điện hoặc sân bay vào dịp lễ tết):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, I have. I remember being at <span class=\"formula-bracket-hl\">[địa điểm công cộng]</span> when everyone was trying to <span class=\"formula-bracket-hl\">[hành động vào giờ cao điểm]</span>. It was incredibly bustling.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🎆 [Lễ hội & Phố đi bộ] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "the pedestrian street around the lake",
+                                "vn": "phố đi bộ quanh hồ"
+                            },
+                            {
+                                "en": "a vibrant outdoor music countdown festival",
+                                "vn": "lễ hội đếm ngược âm nhạc ngoài trời sôi động"
+                            },
+                            {
+                                "en": "a bustling night market in Da Lat",
+                                "vn": "chợ đêm nhộn nhịp ở Đà Lạt"
+                            },
+                            {
+                                "en": "New Year’s Eve celebrations",
+                                "vn": "dịp đón giao thừa năm mới"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "✈️ [Bến xe & Sân bay] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "the central bus terminal before Tet holiday",
+                                "vn": "bến xe trung tâm trước dịp nghỉ Tết"
+                            },
+                            {
+                                "en": "the international airport departure hall",
+                                "vn": "sảnh khởi hành của sân bay quốc tế"
+                            },
+                            {
+                                "en": "catch the last trip back home",
+                                "vn": "bắt chuyến xe cuối cùng trở về quê"
+                            },
+                            {
+                                "en": "queue up for security check luggage",
+                                "vn": "xếp hàng chờ kiểm tra an ninh hành lý"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Phố đi bộ vào dịp lễ hội đếm ngược năm mới - 24 từ)",
+                        "text": "Yes, quite frequently. Just recently, I went to the pedestrian street around the lake during a vibrant outdoor music countdown festival. There were thousands of people packed together.",
+                        "formatted": "→ Yes, quite frequently. Just recently, I went to <span class=\"sub-hl\">the pedestrian street around the lake</span> during <span class=\"sub-hl\">a vibrant outdoor music countdown festival</span>. There were thousands of people packed together."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Bến xe trước Tết để bắt chuyến xe về quê - 23 từ)",
+                        "text": "Yes, I have. I remember being at the central bus terminal before Tet holiday when everyone was trying to catch the last trip back home. It was incredibly bustling.",
+                        "formatted": "→ Yes, I have. I remember being at <span class=\"sub-hl\">the central bus terminal before Tet holiday</span> when everyone was trying to <span class=\"sub-hl\">catch the last trip back home</span>. It was incredibly bustling."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "How did you feel when you were there?",
+                "qType": "Past Emotion: How did you feel when you were there?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Cảm thấy choáng ngợp, ngột ngạt và mệt mỏi):</div>\n                    <div class=\"topic-formula-text\">\n                        → To be honest, I felt quite <span class=\"formula-bracket-hl\">[cảm xúc mệt mỏi]</span> because of <span class=\"formula-bracket-hl\">[nguyên nhân ngột ngạt/tiếng ồn]</span>. I just wanted to find some fresh air.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Cảm thấy phấn khích và hào hứng trước năng lượng sôi động):</div>\n                    <div class=\"topic-formula-text\">\n                        → Surprisingly, I felt really <span class=\"formula-bracket-hl\">[cảm xúc hào hứng]</span>. The infectious crowd energy and <span class=\"formula-bracket-hl\">[yếu tố phấn khích]</span> made me feel totally energized.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "😣 [Ngột ngạt & Choáng ngợp] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "overwhelmed and suffocated",
+                                "vn": "choáng ngợp và ngột ngạt"
+                            },
+                            {
+                                "en": "exhausted and somewhat anxious",
+                                "vn": "kiệt sức và có phần lo âu"
+                            },
+                            {
+                                "en": "the deafening noise and constant pushing",
+                                "vn": "tiếng ồn inh tai và việc chen lấn liên tục"
+                            },
+                            {
+                                "en": "the hot stuffy air and lack of space",
+                                "vn": "không khí ngột ngạt nóng nực và thiếu không gian thở"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🥳 [Hào hứng & Năng lượng] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "excited and thrilled to the bone",
+                                "vn": "hào hứng và vô cùng thích thú"
+                            },
+                            {
+                                "en": "the uplifting cheering and lively music beats",
+                                "vn": "tiếng hò reo cổ vũ phấn khởi và nhịp nhạc sôi động"
+                            },
+                            {
+                                "en": "the cheerful smiles and joyful festive atmosphere",
+                                "vn": "những nụ cười tươi tắn và không khí lễ hội vui vẻ"
+                            },
+                            {
+                                "en": "connected with friendly strangers around me",
+                                "vn": "kết nối cùng những người xa lạ thân thiện xung quanh"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Cảm thấy ngột ngạt và mệt mỏi vì tiếng ồn và chen lấn - 24 từ)",
+                        "text": "To be honest, I felt quite overwhelmed and suffocated because of the deafening noise and constant pushing. I just wanted to find some fresh air immediately.",
+                        "formatted": "→ To be honest, I felt quite <span class=\"sub-hl\">overwhelmed and suffocated</span> because of <span class=\"sub-hl\">the deafening noise and constant pushing</span>. I just wanted to find some fresh air immediately."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Cảm thấy hào hứng với âm nhạc sôi động và tiếng hò reo - 23 từ)",
+                        "text": "Surprisingly, I felt really excited and thrilled to the bone. The infectious crowd energy and the uplifting cheering and lively music beats made me feel totally energized.",
+                        "formatted": "→ Surprisingly, I felt really <span class=\"sub-hl\">excited and thrilled to the bone</span>. The infectious crowd energy and <span class=\"sub-hl\">the uplifting cheering and lively music beats</span> made me feel totally energized."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "Do you prefer crowded places or quiet places? Why?",
+                "qType": "Preference + Reason: Do you prefer crowded places or quiet places? Why?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Chọn nơi YÊN TĨNH - Để thư giãn tâm trí và dễ tập trung):</div>\n                    <div class=\"topic-formula-text\">\n                        → I definitely prefer quiet spots. Peaceful environments allow me to <span class=\"formula-bracket-hl\">[lợi ích tĩnh lặng 1 - Vo]</span> and <span class=\"formula-bracket-hl\">[lợi ích tĩnh lặng 2 - Vo]</span> without any stress.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Chọn nơi ĐÔNG VUI - Năng động, nhiều năng lượng và xua tan buồn chán):</div>\n                    <div class=\"topic-formula-text\">\n                        → I lean towards lively, crowded places. Being surrounded by vibrant people helps me <span class=\"formula-bracket-hl\">[lợi ích giao lưu 1 - Vo]</span> and prevents me from <span class=\"formula-bracket-hl\">[cảm giác tiêu cực - V-ing]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🌿 [Thích nơi yên tĩnh] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "recharge my mental battery deeply",
+                                "vn": "nạp lại năng lượng tinh thần một cách sâu sắc"
+                            },
+                            {
+                                "en": "concentrate better on deep study work",
+                                "vn": "tập trung tốt hơn vào công việc học tập chuyên sâu"
+                            },
+                            {
+                                "en": "enjoy personal reflection and peaceful thoughts",
+                                "vn": "tận hưởng sự chiêm nghiệm cá nhân và những suy nghĩ an bình"
+                            },
+                            {
+                                "en": "escape sensory overload and loud traffic",
+                                "vn": "thoát khỏi sự quá tải giác quan và tiếng xe cộ ồn ào"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🎉 [Thích nơi đông vui] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "absorb positive social vibes and energy",
+                                "vn": "hấp thụ những nguồn năng lượng xã hội tích cực"
+                            },
+                            {
+                                "en": "broaden my social circle easily",
+                                "vn": "mở rộng mối quan hệ xã hội một cách dễ dàng"
+                            },
+                            {
+                                "en": "feeling lonely, isolated, or bored",
+                                "vn": "cảm thấy cô đơn, cô lập hay buồn chán"
+                            },
+                            {
+                                "en": "experience exciting community festivities",
+                                "vn": "trải nghiệm những lễ hội cộng đồng sôi động"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Thích nơi yên tĩnh để nạp năng lượng và tập trung - 22 từ)",
+                        "text": "I definitely prefer quiet spots. Peaceful environments allow me to recharge my mental battery deeply and concentrate better on deep study work without any stress.",
+                        "formatted": "→ I definitely prefer quiet spots. Peaceful environments allow me to <span class=\"sub-hl\">recharge my mental battery deeply</span> and <span class=\"sub-hl\">concentrate better on deep study work</span> without any stress."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Thích nơi đông vui để nạp năng lượng tích cực và tránh cô đơn - 23 từ)",
+                        "text": "I lean towards lively, crowded places. Being surrounded by vibrant people helps me absorb positive social vibes and energy and prevents me from feeling lonely, isolated, or bored.",
+                        "formatted": "→ I lean towards lively, crowded places. Being surrounded by vibrant people helps me <span class=\"sub-hl\">absorb positive social vibes and energy</span> and prevents me from <span class=\"sub-hl\">feeling lonely, isolated, or bored</span>."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 71,
+        "title": "Chủ đề 71: Let's talk about traveling",
+        "topicName": "Traveling",
+        "introText": "Let’s talk about traveling.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "What is your favorite trip that you have taken?",
+                "qType": "Wh-Question (Past Trip): What is your favorite trip that you have taken?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Chuyến du lịch biển như Đà Nẵng, Phú Quốc, Nha Trang):</div>\n                    <div class=\"topic-formula-text\">\n                        → My most memorable trip was to <span class=\"formula-bracket-hl\">[địa danh biển]</span> with <span class=\"formula-bracket-hl\">[bạn đồng hành]</span> last summer. I fell in love with <span class=\"formula-bracket-hl\">[cảnh đẹp & ẩm thực biển]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Chuyến đi vùng núi hoặc cao nguyên thanh bình như Đà Lạt, Sa Pa, Hà Giang):</div>\n                    <div class=\"topic-formula-text\">\n                        → Without doubt, my favorite journey was visiting <span class=\"formula-bracket-hl\">[vùng núi/cao nguyên]</span>. The trip was unforgettable because of <span class=\"formula-bracket-hl\">[khí hậu mát mẻ & cảnh sắc thiên nhiên]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🌊 [Du lịch biển] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "the coastal city of Da Nang",
+                                "vn": "thành phố biển Đà Nẵng"
+                            },
+                            {
+                                "en": "my close circle of friends",
+                                "vn": "nhóm bạn thân thiết của tôi"
+                            },
+                            {
+                                "en": "stunning white-sand beaches and fresh seafood",
+                                "vn": "những bãi biển cát trắng tuyệt đẹp và hải sản tươi sống"
+                            },
+                            {
+                                "en": "watching the sunrise over the turquoise ocean",
+                                "vn": "ngắm bình minh trên đại dương xanh ngắt"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🌲 [Du lịch vùng núi/cao nguyên] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "the misty city of Da Lat",
+                                "vn": "thành phố sương mù Đà Lạt"
+                            },
+                            {
+                                "en": "the mountainous region of Sa Pa",
+                                "vn": "vùng núi Sa Pa"
+                            },
+                            {
+                                "en": "cool pine breeze and picturesque valleys",
+                                "vn": "làn gió thông mát lạnh và những thung lũng đẹp như tranh"
+                            },
+                            {
+                                "en": "breathtaking terrace rice fields",
+                                "vn": "những thửa ruộng bậc thang ngoạn mục"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Đi biển Đà Nẵng với bạn thân, ngắm cát trắng và hải sản tươi - 25 từ)",
+                        "text": "My most memorable trip was to the coastal city of Da Nang with my close circle of friends last summer. I fell in love with stunning white-sand beaches and fresh seafood.",
+                        "formatted": "→ My most memorable trip was to <span class=\"sub-hl\">the coastal city of Da Nang</span> with <span class=\"sub-hl\">my close circle of friends</span> last summer. I fell in love with <span class=\"sub-hl\">stunning white-sand beaches and fresh seafood</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Đi Đà Lạt ngắm rừng thông mát lạnh và thung lũng - 24 từ)",
+                        "text": "Without doubt, my favorite journey was visiting the misty city of Da Lat. The trip was unforgettable because of cool pine breeze and picturesque valleys during autumn.",
+                        "formatted": "→ Without doubt, my favorite journey was visiting <span class=\"sub-hl\">the misty city of Da Lat</span>. The trip was unforgettable because of <span class=\"sub-hl\">cool pine breeze and picturesque valleys</span> during autumn."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "Do you often try local food when you travel?",
+                "qType": "Yes/No Question: Do you often try local food when you travel?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Trả lời CÓ - Ẩm thực là trải nghiệm cốt lõi, thích khám phá đặc sản vùng miền):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, definitely. In fact, sampling local specialties is <span class=\"formula-bracket-hl\">[tầm quan trọng ẩm thực]</span> for me. It allows me to <span class=\"formula-bracket-hl\">[trải nghiệm văn hóa địa phương - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Khá kén ăn hoặc có bụng nhạy cảm, chỉ thử món quen thuộc):</div>\n                    <div class=\"topic-formula-text\">\n                        → To be completely honest, I am somewhat cautious. Since I have <span class=\"formula-bracket-hl\">[lý do nhạy cảm]</span>, I only try <span class=\"formula-bracket-hl\">[món ăn an toàn]</span> to avoid getting sick.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🍲 [Thích thử đặc sản vùng miền] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "the ultimate highlight of every journey",
+                                "vn": "điểm nhấn tuyệt vời nhất trong mọi hành trình"
+                            },
+                            {
+                                "en": "an essential cultural experience",
+                                "vn": "một trải nghiệm văn hóa thiết yếu"
+                            },
+                            {
+                                "en": "discover authentic indigenous herbs and spices",
+                                "vn": "khám phá các loại rau thơm và gia vị bản địa đích thực"
+                            },
+                            {
+                                "en": "understand the local way of living deeply",
+                                "vn": "thấu hiểu sâu sắc lối sống của người dân địa phương"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🥗 [Kén ăn & Cẩn thận sức khỏe] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "a rather sensitive stomach and food allergies",
+                                "vn": "chiếc bụng khá nhạy cảm và chứng dị ứng thức ăn"
+                            },
+                            {
+                                "en": "mild, freshly cooked well-known dishes",
+                                "vn": "những món ăn thanh đạm, nấu chín kỹ quen thuộc"
+                            },
+                            {
+                                "en": "clean restaurants with good reviews",
+                                "vn": "các nhà hàng sạch sẽ có nhiều đánh giá tốt"
+                            },
+                            {
+                                "en": "avoid weird raw or overly spicy snacks",
+                                "vn": "tránh các món ăn sống kỳ lạ hoặc quá cay nồng"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Ăn đặc sản là điểm nhấn để thấu hiểu văn hóa địa phương - 24 từ)",
+                        "text": "Yes, definitely. In fact, sampling local specialties is the ultimate highlight of every journey for me. It allows me to understand the local way of living deeply.",
+                        "formatted": "→ Yes, definitely. In fact, sampling local specialties is <span class=\"sub-hl\">the ultimate highlight of every journey</span> for me. It allows me to <span class=\"sub-hl\">understand the local way of living deeply</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Bụng nhạy cảm nên chỉ ăn món quen nấu chín sạch sẽ - 25 từ)",
+                        "text": "To be completely honest, I am somewhat cautious. Since I have a rather sensitive stomach and food allergies, I only try mild, freshly cooked well-known dishes to avoid getting sick.",
+                        "formatted": "→ To be completely honest, I am somewhat cautious. Since I have <span class=\"sub-hl\">a rather sensitive stomach and food allergies</span>, I only try <span class=\"sub-hl\">mild, freshly cooked well-known dishes</span> to avoid getting sick."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "What are your favorite activities to do when you travel?",
+                "qType": "Wh-Question: What are your favorite activities to do when you travel?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Ngắm cảnh thiên nhiên, chụp ảnh và đi dạo):</div>\n                    <div class=\"topic-formula-text\">\n                        → When traveling, I love <span class=\"formula-bracket-hl\">[hoạt động ngắm cảnh - V-ing]</span> and taking pictures. These moments help me <span class=\"formula-bracket-hl\">[lợi ích tâm hồn - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Tham quan di tích lịch sử và mua quà lưu niệm ở chợ địa phương):</div>\n                    <div class=\"topic-formula-text\">\n                        → I usually prioritize <span class=\"formula-bracket-hl\">[tham quan lịch sử/chợ - V-ing]</span>. It gives me a great opportunity to <span class=\"formula-bracket-hl\">[mục tiêu tìm hiểu - Vo]</span> and bring home unique gifts.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "📸 [Ngắm cảnh & Chụp ảnh] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "admiring majestic natural landscapes",
+                                "vn": "chiêm ngưỡng những cảnh quan thiên nhiên hùng vĩ"
+                            },
+                            {
+                                "en": "strolling along serene coastal beaches",
+                                "vn": "dạo bước dọc theo những bãi biển thanh bình"
+                            },
+                            {
+                                "en": "capturing breathtaking sunset photos",
+                                "vn": "chụp những bức ảnh hoàng hôn ngoạn mục"
+                            },
+                            {
+                                "en": "immerse myself in peaceful nature",
+                                "vn": "đắm mình vào thiên nhiên an lành"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🏛️ [Di tích & Chợ địa phương] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "exploring ancient temples and historical landmarks",
+                                "vn": "khám phá các ngôi chùa cổ và di tích lịch sử"
+                            },
+                            {
+                                "en": "browsing colorful traditional handicraft markets",
+                                "vn": "dạo quanh các khu chợ thủ công truyền thống rực rỡ"
+                            },
+                            {
+                                "en": "interact warmly with local shopkeepers",
+                                "vn": "trò chuyện nồng hậu cùng các chủ sạp bản địa"
+                            },
+                            {
+                                "en": "gain deep insights into historical heritage",
+                                "vn": "tiếp thu cái nhìn sâu sắc về di sản lịch sử"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Ngắm thiên nhiên hùng vĩ và đắm mình vào bình yên - 22 từ)",
+                        "text": "When traveling, I love admiring majestic natural landscapes and taking pictures. These moments help me immerse myself in peaceful nature away from work stress.",
+                        "formatted": "→ When traveling, I love <span class=\"sub-hl\">admiring majestic natural landscapes</span> and taking pictures. These moments help me <span class=\"sub-hl\">immerse myself in peaceful nature</span> away from work stress."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Khám phá chùa cổ và dạo chợ đồ thủ công truyền thống - 23 từ)",
+                        "text": "I usually prioritize exploring ancient temples and historical landmarks. It gives me a great opportunity to gain deep insights into historical heritage and bring home unique gifts.",
+                        "formatted": "→ I usually prioritize <span class=\"sub-hl\">exploring ancient temples and historical landmarks</span>. It gives me a great opportunity to <span class=\"sub-hl\">gain deep insights into historical heritage</span> and bring home unique gifts."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 72,
+        "title": "Chủ đề 72: Let's talk about recycling",
+        "topicName": "Recycling",
+        "introText": "Let’s talk about recycling.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "What kinds of things do you usually recycle?",
+                "qType": "Wh-Question: What kinds of things do you usually recycle?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Đồ nhựa dùng một lần và chai lọ thủy tinh):</div>\n                    <div class=\"topic-formula-text\">\n                        → At home, I frequently sort and recycle <span class=\"formula-bracket-hl\">[rác thải tái chế 1]</span> and <span class=\"formula-bracket-hl\">[rác thải tái chế 2]</span>. Doing so helps <span class=\"formula-bracket-hl\">[mục đích bảo vệ môi trường - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Giấy báo cũ, bìa các-tông và đồ điện tử hỏng):</div>\n                    <div class=\"topic-formula-text\">\n                        → I tend to collect <span class=\"formula-bracket-hl\">[vật dụng giấy/kim loại]</span> to send to local scrap dealers. Reusing them helps <span class=\"formula-bracket-hl\">[tiết kiệm tài nguyên - Vo]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🧴 [Nhựa & Thủy tinh] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "plastic water bottles and beverage containers",
+                                "vn": "chai nước bằng nhựa và hộp đựng đồ uống"
+                            },
+                            {
+                                "en": "empty glass jars and aluminum soda cans",
+                                "vn": "lọ thủy tinh rỗng và lon nhôm nước ngọt"
+                            },
+                            {
+                                "en": "reduce plastic waste dumped into landfills",
+                                "vn": "giảm lượng rác thải nhựa bị chôn lấp ra bãi rác"
+                            },
+                            {
+                                "en": "protect marine life from plastic pollution",
+                                "vn": "bảo vệ sinh vật biển khỏi ô nhiễm rác thải nhựa"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "📦 [Giấy, bìa các-tông & Đồ cũ] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "old newspapers and discarded cardboard delivery boxes",
+                                "vn": "báo cũ và các hộp các-tông giao hàng bỏ đi"
+                            },
+                            {
+                                "en": "unwanted notebooks and scrap metal parts",
+                                "vn": "vở viết không dùng nữa và phế liệu kim loại"
+                            },
+                            {
+                                "en": "conserve natural forest trees and timber",
+                                "vn": "bảo tồn cây rừng tự nhiên và gỗ"
+                            },
+                            {
+                                "en": "promote sustainable recycling loops",
+                                "vn": "thúc đẩy các vòng tuần hoàn tái chế bền vững"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Tái chế chai nhựa và lon nước ngọt để giảm rác chôn lấp - 24 từ)",
+                        "text": "At home, I frequently sort and recycle plastic water bottles and empty glass jars. Doing so helps reduce plastic waste dumped into landfills and keeps surroundings clean.",
+                        "formatted": "→ At home, I frequently sort and recycle <span class=\"sub-hl\">plastic water bottles</span> and <span class=\"sub-hl\">empty glass jars</span>. Doing so helps <span class=\"sub-hl\">reduce plastic waste dumped into landfills</span> and keeps surroundings clean."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Thu gom hộp các-tông và giấy báo để bảo tồn cây rừng - 23 từ)",
+                        "text": "I tend to collect old newspapers and discarded cardboard delivery boxes to send to local scrap dealers. Reusing them helps conserve natural forest trees and timber.",
+                        "formatted": "→ I tend to collect <span class=\"sub-hl\">old newspapers and discarded cardboard delivery boxes</span> to send to local scrap dealers. Reusing them helps <span class=\"sub-hl\">conserve natural forest trees and timber</span>."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "Do people in your area often recycle?",
+                "qType": "Yes/No Question: Do people in your area often recycle?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Ý thức đang tăng dần, nhiều người phân loại rác và bán ve chai):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, awareness is growing rapidly. Many residents in my neighborhood now <span class=\"formula-bracket-hl\">[hành vi phân loại rác]</span> and deliver recyclables to <span class=\"formula-bracket-hl\">[nơi thu gom]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Chưa thực sự phổ biến do thiếu thùng rác phân loại và thói quen vứt chung):</div>\n                    <div class=\"topic-formula-text\">\n                        → Honestly, not as much as expected. A lot of people still <span class=\"formula-bracket-hl\">[thói quen vứt rác chung]</span> mainly due to <span class=\"formula-bracket-hl\">[thiếu cơ sở vật chất]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "♻️ [Ý thức tốt & Thu gom] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "separate daily garbage into organic and inorganic",
+                                "vn": "phân loại rác hàng ngày thành hữu cơ và vô cơ"
+                            },
+                            {
+                                "en": "clean up plastic containers before sorting",
+                                "vn": "rửa sạch hộp nhựa trước khi phân loại"
+                            },
+                            {
+                                "en": "traditional scrap collectors and community stations",
+                                "vn": "những người thu mua đồng nát truyền thống và trạm cộng đồng"
+                            },
+                            {
+                                "en": "neighborhood green clean-up weekends",
+                                "vn": "các buổi cuối tuần dọn vệ sinh xanh tại khu phố"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🗑️ [Chưa đồng bộ & Thiếu thói quen] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "dump all mixed household trash into one single bag",
+                                "vn": "vứt tất cả rác sinh hoạt hỗn tạp vào một túi duy nhất"
+                            },
+                            {
+                                "en": "a severe lack of specialized recycling bins",
+                                "vn": "sự thiếu hụt trầm trọng các thùng rác chuyên dụng phân loại"
+                            },
+                            {
+                                "en": "low environmental habits in older generations",
+                                "vn": "thói quen bảo vệ môi trường chưa cao ở các thế hệ trước"
+                            },
+                            {
+                                "en": "insufficient public education on sorting rules",
+                                "vn": "giáo dục cộng đồng chưa đầy đủ về quy tắc phân loại rác"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Phân loại rác hữu cơ, vô cơ và giao cho người thu mua phế liệu - 24 từ)",
+                        "text": "Yes, awareness is growing rapidly. Many residents in my neighborhood now separate daily garbage into organic and inorganic and deliver recyclables to traditional scrap collectors regularly.",
+                        "formatted": "→ Yes, awareness is growing rapidly. Many residents in my neighborhood now <span class=\"sub-hl\">separate daily garbage into organic and inorganic</span> and deliver recyclables to <span class=\"sub-hl\">traditional scrap collectors</span> regularly."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Còn vứt chung rác vào một túi vì thiếu thùng rác phân loại - 23 từ)",
+                        "text": "Honestly, not as much as expected. A lot of people still dump all mixed household trash into one single bag mainly due to a severe lack of specialized recycling bins.",
+                        "formatted": "→ Honestly, not as much as expected. A lot of people still <span class=\"sub-hl\">dump all mixed household trash into one single bag</span> mainly due to <span class=\"sub-hl\">a severe lack of specialized recycling bins</span>."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "How does the government encourage people to recycle?",
+                "qType": "Wh-Question: How does the government encourage people to recycle?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Truyền thông giáo dục qua trường học và mạng xã hội):</div>\n                    <div class=\"topic-formula-text\">\n                        → The authorities promote recycling by launching <span class=\"formula-bracket-hl\">[chiến dịch truyền thông]</span>. They also integrate environmental lessons into <span class=\"formula-bracket-hl\">[giáo dục học đường]</span> to raise young awareness.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Quy định luật pháp bắt buộc phân loại rác và đặt thêm thùng rác thông minh):</div>\n                    <div class=\"topic-formula-text\">\n                        → The government has enacted <span class=\"formula-bracket-hl\">[luật pháp & xử phạt]</span> for improper disposal. In addition, they are installing <span class=\"formula-bracket-hl\">[cơ sở hạ tầng xanh]</span> across major city streets.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "📢 [Truyền thông & Học đường] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "nationwide media campaigns and social slogans",
+                                "vn": "các chiến dịch truyền thông toàn quốc và khẩu hiệu xã hội"
+                            },
+                            {
+                                "en": "\"exchange plastic trash for green plants\" programs",
+                                "vn": "chương trình \"đổi rác nhựa lấy cây xanh\""
+                            },
+                            {
+                                "en": "school curriculums and student workshops",
+                                "vn": "giáo trình nhà trường và hội thảo học sinh"
+                            },
+                            {
+                                "en": "build green lifestyles from early childhood",
+                                "vn": "xây dựng lối sống xanh từ thuở ấu thơ"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "⚖️ [Luật pháp & Hạ tầng] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "strict environmental regulations and littering fines",
+                                "vn": "các quy định môi trường nghiêm ngặt và mức phạt xả rác"
+                            },
+                            {
+                                "en": "mandatory trash sorting policies at source",
+                                "vn": "chính sách bắt buộc phân loại rác tại nguồn"
+                            },
+                            {
+                                "en": "color-coded recycling garbage containers",
+                                "vn": "các thùng rác tái chế phân biệt bằng mã màu"
+                            },
+                            {
+                                "en": "modern automated waste treatment plants",
+                                "vn": "các nhà máy xử lý rác thải tự động hiện đại"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Chiến dịch truyền thông và chương trình đổi rác lấy cây xanh - 24 từ)",
+                        "text": "The authorities promote recycling by launching nationwide media campaigns and social slogans. They also integrate environmental lessons into school curriculums and student workshops to raise young awareness.",
+                        "formatted": "→ The authorities promote recycling by launching <span class=\"sub-hl\">nationwide media campaigns and social slogans</span>. They also integrate environmental lessons into <span class=\"sub-hl\">school curriculums and student workshops</span> to raise young awareness."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Luật bắt buộc phân loại tại nguồn và lắp thùng rác phân màu - 24 từ)",
+                        "text": "The government has enacted strict environmental regulations and littering fines for improper disposal. In addition, they are installing color-coded recycling garbage containers across major city streets.",
+                        "formatted": "→ The government has enacted <span class=\"sub-hl\">strict environmental regulations and littering fines</span> for improper disposal. In addition, they are installing <span class=\"sub-hl\">color-coded recycling garbage containers</span> across major city streets."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 73,
+        "title": "Chủ đề 73: Let's talk about phone calls",
+        "topicName": "Phone calls",
+        "introText": "Let’s talk about phone calls.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "Who do you usually call, and how often?",
+                "qType": "Wh-Question: Who do you usually call, and how often?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Gọi điện cho bố mẹ/người thân hàng ngày hoặc hàng tuần để hỏi thăm):</div>\n                    <div class=\"topic-formula-text\">\n                        → I call <span class=\"formula-bracket-hl\">[đối tượng gia đình]</span> most frequently, usually <span class=\"formula-bracket-hl\">[tần suất cuộc gọi]</span>. We chat to <span class=\"formula-bracket-hl\">[nội dung thăm hỏi - Vo]</span> and stay connected.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Gọi cho bạn thân hoặc đồng nghiệp khi có việc khẩn cấp):</div>\n                    <div class=\"topic-formula-text\">\n                        → Aside from family, I frequently dial <span class=\"formula-bracket-hl\">[đối tượng bạn bè/đồng nghiệp]</span> whenever we need to <span class=\"formula-bracket-hl\">[mục đích công việc/trao đổi - Vo]</span> instantly.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "👨‍👩‍👧 [Bố mẹ & Gia đình] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "my parents back in my hometown",
+                                "vn": "bố mẹ tôi ở quê nhà"
+                            },
+                            {
+                                "en": "almost every evening after having dinner",
+                                "vn": "hầu như mỗi buổi tối sau bữa ăn cơm"
+                            },
+                            {
+                                "en": "update each other on our health and daily routine",
+                                "vn": "cập nhật cho nhau về sức khỏe và sinh hoạt hàng ngày"
+                            },
+                            {
+                                "en": "express affection and lessen homesickness",
+                                "vn": "thể hiện tình cảm và vơi bớt nỗi nhớ nhà"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "💼 [Bạn bè & Đồng nghiệp] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "my direct work colleagues and teammates",
+                                "vn": "đồng nghiệp làm việc trực tiếp và đồng đội của tôi"
+                            },
+                            {
+                                "en": "my best friend from high school",
+                                "vn": "người bạn thân nhất thời cấp ba của tôi"
+                            },
+                            {
+                                "en": "resolve urgent tasks without delay",
+                                "vn": "giải quyết những công việc khẩn cấp không chậm trễ"
+                            },
+                            {
+                                "en": "discuss important deadlines and group projects",
+                                "vn": "bàn luận về các hạn nộp quan trọng và dự án nhóm"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Gọi điện cho bố mẹ ở quê mỗi tối sau bữa ăn - 24 từ)",
+                        "text": "I call my parents back in my hometown most frequently, usually almost every evening after having dinner. We chat to update each other on our health and daily routine.",
+                        "formatted": "→ I call <span class=\"sub-hl\">my parents back in my hometown</span> most frequently, usually <span class=\"sub-hl\">almost every evening after having dinner</span>. We chat to <span class=\"sub-hl\">update each other on our health and daily routine</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Gọi cho đồng nghiệp khi cần giải quyết công việc khẩn - 23 từ)",
+                        "text": "Aside from family, I frequently dial my direct work colleagues and teammates whenever we need to resolve urgent tasks without delay instantly during work hours.",
+                        "formatted": "→ Aside from family, I frequently dial <span class=\"sub-hl\">my direct work colleagues and teammates</span> whenever we need to <span class=\"sub-hl\">resolve urgent tasks without delay</span> instantly during work hours."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "What do you usually talk about when you make phone calls?",
+                "qType": "Wh-Question: What do you usually talk about when you make phone calls?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Hỏi thăm sức khỏe, chuyện gia đình và sinh hoạt hàng ngày):</div>\n                    <div class=\"topic-formula-text\">\n                        → With my relatives, our conversations mainly revolve around <span class=\"formula-bracket-hl\">[chủ đề gia đình 1]</span> and <span class=\"formula-bracket-hl\">[chủ đề gia đình 2]</span>. It is always warm and heartwarming.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Bàn luận học tập, công việc hoặc kế hoạch hẹn hò cuối tuần):</div>\n                    <div class=\"topic-formula-text\">\n                        → When speaking with friends or classmates, we mostly discuss <span class=\"formula-bracket-hl\">[chủ đề công việc/học tập]</span> or <span class=\"formula-bracket-hl\">[kế hoạch vui chơi]</span> for the upcoming weekend.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🏡 [Gia đình & Đời sống] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "physical wellness and daily meals",
+                                "vn": "sức khỏe thể chất và các bữa ăn hàng ngày"
+                            },
+                            {
+                                "en": "funny stories happening in our hometown",
+                                "vn": "những câu chuyện vui diễn ra ở quê nhà"
+                            },
+                            {
+                                "en": "recent study progress and exam results",
+                                "vn": "tiến độ học tập và kết quả thi cử gần đây"
+                            },
+                            {
+                                "en": "comfort each other through life hardships",
+                                "vn": "an ủi lẫn nhau vượt qua những khó khăn cuộc sống"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "📅 [Công việc & Lên lịch hẹn] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "assignment deadlines and presentation slides",
+                                "vn": "hạn chót nộp bài tập và slide thuyết trình"
+                            },
+                            {
+                                "en": "office schedule changes and urgent clients",
+                                "vn": "thay đổi lịch trình văn phòng và khách hàng khẩn cấp"
+                            },
+                            {
+                                "en": "plans for coffee meetups and movie nights",
+                                "vn": "kế hoạch đi cà phê gặp gỡ và xem phim"
+                            },
+                            {
+                                "en": "travel arrangements for short weekend trips",
+                                "vn": "sắp xếp lịch trình cho các chuyến du lịch ngắn cuối tuần"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Nói về sức khỏe, bữa ăn và chuyện vui ở quê nhà - 23 từ)",
+                        "text": "With my relatives, our conversations mainly revolve around physical wellness and daily meals and funny stories happening in our hometown. It is always warm and heartwarming.",
+                        "formatted": "→ With my relatives, our conversations mainly revolve around <span class=\"sub-hl\">physical wellness and daily meals</span> and <span class=\"sub-hl\">funny stories happening in our hometown</span>. It is always warm and heartwarming."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Bàn về hạn bài tập và lên lịch cà phê cuối tuần - 23 từ)",
+                        "text": "When speaking with friends or classmates, we mostly discuss assignment deadlines and presentation slides or plans for coffee meetups and movie nights for the upcoming weekend.",
+                        "formatted": "→ When speaking with friends or classmates, we mostly discuss <span class=\"sub-hl\">assignment deadlines and presentation slides</span> or <span class=\"sub-hl\">plans for coffee meetups and movie nights</span> for the upcoming weekend."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "Do you prefer talking on the phone or sending messages? Why?",
+                "qType": "Preference + Reason: Do you prefer talking on the phone or sending messages? Why?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Thích NHẮN TIN - Tiện lợi, không áp lực trả lời ngay và gửi được hình ảnh/tài liệu):</div>\n                    <div class=\"topic-formula-text\">\n                        → Personally, I strongly favor texting. It gives me time to <span class=\"formula-bracket-hl\">[lợi ích nhắn tin 1 - Vo]</span> and avoids <span class=\"formula-bracket-hl\">[sự bất tiện khi gọi điện]</span> when I am in public places.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Thích GỌI ĐIỆN - Nhanh chóng, rõ ràng cảm xúc và giải quyết việc tức thì):</div>\n                    <div class=\"topic-formula-text\">\n                        → I prefer voice calls over texting. Speaking directly helps <span class=\"formula-bracket-hl\">[lợi ích cuộc gọi 1 - Vo]</span> and eliminates <span class=\"formula-bracket-hl\">[hạn chế của tin nhắn]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "💬 [Thích nhắn tin] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "think carefully and compose my thoughts clearly",
+                                "vn": "suy nghĩ cẩn thận và soạn thảo ý kiến rõ ràng"
+                            },
+                            {
+                                "en": "disturbing quiet classrooms or public buses",
+                                "vn": "làm phiền lớp học yên tĩnh hoặc xe buýt công cộng"
+                            },
+                            {
+                                "en": "share documents, photos, and funny stickers effortlessly",
+                                "vn": "chia sẻ tài liệu, hình ảnh và nhãn dán vui nhộn dễ dàng"
+                            },
+                            {
+                                "en": "review previous chat records anytime",
+                                "vn": "xem lại lịch sử tin nhắn bất cứ lúc nào"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "📞 [Thích gọi điện thoại] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "convey genuine vocal tones and warm emotions",
+                                "vn": "truyền tải âm điệu chân thực và cảm xúc ấm áp"
+                            },
+                            {
+                                "en": "resolve complicated issues in just a few minutes",
+                                "vn": "giải quyết vấn đề phức tạp chỉ trong vài phút"
+                            },
+                            {
+                                "en": "unnecessary misunderstandings and slow typing",
+                                "vn": "những hiểu lầm không đáng có và việc gõ phím chậm chạp"
+                            },
+                            {
+                                "en": "get immediate answers during emergencies",
+                                "vn": "nhận được câu trả lời tức thì trong các trường hợp khẩn"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Thích nhắn tin vì có thời gian suy nghĩ kỹ và không gây phiền nơi công cộng - 24 từ)",
+                        "text": "Personally, I strongly favor texting. It gives me time to think carefully and compose my thoughts clearly and avoids disturbing quiet classrooms or public buses when I am in public places.",
+                        "formatted": "→ Personally, I strongly favor texting. It gives me time to <span class=\"sub-hl\">think carefully and compose my thoughts clearly</span> and avoids <span class=\"sub-hl\">disturbing quiet classrooms or public buses</span> when I am in public places."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Thích gọi điện vì truyền tải cảm xúc ấm áp và giải quyết việc nhanh - 24 từ)",
+                        "text": "I prefer voice calls over texting. Speaking directly helps convey genuine vocal tones and warm emotions and eliminates unnecessary misunderstandings and slow typing.",
+                        "formatted": "→ I prefer voice calls over texting. Speaking directly helps <span class=\"sub-hl\">convey genuine vocal tones and warm emotions</span> and eliminates <span class=\"sub-hl\">unnecessary misunderstandings and slow typing</span>."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 74,
+        "title": "Chủ đề 74: Let's talk about clothes",
+        "topicName": "Clothes",
+        "introText": "Let’s talk about clothes.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "How often do you go shopping for clothes?",
+                "qType": "Wh-Question (Frequency): How often do you go shopping for clothes?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Mua sắm định kỳ mỗi tháng một lần hoặc vào các đợt giảm giá lớn):</div>\n                    <div class=\"topic-formula-text\">\n                        → I usually go clothes shopping <span class=\"formula-bracket-hl\">[tần suất mua sắm]</span>. I often wait for <span class=\"formula-bracket-hl\">[dịp ưu đãi/giảm giá]</span> to purchase fashionable items at reasonable prices.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Rất hiếm khi mua, chỉ mua khi đồ cũ rách hỏng hoặc khi thật sự cần):</div>\n                    <div class=\"topic-formula-text\">\n                        → Quite rarely, maybe <span class=\"formula-bracket-hl\">[tần suất thưa thớt]</span>. I believe in minimalism, so I only shop when <span class=\"formula-bracket-hl\">[nhu cầu thực sự]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🛍️ [Mua sắm định kỳ / Săn sale] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "about once a month or every two months",
+                                "vn": "khoảng một tháng một lần hoặc hai tháng một lần"
+                            },
+                            {
+                                "en": "major seasonal clearance sales and online promotion days",
+                                "vn": "các đợt xả hàng theo mùa lớn và ngày khuyến mãi online"
+                            },
+                            {
+                                "en": "refresh my wardrobe with stylish pieces",
+                                "vn": "làm mới tủ quần áo bằng những món đồ thời trang"
+                            },
+                            {
+                                "en": "hunt for bargains on e-commerce platforms",
+                                "vn": "săn hàng giá rẻ trên các sàn thương mại điện tử"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🌿 [Phong cách tối giản / Ít mua] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "two or three times a whole year",
+                                "vn": "hai hoặc ba lần trong cả một năm"
+                            },
+                            {
+                                "en": "my existing clothes are worn out or outgrown",
+                                "vn": "quần áo hiện tại bị sờn rách hoặc bị chật"
+                            },
+                            {
+                                "en": "I have to attend a formal corporate event",
+                                "vn": "tôi phải tham dự một sự kiện trang trọng của công ty"
+                            },
+                            {
+                                "en": "save my hard-earned money for other priorities",
+                                "vn": "tiết kiệm đồng tiền vất vả kiếm được cho các ưu tiên khác"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Mua sắm mỗi 1-2 tháng và săn giảm giá lớn - 23 từ)",
+                        "text": "I usually go clothes shopping about once a month or every two months. I often wait for major seasonal clearance sales and online promotion days to purchase fashionable items at reasonable prices.",
+                        "formatted": "→ I usually go clothes shopping <span class=\"sub-hl\">about once a month or every two months</span>. I often wait for <span class=\"sub-hl\">major seasonal clearance sales and online promotion days</span> to purchase fashionable items at reasonable prices."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Mua 2-3 lần mỗi năm theo lối sống tối giản - 24 từ)",
+                        "text": "Quite rarely, maybe two or three times a whole year. I believe in minimalism, so I only shop when my existing clothes are worn out or outgrown.",
+                        "formatted": "→ Quite rarely, maybe <span class=\"sub-hl\">two or three times a whole year</span>. I believe in minimalism, so I only shop when <span class=\"sub-hl\">my existing clothes are worn out or outgrown</span>."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "On what occasions do you usually buy new clothes?",
+                "qType": "Wh-Question: On what occasions do you usually buy new clothes?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Mua vào dịp Tết Nguyên Đán hoặc các sự kiện đặc biệt như đám cưới, sinh nhật):</div>\n                    <div class=\"topic-formula-text\">\n                        → I typically treat myself to new clothes during <span class=\"formula-bracket-hl\">[dịp lễ tết/sự kiện 1]</span> and <span class=\"formula-bracket-hl\">[sự kiện 2]</span>. Dressing up nicely gives me <span class=\"formula-bracket-hl\">[cảm xúc tích cực]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Mua khi chuyển mùa thời tiết hoặc chuẩn bị cho chuyến đi du lịch xa):</div>\n                    <div class=\"topic-formula-text\">\n                        → Most often, I buy new outfits when <span class=\"formula-bracket-hl\">[chuyển mùa thời tiết]</span> or right before <span class=\"formula-bracket-hl\">[chuyến đi chơi/du lịch]</span> so that I can look photogenic.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🧧 [Dịp lễ Tết & Sự kiện trọng đại] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "the traditional Lunar New Year (Tet holiday)",
+                                "vn": "dịp Tết Nguyên Đán truyền thống"
+                            },
+                            {
+                                "en": "attending close friends’ wedding banquets",
+                                "vn": "tham dự tiệc cưới của bạn thân"
+                            },
+                            {
+                                "en": "my own birthday celebration with family",
+                                "vn": "tiệc sinh nhật của chính mình cùng gia đình"
+                            },
+                            {
+                                "en": "a fresh boost of confidence and luck",
+                                "vn": "nguồn động lực tự tin tươi mới và may mắn"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🍂 [Chuyển mùa & Chuyến du lịch] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "seasons transition from hot summer to cold winter",
+                                "vn": "thời tiết chuyển mùa từ hè nóng sang đông lạnh"
+                            },
+                            {
+                                "en": "taking an exciting summer beach vacation",
+                                "vn": "đi một kỳ nghỉ biển mùa hè đầy hứng khởi"
+                            },
+                            {
+                                "en": "going on a trekking tour in high mountains",
+                                "vn": "đi một chuyến leo núi dã ngoại trên vùng cao"
+                            },
+                            {
+                                "en": "take vibrant, Instagram-worthy photos",
+                                "vn": "chụp những bức ảnh sống động, lung linh chuẩn Instagram"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Mua dịp Tết và tiệc cưới bạn thân để tự tin may mắn - 24 từ)",
+                        "text": "I typically treat myself to new clothes during the traditional Lunar New Year and attending close friends’ wedding banquets. Dressing up nicely gives me a fresh boost of confidence and luck.",
+                        "formatted": "→ I typically treat myself to new clothes during <span class=\"sub-hl\">the traditional Lunar New Year</span> and <span class=\"sub-hl\">attending close friends’ wedding banquets</span>. Dressing up nicely gives me <span class=\"sub-hl\">a fresh boost of confidence and luck</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Mua khi chuyển mùa hè sang đông hoặc đi du lịch biển - 24 từ)",
+                        "text": "Most often, I buy new outfits when seasons transition from hot summer to cold winter or right before taking an exciting summer beach vacation so that I can look photogenic.",
+                        "formatted": "→ Most often, I buy new outfits when <span class=\"sub-hl\">seasons transition from hot summer to cold winter</span> or right before <span class=\"sub-hl\">taking an exciting summer beach vacation</span> so that I can look photogenic."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "What types of clothes do you usually buy?",
+                "qType": "Wh-Question: What types of clothes do you usually buy?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Trang phục thường ngày đơn giản, thoải mái như áo thun, quần jean, giày thể thao):</div>\n                    <div class=\"topic-formula-text\">\n                        → I usually gravitate towards casual, comfortable clothes like <span class=\"formula-bracket-hl\">[trang phục thường ngày]</span>. They are versatile and allow me to <span class=\"formula-bracket-hl\">[lợi ích vận động - Vo]</span> easily.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Trang phục thanh lịch, công sở như sơ mi, quần tây, đầm nhã nhặn):</div>\n                    <div class=\"topic-formula-text\">\n                        → My wardrobe mostly consists of neat, formal attire such as <span class=\"formula-bracket-hl\">[trang phục công sở]</span>. They help me maintain <span class=\"formula-bracket-hl\">[hình ảnh chuyên nghiệp]</span> in professional settings.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "👕 [Trang phục thoải mái, năng động] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "cotton T-shirts, blue jeans, and sneakers",
+                                "vn": "áo thun cotton, quần bò xanh và giày thể thao"
+                            },
+                            {
+                                "en": "cozy oversized hoodies and sweatpants",
+                                "vn": "áo nỉ hoodie rộng rãi ấm áp và quần thể thao nỉ"
+                            },
+                            {
+                                "en": "move freely and feel comfortable all day long",
+                                "vn": "vận động tự do và cảm thấy thoải mái suốt cả ngày"
+                            },
+                            {
+                                "en": "mix and match without thinking too much",
+                                "vn": "dễ phối đồ mà không phải suy nghĩ quá nhiều"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "👔 [Trang phục lịch sự, công sở] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "button-down collared shirts and slim-fit trousers",
+                                "vn": "áo sơ mi có cổ cài cúc và quần âu ống đứng"
+                            },
+                            {
+                                "en": "elegant midi dresses and blazer jackets",
+                                "vn": "đầm lửng thanh lịch và áo khoác blazer"
+                            },
+                            {
+                                "en": "a polished and competent corporate image",
+                                "vn": "hình ảnh công sở chỉn chu và đầy năng lực"
+                            },
+                            {
+                                "en": "make a solid first impression on clients",
+                                "vn": "tạo ấn tượng ban đầu vững chắc với đối tác khách hàng"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Áo thun cotton và quần jean để vận động tự do cả ngày - 24 từ)",
+                        "text": "I usually gravitate towards casual, comfortable clothes like cotton T-shirts, blue jeans, and sneakers. They are versatile and allow me to move freely and feel comfortable all day long easily.",
+                        "formatted": "→ I usually gravitate towards casual, comfortable clothes like <span class=\"sub-hl\">cotton T-shirts, blue jeans, and sneakers</span>. They are versatile and allow me to <span class=\"sub-hl\">move freely and feel comfortable all day long</span> easily."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Áo sơ mi và quần âu để giữ hình ảnh công sở chỉn chu - 24 từ)",
+                        "text": "My wardrobe mostly consists of neat, formal attire such as button-down collared shirts and slim-fit trousers. They help me maintain a polished and competent corporate image in professional settings.",
+                        "formatted": "→ My wardrobe mostly consists of neat, formal attire such as <span class=\"sub-hl\">button-down collared shirts and slim-fit trousers</span>. They help me maintain <span class=\"sub-hl\">a polished and competent corporate image</span> in professional settings."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 75,
+        "title": "Chủ đề 75: Let's talk about your favorite color",
+        "topicName": "Your favorite color",
+        "introText": "Let’s talk about your favorite color.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "What color would you choose for your house?",
+                "qType": "Hypothetical / Choice: What color would you choose for your house?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Chọn gam màu sáng, trung tính như trắng kem, be để nhà rộng rãi và hiện đại):</div>\n                    <div class=\"topic-formula-text\">\n                        → If I were to paint my house, I would definitely choose <span class=\"formula-bracket-hl\">[gam màu trung tính]</span>. This color makes the living space feel <span class=\"formula-bracket-hl\">[đặc tính không gian]</span> and matches any furniture.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Chọn gam màu thiên nhiên như xanh lá cây nhạt hoặc xanh lam để thư thái):</div>\n                    <div class=\"topic-formula-text\">\n                        → I would love to paint the walls in <span class=\"formula-bracket-hl\">[màu sắc thiên nhiên]</span>. Looking at this soothing shade helps me <span class=\"formula-bracket-hl\">[lợi ích cảm giác - Vo]</span> after a stressful workday.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🏠 [Màu trung tính & Hiện đại] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "warm creamy white and gentle beige",
+                                "vn": "màu trắng kem ấm áp và be dịu nhẹ"
+                            },
+                            {
+                                "en": "minimalist light pearl gray",
+                                "vn": "màu xám ngọc trai nhạt tối giản"
+                            },
+                            {
+                                "en": "significantly brighter, spacious, and modern",
+                                "vn": "sáng sủa, rộng rãi và hiện đại hơn đáng kể"
+                            },
+                            {
+                                "en": "reflect natural sunlight beautifully",
+                                "vn": "phản chiếu ánh sáng mặt trời tự nhiên tuyệt đẹp"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🌿 [Màu thiên nhiên & Thư thái] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "pastel sage green or soft mint",
+                                "vn": "xanh lá xô thơm pastel hoặc xanh bạc hà dịu mát"
+                            },
+                            {
+                                "en": "serene sky blue and ocean tones",
+                                "vn": "xanh da trời thanh bình và tông màu đại dương"
+                            },
+                            {
+                                "en": "soothe my tired eyes and unwind peacefully",
+                                "vn": "xoa dịu đôi mắt mệt mỏi và thư giãn bình yên"
+                            },
+                            {
+                                "en": "bring a refreshing touch of nature indoors",
+                                "vn": "mang nét tươi mới của thiên nhiên vào nhà"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Màu trắng kem và be giúp nhà sáng sủa, rộng rãi - 24 từ)",
+                        "text": "If I were to paint my house, I would definitely choose warm creamy white and gentle beige. This color makes the living space feel significantly brighter, spacious, and modern and matches any furniture.",
+                        "formatted": "→ If I were to paint my house, I would definitely choose <span class=\"sub-hl\">warm creamy white and gentle beige</span>. This color makes the living space feel <span class=\"sub-hl\">significantly brighter, spacious, and modern</span> and matches any furniture."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Màu xanh lá pastel xoa dịu mắt và đem lại cảm giác thiên nhiên - 24 từ)",
+                        "text": "I would love to paint the walls in pastel sage green or soft mint. Looking at this soothing shade helps me soothe my tired eyes and unwind peacefully after a stressful workday.",
+                        "formatted": "→ I would love to paint the walls in <span class=\"sub-hl\">pastel sage green or soft mint</span>. Looking at this soothing shade helps me <span class=\"sub-hl\">soothe my tired eyes and unwind peacefully</span> after a stressful workday."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "What color do you usually choose for your clothes?",
+                "qType": "Wh-Question: What color do you usually choose for your clothes?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Chọn các tông màu tối như đen, xám đậm hoặc xanh navy vì thanh lịch và dễ phối đồ):</div>\n                    <div class=\"topic-formula-text\">\n                        → I mostly opt for neutral and dark tones like <span class=\"formula-bracket-hl\">[tông màu tối]</span>. Not only are they <span class=\"formula-bracket-hl\">[lợi ích thẩm mỹ]</span>, but they also give me a <span class=\"formula-bracket-hl\">[phong thái người mặc]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Chọn màu sáng và rực rỡ như trắng, vàng nhạt, hồng phấn để trông trẻ trung):</div>\n                    <div class=\"topic-formula-text\">\n                        → I am really into cheerful, bright shades such as <span class=\"formula-bracket-hl\">[màu sắc tươi sáng]</span>. Wearing them always makes me look <span class=\"formula-bracket-hl\">[ngoại hình trẻ trung]</span> and feel energetic.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🕶️ [Tông màu tối & Tối giản] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "classic black, charcoal gray, and navy blue",
+                                "vn": "màu đen cổ điển, xám than và xanh tím than"
+                            },
+                            {
+                                "en": "timeless, stain-resistant, and super easy to mix",
+                                "vn": "không bao giờ lỗi mốt, chống bẩn và cực dễ phối đồ"
+                            },
+                            {
+                                "en": "slimmer physique and sharp, elegant look",
+                                "vn": "vóc dáng thon gọn hơn cùng vẻ ngoài sắc sảo, lịch thiệp"
+                            },
+                            {
+                                "en": "professional and mature appearance",
+                                "vn": "diện mạo chuyên nghiệp và trưởng thành"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🌸 [Tông màu sáng & Trẻ trung] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "crisp pure white, pastel pink, and soft yellow",
+                                "vn": "trắng tinh khôi, hồng phấn pastel và vàng nhạt"
+                            },
+                            {
+                                "en": "vibrant sky blue and sunny beige",
+                                "vn": "xanh da trời rạng rỡ và màu be nắng ấm"
+                            },
+                            {
+                                "en": "youthful, friendly, and approachable",
+                                "vn": "trẻ trung, thân thiện và dễ gần"
+                            },
+                            {
+                                "en": "radiant in outdoor photos",
+                                "vn": "rạng rỡ nổi bật trong những bức ảnh ngoài trời"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Màu đen cổ điển và xanh navy dễ phối đồ, trông thon gọn - 24 từ)",
+                        "text": "I mostly opt for neutral and dark tones like classic black, charcoal gray, and navy blue. Not only are they timeless, stain-resistant, and super easy to mix, but they also give me a slimmer physique and sharp, elegant look.",
+                        "formatted": "→ I mostly opt for neutral and dark tones like <span class=\"sub-hl\">classic black, charcoal gray, and navy blue</span>. Not only are they <span class=\"sub-hl\">timeless, stain-resistant, and super easy to mix</span>, but they also give me a <span class=\"sub-hl\">slimmer physique and sharp, elegant look</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Màu trắng tinh và hồng pastel trông trẻ trung, dễ gần - 23 từ)",
+                        "text": "I am really into cheerful, bright shades such as crisp pure white, pastel pink, and soft yellow. Wearing them always makes me look youthful, friendly, and approachable and feel energetic.",
+                        "formatted": "→ I am really into cheerful, bright shades such as <span class=\"sub-hl\">crisp pure white, pastel pink, and soft yellow</span>. Wearing them always makes me look <span class=\"sub-hl\">youthful, friendly, and approachable</span> and feel energetic."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "Do you think colors affect your feelings?",
+                "qType": "Yes/No (Opinion): Do you think colors affect your feelings?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Đồng ý hoàn toàn - Màu ấm mang lại năng lượng, màu lạnh mang lại sự tĩnh lặng):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, absolutely. In my experience, colors have a huge psychological impact. For example, bright warm colors can <span class=\"formula-bracket-hl\">[tác động màu ấm - Vo]</span>, while cool blues tend to <span class=\"formula-bracket-hl\">[tác động màu lạnh - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Đồng ý nhưng mức độ ảnh hưởng phụ thuộc nhiều vào hoàn cảnh và tâm trạng cá nhân):</div>\n                    <div class=\"topic-formula-text\">\n                        → I do believe colors influence our mood to some extent, but <span class=\"formula-bracket-hl\">[yếu tố tác động chính]</span> plays a bigger role. A lively color might make you happy only when <span class=\"formula-bracket-hl\">[điều kiện tâm lý]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🎨 [Tâm lý học màu sắc] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "uplift our spirits and stimulate optimism",
+                                "vn": "nâng cao tinh thần và khơi dậy sự lạc quan"
+                            },
+                            {
+                                "en": "spark enthusiastic creativity and vitality",
+                                "vn": "thắp sáng sự sáng tạo nhiệt huyết và sức sống"
+                            },
+                            {
+                                "en": "induce calm tranquility and reduce mental stress",
+                                "vn": "đem lại cảm giác tĩnh lặng và giảm căng thẳng trí óc"
+                            },
+                            {
+                                "en": "help people concentrate better on difficult tasks",
+                                "vn": "giúp mọi người tập trung tốt hơn vào các nhiệm vụ khó"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "⚖️ [Tùy thuộc hoàn cảnh] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "a person’s inner mindset and sleep quality",
+                                "vn": "tâm thế bên trong của một người và chất lượng giấc ngủ"
+                            },
+                            {
+                                "en": "actual life events and working environment",
+                                "vn": "những sự kiện thực tế trong cuộc sống và môi trường làm việc"
+                            },
+                            {
+                                "en": "you are already in a positive state of mind",
+                                "vn": "bạn đã sẵn sàng ở trong một trạng thái tâm trí tích cực"
+                            },
+                            {
+                                "en": "individual cultural background and associations",
+                                "vn": "bối cảnh văn hóa và các mối liên tưởng riêng của mỗi người"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Màu ấm kích thích lạc quan, màu lạnh giảm căng thẳng - 24 từ)",
+                        "text": "Yes, absolutely. In my experience, colors have a huge psychological impact. For example, bright warm colors can uplift our spirits and stimulate optimism, while cool blues tend to induce calm tranquility and reduce mental stress.",
+                        "formatted": "→ Yes, absolutely. In my experience, colors have a huge psychological impact. For example, bright warm colors can <span class=\"sub-hl\">uplift our spirits and stimulate optimism</span>, while cool blues tend to <span class=\"sub-hl\">induce calm tranquility and reduce mental stress</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Ảnh hưởng một phần, tâm thế bên trong mới là cốt lõi - 25 từ)",
+                        "text": "I do believe colors influence our mood to some extent, but a person’s inner mindset and sleep quality plays a bigger role. A lively color might make you happy only when you are already in a positive state of mind.",
+                        "formatted": "→ I do believe colors influence our mood to some extent, but <span class=\"sub-hl\">a person’s inner mindset and sleep quality</span> plays a bigger role. A lively color might make you happy only when <span class=\"sub-hl\">you are already in a positive state of mind</span>."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 76,
+        "title": "Chủ đề 76: Let's talk about the library",
+        "topicName": "The library",
+        "introText": "Let’s talk about the library.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "Do you often go to the library?",
+                "qType": "Yes/No Question: Do you often go to the library?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Trả lời CÓ - Thường xuyên đến để ôn thi và tìm tài liệu nghiên cứu):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, I go there <span class=\"formula-bracket-hl\">[tần suất đến thư viện]</span>, especially during <span class=\"formula-bracket-hl\">[giai đoạn cao điểm]</span>. It is the best place to avoid household distractions.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Trả lời HIẾM KHI - Thích học tại nhà hoặc đọc tài liệu số online trên laptop):</div>\n                    <div class=\"topic-formula-text\">\n                        → Honestly, not very often. With the growth of <span class=\"formula-bracket-hl\">[công nghệ số]</span>, I prefer reading e-books at home to <span class=\"formula-bracket-hl\">[lợi ích học tại nhà - Vo]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "📚 [Đến thường xuyên & Ôn thi] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "two or three times a week",
+                                "vn": "hai hoặc ba lần một tuần"
+                            },
+                            {
+                                "en": "crucial midterm and final exam weeks",
+                                "vn": "các tuần thi giữa kỳ và cuối kỳ quan trọng"
+                            },
+                            {
+                                "en": "thesis research and academic writing periods",
+                                "vn": "giai đoạn nghiên cứu luận văn và viết bài học thuật"
+                            },
+                            {
+                                "en": "enjoy air-conditioned silence and focus",
+                                "vn": "tận hưởng sự yên tĩnh có điều hòa và tập trung"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "💻 [Đọc online & Học tại nhà] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "digital databases and online educational resources",
+                                "vn": "cơ sở dữ liệu số và các nguồn tài liệu giáo dục trực tuyến"
+                            },
+                            {
+                                "en": "convenient e-books and academic PDF articles",
+                                "vn": "sách điện tử tiện lợi và các bài báo học thuật dạng PDF"
+                            },
+                            {
+                                "en": "save travel time and study in my pyjamas",
+                                "vn": "tiết kiệm thời gian đi lại và học bài thoải mái trong đồ ngủ"
+                            },
+                            {
+                                "en": "sip coffee while studying in my private room",
+                                "vn": "nhâm nhi cà phê trong lúc học tại phòng riêng"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Đến 2-3 lần một tuần trong mùa ôn thi để tập trung - 23 từ)",
+                        "text": "Yes, I go there two or three times a week, especially during crucial midterm and final exam weeks. It is the best place to avoid household distractions.",
+                        "formatted": "→ Yes, I go there <span class=\"sub-hl\">two or three times a week</span>, especially during <span class=\"sub-hl\">crucial midterm and final exam weeks</span>. It is the best place to avoid household distractions."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Đọc tài liệu số tại nhà để tiết kiệm thời gian di chuyển - 23 từ)",
+                        "text": "Honestly, not very often. With the growth of digital databases and online educational resources, I prefer reading e-books at home to save travel time and study in my pyjamas.",
+                        "formatted": "→ Honestly, not very often. With the growth of <span class=\"sub-hl\">digital databases and online educational resources</span>, I prefer reading e-books at home to <span class=\"sub-hl\">save travel time and study in my pyjamas</span>."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "What do you usually do at the library?",
+                "qType": "Wh-Question: What do you usually do at the library?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Đọc sách chuyên ngành, mượn giáo trình và tra cứu tài liệu):</div>\n                    <div class=\"topic-formula-text\">\n                        → Whenever I visit the library, I spend time <span class=\"formula-bracket-hl\">[hoạt động đọc/nghiên cứu 1 - V-ing]</span> and <span class=\"formula-bracket-hl\">[hoạt động mượn sách 2 - V-ing]</span>. It provides access to valuable reference sources.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Ôn bài kiểm tra, làm tiểu luận hoặc thảo luận nhóm ở phòng riêng):</div>\n                    <div class=\"topic-formula-text\">\n                        → I mostly use the quiet space to <span class=\"formula-bracket-hl\">[hoạt động ôn tập - Vo]</span> on my computer. Sometimes, I book a group room to <span class=\"formula-bracket-hl\">[hoạt động nhóm - Vo]</span> with my study mates.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "📖 [Nghiên cứu & Mượn sách] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "browsing academic textbooks and journal articles",
+                                "vn": "đọc lướt giáo trình học thuật và các bài báo nghiên cứu"
+                            },
+                            {
+                                "en": "borrowing specialized dictionaries and historical literature",
+                                "vn": "mượn từ điển chuyên ngành và tài liệu lịch sử"
+                            },
+                            {
+                                "en": "taking thorough summary notes in my notebook",
+                                "vn": "ghi chép tóm tắt cẩn thận vào sổ tay của mình"
+                            },
+                            {
+                                "en": "discovering rare physical books not found online",
+                                "vn": "khám phá những cuốn sách giấy quý hiếm không có trên mạng"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "📝 [Ôn thi & Họp nhóm] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "revise lecture slides and finish course assignments",
+                                "vn": "ôn tập slide bài giảng và hoàn thành bài tập môn học"
+                            },
+                            {
+                                "en": "prepare presentation slides and practice speaking",
+                                "vn": "chuẩn bị slide thuyết trình và luyện nói"
+                            },
+                            {
+                                "en": "brainstorm ideas for our final semester project",
+                                "vn": "thảo luận ý tưởng cho dự án cuối kỳ của chúng tôi"
+                            },
+                            {
+                                "en": "stay productive for four consecutive hours",
+                                "vn": "duy trì năng suất làm việc suốt 4 tiếng đồng hồ liên tục"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Đọc giáo trình học thuật và mượn từ điển chuyên ngành - 24 từ)",
+                        "text": "Whenever I visit the library, I spend time browsing academic textbooks and journal articles and borrowing specialized dictionaries and historical literature. It provides access to valuable reference sources.",
+                        "formatted": "→ Whenever I visit the library, I spend time <span class=\"sub-hl\">browsing academic textbooks and journal articles</span> and <span class=\"sub-hl\">borrowing specialized dictionaries and historical literature</span>. It provides access to valuable reference sources."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Ôn slide bài giảng và họp nhóm lên ý tưởng dự án - 24 từ)",
+                        "text": "I mostly use the quiet space to revise lecture slides and finish course assignments on my computer. Sometimes, I book a group room to brainstorm ideas for our final semester project with my study mates.",
+                        "formatted": "→ I mostly use the quiet space to <span class=\"sub-hl\">revise lecture slides and finish course assignments</span> on my computer. Sometimes, I book a group room to <span class=\"sub-hl\">brainstorm ideas for our final semester project</span> with my study mates."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "How do you feel when you are in the library?",
+                "qType": "Emotion/Feeling: How do you feel when you are in the library?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Cảm giác bình yên, thư thái và tập trung cao độ):</div>\n                    <div class=\"topic-formula-text\">\n                        → I usually feel extremely <span class=\"formula-bracket-hl\">[cảm xúc tích cực]</span>. The solemn silence and pleasant smell of old paper help me <span class=\"formula-bracket-hl\">[trạng thái tinh thần - Vo]</span> completely.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Cảm giác tràn đầy động lực khi thấy mọi người xung quanh đều chăm chỉ):</div>\n                    <div class=\"topic-formula-text\">\n                        → Being there makes me feel deeply <span class=\"formula-bracket-hl\">[cảm giác truyền cảm hứng]</span>. Seeing so many dedicated learners pushes me to <span class=\"formula-bracket-hl\">[hành động nỗ lực - Vo]</span> without slacking off.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🌿 [Bình yên & Tập trung] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "peaceful, calm, and mentally refreshed",
+                                "vn": "bình yên, thanh thản và tinh thần tươi mới"
+                            },
+                            {
+                                "en": "enter a deep state of uninterrupted concentration",
+                                "vn": "bước vào trạng thái tập trung sâu không bị gián đoạn"
+                            },
+                            {
+                                "en": "block out the chaotic noise of city streets",
+                                "vn": "ngăn chặn mọi tiếng ồn hỗn loạn của phố xá"
+                            },
+                            {
+                                "en": "feel a deep sense of scholarly tranquility",
+                                "vn": "cảm nhận sâu sắc sự yên tĩnh mang tính học giả"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🔥 [Động lực & Tinh thần học tập] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "inspired, disciplined, and highly motivated",
+                                "vn": "được truyền cảm hứng, có tính kỷ luật và động lực cao"
+                            },
+                            {
+                                "en": "put away my smartphone and study harder",
+                                "vn": "cất điện thoại sang một bên và học chăm chỉ hơn"
+                            },
+                            {
+                                "en": "overcome laziness and meet tight deadlines",
+                                "vn": "vượt qua sự lười biếng và đáp ứng hạn chót gấp gáp"
+                            },
+                            {
+                                "en": "feel proud of investing in personal education",
+                                "vn": "cảm thấy tự hào vì đang đầu tư cho con đường học vấn của mình"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Bình yên, thanh thản và bước vào trạng thái tập trung sâu - 23 từ)",
+                        "text": "I usually feel extremely peaceful, calm, and mentally refreshed. The solemn silence and pleasant smell of old paper help me enter a deep state of uninterrupted concentration completely.",
+                        "formatted": "→ I usually feel extremely <span class=\"sub-hl\">peaceful, calm, and mentally refreshed</span>. The solemn silence and pleasant smell of old paper help me <span class=\"sub-hl\">enter a deep state of uninterrupted concentration</span> completely."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Được truyền cảm hứng để cất điện thoại và học chăm hơn - 24 từ)",
+                        "text": "Being there makes me feel deeply inspired, disciplined, and highly motivated. Seeing so many dedicated learners pushes me to put away my smartphone and study harder without slacking off.",
+                        "formatted": "→ Being there makes me feel deeply <span class=\"sub-hl\">inspired, disciplined, and highly motivated</span>. Seeing so many dedicated learners pushes me to <span class=\"sub-hl\">put away my smartphone and study harder</span> without slacking off."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 77,
+        "title": "Chủ đề 77: Let's talk about feeling sad",
+        "topicName": "Feeling sad",
+        "introText": "Let’s talk about feeling sad.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "What things usually make you feel sad?",
+                "qType": "Wh-Question: What things usually make you feel sad?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Thất bại trong thi cử/công việc hoặc làm gia đình thất vọng):</div>\n                    <div class=\"topic-formula-text\">\n                        → I often feel downhearted when I <span class=\"formula-bracket-hl\">[thất bại trong mục tiêu]</span> despite trying my best. Furthermore, seeing <span class=\"formula-bracket-hl\">[người thân gặp khó khăn]</span> breaks my heart deeply.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Sự hiểu lầm, tranh cãi với bạn bè hoặc cảm giác cô đơn):</div>\n                    <div class=\"topic-formula-text\">\n                        → What upsets me the most is <span class=\"formula-bracket-hl\">[mâu thuẫn quan hệ]</span> with someone I care about. In addition, experiencing <span class=\"formula-bracket-hl\">[cảm giác cô đơn]</span> makes me feel melancholy.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "📉 [Thất bại mục tiêu & Người thân] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "receive disappointing exam grades or interview rejections",
+                                "vn": "nhận điểm thi đáng thất vọng hoặc bị từ chối phỏng vấn"
+                            },
+                            {
+                                "en": "fail to achieve a goal I worked hard for",
+                                "vn": "không đạt được mục tiêu mà mình đã dày công nỗ lực"
+                            },
+                            {
+                                "en": "my beloved parents suffering from sickness",
+                                "vn": "bố mẹ kính yêu bị ốm đau bệnh tật"
+                            },
+                            {
+                                "en": "let down the high expectations of my family",
+                                "vn": "làm phụ lòng kỳ vọng to lớn của gia đình"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "💔 [Mâu thuẫn & Cô đơn] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "having bitter misunderstandings with close friends",
+                                "vn": "có những hiểu lầm cay đắng với bạn bè thân thiết"
+                            },
+                            {
+                                "en": "being betrayed or unjustly blamed at work",
+                                "vn": "bị phản bội hoặc bị đổ lỗi oan ức tại nơi làm việc"
+                            },
+                            {
+                                "en": "prolonged loneliness on gloomy rainy evenings",
+                                "vn": "sự cô đơn kéo dài vào những buổi tối mưa ảm đạm"
+                            },
+                            {
+                                "en": "feeling left out in a large social gathering",
+                                "vn": "cảm giác bị bỏ rơi lạc lõng trong một buổi tụ họp đông người"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Điểm thi kém và thấy bố mẹ bị ốm đau làm buồn lòng - 23 từ)",
+                        "text": "I often feel downhearted when I receive disappointing exam grades or interview rejections despite trying my best. Furthermore, seeing my beloved parents suffering from sickness breaks my heart deeply.",
+                        "formatted": "→ I often feel downhearted when I <span class=\"sub-hl\">receive disappointing exam grades or interview rejections</span> despite trying my best. Furthermore, seeing <span class=\"sub-hl\">my beloved parents suffering from sickness</span> breaks my heart deeply."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Hiểu lầm với bạn thân và cảm giác cô đơn chiều mưa - 24 từ)",
+                        "text": "What upsets me the most is having bitter misunderstandings with close friends with someone I care about. In addition, experiencing prolonged loneliness on gloomy rainy evenings makes me feel melancholy.",
+                        "formatted": "→ What upsets me the most is <span class=\"sub-hl\">having bitter misunderstandings with close friends</span> with someone I care about. In addition, experiencing <span class=\"sub-hl\">prolonged loneliness on gloomy rainy evenings</span> makes me feel melancholy."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "What do you usually do when you feel sad?",
+                "qType": "Wh-Question: What do you usually do when you feel sad?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Nghe nhạc êm dịu, đi dạo một mình hoặc ngủ một giấc sâu):</div>\n                    <div class=\"topic-formula-text\">\n                        → Whenever sadness hits, I tend to <span class=\"formula-bracket-hl\">[hoạt động xoa dịu một mình - Vo]</span>. Taking quiet time alone helps me <span class=\"formula-bracket-hl\">[xoa dịu tâm trạng - Vo]</span> and regain mental balance.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Tâm sự với người tin cậy hoặc viết nhật ký giải tỏa cảm xúc):</div>\n                    <div class=\"topic-formula-text\">\n                        → I usually reach out to <span class=\"formula-bracket-hl\">[người tâm sự]</span> to pour out my heart. Sharing my struggles makes me feel <span class=\"formula-bracket-hl\">[cảm giác nhẹ nhõm]</span> almost immediately.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🎧 [Tĩnh lặng một mình & Xoa dịu] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "listen to soothing acoustic music on headphones",
+                                "vn": "nghe nhạc acoustic êm dịu qua tai nghe"
+                            },
+                            {
+                                "en": "take a solitary walk around a tranquil lake",
+                                "vn": "đi dạo một mình quanh chiếc hồ thanh bình"
+                            },
+                            {
+                                "en": "sleep early to give my tired mind a rest",
+                                "vn": "ngủ sớm để cho tâm trí mệt mỏi được nghỉ ngơi"
+                            },
+                            {
+                                "en": "process my inner thoughts and find peace",
+                                "vn": "sắp xếp lại dòng suy nghĩ bên trong và tìm lại bình an"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🗣️ [Tâm sự & Giải tỏa] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "confide in my understanding mother or best friend",
+                                "vn": "tâm sự với người mẹ thấu hiểu hoặc người bạn thân nhất"
+                            },
+                            {
+                                "en": "write down my raw emotions in my private diary",
+                                "vn": "viết ra những cảm xúc chân thật nhất vào nhật ký riêng"
+                            },
+                            {
+                                "en": "much lighter, comforted, and less isolated",
+                                "vn": "nhẹ nhõm hơn rất nhiều, được an ủi và bớt cô lập"
+                            },
+                            {
+                                "en": "receive encouraging advice and warm hugs",
+                                "vn": "nhận được những lời khuyên khích lệ và những cái ôm ấm áp"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Nghe nhạc acoustic và đi dạo quanh hồ để tìm lại bình an - 23 từ)",
+                        "text": "Whenever sadness hits, I tend to listen to soothing acoustic music on headphones. Taking quiet time alone helps me process my inner thoughts and find peace and regain mental balance.",
+                        "formatted": "→ Whenever sadness hits, I tend to <span class=\"sub-hl\">listen to soothing acoustic music on headphones</span>. Taking quiet time alone helps me <span class=\"sub-hl\">process my inner thoughts and find peace</span> and regain mental balance."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Tâm sự với mẹ hoặc bạn thân để thấy lòng nhẹ nhõm hơn - 23 từ)",
+                        "text": "I usually reach out to confide in my understanding mother or best friend to pour out my heart. Sharing my struggles makes me feel much lighter, comforted, and less isolated almost immediately.",
+                        "formatted": "→ I usually reach out to <span class=\"sub-hl\">confide in my understanding mother or best friend</span> to pour out my heart. Sharing my struggles makes me feel <span class=\"sub-hl\">much lighter, comforted, and less isolated</span> almost immediately."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "Do you think sadness is a bad emotion? Why or why not?",
+                "qType": "Yes/No (Opinion): Do you think sadness is a bad emotion? Why or why not?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (KHÔNG PHẢI CẢM XÚC XẤU - Nỗi buồn là tự nhiên, giúp ta thấu hiểu bản thân và trân trọng niềm vui):</div>\n                    <div class=\"topic-formula-text\">\n                        → No, I don’t think sadness is entirely bad. It is a completely natural feeling that helps us <span class=\"formula-bracket-hl\">[giá trị của nỗi buồn 1 - Vo]</span> and teaches us to <span class=\"formula-bracket-hl\">[trân trọng hạnh phúc 2 - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Có thể gây hại nếu kéo dài, nhưng là tín hiệu cần nghỉ ngơi và thay đổi):</div>\n                    <div class=\"topic-formula-text\">\n                        → While prolonged sadness can be harmful to mental health, occasional sadness acts as <span class=\"formula-bracket-hl\">[tác dụng cảnh báo]</span>. It shows that we need to <span class=\"formula-bracket-hl\">[hành động chăm sóc bản thân - Vo]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🌱 [Ý nghĩa tích cực & Trưởng thành] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "reflect on life and build emotional resilience",
+                                "vn": "chiêm nghiệm cuộc sống và xây dựng sức bật cảm xúc"
+                            },
+                            {
+                                "en": "develop deep empathy for others' pain",
+                                "vn": "phát triển lòng thấu cảm sâu sắc với nỗi đau của người khác"
+                            },
+                            {
+                                "en": "cherish joyous and meaningful moments more",
+                                "vn": "trân trọng hơn những khoảnh khắc vui vẻ và ý nghĩa"
+                            },
+                            {
+                                "en": "heal wounds and grow into stronger individuals",
+                                "vn": "chữa lành vết thương và trưởng thành thành người mạnh mẽ hơn"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "⚠️ [Tín hiệu chăm sóc bản thân] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "a vital warning sign from our brain and soul",
+                                "vn": "một dấu hiệu cảnh báo sống còn từ bộ não và tâm hồn"
+                            },
+                            {
+                                "en": "slow down, rest, and heal inner burnouts",
+                                "vn": "chậm lại, nghỉ ngơi và chữa lành kiệt sức bên trong"
+                            },
+                            {
+                                "en": "re-evaluate toxic habits and life priorities",
+                                "vn": "đánh giá lại những thói quen độc hại và ưu tiên cuộc sống"
+                            },
+                            {
+                                "en": "seek compassionate support from loved ones",
+                                "vn": "tìm kiếm sự hỗ trợ đầy yêu thương từ người thân yêu"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Nỗi buồn tự nhiên giúp xây dựng sức bật và biết trân trọng niềm vui - 24 từ)",
+                        "text": "No, I don’t think sadness is entirely bad. It is a completely natural feeling that helps us reflect on life and build emotional resilience and teaches us to cherish joyous and meaningful moments more.",
+                        "formatted": "→ No, I don’t think sadness is entirely bad. It is a completely natural feeling that helps us <span class=\"sub-hl\">reflect on life and build emotional resilience</span> and teaches us to <span class=\"sub-hl\">cherish joyous and meaningful moments more</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Nỗi buồn là hồi chuông cảnh báo cần chậm lại và nghỉ ngơi - 24 từ)",
+                        "text": "While prolonged sadness can be harmful to mental health, occasional sadness acts as a vital warning sign from our brain and soul. It shows that we need to slow down, rest, and heal inner burnouts.",
+                        "formatted": "→ While prolonged sadness can be harmful to mental health, occasional sadness acts as <span class=\"sub-hl\">a vital warning sign from our brain and soul</span>. It shows that we need to <span class=\"sub-hl\">slow down, rest, and heal inner burnouts</span>."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 78,
+        "title": "Chủ đề 78: Let's talk about using AI tools",
+        "topicName": "Using AI tools",
+        "introText": "Let’s talk about using AI tools.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "Do you often use AI tools?",
+                "qType": "Yes/No Question: Do you often use AI tools?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Trả lời CÓ - Dùng hàng ngày như ChatGPT, Gemini để hỗ trợ học tập và viết email):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, on a daily basis. I regularly utilize tools like <span class=\"formula-bracket-hl\">[tên công cụ AI]</span> to assist me with <span class=\"formula-bracket-hl\">[tác vụ hỗ trợ]</span>. It has remarkably boosted my daily productivity.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Trả lời THỈNH THOẢNG - Chỉ dùng khi bí ý tưởng hoặc cần kiểm tra ngữ pháp):</div>\n                    <div class=\"topic-formula-text\">\n                        → Occasionally, yes. I turn to AI whenever I <span class=\"formula-bracket-hl\">[tình huống sử dụng]</span>. However, I still prefer <span class=\"formula-bracket-hl\">[tự suy nghĩ độc lập - Vo]</span> to keep my critical thinking sharp.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🤖 [Dùng hàng ngày & Năng suất] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "ChatGPT, Gemini, and Grammarly",
+                                "vn": "ChatGPT, Gemini và Grammarly"
+                            },
+                            {
+                                "en": "drafting formal emails and summarizing long articles",
+                                "vn": "soạn thảo email trang trọng và tóm tắt bài báo dài"
+                            },
+                            {
+                                "en": "generating creative presentation ideas",
+                                "vn": "lên các ý tưởng thuyết trình sáng tạo"
+                            },
+                            {
+                                "en": "streamline my daily academic workflow",
+                                "vn": "tối ưu hóa quy trình làm việc học tập hàng ngày"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "💡 [Thỉnh thoảng dùng & Tư duy độc lập] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "get stuck on creative writing outlines",
+                                "vn": "bị bí ý tưởng khi lên dàn ý viết văn sáng tạo"
+                            },
+                            {
+                                "en": "need to double-check complex English grammar",
+                                "vn": "cần kiểm tra lại ngữ pháp tiếng Anh phức tạp"
+                            },
+                            {
+                                "en": "rely on my own intellect and creativity",
+                                "vn": "dựa vào trí tuệ và sự sáng tạo của chính mình"
+                            },
+                            {
+                                "en": "avoid being overly dependent on algorithms",
+                                "vn": "tránh phụ thuộc quá mức vào các thuật toán"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Dùng ChatGPT và Gemini hàng ngày để soạn email và tóm tắt - 25 từ)",
+                        "text": "Yes, on a daily basis. I regularly utilize tools like ChatGPT, Gemini, and Grammarly to assist me with drafting formal emails and summarizing long articles. It has remarkably boosted my daily productivity.",
+                        "formatted": "→ Yes, on a daily basis. I regularly utilize tools like <span class=\"sub-hl\">ChatGPT, Gemini, and Grammarly</span> to assist me with <span class=\"sub-hl\">drafting formal emails and summarizing long articles</span>. It has remarkably boosted my daily productivity."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Thỉnh thoảng dùng kiểm tra ngữ pháp nhưng thích tự suy nghĩ - 24 từ)",
+                        "text": "Occasionally, yes. I turn to AI whenever I need to double-check complex English grammar. However, I still prefer rely on my own intellect and creativity to keep my critical thinking sharp.",
+                        "formatted": "→ Occasionally, yes. I turn to AI whenever I <span class=\"sub-hl\">need to double-check complex English grammar</span>. However, I still prefer <span class=\"sub-hl\">rely on my own intellect and creativity</span> to keep my critical thinking sharp."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "What do you think about using AI to learn English?",
+                "qType": "Evaluation: What do you think about using AI to learn English?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Công cụ hỗ trợ tuyệt vời - Luyện nói phản xạ, sửa ngữ pháp tức thì và học 24/7):</div>\n                    <div class=\"topic-formula-text\">\n                        → I think it is an incredible revolution. AI chatbots act as <span class=\"formula-bracket-hl\">[vai trò hỗ trợ của AI]</span> that can <span class=\"formula-bracket-hl\">[lợi ích học tập 1 - Vo]</span> and <span class=\"formula-bracket-hl\">[lợi ích 2 - Vo]</span> without any judgment.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Hữu ích nhưng người học cần cẩn trọng với các thông tin sai lệch hoặc văn phong máy móc):</div>\n                    <div class=\"topic-formula-text\">\n                        → It is undeniably useful, but learners should be cautious. AI can sometimes produce <span class=\"formula-bracket-hl\">[nhược điểm nội dung AI]</span>, so we should always <span class=\"formula-bracket-hl\">[hành động kiểm chứng - Vo]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🌟 [Cuộc cách mạng học tập & Lợi ích] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "a patient personal 24/7 speaking partner",
+                                "vn": "một người bạn luyện nói 24/7 vô cùng kiên nhẫn"
+                            },
+                            {
+                                "en": "correct pronunciation and grammar mistakes instantly",
+                                "vn": "sửa lỗi phát âm và ngữ pháp ngay tức thì"
+                            },
+                            {
+                                "en": "explain intricate idioms with vivid examples",
+                                "vn": "giải thích các thành ngữ phức tạp kèm ví dụ sinh động"
+                            },
+                            {
+                                "en": "practice conversing without feeling shy or nervous",
+                                "vn": "luyện giao tiếp mà không thấy e ngại hay lo lắng"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "⚠️ [Cẩn trọng & Văn phong máy móc] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "unnatural robotic phrases and hallucinated facts",
+                                "vn": "những cụm từ máy móc thiếu tự nhiên và dữ kiện sai lệch"
+                            },
+                            {
+                                "en": "overly formal or grammatically repetitive structures",
+                                "vn": "cấu trúc ngữ pháp quá trang trọng hoặc lặp đi lặp lại"
+                            },
+                            {
+                                "en": "cross-check with reputable English dictionaries",
+                                "vn": "đối chiếu lại với các từ điển tiếng Anh uy tín"
+                            },
+                            {
+                                "en": "consult certified human English teachers",
+                                "vn": "tham vấn các giáo viên tiếng Anh có chứng chỉ chuyên môn"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Bạn luyện nói 24/7 kiên nhẫn, sửa lỗi ngữ pháp tức thì - 24 từ)",
+                        "text": "I think it is an incredible revolution. AI chatbots act as a patient personal 24/7 speaking partner that can correct pronunciation and grammar mistakes instantly and explain intricate idioms with vivid examples without any judgment.",
+                        "formatted": "→ I think it is an incredible revolution. AI chatbots act as <span class=\"sub-hl\">a patient personal 24/7 speaking partner</span> that can <span class=\"sub-hl\">correct pronunciation and grammar mistakes instantly</span> and explain intricate idioms with vivid examples without any judgment."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Hữu ích nhưng cần đối chiếu từ điển để tránh cụm từ máy móc - 24 từ)",
+                        "text": "It is undeniably useful, but learners should be cautious. AI can sometimes produce unnatural robotic phrases and hallucinated facts, so we should always cross-check with reputable English dictionaries.",
+                        "formatted": "→ It is undeniably useful, but learners should be cautious. AI can sometimes produce <span class=\"sub-hl\">unnatural robotic phrases and hallucinated facts</span>, so we should always <span class=\"sub-hl\">cross-check with reputable English dictionaries</span>."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "Do you think AI can replace human teachers? Why or why not?",
+                "qType": "Yes/No (Opinion): Do you think AI can replace human teachers? Why or why not?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (KHÔNG THỂ THAY THẾ - Thiếu sự thấu cảm, cảm xúc con người và khả năng truyền cảm hứng):</div>\n                    <div class=\"topic-formula-text\">\n                        → No, I firmly believe AI cannot replace human educators. While AI can provide information, it completely lacks <span class=\"formula-bracket-hl\">[phẩm chất con người]</span> to <span class=\"formula-bracket-hl\">[vai trò truyền cảm hứng - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (AI sẽ đóng vai trò trợ lý hỗ trợ đắc lực chứ không thay thế hoàn toàn):</div>\n                    <div class=\"topic-formula-text\">\n                        → Rather than replacement, I foresee AI acting as <span class=\"formula-bracket-hl\">[vai trò cộng tác]</span>. Teachers who harness AI will be able to <span class=\"formula-bracket-hl\">[lợi ích giảng dạy - Vo]</span> much more effectively.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "❤️ [Phẩm chất con người & Cảm xúc] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "emotional empathy, warm encouragement, and intuition",
+                                "vn": "sự thấu cảm, lời khích lệ ấm áp và trực giác con người"
+                            },
+                            {
+                                "en": "inspire moral values and lifelong passion for learning",
+                                "vn": "truyền cảm hứng về giá trị đạo đức và niềm đam mê học hỏi suốt đời"
+                            },
+                            {
+                                "en": "understand students' psychological difficulties",
+                                "vn": "thấu hiểu những khó khăn tâm lý của học sinh"
+                            },
+                            {
+                                "en": "provide personalized mentorship and care",
+                                "vn": "đưa ra sự hướng dẫn và chăm sóc mang tính cá nhân hóa"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🤝 [Cộng tác & Trợ lý đắc lực] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "a powerful co-pilot and teaching assistant",
+                                "vn": "người đồng hành đắc lực và trợ giảng mạnh mẽ"
+                            },
+                            {
+                                "en": "automate grading and repetitive administrative paperwork",
+                                "vn": "tự động hóa việc chấm điểm và các giấy tờ hành chính lặp lại"
+                            },
+                            {
+                                "en": "devote more quality time to inspiring each student",
+                                "vn": "dành nhiều thời gian chất lượng hơn để truyền cảm hứng cho từng học trò"
+                            },
+                            {
+                                "en": "customize lesson plans to individual learning paces",
+                                "vn": "may đo kế hoạch bài giảng phù hợp với tốc độ học của mỗi cá nhân"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (AI thiếu sự thấu cảm và không thể truyền cảm hứng đạo đức - 24 từ)",
+                        "text": "No, I firmly believe AI cannot replace human educators. While AI can provide information, it completely lacks emotional empathy, warm encouragement, and intuition to inspire moral values and lifelong passion for learning.",
+                        "formatted": "→ No, I firmly believe AI cannot replace human educators. While AI can provide information, it completely lacks <span class=\"sub-hl\">emotional empathy, warm encouragement, and intuition</span> to <span class=\"sub-hl\">inspire moral values and lifelong passion for learning</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (AI đóng vai trò trợ giảng giúp tự động chấm điểm để thầy cô truyền cảm hứng - 24 từ)",
+                        "text": "Rather than replacement, I foresee AI acting as a powerful co-pilot and teaching assistant. Teachers who harness AI will be able to automate grading and repetitive administrative paperwork much more effectively.",
+                        "formatted": "→ Rather than replacement, I foresee AI acting as <span class=\"sub-hl\">a powerful co-pilot and teaching assistant</span>. Teachers who harness AI will be able to <span class=\"sub-hl\">automate grading and repetitive administrative paperwork</span> much more effectively."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 79,
+        "title": "Chủ đề 79: Let's talk about online blogs",
+        "topicName": "Online blogs",
+        "introText": "Let’s talk about online blogs.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "Do you often read online blogs?",
+                "qType": "Yes/No Question: Do you often read online blogs?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Trả lời CÓ - Thường xuyên theo dõi các blog chia sẻ trải nghiệm và kiến thức):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, I do. I make it a habit to read blogs <span class=\"formula-bracket-hl\">[tần suất đọc]</span>. Bloggers provide <span class=\"formula-bracket-hl\">[giá trị nội dung]</span> that I find very authentic and relatable.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Trả lời HIẾM KHI - Thích xem video ngắn trên TikTok/YouTube hoặc nghe podcast hơn):</div>\n                    <div class=\"topic-formula-text\">\n                        → Honestly, seldom nowadays. I tend to consume content through <span class=\"formula-bracket-hl\">[kênh đa phương tiện]</span> because they are more <span class=\"formula-bracket-hl\">[đặc tính hấp dẫn]</span> for my busy schedule.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "📖 [Đọc thường xuyên & Nội dung chân thật] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "a couple of times a week during my leisure breaks",
+                                "vn": "vài lần một tuần trong những giờ giải lao rảnh rỗi"
+                            },
+                            {
+                                "en": "deep personal perspectives and practical real-life experiences",
+                                "vn": "những góc nhìn cá nhân sâu sắc và trải nghiệm thực tế đời thường"
+                            },
+                            {
+                                "en": "insightful writing styles and genuine storytelling",
+                                "vn": "phong cách viết giàu chiều sâu và lối kể chuyện chân thật"
+                            },
+                            {
+                                "en": "well-organized articles with helpful photo guides",
+                                "vn": "các bài viết được tổ chức mạch lạc kèm hướng dẫn hình ảnh hữu ích"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "📱 [Video ngắn & Đa phương tiện] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "short-form videos on TikTok and YouTube Shorts",
+                                "vn": "các video dạng ngắn trên TikTok và YouTube Shorts"
+                            },
+                            {
+                                "en": "engaging audio podcasts on Spotify",
+                                "vn": "các tập podcast âm thanh hấp dẫn trên Spotify"
+                            },
+                            {
+                                "en": "dynamic, visually stimulating, and time-saving",
+                                "vn": "sống động, kích thích thị giác và tiết kiệm thời gian"
+                            },
+                            {
+                                "en": "easy to digest while commuting on buses",
+                                "vn": "dễ tiếp thu trong lúc đi lại trên xe buýt"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Đọc vài lần mỗi tuần vì góc nhìn sâu sắc và câu chuyện chân thật - 23 từ)",
+                        "text": "Yes, I do. I make it a habit to read blogs a couple of times a week during my leisure breaks. Bloggers provide deep personal perspectives and practical real-life experiences that I find very authentic and relatable.",
+                        "formatted": "→ Yes, I do. I make it a habit to read blogs <span class=\"sub-hl\">a couple of times a week during my leisure breaks</span>. Bloggers provide <span class=\"sub-hl\">deep personal perspectives and practical real-life experiences</span> that I find very authentic and relatable."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Hiếm khi đọc, thích video ngắn TikTok vì tiết kiệm thời gian - 23 từ)",
+                        "text": "Honestly, seldom nowadays. I tend to consume content through short-form videos on TikTok and YouTube Shorts because they are more dynamic, visually stimulating, and time-saving for my busy schedule.",
+                        "formatted": "→ Honestly, seldom nowadays. I tend to consume content through <span class=\"sub-hl\">short-form videos on TikTok and YouTube Shorts</span> because they are more <span class=\"sub-hl\">dynamic, visually stimulating, and time-saving</span> for my busy schedule."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "What topics do you usually read about?",
+                "qType": "Wh-Question: What topics do you usually read about?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Blog du lịch, ẩm thực và review trải nghiệm địa phương):</div>\n                    <div class=\"topic-formula-text\">\n                        → I am particularly drawn to blogs about <span class=\"formula-bracket-hl\">[chủ đề du lịch & ẩm thực]</span>. They offer <span class=\"formula-bracket-hl\">[thông tin hữu ích nhận được]</span> for my future holiday plans.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Blog phát triển bản thân, kỹ năng nghề nghiệp và ngoại ngữ):</div>\n                    <div class=\"topic-formula-text\">\n                        → I mostly follow articles focused on <span class=\"formula-bracket-hl\">[chủ đề kỹ năng & học tập]</span>. The practical tips help me <span class=\"formula-bracket-hl\">[lợi ích phát triển - Vo]</span> consistently.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "✈️ [Du lịch & Ẩm thực] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "budget backpacking travel and hidden food gems",
+                                "vn": "du lịch bụi tiết kiệm và những quán ăn ngon ẩn mình"
+                            },
+                            {
+                                "en": "cultural itineraries and honest hotel reviews",
+                                "vn": "lịch trình khám phá văn hóa và review khách sạn chân thực"
+                            },
+                            {
+                                "en": "insider travel advice and budgeting tips",
+                                "vn": "lời khuyên du lịch của người bản địa và mẹo tiết kiệm chi phí"
+                            },
+                            {
+                                "en": "stunning photography of unseen destinations",
+                                "vn": "những bức ảnh tuyệt đẹp về những điểm đến chưa nhiều người biết"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "📈 [Phát triển bản thân & Kỹ năng] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "personal development, productivity habits, and English learning",
+                                "vn": "phát triển bản thân, thói quen nâng cao năng suất và học tiếng Anh"
+                            },
+                            {
+                                "en": "financial literacy and smart investment methods",
+                                "vn": "kiến thức tài chính và phương pháp đầu tư thông minh"
+                            },
+                            {
+                                "en": "build self-discipline and enhance career prospects",
+                                "vn": "xây dựng tính kỷ luật bản thân và nâng cao triển vọng nghề nghiệp"
+                            },
+                            {
+                                "en": "overcome procrastination effectively",
+                                "vn": "vượt qua thói quen trì hoãn một cách hiệu quả"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Đọc blog du lịch bụi và quán ăn ngon ẩn mình - 22 từ)",
+                        "text": "I am particularly drawn to blogs about budget backpacking travel and hidden food gems. They offer insider travel advice and budgeting tips for my future holiday plans.",
+                        "formatted": "→ I am particularly drawn to blogs about <span class=\"sub-hl\">budget backpacking travel and hidden food gems</span>. They offer <span class=\"sub-hl\">insider travel advice and budgeting tips</span> for my future holiday plans."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Đọc blog phát triển bản thân và học tiếng Anh để rèn kỷ luật - 23 từ)",
+                        "text": "I mostly follow articles focused on personal development, productivity habits, and English learning. The practical tips help me build self-discipline and enhance career prospects consistently.",
+                        "formatted": "→ I mostly follow articles focused on <span class=\"sub-hl\">personal development, productivity habits, and English learning</span>. The practical tips help me <span class=\"sub-hl\">build self-discipline and enhance career prospects</span> consistently."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "What do you learn from reading those blogs?",
+                "qType": "Wh-Question: What do you learn from reading those blogs?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Học kinh nghiệm thực tế, tránh các sai lầm và bẫy chi tiêu):</div>\n                    <div class=\"topic-formula-text\">\n                        → Reading them equips me with <span class=\"formula-bracket-hl\">[kinh nghiệm thực tế]</span>. Thanks to authors' honest reviews, I can <span class=\"formula-bracket-hl\">[lợi ích thực tế 1 - Vo]</span> and <span class=\"formula-bracket-hl\">[tiết kiệm - Vo]</span> effectively.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Học tư duy sống tích cực và cách nhìn đa chiều về xã hội):</div>\n                    <div class=\"topic-formula-text\">\n                        → Above all, I gain <span class=\"formula-bracket-hl\">[tư duy tích cực & đa chiều]</span>. It encourages me to <span class=\"formula-bracket-hl\">[bài học nhận thức - Vo]</span> whenever I face unexpected life challenges.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "💡 [Kinh nghiệm thực tiễn & Tránh sai lầm] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "invaluable hands-on advice and practical tricks",
+                                "vn": "những lời khuyên thực tế vô giá và các mẹo vặt hữu ích"
+                            },
+                            {
+                                "en": "avoid common tourist scams and overpricing",
+                                "vn": "tránh các chiêu trò lừa đảo du khách và việc bị chặt chém giá"
+                            },
+                            {
+                                "en": "save precious time, energy, and financial expenses",
+                                "vn": "tiết kiệm thời gian quý báu, công sức và chi phí tài chính"
+                            },
+                            {
+                                "en": "discover hidden shortcuts in daily workflows",
+                                "vn": "khám phá những lối đi tắt tiện lợi trong công việc hàng ngày"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🌱 [Tư duy đa chiều & Lạc quan] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "a fresh outlook on life and diverse cultural empathy",
+                                "vn": "cái nhìn tươi mới về cuộc sống và sự đồng cảm văn hóa đa dạng"
+                            },
+                            {
+                                "en": "maintain an optimistic attitude during tough setbacks",
+                                "vn": "giữ vững thái độ lạc quan trong những giai đoạn khó khăn vấp ngã"
+                            },
+                            {
+                                "en": "step out of my comfortable bubble with courage",
+                                "vn": "can đảm bước ra khỏi vùng an toàn quen thuộc của bản thân"
+                            },
+                            {
+                                "en": "appreciate unique individual stories and life choices",
+                                "vn": "trân trọng những câu chuyện và lựa chọn cuộc đời riêng biệt của mỗi người"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Học mẹo thực tế để tránh bị chặt chém và tiết kiệm chi phí - 23 từ)",
+                        "text": "Reading them equips me with invaluable hands-on advice and practical tricks. Thanks to authors' honest reviews, I can avoid common tourist scams and overpricing and save precious time, energy, and financial expenses effectively.",
+                        "formatted": "→ Reading them equips me with <span class=\"sub-hl\">invaluable hands-on advice and practical tricks</span>. Thanks to authors' honest reviews, I can <span class=\"sub-hl\">avoid common tourist scams and overpricing</span> and <span class=\"sub-hl\">save precious time, energy, and financial expenses</span> effectively."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Học cái nhìn tươi mới và giữ thái độ lạc quan trước thử thách - 24 từ)",
+                        "text": "Above all, I gain a fresh outlook on life and diverse cultural empathy. It encourages me to maintain an optimistic attitude during tough setbacks whenever I face unexpected life challenges.",
+                        "formatted": "→ Above all, I gain <span class=\"sub-hl\">a fresh outlook on life and diverse cultural empathy</span>. It encourages me to <span class=\"sub-hl\">maintain an optimistic attitude during tough setbacks</span> whenever I face unexpected life challenges."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 80,
+        "title": "Chủ đề 80: Let's talk about online learning",
+        "topicName": "Online learning",
+        "introText": "Let’s talk about online learning.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "Have you ever taken an online course?",
+                "qType": "Present Perfect: Have you ever taken an online course?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Từng tham gia khóa học ngoại ngữ hoặc kỹ năng số trên Coursera, Udemy, Zoom):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, definitely. I have enrolled in several online courses on <span class=\"formula-bracket-hl\">[nền tảng học trực tuyến]</span>, mainly focusing on <span class=\"formula-bracket-hl\">[chuyên ngành/kỹ năng]</span>. It was a very flexible experience.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Từng trải nghiệm học online bắt buộc thời kỳ đại dịch Covid qua Zoom/Teams):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, during the pandemic, our university switched to <span class=\"formula-bracket-hl\">[hình thức học từ xa]</span>. We attended daily live lectures via <span class=\"formula-bracket-hl\">[ứng dụng học tập]</span> from home.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "💻 [Khóa học kỹ năng tự chọn] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "platforms like Coursera, Udemy, and edX",
+                                "vn": "các nền tảng như Coursera, Udemy và edX"
+                            },
+                            {
+                                "en": "English communication and digital marketing skills",
+                                "vn": "kỹ năng giao tiếp tiếng Anh và tiếp thị kỹ thuật số"
+                            },
+                            {
+                                "en": "graphic design and python programming fundamentals",
+                                "vn": "nguyên lý thiết kế đồ họa và lập trình python cơ bản"
+                            },
+                            {
+                                "en": "study at my own comfortable pace",
+                                "vn": "học theo tốc độ thoải mái của chính mình"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🏫 [Học online thời đại dịch] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "mandatory remote learning and online schooling",
+                                "vn": "học từ xa bắt buộc và việc học trực tuyến"
+                            },
+                            {
+                                "en": "Zoom meetings, Microsoft Teams, and Google Meet",
+                                "vn": "các buổi họp Zoom, Microsoft Teams và Google Meet"
+                            },
+                            {
+                                "en": "submit assignments via our student portal",
+                                "vn": "nộp bài tập qua cổng thông tin sinh viên"
+                            },
+                            {
+                                "en": "adapt swiftly to virtual classroom environments",
+                                "vn": "thích nghi nhanh chóng với môi trường lớp học ảo"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Học tiếng Anh giao tiếp và tiếp thị số trên Coursera, Udemy - 24 từ)",
+                        "text": "Yes, definitely. I have enrolled in several online courses on platforms like Coursera, Udemy, and edX, mainly focusing on English communication and digital marketing skills. It was a very flexible experience.",
+                        "formatted": "→ Yes, definitely. I have enrolled in several online courses on <span class=\"sub-hl\">platforms like Coursera, Udemy, and edX</span>, mainly focusing on <span class=\"sub-hl\">English communication and digital marketing skills</span>. It was a very flexible experience."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Học đại học qua Zoom và Microsoft Teams thời kỳ đại dịch - 23 từ)",
+                        "text": "Yes, during the pandemic, our university switched to mandatory remote learning and online schooling. We attended daily live lectures via Zoom meetings, Microsoft Teams, and Google Meet from home.",
+                        "formatted": "→ Yes, during the pandemic, our university switched to <span class=\"sub-hl\">mandatory remote learning and online schooling</span>. We attended daily live lectures via <span class=\"sub-hl\">Zoom meetings, Microsoft Teams, and Google Meet</span> from home."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "Do you enjoy learning online? Why or why not?",
+                "qType": "Yes/No + Reason: Do you enjoy learning online? Why or why not?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Trả lời CÓ - Tiết kiệm thời gian đi lại, học mọi lúc mọi nơi và tự chủ tiến độ):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, I enjoy it quite a lot. The biggest advantage is <span class=\"formula-bracket-hl\">[sự linh hoạt thời gian & địa điểm]</span>, allowing me to <span class=\"formula-bracket-hl\">[lợi ích tự chủ - Vo]</span> without commuting in heavy traffic.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Trả lời KHÔNG - Thiếu tương tác trực tiếp, dễ mất tập trung và mỏi mắt vì màn hình):</div>\n                    <div class=\"topic-formula-text\">\n                        → Honestly, not really. I find it hard to <span class=\"formula-bracket-hl\">[khó khăn tập trung]</span> when staring at screens for hours. I strongly miss <span class=\"formula-bracket-hl\">[tương tác trực tiếp]</span> with teachers and peers.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "⏱️ [Thích vì linh hoạt & Tiết kiệm] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "unmatched scheduling flexibility and convenience",
+                                "vn": "sự thuận tiện và linh hoạt lịch trình không gì sánh bằng"
+                            },
+                            {
+                                "en": "rewind recorded lecture videos anytime I need",
+                                "vn": "tua lại video bài giảng đã ghi hình bất cứ khi nào cần"
+                            },
+                            {
+                                "en": "balance studying with part-time work easily",
+                                "vn": "cân bằng việc học với công việc bán thời gian một cách dễ dàng"
+                            },
+                            {
+                                "en": "save tremendous travel time and fuel money",
+                                "vn": "tiết kiệm được lượng lớn thời gian đi lại và tiền xăng xe"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "👀 [Không thích vì mỏi mắt & Thiếu tương tác] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "maintain high focus due to digital temptations",
+                                "vn": "duy trì sự tập trung cao độ do những cám dỗ kỹ thuật số"
+                            },
+                            {
+                                "en": "suffer severe eyestrain and physical neck fatigue",
+                                "vn": "chịu đựng chứng mỏi mắt nghiêm trọng và mỏi cổ thể chất"
+                            },
+                            {
+                                "en": "face-to-face discussions and lively classroom vibes",
+                                "vn": "những buổi thảo luận trực tiếp và không khí lớp học sôi nổi"
+                            },
+                            {
+                                "en": "feel socially isolated behind computer monitors",
+                                "vn": "cảm thấy bị cô lập xã hội đằng sau màn hình máy tính"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Thích vì linh hoạt lịch trình và có thể xem lại video bài giảng - 24 từ)",
+                        "text": "Yes, I enjoy it quite a lot. The biggest advantage is unmatched scheduling flexibility and convenience, allowing me to rewind recorded lecture videos anytime I need without commuting in heavy traffic.",
+                        "formatted": "→ Yes, I enjoy it quite a lot. The biggest advantage is <span class=\"sub-hl\">unmatched scheduling flexibility and convenience</span>, allowing me to <span class=\"sub-hl\">rewind recorded lecture videos anytime I need</span> without commuting in heavy traffic."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Không thích vì mỏi mắt và thiếu thảo luận trực tiếp sôi nổi - 24 từ)",
+                        "text": "Honestly, not really. I find it hard to maintain high focus due to digital temptations when staring at screens for hours. I strongly miss face-to-face discussions and lively classroom vibes with teachers and peers.",
+                        "formatted": "→ Honestly, not really. I find it hard to <span class=\"sub-hl\">maintain high focus due to digital temptations</span> when staring at screens for hours. I strongly miss <span class=\"sub-hl\">face-to-face discussions and lively classroom vibes</span> with teachers and peers."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "What are some disadvantages of online learning?",
+                "qType": "Wh-Question: What are some disadvantages of online learning?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Sự cố đường truyền mạng và thiếu thực hành thực tế):</div>\n                    <div class=\"topic-formula-text\">\n                        → One major downside is <span class=\"formula-bracket-hl\">[vấn đề kỹ thuật mạng]</span>, which interrupts the lesson. Furthermore, students suffer from a lack of <span class=\"formula-bracket-hl\">[thiếu hụt thực hành]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Dễ trì hoãn do thiếu kỷ luật và ảnh hưởng thị lực kéo dài):</div>\n                    <div class=\"topic-formula-text\">\n                        → Another big drawback is that it requires high self-discipline; otherwise, students easily <span class=\"formula-bracket-hl\">[thói quen trì hoãn - Vo]</span>. Moreover, long screen exposure causes <span class=\"formula-bracket-hl\">[ảnh hưởng sức khỏe]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "📶 [Sự cố kỹ thuật & Thiếu thực hành] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "unstable Internet connections and audio lag",
+                                "vn": "kết nối Internet không ổn định và âm thanh bị trễ"
+                            },
+                            {
+                                "en": "sudden power outages during online examinations",
+                                "vn": "mất điện đột ngột trong các kỳ thi trực tuyến"
+                            },
+                            {
+                                "en": "hands-on physical laboratory experiments",
+                                "vn": "những buổi thí nghiệm thực hành trực tiếp tại phòng lab"
+                            },
+                            {
+                                "en": "spontaneous group cooperation and networking",
+                                "vn": "sự hợp tác nhóm tự phát và kết nối mạng lưới bạn bè"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "📉 [Trì hoãn & Tác hại sức khỏe] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "fall victim to chronic procrastination and laziness",
+                                "vn": "trở thành nạn nhân của thói quen trì hoãn kinh niên và lười biếng"
+                            },
+                            {
+                                "en": "get distracted by social media notifications",
+                                "vn": "bị phân tâm bởi các thông báo mạng xã hội"
+                            },
+                            {
+                                "en": "chronic dry eyes, headache, and poor posture",
+                                "vn": "chứng khô mắt mãn tính, đau đầu và tư thế ngồi xấu"
+                            },
+                            {
+                                "en": "reduced motivation without peer competition",
+                                "vn": "giảm động lực học khi thiếu sự thi đua cùng bạn bè"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Mạng chập chờn và thiếu các thí nghiệm thực hành thực tế - 23 từ)",
+                        "text": "One major downside is unstable Internet connections and audio lag, which interrupts the lesson. Furthermore, students suffer from a lack of hands-on physical laboratory experiments.",
+                        "formatted": "→ One major downside is <span class=\"sub-hl\">unstable Internet connections and audio lag</span>, which interrupts the lesson. Furthermore, students suffer from a lack of <span class=\"sub-hl\">hands-on physical laboratory experiments</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Dễ trì hoãn lười biếng và gây khô mắt đau đầu - 24 từ)",
+                        "text": "Another big drawback is that it requires high self-discipline; otherwise, students easily fall victim to chronic procrastination and laziness. Moreover, long screen exposure causes chronic dry eyes, headache, and poor posture.",
+                        "formatted": "→ Another big drawback is that it requires high self-discipline; otherwise, students easily <span class=\"sub-hl\">fall victim to chronic procrastination and laziness</span>. Moreover, long screen exposure causes <span class=\"sub-hl\">chronic dry eyes, headache, and poor posture</span>."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 81,
+        "title": "Chủ đề 81: Let's talk about remembering things",
+        "topicName": "Remembering things",
+        "introText": "Let’s talk about remembering things.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "How do you usually remember important things?",
+                "qType": "Wh-Question: How do you usually remember important things?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Dùng công nghệ: ứng dụng lịch số, ghi chú điện thoại và chuông báo thức):</div>\n                    <div class=\"topic-formula-text\">\n                        → To remember essential tasks, I heavily rely on <span class=\"formula-bracket-hl\">[công cụ số trên điện thoại]</span>. Setting <span class=\"formula-bracket-hl\">[tính năng nhắc nhở]</span> ensures that I never miss any deadlines.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Dùng phương pháp truyền thống: viết sổ tay, giấy ghi chú dán bàn làm việc):</div>\n                    <div class=\"topic-formula-text\">\n                        → I prefer traditional methods like <span class=\"formula-bracket-hl\">[phương pháp viết tay]</span>. Physically writing things down helps <span class=\"formula-bracket-hl\">[khả năng ghi nhớ não bộ - Vo]</span> much more effectively.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "📱 [Công cụ kỹ thuật số] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "Google Calendar and smartphone reminder apps",
+                                "vn": "Google Calendar và các ứng dụng nhắc việc trên điện thoại"
+                            },
+                            {
+                                "en": "digital to-do list applications like Notion",
+                                "vn": "các ứng dụng danh sách việc cần làm như Notion"
+                            },
+                            {
+                                "en": "timely push notifications and alert alarms",
+                                "vn": "thông báo đẩy kịp thời và chuông báo nhắc nhở"
+                            },
+                            {
+                                "en": "keep my schedule neatly organized",
+                                "vn": "giữ cho lịch trình được sắp xếp ngăn nắp"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "📝 [Ghi chú truyền thống] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "colorful sticky notes posted on my desk",
+                                "vn": "giấy nhớ nhiều màu sắc dán ngay trên bàn làm việc"
+                            },
+                            {
+                                "en": "a pocket planner diary carried everywhere",
+                                "vn": "cuốn sổ tay lập kế hoạch bỏ túi mang theo mọi nơi"
+                            },
+                            {
+                                "en": "imprint information firmly into my active memory",
+                                "vn": "khắc sâu thông tin vào trí nhớ hoạt động của tôi"
+                            },
+                            {
+                                "en": "tick off accomplished daily chores with satisfaction",
+                                "vn": "tích chọn những công việc đã hoàn thành với niềm thỏa mãn"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Dùng Google Calendar và báo thức để không lỡ hạn chót - 24 từ)",
+                        "text": "To remember essential tasks, I heavily rely on Google Calendar and smartphone reminder apps. Setting timely push notifications and alert alarms ensures that I never miss any deadlines.",
+                        "formatted": "→ To remember essential tasks, I heavily rely on <span class=\"sub-hl\">Google Calendar and smartphone reminder apps</span>. Setting <span class=\"sub-hl\">timely push notifications and alert alarms</span> ensures that I never miss any deadlines."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Dán giấy nhớ trên bàn làm việc giúp khắc sâu thông tin - 23 từ)",
+                        "text": "I prefer traditional methods like colorful sticky notes posted on my desk. Physically writing things down helps imprint information firmly into my active memory much more effectively.",
+                        "formatted": "→ I prefer traditional methods like <span class=\"sub-hl\">colorful sticky notes posted on my desk</span>. Physically writing things down helps <span class=\"sub-hl\">imprint information firmly into my active memory</span> much more effectively."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "Have you ever forgotten something important? What happened?",
+                "qType": "Past Experience: Have you ever forgotten something important? What happened?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Từng quên mang chìa khóa nhà/xe hoặc giấy tờ quan trọng khi đi thi):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, unfortunately. Once I forgot <span class=\"formula-bracket-hl\">[vật dụng quan trọng]</span> right before <span class=\"formula-bracket-hl\">[sự kiện quan trọng]</span>. As a result, I had to <span class=\"formula-bracket-hl\">[hậu quả / cách xử lý]</span> in complete panic.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Từng quên ngày sinh nhật của bạn thân hoặc người yêu dẫn đến giận dỗi):</div>\n                    <div class=\"topic-formula-text\">\n                        → I vividly remember completely forgetting <span class=\"formula-bracket-hl\">[dịp kỷ niệm]</span>. She/He felt <span class=\"formula-bracket-hl\">[cảm xúc đối phương]</span>, and I had to <span class=\"formula-bracket-hl\">[hành động chuộc lỗi - Vo]</span> immediately.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🔑 [Quên đồ dùng & Giấy tờ] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "my national citizen ID card and exam hall ticket",
+                                "vn": "thẻ căn cước công dân và phiếu báo dự thi"
+                            },
+                            {
+                                "en": "my apartment keys and office security badge",
+                                "vn": "chìa khóa căn hộ và thẻ ra vào văn phòng"
+                            },
+                            {
+                                "en": "rush back home in a frantic hurry",
+                                "vn": "hối hả phóng xe về nhà trong cơn hoảng loạn"
+                            },
+                            {
+                                "en": "beg the security guard for emergency entry",
+                                "vn": "xin bác bảo vệ cho phép vào khẩn cấp"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🎂 [Quên ngày sinh nhật / Kỷ niệm] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "my best friend’s 20th birthday party",
+                                "vn": "tiệc sinh nhật lần thứ 20 của người bạn thân nhất"
+                            },
+                            {
+                                "en": "terribly disappointed, hurt, and sulky",
+                                "vn": "vô cùng thất vọng, tổn thương và hờn dỗi"
+                            },
+                            {
+                                "en": "sincerely apologize and treat them to dinner",
+                                "vn": "chân thành xin lỗi và khao họ một bữa tối"
+                            },
+                            {
+                                "en": "buy a lovely surprise gift to make amends",
+                                "vn": "mua một món quà bất ngờ đáng yêu để chuộc lỗi"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Quên thẻ căn cước trước giờ thi và phải phóng xe về nhà - 24 từ)",
+                        "text": "Yes, unfortunately. Once I forgot my national citizen ID card and exam hall ticket right before a crucial university entrance exam. As a result, I had to rush back home in a frantic hurry in complete panic.",
+                        "formatted": "→ Yes, unfortunately. Once I forgot <span class=\"sub-hl\">my national citizen ID card and exam hall ticket</span> right before a crucial university entrance exam. As a result, I had to <span class=\"sub-hl\">rush back home in a frantic hurry</span> in complete panic."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Quên sinh nhật bạn thân khiến bạn giận và phải khao ăn tối - 24 từ)",
+                        "text": "I vividly remember completely forgetting my best friend’s 20th birthday party. She felt terribly disappointed, hurt, and sulky, and I had to sincerely apologize and treat them to dinner immediately.",
+                        "formatted": "→ I vividly remember completely forgetting <span class=\"sub-hl\">my best friend’s 20th birthday party</span>. She felt <span class=\"sub-hl\">terribly disappointed, hurt, and sulky</span>, and I had to <span class=\"sub-hl\">sincerely apologize and treat them to dinner</span> immediately."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "Do you think people remember things better now or in the past? Why?",
+                "qType": "Comparison / Opinion: Do you think people remember things better now or in the past? Why?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Quá khứ nhớ tốt hơn - Ngày xưa phải nhớ số điện thoại, ngày nay phụ thuộc máy móc làm teo giảm trí nhớ):</div>\n                    <div class=\"topic-formula-text\">\n                        → In my opinion, people remembered things far better in the past. Back then, they had to <span class=\"formula-bracket-hl\">[hoạt động trí não thời xưa - Vo]</span>, whereas modern people suffer from <span class=\"formula-bracket-hl\">[hệ lụy phụ thuộc công nghệ]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Ngày nay nhớ tốt hơn nhờ công cụ lưu trữ số thông minh và dữ liệu đám mây):</div>\n                    <div class=\"topic-formula-text\">\n                        → I believe people nowadays manage memories much more reliably thanks to <span class=\"formula-bracket-hl\">[công cụ lưu trữ hiện đại]</span>. We no longer rely on faulty brain memory because <span class=\"formula-bracket-hl\">[lợi thế lưu trữ đám mây]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "⏳ [Thời xưa nhớ tốt hơn vì rèn luyện não] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "memorize dozens of landline phone numbers by heart",
+                                "vn": "thuộc lòng hàng chục số điện thoại bàn trong đầu"
+                            },
+                            {
+                                "en": "exercise natural memory capacity continuously",
+                                "vn": "rèn luyện dung lượng trí nhớ tự nhiên liên tục"
+                            },
+                            {
+                                "en": "digital amnesia due to smartphone overreliance",
+                                "vn": "chứng đãng trí kỹ thuật số do phụ thuộc quá nhiều vào smartphone"
+                            },
+                            {
+                                "en": "short attention spans and constant distractions",
+                                "vn": "khoảng chú ý ngắn và những sự xao nhãng liên tục"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "☁️ [Thời nay nhớ tốt hơn nhờ đám mây] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "intelligent cloud storage and automated digital reminders",
+                                "vn": "lưu trữ đám mây thông minh và lời nhắc kỹ thuật số tự động"
+                            },
+                            {
+                                "en": "digital backup records that never fade over time",
+                                "vn": "bản ghi sao lưu kỹ thuật số không bao giờ phai mờ theo thời gian"
+                            },
+                            {
+                                "en": "retrieve crucial data with a single tap",
+                                "vn": "truy xuất dữ liệu quan trọng chỉ với một cú chạm"
+                            },
+                            {
+                                "en": "free up brain capacity for creative thinking",
+                                "vn": "giải phóng dung lượng não bộ cho việc tư duy sáng tạo"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Thời xưa nhớ tốt hơn vì phải học thuộc, thời nay bị chứng đãng trí số - 24 từ)",
+                        "text": "In my opinion, people remembered things far better in the past. Back then, they had to memorize dozens of landline phone numbers by heart, whereas modern people suffer from digital amnesia due to smartphone overreliance.",
+                        "formatted": "→ In my opinion, people remembered things far better in the past. Back then, they had to <span class=\"sub-hl\">memorize dozens of landline phone numbers by heart</span>, whereas modern people suffer from <span class=\"sub-hl\">digital amnesia due to smartphone overreliance</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Thời nay quản lý trí nhớ tốt hơn nhờ lưu trữ đám mây thông minh - 24 từ)",
+                        "text": "I believe people nowadays manage memories much more reliably thanks to intelligent cloud storage and automated digital reminders. We no longer rely on faulty brain memory because digital backup records that never fade over time.",
+                        "formatted": "→ I believe people nowadays manage memories much more reliably thanks to <span class=\"sub-hl\">intelligent cloud storage and automated digital reminders</span>. We no longer rely on faulty brain memory because <span class=\"sub-hl\">digital backup records that never fade over time</span>."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 82,
+        "title": "Chủ đề 82: Let's talk about public transport",
+        "topicName": "Public transport",
+        "introText": "Let’s talk about public transport.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "Do you often use public transport?",
+                "qType": "Yes/No Question: Do you often use public transport?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Trả lời CÓ - Thường xuyên đi xe buýt điện hoặc tàu điện trên cao để đi làm/học):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, I do. I take public transit <span class=\"formula-bracket-hl\">[tần suất]</span>, mainly using <span class=\"formula-bracket-hl\">[loại phương tiện công cộng]</span>. It provides a peaceful journey without the headache of navigating gridlocked streets.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Trả lời HIẾM KHI - Thích tự đi xe máy để chủ động luồn lách qua ngõ nhỏ):</div>\n                    <div class=\"topic-formula-text\">\n                        → Honestly, not very often. I mostly commute by <span class=\"formula-bracket-hl\">[phương tiện cá nhân]</span> because public lines do not <span class=\"formula-bracket-hl\">[hạn chế tuyến đường]</span> near my house.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🚆 [Thường xuyên đi xe buýt & Tàu điện] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "almost four to five days a week",
+                                "vn": "hầu như 4 đến 5 ngày một tuần"
+                            },
+                            {
+                                "en": "the Cat Linh - Ha Dong metro line and electric buses",
+                                "vn": "tuyến tàu điện Cát Linh - Hà Đông và xe buýt điện"
+                            },
+                            {
+                                "en": "enjoy air conditioning and read books peacefully",
+                                "vn": "tận hưởng điều hòa mát mẻ và đọc sách yên bình"
+                            },
+                            {
+                                "en": "avoid hazardous road dust and intense heat",
+                                "vn": "tránh khói bụi đường xá độc hại và nắng nóng gay gắt"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🛵 [Hiếm khi đi & Xe cá nhân] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "my compact scooter and motorbike",
+                                "vn": "xe tay ga nhỏ gọn và xe máy của tôi"
+                            },
+                            {
+                                "en": "reach small narrow alleys and suburban streets",
+                                "vn": "tiếp cận những con ngõ nhỏ hẹp và đường ngoại ô"
+                            },
+                            {
+                                "en": "offer direct point-to-point flexibility",
+                                "vn": "đem lại sự linh hoạt đi từ điểm này đến thẳng điểm kia"
+                            },
+                            {
+                                "en": "save waiting time at distant transit stations",
+                                "vn": "tiết kiệm thời gian chờ đợi ở các nhà ga xa nhà"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Đi tàu điện và xe buýt điện 4-5 ngày mỗi tuần tránh khói bụi - 24 từ)",
+                        "text": "Yes, I do. I take public transit almost four to five days a week, mainly using the Cat Linh - Ha Dong metro line and electric buses. It provides a peaceful journey without the headache of navigating gridlocked streets.",
+                        "formatted": "→ Yes, I do. I take public transit <span class=\"sub-hl\">almost four to five days a week</span>, mainly using <span class=\"sub-hl\">the Cat Linh - Ha Dong metro line and electric buses</span>. It provides a peaceful journey without the headache of navigating gridlocked streets."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Hiếm khi đi, dùng xe tay ga để linh hoạt luồn lách ngõ nhỏ - 24 từ)",
+                        "text": "Honestly, not very often. I mostly commute by my compact scooter and motorbike because public lines do not reach small narrow alleys and suburban streets near my house.",
+                        "formatted": "→ Honestly, not very often. I mostly commute by <span class=\"sub-hl\">my compact scooter and motorbike</span> because public lines do not <span class=\"sub-hl\">reach small narrow alleys and suburban streets</span> near my house."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "Do you prefer public transport or private vehicles? Why?",
+                "qType": "Preference + Reason: Do you prefer public transport or private vehicles? Why?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Chọn XE CÔNG CỘNG - Thân thiện môi trường, chi phí rẻ và an toàn):</div>\n                    <div class=\"topic-formula-text\">\n                        → I favor public transport because it is <span class=\"formula-bracket-hl\">[ưu điểm phương tiện công cộng 1]</span> and <span class=\"formula-bracket-hl\">[ưu điểm 2]</span>. Commuters can also <span class=\"formula-bracket-hl\">[lợi ích thời gian thư giãn - Vo]</span> on board.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Chọn XE CÁ NHÂN - Tự do chủ động thời gian, không phụ thuộc lịch trình cố định):</div>\n                    <div class=\"topic-formula-text\">\n                        → I lean towards private vehicles like motorbikes. They grant complete <span class=\"formula-bracket-hl\">[ưu điểm cá nhân]</span>, so I can <span class=\"formula-bracket-hl\">[hành động chủ động - Vo]</span> without checking transit timetables.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🌱 [Ủng hộ phương tiện công cộng] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "far more eco-friendly and cost-effective",
+                                "vn": "thân thiện hơn nhiều với môi trường và tiết kiệm chi phí"
+                            },
+                            {
+                                "en": "much safer than maneuvering through motorcycle chaos",
+                                "vn": "an toàn hơn rất nhiều so với việc luồn lách qua hỗn loạn xe máy"
+                            },
+                            {
+                                "en": "listen to podcasts, study, or take a catnap",
+                                "vn": "nghe podcast, học bài hoặc chợp mắt một chút"
+                            },
+                            {
+                                "en": "relieve driving exhaustion after working late",
+                                "vn": "giải tỏa cảm giác mệt mỏi khi phải tự lái xe sau giờ làm muộn"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "⏱️ [Ủng hộ xe cá nhân] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "time independence and spontaneous schedule freedom",
+                                "vn": "sự độc lập về thời gian và tự do lịch trình tức thì"
+                            },
+                            {
+                                "en": "depart immediately and choose the fastest shortcuts",
+                                "vn": "khởi hành ngay lập tức và chọn những lối đi tắt nhanh nhất"
+                            },
+                            {
+                                "en": "stop anywhere anytime to buy groceries",
+                                "vn": "dừng lại bất cứ đâu bất cứ khi nào để mua đồ ăn"
+                            },
+                            {
+                                "en": "avoid waiting at crowded rainy bus stops",
+                                "vn": "tránh phải chờ đợi tại các điểm dừng xe buýt đông đúc ngày mưa"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Thích xe công cộng vì thân thiện môi trường và có thời gian nghe podcast - 24 từ)",
+                        "text": "I favor public transport because it is far more eco-friendly and cost-effective and much safer than maneuvering through motorcycle chaos. Commuters can also listen to podcasts, study, or take a catnap on board.",
+                        "formatted": "→ I favor public transport because it is <span class=\"sub-hl\">far more eco-friendly and cost-effective</span> and <span class=\"sub-hl\">much safer than maneuvering through motorcycle chaos</span>. Commuters can also <span class=\"sub-hl\">listen to podcasts, study, or take a catnap</span> on board."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Thích xe cá nhân vì tự do lịch trình và có thể dừng mua đồ tiện lợi - 24 từ)",
+                        "text": "I lean towards private vehicles like motorbikes. They grant complete time independence and spontaneous schedule freedom, so I can depart immediately and choose the fastest shortcuts without checking transit timetables.",
+                        "formatted": "→ I lean towards private vehicles like motorbikes. They grant complete <span class=\"sub-hl\">time independence and spontaneous schedule freedom</span>, so I can <span class=\"sub-hl\">depart immediately and choose the fastest shortcuts</span> without checking transit timetables."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "What are the advantages of using public transport?",
+                "qType": "Wh-Question: What are the advantages of using public transport?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Giảm thiểu tắc nghẽn giao thông và khí thải carbon đô thị):</div>\n                    <div class=\"topic-formula-text\">\n                        → The chief environmental benefit is that it helps <span class=\"formula-bracket-hl\">[lợi ích khí thải - Vo]</span>. In addition, replacing thousands of motorbikes on the road greatly <span class=\"formula-bracket-hl\">[giảm ùn tắc - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Tiết kiệm ngân sách cá nhân và tăng cường an toàn tính mạng):</div>\n                    <div class=\"topic-formula-text\">\n                        → On an individual level, it allows citizens to <span class=\"formula-bracket-hl\">[tiết kiệm tiền bạc - Vo]</span>. Furthermore, traveling in massive buses or trains is statistically <span class=\"formula-bracket-hl\">[yếu tố an toàn]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🌍 [Môi trường & Đô thị] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "slash dangerous greenhouse gas emissions",
+                                "vn": "cắt giảm lượng khí thải nhà kính nguy hại"
+                            },
+                            {
+                                "en": "improve urban ambient air quality significantly",
+                                "vn": "cải thiện đáng kể chất lượng không khí xung quanh đô thị"
+                            },
+                            {
+                                "en": "ease chronic traffic bottlenecks during rush hours",
+                                "vn": "làm dịu bớt các điểm nghẽn giao thông kinh niên trong giờ cao điểm"
+                            },
+                            {
+                                "en": "build sustainable and modern livable smart cities",
+                                "vn": "xây dựng những thành phố thông minh đáng sống và bền vững"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "💰 [Tiết kiệm & An toàn] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "save substantial monthly fuel and vehicle maintenance bills",
+                                "vn": "tiết kiệm khoản tiền lớn hàng tháng tiền xăng và bảo dưỡng xe"
+                            },
+                            {
+                                "en": "eliminate expensive inner-city parking fees",
+                                "vn": "loại bỏ chi phí gửi xe đắt đỏ ở khu vực nội đô"
+                            },
+                            {
+                                "en": "far safer with considerably lower accident risks",
+                                "vn": "an toàn hơn nhiều với nguy cơ tai nạn thấp hơn đáng kể"
+                            },
+                            {
+                                "en": "experienced and professionally trained drivers",
+                                "vn": "đội ngũ tài xế giàu kinh nghiệm và được đào tạo bài bản"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Cắt giảm khí nhà kính và giải tỏa điểm nghẽn giao thông giờ cao điểm - 23 từ)",
+                        "text": "The chief environmental benefit is that it helps slash dangerous greenhouse gas emissions. In addition, replacing thousands of motorbikes on the road greatly ease chronic traffic bottlenecks during rush hours.",
+                        "formatted": "→ The chief environmental benefit is that it helps <span class=\"sub-hl\">slash dangerous greenhouse gas emissions</span>. In addition, replacing thousands of motorbikes on the road greatly <span class=\"sub-hl\">ease chronic traffic bottlenecks during rush hours</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Tiết kiệm tiền xăng hàng tháng và an toàn hơn nhiều khi đi lại - 24 từ)",
+                        "text": "On an individual level, it allows citizens to save substantial monthly fuel and vehicle maintenance bills. Furthermore, traveling in massive buses or trains is statistically far safer with considerably lower accident risks.",
+                        "formatted": "→ On an individual level, it allows citizens to <span class=\"sub-hl\">save substantial monthly fuel and vehicle maintenance bills</span>. Furthermore, traveling in massive buses or trains is statistically <span class=\"sub-hl\">far safer with considerably lower accident risks</span>."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 83,
+        "title": "Chủ đề 83: Let's talk about holidays",
+        "topicName": "Holidays",
+        "introText": "Let’s talk about holidays.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "What do you usually enjoy doing when you are on holiday?",
+                "qType": "Wh-Question: What do you usually enjoy doing when you are on holiday?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Đi du lịch xa, tắm biển hoặc leo núi cùng gia đình):</div>\n                    <div class=\"topic-formula-text\">\n                        → When on vacation, I love <span class=\"formula-bracket-hl\">[hoạt động du lịch xa - V-ing]</span> with my loved ones. It is the perfect opportunity to <span class=\"formula-bracket-hl\">[lợi ích nghỉ ngơi - Vo]</span> and leave daily deadlines behind.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Ở nhà nghỉ ngơi (staycation), ngủ nướng và nấu các món ăn ngon):</div>\n                    <div class=\"topic-formula-text\">\n                        → I often choose a relaxing staycation where I can <span class=\"formula-bracket-hl\">[hoạt động nghỉ tại nhà 1 - Vo]</span> and <span class=\"formula-bracket-hl\">[hoạt động 2 - Vo]</span> without fighting crowded tourist traps.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🏖️ [Du lịch khám phá & Xả hơi] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "traveling to scenic beaches or peaceful highlands",
+                                "vn": "du lịch đến các bãi biển đẹp hoặc vùng cao thanh bình"
+                            },
+                            {
+                                "en": "swimming in crystal-clear waves and sunbathing",
+                                "vn": "bơi lội trong làn sóng trong vắt và tắm nắng"
+                            },
+                            {
+                                "en": "recharge mental batteries and bond closely",
+                                "vn": "nạp lại năng lượng tinh thần và gắn kết bền chặt"
+                            },
+                            {
+                                "en": "sample authentic regional delicacies",
+                                "vn": "thưởng thức những món ngon đặc sản bản địa"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🛋️ [Nghỉ tại nhà (Staycation)] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "sleep in late without ringing alarm clocks",
+                                "vn": "ngủ nướng dậy muộn mà không có tiếng chuông báo thức"
+                            },
+                            {
+                                "en": "binge-watch my favorite movie series on Netflix",
+                                "vn": "cày trọn bộ phim yêu thích trên Netflix"
+                            },
+                            {
+                                "en": "cook comforting hearty meals with my family",
+                                "vn": "nấu những bữa cơm thịnh soạn ấm cúng cùng gia đình"
+                            },
+                            {
+                                "en": "enjoy quiet peace in my cozy living room",
+                                "vn": "tận hưởng sự bình yên tĩnh lặng trong phòng khách ấm cúng"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Đi du lịch biển hoặc vùng cao để nạp lại năng lượng - 24 từ)",
+                        "text": "When on vacation, I love traveling to scenic beaches or peaceful highlands with my loved ones. It is the perfect opportunity to recharge mental batteries and bond closely and leave daily deadlines behind.",
+                        "formatted": "→ When on vacation, I love <span class=\"sub-hl\">traveling to scenic beaches or peaceful highlands</span> with my loved ones. It is the perfect opportunity to <span class=\"sub-hl\">recharge mental batteries and bond closely</span> and leave daily deadlines behind."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Nghỉ tại nhà, ngủ nướng và cày phim Netflix không lo đông đúc - 24 từ)",
+                        "text": "I often choose a relaxing staycation where I can sleep in late without ringing alarm clocks and binge-watch my favorite movie series on Netflix without fighting crowded tourist traps.",
+                        "formatted": "→ I often choose a relaxing staycation where I can <span class=\"sub-hl\">sleep in late without ringing alarm clocks</span> and <span class=\"sub-hl\">binge-watch my favorite movie series on Netflix</span> without fighting crowded tourist traps."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "Do you often try local food when you travel? Why or why not?",
+                "qType": "Yes/No + Reason: Do you often try local food when you travel? Why or why not?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Trả lời CÓ - Ẩm thực là linh hồn của chuyến đi, phản ánh rõ nét văn hóa):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, definitely. In my opinion, tasting indigenous dishes is <span class=\"formula-bracket-hl\">[tầm quan trọng của ẩm thực]</span>. It is the most authentic way to <span class=\"formula-bracket-hl\">[trải nghiệm văn hóa - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Khá cẩn thận vì bụng yếu, chỉ chọn món chín kỹ tại quán uy tín):</div>\n                    <div class=\"topic-formula-text\">\n                        → I do try, but with great caution. Due to having <span class=\"formula-bracket-hl\">[lý do tiêu hóa nhạy cảm]</span>, I prefer dining in <span class=\"formula-bracket-hl\">[tiêu chí quán ăn an toàn]</span> to prevent food poisoning.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🍜 [Thưởng thức đặc sản vùng miền] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "the heart and soul of any memorable trip",
+                                "vn": "trái tim và linh hồn của bất kỳ chuyến đi đáng nhớ nào"
+                            },
+                            {
+                                "en": "an exciting culinary adventure",
+                                "vn": "một cuộc phiêu lưu ẩm thực đầy phấn khích"
+                            },
+                            {
+                                "en": "connect with the local culture and heritage",
+                                "vn": "kết nối với văn hóa và di sản địa phương"
+                            },
+                            {
+                                "en": "discover unique regional spices and cooking traditions",
+                                "vn": "khám phá những gia vị vùng miền độc đáo và truyền thống nấu nướng"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🛡️ [Cẩn trọng & Bụng nhạy cảm] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "a rather delicate digestive system",
+                                "vn": "hệ tiêu hóa khá mỏng manh nhạy cảm"
+                            },
+                            {
+                                "en": "established hygienic eateries with high customer ratings",
+                                "vn": "các quán ăn vệ sinh có tên tuổi và đánh giá cao từ khách hàng"
+                            },
+                            {
+                                "en": "avoid raw unpasteurized dishes and street tap ice",
+                                "vn": "tránh các món tươi sống chưa tiệt trùng và đá lạnh vỉa hè"
+                            },
+                            {
+                                "en": "ensure safe health throughout my holiday",
+                                "vn": "đảm bảo sức khỏe an toàn trong suốt kỳ nghỉ của mình"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Thưởng thức đặc sản là linh hồn chuyến đi để kết nối văn hóa - 24 từ)",
+                        "text": "Yes, definitely. In my opinion, tasting indigenous dishes is the heart and soul of any memorable trip. It is the most authentic way to connect with the local culture and heritage.",
+                        "formatted": "→ Yes, definitely. In my opinion, tasting indigenous dishes is <span class=\"sub-hl\">the heart and soul of any memorable trip</span>. It is the most authentic way to <span class=\"sub-hl\">connect with the local culture and heritage</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Bụng nhạy cảm nên chỉ ăn ở quán vệ sinh uy tín - 24 từ)",
+                        "text": "I do try, but with great caution. Due to having a rather delicate digestive system, I prefer dining in established hygienic eateries with high customer ratings to prevent food poisoning.",
+                        "formatted": "→ I do try, but with great caution. Due to having <span class=\"sub-hl\">a rather delicate digestive system</span>, I prefer dining in <span class=\"sub-hl\">established hygienic eateries with high customer ratings</span> to prevent food poisoning."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "What place would you like to visit again in the future?",
+                "qType": "Future Wish: What place would you like to visit again in the future?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Muốn quay lại thành phố Đà Nẵng / Hội An vì cảnh đẹp, người thân thiện và đồ ăn ngon):</div>\n                    <div class=\"topic-formula-text\">\n                        → I would love to return to <span class=\"formula-bracket-hl\">[tên địa danh]</span> in the near future. I am completely captivated by <span class=\"formula-bracket-hl\">[nét quyến rũ địa danh 1]</span> and <span class=\"formula-bracket-hl\">[nét quyến rũ 2]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Muốn trở lại vùng cao nguyên Đà Lạt mộng mơ vì không khí mát mẻ dễ chịu):</div>\n                    <div class=\"topic-formula-text\">\n                        → My top choice would undoubtedly be <span class=\"formula-bracket-hl\">[vùng cao nguyên]</span>. The chilly climate and <span class=\"formula-bracket-hl\">[cảnh quan đặc trưng]</span> always bring me <span class=\"formula-bracket-hl\">[cảm xúc an yên]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🏮 [Đà Nẵng & Hội An] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "the ancient town of Hoi An and Da Nang city",
+                                "vn": "phố cổ Hội An và thành phố Đà Nẵng"
+                            },
+                            {
+                                "en": "lantern-lit romantic alleyways along the river",
+                                "vn": "những con ngõ nhỏ thắp đèn lồng lãng mạn ven sông"
+                            },
+                            {
+                                "en": "warmhearted, hospitable locals and mouthwatering noodles",
+                                "vn": "người dân nồng hậu hiếu khách và các món mì ngon chảy nước miếng"
+                            },
+                            {
+                                "en": "breathtaking coastal sunsets at My Khe Beach",
+                                "vn": "hoàng hôn ven biển ngoạn mục tại bãi biển Mỹ Khê"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🌲 [Đà Lạt sương mù] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "the pine-covered highland town of Da Lat",
+                                "vn": "thị trấn cao nguyên rợp bóng thông xanh Đà Lạt"
+                            },
+                            {
+                                "en": "winding mountainous roads shrouded in gentle morning fog",
+                                "vn": "những cung đường đèo uốn lượn chìm trong làn sương sớm dịu nhẹ"
+                            },
+                            {
+                                "en": "rustic wooden cafes serving hot egg coffee",
+                                "vn": "những quán cà phê gỗ mộc mạc phục vụ cà phê trứng nóng hổi"
+                            },
+                            {
+                                "en": "a magical sense of peaceful serenity",
+                                "vn": "cảm giác thanh tịnh bình yên kỳ diệu"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Muốn quay lại Hội An ngắm đèn lồng ven sông và gặp người hiếu khách - 24 từ)",
+                        "text": "I would love to return to the ancient town of Hoi An and Da Nang city in the near future. I am completely captivated by lantern-lit romantic alleyways along the river and warmhearted, hospitable locals and mouthwatering noodles.",
+                        "formatted": "→ I would love to return to <span class=\"sub-hl\">the ancient town of Hoi An and Da Nang city</span> in the near future. I am completely captivated by <span class=\"sub-hl\">lantern-lit romantic alleyways along the river</span> and <span class=\"sub-hl\">warmhearted, hospitable locals and mouthwatering noodles</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Muốn trở lại Đà Lạt để tận hưởng đường đèo trong sương và cà phê trứng - 24 từ)",
+                        "text": "My top choice would undoubtedly be the pine-covered highland town of Da Lat. The chilly climate and winding mountainous roads shrouded in gentle morning fog always bring me a magical sense of peaceful serenity.",
+                        "formatted": "→ My top choice would undoubtedly be <span class=\"sub-hl\">the pine-covered highland town of Da Lat</span>. The chilly climate and <span class=\"sub-hl\">winding mountainous roads shrouded in gentle morning fog</span> always bring me <span class=\"sub-hl\">a magical sense of peaceful serenity</span>."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 84,
+        "title": "Chủ đề 84: Let's talk about memories",
+        "topicName": "Memories",
+        "introText": "Let’s talk about memories.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "What is your first memory of going to school?",
+                "qType": "Past Memory: What is your first memory of going to school?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Ngày đầu tiên vào lớp 1: rụt rè nắm tay mẹ và bật khóc ở cổng trường):</div>\n                    <div class=\"topic-formula-text\">\n                        → My earliest school memory was <span class=\"formula-bracket-hl\">[kỷ niệm ngày đầu vào lớp 1]</span>. I felt <span class=\"formula-bracket-hl\">[cảm xúc rụt rè lúc đầu]</span> until my caring teacher <span class=\"formula-bracket-hl\">[hành động cô giáo vỗ về - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Ấn tượng về bộ đồng phục mới, chiếc cặp sách to và nhiều bạn mới):</div>\n                    <div class=\"topic-formula-text\">\n                        → I vividly remember wearing <span class=\"formula-bracket-hl\">[trang phục & đồ dùng học tập]</span> for the first time. The schoolyard seemed <span class=\"formula-bracket-hl\">[ấn tượng về trường lớp]</span> and full of excitement.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🎒 [Ngày đầu tiên & Nước mắt] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "my very first day entering primary school grade one",
+                                "vn": "ngày đầu tiên bước chân vào lớp một trường tiểu học"
+                            },
+                            {
+                                "en": "tightly holding my mother's hand and crying timidly",
+                                "vn": "nắm chặt tay mẹ và rụt rè bật khóc"
+                            },
+                            {
+                                "en": "overwhelmed by the enormous crowd of strangers",
+                                "vn": "choáng ngợp trước đám đông người lạ khổng lồ"
+                            },
+                            {
+                                "en": "welcomed me with a gentle smile and colorful candy",
+                                "vn": "chào đón tôi với nụ cười dịu dàng và viên kẹo nhiều màu"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "👕 [Đồng phục mới & Bạn bè] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "my crisp white uniform and an oversized blue backpack",
+                                "vn": "bộ đồng phục trắng tinh tươm và chiếc balo màu xanh quá khổ"
+                            },
+                            {
+                                "en": "brand new notebooks smelling of fresh paper",
+                                "vn": "những cuốn vở viết mới toanh thơm mùi giấy mới"
+                            },
+                            {
+                                "en": "enormously vast and filled with red festive flags",
+                                "vn": "rộng lớn bao la và ngập tràn cờ hoa rực rỡ"
+                            },
+                            {
+                                "en": "eagerly making friends with my desk partner",
+                                "vn": "háo hức kết bạn với người bạn cùng bàn"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Nắm chặt tay mẹ khóc ở cổng trường cho đến khi cô giáo vỗ về - 24 từ)",
+                        "text": "My earliest school memory was my very first day entering primary school grade one. I felt tightly holding my mother's hand and crying timidly until my caring teacher welcomed me with a gentle smile and colorful candy.",
+                        "formatted": "→ My earliest school memory was <span class=\"sub-hl\">my very first day entering primary school grade one</span>. I felt <span class=\"sub-hl\">tightly holding my mother's hand and crying timidly</span> until my caring teacher <span class=\"sub-hl\">welcomed me with a gentle smile and colorful candy</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Mặc đồng phục trắng tinh, mang balo to và háo hức kết bạn - 24 từ)",
+                        "text": "I vividly remember wearing my crisp white uniform and an oversized blue backpack for the first time. The schoolyard seemed enormously vast and filled with red festive flags and full of excitement.",
+                        "formatted": "→ I vividly remember wearing <span class=\"sub-hl\">my crisp white uniform and an oversized blue backpack</span> for the first time. The schoolyard seemed <span class=\"sub-hl\">enormously vast and filled with red festive flags</span> and full of excitement."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "Do you think memories are important? Why or why not?",
+                "qType": "Evaluation / Opinion: Do you think memories are important? Why or why not?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Khẳng định CỰC KỲ QUAN TRỌNG - Ký ức định hình nhân cách và giúp ta trưởng thành):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, absolutely. Memories are the foundation of who we are. They help <span class=\"formula-bracket-hl\">[vai trò định hình bản thân - Vo]</span> and teach us <span class=\"formula-bracket-hl\">[bài học cuộc sống quý giá]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Ký ức là nguồn an ủi tinh thần, gắn kết các mối quan hệ bền vững):</div>\n                    <div class=\"topic-formula-text\">\n                        → I firmly believe memories are precious treasures. Reminiscing about fond moments provides <span class=\"formula-bracket-hl\">[nguồn an ủi tinh thần]</span> and strengthens <span class=\"formula-bracket-hl\">[sự gắn kết tình cảm]</span> with loved ones.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🌱 [Định hình nhân cách & Bài học] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "shape our core values and unique identity",
+                                "vn": "định hình các giá trị cốt lõi và bản sắc độc đáo của chúng ta"
+                            },
+                            {
+                                "en": "learn valuable life wisdom from past mistakes",
+                                "vn": "học hỏi trí tuệ sống quý giá từ những sai lầm trong quá khứ"
+                            },
+                            {
+                                "en": "guide our future decisions and ethical paths",
+                                "vn": "dẫn lối cho các quyết định tương lai và con đường đạo đức"
+                            },
+                            {
+                                "en": "remind us where we came from",
+                                "vn": "nhắc nhở chúng ta xuất thân từ cội nguồn nào"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "💖 [An ủi tinh thần & Gắn kết] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "immense emotional comfort during difficult trials",
+                                "vn": "sự an ủi cảm xúc to lớn trong những thử thách chông gai"
+                            },
+                            {
+                                "en": "unbreakable emotional bonds with family and friends",
+                                "vn": "mối gắn kết tình cảm bền chặt không thể phá vỡ với gia đình, bạn bè"
+                            },
+                            {
+                                "en": "a nostalgic warm shelter for our weary souls",
+                                "vn": "chốn trú ngụ ấm áp đầy hoài niệm cho tâm hồn mệt mỏi"
+                            },
+                            {
+                                "en": "inspire enduring gratitude for life’s blessings",
+                                "vn": "khơi gợi lòng biết ơn bền bỉ trước những phước lành cuộc sống"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Ký ức định hình giá trị cốt lõi và giúp học hỏi từ sai lầm - 24 từ)",
+                        "text": "Yes, absolutely. Memories are the foundation of who we are. They help shape our core values and unique identity and teach us learn valuable life wisdom from past mistakes.",
+                        "formatted": "→ Yes, absolutely. Memories are the foundation of who we are. They help <span class=\"sub-hl\">shape our core values and unique identity</span> and teach us <span class=\"sub-hl\">learn valuable life wisdom from past mistakes</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Ký ức là nguồn an ủi tinh thần to lớn và gắn kết gia đình - 24 từ)",
+                        "text": "I firmly believe memories are precious treasures. Reminiscing about fond moments provides immense emotional comfort during difficult trials and strengthens unbreakable emotional bonds with family and friends with loved ones.",
+                        "formatted": "→ I firmly believe memories are precious treasures. Reminiscing about fond moments provides <span class=\"sub-hl\">immense emotional comfort during difficult trials</span> and strengthens <span class=\"sub-hl\">unbreakable emotional bonds with family and friends</span> with loved ones."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "How do you usually keep your memories?",
+                "qType": "Wh-Question: How do you usually keep your memories?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Lưu giữ bằng ảnh chụp số, lưu trữ đám mây hoặc đăng lên mạng xã hội):</div>\n                    <div class=\"topic-formula-text\">\n                        → I usually preserve my memories by <span class=\"formula-bracket-hl\">[chụp ảnh/lưu trữ số - V-ing]</span>. Storing them on <span class=\"formula-bracket-hl\">[dịch vụ lưu trữ]</span> allows me to look back at cherished moments anytime.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Viết nhật ký tay hoặc cất giữ các kỷ vật lưu niệm trong hộp nhỏ):</div>\n                    <div class=\"topic-formula-text\">\n                        → I keep a habit of <span class=\"formula-bracket-hl\">[viết nhật ký / giữ kỷ vật - V-ing]</span>. Touching <span class=\"formula-bracket-hl\">[kỷ vật cụ thể]</span> brings back emotional feelings that digital photos cannot replicate.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "📸 [Chụp ảnh & Lưu trữ số] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "snapping spontaneous photos and recording short video clips",
+                                "vn": "chụp những bức ảnh tự nhiên và quay các video ngắn"
+                            },
+                            {
+                                "en": "Google Photos albums and secure cloud storage drives",
+                                "vn": "các album Google Photos và ổ đĩa lưu trữ đám mây an toàn"
+                            },
+                            {
+                                "en": "categorized chronologically with dates and locations",
+                                "vn": "được phân loại theo thứ tự thời gian với ngày tháng và địa điểm"
+                            },
+                            {
+                                "en": "revisit unforgettable journeys with a simple swipe",
+                                "vn": "thăm lại những chuyến đi không thể nào quên chỉ với một thao tác quẹt"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "📔 [Viết nhật ký & Kỷ vật lưu niệm] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "writing intimate thoughts in my handwritten personal diary",
+                                "vn": "viết những suy nghĩ sâu kín vào cuốn nhật ký cá nhân viết tay"
+                            },
+                            {
+                                "en": "collecting concert ticket stubs, postcards, and dried flowers",
+                                "vn": "sưu tầm cuống vé hòa nhạc, bưu thiếp và hoa khô"
+                            },
+                            {
+                                "en": "a wooden memory keepsake box under my bed",
+                                "vn": "chiếc hộp gỗ đựng kỷ vật kỷ niệm đặt dưới gầm giường"
+                            },
+                            {
+                                "en": "evoke authentic tangible feelings of the past",
+                                "vn": "gợi lại những cảm xúc hữu hình chân thực của quá khứ"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Chụp ảnh và lưu trên Google Photos để xem lại tiện lợi - 24 từ)",
+                        "text": "I usually preserve my memories by snapping spontaneous photos and recording short video clips. Storing them on Google Photos albums and secure cloud storage drives allows me to look back at cherished moments anytime.",
+                        "formatted": "→ I usually preserve my memories by <span class=\"sub-hl\">snapping spontaneous photos and recording short video clips</span>. Storing them on <span class=\"sub-hl\">Google Photos albums and secure cloud storage drives</span> allows me to look back at cherished moments anytime."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Viết nhật ký tay và giữ cuống vé concert trong hộp kỷ vật - 23 từ)",
+                        "text": "I keep a habit of writing intimate thoughts in my handwritten personal diary. Touching collecting concert ticket stubs, postcards, and dried flowers brings back emotional feelings that digital photos cannot replicate.",
+                        "formatted": "→ I keep a habit of <span class=\"sub-hl\">writing intimate thoughts in my handwritten personal diary</span>. Touching <span class=\"sub-hl\">collecting concert ticket stubs, postcards, and dried flowers</span> brings back emotional feelings that digital photos cannot replicate."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 85,
+        "title": "Chủ đề 85: Let's talk about emails",
+        "topicName": "Emails",
+        "introText": "Let’s talk about emails.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "How often do you use emails?",
+                "qType": "Wh-Question (Frequency): How often do you use emails?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Sử dụng hàng ngày để làm việc, học tập và nhận thông báo chính thức):</div>\n                    <div class=\"topic-formula-text\">\n                        → I check and send emails <span class=\"formula-bracket-hl\">[tần suất hàng ngày]</span>. It is my main professional channel to <span class=\"formula-bracket-hl\">[mục đích trao đổi công việc/học tập - Vo]</span> and receive official updates.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Chỉ thỉnh thoảng dùng khi cần gửi hồ sơ ứng tuyển hoặc hóa đơn điện tử):</div>\n                    <div class=\"topic-formula-text\">\n                        → Not very frequently, perhaps <span class=\"formula-bracket-hl\">[tần suất thưa thớt]</span>. For daily chats, I prefer <span class=\"formula-bracket-hl\">[kênh nhắn tin tức thời]</span> because they are faster.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "💼 [Dùng hàng ngày & Chuyên nghiệp] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "multiple times a day throughout my working hours",
+                                "vn": "nhiều lần mỗi ngày trong suốt giờ làm việc của tôi"
+                            },
+                            {
+                                "en": "communicate with academic professors and corporate clients",
+                                "vn": "trao đổi với các giáo sư đại học và đối tác khách hàng"
+                            },
+                            {
+                                "en": "submit weekly reports and assignment attachments",
+                                "vn": "nộp báo cáo hàng tuần và tệp bài tập đính kèm"
+                            },
+                            {
+                                "en": "keep written records of formal agreements",
+                                "vn": "lưu giữ hồ sơ văn bản về các thỏa thuận chính thức"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "💬 [Thỉnh thoảng & Ứng dụng chat] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "only a few times a month for official receipts",
+                                "vn": "chỉ vài lần một tháng để nhận hóa đơn chính thức"
+                            },
+                            {
+                                "en": "instant messaging apps like Zalo, Messenger, or Telegram",
+                                "vn": "các ứng dụng nhắn tin tức thì như Zalo, Messenger hoặc Telegram"
+                            },
+                            {
+                                "en": "speedy casual conversations without formal greetings",
+                                "vn": "các cuộc hội thoại đời thường nhanh chóng không cần chào hỏi trang trọng"
+                            },
+                            {
+                                "en": "sending job resumes and university applications",
+                                "vn": "gửi sơ yếu lý lịch xin việc và hồ sơ nhập học"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Dùng nhiều lần mỗi ngày để trao đổi với thầy cô và đối tác - 24 từ)",
+                        "text": "I check and send emails multiple times a day throughout my working hours. It is my main professional channel to communicate with academic professors and corporate clients and receive official updates.",
+                        "formatted": "→ I check and send emails <span class=\"sub-hl\">multiple times a day throughout my working hours</span>. It is my main professional channel to <span class=\"sub-hl\">communicate with academic professors and corporate clients</span> and receive official updates."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Chỉ vài lần một tháng để nhận hóa đơn, thích dùng Zalo - 24 từ)",
+                        "text": "Not very frequently, perhaps only a few times a month for official receipts. For daily chats, I prefer instant messaging apps like Zalo, Messenger, or Telegram because they are faster.",
+                        "formatted": "→ Not very frequently, perhaps <span class=\"sub-hl\">only a few times a month for official receipts</span>. For daily chats, I prefer <span class=\"sub-hl\">instant messaging apps like Zalo, Messenger, or Telegram</span> because they are faster."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "Why do people use emails?",
+                "qType": "Wh-Question (Reason): Why do people use emails?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Tính chuyên nghiệp, lưu trữ bằng chứng rõ ràng và gửi tài liệu dung lượng lớn):</div>\n                    <div class=\"topic-formula-text\">\n                        → People rely on email because it conveys <span class=\"formula-bracket-hl\">[tính chuyên nghiệp và lưu trữ]</span>. Furthermore, it allows users to <span class=\"formula-bracket-hl\">[tính năng gửi tệp đính kèm - Vo]</span> securely.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Giao tiếp bất đồng bộ, không làm gián đoạn người nhận ngay lập tức):</div>\n                    <div class=\"topic-formula-text\">\n                        → A major advantage is <span class=\"formula-bracket-hl\">[sự linh hoạt thời gian]</span>. Unlike sudden phone calls, emails allow recipients to <span class=\"formula-bracket-hl\">[lợi ích phản hồi - Vo]</span> when convenient.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "📑 [Chuyên nghiệp & Lưu trữ tài liệu] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "a formal, professional tone and permanent written paper trail",
+                                "vn": "văn phong chuyên nghiệp trang trọng và vết tích văn bản lưu trữ vĩnh viễn"
+                            },
+                            {
+                                "en": "legal validity for contracts and business agreements",
+                                "vn": "giá trị pháp lý cho hợp đồng và thỏa thuận kinh doanh"
+                            },
+                            {
+                                "en": "attach heavy PDF documents, spreadsheets, and portfolios",
+                                "vn": "đính kèm tài liệu PDF nặng, bảng tính và hồ sơ năng lực"
+                            },
+                            {
+                                "en": "reach multiple stakeholders simultaneously with CC and BCC",
+                                "vn": "gửi tới nhiều bên liên quan cùng lúc bằng tính năng CC và BCC"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "⏳ [Linh hoạt & Bất đồng bộ] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "asynchronous communication across different time zones",
+                                "vn": "giao tiếp bất đồng bộ qua nhiều múi giờ khác nhau"
+                            },
+                            {
+                                "en": "read and respond thoughtfully at their own convenience",
+                                "vn": "đọc và trả lời thấu đáo vào thời điểm thuận tiện của họ"
+                            },
+                            {
+                                "en": "avoid disruptive urgent ringtones during deep focus hours",
+                                "vn": "tránh tiếng chuông điện thoại khẩn làm phiền trong giờ tập trung cao độ"
+                            },
+                            {
+                                "en": "craft structured and polished thoughts calmly",
+                                "vn": "soạn thảo những suy nghĩ mạch lạc và chỉn chu một cách bình tĩnh"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Văn phong chuyên nghiệp, lưu vết văn bản và đính kèm tài liệu lớn - 24 từ)",
+                        "text": "People rely on email because it conveys a formal, professional tone and permanent written paper trail. Furthermore, it allows users to attach heavy PDF documents, spreadsheets, and portfolios securely.",
+                        "formatted": "→ People rely on email because it conveys <span class=\"sub-hl\">a formal, professional tone and permanent written paper trail</span>. Furthermore, it allows users to <span class=\"sub-hl\">attach heavy PDF documents, spreadsheets, and portfolios</span> securely."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Giao tiếp bất đồng bộ giúp người nhận trả lời khi thuận tiện - 23 từ)",
+                        "text": "A major advantage is asynchronous communication across different time zones. Unlike sudden phone calls, emails allow recipients to read and respond thoughtfully at their own convenience when convenient.",
+                        "formatted": "→ A major advantage is <span class=\"sub-hl\">asynchronous communication across different time zones</span>. Unlike sudden phone calls, emails allow recipients to <span class=\"sub-hl\">read and respond thoughtfully at their own convenience</span> when convenient."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "What are some disadvantages of using emails?",
+                "qType": "Wh-Question: What are some disadvantages of using emails?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Hòm thư ngập tràn thư rác quảng cáo và nguy cơ bị lừa đảo qua mạng):</div>\n                    <div class=\"topic-formula-text\">\n                        → One annoying drawback is receiving <span class=\"formula-bracket-hl\">[rác thư điện tử & lừa đảo]</span>. Sifting through junk mail wastes time and poses <span class=\"formula-bracket-hl\">[rủi ro an ninh mạng]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Phản hồi chậm trễ và dễ gây hiểu lầm do thiếu cảm xúc giọng nói):</div>\n                    <div class=\"topic-formula-text\">\n                        → Another problem is <span class=\"formula-bracket-hl\">[sự chậm trễ phản hồi]</span> for urgent matters. Furthermore, written text can sometimes lead to <span class=\"formula-bracket-hl\">[nguy cơ hiểu lầm cảm xúc]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🗑️ [Thư rác & Lừa đảo bảo mật] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "an overwhelming flood of marketing spam and junk emails",
+                                "vn": "làn sóng thư rác tiếp thị và email quảng cáo tràn ngập"
+                            },
+                            {
+                                "en": "cunning phishing scams and malicious malware links",
+                                "vn": "những chiêu trò lừa đảo tinh vi và đường link độc hại"
+                            },
+                            {
+                                "en": "severe cybersecurity threats to personal identity",
+                                "vn": "các mối đe dọa an ninh mạng nghiêm trọng tới danh tính cá nhân"
+                            },
+                            {
+                                "en": "cluttered inboxes burying critical notifications",
+                                "vn": "hòm thư lộn xộn chôn vùi mất những thông báo quan trọng"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "⏳ [Chậm trễ & Hiểu lầm văn phong] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "unpredictable delayed response times",
+                                "vn": "thời gian phản hồi chậm trễ khó lường trước"
+                            },
+                            {
+                                "en": "awkward emotional misunderstandings and cold tone",
+                                "vn": "những hiểu lầm cảm xúc gượng gạo và giọng điệu lạnh lùng"
+                            },
+                            {
+                                "en": "the total absence of vocal warmth and facial expressions",
+                                "vn": "sự vắng bóng hoàn toàn của sự ấm áp từ giọng nói và biểu cảm gương mặt"
+                            },
+                            {
+                                "en": "ineffective troubleshooting for time-sensitive crises",
+                                "vn": "xử lý khủng hoảng gấp gáp về mặt thời gian kém hiệu quả"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Ngập tràn thư rác quảng cáo và nguy cơ mã độc lừa đảo - 24 từ)",
+                        "text": "One annoying drawback is receiving an overwhelming flood of marketing spam and junk emails. Sifting through junk mail wastes time and poses severe cybersecurity threats to personal identity.",
+                        "formatted": "→ One annoying drawback is receiving <span class=\"sub-hl\">an overwhelming flood of marketing spam and junk emails</span>. Sifting through junk mail wastes time and poses <span class=\"sub-hl\">severe cybersecurity threats to personal identity</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Phản hồi chậm và thiếu biểu cảm dễ gây hiểu lầm giọng điệu - 24 từ)",
+                        "text": "Another problem is unpredictable delayed response times for urgent matters. Furthermore, written text can sometimes lead to awkward emotional misunderstandings and cold tone.",
+                        "formatted": "→ Another problem is <span class=\"sub-hl\">unpredictable delayed response times</span> for urgent matters. Furthermore, written text can sometimes lead to <span class=\"sub-hl\">awkward emotional misunderstandings and cold tone</span>."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 86,
+        "title": "Chủ đề 86: Let's talk about work / study",
+        "topicName": "Work / study",
+        "introText": "Let’s talk about work or study.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "Where do you work or study?",
+                "qType": "Wh-Question: Where do you work or study?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Đang là sinh viên tại trường đại học / cao đẳng):</div>\n                    <div class=\"topic-formula-text\">\n                        → Currently, I am a student majoring in <span class=\"formula-bracket-hl\">[chuyên ngành]</span> at <span class=\"formula-bracket-hl\">[tên trường đại học]</span>. My campus is known for <span class=\"formula-bracket-hl\">[đặc điểm nổi bật của trường]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Đang đi làm tại một công ty / tổ chức cụ thể):</div>\n                    <div class=\"topic-formula-text\">\n                        → I am currently working as <span class=\"formula-bracket-hl\">[vị trí nghề nghiệp]</span> for <span class=\"formula-bracket-hl\">[loại hình doanh nghiệp / công ty]</span> located in <span class=\"formula-bracket-hl\">[địa điểm làm việc]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🎓 [Học tập & Đại học] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "Business Administration and International Trade",
+                                "vn": "Quản trị kinh doanh và Thương mại quốc tế"
+                            },
+                            {
+                                "en": "Information Technology and Software Engineering",
+                                "vn": "Công nghệ thông tin và Kỹ thuật phần mềm"
+                            },
+                            {
+                                "en": "a prestigious national university in Hanoi",
+                                "vn": "một trường đại học quốc gia danh tiếng tại Hà Nội"
+                            },
+                            {
+                                "en": "modern learning facilities and dedicated professors",
+                                "vn": "cơ sở vật chất học tập hiện đại và đội ngũ giáo sư tận tâm"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🏢 [Công việc & Doanh nghiệp] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "a dynamic digital marketing specialist",
+                                "vn": "chuyên viên tiếp thị kỹ thuật số năng động"
+                            },
+                            {
+                                "en": "a junior accountant and financial analyst",
+                                "vn": "kế toán viên sơ cấp và chuyên viên phân tích tài chính"
+                            },
+                            {
+                                "en": "a fast-growing multinational technology corporation",
+                                "vn": "một tập đoàn công nghệ đa quốc gia đang phát triển nhanh chóng"
+                            },
+                            {
+                                "en": "the bustling business district of Ho Chi Minh City",
+                                "vn": "khu thương mại sầm uất của Thành phố Hồ Chí Minh"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Sinh viên Quản trị kinh doanh tại trường đại học danh tiếng - 24 từ)",
+                        "text": "Currently, I am a student majoring in Business Administration and International Trade at a prestigious national university in Hanoi. My campus is known for modern learning facilities and dedicated professors.",
+                        "formatted": "→ Currently, I am a student majoring in <span class=\"sub-hl\">Business Administration and International Trade</span> at <span class=\"sub-hl\">a prestigious national university in Hanoi</span>. My campus is known for <span class=\"sub-hl\">modern learning facilities and dedicated professors</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Chuyên viên marketing tại tập đoàn công nghệ ở TP.HCM - 23 từ)",
+                        "text": "I am currently working as a dynamic digital marketing specialist for a fast-growing multinational technology corporation located in the bustling business district of Ho Chi Minh City.",
+                        "formatted": "→ I am currently working as <span class=\"sub-hl\">a dynamic digital marketing specialist</span> for <span class=\"sub-hl\">a fast-growing multinational technology corporation</span> located in <span class=\"sub-hl\">the bustling business district of Ho Chi Minh City</span>."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "What do you do to study or work more effectively?",
+                "qType": "Wh-Question: What do you do to study or work more effectively?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Áp dụng phương pháp Pomodoro và lập danh sách việc cần làm theo mức độ ưu tiên):</div>\n                    <div class=\"topic-formula-text\">\n                        → To boost my efficiency, I always <span class=\"formula-bracket-hl\">[kỹ thuật quản lý thời gian]</span>. Organizing tasks by priority prevents me from <span class=\"formula-bracket-hl\">[thói quen tiêu cực - V-ing]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Loại bỏ phiền nhiễu từ điện thoại và duy trì không gian làm việc gọn gàng):</div>\n                    <div class=\"topic-formula-text\">\n                        → I make sure to <span class=\"formula-bracket-hl\">[hành động loại bỏ phiền nhiễu - Vo]</span> during working blocks. Keeping a clean desk helps me <span class=\"formula-bracket-hl\">[lợi ích tinh thần - Vo]</span> and avoid mental clutter.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "⏱️ [Kỹ thuật thời gian & Danh sách ưu tiên] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "apply the Pomodoro technique with 25-minute focused sprints",
+                                "vn": "áp dụng kỹ thuật Pomodoro với các chu kỳ tập trung 25 phút"
+                            },
+                            {
+                                "en": "draft a clear daily to-do list with top priorities",
+                                "vn": "soạn danh sách việc cần làm rõ ràng với các mục ưu tiên hàng đầu"
+                            },
+                            {
+                                "en": "procrastinating and feeling overwhelmed by deadlines",
+                                "vn": "trì hoãn và cảm thấy quá tải trước các hạn chót"
+                            },
+                            {
+                                "en": "maintain sustained high energy levels throughout the day",
+                                "vn": "duy trì mức năng lượng cao bền bỉ trong suốt cả ngày"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "📵 [Tránh xao nhãng & Bàn làm việc gọn] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "turn on \"Do Not Disturb\" mode and put away my phone",
+                                "vn": "bật chế độ \"Không làm phiền\" và cất điện thoại đi"
+                            },
+                            {
+                                "en": "block addictive social media websites during work",
+                                "vn": "chặn các trang mạng xã hội gây nghiện trong giờ làm"
+                            },
+                            {
+                                "en": "maintain laser-sharp focus and high cognitive clarity",
+                                "vn": "duy trì sự tập trung sắc bén như tia laser và độ sáng suốt trí não"
+                            },
+                            {
+                                "en": "organize study papers neatly with color tags",
+                                "vn": "sắp xếp giấy tờ học tập ngăn nắp với các nhãn màu"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Áp dụng kỹ thuật Pomodoro và lên danh sách việc ưu tiên - 24 từ)",
+                        "text": "To boost my efficiency, I always apply the Pomodoro technique with 25-minute focused sprints. Organizing tasks by priority prevents me from procrastinating and feeling overwhelmed by deadlines.",
+                        "formatted": "→ To boost my efficiency, I always <span class=\"sub-hl\">apply the Pomodoro technique with 25-minute focused sprints</span>. Organizing tasks by priority prevents me from <span class=\"sub-hl\">procrastinating and feeling overwhelmed by deadlines</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Bật chế độ không làm phiền và giữ bàn làm việc gọn gàng - 24 từ)",
+                        "text": "I make sure to turn on \"Do Not Disturb\" mode and put away my phone during working blocks. Keeping a clean desk helps me maintain laser-sharp focus and high cognitive clarity and avoid mental clutter.",
+                        "formatted": "→ I make sure to <span class=\"sub-hl\">turn on \"Do Not Disturb\" mode and put away my phone</span> during working blocks. Keeping a clean desk helps me <span class=\"sub-hl\">maintain laser-sharp focus and high cognitive clarity</span> and avoid mental clutter."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "Do you think good facilities are important for effective learning or working? Why?",
+                "qType": "Yes/No (Opinion): Do you think good facilities are important for effective learning or working? Why?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Khẳng định RẤT QUAN TRỌNG - Ghế êm, ánh sáng tốt và internet nhanh giúp nâng cao năng suất):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, definitely. Having modern facilities like <span class=\"formula-bracket-hl\">[cơ sở vật chất hiện đại]</span> provides physical comfort, which directly helps <span class=\"formula-bracket-hl\">[nâng cao năng suất - Vo]</span> and prevents fatigue.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Quan trọng nhưng ý chí và tinh thần kỷ luật tự thân mới là yếu tố quyết định):</div>\n                    <div class=\"topic-formula-text\">\n                        → While quality facilities offer great support, I think <span class=\"formula-bracket-hl\">[yếu tố nội tại cốt lõi]</span> is the ultimate factor. A determined person can succeed even in <span class=\"formula-bracket-hl\">[hoàn cảnh thiếu thốn]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🏢 [Cơ sở vật chất hiện đại & Tiện nghi] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "ergonomic chairs, ample natural light, and high-speed Wi-Fi",
+                                "vn": "ghế công thái học, ánh sáng tự nhiên chan hòa và Wi-Fi tốc độ cao"
+                            },
+                            {
+                                "en": "air-conditioned quiet rooms and modern computers",
+                                "vn": "phòng yên tĩnh có điều hòa và dàn máy tính hiện đại"
+                            },
+                            {
+                                "en": "boost mental stamina and spark creative performance",
+                                "vn": "tăng cường thể lực trí não và thắp sáng hiệu suất sáng tạo"
+                            },
+                            {
+                                "en": "prevent back pain and physical strain during long hours",
+                                "vn": "ngăn ngừa đau lưng và căng cơ trong những giờ làm việc kéo dài"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "💪 [Ý chí cá nhân & Động lực nội tại] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "strong self-discipline and relentless determination",
+                                "vn": "tính tự kỷ luật sắt đá và quyết tâm không ngừng nghỉ"
+                            },
+                            {
+                                "en": "passion for learning and personal perseverance",
+                                "vn": "niềm đam mê học hỏi và sự kiên trì của bản thân"
+                            },
+                            {
+                                "en": "humble and challenging study conditions",
+                                "vn": "những điều kiện học tập giản dị và đầy thử thách"
+                            },
+                            {
+                                "en": "overcome physical constraints to achieve excellence",
+                                "vn": "vượt qua những hạn chế về vật chất để đạt được sự xuất sắc"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Ghế công thái học, ánh sáng tốt giúp nâng cao năng suất và tránh đau lưng - 24 từ)",
+                        "text": "Yes, definitely. Having modern facilities like ergonomic chairs, ample natural light, and high-speed Wi-Fi provides physical comfort, which directly helps boost mental stamina and spark creative performance and prevents fatigue.",
+                        "formatted": "→ Yes, definitely. Having modern facilities like <span class=\"sub-hl\">ergonomic chairs, ample natural light, and high-speed Wi-Fi</span> provides physical comfort, which directly helps <span class=\"sub-hl\">boost mental stamina and spark creative performance</span> and prevents fatigue."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Cơ sở tốt rất quý nhưng ý chí kỷ luật tự thân mới là yếu tố quyết định - 25 từ)",
+                        "text": "While quality facilities offer great support, I think strong self-discipline and relentless determination is the ultimate factor. A determined person can succeed even in humble and challenging study conditions.",
+                        "formatted": "→ While quality facilities offer great support, I think <span class=\"sub-hl\">strong self-discipline and relentless determination</span> is the ultimate factor. A determined person can succeed even in <span class=\"sub-hl\">humble and challenging study conditions</span>."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 87,
+        "title": "Chủ đề 87: Let's talk about trips",
+        "topicName": "Trips",
+        "introText": "Let’s talk about trips.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "Do you like going on trips?",
+                "qType": "Yes/No Question: Do you like going on trips?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Trả lời CÓ - Rất thích vì giúp mở rộng tầm mắt và xua tan căng thẳng):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, absolutely. I am passionate about traveling because it allows me to <span class=\"formula-bracket-hl\">[mở rộng tầm mắt - Vo]</span> and <span class=\"formula-bracket-hl\">[giải tỏa tinh thần - Vo]</span> away from the daily grind.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Trả lời KHÔNG THƯỜNG XUYÊN - Say xe và thích dành thời gian ở nhà hơn):</div>\n                    <div class=\"topic-formula-text\">\n                        → Honestly, not very often. I easily suffer from <span class=\"formula-bracket-hl\">[triệu chứng say xe]</span>, so long journeys can be exhausting. I prefer <span class=\"formula-bracket-hl\">[hoạt động tại nhà]</span> during my free days.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🌍 [Đam mê xê dịch & Mở rộng tầm nhìn] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "broaden my horizons and explore uncharted cultures",
+                                "vn": "mở rộng tầm mắt và khám phá những nền văn hóa mới lạ"
+                            },
+                            {
+                                "en": "unwind, de-stress, and break out of daily monotony",
+                                "vn": "thư giãn, xả stress và thoát khỏi sự đơn điệu hàng ngày"
+                            },
+                            {
+                                "en": "create unforgettable bonding memories with companions",
+                                "vn": "tạo nên những kỷ niệm gắn kết không thể nào quên cùng bạn đồng hành"
+                            },
+                            {
+                                "en": "recharge mental inspiration for new creative goals",
+                                "vn": "nạp lại nguồn cảm hứng tinh thần cho các mục tiêu sáng tạo mới"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🚗 [Say xe & Thích ở nhà] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "severe motion sickness and dizziness in cars",
+                                "vn": "chứng say xe nghiêm trọng và chóng mặt khi đi ô tô"
+                            },
+                            {
+                                "en": "packing luggage and fighting holiday crowds",
+                                "vn": "gói ghém hành lý và chen chúc đám đông ngày lễ"
+                            },
+                            {
+                                "en": "peaceful staycations in my cozy room",
+                                "vn": "những kỳ nghỉ tại nhà thanh bình trong căn phòng ấm cúng"
+                            },
+                            {
+                                "en": "enjoying leisurely hobbies without travel fatigue",
+                                "vn": "thưởng thức những sở thích thong thả mà không bị mệt mỏi vì di chuyển"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Đam mê đi du lịch để mở rộng tầm mắt và xả stress - 24 từ)",
+                        "text": "Yes, absolutely. I am passionate about traveling because it allows me to broaden my horizons and explore uncharted cultures and unwind, de-stress, and break out of daily monotony away from the daily grind.",
+                        "formatted": "→ Yes, absolutely. I am passionate about traveling because it allows me to <span class=\"sub-hl\">broaden my horizons and explore uncharted cultures</span> and <span class=\"sub-hl\">unwind, de-stress, and break out of daily monotony</span> away from the daily grind."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Dễ say xe mệt mỏi, thích nghỉ ngơi tại nhà ấm cúng - 23 từ)",
+                        "text": "Honestly, not very often. I easily suffer from severe motion sickness and dizziness in cars, so long journeys can be exhausting. I prefer peaceful staycations in my cozy room during my free days.",
+                        "formatted": "→ Honestly, not very often. I easily suffer from <span class=\"sub-hl\">severe motion sickness and dizziness in cars</span>, so long journeys can be exhausting. I prefer <span class=\"sub-hl\">peaceful staycations in my cozy room</span> during my free days."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "Do you have any plans for your next trip?",
+                "qType": "Future Plans: Do you have any plans for your next trip?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Kế hoạch đi nghỉ dưỡng biển hoặc săn mây trên núi vào mùa hè/thu này):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, I do. I am planning a trip to <span class=\"formula-bracket-hl\">[điểm đến dự kiến]</span> with <span class=\"formula-bracket-hl\">[bạn đồng hành]</span> this upcoming <span class=\"formula-bracket-hl\">[thời điểm]</span>. We intend to <span class=\"formula-bracket-hl\">[hoạt động dự định - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Chưa có kế hoạch cụ thể do lịch học/làm bận rộn, chỉ mong một chuyến đi ngắn):</div>\n                    <div class=\"topic-formula-text\">\n                        → At the moment, I don’t have a concrete plan due to <span class=\"formula-bracket-hl\">[lý do bận rộn]</span>. However, if time permits, I would love to take <span class=\"formula-bracket-hl\">[chuyến dã ngoại ngắn]</span> to recharge.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🏖️ [Lên kế hoạch du lịch cụ thể] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "the breezy coastal paradise of Phu Quoc Island",
+                                "vn": "thiên đường ven biển lộng gió đảo Phú Quốc"
+                            },
+                            {
+                                "en": "the foggy mountain hills of Sapa to hunt clouds",
+                                "vn": "những ngọn đồi núi mù sương ở Sa Pa để săn mây"
+                            },
+                            {
+                                "en": "my close circle of university friends",
+                                "vn": "nhóm bạn thân thời đại học của tôi"
+                            },
+                            {
+                                "en": "stay in a beachside bungalow and taste seafood",
+                                "vn": "ở trong căn bungalow ven biển và thưởng thức hải sản"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "⏳ [Chưa có kế hoạch & Chuyến đi ngắn] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "a packed work schedule and pending project deadlines",
+                                "vn": "lịch làm việc dày đặc và hạn chót dự án còn tồn đọng"
+                            },
+                            {
+                                "en": "a spontaneous two-day weekend camping getaway",
+                                "vn": "chuyến đi cắm trại ngẫu hứng 2 ngày cuối tuần"
+                            },
+                            {
+                                "en": "a quiet retreat in the green outskirts of Hanoi",
+                                "vn": "một chuyến nghỉ dưỡng yên bình ở ngoại ô xanh mát của Hà Nội"
+                            },
+                            {
+                                "en": "breathe fresh suburban air and clear my head",
+                                "vn": "hít thở không khí ngoại ô trong lành và giải tỏa đầu óc"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Lên kế hoạch đi Phú Quốc ở bungalow và ăn hải sản - 25 từ)",
+                        "text": "Yes, I do. I am planning a trip to the breezy coastal paradise of Phu Quoc Island with my close circle of university friends this upcoming summer. We intend to stay in a beachside bungalow and taste seafood.",
+                        "formatted": "→ Yes, I do. I am planning a trip to <span class=\"sub-hl\">the breezy coastal paradise of Phu Quoc Island</span> with <span class=\"sub-hl\">my close circle of university friends</span> this upcoming summer. We intend to <span class=\"sub-hl\">stay in a beachside bungalow and taste seafood</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Chưa có kế hoạch vì bận việc, hy vọng đi cắm trại 2 ngày cuối tuần - 24 từ)",
+                        "text": "At the moment, I don’t have a concrete plan due to a packed work schedule and pending project deadlines. However, if time permits, I would love to take a spontaneous two-day weekend camping getaway to recharge.",
+                        "formatted": "→ At the moment, I don’t have a concrete plan due to <span class=\"sub-hl\">a packed work schedule and pending project deadlines</span>. However, if time permits, I would love to take <span class=\"sub-hl\">a spontaneous two-day weekend camping getaway</span> to recharge."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "What kind of trips do you enjoy the most?",
+                "qType": "Preference: What kind of trips do you enjoy the most?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Thích du lịch sinh thái, khám phá thiên nhiên và trải nghiệm mạo hiểm nhẹ nhàng):</div>\n                    <div class=\"topic-formula-text\">\n                        → I am most fond of <span class=\"formula-bracket-hl\">[thể loại du lịch thiên nhiên]</span>. Being in nature helps me <span class=\"formula-bracket-hl\">[cảm giác sảng khoái - Vo]</span> and discover untouched beauty.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Thích nghỉ dưỡng tiện nghi tại các resort ven biển yên bình để thư giãn hoàn toàn):</div>\n                    <div class=\"topic-formula-text\">\n                        → My ultimate favorite is <span class=\"formula-bracket-hl\">[du lịch nghỉ dưỡng resort]</span>. I appreciate having <span class=\"formula-bracket-hl\">[tiện ích nghỉ dưỡng]</span> where I can unwind without doing any tedious planning.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🌲 [Du lịch sinh thái & Thiên nhiên] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "eco-tourism and mountain trekking adventures",
+                                "vn": "du lịch sinh thái và những chuyến phiêu lưu trekking đường rừng"
+                            },
+                            {
+                                "en": "road trips on scenic coastal winding passes",
+                                "vn": "những chuyến phượt bằng xe trên các cung đèo ven biển đẹp như tranh"
+                            },
+                            {
+                                "en": "disconnect completely from digital screens and city smog",
+                                "vn": "ngắt kết nối hoàn toàn khỏi màn hình điện tử và khói bụi thành phố"
+                            },
+                            {
+                                "en": "feel the raw majestic power of Mother Nature",
+                                "vn": "cảm nhận vẻ đẹp hùng vĩ nguyên sơ của Mẹ Thiên Nhiên"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🏖️ [Nghỉ dưỡng sang trọng & Thảnh thơi] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "luxury beach resort retreats with seaside spas",
+                                "vn": "những kỳ nghỉ dưỡng resort biển sang trọng có dịch vụ spa ven biển"
+                            },
+                            {
+                                "en": "all-inclusive amenities, infinity pools, and gourmet dining",
+                                "vn": "tiện ích trọn gói, hồ bơi vô cực và ẩm thực cao cấp"
+                            },
+                            {
+                                "en": "lounge on sunbeds listening to soft ocean waves",
+                                "vn": "nằm thư thả trên ghế tắm nắng lắng nghe sóng vỗ êm đềm"
+                            },
+                            {
+                                "en": "pamper myself after months of exhausting hard work",
+                                "vn": "nuông chiều bản thân sau nhiều tháng làm việc vất vả"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Thích du lịch sinh thái để ngắt kết nối màn hình và cảm nhận thiên nhiên - 24 từ)",
+                        "text": "I am most fond of eco-tourism and mountain trekking adventures. Being in nature helps me disconnect completely from digital screens and city smog and discover untouched beauty.",
+                        "formatted": "→ I am most fond of <span class=\"sub-hl\">eco-tourism and mountain trekking adventures</span>. Being in nature helps me <span class=\"sub-hl\">disconnect completely from digital screens and city smog</span> and discover untouched beauty."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Thích nghỉ dưỡng resort với hồ bơi vô cực để nuông chiều bản thân - 23 từ)",
+                        "text": "My ultimate favorite is luxury beach resort retreats with seaside spas. I appreciate having all-inclusive amenities, infinity pools, and gourmet dining where I can unwind without doing any tedious planning.",
+                        "formatted": "→ My ultimate favorite is <span class=\"sub-hl\">luxury beach resort retreats with seaside spas</span>. I appreciate having <span class=\"sub-hl\">all-inclusive amenities, infinity pools, and gourmet dining</span> where I can unwind without doing any tedious planning."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 88,
+        "title": "Chủ đề 88: Let's talk about hobbies",
+        "topicName": "Hobbies",
+        "introText": "Let’s talk about hobbies.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "Have you started any new hobbies recently?",
+                "qType": "Present Perfect: Have you started any new hobbies recently?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Mới bắt đầu tập yoga, chạy bộ hoặc làm bánh tại nhà gần đây):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, I have taken up <span class=\"formula-bracket-hl\">[sở thích mới - V-ing]</span> just a few months ago. It has brought <span class=\"formula-bracket-hl\">[lợi ích thể chất & tinh thần]</span> into my daily routine.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Mới bắt đầu học nhạc cụ như guitar/piano hoặc vẽ tranh số):</div>\n                    <div class=\"topic-formula-text\">\n                        → Recently, I began learning <span class=\"formula-bracket-hl\">[môn nghệ thuật mới]</span>. Practicing every evening allows me to <span class=\"formula-bracket-hl\">[lợi ích sáng tạo - Vo]</span> in an enjoyable way.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🧘 [Thể thao & Nấu ăn] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "morning yoga and mindfulness meditation",
+                                "vn": "tập yoga buổi sáng và thiền chánh niệm"
+                            },
+                            {
+                                "en": "home baking and artisanal bread making",
+                                "vn": "làm bánh tại nhà và làm bánh mì thủ công"
+                            },
+                            {
+                                "en": "tremendous calmness and physical flexibility",
+                                "vn": "sự bình tĩnh to lớn và độ dẻo dai thể chất"
+                            },
+                            {
+                                "en": "a refreshing burst of vitality each day",
+                                "vn": "nguồn sinh lực tươi mới mỗi ngày"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🎸 [Nhạc cụ & Nghệ thuật] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "how to play acoustic guitar chords",
+                                "vn": "cách bấm các hợp âm đàn guitar acoustic"
+                            },
+                            {
+                                "en": "digital watercolor painting on my tablet",
+                                "vn": "vẽ tranh màu nước kỹ thuật số trên máy tính bảng"
+                            },
+                            {
+                                "en": "channel my creative imagination and relieve tension",
+                                "vn": "thỏa sức tưởng tượng sáng tạo và giải tỏa căng thẳng"
+                            },
+                            {
+                                "en": "express inner feelings through melodious tunes",
+                                "vn": "thể hiện cảm xúc bên trong qua những giai điệu du dương"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Tập yoga sáng và thiền giúp tâm trí bình tĩnh, cơ thể dẻo dai - 24 từ)",
+                        "text": "Yes, I have taken up morning yoga and mindfulness meditation just a few months ago. It has brought tremendous calmness and physical flexibility into my daily routine.",
+                        "formatted": "→ Yes, I have taken up <span class=\"sub-hl\">morning yoga and mindfulness meditation</span> just a few months ago. It has brought <span class=\"sub-hl\">tremendous calmness and physical flexibility</span> into my daily routine."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Tập đàn guitar acoustic mỗi tối giúp giải tỏa căng thẳng - 24 từ)",
+                        "text": "Recently, I began learning how to play acoustic guitar chords. Practicing every evening allows me to channel my creative imagination and relieve tension in an enjoyable way.",
+                        "formatted": "→ Recently, I began learning <span class=\"sub-hl\">how to play acoustic guitar chords</span>. Practicing every evening allows me to <span class=\"sub-hl\">channel my creative imagination and relieve tension</span> in an enjoyable way."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "Do you think this hobby will become part of your daily routine?",
+                "qType": "Future Prediction: Do you think this hobby will become part of your daily routine?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Khẳng định CHẮC CHẮN SẼ DUY TRÌ - Đem lại lợi ích lớn và đã hình thành thói quen tốt):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, I certainly believe so. Because it brings <span class=\"formula-bracket-hl\">[lợi ích nổi bật]</span>, I have already integrated it into my schedule and plan to <span class=\"formula-bracket-hl\">[cam kết duy trì - Vo]</span> long-term.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Có thể chỉ là sở thích nhất thời, khó duy trì hàng ngày khi công việc bận rộn hơn):</div>\n                    <div class=\"topic-formula-text\">\n                        → To be realistic, perhaps not on a daily basis. Once my <span class=\"formula-bracket-hl\">[áp lực công việc/học tập]</span> increases, I might only do it <span class=\"formula-bracket-hl\">[tần suất cuối tuần]</span> as a casual pastime.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "⭐ [Duy trì thành thói quen lâu dài] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "immense health benefits and mental clarity",
+                                "vn": "những lợi ích sức khỏe to lớn và sự sáng suốt tinh thần"
+                            },
+                            {
+                                "en": "stick with this healthy habit consistently",
+                                "vn": "gắn bó kiên trì với thói quen lành mạnh này"
+                            },
+                            {
+                                "en": "allocate thirty minutes every single morning",
+                                "vn": "dành riêng 30 phút mỗi buổi sáng"
+                            },
+                            {
+                                "en": "an essential self-care ritual I cannot skip",
+                                "vn": "một nghi thức chăm sóc bản thân thiết yếu không thể bỏ lỡ"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "⏳ [Khó duy trì hàng ngày] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "academic workload and corporate deadlines",
+                                "vn": "khối lượng học tập và hạn chót công ty"
+                            },
+                            {
+                                "en": "on lazy weekends or during public holidays",
+                                "vn": "vào những dịp cuối tuần thảnh thơi hoặc kỳ nghỉ lễ"
+                            },
+                            {
+                                "en": "as a casual leisure pastime without pressure",
+                                "vn": "như một thú tiêu khiển giải trí nhẹ nhàng không áp lực"
+                            },
+                            {
+                                "en": "keep realistic expectations amidst busy life",
+                                "vn": "giữ những kỳ vọng thực tế giữa guồng quay cuộc sống bận rộn"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Chắc chắn duy trì vì lợi ích sức khỏe và sáng suốt trí óc - 24 từ)",
+                        "text": "Yes, I certainly believe so. Because it brings immense health benefits and mental clarity, I have already integrated it into my schedule and plan to stick with this healthy habit consistently long-term.",
+                        "formatted": "→ Yes, I certainly believe so. Because it brings <span class=\"sub-hl\">immense health benefits and mental clarity</span>, I have already integrated it into my schedule and plan to <span class=\"sub-hl\">stick with this healthy habit consistently</span> long-term."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Khó tập hàng ngày khi bận việc, chỉ làm vào dịp cuối tuần thong thả - 25 từ)",
+                        "text": "To be realistic, perhaps not on a daily basis. Once my academic workload and corporate deadlines increases, I might only do it on lazy weekends or during public holidays as a casual pastime.",
+                        "formatted": "→ To be realistic, perhaps not on a daily basis. Once my <span class=\"sub-hl\">academic workload and corporate deadlines</span> increases, I might only do it <span class=\"sub-hl\">on lazy weekends or during public holidays</span> as a casual pastime."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "Would you recommend this hobby to other people? Why or why not?",
+                "qType": "Recommendation + Reason: Would you recommend this hobby to other people? Why or why not?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Rất khuyên mọi người nên thử - Dễ bắt đầu, ít tốn kém và mang lại sự an yên):</div>\n                    <div class=\"topic-formula-text\">\n                        → Absolutely, I would strongly recommend it to everyone. It is <span class=\"formula-bracket-hl\">[tính chất dễ tiếp cận & tiết kiệm]</span>, making it a great way to <span class=\"formula-bracket-hl\">[lợi ích chia sẻ - Vo]</span> in our hectic modern life.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Khuyên nhưng tùy thuộc vào sở thích và sự kiên nhẫn của mỗi cá nhân):</div>\n                    <div class=\"topic-formula-text\">\n                        → I would recommend it, but it depends on <span class=\"formula-bracket-hl\">[yếu tố kiên nhẫn của người tập]</span>. This pursuit requires <span class=\"formula-bracket-hl\">[đặc tính đòi hỏi]</span>, so it may not appeal to impatient folks.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🌟 [Rất khuyến khích & Dễ tiếp cận] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "very easy to begin and remarkably budget-friendly",
+                                "vn": "rất dễ bắt đầu và vô cùng tiết kiệm ngân sách"
+                            },
+                            {
+                                "en": "unwind, lower anxiety, and find inner peace",
+                                "vn": "thư giãn, giảm bớt lo âu và tìm thấy sự bình an nội tâm"
+                            },
+                            {
+                                "en": "enhance physical well-being without costly gym fees",
+                                "vn": "nâng cao sức khỏe thể chất mà không tốn phí tập gym đắt đỏ"
+                            },
+                            {
+                                "en": "suitable for people of all ages and backgrounds",
+                                "vn": "phù hợp cho mọi người ở mọi độ tuổi và hoàn cảnh"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🎯 [Đòi hỏi kiên nhẫn & Chọn lọc] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "a person’s genuine interest and patience level",
+                                "vn": "sự hứng thú thực sự và mức độ kiên nhẫn của một người"
+                            },
+                            {
+                                "en": "months of consistent practice and finger pain",
+                                "vn": "nhiều tháng luyện tập kiên trì và đau đầu ngón tay"
+                            },
+                            {
+                                "en": "high attention to detail and precision",
+                                "vn": "sự chú ý cao độ đến từng chi tiết và độ chính xác"
+                            },
+                            {
+                                "en": "frustrate those who seek instant gratification",
+                                "vn": "gây nản lòng cho những ai tìm kiếm sự thỏa mãn tức thì"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Khuyên mọi người nên thử vì dễ bắt đầu và giúp giảm lo âu - 24 từ)",
+                        "text": "Absolutely, I would strongly recommend it to everyone. It is very easy to begin and remarkably budget-friendly, making it a great way to unwind, lower anxiety, and find inner peace in our hectic modern life.",
+                        "formatted": "→ Absolutely, I would strongly recommend it to everyone. It is <span class=\"sub-hl\">very easy to begin and remarkably budget-friendly</span>, making it a great way to <span class=\"sub-hl\">unwind, lower anxiety, and find inner peace</span> in our hectic modern life."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Khuyên nhưng đòi hỏi nhiều tháng kiên trì nên không hợp người thiếu kiên nhẫn - 24 từ)",
+                        "text": "I would recommend it, but it depends on a person’s genuine interest and patience level. This pursuit requires months of consistent practice and finger pain, so it may not appeal to impatient folks.",
+                        "formatted": "→ I would recommend it, but it depends on <span class=\"sub-hl\">a person’s genuine interest and patience level</span>. This pursuit requires <span class=\"sub-hl\">months of consistent practice and finger pain</span>, so it may not appeal to impatient folks."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 89,
+        "title": "Chủ đề 89: Let's talk about going to restaurants",
+        "topicName": "Going to restaurants",
+        "introText": "Let’s talk about going to restaurants.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "How often do you go to restaurants?",
+                "qType": "Wh-Question (Frequency): How often do you go to restaurants?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Đi ăn tiệm vào dịp cuối tuần cùng gia đình hoặc bạn bè):</div>\n                    <div class=\"topic-formula-text\">\n                        → I eat out at restaurants <span class=\"formula-bracket-hl\">[tần suất đi nhà hàng]</span>, usually on Saturday or Sunday evenings. It gives my family a break from <span class=\"formula-bracket-hl\">[việc bếp núc - V-ing]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Chỉ đi vào những dịp kỷ niệm đặc biệt hoặc tiệc liên hoan công ty):</div>\n                    <div class=\"topic-formula-text\">\n                        → Not very often, perhaps <span class=\"formula-bracket-hl\">[tần suất thưa thớt]</span>. I mostly dine out for <span class=\"formula-bracket-hl\">[dịp đặc biệt]</span> because cooking at home is much more economical.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🍽️ [Đi cuối tuần cùng gia đình] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "about once or twice a week",
+                                "vn": "khoảng một hoặc hai lần một tuần"
+                            },
+                            {
+                                "en": "cooking and doing endless dirty dishes",
+                                "vn": "nấu nướng và rửa bát đĩa bẩn không hồi kết"
+                            },
+                            {
+                                "en": "enjoying delicious food and lively restaurant atmosphere",
+                                "vn": "thưởng thức đồ ăn ngon và không khí nhà hàng sôi động"
+                            },
+                            {
+                                "en": "trying new regional cuisines together",
+                                "vn": "cùng nhau thưởng thức những phong cách ẩm thực vùng miền mới"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🎉 [Dịp đặc biệt & Tiết kiệm] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "once a month or on special celebrations",
+                                "vn": "mỗi tháng một lần hoặc vào các dịp lễ kỷ niệm đặc biệt"
+                            },
+                            {
+                                "en": "family birthdays and corporate team banquets",
+                                "vn": "sinh nhật người nhà và tiệc liên hoan toàn đội ngũ công ty"
+                            },
+                            {
+                                "en": "save my monthly food budget significantly",
+                                "vn": "tiết kiệm đáng kể ngân sách ăn uống hàng tháng của tôi"
+                            },
+                            {
+                                "en": "savor clean home-cooked family dinners",
+                                "vn": "thưởng thức những bữa tối cơm nhà sạch sẽ cùng gia đình"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Đi ăn 1-2 lần mỗi tuần để gia đình khỏi phải nấu nướng rửa bát - 24 từ)",
+                        "text": "I eat out at restaurants about once or twice a week, usually on Saturday or Sunday evenings. It gives my family a break from cooking and doing endless dirty dishes.",
+                        "formatted": "→ I eat out at restaurants <span class=\"sub-hl\">about once or twice a week</span>, usually on Saturday or Sunday evenings. It gives my family a break from <span class=\"sub-hl\">cooking and doing endless dirty dishes</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Đi mỗi tháng một lần vào sinh nhật gia đình hoặc liên hoan công ty - 24 từ)",
+                        "text": "Not very often, perhaps once a month or on special celebrations. I mostly dine out for family birthdays and corporate team banquets because cooking at home is much more economical.",
+                        "formatted": "→ Not very often, perhaps <span class=\"sub-hl\">once a month or on special celebrations</span>. I mostly dine out for <span class=\"sub-hl\">family birthdays and corporate team banquets</span> because cooking at home is much more economical."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "How do you feel when you eat at a restaurant?",
+                "qType": "Emotion/Feeling: How do you feel when you eat at a restaurant?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Cảm thấy thư thái, được phục vụ chu đáo và tận hưởng món ăn ngon):</div>\n                    <div class=\"topic-formula-text\">\n                        → I usually feel very <span class=\"formula-bracket-hl\">[cảm xúc thoải mái]</span>. Being served by polite staff in a cozy ambiance makes the meal <span class=\"formula-bracket-hl\">[cảm giác thỏa mãn]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Cảm thấy phấn khích khi thử các món ăn độc lạ, nhưng đôi khi thấy ồn ào):</div>\n                    <div class=\"topic-formula-text\">\n                        → Most of the time I feel <span class=\"formula-bracket-hl\">[cảm giác háo hức]</span> to taste chef-prepared dishes. However, during rush hours, crowded eateries can feel <span class=\"formula-bracket-hl\">[cảm giác hơi ồn ào]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "✨ [Thư thái & Hài lòng] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "relaxed, pampered, and truly contented",
+                                "vn": "thư thái, được chăm sóc chu đáo và thực sự hài lòng"
+                            },
+                            {
+                                "en": "a delightfully pleasurable dining experience",
+                                "vn": "một trải nghiệm ăn uống vô cùng thích thú"
+                            },
+                            {
+                                "en": "escape household chores and cooking oil smells",
+                                "vn": "thoát khỏi việc nhà và mùi dầu mỡ nấu nướng"
+                            },
+                            {
+                                "en": "savor finely presented gourmet delicacies",
+                                "vn": "thưởng thức những món ngon bày biện tinh tế đẹp mắt"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "😋 [Hào hứng & Đôi chút ồn ào] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "eager and curious about authentic foreign cuisines",
+                                "vn": "háo hức và tò mò về ẩm thực nước ngoài chính thống"
+                            },
+                            {
+                                "en": "slightly overwhelmed by loud chatting and clattering cutlery",
+                                "vn": "hơi choáng ngợp trước tiếng trò chuyện ồn ào và tiếng dao dĩa leng keng"
+                            },
+                            {
+                                "en": "delighted by extraordinary culinary flavors",
+                                "vn": "thích thú trước những hương vị ẩm thực phi thường"
+                            },
+                            {
+                                "en": "eager to discover signature chef specialties",
+                                "vn": "nóng lòng khám phá những món ăn đặc sản của đầu bếp"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Cảm thấy thư thái, được nuông chiều và thưởng thức món ăn tinh tế - 23 từ)",
+                        "text": "I usually feel very relaxed, pampered, and truly contented. Being served by polite staff in a cozy ambiance makes the meal a delightfully pleasurable dining experience.",
+                        "formatted": "→ I usually feel very <span class=\"sub-hl\">relaxed, pampered, and truly contented</span>. Being served by polite staff in a cozy ambiance makes the meal <span class=\"sub-hl\">a delightfully pleasurable dining experience</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Hào hứng thử ẩm thực nước ngoài nhưng hơi ngột ngạt vì tiếng ồn - 24 từ)",
+                        "text": "Most of the time I feel eager and curious about authentic foreign cuisines to taste chef-prepared dishes. However, during rush hours, crowded eateries can feel slightly overwhelmed by loud chatting and clattering cutlery.",
+                        "formatted": "→ Most of the time I feel <span class=\"sub-hl\">eager and curious about authentic foreign cuisines</span> to taste chef-prepared dishes. However, during rush hours, crowded eateries can feel <span class=\"sub-hl\">slightly overwhelmed by loud chatting and clattering cutlery</span>."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "Do you prefer eating at restaurants or eating at home? Why?",
+                "qType": "Preference + Reason: Do you prefer eating at restaurants or eating at home? Why?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Thích ĂN CƠM NHÀ - Vệ sinh an toàn, tiết kiệm và ấm cúng bên người thân):</div>\n                    <div class=\"topic-formula-text\">\n                        → I strongly favor home-cooked meals. Cooking at home is <span class=\"formula-bracket-hl\">[ưu điểm cơm nhà 1]</span> and allows my family to <span class=\"formula-bracket-hl\">[ưu điểm tình cảm gia đình - Vo]</span> in total comfort.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Thích ĂN NHÀ HÀNG - Đỡ mất công nấu nướng, dọn dẹp và được thưởng thức nhiều món mới):</div>\n                    <div class=\"topic-formula-text\">\n                        → I lean towards restaurant dining. It saves tremendous <span class=\"formula-bracket-hl\">[tiết kiệm công sức dọn dẹp]</span> and offers <span class=\"formula-bracket-hl\">[sự đa dạng món ăn]</span> that is hard to prepare at home.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🏡 [Cơm nhà ấm cúng & Tiết kiệm] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "far healthier, cleaner, and more economical",
+                                "vn": "lành mạnh hơn nhiều, sạch sẽ và tiết kiệm hơn"
+                            },
+                            {
+                                "en": "tailor flavors and ingredients to personal health needs",
+                                "vn": "nêm nếm hương vị và nguyên liệu theo nhu cầu sức khỏe cá nhân"
+                            },
+                            {
+                                "en": "bond over heartfelt conversations without rush",
+                                "vn": "gắn kết qua những cuộc trò chuyện chân thành mà không phải vội vã"
+                            },
+                            {
+                                "en": "cherish warm traditional family intimacy",
+                                "vn": "trân trọng sự thân mật gia đình truyền thống ấm áp"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🍴 [Ăn nhà hàng tiện lợi & Đa dạng] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "cooking preparation time and messy kitchen cleanup",
+                                "vn": "thời gian chuẩn bị nấu nướng và dọn dẹp bãi chiến trường nhà bếp"
+                            },
+                            {
+                                "en": "an expansive menu of international cuisines",
+                                "vn": "một thực đơn phong phú các món ăn ẩm thực quốc tế"
+                            },
+                            {
+                                "en": "enjoy professional food presentation and service",
+                                "vn": "tận hưởng cách trình bày món ăn chuyên nghiệp và cung cách phục vụ"
+                            },
+                            {
+                                "en": "celebrate weekends in an elegant festive atmosphere",
+                                "vn": "chúc mừng dịp cuối tuần trong một không gian lễ hội thanh lịch"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Thích cơm nhà vì lành mạnh, sạch sẽ, tiết kiệm và ấm cúng - 24 từ)",
+                        "text": "I strongly favor home-cooked meals. Cooking at home is far healthier, cleaner, and more economical and allows my family to bond over heartfelt conversations without rush in total comfort.",
+                        "formatted": "→ I strongly favor home-cooked meals. Cooking at home is <span class=\"sub-hl\">far healthier, cleaner, and more economical</span> and allows my family to <span class=\"sub-hl\">bond over heartfelt conversations without rush</span> in total comfort."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Thích ăn tiệm để đỡ phải rửa bát và thử nhiều món quốc tế - 24 từ)",
+                        "text": "I lean towards restaurant dining. It saves tremendous cooking preparation time and messy kitchen cleanup and offers an expansive menu of international cuisines that is hard to prepare at home.",
+                        "formatted": "→ I lean towards restaurant dining. It saves tremendous <span class=\"sub-hl\">cooking preparation time and messy kitchen cleanup</span> and offers <span class=\"sub-hl\">an expansive menu of international cuisines</span> that is hard to prepare at home."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 90,
+        "title": "Chủ đề 90: Let's talk about the Internet",
+        "topicName": "The Internet",
+        "introText": "Let’s talk about the Internet.",
+        "questions": [
+            {
+                "qNum": 1,
+                "question": "How often do you use the Internet?",
+                "qType": "Wh-Question (Frequency): How often do you use the Internet?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Sử dụng liên tục mỗi ngày cho công việc, học tập và liên lạc):</div>\n                    <div class=\"topic-formula-text\">\n                        → Practically every waking hour. I am connected to the Internet <span class=\"formula-bracket-hl\">[tần suất kết nối]</span>. It has become an indispensable utility for my <span class=\"formula-bracket-hl\">[mục đích học tập, làm việc & giải trí]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Sử dụng điều độ vài tiếng mỗi ngày và cố gắng hạn chế để bảo vệ mắt):</div>\n                    <div class=\"topic-formula-text\">\n                        → I spend roughly <span class=\"formula-bracket-hl\">[khoảng thời gian online]</span> every day on the Internet. I intentionally limit my screen time to <span class=\"formula-bracket-hl\">[lợi ích bảo vệ sức khỏe - Vo]</span>.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "🌐 [Kết nối liên tục hàng ngày] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "on a non-stop daily basis from morning till night",
+                                "vn": "liên tục hàng ngày từ sáng sớm đến đêm muộn"
+                            },
+                            {
+                                "en": "academic research, remote work, and instant messaging",
+                                "vn": "nghiên cứu học tập, làm việc từ xa và nhắn tin tức thì"
+                            },
+                            {
+                                "en": "stream educational lectures and listen to music",
+                                "vn": "nghe các bài giảng giáo dục và nghe nhạc"
+                            },
+                            {
+                                "en": "stay up-to-date with breaking worldwide news",
+                                "vn": "cập nhật những tin tức nóng hổi trên toàn thế giới"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "⏱️ [Sử dụng điều độ & Giới hạn] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "around three to four hours for essential duties",
+                                "vn": "khoảng 3 đến 4 tiếng cho các nhiệm vụ thiết yếu"
+                            },
+                            {
+                                "en": "prevent digital eye strain and chronic headaches",
+                                "vn": "ngăn ngừa chứng mỏi mắt kỹ thuật số và đau đầu kinh niên"
+                            },
+                            {
+                                "en": "maintain healthy face-to-face social connections",
+                                "vn": "duy trì các mối quan hệ xã hội gặp gỡ trực tiếp lành mạnh"
+                            },
+                            {
+                                "en": "avoid doomscrolling on addictive social feeds",
+                                "vn": "tránh lướt mạng vô định trên các bảng tin gây nghiện"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Dùng mạng liên tục mỗi ngày để học tập, làm việc và cập nhật tin tức - 24 từ)",
+                        "text": "Practically every waking hour. I am connected to the Internet on a non-stop daily basis from morning till night. It has become an indispensable utility for my academic research, remote work, and instant messaging.",
+                        "formatted": "→ Practically every waking hour. I am connected to the Internet <span class=\"sub-hl\">on a non-stop daily basis from morning till night</span>. It has become an indispensable utility for my <span class=\"sub-hl\">academic research, remote work, and instant messaging</span>."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Dùng 3-4 tiếng mỗi ngày và hạn chế để tránh mỏi mắt đau đầu - 23 từ)",
+                        "text": "I spend roughly around three to four hours for essential duties every day on the Internet. I intentionally limit my screen time to prevent digital eye strain and chronic headaches.",
+                        "formatted": "→ I spend roughly <span class=\"sub-hl\">around three to four hours for essential duties</span> every day on the Internet. I intentionally limit my screen time to <span class=\"sub-hl\">prevent digital eye strain and chronic headaches</span>."
+                    }
+                ]
+            },
+            {
+                "qNum": 2,
+                "question": "What do you usually do when you go online?",
+                "qType": "Wh-Question: What do you usually do when you go online?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Học tập, tra cứu tài liệu và hoàn thành công việc):</div>\n                    <div class=\"topic-formula-text\">\n                        → Most of my time online is spent on <span class=\"formula-bracket-hl\">[hoạt động học tập/làm việc - V-ing]</span>. In addition, I use search engines to <span class=\"formula-bracket-hl\">[tìm kiếm thông tin - Vo]</span> quickly.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Giải trí, xem video YouTube, nghe nhạc và lướt mạng xã hội):</div>\n                    <div class=\"topic-formula-text\">\n                        → I mostly go online for leisure like <span class=\"formula-bracket-hl\">[hoạt động giải trí 1 - V-ing]</span> and <span class=\"formula-bracket-hl\">[hoạt động 2 - V-ing]</span>. It is a fantastic way to unwind after hours of hard study.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "📚 [Học tập & Tra cứu tri thức] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "attending online webinars and reading academic journal PDFs",
+                                "vn": "tham dự hội thảo trực tuyến và đọc các tài liệu nghiên cứu PDF"
+                            },
+                            {
+                                "en": "collaborating on Google Docs and sharing project files",
+                                "vn": "cộng tác trên Google Docs và chia sẻ các tệp dự án"
+                            },
+                            {
+                                "en": "look up unfamiliar English idioms and vocabulary",
+                                "vn": "tra cứu những thành ngữ và từ vựng tiếng Anh lạ lẫm"
+                            },
+                            {
+                                "en": "find reliable statistics for university presentations",
+                                "vn": "tìm kiếm số liệu thống kê đáng tin cậy cho bài thuyết trình đại học"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "🎬 [Giải trí & Mạng xã hội] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "watching documentary videos on YouTube",
+                                "vn": "xem các video phim tài liệu trên YouTube"
+                            },
+                            {
+                                "en": "scrolling through Instagram updates and Facebook stories",
+                                "vn": "lướt xem các cập nhật trên Instagram và story trên Facebook"
+                            },
+                            {
+                                "en": "streaming chilled lo-fi acoustic playlists on Spotify",
+                                "vn": "nghe trực tuyến danh sách nhạc lo-fi acoustic êm dịu trên Spotify"
+                            },
+                            {
+                                "en": "chatting with distant friends via video calls",
+                                "vn": "trò chuyện với bạn bè phương xa qua cuộc gọi video"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Đọc tài liệu PDF nghiên cứu và tra cứu từ vựng tiếng Anh - 23 từ)",
+                        "text": "Most of my time online is spent on attending online webinars and reading academic journal PDFs. In addition, I use search engines to look up unfamiliar English idioms and vocabulary quickly.",
+                        "formatted": "→ Most of my time online is spent on <span class=\"sub-hl\">attending online webinars and reading academic journal PDFs</span>. In addition, I use search engines to <span class=\"sub-hl\">look up unfamiliar English idioms and vocabulary</span> quickly."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Xem video tài liệu YouTube và nghe nhạc lo-fi trên Spotify - 24 từ)",
+                        "text": "I mostly go online for leisure like watching documentary videos on YouTube and streaming chilled lo-fi acoustic playlists on Spotify. It is a fantastic way to unwind after hours of hard study.",
+                        "formatted": "→ I mostly go online for leisure like <span class=\"sub-hl\">watching documentary videos on YouTube</span> and <span class=\"sub-hl\">streaming chilled lo-fi acoustic playlists on Spotify</span>. It is a fantastic way to unwind after hours of hard study."
+                    }
+                ]
+            },
+            {
+                "qNum": 3,
+                "question": "Do you prefer reading online or reading printed materials? Why?",
+                "qType": "Preference + Reason: Do you prefer reading online or reading printed materials? Why?",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Thích ĐỌC ONLINE - Tiện lợi, tìm kiếm từ khóa tức thì và mang theo hàng ngàn cuốn sách):</div>\n                    <div class=\"topic-formula-text\">\n                        → I lean towards reading online. Digital formats are <span class=\"formula-bracket-hl\">[ưu điểm tài liệu số]</span>, allowing me to <span class=\"formula-bracket-hl\">[lợi ích tìm kiếm/lưu trữ - Vo]</span> on a single compact tablet.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Thích ĐỌC SÁCH GIẤY - Đỡ mỏi mắt, cảm giác lật giở trang sách chân thật và dễ tập trung sâu):</div>\n                    <div class=\"topic-formula-text\">\n                        → I strongly prefer traditional printed books. Holding a physical book <span class=\"formula-bracket-hl\">[bảo vệ sức khỏe mắt]</span> and creates <span class=\"formula-bracket-hl\">[trải nghiệm xúc giác chân thật]</span> that screens can never replace.\n                    </div>\n                </div>",
+                "vocabGroups": [
+                    {
+                        "title": "📱 [Ưu thế tài liệu số trực tuyến] (Cách 1):",
+                        "items": [
+                            {
+                                "en": "incredibly portable, searchable, and instantly accessible",
+                                "vn": "vô cùng tiện lợi mang theo, dễ tra cứu từ khóa và truy cập tức thì"
+                            },
+                            {
+                                "en": "carry thousands of comprehensive e-books in my pocket",
+                                "vn": "mang theo hàng ngàn cuốn sách điện tử toàn diện trong túi"
+                            },
+                            {
+                                "en": "highlight sentences and look up definitions with one tap",
+                                "vn": "đánh dấu câu và tra cứu định nghĩa chỉ với một cú chạm"
+                            },
+                            {
+                                "en": "adjust font sizes and dark mode for night reading",
+                                "vn": "điều chỉnh kích thước phông chữ và chế độ tối để đọc ban đêm"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "📖 [Giá trị sách in truyền thống] (Cách 2):",
+                        "items": [
+                            {
+                                "en": "spares my eyes from harsh blue light glare",
+                                "vn": "giúp mắt tránh khỏi ánh sáng xanh chói gắt"
+                            },
+                            {
+                                "en": "a deeply satisfying tactile feeling and paper scent",
+                                "vn": "cảm giác xúc giác vô cùng thỏa mãn và mùi hương của giấy"
+                            },
+                            {
+                                "en": "minimizes digital notification distractions drastically",
+                                "vn": "giảm thiểu triệt để các thông báo gây xao nhãng kỹ thuật số"
+                            },
+                            {
+                                "en": "fosters deeper reading comprehension and retention",
+                                "vn": "thúc đẩy khả năng đọc hiểu sâu sắc và ghi nhớ bền lâu"
+                            }
+                        ]
+                    }
+                ],
+                "samples": [
+                    {
+                        "label": "Bài mẫu Cách 1 (Thích đọc online vì gọn nhẹ, dễ tìm từ khóa và mang ngàn cuốn sách - 24 từ)",
+                        "text": "I lean towards reading online. Digital formats are incredibly portable, searchable, and instantly accessible, allowing me to carry thousands of comprehensive e-books in my pocket on a single compact tablet.",
+                        "formatted": "→ I lean towards reading online. Digital formats are <span class=\"sub-hl\">incredibly portable, searchable, and instantly accessible</span>, allowing me to <span class=\"sub-hl\">carry thousands of comprehensive e-books in my pocket</span> on a single compact tablet."
+                    },
+                    {
+                        "label": "Bài mẫu Cách 2 (Thích sách in truyền thống để tránh ánh sáng xanh và ngửi mùi giấy thơm - 24 từ)",
+                        "text": "I strongly prefer traditional printed books. Holding a physical book spares my eyes from harsh blue light glare and creates a deeply satisfying tactile feeling and paper scent that screens can never replace.",
+                        "formatted": "→ I strongly prefer traditional printed books. Holding a physical book <span class=\"sub-hl\">spares my eyes from harsh blue light glare</span> and creates <span class=\"sub-hl\">a deeply satisfying tactile feeling and paper scent</span> that screens can never replace."
+                    }
+                ]
+            }
+        ]
+    }
+
 ];
 window.practiceTopicsData = practiceTopicsData;
+
+// 15 PRESET VSTEP SPEAKING PART 1 EXAM TESTS (TEST 01 to TEST 15)
+const presetTestsData = [
+    { id: 1, name: "TEST 01", title: "TEST 01: Street food & Coffee shops", topic1Id: 61, topic2Id: 62 },
+    { id: 2, name: "TEST 02", title: "TEST 02: Childhood hobbies & Free time activities", topic1Id: 63, topic2Id: 64 },
+    { id: 3, name: "TEST 03", title: "TEST 03: Game shows & Buses", topic1Id: 65, topic2Id: 66 },
+    { id: 4, name: "TEST 04", title: "TEST 04: Favorite singer & Vietnamese actors", topic1Id: 67, topic2Id: 68 },
+    { id: 5, name: "TEST 05", title: "TEST 05: Green tea & Crowded places", topic1Id: 69, topic2Id: 70 },
+    { id: 6, name: "TEST 06", title: "TEST 06: Traveling & Recycling", topic1Id: 71, topic2Id: 72 },
+    { id: 7, name: "TEST 07", title: "TEST 07: Phone calls & Clothes", topic1Id: 73, topic2Id: 74 },
+    { id: 8, name: "TEST 08", title: "TEST 08: Favorite color & The library", topic1Id: 75, topic2Id: 76 },
+    { id: 9, name: "TEST 09", title: "TEST 09: Feeling sad & Using AI tools", topic1Id: 77, topic2Id: 78 },
+    { id: 10, name: "TEST 10", title: "TEST 10: Online blogs & Online learning", topic1Id: 79, topic2Id: 80 },
+    { id: 11, name: "TEST 11", title: "TEST 11: Remembering things & Public transport", topic1Id: 81, topic2Id: 82 },
+    { id: 12, name: "TEST 12", title: "TEST 12: Holidays & Memories", topic1Id: 83, topic2Id: 84 },
+    { id: 13, name: "TEST 13", title: "TEST 13: Emails & Work / study", topic1Id: 85, topic2Id: 86 },
+    { id: 14, name: "TEST 14", title: "TEST 14: Trips & Hobbies", topic1Id: 87, topic2Id: 88 },
+    { id: 15, name: "TEST 15", title: "TEST 15: Going to restaurants & The Internet", topic1Id: 89, topic2Id: 90 }
+];
+window.presetTestsData = presetTestsData;
+
+window.loadPresetTest = (testId) => {
+    const test = presetTestsData.find(t => t.id === parseInt(testId));
+    if (!test) return;
+
+    const sel1 = document.getElementById('combo-topic-select-1');
+    const sel2 = document.getElementById('combo-topic-select-2');
+    if (sel1) sel1.value = String(test.topic1Id);
+    if (sel2) sel2.value = String(test.topic2Id);
+
+    const testSel = document.getElementById('combo-preset-test-select');
+    if (testSel) testSel.value = String(test.id);
+
+    renderComboTopics(test.topic1Id, test.topic2Id);
+};
+
 
 window.switchPracticeTopic = (topicId) => {
     const id = parseInt(topicId);
@@ -17148,7 +23027,7 @@ function renderPracticeTopic(topicId) {
         if (!topic) return;
 
         const labelEl = document.getElementById('current-topic-label');
-        if (labelEl) labelEl.textContent = `Topic ${String(topic.id).padStart(2, '0')} / 60`;
+        if (labelEl) labelEl.textContent = `Topic ${String(topic.id).padStart(2, '0')} / ${practiceTopicsData.length}`; // Dynamic total
 
         const selectEl = document.getElementById('practice-topic-select');
         if (selectEl) selectEl.value = String(topic.id);
@@ -17221,7 +23100,7 @@ function initComboMode(silent = false) {
         const id1 = parseInt(sel1.value) || 1;
         let id2 = parseInt(sel2.value) || 2;
         if (id1 === id2) {
-            id2 = (id1 % 60) + 1;
+            id2 = (id1 % practiceTopicsData.length) + 1;
             sel2.value = String(id2);
         }
         renderComboTopics(id1, id2);
@@ -17238,7 +23117,7 @@ window.onComboSelectChange = () => {
     let id2 = parseInt(sel2.value) || 2;
 
     if (id1 === id2) {
-        id2 = (id1 % 60) + 1;
+        id2 = (id1 % (practiceTopicsData ? practiceTopicsData.length : 90)) + 1;
         sel2.value = String(id2);
     }
 
@@ -17287,7 +23166,7 @@ function renderComboTopics(t1Id, t2Id) {
         const topic2 = practiceTopicsData.find(t => t.id === t2Id) || practiceTopicsData[1] || practiceTopicsData[0];
 
         const labelEl = document.getElementById('current-topic-label');
-        if (labelEl) labelEl.textContent = `Ghép Topic #${topic1.id} & #${topic2.id} / 60`;
+        if (labelEl) labelEl.textContent = `Ghép Topic #${topic1.id} & #${topic2.id} / ${practiceTopicsData.length}`; // Dynamic total
 
         const sel1 = document.getElementById('combo-topic-select-1');
         const sel2 = document.getElementById('combo-topic-select-2');
@@ -17299,9 +23178,17 @@ function renderComboTopics(t1Id, t2Id) {
                 <div style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(124, 58, 237, 0.08)); border: 2px solid rgba(239, 68, 68, 0.25); border-radius: 20px; padding: 1.5rem 1.75rem; margin-bottom: 2rem;">
                     <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
                         <div>
-                            <div style="font-size: 0.85rem; font-weight: 800; color: #dc2626; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem;">
+                            ${(() => {
+                            const matchedTest = (typeof presetTestsData !== 'undefined') ? presetTestsData.find(pt => (pt.topic1Id === topic1.id && pt.topic2Id === topic2.id) || (pt.topic1Id === topic2.id && pt.topic2Id === topic1.id)) : null;
+                            if (matchedTest) {
+                                return `<div style="display: inline-block; background: #dc2626; color: white; padding: 0.25rem 0.75rem; border-radius: 6px; font-size: 0.82rem; font-weight: 800; letter-spacing: 0.5px; margin-bottom: 0.35rem;">
+                                    <i class="fa-solid fa-award"></i> ${matchedTest.name} (BỘ ĐỀ CHUẨN ĐÃ ĐỐI CHIẾU)
+                                </div>`;
+                            }
+                            return `<div style="font-size: 0.85rem; font-weight: 800; color: #dc2626; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem;">
                                 <i class="fa-solid fa-layer-group"></i> BỘ ĐỀ THI GHÉP 2 CHỦ ĐỀ (CHUẨN FORM VSTEP 180S)
-                            </div>
+                            </div>`;
+                        })()}
                             <div style="font-size: 1.35rem; font-weight: 800; color: var(--text-main);">
                                 ${topic1.title} <span style="color: #ef4444; font-weight: 900;">&</span> ${topic2.title}
                             </div>
