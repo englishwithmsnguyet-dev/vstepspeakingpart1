@@ -170,6 +170,9 @@
                     <button class="icon-btn" id="progress-btn" title="Tiến độ học tập &amp; Lưu dữ liệu" onclick="openProgressModal()" style="font-size:0.82rem; font-weight:700; padding:0 0.65rem; width:auto; border-radius:8px; display:flex; align-items:center; gap:0.35rem; border:1.5px solid #10b981; background:rgba(16, 185, 129, 0.08); color:#059669; cursor:pointer;">
                         <i class="fa-solid fa-cloud-arrow-up" style="color:#10b981;"></i> <span id="progress-btn-label">Tiến Độ</span>
                     </button>
+                    <button class="icon-btn" id="voice-settings-btn" title="Cài đặt &amp; Nghe thử giọng đọc Nữ" onclick="openVoiceModal()" style="font-size:0.82rem; font-weight:700; padding:0 0.65rem; width:auto; border-radius:8px; display:flex; align-items:center; gap:0.35rem; border:1.5px solid #8b5cf6; background:rgba(139, 92, 246, 0.08); color:#7c3aed; cursor:pointer;">
+                        <i class="fa-solid fa-microphone-lines" style="color:#8b5cf6;"></i> <span id="voice-btn-label">Giọng Nữ</span>
+                    </button>
                     <button class="icon-btn" id="theme-toggle" title="Đổi màu giao diện"><i class="fa-solid fa-moon"></i></button>
                     <button class="icon-btn active" id="audio-toggle" title="Bật/Tắt âm thanh phát âm"><i class="fa-solid fa-volume-high"></i></button>
                 </div>
@@ -18933,7 +18936,73 @@
         </div>
     </div>
 
+    <!-- Modal Cài Đặt Giọng Đọc Nữ AI -->
+    <div id="voice-modal" class="progress-modal-overlay" style="display: none;" onclick="if(event.target === this) closeVoiceModal();">
+        <div class="progress-modal-card fade-in" style="max-width: 520px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+                <div style="font-size: 1.2rem; font-weight: 800; color: var(--text-main); display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fa-solid fa-microphone-lines" style="color: #8b5cf6;"></i> CÀI ĐẶT GIỌNG ĐỌC AI (GIỌNG NỮ)
+                </div>
+                <button type="button" class="icon-btn" onclick="closeVoiceModal()" style="border: none; background: transparent; font-size: 1.2rem; cursor: pointer; color: var(--text-muted);"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <!-- Current Voice Banner -->
+            <div style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.08), rgba(67, 97, 238, 0.08)); border: 1.5px solid rgba(139, 92, 246, 0.25); border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 1.25rem;">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.35rem; flex-wrap: wrap; gap: 0.5rem;">
+                    <strong style="font-size: 0.98rem; color: #7c3aed; display: flex; align-items: center; gap: 0.4rem;">
+                        <i class="fa-solid fa-circle-check"></i> Giọng Nữ Chuẩn Dễ Nghe
+                    </strong>
+                    <span style="background: #8b5cf6; color: white; padding: 0.2rem 0.6rem; border-radius: 6px; font-weight: 700; font-size: 0.78rem;">Studio Ava / Samantha</span>
+                </div>
+                <div style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.5;">
+                    Hệ thống cố định sử dụng <strong>Giọng Nữ trong trẻo, dễ nghe</strong> (Ava / Samantha / Jenny / Google US Female) để học viên dễ nghe phát âm và luyện phản xạ B1.
+                </div>
+                <div style="margin-top: 0.5rem; font-size: 0.82rem; color: var(--text-main); font-weight: 600;">
+                    Đang kết nối: <span id="voice-modal-active-name" style="color: #7c3aed;">Giọng Nữ Tự Nhiên (Samantha / Ava)</span>
+                </div>
+            </div>
+
+            <!-- Form Controls -->
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+                <div>
+                    <label style="display: block; font-size: 0.88rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.4rem;">
+                        <i class="fa-solid fa-venus" style="color: #ec4899;"></i> Danh sách giọng Nữ khả dụng trên thiết bị:
+                    </label>
+                    <select id="voice-select-modal" style="width: 100%; padding: 0.65rem 0.85rem; border-radius: 10px; border: 1px solid var(--border); background: var(--bg-body); color: var(--text-main); font-size: 0.9rem; outline: none; cursor: pointer;">
+                        <option value="">⭐ Mặc định Tự nhiên Nhất (Khuyên dùng: Samantha / Ava / Google US)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label style="display: block; font-size: 0.88rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.4rem;">
+                        <i class="fa-solid fa-gauge-high" style="color: #3b82f6;"></i> Tốc độ đọc câu mẫu:
+                    </label>
+                    <select id="voice-speed-modal" style="width: 100%; padding: 0.65rem 0.85rem; border-radius: 10px; border: 1px solid var(--border); background: var(--bg-body); color: var(--text-main); font-size: 0.9rem; outline: none; cursor: pointer;">
+                        <option value="0.92">0.9x - Chậm rãi, rõ từng phát âm (Dành cho người mới bắt đầu)</option>
+                        <option value="0.98" selected>1.0x - Chuẩn nhịp điệu VSTEP B1 (Tự nhiên & dễ nghe nhất)</option>
+                        <option value="1.08">1.1x - Tốc độ nhanh (Luyện phản xạ nâng cao)</option>
+                    </select>
+                </div>
+
+                <!-- Preview Button -->
+                <button type="button" onclick="previewVoice(document.getElementById('voice-select-modal')?.value)" style="background: rgba(139, 92, 246, 0.12); color: #7c3aed; border: 1.5px solid rgba(139, 92, 246, 0.35); padding: 0.75rem 1rem; border-radius: 10px; font-weight: 700; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem; transition: all 0.2s;">
+                    <i class="fa-solid fa-volume-high"></i> 🔊 Bấm để Nghe thử Câu Mẫu ngay
+                </button>
+            </div>
+
+            <!-- Modal Action Buttons -->
+            <div style="display: flex; gap: 0.75rem; margin-top: 1.5rem;">
+                <button type="button" class="btn" onclick="saveVoiceSettings()" style="flex: 1; background: linear-gradient(135deg, #8b5cf6, #6d28d9); color: white; border: none; padding: 0.85rem 1.25rem; border-radius: 12px; font-weight: 700; font-size: 0.95rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem; box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);">
+                    <i class="fa-solid fa-check"></i> LƯU CÀI ĐẶT
+                </button>
+                <button type="button" class="btn" onclick="closeVoiceModal()" style="background: transparent; color: var(--text-muted); border: 1px solid var(--border); padding: 0.85rem 1.25rem; border-radius: 12px; font-weight: 600; font-size: 0.9rem; cursor: pointer;">
+                    Đóng
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script src="audio/manifest.js"></script>
-    <script src="script.js?v=20261027_v1"></script>
+    <script src="script.js?v=20261028_voice"></script>
 </body>
 </html>
