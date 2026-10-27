@@ -16899,20 +16899,28 @@ window.switchPracticeTopic = (topicId) => {
 window.setTopicSelectionMode = (mode) => {
     const manualBtn = document.getElementById('topic-mode-manual-btn');
     const randomBtn = document.getElementById('topic-mode-random-btn');
+    const comboBtn = document.getElementById('topic-mode-combo-btn');
     const manualPanel = document.getElementById('topic-manual-panel');
     const randomPanel = document.getElementById('topic-random-panel');
+    const comboPanel = document.getElementById('topic-combo-panel');
+
+    [manualBtn, randomBtn, comboBtn].forEach(b => b?.classList.remove('active'));
+    [manualPanel, randomPanel, comboPanel].forEach(p => { if (p) p.style.display = 'none'; });
 
     if (mode === 'manual') {
         if (manualBtn) manualBtn.classList.add('active');
-        if (randomBtn) randomBtn.classList.remove('active');
         if (manualPanel) manualPanel.style.display = 'block';
-        if (randomPanel) randomPanel.style.display = 'none';
-    } else {
-        if (manualBtn) manualBtn.classList.remove('active');
+        const selectEl = document.getElementById('practice-topic-select');
+        const currentId = selectEl ? parseInt(selectEl.value) || 1 : 1;
+        renderPracticeTopic(currentId);
+    } else if (mode === 'random') {
         if (randomBtn) randomBtn.classList.add('active');
-        if (manualPanel) manualPanel.style.display = 'none';
         if (randomPanel) randomPanel.style.display = 'block';
         pickRandomPracticeTopic();
+    } else if (mode === 'combo') {
+        if (comboBtn) comboBtn.classList.add('active');
+        if (comboPanel) comboPanel.style.display = 'block';
+        initComboMode();
     }
 };
 
@@ -16944,6 +16952,191 @@ window.pickRandomPracticeTopic = () => {
         } catch (e) {}
     }
 };
+
+// Reusable question card generator for both single topic and combo modes
+function buildTopicQuestionCardHtml(q, qNum, topicId, curState) {
+    let vocabHtml = '';
+    (q.vocabGroups || []).forEach(vg => {
+        if (vg.type === 'note' || vg.note) {
+            let favPillsHtml = '';
+            const curFavs = curState.favoriteBenefits || [];
+            if ((vg.note.includes('Lợi Ích') || vg.note.includes('lợi ích')) && curFavs && curFavs.length > 0) {
+                favPillsHtml = `
+                    <div style="margin-top: 0.65rem; padding-top: 0.5rem; border-top: 1px dashed rgba(217, 70, 239, 0.35); font-size: 0.9rem;">
+                        <div style="font-weight: 700; color: #a21caf; margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.4rem;">
+                            <i class="fa-solid fa-star" style="color: #f59e0b;"></i> Cụm lợi ích bạn đã chọn trong Bảng Lợi Ích:
+                        </div>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.45rem;">
+                            ${curFavs.map(b => `
+                                <span style="background: #fdf4ff; border: 1px solid #f0abfc; color: #86198f; padding: 0.2rem 0.65rem; border-radius: 6px; font-weight: 700; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.3rem;" onclick="speakText('${b.en.replace(/'/g, "\\'")}')" title="Nhấp để nghe phát âm">
+                                    <i class="fa-solid fa-volume-high" style="font-size: 0.75rem; color: #d946ef;"></i> ${b.en}
+                                </span>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+
+            vocabHtml += `
+                <div style="margin-bottom: 1.25rem; background: rgba(67, 97, 238, 0.05); border-left: 4px solid var(--primary); padding: 0.85rem 1.15rem; border-radius: 12px; border: 1px solid rgba(67, 97, 238, 0.15); border-left-width: 4px;">
+                    <div style="font-weight: 800; font-size: 0.95rem; color: var(--primary); margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.4rem;">
+                        ${vg.title}
+                    </div>
+                    <div style="font-size: 0.95rem; line-height: 1.65; color: var(--text-main);">
+                        ${vg.note}
+                        ${favPillsHtml}
+                    </div>
+                </div>
+            `;
+        } else if (vg.items && vg.items.length > 0) {
+            let itemsHtml = vg.items.map(it => `
+                <div class="topic-vocab-list-item" onclick="speakText('${it.en.replace(/'/g, "\\'")}')" title="Nhấn để nghe phát âm">
+                    <i class="fa-solid fa-volume-high vocab-audio-icon"></i>
+                    <strong class="vocab-en">${it.en}</strong>
+                    <span class="vocab-colon">:</span>
+                    <span class="vocab-vn">${it.vn}</span>
+                </div>
+            `).join('');
+
+            vocabHtml += `
+                <div style="margin-bottom: 1.25rem;">
+                    <div style="font-weight: 800; font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.4rem;">${vg.title}</div>
+                    <div class="topic-vocab-list">${itemsHtml}</div>
+                </div>
+            `;
+        }
+    });
+
+    let samplesHtml = (q.samples || []).map((s) => `
+        <div style="background: var(--bg-body); border-radius: 14px; padding: 1.25rem; border: 1px solid var(--border); margin-bottom: 1rem;">
+            <div style="font-weight: 800; color: #7c3aed; font-size: 0.95rem; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.5rem;">
+                <i class="fa-solid fa-star"></i> ${s.label}:
+            </div>
+            <div class="ex-text" style="font-size: 1.05rem; line-height: 1.85; color: var(--text-main); font-weight: 500; margin-bottom: 0.85rem; text-align: justify; text-justify: inter-word;">
+                ${s.formatted}
+            </div>
+            <button class="btn-audio-sample" onclick="speakText('${s.text.replace(/'/g, "\\'")}')" style="background: #8b5cf6;">
+                <i class="fa-solid fa-volume-high"></i> Nghe Audio bài mẫu
+            </button>
+        </div>
+    `).join('');
+
+    return `
+        <div class="topic-q-card fade-in">
+            <!-- Question Header -->
+            <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 1.25rem; flex-wrap: wrap;">
+                <div>
+                    <div class="topic-q-badge">
+                        <i class="fa-solid fa-circle-question"></i> CÂU HỎI ${qNum}
+                    </div>
+                    <span class="topic-q-type-badge">
+                        <i class="fa-solid fa-tag"></i> ${q.qType}
+                    </span>
+                    <div style="font-size: 1.25rem; font-weight: 800; color: var(--text-main); margin-top: 0.5rem; line-height: 1.5;">
+                        ${q.question}
+                    </div>
+                </div>
+                <button class="icon-btn" onclick="speakText('${q.question.replace(/'/g, "\\'")}')" title="Nghe phát âm câu hỏi" style="flex-shrink: 0; width: 44px; height: 44px; border-radius: 12px; background: rgba(67, 97, 238, 0.1); color: var(--primary); border: 1.5px solid rgba(67, 97, 238, 0.25);">
+                    <i class="fa-solid fa-volume-high" style="font-size: 1.1rem;"></i>
+                </button>
+            </div>
+
+            <!-- 1. GỢI Ý CÁCH TRẢ LỜI -->
+            <div class="topic-section-box" style="border-color: rgba(59, 130, 246, 0.4); box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.08);">
+                <div class="topic-section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'" style="background: rgba(59, 130, 246, 0.08); color: #2563eb;">
+                    <span><i class="fa-solid fa-lightbulb" style="color: #2563eb;"></i> 💡 GỢI Ý CÁCH TRẢ LỜI</span>
+                    <span style="font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="topic-section-content" style="background: rgba(59, 130, 246, 0.02);">
+                    <div class="f-formula-box" style="margin: 0; padding: 0.5rem 0; background: transparent; border: none;">
+                        ${q.formula}
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. GỢI Ý TỪ VỰNG -->
+            <div class="topic-section-box" style="border-color: rgba(245, 158, 11, 0.4); box-shadow: 0 4px 6px -1px rgba(245, 158, 11, 0.08);">
+                <div class="topic-section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'" style="background: rgba(245, 158, 11, 0.08); color: #d97706;">
+                    <span><i class="fa-solid fa-pen-to-square" style="color: #d97706;"></i> 📝 GỢI Ý TỪ VỰNG</span>
+                    <span style="font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="topic-section-content">
+                    ${vocabHtml}
+                </div>
+            </div>
+
+            <!-- 3. THỰC HÀNH NÓI & GHI ÂM TÍNH GIỜ (25S) -->
+            <div class="topic-section-box" style="border-color: rgba(239, 68, 68, 0.45); box-shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.08);">
+                <div class="topic-section-header" style="background: rgba(239, 68, 68, 0.08); color: #dc2626; cursor: default;">
+                    <span><i class="fa-solid fa-microphone-lines" style="color: #dc2626;"></i> 🎙️ THỰC HÀNH NÓI & GHI ÂM TÍNH GIỜ (NHƯ LÚC THI)</span>
+                    <span id="topic-q-phase-badge-${qNum}" class="topic-exam-phase-badge">⏱️ Sẵn sàng trả lời</span>
+                </div>
+                <div class="topic-section-content" style="background: var(--bg-card); padding: 1.25rem 1.35rem;">
+                    <div class="topic-exam-recorder" style="margin-top: 0; border: none; box-shadow: none; padding: 0;">
+                        <div class="topic-exam-top">
+                            <div class="topic-exam-time-options">
+                                <span><i class="fa-regular fa-clock"></i> Thời gian nói:</span>
+                                <span style="font-weight: 800; color: #ef4444; font-size: 0.95rem; background: rgba(239, 68, 68, 0.08); padding: 0.25rem 0.75rem; border-radius: 50px; border: 1px solid rgba(239, 68, 68, 0.25);"><i class="fa-solid fa-stopwatch"></i> 25 giây / câu</span>
+                            </div>
+                            <div style="font-size: 0.85rem; color: var(--text-muted); font-style: italic;">
+                                💡 Máy tính sẽ phát tiếng <strong>Beep</strong> khi bắt đầu và <strong>Chuông</strong> khi hết giờ.
+                            </div>
+                        </div>
+
+                        <div class="topic-exam-body">
+                            <div class="topic-exam-timer-wrap">
+                                <div id="topic-q-digits-${qNum}" class="topic-exam-digits">00:25</div>
+                                <div id="topic-q-wave-${qNum}" class="topic-mic-wave">
+                                    <div class="topic-mic-bar"></div>
+                                    <div class="topic-mic-bar"></div>
+                                    <div class="topic-mic-bar"></div>
+                                    <div class="topic-mic-bar"></div>
+                                    <div class="topic-mic-bar"></div>
+                                    <div class="topic-mic-bar"></div>
+                                    <div class="topic-mic-bar"></div>
+                                    <div class="topic-mic-bar"></div>
+                                    <span style="font-size: 0.78rem; font-weight: 700; color: #ef4444; margin-left: 0.25rem;">
+                                        <span class="topic-recording-dot"></span> ĐANG THU ÂM
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="topic-exam-actions">
+                                <button type="button" id="btn-topic-start-${qNum}" class="btn-exam-rec start" onclick="startTopicQuestionRecording(${qNum})">
+                                    <i class="fa-solid fa-microphone"></i> Bắt đầu nói & Ghi âm
+                                </button>
+                                <button type="button" id="btn-topic-stop-${qNum}" class="btn-exam-rec stop" onclick="stopTopicQuestionRecording(${qNum})" style="display: none;">
+                                    <i class="fa-solid fa-square"></i> Dừng & Nộp bài
+                                </button>
+                                <button type="button" id="btn-topic-reset-${qNum}" class="btn-exam-rec reset" onclick="resetTopicQuestionRecording(${qNum})" style="display: none;">
+                                    <i class="fa-solid fa-rotate-left"></i> Ghi âm lại
+                                </button>
+                            </div>
+                        </div>
+
+                        <div id="topic-playback-box-${qNum}" class="topic-exam-playback" style="display: none;">
+                            <audio id="topic-audio-player-${qNum}" controls class="topic-exam-audio-player"></audio>
+                            <a id="btn-download-topic-q-${qNum}" class="btn-exam-download" download="VSTEP_Speaking_P1_Q${qNum}.webm">
+                                <i class="fa-solid fa-download"></i> Tải file ghi âm
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. GỢI Ý ĐÁP ÁN MẪU THAM KHẢO -->
+            <div class="topic-section-box" style="border-color: rgba(139, 92, 246, 0.4); box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.08);">
+                <div class="topic-section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'" style="background: rgba(139, 92, 246, 0.08); color: #7c3aed;">
+                    <span><i class="fa-solid fa-star" style="color: #7c3aed;"></i> ⭐ GỢI Ý ĐÁP ÁN MẪU THAM KHẢO</span>
+                    <span style="font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="topic-section-content">
+                    ${samplesHtml}
+                </div>
+            </div>
+        </div>
+    `;
+}
 
 function renderPracticeTopic(topicId) {
     try {
@@ -16988,192 +17181,9 @@ function renderPracticeTopic(topicId) {
                 </div>
         `;
 
-        topic.questions.forEach((q) => {
-            // Build suggestions HTML
-            let vocabHtml = '';
-            q.vocabGroups.forEach(vg => {
-                if (vg.type === 'note' || vg.note) {
-                    let favPillsHtml = '';
-                    const curFavs = curState.favoriteBenefits || [];
-                    if ((vg.note.includes('Lợi Ích') || vg.note.includes('lợi ích')) && curFavs && curFavs.length > 0) {
-                        favPillsHtml = `
-                            <div style="margin-top: 0.65rem; padding-top: 0.5rem; border-top: 1px dashed rgba(217, 70, 239, 0.35); font-size: 0.9rem;">
-                                <div style="font-weight: 700; color: #a21caf; margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.4rem;">
-                                    <i class="fa-solid fa-star" style="color: #f59e0b;"></i> Cụm lợi ích bạn đã chọn trong Bảng Lợi Ích:
-                                </div>
-                                <div style="display: flex; flex-wrap: wrap; gap: 0.45rem;">
-                                    ${curFavs.map(b => `
-                                        <span style="background: #fdf4ff; border: 1px solid #f0abfc; color: #86198f; padding: 0.2rem 0.65rem; border-radius: 6px; font-weight: 700; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.3rem;" onclick="speakText('${b.en.replace(/'/g, "\\'")}')" title="Nhấp để nghe phát âm">
-                                            <i class="fa-solid fa-volume-high" style="font-size: 0.75rem; color: #d946ef;"></i> ${b.en}
-                                        </span>
-                                    `).join('')}
-                                </div>
-                            </div>
-                        `;
-                    }
-
-                vocabHtml += `
-                    <div style="margin-bottom: 1.25rem; background: rgba(67, 97, 238, 0.05); border-left: 4px solid var(--primary); padding: 0.85rem 1.15rem; border-radius: 12px; border: 1px solid rgba(67, 97, 238, 0.15); border-left-width: 4px;">
-                        <div style="font-weight: 800; font-size: 0.95rem; color: var(--primary); margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.4rem;">
-                            ${vg.title}
-                        </div>
-                        <div style="font-size: 0.95rem; line-height: 1.65; color: var(--text-main);">
-                            ${vg.note}
-                            ${favPillsHtml}
-                        </div>
-                    </div>
-                `;
-            } else if (vg.items && vg.items.length > 0) {
-                let itemsHtml = vg.items.map(it => `
-                    <div class="topic-vocab-list-item" onclick="speakText('${it.en.replace(/'/g, "\\'")}')" title="Nhấn để nghe phát âm">
-                        <i class="fa-solid fa-volume-high vocab-audio-icon"></i>
-                        <strong class="vocab-en">${it.en}</strong>
-                        <span class="vocab-colon">:</span>
-                        <span class="vocab-vn">${it.vn}</span>
-                    </div>
-                `).join('');
-
-                vocabHtml += `
-                    <div style="margin-bottom: 1.25rem;">
-                        <div style="font-weight: 800; font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.4rem;">${vg.title}</div>
-                        <div class="topic-vocab-list">${itemsHtml}</div>
-                    </div>
-                `;
-            }
+        topic.questions.forEach((q, idx) => {
+            html += buildTopicQuestionCardHtml(q, q.qNum || (idx + 1), topic.id, curState);
         });
-
-        // Build samples HTML
-        let samplesHtml = q.samples.map((s) => `
-            <div style="background: var(--bg-body); border-radius: 14px; padding: 1.25rem; border: 1px solid var(--border); margin-bottom: 1rem;">
-                <div style="font-weight: 800; color: #7c3aed; font-size: 0.95rem; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.5rem;">
-                    <i class="fa-solid fa-star"></i> ${s.label}:
-                </div>
-                <div class="ex-text" style="font-size: 1.05rem; line-height: 1.85; color: var(--text-main); font-weight: 500; margin-bottom: 0.85rem; text-align: justify; text-justify: inter-word;">
-                    ${s.formatted}
-                </div>
-                <button class="btn-audio-sample" onclick="speakText('${s.text.replace(/'/g, "\\'")}')" style="background: #8b5cf6;">
-                    <i class="fa-solid fa-volume-high"></i> Nghe Audio bài mẫu
-                </button>
-            </div>
-        `).join('');
-
-        html += `
-            <div class="topic-q-card fade-in">
-                <!-- Question Header -->
-                <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 1.25rem; flex-wrap: wrap;">
-                    <div>
-                        <div class="topic-q-badge">
-                            <i class="fa-solid fa-circle-question"></i> CÂU HỎI ${q.qNum} / 3
-                        </div>
-                        <span class="topic-q-type-badge">
-                            <i class="fa-solid fa-tag"></i> ${q.qType}
-                        </span>
-                        <div style="font-size: 1.25rem; font-weight: 800; color: var(--text-main); margin-top: 0.5rem; line-height: 1.5;">
-                            ${q.question}
-                        </div>
-                    </div>
-                    <button class="icon-btn" onclick="speakText('${q.question.replace(/'/g, "\\'")}')" title="Nghe phát âm câu hỏi" style="flex-shrink: 0; width: 44px; height: 44px; border-radius: 12px; background: rgba(67, 97, 238, 0.1); color: var(--primary); border: 1.5px solid rgba(67, 97, 238, 0.25);">
-                        <i class="fa-solid fa-volume-high" style="font-size: 1.1rem;"></i>
-                    </button>
-                </div>
-
-                <!-- 1. GỢI Ý CÁCH TRẢ LỜI -->
-                <div class="topic-section-box" style="border-color: rgba(59, 130, 246, 0.4); box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.08);">
-                    <div class="topic-section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'" style="background: rgba(59, 130, 246, 0.08); color: #2563eb;">
-                        <span><i class="fa-solid fa-lightbulb" style="color: #2563eb;"></i> 💡 GỢI Ý CÁCH TRẢ LỜI</span>
-                        <span style="font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-chevron-down"></i></span>
-                    </div>
-                    <div class="topic-section-content" style="background: rgba(59, 130, 246, 0.02);">
-                        <div class="f-formula-box" style="margin: 0; padding: 0.5rem 0; background: transparent; border: none;">
-                            ${q.formula}
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2. GỢI Ý TỪ VỰNG -->
-                <div class="topic-section-box" style="border-color: rgba(245, 158, 11, 0.4); box-shadow: 0 4px 6px -1px rgba(245, 158, 11, 0.08);">
-                    <div class="topic-section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'" style="background: rgba(245, 158, 11, 0.08); color: #d97706;">
-                        <span><i class="fa-solid fa-pen-to-square" style="color: #d97706;"></i> 📝 GỢI Ý TỪ VỰNG</span>
-                        <span style="font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-chevron-down"></i></span>
-                    </div>
-                    <div class="topic-section-content">
-                        ${vocabHtml}
-                    </div>
-                </div>
-
-                <!-- 3. THỰC HÀNH NÓI & GHI ÂM TÍNH GIỜ (NHƯ LÚC THI) -->
-                <div class="topic-section-box" style="border-color: rgba(239, 68, 68, 0.45); box-shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.08);">
-                    <div class="topic-section-header" style="background: rgba(239, 68, 68, 0.08); color: #dc2626; cursor: default;">
-                        <span><i class="fa-solid fa-microphone-lines" style="color: #dc2626;"></i> 🎙️ THỰC HÀNH NÓI & GHI ÂM TÍNH GIỜ (NHƯ LÚC THI)</span>
-                        <span id="topic-q-phase-badge-${q.qNum}" class="topic-exam-phase-badge">⏱️ Sẵn sàng trả lời</span>
-                    </div>
-                    <div class="topic-section-content" style="background: var(--bg-card); padding: 1.25rem 1.35rem;">
-                        <div class="topic-exam-recorder" style="margin-top: 0; border: none; box-shadow: none; padding: 0;">
-                            <div class="topic-exam-top">
-                                <div class="topic-exam-time-options">
-                                    <span><i class="fa-regular fa-clock"></i> Thời gian nói:</span>
-                                    <span style="font-weight: 800; color: #ef4444; font-size: 0.95rem; background: rgba(239, 68, 68, 0.08); padding: 0.25rem 0.75rem; border-radius: 50px; border: 1px solid rgba(239, 68, 68, 0.25);"><i class="fa-solid fa-stopwatch"></i> 25 giây / câu</span>
-                                </div>
-                                <div style="font-size: 0.85rem; color: var(--text-muted); font-style: italic;">
-                                    💡 Máy tính sẽ phát tiếng <strong>Beep</strong> khi bắt đầu và <strong>Chuông</strong> khi hết giờ.
-                                </div>
-                            </div>
-
-                            <div class="topic-exam-body">
-                                <div class="topic-exam-timer-wrap">
-                                    <div id="topic-q-digits-${q.qNum}" class="topic-exam-digits">00:25</div>
-                                    <div id="topic-q-wave-${q.qNum}" class="topic-mic-wave">
-                                        <div class="topic-mic-bar"></div>
-                                        <div class="topic-mic-bar"></div>
-                                        <div class="topic-mic-bar"></div>
-                                        <div class="topic-mic-bar"></div>
-                                        <div class="topic-mic-bar"></div>
-                                        <div class="topic-mic-bar"></div>
-                                        <div class="topic-mic-bar"></div>
-                                        <div class="topic-mic-bar"></div>
-                                        <span style="font-size: 0.78rem; font-weight: 700; color: #ef4444; margin-left: 0.25rem;">
-                                            <span class="topic-recording-dot"></span> ĐANG THU ÂM
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div class="topic-exam-actions">
-                                    <button type="button" id="btn-topic-start-${q.qNum}" class="btn-exam-rec start" onclick="startTopicQuestionRecording(${q.qNum})">
-                                        <i class="fa-solid fa-microphone"></i> Bắt đầu nói & Ghi âm
-                                    </button>
-                                    <button type="button" id="btn-topic-stop-${q.qNum}" class="btn-exam-rec stop" onclick="stopTopicQuestionRecording(${q.qNum})" style="display: none;">
-                                        <i class="fa-solid fa-square"></i> Dừng & Nộp bài
-                                    </button>
-                                    <button type="button" id="btn-topic-reset-${q.qNum}" class="btn-exam-rec reset" onclick="resetTopicQuestionRecording(${q.qNum})" style="display: none;">
-                                        <i class="fa-solid fa-rotate-left"></i> Ghi âm lại
-                                    </button>
-                                </div>
-                            </div>
-
-                            <!-- Playback Box -->
-                            <div id="topic-playback-box-${q.qNum}" class="topic-exam-playback" style="display: none;">
-                                <audio id="topic-audio-player-${q.qNum}" controls class="topic-exam-audio-player"></audio>
-                                <a id="btn-download-topic-q-${q.qNum}" class="btn-exam-download" download="VSTEP_Speaking_P1_Q${q.qNum}.webm">
-                                    <i class="fa-solid fa-download"></i> Tải bài nói (.webm)
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 4. GỢI Ý ĐÁP ÁN MẪU THAM KHẢO -->
-                <div class="topic-section-box" style="border-color: rgba(139, 92, 246, 0.4); box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.08);">
-                    <div class="topic-section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'" style="background: rgba(139, 92, 246, 0.08); color: #7c3aed;">
-                        <span><i class="fa-solid fa-star" style="color: #7c3aed;"></i> ⭐ GỢI Ý ĐÁP ÁN MẪU THAM KHẢO</span>
-                        <span style="font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-chevron-down"></i></span>
-                    </div>
-                    <div class="topic-section-content">
-                        ${samplesHtml}
-                    </div>
-                </div>
-            </div>
-        `;
-    });
 
     html += `</div>`;
     container.innerHTML = html;
@@ -17182,6 +17192,218 @@ function renderPracticeTopic(topicId) {
     }
 }
 window.renderPracticeTopic = renderPracticeTopic;
+
+// ==========================================================================
+// COMBO 2 TOPICS MODE (MÔ PHỎNG ĐỀ THI VSTEP 180S)
+// ==========================================================================
+function initComboMode(silent = false) {
+    const sel1 = document.getElementById('combo-topic-select-1');
+    const sel2 = document.getElementById('combo-topic-select-2');
+    if (!sel1 || !sel2) return;
+
+    if (sel1.options.length === 0) {
+        practiceTopicsData.forEach(t => {
+            const opt1 = document.createElement('option');
+            opt1.value = t.id;
+            opt1.textContent = t.title;
+            sel1.appendChild(opt1);
+
+            const opt2 = document.createElement('option');
+            opt2.value = t.id;
+            opt2.textContent = t.title;
+            sel2.appendChild(opt2);
+        });
+        sel1.value = '1';
+        sel2.value = '2';
+    }
+
+    if (!silent) {
+        const id1 = parseInt(sel1.value) || 1;
+        let id2 = parseInt(sel2.value) || 2;
+        if (id1 === id2) {
+            id2 = (id1 % 60) + 1;
+            sel2.value = String(id2);
+        }
+        renderComboTopics(id1, id2);
+    }
+}
+window.initComboMode = initComboMode;
+
+window.onComboSelectChange = () => {
+    const sel1 = document.getElementById('combo-topic-select-1');
+    const sel2 = document.getElementById('combo-topic-select-2');
+    if (!sel1 || !sel2) return;
+
+    let id1 = parseInt(sel1.value) || 1;
+    let id2 = parseInt(sel2.value) || 2;
+
+    if (id1 === id2) {
+        id2 = (id1 % 60) + 1;
+        sel2.value = String(id2);
+    }
+
+    renderComboTopics(id1, id2);
+};
+
+window.pickRandomComboTopics = () => {
+    const sel1 = document.getElementById('combo-topic-select-1');
+    const sel2 = document.getElementById('combo-topic-select-2');
+    if (!sel1 || !sel2) return;
+
+    if (sel1.options.length === 0) {
+        initComboMode(true);
+    }
+
+    const available = practiceTopicsData.map(t => t.id);
+    if (available.length < 2) return;
+
+    const id1 = available[Math.floor(Math.random() * available.length)];
+    const pool2 = available.filter(id => id !== id1);
+    const id2 = pool2[Math.floor(Math.random() * pool2.length)];
+
+    sel1.value = String(id1);
+    sel2.value = String(id2);
+
+    renderComboTopics(id1, id2);
+
+    if (typeof confetti === 'function') {
+        try {
+            confetti({
+                particleCount: 65,
+                spread: 80,
+                origin: { y: 0.3 }
+            });
+        } catch (e) {}
+    }
+};
+
+function renderComboTopics(t1Id, t2Id) {
+    try {
+        const container = document.getElementById('practice-topic-content');
+        if (!container) return;
+
+        const curState = window.state || (typeof state !== 'undefined' ? state : {}) || {};
+        const topic1 = practiceTopicsData.find(t => t.id === t1Id) || practiceTopicsData[0];
+        const topic2 = practiceTopicsData.find(t => t.id === t2Id) || practiceTopicsData[1] || practiceTopicsData[0];
+
+        const labelEl = document.getElementById('current-topic-label');
+        if (labelEl) labelEl.textContent = `Ghép Topic #${topic1.id} & #${topic2.id} / 60`;
+
+        const sel1 = document.getElementById('combo-topic-select-1');
+        const sel2 = document.getElementById('combo-topic-select-2');
+        if (sel1) sel1.value = String(topic1.id);
+        if (sel2) sel2.value = String(topic2.id);
+
+        let html = `
+            <div class="f-card-clean fade-in" style="margin-bottom: 2rem;">
+                <div style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(124, 58, 237, 0.08)); border: 2px solid rgba(239, 68, 68, 0.25); border-radius: 20px; padding: 1.5rem 1.75rem; margin-bottom: 2rem;">
+                    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+                        <div>
+                            <div style="font-size: 0.85rem; font-weight: 800; color: #dc2626; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem;">
+                                <i class="fa-solid fa-layer-group"></i> BỘ ĐỀ THI GHÉP 2 CHỦ ĐỀ (CHUẨN FORM VSTEP 180S)
+                            </div>
+                            <div style="font-size: 1.35rem; font-weight: 800; color: var(--text-main);">
+                                ${topic1.title} <span style="color: #ef4444; font-weight: 900;">&</span> ${topic2.title}
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;">
+                            <button class="btn-audio-sample" onclick="openFullTopicExamModal(${topic1.id}, ${topic2.id})" style="background: linear-gradient(135deg, #ef4444, #dc2626); box-shadow: 0 4px 14px rgba(239, 68, 68, 0.35); font-weight: 800; padding: 0.75rem 1.4rem; font-size: 1rem;">
+                                <i class="fa-solid fa-stopwatch"></i> THI THỬ CẢ 2 CHỦ ĐỀ (180S)
+                            </button>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.75rem;">
+                        <div style="background: var(--bg-card); padding: 0.85rem 1.15rem; border-radius: 12px; border: 1px dashed var(--border);">
+                            <div style="font-size: 0.82rem; font-weight: 800; color: var(--primary); margin-bottom: 0.25rem;">
+                                🗣️ Câu dẫn Chủ đề 1:
+                            </div>
+                            <div style="font-style: italic; color: var(--text-main); font-size: 0.95rem; margin-bottom: 0.4rem;">
+                                "${topic1.introText || topic1.intro || ''}"
+                            </div>
+                            <button class="btn-audio-sample" onclick="speakText('${(topic1.introText || topic1.intro || '').replace(/'/g, "\\'")}')" style="background: var(--primary); font-size: 0.8rem; padding: 0.3rem 0.75rem;">
+                                <i class="fa-solid fa-volume-high"></i> Nghe câu dẫn 1
+                            </button>
+                        </div>
+
+                        <div style="background: var(--bg-card); padding: 0.85rem 1.15rem; border-radius: 12px; border: 1px dashed var(--border);">
+                            <div style="font-size: 0.82rem; font-weight: 800; color: #7c3aed; margin-bottom: 0.25rem;">
+                                🗣️ Câu dẫn Chủ đề 2:
+                            </div>
+                            <div style="font-style: italic; color: var(--text-main); font-size: 0.95rem; margin-bottom: 0.4rem;">
+                                "${topic2.introText || topic2.intro || ''}"
+                            </div>
+                            <button class="btn-audio-sample" onclick="speakText('${(topic2.introText || topic2.intro || '').replace(/'/g, "\\'")}')" style="background: #7c3aed; font-size: 0.8rem; padding: 0.3rem 0.75rem;">
+                                <i class="fa-solid fa-volume-high"></i> Nghe câu dẫn 2
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PHẦN 1 -->
+                <div style="margin: 2rem 0 1.25rem 0; padding: 0.85rem 1.25rem; background: rgba(67, 97, 238, 0.08); border-radius: 14px; border-left: 5px solid var(--primary); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+                    <div style="font-weight: 800; font-size: 1.2rem; color: var(--primary); display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fa-solid fa-comments"></i> PHẦN 1: ${topic1.title}
+                    </div>
+                    <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary); background: var(--bg-card); padding: 0.3rem 0.85rem; border-radius: 20px; border: 1px solid rgba(67, 97, 238, 0.25);">
+                        3 CÂU HỎI ĐẦU TIÊN
+                    </span>
+                </div>
+        `;
+
+        topic1.questions.forEach((q, idx) => {
+            html += buildTopicQuestionCardHtml(q, idx + 1, topic1.id, curState);
+        });
+
+        html += `
+                <!-- PHẦN 2 -->
+                <div style="margin: 2.5rem 0 1.25rem 0; padding: 0.85rem 1.25rem; background: rgba(124, 58, 237, 0.08); border-radius: 14px; border-left: 5px solid #7c3aed; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+                    <div style="font-weight: 800; font-size: 1.2rem; color: #7c3aed; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fa-solid fa-comments"></i> PHẦN 2: ${topic2.title}
+                    </div>
+                    <span style="font-size: 0.85rem; font-weight: 700; color: #7c3aed; background: var(--bg-card); padding: 0.3rem 0.85rem; border-radius: 20px; border: 1px solid rgba(124, 58, 237, 0.25);">
+                        3 CÂU HỎI TIẾP THEO
+                    </span>
+                </div>
+        `;
+
+        topic2.questions.forEach((q, idx) => {
+            html += buildTopicQuestionCardHtml(q, idx + 4, topic2.id, curState);
+        });
+
+        html += `
+                <div style="margin-top: 2rem; text-align: center; padding: 1.5rem; background: var(--bg-card); border-radius: 16px; border: 2px dashed rgba(239, 68, 68, 0.3);">
+                    <div style="font-size: 1.15rem; font-weight: 800; color: #dc2626; margin-bottom: 0.5rem;">
+                        <i class="fa-solid fa-microphone-lines"></i> ĐÃ SẴN SÀNG THỬ SỨC ĐỀ THI 2 CHỦ ĐỀ?
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.25rem;">
+                        Bấm nút bên dưới để vào chế độ phòng thi mô phỏng: Đồng hồ 180 giây (3 phút) đếm ngược và hệ thống thu âm toàn bộ 6 câu trả lời của bạn!
+                    </p>
+                    <button class="btn-audio-sample" onclick="openFullTopicExamModal(${topic1.id}, ${topic2.id})" style="background: linear-gradient(135deg, #ef4444, #dc2626); box-shadow: 0 6px 18px rgba(239, 68, 68, 0.35); font-weight: 800; padding: 0.9rem 2.2rem; font-size: 1.1rem; border-radius: 50px;">
+                        <i class="fa-solid fa-play"></i> BẮT ĐẦU THI THỬ 2 CHỦ ĐỀ (180S)
+                    </button>
+                </div>
+            </div>
+        `;
+
+        container.innerHTML = html;
+    } catch (err) {
+        console.error('renderComboTopics error:', err);
+    }
+}
+window.renderComboTopics = renderComboTopics;
+
+window.openComboFullExamModal = () => {
+    const sel1 = document.getElementById('combo-topic-select-1');
+    const sel2 = document.getElementById('combo-topic-select-2');
+    const id1 = sel1 ? parseInt(sel1.value) || 1 : 1;
+    let id2 = sel2 ? parseInt(sel2.value) || 2 : 2;
+    if (id1 === id2) {
+        id2 = (id1 % 60) + 1;
+    }
+    openFullTopicExamModal(id1, id2);
+};
+
 
 // ==========================================================================
 // EXAM AUDIO SYNTHESIZER & SOUND EFFECTS (Web Audio API)
@@ -17453,10 +17675,11 @@ window._fullExamTimer = {
     blobUrl: null
 };
 
-window.openFullTopicExamModal = (topicId) => {
+window.openFullTopicExamModal = (topicId, topicId2 = null) => {
     stopAllActiveRecordings();
     const topic = practiceTopicsData.find(t => t.id === topicId) || practiceTopicsData[0];
     if (!topic) return;
+    const topic2 = topicId2 ? (practiceTopicsData.find(t => t.id === topicId2) || null) : null;
 
     let overlay = document.getElementById('topic-full-exam-overlay');
     if (!overlay) {
@@ -17466,34 +17689,81 @@ window.openFullTopicExamModal = (topicId) => {
         document.body.appendChild(overlay);
     }
 
-    const qListHtml = topic.questions.map(q => `
-        <div style="background: var(--bg-body); border-radius: 12px; padding: 1rem 1.25rem; border: 1px solid var(--border); margin-bottom: 0.85rem;">
-            <div style="font-weight: 800; color: var(--primary); font-size: 0.92rem; margin-bottom: 0.35rem;">
-                CÂU HỎI ${q.qNum}:
+    const defaultSeconds = topic2 ? 180 : 90;
+    window._fullExamTimer.totalTime = defaultSeconds;
+    window._fullExamTimer.timeLeft = defaultSeconds;
+
+    let qListHtml = '';
+    if (topic2) {
+        qListHtml = `
+            <div style="margin-bottom: 1rem;">
+                <div style="font-weight: 800; color: var(--primary); font-size: 0.95rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
+                    <i class="fa-solid fa-comments"></i> CHỦ ĐỀ 1: ${topic.title}
+                </div>
+                ${topic.questions.map(q => `
+                    <div style="background: var(--bg-body); border-radius: 12px; padding: 0.85rem 1.15rem; border: 1px solid var(--border); margin-bottom: 0.65rem;">
+                        <div style="font-weight: 800; color: var(--primary); font-size: 0.88rem; margin-bottom: 0.25rem;">
+                            CÂU HỎI ${q.qNum}:
+                        </div>
+                        <div style="font-size: 1.05rem; font-weight: 700; color: var(--text-main); line-height: 1.45;">
+                            ${q.question}
+                        </div>
+                    </div>
+                `).join('')}
             </div>
-            <div style="font-size: 1.15rem; font-weight: 700; color: var(--text-main); line-height: 1.5;">
-                ${q.question}
+
+            <div style="margin-top: 1.25rem; margin-bottom: 1rem;">
+                <div style="font-weight: 800; color: #7c3aed; font-size: 0.95rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
+                    <i class="fa-solid fa-comments"></i> CHỦ ĐỀ 2: ${topic2.title}
+                </div>
+                ${topic2.questions.map((q, idx) => `
+                    <div style="background: var(--bg-body); border-radius: 12px; padding: 0.85rem 1.15rem; border: 1px solid var(--border); margin-bottom: 0.65rem;">
+                        <div style="font-weight: 800; color: #7c3aed; font-size: 0.88rem; margin-bottom: 0.25rem;">
+                            CÂU HỎI ${idx + 4}:
+                        </div>
+                        <div style="font-size: 1.05rem; font-weight: 700; color: var(--text-main); line-height: 1.45;">
+                            ${q.question}
+                        </div>
+                    </div>
+                `).join('')}
             </div>
-        </div>
-    `).join('');
+        `;
+    } else {
+        qListHtml = topic.questions.map(q => `
+            <div style="background: var(--bg-body); border-radius: 12px; padding: 1rem 1.25rem; border: 1px solid var(--border); margin-bottom: 0.85rem;">
+                <div style="font-weight: 800; color: var(--primary); font-size: 0.92rem; margin-bottom: 0.35rem;">
+                    CÂU HỎI ${q.qNum}:
+                </div>
+                <div style="font-size: 1.15rem; font-weight: 700; color: var(--text-main); line-height: 1.5;">
+                    ${q.question}
+                </div>
+            </div>
+        `).join('');
+    }
+
+    const titleText = topic2 ? `${topic.title} & ${topic2.title}` : topic.title;
+    const badgeText = topic2 ? 'VSTEP EXAM SIMULATION • GHÉP 2 CHỦ ĐỀ (180S)' : 'VSTEP EXAM SIMULATION • SPEAKING PART 01';
+    const sectionSubtitle = topic2 ? '📋 NỘI DUNG 6 CÂU HỎI (2 CHỦ ĐỀ) BẠN CẦN TRẢ LỜI LIÊN TỤC:' : '📋 NỘI DUNG 3 CÂU HỎI BẠN CẦN TRẢ LỜI LIÊN TỤC:';
+    const mm = String(Math.floor(defaultSeconds / 60)).padStart(2, '0');
+    const ss = String(defaultSeconds % 60).padStart(2, '0');
 
     overlay.innerHTML = `
         <div class="topic-full-exam-modal fade-in">
             <div class="topic-full-exam-header">
                 <div>
                     <div style="font-size: 0.85rem; font-weight: 700; color: #ef4444; letter-spacing: 0.5px; text-transform: uppercase;">
-                        <i class="fa-solid fa-microphone-lines"></i> VSTEP EXAM SIMULATION • SPEAKING PART 01
+                        <i class="fa-solid fa-microphone-lines"></i> ${badgeText}
                     </div>
                     <div class="topic-full-exam-title">
-                        ${topic.title}
+                        ${titleText}
                     </div>
                 </div>
                 <button class="topic-full-exam-close" onclick="closeFullTopicExamModal()" title="Đóng phòng thi">&times;</button>
             </div>
 
-            <div style="margin-bottom: 1.25rem;">
+            <div style="margin-bottom: 1.25rem; max-height: 380px; overflow-y: auto; padding-right: 0.35rem;">
                 <div style="font-size: 0.95rem; font-weight: 700; color: var(--text-muted); margin-bottom: 0.75rem;">
-                    📋 NỘI DUNG 3 CÂU HỎI BẠN CẦN TRẢ LỜI LIÊN TỤC:
+                    ${sectionSubtitle}
                 </div>
                 ${qListHtml}
             </div>
@@ -17502,9 +17772,15 @@ window.openFullTopicExamModal = (topicId) => {
             <div style="background: var(--bg-body); border: 2px solid rgba(239, 68, 68, 0.3); border-radius: 16px; padding: 1.5rem; text-align: center;">
                 <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;">
                     <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-muted);">Thời gian thi:</span>
-                    <button type="button" class="btn-time-opt" onclick="setFullExamTime(60, this)">60s</button>
-                    <button type="button" class="btn-time-opt active" onclick="setFullExamTime(90, this)">90s (Chuẩn 1 Chủ Đề)</button>
-                    <button type="button" class="btn-time-opt" onclick="setFullExamTime(180, this)">180s (3 Phút - Cả Part 1)</button>
+                    ${topic2 ? `
+                        <button type="button" class="btn-time-opt" onclick="setFullExamTime(120, this)">120s</button>
+                        <button type="button" class="btn-time-opt active" onclick="setFullExamTime(180, this)">180s (Chuẩn 2 Chủ Đề)</button>
+                        <button type="button" class="btn-time-opt" onclick="setFullExamTime(240, this)">240s</button>
+                    ` : `
+                        <button type="button" class="btn-time-opt" onclick="setFullExamTime(60, this)">60s</button>
+                        <button type="button" class="btn-time-opt active" onclick="setFullExamTime(90, this)">90s (Chuẩn 1 Chủ Đề)</button>
+                        <button type="button" class="btn-time-opt" onclick="setFullExamTime(180, this)">180s (3 Phút - Cả Part 1)</button>
+                    `}
                 </div>
 
                 <div id="full-exam-badge" class="topic-exam-phase-badge" style="margin-bottom: 1rem;">
@@ -17512,7 +17788,7 @@ window.openFullTopicExamModal = (topicId) => {
                 </div>
 
                 <div style="display: flex; align-items: center; justify-content: center; gap: 1.25rem; margin-bottom: 1.25rem;">
-                    <div id="full-exam-digits" class="topic-exam-digits" style="font-size: 3.5rem;">01:30</div>
+                    <div id="full-exam-digits" class="topic-exam-digits" style="font-size: 3.5rem;">${mm}:${ss}</div>
                     <div id="full-exam-wave" class="topic-mic-wave">
                         <div class="topic-mic-bar"></div>
                         <div class="topic-mic-bar"></div>
@@ -17529,7 +17805,7 @@ window.openFullTopicExamModal = (topicId) => {
                 </div>
 
                 <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
-                    <button type="button" id="btn-full-start" class="btn-exam-rec start" onclick="startFullTopicRecording(${topic.id})">
+                    <button type="button" id="btn-full-start" class="btn-exam-rec start" onclick="startFullTopicRecording(${topic.id}, ${topic2 ? topic2.id : 'null'})">
                         <i class="fa-solid fa-play"></i> Bắt đầu thi thử & Ghi âm
                     </button>
                     <button type="button" id="btn-full-stop" class="btn-exam-rec stop" onclick="stopFullTopicRecording()" style="display: none;">
@@ -17542,7 +17818,7 @@ window.openFullTopicExamModal = (topicId) => {
 
                 <div id="full-exam-playback" class="topic-exam-playback" style="display: none; justify-content: center;">
                     <audio id="full-exam-player" controls class="topic-exam-audio-player"></audio>
-                    <a id="full-exam-download" class="btn-exam-download" download="VSTEP_Speaking_P1_Topic_${topic.id}.webm">
+                    <a id="full-exam-download" class="btn-exam-download" download="VSTEP_Speaking_P1.webm">
                         <i class="fa-solid fa-download"></i> Tải bài thi của bạn (.webm)
                     </a>
                 </div>
@@ -17578,7 +17854,7 @@ window.setFullExamTime = (seconds, btnEl) => {
     }
 };
 
-window.startFullTopicRecording = async (topicId) => {
+window.startFullTopicRecording = async (topicId, topicId2 = null) => {
     try {
         const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
         window._fullExamTimer.stream = stream;
@@ -17613,7 +17889,11 @@ window.startFullTopicRecording = async (topicId) => {
             if (downloadBtn) {
                 downloadBtn.href = window._fullExamTimer.blobUrl;
                 const student = (document.getElementById('display-name')?.textContent || 'HocVien').trim().replace(/\s+/g, '_');
-                downloadBtn.download = `VSTEP_Speaking_P1_Topic${topicId}_${student}.webm`;
+                if (topicId2) {
+                    downloadBtn.download = `VSTEP_Speaking_P1_Combo_${topicId}_${topicId2}_${student}.webm`;
+                } else {
+                    downloadBtn.download = `VSTEP_Speaking_P1_Topic${topicId}_${student}.webm`;
+                }
             }
             if (playbackBox) playbackBox.style.display = 'flex';
 
@@ -17625,8 +17905,15 @@ window.startFullTopicRecording = async (topicId) => {
 
             const curState = window.state || (typeof state !== 'undefined' ? state : {}) || {};
             if (!curState.completedTopics) curState.completedTopics = [];
-            if (!curState.completedTopics.includes(topicId)) {
-                curState.completedTopics.push(topicId);
+            let changed = false;
+            [topicId, topicId2].filter(Boolean).forEach(id => {
+                const numId = parseInt(id);
+                if (numId && !curState.completedTopics.includes(numId)) {
+                    curState.completedTopics.push(numId);
+                    changed = true;
+                }
+            });
+            if (changed) {
                 updateTopicSelectCompletedMarks();
                 saveLearningProgress(true);
             }
@@ -17743,12 +18030,14 @@ window.resetFullTopicRecording = () => {
     if (wave) wave.classList.remove('active');
 };
 
-// Auto-initialize topic 1 on load
+// Auto-initialize topic 1 and combo selectors on load
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
         if (typeof renderPracticeTopic === 'function') renderPracticeTopic(1);
+        if (typeof initComboMode === 'function') initComboMode(true);
     });
 } else {
     if (typeof renderPracticeTopic === 'function') renderPracticeTopic(1);
+    if (typeof initComboMode === 'function') initComboMode(true);
 }
 
