@@ -5,23 +5,23 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     try {
-    // App State
-    const state = {
-        studentName: 'Khách',
-        studentClass: '',
-        accessLevel: 'FULL',
-        isAudio: true,
-        isDark: false,
-        voiceMode: 'studio',
-        ynIndex: 0,
-        selectedVoiceURI: null,
-        unlockedTabs: {},
-        favoriteBenefits: [],
-        completedTopics: [],
-        benefitsReviewMode: 'fav',
-        currentBenefitsFilter: 'all',
-        lastSavedTime: null
-    };
+    // App State (Attached globally to window.state)
+    const state = window.state = Object.assign(window.state || {}, {
+        studentName: window.state?.studentName || 'Khách',
+        studentClass: window.state?.studentClass || '',
+        accessLevel: window.state?.accessLevel || 'FULL',
+        isAudio: window.state?.isAudio !== undefined ? window.state.isAudio : true,
+        isDark: window.state?.isDark !== undefined ? window.state.isDark : false,
+        voiceMode: window.state?.voiceMode || 'studio',
+        ynIndex: window.state?.ynIndex || 0,
+        selectedVoiceURI: window.state?.selectedVoiceURI || null,
+        unlockedTabs: window.state?.unlockedTabs || {},
+        favoriteBenefits: window.state?.favoriteBenefits || [],
+        completedTopics: window.state?.completedTopics || [],
+        benefitsReviewMode: window.state?.benefitsReviewMode || 'fav',
+        currentBenefitsFilter: window.state?.currentBenefitsFilter || 'all',
+        lastSavedTime: window.state?.lastSavedTime || null
+    });
 
     // DOM References
     const welcomeModal = document.getElementById('welcome-modal');
@@ -744,13 +744,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateTopicSelectCompletedMarks() {
         const sel = document.getElementById('practice-topic-select');
-        if (!sel) return;
-        const completed = state.completedTopics || [];
+        if (!sel || !sel.options) return;
+        const curState = window.state || (typeof state !== 'undefined' ? state : {}) || {};
+        const completed = curState.completedTopics || [];
 
         Array.from(sel.options).forEach(opt => {
             const val = parseInt(opt.value);
             const isDone = completed.includes(val);
-            let cleanText = opt.textContent.replace(/^✅\s*/, '').replace(/^🎯\s*/, '');
+            let cleanText = (opt.textContent || '').replace(/^✅\s*/, '').replace(/^🎯\s*/, '');
             if (isDone) {
                 opt.textContent = `✅ ${cleanText}`;
             } else {
@@ -758,72 +759,105 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    window.updateTopicSelectCompletedMarks = updateTopicSelectCompletedMarks;
 
     window.finishLogin = () => {
-        const val = state.studentName || studentInput.value.trim();
-        displayName.textContent = val;
-        userProfile.classList.remove('hidden');
-        welcomeModal.style.opacity = '0';
-        setTimeout(() => welcomeModal.classList.add('hidden'), 300);
+        try {
+            const val = state.studentName || (studentInput ? studentInput.value.trim() : 'Học viên');
+            if (displayName) displayName.textContent = val;
+            if (userProfile) userProfile.classList.remove('hidden');
+            if (welcomeModal) {
+                welcomeModal.style.opacity = '0';
+                setTimeout(() => {
+                    welcomeModal.classList.add('hidden');
+                    welcomeModal.style.display = 'none';
+                }, 300);
+            }
+            if (startBtn) {
+                startBtn.disabled = false;
+                startBtn.innerHTML = 'BẮT ĐẦU HỌC NGAY';
+            }
 
-        // Apply access control restrictions
-        if (state.accessLevel === 'PARTIAL') {
-            const whPills = document.querySelectorAll('.w-pill');
-            whPills.forEach(pill => {
-                const text = pill.textContent.trim().toUpperCase();
-                if (text.startsWith('WHEN') || text.startsWith('WHERE') || text.startsWith('WHY') || text.startsWith('HOW')) {
-                    pill.style.display = 'none';
-                }
-            });
-        }
-
-        if (state.studentClass === 'CB219') {
-            navItems.forEach(item => {
-                const target = item.getAttribute('data-target');
-                if (target !== 'overview' && target !== 'yes-no') {
-                    item.classList.add('locked');
+            // Mở khóa toàn bộ tab nếu không phải CB219 (dành cho Giáo viên và các lớp toàn quyền)
+            if (state.studentClass !== 'CB219') {
+                navItems.forEach(item => {
+                    item.classList.remove('locked');
+                    item.style.opacity = '';
+                    item.style.cursor = '';
                     const link = item.querySelector('a');
-                    if (link && !link.querySelector('.lock-tag')) {
-                        const lockTag = document.createElement('span');
-                        lockTag.className = 'lock-tag';
-                        lockTag.innerHTML = '<i class="fa-solid fa-lock"></i>';
-                        lockTag.title = 'Chưa mở cho lớp CB219';
-                        link.appendChild(lockTag);
+                    if (link) link.style.pointerEvents = '';
+                    const lockTag = item.querySelector('.lock-tag, .lock-icon');
+                    if (lockTag) lockTag.remove();
+                });
+                const whPills = document.querySelectorAll('.w-pill');
+                whPills.forEach(pill => pill.style.display = '');
+            }
+
+            // Apply access control restrictions
+            if (state.accessLevel === 'PARTIAL') {
+                const whPills = document.querySelectorAll('.w-pill');
+                whPills.forEach(pill => {
+                    const text = pill.textContent.trim().toUpperCase();
+                    if (text.startsWith('WHEN') || text.startsWith('WHERE') || text.startsWith('WHY') || text.startsWith('HOW')) {
+                        pill.style.display = 'none';
                     }
+                });
+            }
+
+            if (state.studentClass === 'CB219') {
+                navItems.forEach(item => {
+                    const target = item.getAttribute('data-target');
+                    if (target !== 'overview' && target !== 'yes-no') {
+                        item.classList.add('locked');
+                        const link = item.querySelector('a');
+                        if (link && !link.querySelector('.lock-tag')) {
+                            const lockTag = document.createElement('span');
+                            lockTag.className = 'lock-tag';
+                            lockTag.innerHTML = '<i class="fa-solid fa-lock"></i>';
+                            lockTag.title = 'Chưa mở cho lớp CB219';
+                            link.appendChild(lockTag);
+                        }
+                    }
+                });
+
+                // Ensure active tab is allowed
+                const currentActive = document.querySelector('.nav-item.active');
+                const currentTarget = currentActive ? currentActive.getAttribute('data-target') : 'overview';
+                if (currentTarget !== 'overview' && currentTarget !== 'yes-no') {
+                    const overviewItem = document.querySelector('.nav-item[data-target="overview"]');
+                    if (overviewItem) activateTab('overview', overviewItem);
                 }
-            });
 
-            // Ensure active tab is allowed
-            const currentActive = document.querySelector('.nav-item.active');
-            const currentTarget = currentActive ? currentActive.getAttribute('data-target') : 'overview';
-            if (currentTarget !== 'overview' && currentTarget !== 'yes-no') {
-                const overviewItem = document.querySelector('.nav-item[data-target="overview"]');
-                if (overviewItem) activateTab('overview', overviewItem);
+                state.ynIndex = 0;
+                renderYnSlide();
             }
 
-            state.ynIndex = 0;
-            renderYnSlide();
+            // Restore saved progress if same student
+            const saved = loadLearningProgress();
+            if (saved && saved.studentName === (state.studentName || val)) {
+                state.favoriteBenefits = saved.favoriteBenefits || [];
+                state.completedTopics = saved.completedTopics || [];
+                if (saved.ynIndex !== undefined && state.studentClass !== 'CB219') {
+                    state.ynIndex = saved.ynIndex;
+                }
+                state.benefitsReviewMode = saved.benefitsReviewMode || 'fav';
+                if (saved.currentPracticeTopicId && typeof renderPracticeTopic === 'function') {
+                    const sel = document.getElementById('practice-topic-select');
+                    if (sel) sel.value = String(saved.currentPracticeTopicId);
+                }
+            }
+
+            setupBenefitCards();
+            updateFavoriteBenefitsUI();
+            updateTopicSelectCompletedMarks();
+            saveLearningProgress(true);
+        } catch (err) {
+            console.error('finishLogin error:', err);
+            if (welcomeModal) {
+                welcomeModal.classList.add('hidden');
+                welcomeModal.style.display = 'none';
+            }
         }
-
-        // Restore saved progress if same student
-        const saved = loadLearningProgress();
-        if (saved && saved.studentName === (state.studentName || val)) {
-            state.favoriteBenefits = saved.favoriteBenefits || [];
-            state.completedTopics = saved.completedTopics || [];
-            if (saved.ynIndex !== undefined && state.studentClass !== 'CB219') {
-                state.ynIndex = saved.ynIndex;
-            }
-            state.benefitsReviewMode = saved.benefitsReviewMode || 'fav';
-            if (saved.currentPracticeTopicId && typeof renderPracticeTopic === 'function') {
-                const sel = document.getElementById('practice-topic-select');
-                if (sel) sel.value = String(saved.currentPracticeTopicId);
-            }
-        }
-
-        setupBenefitCards();
-        updateFavoriteBenefitsUI();
-        updateTopicSelectCompletedMarks();
-        saveLearningProgress(true);
     };
 
     const enterRoom = () => {
@@ -839,14 +873,29 @@ document.addEventListener('DOMContentLoaded', () => {
         const validClasses = ['2026', 'CB211', 'CB213', 'ONB103', 'B212', 'CB219', 'CB210'];
         const partialClasses = ['CB213'];
         const formattedClass = classVal.toUpperCase().replace(/\s+/g, '');
+        const normClass = normalizeStr(classVal);
         const normName = normalizeStr(nameVal);
 
-        // Check Teacher access
-        const isTeacher = (formattedClass === 'GV' || formattedClass === 'GV2026') && 
-                          (normName === 'ptmn' || normName === 'pham thi minh nguyet' || normName === 'minh nguyet');
+        // Check Teacher access (Hỗ trợ linh hoạt: Cô Nguyệt, GIÁO VIÊN, GV, GV2026, PTMN...)
+        const isTeacherName = (
+            normName === 'giao vien' || normName === 'giaovien' ||
+            normName === 'co nguyet' || normName === 'nguyet pham' ||
+            normName === 'pham thi minh nguyet' || normName === 'minh nguyet' ||
+            normName === 'ptmn' || normName === 'teacher' || normName === 'admin' ||
+            normName === 'gv' || normName === 'gv2026'
+        );
+
+        const isTeacherClass = (
+            formattedClass === 'GV' || formattedClass === 'GV2026' ||
+            normClass === 'gv' || normClass === 'gv2026' ||
+            normClass === 'giao vien' || normClass === 'giaovien' ||
+            normClass === 'co nguyet' || normClass === 'teacher' || normClass === 'admin'
+        );
+
+        const isTeacher = isTeacherName || isTeacherClass || (formattedClass === '2026' && (normName.includes('nguyet') || normName.includes('giao vien') || normName === 'ptmn'));
 
         if (isTeacher) {
-            state.studentName = 'Cô Nguyệt';
+            state.studentName = (normName.includes('nguyet') || normName === 'ptmn') ? 'Cô Nguyệt' : (nameVal || 'Giáo Viên');
             state.studentClass = 'GV';
             state.accessLevel = 'FULL';
         } else if (validClasses.includes(formattedClass)) {
@@ -897,6 +946,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }, 1500);
     };
+    window.enterRoom = enterRoom;
 
     // Luôn luôn hiển thị modal đăng nhập mỗi khi tải lại trang / refresh
     if (welcomeModal) {
@@ -5064,6 +5114,8 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('JS Error: ', e);
     }
 });
+
+var state = window.state || {};
 
 
 
@@ -16837,6 +16889,7 @@ const practiceTopicsData = [
         ]
     }
 ];
+window.practiceTopicsData = practiceTopicsData;
 
 window.switchPracticeTopic = (topicId) => {
     const id = parseInt(topicId);
@@ -16893,68 +16946,71 @@ window.pickRandomPracticeTopic = () => {
 };
 
 function renderPracticeTopic(topicId) {
-    const container = document.getElementById('practice-topic-content');
-    if (!container) return;
-    
-    const topic = practiceTopicsData.find(t => t.id === topicId) || practiceTopicsData[0];
-    if (!topic) return;
+    try {
+        const container = document.getElementById('practice-topic-content');
+        if (!container) return;
+        
+        const curState = window.state || (typeof state !== 'undefined' ? state : {}) || {};
+        const topic = practiceTopicsData.find(t => t.id === topicId) || practiceTopicsData[0];
+        if (!topic) return;
 
-    const labelEl = document.getElementById('current-topic-label');
-    if (labelEl) labelEl.textContent = `Topic ${String(topic.id).padStart(2, '0')} / 60`;
+        const labelEl = document.getElementById('current-topic-label');
+        if (labelEl) labelEl.textContent = `Topic ${String(topic.id).padStart(2, '0')} / 60`;
 
-    const selectEl = document.getElementById('practice-topic-select');
-    if (selectEl) selectEl.value = String(topic.id);
+        const selectEl = document.getElementById('practice-topic-select');
+        if (selectEl) selectEl.value = String(topic.id);
 
-    const randomDisplayEl = document.getElementById('random-topic-title-display');
-    if (randomDisplayEl) randomDisplayEl.textContent = topic.title;
+        const randomDisplayEl = document.getElementById('random-topic-title-display');
+        if (randomDisplayEl) randomDisplayEl.textContent = topic.title;
 
-    let html = `
-        <div class="f-card-clean fade-in" style="margin-bottom: 2rem;">
-            <div style="background: linear-gradient(135deg, rgba(67, 97, 238, 0.08), rgba(58, 12, 163, 0.05)); border: 2px solid rgba(67, 97, 238, 0.2); border-radius: 20px; padding: 1.5rem 1.75rem; margin-bottom: 2rem;">
-                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.75rem;">
-                    <div style="font-size: 1.4rem; font-weight: 800; color: var(--primary); display: flex; align-items: center; gap: 0.6rem;">
-                        <i class="fa-solid fa-comments"></i> ${topic.title}
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;">
-                        <button class="btn-audio-sample" onclick="speakText('${(topic.introText || topic.intro || '').replace(/'/g, "\\'")}')" style="background: var(--primary);">
-                            <i class="fa-solid fa-volume-high"></i> Nghe Câu Dẫn
-                        </button>
-                        <button class="btn-audio-sample" onclick="openFullTopicExamModal(${topic.id})" style="background: linear-gradient(135deg, #ef4444, #dc2626); box-shadow: 0 4px 12px rgba(239, 68, 68, 0.35);">
-                            <i class="fa-solid fa-stopwatch"></i> Thi Thử Cả Chủ Đề (90s)
-                        </button>
-                        <button class="btn-audio-sample" onclick="toggleCurrentTopicCompleted(${topic.id})" style="background: ${(state.completedTopics || []).includes(topic.id) ? 'linear-gradient(135deg, #10b981, #059669)' : 'var(--bg-card)'}; color: ${(state.completedTopics || []).includes(topic.id) ? 'white' : 'var(--text-main)'}; border: 1.5px solid ${(state.completedTopics || []).includes(topic.id) ? '#10b981' : 'var(--border)'}; cursor: pointer;">
-                            <i class="fa-solid ${(state.completedTopics || []).includes(topic.id) ? 'fa-circle-check' : 'fa-check'}"></i> ${(state.completedTopics || []).includes(topic.id) ? 'Đã hoàn thành' : 'Đánh dấu đã học'}
-                        </button>
-                    </div>
-                </div>
-                <div style="font-size: 1.05rem; color: var(--text-main); line-height: 1.7; font-style: italic; background: var(--bg-card); padding: 0.85rem 1.25rem; border-radius: 12px; border: 1px dashed var(--border);">
-                    🗣️ Câu dẫn của thí sinh: <strong>"${topic.introText || topic.intro || ''}"</strong>
-                </div>
-            </div>
-    `;
-
-    topic.questions.forEach((q) => {
-        // Build suggestions HTML
-        let vocabHtml = '';
-        q.vocabGroups.forEach(vg => {
-            if (vg.type === 'note' || vg.note) {
-                let favPillsHtml = '';
-                if ((vg.note.includes('Lợi Ích') || vg.note.includes('lợi ích')) && state.favoriteBenefits && state.favoriteBenefits.length > 0) {
-                    favPillsHtml = `
-                        <div style="margin-top: 0.65rem; padding-top: 0.5rem; border-top: 1px dashed rgba(217, 70, 239, 0.35); font-size: 0.9rem;">
-                            <div style="font-weight: 700; color: #a21caf; margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.4rem;">
-                                <i class="fa-solid fa-star" style="color: #f59e0b;"></i> Cụm lợi ích bạn đã chọn trong Bảng Lợi Ích:
-                            </div>
-                            <div style="display: flex; flex-wrap: wrap; gap: 0.45rem;">
-                                ${state.favoriteBenefits.map(b => `
-                                    <span style="background: #fdf4ff; border: 1px solid #f0abfc; color: #86198f; padding: 0.2rem 0.65rem; border-radius: 6px; font-weight: 700; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.3rem;" onclick="speakText('${b.en.replace(/'/g, "\\'")}')" title="Nhấp để nghe phát âm">
-                                        <i class="fa-solid fa-volume-high" style="font-size: 0.75rem; color: #d946ef;"></i> ${b.en}
-                                    </span>
-                                `).join('')}
-                            </div>
+        let html = `
+            <div class="f-card-clean fade-in" style="margin-bottom: 2rem;">
+                <div style="background: linear-gradient(135deg, rgba(67, 97, 238, 0.08), rgba(58, 12, 163, 0.05)); border: 2px solid rgba(67, 97, 238, 0.2); border-radius: 20px; padding: 1.5rem 1.75rem; margin-bottom: 2rem;">
+                    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.75rem;">
+                        <div style="font-size: 1.4rem; font-weight: 800; color: var(--primary); display: flex; align-items: center; gap: 0.6rem;">
+                            <i class="fa-solid fa-comments"></i> ${topic.title}
                         </div>
-                    `;
-                }
+                        <div style="display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;">
+                            <button class="btn-audio-sample" onclick="speakText('${(topic.introText || topic.intro || '').replace(/'/g, "\\'")}')" style="background: var(--primary);">
+                                <i class="fa-solid fa-volume-high"></i> Nghe Câu Dẫn
+                            </button>
+                            <button class="btn-audio-sample" onclick="openFullTopicExamModal(${topic.id})" style="background: linear-gradient(135deg, #ef4444, #dc2626); box-shadow: 0 4px 12px rgba(239, 68, 68, 0.35);">
+                                <i class="fa-solid fa-stopwatch"></i> Thi Thử Cả Chủ Đề (90s)
+                            </button>
+                            <button class="btn-audio-sample" onclick="toggleCurrentTopicCompleted(${topic.id})" style="background: ${(curState.completedTopics || []).includes(topic.id) ? 'linear-gradient(135deg, #10b981, #059669)' : 'var(--bg-card)'}; color: ${(curState.completedTopics || []).includes(topic.id) ? 'white' : 'var(--text-main)'}; border: 1.5px solid ${(curState.completedTopics || []).includes(topic.id) ? '#10b981' : 'var(--border)'}; cursor: pointer;">
+                                <i class="fa-solid ${(curState.completedTopics || []).includes(topic.id) ? 'fa-circle-check' : 'fa-check'}"></i> ${(curState.completedTopics || []).includes(topic.id) ? 'Đã hoàn thành' : 'Đánh dấu đã học'}
+                            </button>
+                        </div>
+                    </div>
+                    <div style="font-size: 1.05rem; color: var(--text-main); line-height: 1.7; font-style: italic; background: var(--bg-card); padding: 0.85rem 1.25rem; border-radius: 12px; border: 1px dashed var(--border);">
+                        🗣️ Câu dẫn của thí sinh: <strong>"${topic.introText || topic.intro || ''}"</strong>
+                    </div>
+                </div>
+        `;
+
+        topic.questions.forEach((q) => {
+            // Build suggestions HTML
+            let vocabHtml = '';
+            q.vocabGroups.forEach(vg => {
+                if (vg.type === 'note' || vg.note) {
+                    let favPillsHtml = '';
+                    const curFavs = curState.favoriteBenefits || [];
+                    if ((vg.note.includes('Lợi Ích') || vg.note.includes('lợi ích')) && curFavs && curFavs.length > 0) {
+                        favPillsHtml = `
+                            <div style="margin-top: 0.65rem; padding-top: 0.5rem; border-top: 1px dashed rgba(217, 70, 239, 0.35); font-size: 0.9rem;">
+                                <div style="font-weight: 700; color: #a21caf; margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.4rem;">
+                                    <i class="fa-solid fa-star" style="color: #f59e0b;"></i> Cụm lợi ích bạn đã chọn trong Bảng Lợi Ích:
+                                </div>
+                                <div style="display: flex; flex-wrap: wrap; gap: 0.45rem;">
+                                    ${curFavs.map(b => `
+                                        <span style="background: #fdf4ff; border: 1px solid #f0abfc; color: #86198f; padding: 0.2rem 0.65rem; border-radius: 6px; font-weight: 700; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.3rem;" onclick="speakText('${b.en.replace(/'/g, "\\'")}')" title="Nhấp để nghe phát âm">
+                                            <i class="fa-solid fa-volume-high" style="font-size: 0.75rem; color: #d946ef;"></i> ${b.en}
+                                        </span>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        `;
+                    }
 
                 vocabHtml += `
                     <div style="margin-bottom: 1.25rem; background: rgba(67, 97, 238, 0.05); border-left: 4px solid var(--primary); padding: 0.85rem 1.15rem; border-radius: 12px; border: 1px solid rgba(67, 97, 238, 0.15); border-left-width: 4px;">
@@ -17121,7 +17177,11 @@ function renderPracticeTopic(topicId) {
 
     html += `</div>`;
     container.innerHTML = html;
+    } catch (err) {
+        console.error('renderPracticeTopic error:', err);
+    }
 }
+window.renderPracticeTopic = renderPracticeTopic;
 
 // ==========================================================================
 // EXAM AUDIO SYNTHESIZER & SOUND EFFECTS (Web Audio API)
@@ -17563,9 +17623,10 @@ window.startFullTopicRecording = async (topicId) => {
                 badge.innerHTML = '<i class="fa-solid fa-circle-check"></i> ĐÃ HOÀN THÀNH BÀI THI 🎉';
             }
 
-            if (!state.completedTopics) state.completedTopics = [];
-            if (!state.completedTopics.includes(topicId)) {
-                state.completedTopics.push(topicId);
+            const curState = window.state || (typeof state !== 'undefined' ? state : {}) || {};
+            if (!curState.completedTopics) curState.completedTopics = [];
+            if (!curState.completedTopics.includes(topicId)) {
+                curState.completedTopics.push(topicId);
                 updateTopicSelectCompletedMarks();
                 saveLearningProgress(true);
             }
