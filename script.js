@@ -16825,15 +16825,15 @@ const practiceTopicsData = [
                 question: "Do you like growing plants?",
                 qType: "Yes/No Question: Do you like growing plants?",
                 formula: `<div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Rất thích trồng cây cảnh nhỏ và hoa trên ban công để làm đẹp nhà cửa và thư giãn):</div>
+                    <div class="topic-formula-title">- Cách 1 (Trả lời CÓ - Giúp trang trí nhà cửa tươi mát và thư giãn):</div>
                     <div class="topic-formula-text">
-                        → Yes, I love it very much. Growing green plants helps me <span class="formula-bracket-hl">[lợi ích không gian 1 - Vo]</span> and <span class="formula-bracket-hl">[lợi ích tinh thần 2 - Vo]</span>.
+                        → Yes, <u><strong>I'm a big fan of</strong></u> growing green plants at home. First, it allows me to <span class="formula-bracket-hl">[lợi ích 1 - Vo]</span>. Second, taking care of plants every day helps me <span class="formula-bracket-hl">[lợi ích 2 - Vo]</span>.
                     </div>
                 </div>
                 <div class="topic-formula-row">
-                    <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Bận học và làm việc nên không có thời gian tưới nước, chăm sóc cây mỗi ngày):</div>
+                    <div class="topic-formula-title">- Cách 2 (Trả lời KHÔNG - Lịch trình bận rộn nên hay quên tưới nước):</div>
                     <div class="topic-formula-text">
-                        → Honestly, not really. I have a tight schedule, so I often <span class="formula-bracket-hl">[khó khăn chăm sóc 1 - Vo]</span> and lack <span class="formula-bracket-hl">[yếu tố thiếu hụt 2]</span>.
+                        → Honestly, <u><strong>I'm not very keen on</strong></u> growing plants because I have a tight schedule. I often forget to water them regularly, so I prefer <span class="formula-bracket-hl">[hoạt động giải trí khác - V-ing]</span> in my free time.
                     </div>
                 </div>`,
                 vocabGroups: [
@@ -22641,6 +22641,64 @@ window.pickRandomPracticeTopic = () => {
     }
 };
 
+// Hàm định dạng gợi ý cách trả lời thành giao diện 2 thẻ Cách 1 (Xanh) & Cách 2 (Đỏ hồng) đẹp mắt
+function formatTopicFormula(html) {
+    if (!html) return '';
+    let rowIndex = 0;
+    
+    const parts = html.split(/(?=<div class="topic-formula-row">)/g);
+    return parts.map(part => {
+        if (!part.includes('class="topic-formula-row"')) return part;
+        rowIndex++;
+        const wayNum = rowIndex;
+        const wayClass = 'way-' + wayNum;
+        const icon = wayNum === 1 
+            ? '<i class="fa-solid fa-circle-check"></i>' 
+            : (wayNum === 2 ? '<i class="fa-solid fa-circle-xmark"></i>' : '<i class="fa-solid fa-circle-dot"></i>');
+
+        let res = part.replace(/<div class="topic-formula-row">/, `<div class="topic-formula-row ${wayClass}">`);
+        
+        // Format tiêu đề thành huy hiệu Badge đẹp mắt
+        res = res.replace(/<div class="topic-formula-title">([\s\S]*?)<\/div>/, (tMatch, tText) => {
+            let clean = tText.trim().replace(/^[-•*–—]\s*/, '').replace(/:\s*$/, '').trim();
+            return `<div class="topic-formula-title"><span class="topic-formula-badge ${wayClass}">${icon} ${clean}</span></div>`;
+        });
+        
+        // Format mũi tên chỉ định
+        res = res.replace(/(<div class="topic-formula-text">[\s\S]*?)→\s*/, `$1<span class="formula-arrow ${wayClass}">→</span> `);
+        
+        // Format các cụm trong ngoặc vuông thành Pill có màu sắc tương ứng với thẻ
+        res = res.replace(/class="formula-bracket-hl"/g, `class="formula-bracket-hl ${wayClass}"`);
+        
+        // Tự động gạch chân nổi bật các cụm từ mở đầu quan điểm B1 (như trong ảnh mẫu)
+        const starterPhrases = [
+            "I'm a big fan of",
+            "I am a big fan of",
+            "I'm really into",
+            "I am really into",
+            "I'm very fond of",
+            "I am very fond of",
+            "I'm not very keen on",
+            "I am not very keen on",
+            "I'm not really into",
+            "I am not really into",
+            "I'm not a big fan of",
+            "I am not a big fan of",
+            "I love it very much",
+            "I usually prefer",
+            "I prefer",
+            "My favorite"
+        ];
+        starterPhrases.forEach(phr => {
+            const regex = new RegExp(`(?<!<span class="formula-key-phrase">)(?<!<u>)(${phr})(?!<\\/u>)(?!<\\/span>)`, 'gi');
+            res = res.replace(regex, `<span class="formula-key-phrase">$1</span>`);
+        });
+
+        return res;
+    }).join('');
+}
+window.formatTopicFormula = formatTopicFormula;
+
 // Reusable question card generator for both single topic and combo modes
 function buildTopicQuestionCardHtml(q, qNum, topicId, curState) {
     let vocabHtml = '';
@@ -22730,14 +22788,14 @@ function buildTopicQuestionCardHtml(q, qNum, topicId, curState) {
             </div>
 
             <!-- 1. GỢI Ý CÁCH TRẢ LỜI -->
-            <div class="topic-section-box" style="border-color: rgba(59, 130, 246, 0.4); box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.08);">
-                <div class="topic-section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'" style="background: rgba(59, 130, 246, 0.08); color: #2563eb;">
-                    <span><i class="fa-solid fa-lightbulb" style="color: #2563eb;"></i> 💡 GỢI Ý CÁCH TRẢ LỜI</span>
-                    <span style="font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-chevron-down"></i></span>
+            <div class="topic-section-box" style="border-color: rgba(59, 130, 246, 0.35); box-shadow: 0 4px 12px -2px rgba(59, 130, 246, 0.08); border-radius: 16px; overflow: hidden;">
+                <div class="topic-section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'" style="background: rgba(59, 130, 246, 0.07); color: #2563eb; padding: 0.95rem 1.35rem;">
+                    <span style="display: flex; align-items: center; gap: 0.5rem; font-weight: 800; font-size: 1.02rem;"><i class="fa-solid fa-lightbulb" style="color: #2563eb;"></i> 💡 GỢI Ý CÁCH TRẢ LỜI</span>
+                    <span style="font-size: 0.95rem; font-weight: 700; color: #2563eb;"><i class="fa-solid fa-chevron-down"></i></span>
                 </div>
-                <div class="topic-section-content" style="background: rgba(59, 130, 246, 0.02);">
-                    <div class="f-formula-box" style="margin: 0; padding: 0.5rem 0; background: transparent; border: none;">
-                        ${q.formula}
+                <div class="topic-section-content" style="background: var(--bg-card); padding: 1.35rem;">
+                    <div class="f-formula-box" style="margin: 0; padding: 0; background: transparent; border: none;">
+                        ${formatTopicFormula(q.formula)}
                     </div>
                 </div>
             </div>

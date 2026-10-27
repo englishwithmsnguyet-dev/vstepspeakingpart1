@@ -677,26 +677,218 @@ body.dark-theme .topic-q-type-badge {
     line-height: 1.8;
 }
 
-/* Topic Formula Rows - Clean text with highlights, no cards */
+/* ========================================================
+   TOPIC FORMULA DUAL-CARD STYLING (MÔ HÌNH 2 CÁCH TRẢ LỜI)
+   ======================================================== */
 .topic-formula-row {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.15rem;
+    padding: 1.15rem 1.35rem;
+    border-radius: 14px;
+    background: var(--bg-card);
+    border: 1.5px solid var(--border);
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
 }
 .topic-formula-row:last-child {
     margin-bottom: 0;
 }
-.topic-formula-title {
-    font-weight: 800;
-    font-size: 1.05rem;
-    color: var(--primary);
-    margin-bottom: 0.4rem;
+
+/* Card Cách 1 - Gam màu Xanh Dương (Vibrant Blue) */
+.topic-formula-row.way-1,
+.topic-formula-row:nth-of-type(1) {
+    background: #ffffff;
+    border: 1.5px solid #bfdbfe;
+    border-left: 5px solid #2563eb;
+    box-shadow: 0 4px 12px -2px rgba(37, 99, 235, 0.08);
 }
+body.dark-theme .topic-formula-row.way-1,
+body.dark-theme .topic-formula-row:nth-of-type(1) {
+    background: #1e293b;
+    border-color: rgba(59, 130, 246, 0.35);
+    border-left-color: #3b82f6;
+    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.25);
+}
+
+/* Card Cách 2 - Gam màu Đỏ Hồng (Rose / Red) */
+.topic-formula-row.way-2,
+.topic-formula-row:nth-of-type(2) {
+    background: #ffffff;
+    border: 1.5px solid #fecdd3;
+    border-left: 5px solid #e11d48;
+    box-shadow: 0 4px 12px -2px rgba(225, 29, 72, 0.08);
+}
+body.dark-theme .topic-formula-row.way-2,
+body.dark-theme .topic-formula-row:nth-of-type(2) {
+    background: #1e293b;
+    border-color: rgba(244, 63, 94, 0.35);
+    border-left-color: #f43f5e;
+    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.25);
+}
+
+/* Card Cách 3 - Gam màu Xanh Lá (Emerald Green) nếu có */
+.topic-formula-row.way-3,
+.topic-formula-row:nth-of-type(3) {
+    background: #ffffff;
+    border: 1.5px solid #a7f3d0;
+    border-left: 5px solid #10b981;
+    box-shadow: 0 4px 12px -2px rgba(16, 185, 129, 0.08);
+}
+body.dark-theme .topic-formula-row.way-3,
+body.dark-theme .topic-formula-row:nth-of-type(3) {
+    background: #1e293b;
+    border-color: rgba(16, 185, 129, 0.35);
+    border-left-color: #10b981;
+}
+
+/* Title Badge (Huy hiệu Cách 1 & Cách 2) */
+.topic-formula-title {
+    margin-bottom: 0.85rem;
+    line-height: 1.4;
+}
+.topic-formula-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding: 0.35rem 0.85rem;
+    border-radius: 8px;
+    letter-spacing: 0.1px;
+}
+.topic-formula-badge.way-1 {
+    background: #eff6ff;
+    border: 1.5px solid #bfdbfe;
+    color: #1d4ed8;
+}
+.topic-formula-badge.way-1 i {
+    color: #2563eb;
+    font-size: 0.95rem;
+}
+body.dark-theme .topic-formula-badge.way-1 {
+    background: rgba(59, 130, 246, 0.18);
+    border-color: rgba(59, 130, 246, 0.45);
+    color: #93c5fd;
+}
+body.dark-theme .topic-formula-badge.way-1 i {
+    color: #60a5fa;
+}
+
+.topic-formula-badge.way-2 {
+    background: #fff1f2;
+    border: 1.5px solid #fecdd3;
+    color: #be123c;
+}
+.topic-formula-badge.way-2 i {
+    color: #e11d48;
+    font-size: 0.95rem;
+}
+body.dark-theme .topic-formula-badge.way-2 {
+    background: rgba(244, 63, 94, 0.18);
+    border-color: rgba(244, 63, 94, 0.45);
+    color: #fda4af;
+}
+body.dark-theme .topic-formula-badge.way-2 i {
+    color: #fb7185;
+}
+
+.topic-formula-badge.way-3 {
+    background: #ecfdf5;
+    border: 1.5px solid #a7f3d0;
+    color: #047857;
+}
+.topic-formula-badge.way-3 i {
+    color: #10b981;
+}
+
+/* Formula Body Text */
 .topic-formula-text {
-    font-size: 1.08rem;
-    line-height: 2.2;
+    font-size: 1.05rem;
+    line-height: 2.15;
     color: var(--text-main);
-    padding-left: 0.25rem;
-    text-align: justify;
-    text-justify: inter-word;
+    padding-left: 0.15rem;
+    text-align: left;
+}
+
+/* Formula Arrow */
+.formula-arrow {
+    font-weight: 800;
+    font-size: 1.15rem;
+    margin-right: 0.2rem;
+}
+.formula-arrow.way-1 { color: #2563eb; }
+.formula-arrow.way-2 { color: #e11d48; }
+.formula-arrow.way-3 { color: #10b981; }
+
+/* Underlined Key Opinion Phrases */
+.topic-formula-text u,
+.topic-formula-text strong,
+.formula-key-phrase {
+    font-weight: 800;
+    text-decoration: underline;
+    text-decoration-thickness: 2.5px;
+    text-underline-offset: 4px;
+    color: var(--text-main);
+}
+.topic-formula-row.way-1 .topic-formula-text u,
+.topic-formula-row.way-1 .formula-key-phrase {
+    text-decoration-color: #2563eb;
+}
+.topic-formula-row.way-2 .topic-formula-text u,
+.topic-formula-row.way-2 .formula-key-phrase {
+    text-decoration-color: #e11d48;
+}
+
+/* Bracket Highlight Pills */
+.formula-bracket-hl {
+    background: #dbeafe;
+    color: #1d4ed8;
+    border: 1px solid #bfdbfe;
+    padding: 0.15rem 0.55rem;
+    border-radius: 6px;
+    font-weight: 800;
+    font-size: 0.92rem;
+    display: inline-block;
+    margin: 0.1rem 0.2rem;
+    vertical-align: middle;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+.formula-bracket-hl.way-1,
+.topic-formula-row:nth-of-type(1) .formula-bracket-hl {
+    background: #dbeafe;
+    color: #1d4ed8;
+    border: 1px solid #bfdbfe;
+}
+body.dark-theme .formula-bracket-hl.way-1,
+body.dark-theme .topic-formula-row:nth-of-type(1) .formula-bracket-hl {
+    background: rgba(59, 130, 246, 0.25);
+    border-color: rgba(59, 130, 246, 0.45);
+    color: #bfdbfe;
+}
+
+.formula-bracket-hl.way-2,
+.topic-formula-row:nth-of-type(2) .formula-bracket-hl {
+    background: #ffe4e6;
+    color: #be123c;
+    border: 1px solid #fecdd3;
+}
+body.dark-theme .formula-bracket-hl.way-2,
+body.dark-theme .topic-formula-row:nth-of-type(2) .formula-bracket-hl {
+    background: rgba(244, 63, 94, 0.25);
+    border-color: rgba(244, 63, 94, 0.45);
+    color: #fecdd3;
+}
+
+.formula-bracket-hl.way-3,
+.topic-formula-row:nth-of-type(3) .formula-bracket-hl {
+    background: #d1fae5;
+    color: #047857;
+    border: 1px solid #a7f3d0;
+}
+body.dark-theme .formula-bracket-hl.way-3,
+body.dark-theme .topic-formula-row:nth-of-type(3) .formula-bracket-hl {
+    background: rgba(16, 185, 129, 0.25);
+    border-color: rgba(16, 185, 129, 0.45);
+    color: #a7f3d0;
 }
 
 /* Topic Vocabulary List (Dạng List rõ ràng, dễ đọc) */
