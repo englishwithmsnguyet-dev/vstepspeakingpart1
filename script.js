@@ -444,6 +444,12 @@ document.addEventListener('DOMContentLoaded', () => {
             "Trần Thị Xuân Hoa", "Nguyễn Phạm Khang", "Đặng Văn Khánh", "Chim Nhật Luân",
             "Lư Vĩnh Phúc", "Nguyễn Chí Thiện", "Trần Thị Ngọc Thơ", "Huỳnh Yến Trang",
             "Thị Thu Trinh", "Nguyễn Thị Mỹ Xuyên", "Nguyễn Như Ý"
+        ],
+        "CB220": [
+            "Lý Quốc Dũng", "Phan Minh Khôi", "Huỳnh Văn My", "Mai Thúy Ngân",
+            "Võ Huỳnh Thảo Nguyên", "Đặng Dũ Nguyên", "Nguyễn Gia Nguyễn", "Trương Thị Thảo Như",
+            "Huỳnh Nhật Phát", "Nguyễn Huỳnh Thanh Sơn", "Thái Nhựt Thịnh", "Trần Nguyễn Huỳnh Trâm",
+            "Nguyễn Thị Tường Vi", "Lê Tường Vy", "Bùi Ngọc Như Ý"
         ]
     };
 
@@ -975,7 +981,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const validClasses = ['2026', 'CB211', 'CB213', 'ONB103', 'B212', 'CB219', 'CB210'];
+        const validClasses = ['2026', 'CB211', 'CB213', 'ONB103', 'B212', 'CB219', 'CB220', 'CB210'];
         const partialClasses = ['CB213'];
         const formattedClass = classVal.toUpperCase().replace(/\s+/g, '');
         const normClass = normalizeStr(classVal);
