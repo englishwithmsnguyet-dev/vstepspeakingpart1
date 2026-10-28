@@ -22699,6 +22699,32 @@ function formatTopicFormula(html) {
 }
 window.formatTopicFormula = formatTopicFormula;
 
+window.toggleTopicSection = function(headerEl) {
+    if (!headerEl) return;
+    const content = headerEl.nextElementSibling;
+    if (!content) return;
+
+    const isClosed = (content.style.display === 'none' || window.getComputedStyle(content).display === 'none');
+
+    if (isClosed) {
+        content.style.display = 'block';
+        headerEl.classList.add('is-open');
+        const icon = headerEl.querySelector('.fa-chevron-down, .fa-chevron-up');
+        if (icon) {
+            icon.classList.remove('fa-chevron-down');
+            icon.classList.add('fa-chevron-up');
+        }
+    } else {
+        content.style.display = 'none';
+        headerEl.classList.remove('is-open');
+        const icon = headerEl.querySelector('.fa-chevron-down, .fa-chevron-up');
+        if (icon) {
+            icon.classList.remove('fa-chevron-up');
+            icon.classList.add('fa-chevron-down');
+        }
+    }
+};
+
 // Reusable question card generator for both single topic and combo modes
 function buildTopicQuestionCardHtml(q, qNum, topicId, curState) {
     let vocabHtml = '';
@@ -22788,12 +22814,12 @@ function buildTopicQuestionCardHtml(q, qNum, topicId, curState) {
             </div>
 
             <!-- 1. GỢI Ý CÁCH TRẢ LỜI -->
-            <div class="topic-section-box" style="border-color: rgba(59, 130, 246, 0.35); box-shadow: 0 4px 12px -2px rgba(59, 130, 246, 0.08); border-radius: 16px; overflow: hidden;">
-                <div class="topic-section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'" style="background: rgba(59, 130, 246, 0.07); color: #2563eb; padding: 0.95rem 1.35rem;">
-                    <span style="display: flex; align-items: center; gap: 0.5rem; font-weight: 800; font-size: 1.02rem;"><i class="fa-solid fa-lightbulb" style="color: #2563eb;"></i> 💡 GỢI Ý CÁCH TRẢ LỜI</span>
+            <div class="topic-section-box" style="border: 1.5px solid rgba(59, 130, 246, 0.4); box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.08); border-radius: 14px; overflow: hidden; margin-bottom: 1.25rem;">
+                <div class="topic-section-header" onclick="window.toggleTopicSection ? window.toggleTopicSection(this) : (this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none')" style="background: rgba(59, 130, 246, 0.08); color: #2563eb; padding: 0.95rem 1.35rem; display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none;">
+                    <span style="font-weight: 800; font-size: 1rem;"><i class="fa-solid fa-lightbulb" style="color: #2563eb;"></i> 💡 GỢI Ý CÁCH TRẢ LỜI</span>
                     <span style="font-size: 0.95rem; font-weight: 700; color: #2563eb;"><i class="fa-solid fa-chevron-down"></i></span>
                 </div>
-                <div class="topic-section-content" style="background: var(--bg-card); padding: 1.35rem;">
+                <div class="topic-section-content" style="display: none; background: rgba(59, 130, 246, 0.02); padding: 1.25rem; border-top: 1px solid rgba(59, 130, 246, 0.2); line-height: 1.8;">
                     <div class="f-formula-box" style="margin: 0; padding: 0; background: transparent; border: none;">
                         ${formatTopicFormula(q.formula)}
                     </div>
@@ -22801,12 +22827,12 @@ function buildTopicQuestionCardHtml(q, qNum, topicId, curState) {
             </div>
 
             <!-- 2. GỢI Ý TỪ VỰNG -->
-            <div class="topic-section-box" style="border-color: rgba(245, 158, 11, 0.4); box-shadow: 0 4px 6px -1px rgba(245, 158, 11, 0.08);">
-                <div class="topic-section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'" style="background: rgba(245, 158, 11, 0.08); color: #d97706;">
-                    <span><i class="fa-solid fa-pen-to-square" style="color: #d97706;"></i> 📝 GỢI Ý TỪ VỰNG</span>
-                    <span style="font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-chevron-down"></i></span>
+            <div class="topic-section-box" style="border: 1.5px solid rgba(245, 158, 11, 0.4); box-shadow: 0 4px 6px -1px rgba(245, 158, 11, 0.08); border-radius: 14px; overflow: hidden; margin-bottom: 1.25rem;">
+                <div class="topic-section-header" onclick="window.toggleTopicSection ? window.toggleTopicSection(this) : (this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none')" style="background: rgba(245, 158, 11, 0.08); color: #d97706; padding: 0.95rem 1.35rem; display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none;">
+                    <span style="font-weight: 800; font-size: 1rem;"><i class="fa-solid fa-pen-to-square" style="color: #d97706;"></i> 📝 GỢI Ý TỪ VỰNG</span>
+                    <span style="font-size: 0.85rem; font-weight: 700; color: #d97706;"><i class="fa-solid fa-chevron-down"></i></span>
                 </div>
-                <div class="topic-section-content">
+                <div class="topic-section-content" style="display: none; padding: 1.25rem; border-top: 1px solid rgba(245, 158, 11, 0.2); line-height: 1.8;">
                     ${vocabHtml}
                 </div>
             </div>
@@ -22871,12 +22897,12 @@ function buildTopicQuestionCardHtml(q, qNum, topicId, curState) {
             </div>
 
             <!-- 4. GỢI Ý ĐÁP ÁN MẪU THAM KHẢO -->
-            <div class="topic-section-box" style="border-color: rgba(139, 92, 246, 0.4); box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.08);">
-                <div class="topic-section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'" style="background: rgba(139, 92, 246, 0.08); color: #7c3aed;">
-                    <span><i class="fa-solid fa-star" style="color: #7c3aed;"></i> ⭐ GỢI Ý ĐÁP ÁN MẪU THAM KHẢO</span>
-                    <span style="font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-chevron-down"></i></span>
+            <div class="topic-section-box" style="border: 1.5px solid rgba(139, 92, 246, 0.4); box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.08); border-radius: 14px; overflow: hidden; margin-bottom: 1.25rem;">
+                <div class="topic-section-header" onclick="window.toggleTopicSection ? window.toggleTopicSection(this) : (this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none')" style="background: rgba(139, 92, 246, 0.08); color: #7c3aed; padding: 0.95rem 1.35rem; display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none;">
+                    <span style="font-weight: 800; font-size: 1rem;"><i class="fa-solid fa-star" style="color: #7c3aed;"></i> ⭐ GỢI Ý ĐÁP ÁN MẪU THAM KHẢO</span>
+                    <span style="font-size: 0.85rem; font-weight: 700; color: #7c3aed;"><i class="fa-solid fa-chevron-down"></i></span>
                 </div>
-                <div class="topic-section-content">
+                <div class="topic-section-content" style="display: none; padding: 1.25rem; border-top: 1px solid rgba(139, 92, 246, 0.2); line-height: 1.8;">
                     ${samplesHtml}
                 </div>
             </div>
