@@ -223,12 +223,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if ('speechSynthesis' in window) {
         populateVoices();
         window.speechSynthesis.onvoiceschanged = () => populateVoices();
-        window.addEventListener('touchstart', () => {
-            if (window.speechSynthesis && (!window.speechSynthesis.getVoices() || window.speechSynthesis.getVoices().length === 0)) {
+        const unlockAudioSubsystem = () => {
+            try {
+                if (window.speechSynthesis.paused) window.speechSynthesis.resume();
                 window.speechSynthesis.getVoices();
                 populateVoices();
-            }
-        }, { once: true });
+            } catch (e) {}
+        };
+        document.addEventListener('click', unlockAudioSubsystem, { once: true, passive: true });
+        document.addEventListener('touchstart', unlockAudioSubsystem, { once: true, passive: true });
     }
 
     // Studio Audio Manifest (Real Human Studio Recordings)
@@ -242,6 +245,33 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .catch(() => {});
     }
+
+    // Chuẩn hóa và làm sạch văn bản trước khi phát âm
+    window.prepareSpeechText = (txt) => {
+        if (!txt) return '';
+        let t = String(txt);
+        // Bỏ thẻ HTML
+        t = t.replace(/<[^>]*>/g, ' ');
+        // Giải mã các thực thể HTML phổ biến
+        t = t.replace(/&amp;/g, ' and ')
+             .replace(/&quot;/g, '"')
+             .replace(/&#39;/g, "'")
+             .replace(/&lt;/g, '<')
+             .replace(/&gt;/g, '>');
+        // Bỏ mũi tên, gạch đầu dòng
+        t = t.replace(/^[→\-\*\•\s]+/, '');
+        // Chuyển dấu gạch chéo lựa chọn thành ", or " để TTS đọc tự nhiên (vd: "go out to eat / eat out" -> "go out to eat, or eat out")
+        t = t.replace(/([a-zA-Z0-9])\s*\/\s*([a-zA-Z0-9])/g, '$1, or $2');
+        // Chuyển ngoặc đơn thành dấu phẩy (vd: "role-playing game (RPG)" -> "role-playing game, RPG")
+        t = t.replace(/\s*\(([^\)]+)\)/g, ', $1');
+        // Rút gọn dấu ba chấm lơ lửng (...) để tránh ngắt quãng hoặc treo bộ đọc
+        t = t.replace(/\.{2,}/g, '.');
+        // Gỡ bỏ ký tự escape không cần thiết
+        t = t.replace(/\\'/g, "'").replace(/\\"/g, '"').replace(/\\/g, '');
+        // Chuẩn hoá khoảng trắng
+        t = t.replace(/\s+/g, ' ').trim();
+        return t;
+    };
 
     // Classic Computer Browser Speech (Pitch 1.15, Rate 0.98, Sweet, Natural & Clear Female Voice)
     window._activeUtterance = null;
@@ -258,9 +288,13 @@ document.addEventListener('DOMContentLoaded', () => {
             if (window.speechSynthesis.paused) {
                 window.speechSynthesis.resume();
             }
-            window.speechSynthesis.cancel();
+            if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
+                window.speechSynthesis.cancel();
+            }
             
-            const spokenTxt = cleanTxt.replace(/\s*\/\s*/g, ' or ');
+            const spokenTxt = window.prepareSpeechText(cleanTxt);
+            if (!spokenTxt) return;
+
             const utt = new SpeechSynthesisUtterance(spokenTxt);
             window._activeUtterance = utt;
             window._activeUtterances.add(utt);
@@ -283,7 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 bestVoice = getBestNaturalVoice(voices);
             }
             
-            if (bestVoice) {
+            if (bestVoice && bestVoice.lang && bestVoice.lang.toLowerCase().startsWith('en')) {
                 utt.voice = bestVoice;
                 utt.lang = bestVoice.lang;
             } else {
@@ -350,17 +384,20 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } catch (e) {}
 
-        let cleanTxt = (txt || '').replace(/<[^>]*>/g, '').replace(/^→\s*/, '').replace(/[\r\n]+/g, ' ').trim();
-        if (!cleanTxt) return;
+        const rawClean = (txt || '').replace(/<[^>]*>/g, '').replace(/^→\s*/, '').replace(/[\r\n]+/g, ' ').trim();
+        const cleanTxt = window.prepareSpeechText(txt);
+        if (!cleanTxt && !rawClean) return;
 
         // Ưu tiên phát File âm thanh Studio AI Neural MP3 (Ava Nữ) nếu có trong manifest
         const manifest = window.studioAudioManifest || studioAudioManifest || {};
-        const audioPath = manifest[cleanTxt] || manifest[cleanTxt.toLowerCase()];
+        const audioPath = manifest[rawClean] || manifest[rawClean.toLowerCase()] || manifest[cleanTxt] || manifest[cleanTxt.toLowerCase()];
         if (audioPath) {
             try {
                 if (window._currentAudio) {
-                    window._currentAudio.pause();
-                    window._currentAudio.currentTime = 0;
+                    try {
+                        window._currentAudio.pause();
+                        window._currentAudio.currentTime = 0;
+                    } catch (e) {}
                 }
                 if ('speechSynthesis' in window) {
                     if (window.speechSynthesis.paused) window.speechSynthesis.resume();
@@ -388,7 +425,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Dự phòng khi file MP3 chưa có hoặc lỗi: phát TTS với giọng Nữ trong trẻo chất lượng cao
-        speakClassicTTS(cleanTxt);
+        speakClassicTTS(cleanTxt || rawClean);
     };
 
     // Voice Modal Controls & Nghe thử
