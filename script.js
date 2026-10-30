@@ -245,28 +245,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Classic Computer Browser Speech (Pitch 1.15, Rate 0.98, Sweet, Natural & Clear Female Voice)
     window._activeUtterance = null;
+    window._activeUtterances = window._activeUtterances || new Set();
     const speakClassicTTS = (cleanTxt) => {
         if (!('speechSynthesis' in window)) return;
         try {
             if (window._currentAudio) {
-                window._currentAudio.pause();
-                window._currentAudio.currentTime = 0;
+                try {
+                    window._currentAudio.pause();
+                    window._currentAudio.currentTime = 0;
+                } catch (e) {}
             }
             if (window.speechSynthesis.paused) {
                 window.speechSynthesis.resume();
             }
             window.speechSynthesis.cancel();
             
-            const utt = new SpeechSynthesisUtterance(cleanTxt);
+            const spokenTxt = cleanTxt.replace(/\s*\/\s*/g, ' or ');
+            const utt = new SpeechSynthesisUtterance(spokenTxt);
             window._activeUtterance = utt;
+            window._activeUtterances.add(utt);
+
             const voices = window.speechSynthesis.getVoices() || [];
             
             let bestVoice = null;
-            if (state.selectedVoiceURI) {
-                bestVoice = voices.find(v => v.voiceURI === state.selectedVoiceURI);
+            const curVoiceURI = (window.state && window.state.selectedVoiceURI) || state.selectedVoiceURI;
+            if (curVoiceURI) {
+                bestVoice = voices.find(v => v.voiceURI === curVoiceURI);
                 // Nếu vô tình là giọng nam, huỷ ngay lập tức để chọn giọng nữ
                 if (bestVoice && isMaleOrUnwantedVoice(bestVoice)) {
                     bestVoice = null;
+                    if (window.state) window.state.selectedVoiceURI = null;
                     state.selectedVoiceURI = null;
                     try { localStorage.removeItem('vstep_voice_uri'); } catch(e) {}
                 }
@@ -286,13 +294,32 @@ document.addEventListener('DOMContentLoaded', () => {
             utt.rate = isNaN(savedSpeed) ? 0.98 : savedSpeed;
             utt.pitch = 1.15; // Giọng nữ trong trẻo, tươi sáng, dễ nghe
             
-            utt.onend = () => { window._activeUtterance = null; };
-            utt.onerror = () => { window._activeUtterance = null; };
+            const cleanup = () => {
+                window._activeUtterances.delete(utt);
+                if (window._activeUtterance === utt) window._activeUtterance = null;
+                if (window._speechKeepAlive) {
+                    clearInterval(window._speechKeepAlive);
+                    window._speechKeepAlive = null;
+                }
+            };
+            utt.onend = cleanup;
+            utt.onerror = cleanup;
 
-            setTimeout(() => {
-                window.speechSynthesis.speak(utt);
-                if (window.speechSynthesis.paused) window.speechSynthesis.resume();
-            }, 10);
+            if (window._speechKeepAlive) clearInterval(window._speechKeepAlive);
+            window._speechKeepAlive = setInterval(() => {
+                if (!window.speechSynthesis || !window.speechSynthesis.speaking) {
+                    clearInterval(window._speechKeepAlive);
+                    window._speechKeepAlive = null;
+                } else if (window.speechSynthesis.paused) {
+                    window.speechSynthesis.resume();
+                }
+            }, 5000);
+
+            // Phát âm thanh đồng bộ ngay trong user gesture (không dùng setTimeout để tránh bị Safari & Chrome chặn)
+            window.speechSynthesis.speak(utt);
+            if (window.speechSynthesis.paused) {
+                window.speechSynthesis.resume();
+            }
         } catch (e) {
             console.error("Error in fallback TTS:", e);
         }
@@ -301,7 +328,27 @@ document.addEventListener('DOMContentLoaded', () => {
     // Global AI Speech - Cố định Giọng Nữ Phòng Thu Studio (Neural MP3 - Ava Nữ) & Fallback Giọng Nữ Trong Trẻo
     window._currentAudio = null;
     window.speakText = (txt, forcedMode) => {
-        if (!state.isAudio) return;
+        // Tự động bật lại âm thanh nếu đang bị tắt khi người dùng bấm nghe
+        if (!state.isAudio || (window.state && !window.state.isAudio)) {
+            state.isAudio = true;
+            if (window.state) window.state.isAudio = true;
+            const audioToggle = document.getElementById('audio-toggle');
+            if (audioToggle) {
+                audioToggle.classList.add('active');
+                audioToggle.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+            }
+        }
+
+        // Hiệu ứng phản hồi thị giác nhấp nháy nhẹ trên nút vừa bấm
+        try {
+            const activeTrigger = (window.event && window.event.currentTarget && window.event.currentTarget.classList) ? window.event.currentTarget : null;
+            if (activeTrigger) {
+                activeTrigger.classList.add('active');
+                setTimeout(() => {
+                    try { activeTrigger.classList.remove('active'); } catch(e) {}
+                }, 1000);
+            }
+        } catch (e) {}
 
         let cleanTxt = (txt || '').replace(/<[^>]*>/g, '').replace(/^→\s*/, '').replace(/[\r\n]+/g, ' ').trim();
         if (!cleanTxt) return;
@@ -316,10 +363,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     window._currentAudio.currentTime = 0;
                 }
                 if ('speechSynthesis' in window) {
+                    if (window.speechSynthesis.paused) window.speechSynthesis.resume();
                     window.speechSynthesis.cancel();
                 }
                 const audio = new Audio(audioPath);
                 window._currentAudio = audio;
+
+                audio.onerror = () => {
+                    console.warn("Studio audio file error, fallback to speech synthesis:", audioPath);
+                    speakClassicTTS(cleanTxt);
+                };
+
                 const playPromise = audio.play();
                 if (playPromise !== undefined) {
                     playPromise.catch(err => {
