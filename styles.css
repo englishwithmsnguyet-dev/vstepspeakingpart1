@@ -1595,3 +1595,425 @@ body.dark-theme .topic-formula-row:nth-of-type(3) .formula-bracket-hl {
         justify-content: center !important;
     }
 }
+
+/* =========================================
+   ENGLISH WITH MISS NGUYET - BRAND IDENTITY
+   ========================================= */
+
+/* 1. Login Modal Brand */
+.login-brand-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.login-avatar-ring {
+    position: relative;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.85rem;
+    transition: transform 0.3s ease;
+}
+
+.login-avatar-ring:hover {
+    transform: scale(1.05);
+}
+
+.login-brand-img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(67, 97, 238, 0.45);
+    border: 3px solid #ffffff;
+}
+
+body.dark-theme .login-brand-img {
+    border-color: #3b82f6;
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.5);
+}
+
+.login-brand-tag {
+    font-size: 0.88rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #4361ee;
+    text-transform: uppercase;
+    background: rgba(67, 97, 238, 0.08);
+    padding: 0.35rem 1rem;
+    border-radius: 50px;
+    border: 1.5px solid rgba(67, 97, 238, 0.25);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+body.dark-theme .login-brand-tag {
+    color: #93c5fd;
+    background: rgba(59, 130, 246, 0.15);
+    border-color: rgba(59, 130, 246, 0.4);
+}
+
+/* 2. Sidebar Brand Header */
+.sidebar-header .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.sidebar-header .brand:hover {
+    transform: translateX(2px);
+}
+
+.brand-avatar-box {
+    position: relative;
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+}
+
+.brand-avatar-box .brand-avatar-img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 14px rgba(67, 97, 238, 0.35);
+    border: 2px solid #ffffff;
+}
+
+body.dark-theme .brand-avatar-box .brand-avatar-img {
+    border-color: #3b82f6;
+}
+
+.brand-verified-dot {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 16px;
+    height: 16px;
+    background: #10b981;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 0.55rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--bg-sidebar);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.brand-info-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-author-name {
+    font-size: 1.05rem;
+    line-height: 1.2;
+    font-weight: 800;
+    color: var(--text-main);
+    letter-spacing: 0.5px;
+}
+
+.brand-course-badge {
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: 1px;
+    margin-top: 3px;
+    text-transform: uppercase;
+}
+
+/* 3. Topbar Brand Link */
+.topbar-brand-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    text-decoration: none;
+    padding: 0.3rem 0.85rem;
+    border-radius: 50px;
+    background: rgba(67, 97, 238, 0.05);
+    border: 1.5px solid rgba(67, 97, 238, 0.18);
+    transition: all 0.25s ease;
+}
+
+.topbar-brand-link:hover {
+    background: rgba(67, 97, 238, 0.12);
+    border-color: rgba(67, 97, 238, 0.35);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(67, 97, 238, 0.15);
+}
+
+.topbar-brand-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(67, 97, 238, 0.3);
+    border: 1.5px solid #ffffff;
+}
+
+body.dark-theme .topbar-brand-avatar {
+    border-color: #3b82f6;
+}
+
+/* 4. Sidebar Footer Brand */
+.sidebar-footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    padding: 0.4rem 0.6rem;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.sidebar-footer-brand:hover {
+    background: rgba(67, 97, 238, 0.08);
+}
+
+.sidebar-footer-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border: 1.5px solid #ffffff;
+    flex-shrink: 0;
+}
+
+body.dark-theme .sidebar-footer-avatar {
+    border-color: #3b82f6;
+}
+
+.sidebar-footer-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+}
+
+.sf-title {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+}
+
+.sf-name {
+    font-size: 0.82rem;
+    color: var(--text-main);
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sf-arrow {
+    font-size: 0.75rem;
+    color: var(--primary);
+    opacity: 0.7;
+    margin-left: auto;
+}
+
+/* 5. Teacher Brand Card on Overview Tab */
+.teacher-brand-card {
+    background: linear-gradient(135deg, rgba(67, 97, 238, 0.06) 0%, rgba(114, 9, 183, 0.04) 100%);
+    border: 1.5px solid rgba(67, 97, 238, 0.25);
+    border-radius: 24px;
+    padding: 1.75rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px -10px rgba(67, 97, 238, 0.12);
+    position: relative;
+    overflow: hidden;
+}
+
+body.dark-theme .teacher-brand-card {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+    border-color: rgba(67, 97, 238, 0.35);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.teacher-brand-main {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+.teacher-avatar-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.teacher-brand-photo {
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 12px 28px rgba(67, 97, 238, 0.4);
+    border: 3.5px solid #ffffff;
+    transition: transform 0.3s ease;
+}
+
+body.dark-theme .teacher-brand-photo {
+    border-color: #3b82f6;
+    box-shadow: 0 12px 28px rgba(59, 130, 246, 0.45);
+}
+
+.teacher-brand-photo:hover {
+    transform: scale(1.05);
+}
+
+.teacher-verified-pill {
+    margin-top: 0.5rem;
+    background: #10b981;
+    color: white;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.2rem 0.65rem;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    box-shadow: 0 2px 6px rgba(16, 185, 129, 0.3);
+}
+
+.teacher-brand-content {
+    flex: 1;
+}
+
+.teacher-tagline {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.4rem;
+}
+
+.teacher-badge {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #4361ee;
+    background: rgba(67, 97, 238, 0.1);
+    border: 1px solid rgba(67, 97, 238, 0.25);
+    padding: 0.2rem 0.65rem;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+body.dark-theme .teacher-badge {
+    color: #93c5fd;
+    background: rgba(59, 130, 246, 0.18);
+    border-color: rgba(59, 130, 246, 0.35);
+}
+
+.teacher-badge.fb-badge {
+    color: #1877f2;
+    background: rgba(24, 119, 242, 0.08);
+    border-color: rgba(24, 119, 242, 0.25);
+}
+
+.teacher-brand-heading {
+    font-size: 1.55rem;
+    font-weight: 900;
+    color: var(--text-main);
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #1e3a8a, #4361ee, #7209b7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.dark-theme .teacher-brand-heading {
+    background: linear-gradient(135deg, #60a5fa, #818cf8, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.teacher-brand-intro {
+    font-size: 0.98rem;
+    color: var(--text-main);
+    line-height: 1.65;
+    margin: 0;
+}
+
+.teacher-brand-btn-row {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin-top: 1.25rem;
+    padding-top: 1.15rem;
+    border-top: 1px dashed rgba(67, 97, 238, 0.2);
+    flex-wrap: wrap;
+}
+
+.btn-teacher-connect {
+    background: linear-gradient(135deg, #1877f2, #0d65d9);
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.6rem 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 12px rgba(24, 119, 242, 0.3);
+    transition: all 0.2s ease;
+}
+
+.btn-teacher-connect:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(24, 119, 242, 0.45);
+    color: #ffffff;
+}
+
+.btn-teacher-explore {
+    background: var(--bg-card);
+    color: var(--primary);
+    border: 1.5px solid var(--primary);
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.6rem 1.25rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.btn-teacher-explore:hover {
+    background: rgba(67, 97, 238, 0.08);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .teacher-brand-card {
+        padding: 1.25rem 1rem;
+    }
+    .teacher-brand-main {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    .teacher-tagline {
+        justify-content: center;
+    }
+    .teacher-brand-btn-row {
+        justify-content: center;
+    }
+    .btn-teacher-connect, .btn-teacher-explore {
+        width: 100%;
+        justify-content: center;
+    }
+}

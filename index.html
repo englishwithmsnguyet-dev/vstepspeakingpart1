@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VSTEP SPEAKING PART 01 - B1 LEVEL</title>
-    <meta name="description" content="Website tương tác luyện thi VSTEP Speaking Part 01 theo chương trình giảng dạy của Ms. Nguyệt.">
+    <title>VSTEP SPEAKING PART 01 - ENGLISH WITH MISS NGUYET</title>
+    <meta name="description" content="Website tương tác luyện thi VSTEP Speaking Part 01 theo chương trình giảng dạy của Miss Nguyet - English with Miss Nguyet.">
+    <!-- Favicon Brand Miss Nguyet -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/brand-circle.png">
     <!-- Google Fonts: Roboto Serif Light -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Canvas Confetti -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
-    <link rel="stylesheet" href="styles.css?v=20261028_formula_ui">
+    <link rel="stylesheet" href="styles.css?v=20261031_brand_identity">
     <script>
         window.onerror = function(msg, url, lineNo, columnNo, error) {
             console.error("Window error: ", msg, url, lineNo, error);
@@ -26,13 +29,13 @@
         <!-- Modal Đăng Nhập / Chào Mừng -->
     <div class="login-overlay" id="welcome-modal">
         <div class="login-card">
-            <div class="login-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 20h9"></path>
-                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
-                </svg>
+            <div class="login-brand-header">
+                <div class="login-avatar-ring">
+                    <img src="assets/images/brand-circle.png" alt="English with Miss Nguyet" class="login-brand-img">
+                </div>
+                <div class="login-brand-tag"><i class="fa-solid fa-graduation-cap"></i> ENGLISH WITH MISS NGUYET</div>
             </div>
-            <h2 class="login-title">CHÀO MỪNG BẠN ĐẾN VỚI LỚP<br>HỌC CỦA MISS NGUYET</h2>
+            <h2 class="login-title">CHÀO MỪNG BẠN ĐẾN VỚI LỚP HỌC</h2>
             <p class="login-subtitle">Vui lòng điền Họ tên và Lớp học của bạn để bắt đầu học. Kết quả luyện tập sẽ được ghi nhận và gửi báo cáo cho giáo viên.</p>
             
             <div class="login-form">
@@ -69,13 +72,16 @@
         <!-- Sidebar Navigation -->
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
-                <div class="brand">
-                    <div class="brand-badge"><i class="fa-solid fa-microphone-lines"></i></div>
-                    <div>
-                        <div class="brand-title">VSTEP SPEAKING</div>
-                        <div class="brand-subtitle">PART 01 - B1 LEVEL</div>
+                <a href="https://www.facebook.com/nguyetpham28" target="_blank" class="brand" title="Ghé thăm Facebook: English with Miss Nguyet">
+                    <div class="brand-avatar-box">
+                        <img src="assets/images/brand-circle.png" alt="English with Miss Nguyet" class="brand-avatar-img">
+                        <span class="brand-verified-dot" title="Giáo viên xác thực"><i class="fa-solid fa-check"></i></span>
                     </div>
-                </div>
+                    <div class="brand-info-group">
+                        <div class="brand-author-name">MISS NGUYET</div>
+                        <div class="brand-course-badge">SPEAKING PART 01</div>
+                    </div>
+                </a>
             </div>
 
             <div class="user-profile hidden" id="user-profile">
@@ -156,7 +162,14 @@
             </ul>
 
             <div class="sidebar-footer">
-                <div class="credit">Designed by <strong>Ms. Nguyet</strong></div>
+                <a href="https://www.facebook.com/nguyetpham28" target="_blank" class="sidebar-footer-brand" title="Ghé thăm Facebook: English with Miss Nguyet">
+                    <img src="assets/images/brand-circle.png" alt="Ms. Nguyet" class="sidebar-footer-avatar">
+                    <div class="sidebar-footer-text">
+                        <span class="sf-title">Giảng dạy &amp; Thiết kế</span>
+                        <strong class="sf-name">English with Miss Nguyet</strong>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square sf-arrow"></i>
+                </a>
             </div>
         </aside>
 
@@ -165,7 +178,10 @@
             <header class="top-bar">
                 <button class="mobile-toggle" id="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
                 <div class="current-title" id="top-title">OVERVIEW</div>
-                <a href="https://www.facebook.com/nguyetpham28" target="_blank" class="galaxy-text">ENGLISH WITH MISS NGUYET</a>
+                <a href="https://www.facebook.com/nguyetpham28" target="_blank" class="topbar-brand-link" title="English with Miss Nguyet - Ghé thăm Facebook">
+                    <img src="assets/images/brand-circle.png" alt="Miss Nguyet" class="topbar-brand-avatar">
+                    <span class="galaxy-text">ENGLISH WITH MISS NGUYET</span>
+                </a>
                 <div class="top-actions" style="display:flex; align-items:center; gap:0.5rem;">
                     <button class="icon-btn" id="progress-btn" title="Tiến độ học tập &amp; Lưu dữ liệu" onclick="openProgressModal()" style="font-size:0.82rem; font-weight:700; padding:0 0.65rem; width:auto; border-radius:8px; display:flex; align-items:center; gap:0.35rem; border:1.5px solid #10b981; background:rgba(16, 185, 129, 0.08); color:#059669; cursor:pointer;">
                         <i class="fa-solid fa-cloud-arrow-up" style="color:#10b981;"></i> <span id="progress-btn-label">Tiến Độ</span>
@@ -184,6 +200,34 @@
                      TAB 1: OVERVIEW (TỔNG QUAN)
                 ========================================================== -->
                 <section id="overview" class="tab-pane active fade-in">
+                    <!-- Teacher Brand Showcase -->
+                    <div class="teacher-brand-card fade-in">
+                        <div class="teacher-brand-main">
+                            <div class="teacher-avatar-frame">
+                                <img src="assets/images/brand-circle.png" alt="Miss Nguyet" class="teacher-brand-photo">
+                                <span class="teacher-verified-pill"><i class="fa-solid fa-circle-check"></i> Giảng viên chính</span>
+                            </div>
+                            <div class="teacher-brand-content">
+                                <div class="teacher-tagline">
+                                    <span class="teacher-badge"><i class="fa-solid fa-award"></i> VSTEP B1 - B2 SPECIALIST</span>
+                                    <span class="teacher-badge fb-badge"><i class="fa-brands fa-facebook"></i> @nguyetpham28</span>
+                                </div>
+                                <h2 class="teacher-brand-heading">ENGLISH WITH MISS NGUYET</h2>
+                                <p class="teacher-brand-intro">
+                                    Chào mừng bạn đến với chương trình tương tác luyện thi <strong>VSTEP Speaking Part 01</strong>. Hệ thống được biên soạn độc quyền theo giáo trình của <strong>Miss Nguyet</strong>, tích hợp <em>7 công thức phản xạ tự nhiên</em>, <em>bảng từ vựng và lợi ích đa năng</em>, cùng phòng luyện nói <em>60 chủ đề thực chiến</em> giúp học viên tự tin bứt phá điểm số tối đa!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="teacher-brand-btn-row">
+                            <a href="https://www.facebook.com/nguyetpham28" target="_blank" class="btn-teacher-connect">
+                                <i class="fa-brands fa-facebook"></i> Kết nối với Miss Nguyet
+                            </a>
+                            <button type="button" class="btn-teacher-explore" onclick="switchTab('practice-topics')">
+                                <i class="fa-solid fa-comments"></i> 60 Chủ Đề Luyện Nói
+                            </button>
+                        </div>
+                    </div>
+
                     <div class="hero-card">
                         <div class="hero-text">
                             <span class="badge-mini">PART 01: SOCIAL INTERACTION</span>
@@ -19003,6 +19047,6 @@
     </div>
 
     <script src="audio/manifest.js"></script>
-    <script src="script.js?v=20261030_audio_fix_v2"></script>
+    <script src="script.js?v=20261031_brand_identity"></script>
 </body>
 </html>

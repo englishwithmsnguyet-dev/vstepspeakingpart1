@@ -23621,12 +23621,15 @@ window.openFullTopicExamModal = (topicId, topicId2 = null) => {
     overlay.innerHTML = `
         <div class="topic-full-exam-modal fade-in">
             <div class="topic-full-exam-header">
-                <div>
-                    <div style="font-size: 0.85rem; font-weight: 700; color: #ef4444; letter-spacing: 0.5px; text-transform: uppercase;">
-                        <i class="fa-solid fa-microphone-lines"></i> ${badgeText}
-                    </div>
-                    <div class="topic-full-exam-title">
-                        ${titleText}
+                <div style="display: flex; align-items: center; gap: 0.85rem;">
+                    <img src="assets/images/brand-circle.png" alt="Miss Nguyet" style="width: 44px; height: 44px; border-radius: 50%; box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3); border: 2px solid #ffffff; flex-shrink: 0;">
+                    <div>
+                        <div style="font-size: 0.82rem; font-weight: 700; color: #ef4444; letter-spacing: 0.5px; text-transform: uppercase;">
+                            <i class="fa-solid fa-microphone-lines"></i> ${badgeText}
+                        </div>
+                        <div class="topic-full-exam-title">
+                            ${titleText}
+                        </div>
                     </div>
                 </div>
                 <button class="topic-full-exam-close" onclick="closeFullTopicExamModal()" title="Đóng phòng thi">&times;</button>
