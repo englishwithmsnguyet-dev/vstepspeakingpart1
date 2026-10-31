@@ -1642,12 +1642,12 @@ body.dark-theme .login-card-custom {
 
 .login-teacher-halo {
   position: relative;
-  width: 104px;
-  height: 104px;
+  width: 126px;
+  height: 126px;
   border-radius: 50%;
   padding: 4px;
   background: linear-gradient(135deg, #6366f1 0%, #ec4899 50%, #38bdf8 100%);
-  box-shadow: 0 0 25px rgba(99, 102, 241, 0.45), 0 0 45px rgba(236, 72, 153, 0.25);
+  box-shadow: 0 0 28px rgba(99, 102, 241, 0.45), 0 0 50px rgba(236, 72, 153, 0.25);
   animation: haloPulse 3.5s ease-in-out infinite alternate;
 }
 
@@ -1891,8 +1891,8 @@ body.dark-theme .login-footer-signature a {
     margin-bottom: 1.25rem !important;
   }
   .login-teacher-halo {
-    width: 90px;
-    height: 90px;
+    width: 106px;
+    height: 106px;
   }
   .login-course-title {
     font-size: 0.98rem;
