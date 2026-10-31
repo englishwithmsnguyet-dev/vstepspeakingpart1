@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Canvas Confetti -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
-    <link rel="stylesheet" href="styles.css?v=20261031_brand_identity">
+    <link rel="stylesheet" href="styles.css?v=20261031_brand_login_v2">
     <script>
         window.onerror = function(msg, url, lineNo, columnNo, error) {
             console.error("Window error: ", msg, url, lineNo, error);
@@ -28,38 +28,67 @@
     <!-- Màn hình chào mừng -->
         <!-- Modal Đăng Nhập / Chào Mừng -->
     <div class="login-overlay" id="welcome-modal">
-        <div class="login-card">
-            <div class="login-brand-header">
-                <div class="login-avatar-ring">
-                    <img src="assets/images/brand-circle.png" alt="English with Miss Nguyet" class="login-brand-img">
+        <div class="login-card-custom">
+            <!-- Miss Nguyet Avatar Brand Ring -->
+            <div class="login-teacher-avatar-wrap">
+                <div class="login-teacher-halo">
+                    <img src="assets/images/brand-circle.png" alt="Miss Nguyet" class="login-teacher-avatar">
                 </div>
-                <div class="login-brand-tag"><i class="fa-solid fa-graduation-cap"></i> ENGLISH WITH MISS NGUYET</div>
+                <span class="login-teacher-badge"><i class="fa-solid fa-certificate"></i> Lead Instructor</span>
             </div>
-            <h2 class="login-title">CHÀO MỪNG BẠN ĐẾN VỚI LỚP HỌC</h2>
-            <p class="login-subtitle">Vui lòng điền Họ tên và Lớp học của bạn để bắt đầu học. Kết quả luyện tập sẽ được ghi nhận và gửi báo cáo cho giáo viên.</p>
-            
-            <div class="login-form">
-                <!-- Hộp tiếp tục phiên học đã lưu -->
-                <div id="saved-session-box" style="display: none; background: rgba(16, 185, 129, 0.08); border: 1.5px dashed #10b981; border-radius: 12px; padding: 0.85rem 1rem; margin-bottom: 1rem; text-align: left;">
-                    <div style="font-size: 0.82rem; font-weight: 700; color: #059669; text-transform: uppercase; margin-bottom: 0.25rem;">
+
+            <div class="login-brand-tag">
+                <i class="fa-solid fa-graduation-cap"></i> Welcome to Miss Nguyet's Class!
+            </div>
+            <div class="login-course-title">VSTEP SPEAKING PART 01 – B1 LEVEL</div>
+            <h2 class="login-title-custom">NHẬP THÔNG TIN<br/>ĐỂ BẮT ĐẦU HỌC 🚀</h2>
+
+            <div class="login-form-wrapper">
+                <!-- Hộp tiếp tục phiên học đã lưu (nếu có) -->
+                <div id="saved-session-box" style="display: none; background: rgba(16, 185, 129, 0.08); border: 1.5px dashed #10b981; border-radius: 14px; padding: 0.85rem 1rem; margin-bottom: 1.25rem; text-align: left;">
+                    <div style="font-size: 0.8rem; font-weight: 700; color: #059669; text-transform: uppercase; margin-bottom: 0.25rem;">
                         <i class="fa-solid fa-clock-rotate-left"></i> TIẾN ĐỘ ĐÃ LƯU TRƯỚC ĐÓ:
                     </div>
-                    <div style="font-weight: 800; color: var(--text-main); font-size: 1rem;" id="saved-session-info">
+                    <div style="font-weight: 800; color: #1e293b; font-size: 0.98rem;" id="saved-session-info">
                         Học viên
                     </div>
-                    <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.25rem;" id="saved-session-details">
+                    <div style="font-size: 0.82rem; color: #64748b; margin-top: 0.25rem;" id="saved-session-details">
                         Chưa có chi tiết
                     </div>
-                    <button type="button" id="resume-btn" onclick="resumeSavedSession()" style="margin-top: 0.65rem; width: 100%; padding: 0.65rem 1rem; background: linear-gradient(135deg, #10b981, #059669); color: white; border: none; border-radius: 8px; font-weight: 700; font-size: 0.95rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem; box-shadow: 0 4px 10px rgba(16, 185, 129, 0.25);">
+                    <button type="button" id="resume-btn" onclick="resumeSavedSession()" style="margin-top: 0.65rem; width: 100%; padding: 0.65rem 1rem; background: linear-gradient(135deg, #10b981, #059669); color: white; border: none; border-radius: 10px; font-weight: 700; font-size: 0.92rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem; box-shadow: 0 4px 10px rgba(16, 185, 129, 0.25);">
                         <i class="fa-solid fa-play"></i> TIẾP TỤC HỌC TẬP NGAY
                     </button>
                 </div>
 
-                <input type="text" id="student-name" placeholder="HỌ VÀ TÊN" autocomplete="off" spellcheck="false" required>
-                <input type="text" id="student-class" placeholder="LỚP HỌC" autocomplete="off" spellcheck="false" required>
-                <p id="login-error" class="login-error" style="display: none;"></p>
-                <button id="start-btn" class="login-btn">BẮT ĐẦU HỌC NGAY</button>
+                <div class="input-group-custom">
+                    <label for="student-name">
+                        <i class="fa-solid fa-user-pen" style="color: #6366f1;"></i> HỌ VÀ TÊN HỌC VIÊN:
+                    </label>
+                    <input autocomplete="off" id="student-name" type="text" placeholder="Nhập họ và tên học viên..." onkeydown="if(event.key==='Enter') enterRoom()" />
+                </div>
+
+                <div class="input-group-custom">
+                    <label for="student-class">
+                        <i class="fa-solid fa-chalkboard-user" style="color: #0284c7;"></i> MÃ LỚP HỌC:
+                    </label>
+                    <input autocomplete="off" id="student-class" type="text" placeholder="Nhập mã lớp học..." onkeydown="if(event.key==='Enter') enterRoom()" />
+                </div>
+
+                <p id="login-error" class="login-error-msg" style="display: none;"></p>
+
+                <button class="btn-login-custom" id="start-btn" onclick="enterRoom()">
+                    <span>BẮT ĐẦU HỌC</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <div class="login-footer-signature">
+                    <a href="https://www.facebook.com/nguyetpham28" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span>ENGLISH WITH MISS NGUYET</span>
+                    </a>
+                </div>
             </div>
+
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.submitted) { window.finishLogin(); }"></iframe>
             <form id="tracking-form" action="https://docs.google.com/forms/d/e/1FAIpQLSc8BwUzOGfw66DF-LUYd2uMkFxhj3Q6aKlzEpck2lJA1hobhQ/formResponse" method="post" target="hidden_iframe" style="display:none;">
                 <input type="text" name="entry.388968236" id="entry_388968236">
@@ -19047,6 +19076,6 @@
     </div>
 
     <script src="audio/manifest.js"></script>
-    <script src="script.js?v=20261031_brand_identity"></script>
+    <script src="script.js?v=20261031_brand_login_v2"></script>
 </body>
 </html>

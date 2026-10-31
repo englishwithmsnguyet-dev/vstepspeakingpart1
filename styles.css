@@ -1309,13 +1309,16 @@ body.dark-theme .topic-formula-row:nth-of-type(3) .formula-bracket-hl {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #2D333B;
+    background: rgba(15, 23, 42, 0.88);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 99999;
     padding: 20px;
     box-sizing: border-box;
+    overflow-y: auto;
 }
 
 .login-card {
@@ -1600,63 +1603,300 @@ body.dark-theme .topic-formula-row:nth-of-type(3) .formula-bracket-hl {
    ENGLISH WITH MISS NGUYET - BRAND IDENTITY
    ========================================= */
 
-/* 1. Login Modal Brand */
-.login-brand-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1.25rem;
+/* 1. Login Modal Brand (Writing Task 01 Signature Design) */
+.login-card-custom {
+  background: #ffffff !important;
+  max-width: 460px !important;
+  width: 94% !important;
+  padding: 2.5rem 2.2rem 2rem 2.2rem !important;
+  border-radius: 28px !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35), 0 0 45px rgba(99, 102, 241, 0.25) !important;
+  border: 1px solid rgba(226, 232, 240, 0.9) !important;
+  text-align: center !important;
+  position: relative !important;
+  box-sizing: border-box !important;
+  animation: modalPopIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  margin: auto !important;
 }
 
-.login-avatar-ring {
-    position: relative;
-    width: 96px;
-    height: 96px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0.85rem;
-    transition: transform 0.3s ease;
+body.dark-theme .login-card-custom {
+  background: #1e293b !important;
+  border-color: rgba(59, 130, 246, 0.35) !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 45px rgba(99, 102, 241, 0.3) !important;
 }
 
-.login-avatar-ring:hover {
-    transform: scale(1.05);
+@keyframes modalPopIn {
+  0% { transform: scale(0.92) translateY(12px); opacity: 0; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
 }
 
-.login-brand-img {
-    width: 96px;
-    height: 96px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 10px 25px rgba(67, 97, 238, 0.45);
-    border: 3px solid #ffffff;
+/* Miss Nguyet Avatar Brand Ring */
+.login-teacher-avatar-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.15rem;
+  position: relative;
 }
 
-body.dark-theme .login-brand-img {
-    border-color: #3b82f6;
-    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.5);
+.login-teacher-halo {
+  position: relative;
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, #6366f1 0%, #ec4899 50%, #38bdf8 100%);
+  box-shadow: 0 0 25px rgba(99, 102, 241, 0.45), 0 0 45px rgba(236, 72, 153, 0.25);
+  animation: haloPulse 3.5s ease-in-out infinite alternate;
+}
+
+@keyframes haloPulse {
+  0% {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.35), 0 0 35px rgba(236, 72, 153, 0.2);
+    transform: scale(1);
+  }
+  100% {
+    box-shadow: 0 0 32px rgba(99, 102, 241, 0.6), 0 0 55px rgba(236, 72, 153, 0.4);
+    transform: scale(1.025);
+  }
+}
+
+.login-teacher-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  border: 3.5px solid #ffffff;
+  display: block;
+}
+
+body.dark-theme .login-teacher-avatar {
+  border-color: #1e293b;
+}
+
+.login-teacher-badge {
+  margin-top: 0.65rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.8rem;
+  border-radius: 9999px;
+  background: rgba(99, 102, 241, 0.12);
+  border: 1.5px solid rgba(99, 102, 241, 0.35);
+  color: #6366f1;
+}
+
+body.dark-theme .login-teacher-badge {
+  background: rgba(99, 102, 241, 0.25);
+  color: #a5b4fc;
+  border-color: rgba(99, 102, 241, 0.5);
 }
 
 .login-brand-tag {
-    font-size: 0.88rem;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-    color: #4361ee;
-    text-transform: uppercase;
-    background: rgba(67, 97, 238, 0.08);
-    padding: 0.35rem 1rem;
-    border-radius: 50px;
-    border: 1.5px solid rgba(67, 97, 238, 0.25);
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #7c3aed;
+  margin-bottom: 0.35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  font-family: var(--font-body, system-ui, -apple-system, sans-serif);
 }
 
 body.dark-theme .login-brand-tag {
-    color: #93c5fd;
-    background: rgba(59, 130, 246, 0.15);
-    border-color: rgba(59, 130, 246, 0.4);
+  color: #c084fc;
+}
+
+.login-course-title {
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: #4361ee;
+  margin-bottom: 1.15rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-family: var(--font-heading, 'Roboto Serif', serif);
+}
+
+body.dark-theme .login-course-title {
+  color: #60a5fa;
+}
+
+.login-title-custom {
+  font-size: 1.65rem !important;
+  font-weight: 900 !important;
+  color: #0f172a !important;
+  margin-top: 0 !important;
+  margin-bottom: 1.5rem !important;
+  line-height: 1.35 !important;
+  letter-spacing: -0.01em !important;
+  font-family: var(--font-heading, 'Roboto Serif', serif) !important;
+}
+
+body.dark-theme .login-title-custom {
+  color: #f8fafc !important;
+}
+
+.login-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-group-custom {
+  text-align: left !important;
+  margin-bottom: 1.25rem !important;
+}
+
+.input-group-custom label {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.45rem !important;
+  font-weight: 800 !important;
+  font-size: 0.85rem !important;
+  margin-bottom: 0.5rem !important;
+  color: #1e293b !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em !important;
+  font-family: var(--font-body, system-ui, -apple-system, sans-serif) !important;
+}
+
+body.dark-theme .input-group-custom label {
+  color: #e2e8f0 !important;
+}
+
+.input-group-custom input {
+  width: 100% !important;
+  padding: 0.9rem 1.15rem !important;
+  border-radius: 14px !important;
+  border: 1.5px solid #cbd5e1 !important;
+  background: #f8fafc !important;
+  color: #0f172a !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  outline: none !important;
+  transition: all 0.2s ease !important;
+  box-sizing: border-box !important;
+  font-family: inherit !important;
+}
+
+body.dark-theme .input-group-custom input {
+  background: #0f172a !important;
+  border-color: #334155 !important;
+  color: #f8fafc !important;
+}
+
+.input-group-custom input:focus {
+  border-color: #6366f1 !important;
+  background: #ffffff !important;
+  box-shadow: 0 0 0 3.5px rgba(99, 102, 241, 0.18) !important;
+}
+
+body.dark-theme .input-group-custom input:focus {
+  background: #1e293b !important;
+  border-color: #818cf8 !important;
+  box-shadow: 0 0 0 3.5px rgba(129, 140, 248, 0.25) !important;
+}
+
+.login-error-msg {
+  color: #e11d48 !important;
+  font-size: 0.88rem !important;
+  margin-top: -0.25rem !important;
+  margin-bottom: 1rem !important;
+  text-align: left !important;
+  font-weight: 600 !important;
+  background: rgba(244, 63, 94, 0.08);
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  border-left: 3.5px solid #e11d48;
+}
+
+.btn-login-custom {
+  width: 100% !important;
+  padding: 1rem !important;
+  border-radius: 14px !important;
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%) !important;
+  color: #ffffff !important;
+  font-size: 1.05rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.6px !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.65rem !important;
+  margin-top: 0.5rem !important;
+}
+
+.btn-login-custom:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 12px 30px rgba(99, 102, 241, 0.5) !important;
+  filter: brightness(1.08) !important;
+}
+
+.btn-login-custom:active {
+  transform: translateY(0) !important;
+}
+
+.login-footer-signature {
+  margin-top: 1.4rem;
+  font-size: 0.82rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  letter-spacing: 0.5px;
+}
+
+.login-footer-signature a {
+  color: #64748b;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  transition: color 0.2s ease;
+}
+
+body.dark-theme .login-footer-signature a {
+  color: #94a3b8;
+}
+
+.login-footer-signature a:hover {
+  color: #1877f2;
+}
+
+.login-footer-signature i {
+  color: #1877f2;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 540px) {
+  .login-card-custom {
+    padding: 1.8rem 1.35rem 1.6rem 1.35rem !important;
+    border-radius: 22px !important;
+  }
+  .login-title-custom {
+    font-size: 1.35rem !important;
+    margin-bottom: 1.25rem !important;
+  }
+  .login-teacher-halo {
+    width: 90px;
+    height: 90px;
+  }
+  .login-course-title {
+    font-size: 0.98rem;
+  }
 }
 
 /* 2. Sidebar Brand Header */
