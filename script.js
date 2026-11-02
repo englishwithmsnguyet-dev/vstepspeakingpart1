@@ -1320,7 +1320,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const ynFormulas = [
     {
         "title": "1. Do you often [hoạt động – Vo]?",
-        "formula": "→ Sure. I often <strong>[hoạt động – Vo]</strong> <strong>[thời gian]</strong> when I have free time because it helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.",
+        "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1 (Trả lời có):</strong> → Sure. I often <strong>[hoạt động – Vo]</strong> <strong>[thời gian]</strong> when I have free time because it helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.</div><div><strong>- Cách 2 (Trả lời không):</strong> → Not really. I don’t often <strong>[hoạt động – Vo]</strong> because I have a busy schedule. Instead, I prefer to <strong>[hoạt động khác – Vo]</strong> in my free time to <strong>[lợi ích]</strong>.</div>",
         "examples": [
             {
                 "q": "Do you often <span class='sub-hl'>play sports</span>?",
@@ -1355,7 +1355,19 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
         "exQ": "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>play sports</span>?",
         "exA": "→ Sure. I often play sports in the afternoon when I have free time because it helps me relax after a busy day and stay healthy.",
-        "exAFormatted": "→ Sure. I often <span class=\"sub-hl\">play sports</span> <span class=\"sub-hl\">in the afternoon</span> when I have free time because it helps me <span class=\"sub-hl\">relax after a busy day</span> and <span class=\"sub-hl\">stay healthy</span>.",
+        "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Cách 1 (Trả lời có):</strong> → Sure. I often <span class=\"sub-hl\">play sports</span> <span class=\"sub-hl\">in the afternoon</span> when I have free time because it helps me <span class=\"sub-hl\">relax after a busy day</span> and <span class=\"sub-hl\">stay healthy</span>.</div><div><strong>- Cách 2 (Trả lời không):</strong> → Not really. I don’t often <span class=\"sub-hl\">play sports</span> because I have a busy schedule. Instead, I prefer to <span class=\"sub-hl\">listen to music</span> in my free time to <span class=\"sub-hl\">reduce stress</span>.</div>",
+        "samples": [
+            {
+                "label": "Cách 1 (Trả lời có)",
+                "text": "Sure. I often play sports in the afternoon when I have free time because it helps me relax after a busy day and stay healthy.",
+                "formatted": "→ Sure. I often <span class=\"sub-hl\">play sports</span> <span class=\"sub-hl\">in the afternoon</span> when I have free time because it helps me <span class=\"sub-hl\">relax after a busy day</span> and <span class=\"sub-hl\">stay healthy</span>."
+            },
+            {
+                "label": "Cách 2 (Trả lời không)",
+                "text": "Not really. I don’t often play sports because I have a busy schedule. Instead, I prefer to listen to music in my free time to reduce stress.",
+                "formatted": "→ Not really. I don’t often <span class=\"sub-hl\">play sports</span> because I have a busy schedule. Instead, I prefer to <span class=\"sub-hl\">listen to music</span> in my free time to <span class=\"sub-hl\">reduce stress</span>."
+            }
+        ],
         "vocab": [
             {
                 "type": "time",
@@ -1408,12 +1420,36 @@ document.addEventListener('DOMContentLoaded', () => {
                         "vn": "👉 (Sử dụng các cụm trong BẢNG LỢI ÍCH)"
                     }
                 ]
+            },
+            {
+                "type": "activity",
+                "title": "Cụm Hoạt động thay thế (Cách 2):",
+                "items": [
+                    {
+                        "isNote": true,
+                        "vn": "👉 (Sử dụng các cụm trong BẢNG HOẠT ĐỘNG)"
+                    }
+                ]
+            },
+            {
+                "type": "note",
+                "title": "Ghi chú từ vựng (Cách 2):",
+                "items": [
+                    {
+                        "en": "have a busy schedule",
+                        "vn": "có lịch trình bận rộn"
+                    },
+                    {
+                        "en": "Instead, I prefer to",
+                        "vn": "thay vào đó, tôi thích... hơn"
+                    }
+                ]
             }
         ]
     },
     {
         "title": "2. Do you often [hoạt động – Vo] while [hoạt động – Ving]?",
-        "formula": "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I often <strong>[hoạt động – Vo]</strong> while <strong>[hoạt động – Ving]</strong> because it doesn't affect my concentration. Instead, it helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. I don’t often <strong>[hoạt động – Vo]</strong> while <strong>[hoạt động – Ving]</strong> because it’s hard for me to focus. I prefer to do one thing at a time <strong>[to focus better / do it better / do it more carefully]</strong>.</div>",
+        "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1 (Trả lời có):</strong> → Yes, I do. I often <strong>[hoạt động – Vo]</strong> while <strong>[hoạt động – Ving]</strong> because it doesn't affect my concentration. Instead, it helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.</div><div><strong>- Cách 2 (Trả lời không):</strong> → Not really. I don’t often <strong>[hoạt động – Vo]</strong> while <strong>[hoạt động – Ving]</strong> because it’s hard for me to focus. I prefer to do one thing at a time <strong>[to focus better / do it better / do it more carefully]</strong>.</div>",
         "examples": [
             {
                 "q": "Do you often <span class='sub-hl'>listen to music</span> while <span class='sub-hl'>doing homework</span>?",
@@ -1449,6 +1485,18 @@ document.addEventListener('DOMContentLoaded', () => {
         "exQ": "Do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>listen to music</span> while <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>doing homework</span>?",
         "exA": "→ Not really. I don’t often listen to music while doing homework because it’s hard for me to focus. I prefer to do one thing at a time to do it better.",
         "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I do. I often <span class=\"sub-hl\">listen to music</span> while <span class=\"sub-hl\">doing homework</span> because it doesn't affect my concentration. Instead, it helps me <span class=\"sub-hl\">relax</span> and <span class=\"sub-hl\">reduce stress</span>.</div><div><strong>- Trả lời không:</strong> → Not really. I don’t often <span class=\"sub-hl\">listen to music</span> while <span class=\"sub-hl\">doing homework</span> because it’s hard for me to focus. I prefer to do one thing at a time <span class=\"sub-hl\">to do it better</span>.</div>",
+        "samples": [
+            {
+                "label": "Cách 1 (Trả lời có)",
+                "text": "Yes, I do. I often listen to music while doing homework because it doesn't affect my concentration. Instead, it helps me relax and reduce stress.",
+                "formatted": "→ Yes, I do. I often <span class=\"sub-hl\">listen to music</span> while <span class=\"sub-hl\">doing homework</span> because it doesn't affect my concentration. Instead, it helps me <span class=\"sub-hl\">relax</span> and <span class=\"sub-hl\">reduce stress</span>."
+            },
+            {
+                "label": "Cách 2 (Trả lời không)",
+                "text": "Not really. I don’t often listen to music while doing homework because it’s hard for me to focus. I prefer to do one thing at a time to do it better.",
+                "formatted": "→ Not really. I don’t often <span class=\"sub-hl\">listen to music</span> while <span class=\"sub-hl\">doing homework</span> because it’s hard for me to focus. I prefer to do one thing at a time <span class=\"sub-hl\">to do it better</span>."
+            }
+        ],
         "vocab": [
             {
                 "type": "benefit",
@@ -1494,7 +1542,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
         "title": "3. Do you like/love/enjoy [hoạt động – Ving]?",
-        "formula": "→ Yes, I do. I’m really into <strong>[hoạt động – Ving]</strong> because it’s very <strong>[tính từ mô tả hoạt động]</strong>. It helps me <strong>[lợi ích]</strong> and makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.",
+        "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1 (Trả lời có):</strong> → Yes, I do. I’m really into <strong>[hoạt động – Ving]</strong> because it’s very <strong>[tính từ mô tả hoạt động]</strong>. It helps me <strong>[lợi ích]</strong> and makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.</div><div><strong>- Cách 2 (Trả lời không):</strong> → Not really. I’m not a big fan of <strong>[hoạt động – Ving]</strong> because I find it quite <strong>[boring / tiring / difficult]</strong>. Instead, I prefer <strong>[hoạt động khác – Ving]</strong> because it helps me <strong>[lợi ích]</strong>.</div>",
         "examples": [
             {
                 "q": "Do you like <span class='sub-hl'>reading books</span>?",
@@ -1529,7 +1577,19 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
         "exQ": "Do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>reading books</span>?",
         "exA": "→ Yes, I do. I’m really into reading books because it’s very interesting. It helps me reduce stress and makes me feel relaxed.",
-        "exAFormatted": "→ Yes, I do. I’m really into <span class=\"sub-hl\">reading books</span> because it’s very <span class=\"sub-hl\">interesting</span>. It helps me <span class=\"sub-hl\">reduce stress</span> and makes me feel <span class=\"sub-hl\">relaxed</span>.",
+        "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Cách 1 (Trả lời có):</strong> → Yes, I do. I’m really into <span class=\"sub-hl\">reading books</span> because it’s very <span class=\"sub-hl\">interesting</span>. It helps me <span class=\"sub-hl\">reduce stress</span> and makes me feel <span class=\"sub-hl\">relaxed</span>.</div><div><strong>- Cách 2 (Trả lời không):</strong> → Not really. I’m not a big fan of <span class=\"sub-hl\">reading books</span> because I find it quite <span class=\"sub-hl\">boring</span>. Instead, I prefer <span class=\"sub-hl\">listening to music</span> because it helps me <span class=\"sub-hl\">relax after a busy day</span>.</div>",
+        "samples": [
+            {
+                "label": "Cách 1 (Trả lời có)",
+                "text": "Yes, I do. I’m really into reading books because it’s very interesting. It helps me reduce stress and makes me feel relaxed.",
+                "formatted": "→ Yes, I do. I’m really into <span class=\"sub-hl\">reading books</span> because it’s very <span class=\"sub-hl\">interesting</span>. It helps me <span class=\"sub-hl\">reduce stress</span> and makes me feel <span class=\"sub-hl\">relaxed</span>."
+            },
+            {
+                "label": "Cách 2 (Trả lời không)",
+                "text": "Not really. I’m not a big fan of reading books because I find it quite boring. Instead, I prefer listening to music because it helps me relax after a busy day.",
+                "formatted": "→ Not really. I’m not a big fan of <span class=\"sub-hl\">reading books</span> because I find it quite <span class=\"sub-hl\">boring</span>. Instead, I prefer <span class=\"sub-hl\">listening to music</span> because it helps me <span class=\"sub-hl\">relax after a busy day</span>."
+            }
+        ],
         "vocab": [
             {
                 "type": "note",
@@ -1538,6 +1598,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     {
                         "en": "really into",
                         "vn": "rất thích / đam mê"
+                    },
+                    {
+                        "en": "not a big fan of",
+                        "vn": "không thực sự thích"
+                    },
+                    {
+                        "en": "find it quite boring / tiring / difficult",
+                        "vn": "thấy nó khá nhàm chán / mệt / khó"
                     }
                 ]
             },
@@ -1635,7 +1703,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
         "title": "4. Did you often [hoạt động – Vo] when you were a child?",
-        "formula": "→ Yes, I did. I used to <strong>[hoạt động – Vo]</strong> every day when I was a child because it was <strong>[tính từ mô tả hoạt động]</strong>. It was a good way for me to <strong>[lợi ích]</strong>.",
+        "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1 (Trả lời có):</strong> → Yes, I did. I used to <strong>[hoạt động – Vo]</strong> every day when I was a child because it was <strong>[tính từ mô tả hoạt động]</strong>. It was a good way for me to <strong>[lợi ích]</strong>.</div><div><strong>- Cách 2 (Trả lời không):</strong> → Not really. I didn’t <strong>[hoạt động – Vo]</strong> much when I was a child because my parents wanted me to focus on studying. Instead, I often <strong>[hoạt động khác – V2/ed]</strong> in my free time.</div>",
         "examples": [
             {
                 "q": "Did you often <span class='sub-hl'>watch cartoons</span> when you were a child?",
@@ -1670,7 +1738,19 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
         "exQ": "Did you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>watch cartoons</span> when you were a child?",
         "exA": "→ Yes, I did. I used to watch cartoons every day when I was a child because it was very entertaining. It was a good way for me to enjoy my free time.",
-        "exAFormatted": "→ Yes, I did. I used to <span class=\"sub-hl\">watch cartoons</span> every day when I was a child because it was <span class=\"sub-hl\">very entertaining</span>. It was a good way for me to <span class=\"sub-hl\">enjoy my free time</span>.",
+        "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Cách 1 (Trả lời có):</strong> → Yes, I did. I used to <span class=\"sub-hl\">watch cartoons</span> every day when I was a child because it was <span class=\"sub-hl\">very entertaining</span>. It was a good way for me to <span class=\"sub-hl\">enjoy my free time</span>.</div><div><strong>- Cách 2 (Trả lời không):</strong> → Not really. I didn’t <span class=\"sub-hl\">watch cartoons</span> much when I was a child because my parents wanted me to focus on studying. Instead, I often <span class=\"sub-hl\">played outside with my friends</span> in my free time.</div>",
+        "samples": [
+            {
+                "label": "Cách 1 (Trả lời có)",
+                "text": "Yes, I did. I used to watch cartoons every day when I was a child because it was very entertaining. It was a good way for me to enjoy my free time.",
+                "formatted": "→ Yes, I did. I used to <span class=\"sub-hl\">watch cartoons</span> every day when I was a child because it was <span class=\"sub-hl\">very entertaining</span>. It was a good way for me to <span class=\"sub-hl\">enjoy my free time</span>."
+            },
+            {
+                "label": "Cách 2 (Trả lời không)",
+                "text": "Not really. I didn’t watch cartoons much when I was a child because my parents wanted me to focus on studying. Instead, I often played outside with my friends in my free time.",
+                "formatted": "→ Not really. I didn’t <span class=\"sub-hl\">watch cartoons</span> much when I was a child because my parents wanted me to focus on studying. Instead, I often <span class=\"sub-hl\">played outside with my friends</span> in my free time."
+            }
+        ],
         "vocab": [
             {
                 "type": "note",
@@ -1679,6 +1759,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     {
                         "en": "used to",
                         "vn": "đã từng / thường làm trong quá khứ"
+                    },
+                    {
+                        "en": "focus on studying",
+                        "vn": "tập trung vào việc học"
+                    },
+                    {
+                        "en": "played outside with my friends",
+                        "vn": "chơi bên ngoài với bạn bè"
                     }
                 ]
             },
@@ -1738,7 +1826,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
         "title": "5. Are you good at [hoạt động – Ving]?",
-        "formula": "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I am. I’m quite good at <strong>[hoạt động – Ving]</strong> because I practice it a lot. It helps me <strong>[lợi ích]</strong>.</div><div style='margin-bottom: 4px;'><strong>- Trả lời không:</strong></div><div style='margin-left: 15px; margin-bottom: 8px;'><strong>+ Cách 1:</strong> → No, I’m not. I’m not very good at <strong>[hoạt động – Ving]</strong> because I rarely do it. I prefer to spend time on other things.</div><div style='margin-left: 15px;'><strong>+ Cách 2:</strong> → Not really. I’m not very good at <strong>[hoạt động – Ving]</strong> because I don't practice it much. However, I would like to try it in the future because I think it's <strong>[tính từ mô tả hoạt động]</strong>.</div>",
+        "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1 (Trả lời có):</strong> → Yes, I am. I’m quite good at <strong>[hoạt động – Ving]</strong> because I practice it a lot. It helps me <strong>[lợi ích]</strong>.</div><div style='margin-bottom: 8px;'><strong>- Cách 2 (Trả lời không - Ít làm):</strong> → No, I’m not. I’m not very good at <strong>[hoạt động – Ving]</strong> because I rarely do it. I prefer to spend time on other things.</div><div><strong>- Cách 3 (Trả lời không - Muốn thử):</strong> → Not really. I’m not very good at <strong>[hoạt động – Ving]</strong> because I don't practice it much. However, I would like to try it in the future because I think it's <strong>[tính từ mô tả hoạt động]</strong>.</div>",
         "examples": [
             {
                 "q": "Are you good at <span class='sub-hl'>cooking</span>?",
@@ -1774,6 +1862,23 @@ document.addEventListener('DOMContentLoaded', () => {
         "exQ": "Are you good at <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>cooking</span>?",
         "exA": "→ Yes, I am. I’m quite good at cooking because I practice it a lot. It helps me save money and stay healthy.",
         "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, I am. I’m quite good at <span class=\"sub-hl\">cooking</span> because I practice it a lot. It helps me <span class=\"sub-hl\">save money</span> and <span class=\"sub-hl\">stay healthy</span>.</div><div style='margin-bottom: 4px;'><strong>- Trả lời không:</strong></div><div style='margin-left: 15px; margin-bottom: 8px;'><strong>+ Cách 1:</strong> → No, I’m not. I’m not very good at <span class=\"sub-hl\">cooking</span> because I rarely do it. I prefer to spend time on other things.</div><div style='margin-left: 15px;'><strong>+ Cách 2:</strong> → Not really. I’m not very good at <span class=\"sub-hl\">cooking</span> because I don't practice it much. However, I would like to try it in the future because I think it's <span class=\"sub-hl\">interesting</span>.</div>",
+        "samples": [
+            {
+                "label": "Cách 1 (Trả lời có)",
+                "text": "Yes, I am. I’m quite good at cooking because I practice it a lot. It helps me save money and stay healthy.",
+                "formatted": "→ Yes, I am. I’m quite good at <span class=\"sub-hl\">cooking</span> because I practice it a lot. It helps me <span class=\"sub-hl\">save money</span> and <span class=\"sub-hl\">stay healthy</span>."
+            },
+            {
+                "label": "Cách 2 (Trả lời không - Ít làm)",
+                "text": "No, I’m not. I’m not very good at cooking because I rarely do it. I prefer to spend time on other things.",
+                "formatted": "→ No, I’m not. I’m not very good at <span class=\"sub-hl\">cooking</span> because I rarely do it. I prefer to spend time on other things."
+            },
+            {
+                "label": "Cách 3 (Trả lời không - Muốn thử)",
+                "text": "Not really. I’m not very good at cooking because I don't practice it much. However, I would like to try it in the future because I think it's interesting.",
+                "formatted": "→ Not really. I’m not very good at <span class=\"sub-hl\">cooking</span> because I don't practice it much. However, I would like to try it in the future because I think it's <span class=\"sub-hl\">interesting</span>."
+            }
+        ],
         "vocab": [
             {
                 "type": "note",
@@ -1853,7 +1958,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
         "title": "6. Are/Is [...] important to you?",
-        "formula": "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, it is. <strong>[chủ đề]</strong> is very important to me because it helps me <strong>[lợi ích 1]</strong>. It’s also a good way to <strong>[lợi ích 2]</strong>.</div><div><strong>- Trả lời không:</strong> → Not really. <strong>[chủ đề]</strong> is not very important to me because it doesn't affect my daily life much. I prefer to focus on other things.</div>",
+        "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1 (Trả lời có):</strong> → Yes, it is. <strong>[chủ đề]</strong> is very important to me because it helps me <strong>[lợi ích 1]</strong>. It’s also a good way to <strong>[lợi ích 2]</strong>.</div><div><strong>- Cách 2 (Trả lời không):</strong> → Not really. <strong>[chủ đề]</strong> is not very important to me because it doesn't affect my daily life much. I prefer to focus on other things.</div>",
         "examples": [
             {
                 "q": "Is <span class='sub-hl'>family</span> important to you?",
@@ -1889,6 +1994,18 @@ document.addEventListener('DOMContentLoaded', () => {
         "exQ": "Is <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>eating healthy</span> important to you?",
         "exA": "→ Yes, it is. Eating healthy is very important to me because it helps me improve my health. It is also a good way to have a better life.",
         "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Yes, it is. <span class=\"sub-hl\">Eating healthy</span> is very important to me because it helps me <span class=\"sub-hl\">improve my health</span>. It is also a good way to <span class=\"sub-hl\">have a better life</span>.</div><div><strong>- Trả lời không:</strong> → Not really. <span class=\"sub-hl\">Eating healthy</span> is not very important to me because it doesn't affect my daily life much. I prefer to focus on other things.</div>",
+        "samples": [
+            {
+                "label": "Cách 1 (Trả lời có)",
+                "text": "Yes, it is. Eating healthy is very important to me because it helps me improve my health. It is also a good way to have a better life.",
+                "formatted": "→ Yes, it is. <span class=\"sub-hl\">Eating healthy</span> is very important to me because it helps me <span class=\"sub-hl\">improve my health</span>. It is also a good way to <span class=\"sub-hl\">have a better life</span>."
+            },
+            {
+                "label": "Cách 2 (Trả lời không)",
+                "text": "Not really. Eating healthy is not very important to me because it doesn't affect my daily life much. I prefer to focus on other things.",
+                "formatted": "→ Not really. <span class=\"sub-hl\">Eating healthy</span> is not very important to me because it doesn't affect my daily life much. I prefer to focus on other things."
+            }
+        ],
         "vocab": [
             {
                 "type": "benefit",
@@ -1930,7 +2047,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
         "title": "7. Have you ever [hoạt động – V3/ed]?",
-        "formula": "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Sure. I have <strong>[hoạt động – V3/ed]</strong> before, and it was a/an <strong>[tính từ]</strong> experience. It helped me <strong>[lợi ích]</strong>.</div><div><strong>- Trả lời không:</strong> → No, I have never <strong>[hoạt động – V3/ed]</strong> before because I don't have the chance. But I would like to try it in the future if possible.</div>",
+        "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1 (Trả lời có):</strong> → Sure. I have <strong>[hoạt động – V3/ed]</strong> before, and it was a/an <strong>[tính từ]</strong> experience. It helped me <strong>[lợi ích]</strong>.</div><div><strong>- Cách 2 (Trả lời không):</strong> → No, I have never <strong>[hoạt động – V3/ed]</strong> before because I don't have the chance. But I would like to try it in the future if possible.</div>",
         "examples": [
             {
                 "q": "Have you ever <span class='sub-hl'>attended a live concert</span>?",
@@ -1966,6 +2083,18 @@ document.addEventListener('DOMContentLoaded', () => {
         "exQ": "Have you ever <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>traveled abroad</span>?",
         "exA": "→ Sure. I have traveled abroad before, and it was an exciting experience. It helped me learn new things.",
         "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Trả lời có:</strong> → Sure. I have <span class=\"sub-hl\">traveled abroad</span> before, and it was an <span class=\"sub-hl\">exciting</span> experience. It helped me <span class=\"sub-hl\">learn new things</span>.</div><div><strong>- Trả lời không:</strong> → No, I have never <span class=\"sub-hl\">traveled abroad</span> before because I don't have the chance. But I would like to try it in the future if possible.</div>",
+        "samples": [
+            {
+                "label": "Cách 1 (Trả lời có)",
+                "text": "Sure. I have traveled abroad before, and it was an exciting experience. It helped me learn new things.",
+                "formatted": "→ Sure. I have <span class=\"sub-hl\">traveled abroad</span> before, and it was an <span class=\"sub-hl\">exciting</span> experience. It helped me <span class=\"sub-hl\">learn new things</span>."
+            },
+            {
+                "label": "Cách 2 (Trả lời không)",
+                "text": "No, I have never traveled abroad before because I don't have the chance. But I would like to try it in the future if possible.",
+                "formatted": "→ No, I have never <span class=\"sub-hl\">traveled abroad</span> before because I don't have the chance. But I would like to try it in the future if possible."
+            }
+        ],
         "vocab": [
             {
                 "type": "benefit",
@@ -2024,8 +2153,87 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.formatFormulaHighlight = (formHtml) => {
         if (!formHtml) return '';
-        let res = formHtml.replace(/<strong>\s*\[(.*?)\]\s*<\/strong>/g, "[$1]");
-        return res.replace(/\[(.*?)\]/g, '<span class="formula-bracket-hl">[$1]</span>');
+        let raw = String(formHtml).trim();
+
+        const divRegex = /<div(?:\s+style=[\"'][^\"']*[\"'])?>\s*(?:<strong>)?\s*([–\-•+]?\s*(?:Cách\s*\d+|Trả lời[^:<]*|Phương án\s*\d+)[^:<]*):?\s*(?:<\/strong>)?\s*:?\s*([\s\S]*?)<\/div>/gi;
+        const cards = [];
+        let match;
+        while ((match = divRegex.exec(raw)) !== null) {
+            const bodyText = match[2].trim();
+            if (!bodyText) continue;
+            cards.push({
+                title: match[1].trim(),
+                body: bodyText
+            });
+        }
+
+        if (cards.length > 0) {
+            return '<div class="formula-cards-wrap">' + cards.map((c, idx) => {
+                const isNo = /(?:NO|KHÔNG|CHƯA|Phủ định)/i.test(c.title);
+                const isC1 = idx === 0;
+                const isThird = idx >= 2;
+
+                const cardType = isC1 ? 'card-c1' : (isThird ? 'card-c2-green' : (isNo ? 'card-c2-no' : 'card-c2-green'));
+                const badgeClass = isC1 ? 'badge-c1' : (isThird ? 'badge-c2-green' : (isNo ? 'badge-c2-no' : 'badge-c2-green'));
+                const bracketClass = isC1 ? 'bracket-c1' : (isThird ? 'bracket-c2-green' : (isNo ? 'bracket-c2-no' : 'bracket-c2-green'));
+                const icon = isC1 ? 'fa-solid fa-circle-check' : (isThird ? 'fa-solid fa-lightbulb' : (isNo ? 'fa-solid fa-circle-xmark' : 'fa-solid fa-lightbulb'));
+
+                let cleanTitle = c.title.replace(/^[-•–+\s]+/, '').replace(/:$/, '').trim();
+
+                let text = c.body;
+                text = text.replace(/<strong>\s*\[(.*?)\]\s*<\/strong>/g, '[$1]');
+                text = text.replace(/<span class=[\"']formula-bracket-hl(?:\s+[^\"']*)?[\"']>\[(.*?)\]<\/span>/g, '[$1]');
+                text = text.replace(/\[(.*?)\]/g, `<span class="formula-bracket-hl ${bracketClass}">[$1]</span>`);
+                text = text.replace(/^→\s*/, '<span class="formula-arrow">→</span> ');
+
+                return `
+                <div class="formula-card ${cardType}">
+                    <div class="formula-card-header">
+                        <span class="formula-card-badge ${badgeClass}"><i class="${icon}"></i> ${cleanTitle}</span>
+                    </div>
+                    <div class="formula-card-body">${text}</div>
+                </div>`;
+            }).join('') + '</div>';
+        }
+
+        let res = raw.replace(/<strong>\s*\[(.*?)\]\s*<\/strong>/g, '[$1]');
+        return res.replace(/\[(.*?)\]/g, '<span class="formula-bracket-hl bracket-c1">[$1]</span>');
+    };
+
+    window.renderSampleAnswersContent = (d) => {
+        if (d && d.samples && d.samples.length) {
+            return d.samples.map((s, idx) => {
+                const safeAudio = (s.text || '')
+                    .replace(/<[^>]*>/g, '')
+                    .replace(/→/g, '')
+                    .replace(/'/g, "\\'")
+                    .replace(/"/g, '&quot;')
+                    .trim();
+                const shortLabel = (s.label || `Cách ${idx + 1}`).split('(')[0].trim();
+                return `
+                <div style="margin-bottom: ${idx === d.samples.length - 1 ? '0' : '1rem'}; padding: 0.85rem 1rem; background: rgba(139, 92, 246, 0.05); border-left: 3px solid #8b5cf6; border-radius: 8px;">
+                    <div style="font-weight: 700; color: #7c3aed; margin-bottom: 0.4rem; font-size: 0.95rem; display: flex; align-items: center; gap: 0.4rem;">
+                        <i class="fa-solid fa-star"></i> ${s.label}:
+                    </div>
+                    <div class="ex-text" style="color:var(--secondary); font-weight:500; font-size:1.02rem; line-height:1.75; margin-bottom:0.5rem;">${s.formatted || s.text}</div>
+                    <button class="btn-audio-sample mt-2" onclick="speakText('${safeAudio}')" style="font-size: 0.85rem; padding: 0.35rem 0.85rem; background: #8b5cf6; cursor:pointer;">
+                        <i class="fa-solid fa-volume-high"></i> Nghe Audio ${shortLabel}
+                    </button>
+                </div>`;
+            }).join('');
+        }
+        const fallbackAudio = (d.audio || d.exA || '')
+            .replace(/<[^>]*>/g, '')
+            .replace(/→/g, '')
+            .replace(/'/g, "\\'")
+            .replace(/"/g, '&quot;')
+            .trim();
+        return `
+            <div class="ex-text" style="color:var(--secondary); font-weight:500; font-size:1.05rem; line-height:1.8;">${d.exAFormatted || d.exA}</div>
+            <button class="btn-audio-sample mt-2" onclick="speakText('${fallbackAudio}')">
+                <i class="fa-solid fa-volume-high"></i> Nghe Audio phát âm
+            </button>
+        `;
     };
 
     window.getExamplesBlockHTML = (item) => {
@@ -2069,15 +2277,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div style="display: flex; flex-direction: column; gap: 1rem; font-size: 0.92rem; line-height: 1.6;">`;
 
         item.vocab.forEach(group => {
-            const isBlue = group.type === 'benefit';
-            const col = isBlue ? '#2563eb' : '#059669';
-            const bg = isBlue ? 'rgba(59, 130, 246, 0.06)' : 'rgba(16, 185, 129, 0.06)';
-            const border = isBlue ? 'rgba(59, 130, 246, 0.25)' : 'rgba(16, 185, 129, 0.25)';
+            const isBenefit = group.type === 'benefit';
+            const isActivity = group.type === 'activity';
+            let col = '#059669';
+            let bg = 'rgba(16, 185, 129, 0.06)';
+            let border = 'rgba(16, 185, 129, 0.25)';
             let icon = 'fa-solid fa-lightbulb';
-            if (group.type === 'benefit') icon = 'fa-solid fa-star';
-            else if (group.type === 'time') icon = 'fa-regular fa-clock';
-            else if (group.type === 'emotion') icon = 'fa-solid fa-face-smile';
-            else if (group.type === 'activity') icon = 'fa-solid fa-wand-magic-sparkles';
+            if (isBenefit) {
+                col = '#2563eb';
+                bg = 'rgba(59, 130, 246, 0.06)';
+                border = 'rgba(59, 130, 246, 0.25)';
+                icon = 'fa-solid fa-star';
+            } else if (isActivity) {
+                col = '#d97706';
+                bg = 'rgba(217, 119, 6, 0.06)';
+                border = 'rgba(217, 119, 6, 0.25)';
+                icon = 'fa-solid fa-wand-magic-sparkles';
+            } else if (group.type === 'time') {
+                icon = 'fa-regular fa-clock';
+            } else if (group.type === 'emotion') {
+                icon = 'fa-solid fa-face-smile';
+            }
             if (group.icon) icon = group.icon;
 
             html += `
@@ -2085,15 +2305,23 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div style="color: ${col}; font-weight: 700; margin-bottom: 0.5rem; font-size: 0.95rem;"><i class="${icon}"></i> ${group.title}</div>
                         <div style="color: var(--text-main); display: flex; flex-direction: column; gap: 0.5rem;">`;
             group.items.forEach(pair => {
+                if (!pair) return;
                 if (pair.isNote) {
+                    let noteContent = pair.vn || '';
+                    if (!noteContent.includes('<button') && !noteContent.includes('<a')) {
+                        noteContent = noteContent
+                            .replace(/BẢNG HOẠT ĐỘNG/g, '<button type="button" onclick="switchTab(\'activities\')" style="background:none; border:none; padding:0; color:inherit; font-weight:800; text-decoration:underline; cursor:pointer; font-size:inherit; font-family:inherit;"><i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.82em;"></i> BẢNG HOẠT ĐỘNG</button>')
+                            .replace(/BẢNG LỢI ÍCH/g, '<button type="button" onclick="switchTab(\'benefits\')" style="background:none; border:none; padding:0; color:inherit; font-weight:800; text-decoration:underline; cursor:pointer; font-size:inherit; font-family:inherit;"><i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.82em;"></i> BẢNG LỢI ÍCH</button>');
+                    }
                     html += `
                             <div style="font-style: italic; color: #64748b; font-weight: 500; display: flex; align-items: center; padding: 0.25rem 0;">
-                                ${pair.vn}
+                                ${noteContent}
                             </div>`;
-                } else {
+                } else if (pair.en) {
+                    const safeEn = String(pair.en).replace(/'/g, "\\'").replace(/"/g, '&quot;');
                     html += `
                             <div>
-                                <button type="button" onclick="event.stopPropagation(); speakText('${pair.en}')" title="Nghe phát âm" style="background: none; border: none; color: ${col}; cursor: pointer; padding: 0 0.4rem 0 0; font-size: 1rem;"><i class="fa-solid fa-volume-high"></i></button>
+                                <button type="button" onclick="event.stopPropagation(); speakText('${safeEn}')" title="Nghe phát âm" style="background: none; border: none; color: ${col}; cursor: pointer; padding: 0 0.4rem 0 0; font-size: 1rem;"><i class="fa-solid fa-volume-high"></i></button>
                                 <strong>${pair.en}</strong>: ${pair.vn}
                             </div>`;
                 }
@@ -2485,10 +2713,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <i class="fa-solid fa-eye"></i> Nhấn xem câu trả lời mẫu
                                 </button>
                                 <div class="fade-in" style="display:none; margin-top:0.75rem; padding-top:0.75rem; border-top:1px dashed var(--border);">
-                                    <div class="ex-text" style="color:var(--secondary); font-weight:500; font-size:1.05rem; line-height:1.8;">${d.exAFormatted || d.exA}</div>
-                                    <button class="btn-audio-sample mt-2" onclick="speakText('${d.exA.replace(/<[^>]*>/g, '').replace(/→/g, '').replace(/'/g, "\\'").trim()}')">
-                                        <i class="fa-solid fa-volume-high"></i> Nghe Audio phát âm
-                                    </button>
+                                    ${renderSampleAnswersContent(d)}
                                 </div>
                             </div>
                         </div>
@@ -2533,7 +2758,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const choiceData = {
     "opt1": {
         "title": "✅ PHƯƠNG ÁN 1 – CHỌN 1 TRONG 2",
-        "form": "→ I prefer <strong>[lựa chọn – noun/Ving]</strong> because it’s more <strong>[tính từ mô tả lựa chọn]</strong> and helps me <strong>[lợi ích]</strong>. It also makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.<br/><br/><span style='color: #ef4444; font-size: 0.95em;'><i class='fa-solid fa-circle-exclamation'></i> <strong>LƯU Ý:</strong> Nếu không kịp nói câu mô tả cảm xúc thì tăng lợi ích.</span>",
+        "form": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I prefer <strong>[lựa chọn – noun/Ving]</strong> because it’s more <strong>[tính từ mô tả lựa chọn]</strong> and helps me <strong>[lợi ích]</strong>. It also makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.</div><div><strong>- Cách 2:</strong> → If I have to choose between the two, I would choose <strong>[lựa chọn – noun/Ving]</strong> because it helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.</div>",
+        "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I prefer <strong>[lựa chọn – noun/Ving]</strong> because it’s more <strong>[tính từ mô tả lựa chọn]</strong> and helps me <strong>[lợi ích]</strong>. It also makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.</div><div><strong>- Cách 2:</strong> → If I have to choose between the two, I would choose <strong>[lựa chọn – noun/Ving]</strong> because it helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.</div>",
+        "note": "LƯU Ý: Nếu không kịp nói câu mô tả cảm xúc thì tăng lợi ích.",
         "examples": [
             {
                 "q": "Do you prefer <span class='sub-hl'>studying at home</span> or <span class='sub-hl'>in the library</span>?",
@@ -2568,9 +2795,39 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
         "exQ": "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying in the library</span>?",
         "exA": "→ I prefer studying at home because it’s more convenient and helps me save time. It also makes me feel comfortable.",
-        "exAFormatted": "→ I prefer <span class=\"sub-hl\">studying at home</span> because it’s more <span class=\"sub-hl\">convenient</span> and helps me <span class=\"sub-hl\">save time</span>. It also makes me feel <span class=\"sub-hl\">comfortable</span>.",
+        "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Cách 1 (Chọn Ở nhà):</strong> → I prefer <span class=\"sub-hl\">studying at home</span> because it’s more <span class=\"sub-hl\">convenient</span> and helps me <span class=\"sub-hl\">save time</span>. It also makes me feel <span class=\"sub-hl\">comfortable</span>.</div><div><strong>- Cách 2 (Chọn Thư viện):</strong> → If I have to choose between the two, I would choose <span class=\"sub-hl\">studying in the library</span> because it helps me <span class=\"sub-hl\">focus better</span> and <span class=\"sub-hl\">study more effectively</span>.</div>",
         "audio": "I prefer studying at home because it’s more convenient and helps me save time. It also makes me feel comfortable.",
+        "samples": [
+            {
+                "label": "Cách 1 (Chọn Ở nhà)",
+                "text": "I prefer studying at home because it’s more convenient and helps me save time. It also makes me feel comfortable.",
+                "formatted": "→ I prefer <span class=\"sub-hl\">studying at home</span> because it’s more <span class=\"sub-hl\">convenient</span> and helps me <span class=\"sub-hl\">save time</span>. It also makes me feel <span class=\"sub-hl\">comfortable</span>."
+            },
+            {
+                "label": "Cách 2 (Chọn Thư viện)",
+                "text": "If I have to choose between the two, I would choose studying in the library because it helps me focus better and study more effectively.",
+                "formatted": "→ If I have to choose between the two, I would choose <span class=\"sub-hl\">studying in the library</span> because it helps me <span class=\"sub-hl\">focus better</span> and <span class=\"sub-hl\">study more effectively</span>."
+            }
+        ],
         "vocab": [
+            {
+                "type": "note",
+                "title": "Ghi chú từ vựng trong câu:",
+                "items": [
+                    {
+                        "en": "I prefer",
+                        "vn": "tôi thích... hơn"
+                    },
+                    {
+                        "en": "If I have to choose between the two",
+                        "vn": "nếu phải chọn giữa hai phương án"
+                    },
+                    {
+                        "en": "I would choose",
+                        "vn": "tôi sẽ chọn..."
+                    }
+                ]
+            },
             {
                 "type": "benefit",
                 "title": "Tính từ mô tả lựa chọn:",
@@ -2649,7 +2906,8 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     "opt2": {
         "title": "✅ PHƯƠNG ÁN 2 – CÂN NHẮC CẢ 2 PHƯƠNG ÁN (Nâng cao)",
-        "form": "→ It’s hard to choose because both are important. <strong>[A]</strong> helps me <strong>[lợi ích A]</strong>, while <strong>[B]</strong> allows me to <strong>[lợi ích B]</strong>.",
+        "form": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → It’s hard to choose because both are important. <strong>[A]</strong> helps me <strong>[lợi ích A]</strong>, while <strong>[B]</strong> allows me to <strong>[lợi ích B]</strong>.</div><div><strong>- Cách 2:</strong> → I think both are equally important in my life. On the one hand, <strong>[A]</strong> helps me <strong>[lợi ích A]</strong>. On the other hand, <strong>[B]</strong> is a good way to <strong>[lợi ích B]</strong>.</div>",
+        "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → It’s hard to choose because both are important. <strong>[A]</strong> helps me <strong>[lợi ích A]</strong>, while <strong>[B]</strong> allows me to <strong>[lợi ích B]</strong>.</div><div><strong>- Cách 2:</strong> → I think both are equally important in my life. On the one hand, <strong>[A]</strong> helps me <strong>[lợi ích A]</strong>. On the other hand, <strong>[B]</strong> is a good way to <strong>[lợi ích B]</strong>.</div>",
         "examples": [
             {
                 "q": "Which is more important, <span class='sub-hl'>money</span> or <span class='sub-hl'>happiness</span>?",
@@ -2684,8 +2942,20 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
         "exQ": "Do you prefer <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying at home</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying in the library</span>?",
         "exA": "→ It’s hard to choose because both are important. Studying at home helps me save time, while studying in the library allows me to focus better.",
-        "exAFormatted": "→ It’s hard to choose because both are important. <span class=\"sub-hl\">Studying at home</span> helps me <span class=\"sub-hl\">save time</span>, while <span class=\"sub-hl\">studying in the library</span> allows me to <span class=\"sub-hl\">focus better</span>.",
+        "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → It’s hard to choose because both are important. <span class=\"sub-hl\">Studying at home</span> helps me <span class=\"sub-hl\">save time</span>, while <span class=\"sub-hl\">studying in the library</span> allows me to <span class=\"sub-hl\">focus better</span>.</div><div><strong>- Cách 2:</strong> → I think both are equally important in my life. On the one hand, <span class=\"sub-hl\">studying at home</span> helps me <span class=\"sub-hl\">feel comfortable</span>. On the other hand, <span class=\"sub-hl\">studying in the library</span> is a good way to <span class=\"sub-hl\">avoid distractions</span>.</div>",
         "audio": "It’s hard to choose because both are important. Studying at home helps me save time, while studying in the library allows me to focus better.",
+        "samples": [
+            {
+                "label": "Cách 1 (Cân bằng cả hai)",
+                "text": "It’s hard to choose because both are important. Studying at home helps me save time, while studying in the library allows me to focus better.",
+                "formatted": "→ It’s hard to choose because both are important. <span class=\"sub-hl\">Studying at home</span> helps me <span class=\"sub-hl\">save time</span>, while <span class=\"sub-hl\">studying in the library</span> allows me to <span class=\"sub-hl\">focus better</span>."
+            },
+            {
+                "label": "Cách 2 (Phân tích song song)",
+                "text": "I think both are equally important in my life. On the one hand, studying at home helps me feel comfortable. On the other hand, studying in the library is a good way to avoid distractions.",
+                "formatted": "→ I think both are equally important in my life. On the one hand, <span class=\"sub-hl\">studying at home</span> helps me <span class=\"sub-hl\">feel comfortable</span>. On the other hand, <span class=\"sub-hl\">studying in the library</span> is a good way to <span class=\"sub-hl\">avoid distractions</span>."
+            }
+        ],
         "vocab": [
             {
                 "type": "note",
@@ -2704,34 +2974,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         "vn": "cho phép tôi / giúp tôi"
                     },
                     {
-                        "q": "Which is more important, <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>money</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>happiness</span>?",
-                        "a": "→ It’s hard to choose because both are important. Money helps me prepare for the future, while happiness allows me to create a balanced lifestyle.",
-                        "f": "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>Money</strong> helps me <strong>prepare for the future</strong>, while <strong>happiness</strong> allows me to <strong>create a balanced lifestyle</strong>.</div>"
+                        "en": "equally important",
+                        "vn": "quan trọng như nhau"
                     },
                     {
-                        "q": "Which is more important, <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>family</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>money</span>?",
-                        "a": "→ It’s hard to choose because both are important. Family helps me escape from daily stress, while money allows me to prepare for the future.",
-                        "f": "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>Family</strong> helps me <strong>escape from daily stress</strong>, while <strong>money</strong> allows me to <strong>prepare for the future</strong>.</div>"
-                    },
-                    {
-                        "q": "Which is more important, <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>career</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>family</span>?",
-                        "a": "→ It’s hard to choose because both are important. Career helps me develop useful skills, while family allows me to escape from daily stress.",
-                        "f": "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>Career</strong> helps me <strong>develop useful skills</strong>, while <strong>family</strong> allows me to <strong>escape from daily stress</strong>.</div>"
-                    },
-                    {
-                        "q": "Which is more important, <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>health</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>wealth</span>?",
-                        "a": "→ It’s hard to choose because both are important. Health helps me stay healthy, while wealth allows me to prepare for the future.",
-                        "f": "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>Health</strong> helps me <strong>stay healthy</strong>, while <strong>wealth</strong> allows me to <strong>prepare for the future</strong>.</div>"
-                    },
-                    {
-                        "q": "Which is more important, <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>time</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>money</span>?",
-                        "a": "→ It’s hard to choose because both are important. Time helps me enjoy my free time, while money allows me to prepare for the future.",
-                        "f": "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>Time</strong> helps me <strong>enjoy my free time</strong>, while <strong>money</strong> allows me to <strong>prepare for the future</strong>.</div>"
-                    },
-                    {
-                        "q": "Which is more important, <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>knowledge</span> or <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>experience</span>?",
-                        "a": "→ It’s hard to choose because both are important. Knowledge helps me widen my knowledge, while experience allows me to learn to solve problems.",
-                        "f": "<div style='margin-bottom: 8px;'><strong>- Trả lời:</strong> → It’s hard to choose because both are important. <strong>Knowledge</strong> helps me <strong>widen my knowledge</strong>, while <strong>experience</strong> allows me to <strong>learn to solve problems</strong>.</div>"
+                        "en": "On the one hand ... On the other hand",
+                        "vn": "một mặt... mặt khác..."
                     }
                 ]
             },
@@ -2764,6 +3012,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div class="accordion-content" onclick="event.stopPropagation()">
                         <div class="f-formula-box" style="margin: 0; border: none; background: transparent; padding: 0.5rem 0;">${formatFormulaHighlight(d.form)}</div>
+                        ${d.note ? `<div class="tpl-note mt-2 mb-2" style="display:block;"><i class="fa-solid fa-circle-exclamation"></i> ${d.note}</div>` : ''}
                         ${getSuggestionsHTML(d)}
                     </div>
                 </div>
@@ -2784,10 +3033,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <i class="fa-solid fa-eye"></i> Nhấn xem câu trả lời mẫu
                                 </button>
                                 <div class="fade-in" style="display:none; margin-top:0.75rem; padding-top:0.75rem; border-top:1px dashed var(--border);">
-                                    <div class="ex-text" style="color:var(--secondary); font-weight:500; font-size:1.05rem; line-height:1.8;">${d.exAFormatted || d.exA}</div>
-                                    <button class="btn-audio-sample mt-2" onclick="speakText('${d.audio.replace(/<[^>]*>/g, '').replace(/'/g, "\\'")}')">
-                                        <i class="fa-solid fa-volume-high"></i> Nghe Audio phát âm
-                                    </button>
+                                    ${renderSampleAnswersContent(d)}
                                 </div>
                             </div>
                         </div>
@@ -2852,6 +3098,18 @@ document.addEventListener('DOMContentLoaded', () => {
             "exQ": "What do you often do <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>in the evening</span>?",
             "exA": "→ I usually watch movies in the evening because it helps me reduce stress. Sometimes, I also listen to music to clear my mind.",
             "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I usually <span class=\"sub-hl\">watch movies</span> <span class=\"sub-hl\">in the evening</span> because it helps me <span class=\"sub-hl\">reduce stress</span>. Sometimes, I also <span class=\"sub-hl\">listen to music</span> to <span class=\"sub-hl\">clear my mind</span>.</div><div><strong>- Cách 2:</strong> → I usually <span class=\"sub-hl\">read books</span> <span class=\"sub-hl\">in the evening</span> because it helps me <span class=\"sub-hl\">relax after a long day</span>. It also makes me feel <span class=\"sub-hl\">happy</span>.</div>",
+            "samples": [
+                {
+                    "label": "Cách 1 (Kết hợp 2 hoạt động)",
+                    "text": "I usually watch movies in the evening because it helps me reduce stress. Sometimes, I also listen to music to clear my mind.",
+                    "formatted": "→ I usually <span class=\"sub-hl\">watch movies</span> <span class=\"sub-hl\">in the evening</span> because it helps me <span class=\"sub-hl\">reduce stress</span>. Sometimes, I also <span class=\"sub-hl\">listen to music</span> to <span class=\"sub-hl\">clear my mind</span>."
+                },
+                {
+                    "label": "Cách 2 (Nêu lợi ích & cảm xúc)",
+                    "text": "I usually read books in the evening because it helps me relax after a long day. It also makes me feel happy.",
+                    "formatted": "→ I usually <span class=\"sub-hl\">read books</span> <span class=\"sub-hl\">in the evening</span> because it helps me <span class=\"sub-hl\">relax after a long day</span>. It also makes me feel <span class=\"sub-hl\">happy</span>."
+                }
+            ],
             "vocab": [
                 {
                     "type": "time",
@@ -2947,7 +3205,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             "title": "2. What do you often do to [mục đích]?",
-            "formula": "→ I often <strong>[hoạt động 1 – Vo]</strong> to <strong>[mục đích]</strong> because it helps me <strong>[lợi ích]</strong>. I also <strong>[hoạt động 2 – Vo]</strong> because it’s simple and easy to do.",
+            "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I often <strong>[hoạt động 1 – Vo]</strong> to <strong>[mục đích]</strong> because it helps me <strong>[lợi ích]</strong>. I also <strong>[hoạt động 2 – Vo]</strong> because it’s simple and easy to do.</div><div><strong>- Cách 2:</strong> → To <strong>[mục đích]</strong>, I usually <strong>[hoạt động – Vo]</strong> in my free time. It helps me <strong>[lợi ích]</strong> and makes me feel <strong>[tính từ cảm xúc]</strong>.</div>",
             "examples": [
                 {
                     "q": "What do you often do to <span class='sub-hl'>keep in shape</span>?",
@@ -2982,7 +3240,19 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             "exQ": "What do you often do to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>keep in shape</span>?",
             "exA": "→ I often exercise to keep in shape because it helps me burn calories. I also go for a walk because it is simple and easy to do.",
-            "exAFormatted": "→ I often <span class=\"sub-hl\">exercise</span> to <span class=\"sub-hl\">keep in shape</span> because it helps me <span class=\"sub-hl\">burn calories</span>. I also <span class=\"sub-hl\">go for a walk</span> because it is simple and easy to do.",
+            "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I often <span class=\"sub-hl\">exercise</span> to <span class=\"sub-hl\">keep in shape</span> because it helps me <span class=\"sub-hl\">burn calories</span>. I also <span class=\"sub-hl\">go for a walk</span> because it is simple and easy to do.</div><div><strong>- Cách 2:</strong> → To <span class=\"sub-hl\">keep in shape</span>, I usually <span class=\"sub-hl\">play sports</span> in my free time. It helps me <span class=\"sub-hl\">stay healthy</span> and makes me feel <span class=\"sub-hl\">energetic</span>.</div>",
+            "samples": [
+                {
+                    "label": "Cách 1 (Nêu 2 hoạt động cụ thể)",
+                    "text": "I often exercise to keep in shape because it helps me burn calories. I also go for a walk because it is simple and easy to do.",
+                    "formatted": "→ I often <span class=\"sub-hl\">exercise</span> to <span class=\"sub-hl\">keep in shape</span> because it helps me <span class=\"sub-hl\">burn calories</span>. I also <span class=\"sub-hl\">go for a walk</span> because it is simple and easy to do."
+                },
+                {
+                    "label": "Cách 2 (Mở đầu bằng mục đích)",
+                    "text": "To keep in shape, I usually play sports in my free time. It helps me stay healthy and makes me feel energetic.",
+                    "formatted": "→ To <span class=\"sub-hl\">keep in shape</span>, I usually <span class=\"sub-hl\">play sports</span> in my free time. It helps me <span class=\"sub-hl\">stay healthy</span> and makes me feel <span class=\"sub-hl\">energetic</span>."
+                }
+            ],
             "vocab": [
                 {
                     "type": "benefit",
@@ -3057,6 +3327,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             "en": "simple and easy to do",
                             "vn": "đơn giản và dễ thực hiện"
+                        },
+                        {
+                            "en": "To + Vo, I usually ...",
+                            "vn": "Để làm gì đó, tôi thường..."
                         }
                     ]
                 }
@@ -3064,7 +3338,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             "title": "3. What do you often do when [tình huống – mệnh đề]?",
-            "formula": "→ I often <strong>[hoạt động – Vo]</strong> when <strong>[tình huống]</strong> because it helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>. It also makes me feel <strong>[tính từ cảm xúc]</strong>.",
+            "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I often <strong>[hoạt động – Vo]</strong> when <strong>[tình huống]</strong> because it helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>. It also makes me feel <strong>[tính từ cảm xúc]</strong>.</div><div><strong>- Cách 2:</strong> → Whenever <strong>[tình huống]</strong>, I usually <strong>[hoạt động 1 – Vo]</strong> to <strong>[lợi ích 1]</strong>. Sometimes, I also <strong>[hoạt động 2 – Vo]</strong> to <strong>[lợi ích 2]</strong>.</div>",
             "note": "LƯU Ý: Nếu không kịp thời gian thì chỉ cần 1 lợi ích hoặc lược bỏ câu mô tả cảm xúc.",
             "examples": [
                 {
@@ -3100,7 +3374,19 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             "exQ": "What do you often do when <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>you feel sad</span>?",
             "exA": "→ I often listen to music when I feel sad because it helps me clear my mind and improve my mood. It also makes me feel relaxed.",
-            "exAFormatted": "→ I often <span class=\"sub-hl\">listen to music</span> when <span class=\"sub-hl\">I feel sad</span> because it helps me <span class=\"sub-hl\">clear my mind</span> and <span class=\"sub-hl\">improve my mood</span>. It also makes me feel <span class=\"sub-hl\">relaxed</span>.",
+            "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I often <span class=\"sub-hl\">listen to music</span> when <span class=\"sub-hl\">I feel sad</span> because it helps me <span class=\"sub-hl\">clear my mind</span> and <span class=\"sub-hl\">improve my mood</span>. It also makes me feel <span class=\"sub-hl\">relaxed</span>.</div><div><strong>- Cách 2:</strong> → Whenever <span class=\"sub-hl\">I feel sad</span>, I usually <span class=\"sub-hl\">go for a walk</span> to <span class=\"sub-hl\">clear my mind</span>. Sometimes, I also <span class=\"sub-hl\">talk to my close friends</span> to <span class=\"sub-hl\">forget about my worries</span>.</div>",
+            "samples": [
+                {
+                    "label": "Cách 1 (Nêu lợi ích & cảm xúc)",
+                    "text": "I often listen to music when I feel sad because it helps me clear my mind and improve my mood. It also makes me feel relaxed.",
+                    "formatted": "→ I often <span class=\"sub-hl\">listen to music</span> when <span class=\"sub-hl\">I feel sad</span> because it helps me <span class=\"sub-hl\">clear my mind</span> and <span class=\"sub-hl\">improve my mood</span>. It also makes me feel <span class=\"sub-hl\">relaxed</span>."
+                },
+                {
+                    "label": "Cách 2 (Dùng Whenever + 2 hoạt động)",
+                    "text": "Whenever I feel sad, I usually go for a walk to clear my mind. Sometimes, I also talk to my close friends to forget about my worries.",
+                    "formatted": "→ Whenever <span class=\"sub-hl\">I feel sad</span>, I usually <span class=\"sub-hl\">go for a walk</span> to <span class=\"sub-hl\">clear my mind</span>. Sometimes, I also <span class=\"sub-hl\">talk to my close friends</span> to <span class=\"sub-hl\">forget about my worries</span>."
+                }
+            ],
             "vocab": [
                 {
                     "type": "note",
@@ -3147,6 +3433,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             "en": "play games",
                             "vn": "chơi game"
+                        },
+                        {
+                            "en": "talk to my close friends",
+                            "vn": "trò chuyện với bạn thân"
                         }
                     ]
                 },
@@ -3202,7 +3492,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             "title": "4. What kinds of [danh từ] do you like?",
-            "formula": "→ I’m a big fan of <strong>[1 hoặc 2 thể loại]</strong> because they are very <strong>[tính từ mô tả]</strong>. They also allow me to <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.",
+            "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I’m a big fan of <strong>[1 hoặc 2 thể loại]</strong> because they are very <strong>[tính từ mô tả]</strong>. They also allow me to <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.</div><div><strong>- Cách 2:</strong> → Personally, I like <strong>[thể loại 1]</strong> the most because it is / they are <strong>[tính từ mô tả]</strong>. Besides, I also enjoy <strong>[thể loại 2]</strong> to <strong>[lợi ích]</strong>.</div>",
             "note": "LƯU Ý: Nếu không kịp thời gian thì chỉ cần 1 lợi ích.",
             "examples": [
                 {
@@ -3238,7 +3528,19 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             "exQ": "What kinds of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>movies</span> do you like?",
             "exA": "→ I’m a big fan of action and comedy movies because they are very interesting. They also allow me to relax and reduce stress.",
-            "exAFormatted": "→ I’m a big fan of <span class=\"sub-hl\">action and comedy movies</span> because they are very <span class=\"sub-hl\">interesting</span>. They also allow me to <span class=\"sub-hl\">relax</span> and <span class=\"sub-hl\">reduce stress</span>.",
+            "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I’m a big fan of <span class=\"sub-hl\">action and comedy movies</span> because they are very <span class=\"sub-hl\">interesting</span>. They also allow me to <span class=\"sub-hl\">relax</span> and <span class=\"sub-hl\">reduce stress</span>.</div><div><strong>- Cách 2:</strong> → Personally, I like <span class=\"sub-hl\">comedy movies</span> the most because they are <span class=\"sub-hl\">entertaining</span>. Besides, I also enjoy <span class=\"sub-hl\">romantic movies</span> to <span class=\"sub-hl\">relax after a busy day</span>.</div>",
+            "samples": [
+                {
+                    "label": "Cách 1 (Nêu 2 thể loại gộp)",
+                    "text": "I’m a big fan of action and comedy movies because they are very interesting. They also allow me to relax and reduce stress.",
+                    "formatted": "→ I’m a big fan of <span class=\"sub-hl\">action and comedy movies</span> because they are very <span class=\"sub-hl\">interesting</span>. They also allow me to <span class=\"sub-hl\">relax</span> and <span class=\"sub-hl\">reduce stress</span>."
+                },
+                {
+                    "label": "Cách 2 (Tách từng thể loại)",
+                    "text": "Personally, I like comedy movies the most because they are entertaining. Besides, I also enjoy romantic movies to relax after a busy day.",
+                    "formatted": "→ Personally, I like <span class=\"sub-hl\">comedy movies</span> the most because they are <span class=\"sub-hl\">entertaining</span>. Besides, I also enjoy <span class=\"sub-hl\">romantic movies</span> to <span class=\"sub-hl\">relax after a busy day</span>."
+                }
+            ],
             "vocab": [
                 {
                     "type": "note",
@@ -3434,7 +3736,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             "title": "5. What is your favorite [danh từ]?",
-            "formula": "→ My favorite <strong>[danh từ]</strong> is <strong>[thứ cụ thể]</strong> because it’s <strong>[tính từ mô tả phù hợp]</strong>. It helps me <strong>[lợi ích]</strong> and makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.",
+            "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → My favorite <strong>[danh từ]</strong> is <strong>[thứ cụ thể]</strong> because it’s <strong>[tính từ mô tả phù hợp]</strong>. It helps me <strong>[lợi ích]</strong> and makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.</div><div><strong>- Cách 2:</strong> → If I have to pick one, I would choose <strong>[thứ cụ thể]</strong> as my favorite <strong>[danh từ]</strong>. I really love it because it’s <strong>[tính từ mô tả phù hợp]</strong> and helps me <strong>[lợi ích]</strong>.</div>",
             "examples": [
                 {
                     "q": "What is your favorite <span class='sub-hl'>food</span>?",
@@ -3469,7 +3771,19 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             "exQ": "What is your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>food</span>?",
             "exA": "→ My favorite food is fried chicken because it’s delicious. It helps me reduce stress and makes me feel happy whenever I eat it.",
-            "exAFormatted": "→ My favorite food is <span class=\"sub-hl\">fried chicken</span> because it’s <span class=\"sub-hl\">delicious</span>. It helps me <span class=\"sub-hl\">reduce stress</span> and makes me feel <span class=\"sub-hl\">happy</span> whenever I eat it.",
+            "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → My favorite food is <span class=\"sub-hl\">fried chicken</span> because it’s <span class=\"sub-hl\">delicious</span>. It helps me <span class=\"sub-hl\">reduce stress</span> and makes me feel <span class=\"sub-hl\">happy</span> whenever I eat it.</div><div><strong>- Cách 2:</strong> → If I have to pick one, I would choose <span class=\"sub-hl\">pho</span> as my favorite <span class=\"sub-hl\">food</span>. I really love it because it’s <span class=\"sub-hl\">delicious</span> and helps me <span class=\"sub-hl\">stay healthy</span>.</div>",
+            "samples": [
+                {
+                    "label": "Cách 1 (Trả lời trực tiếp)",
+                    "text": "My favorite food is fried chicken because it’s delicious. It helps me reduce stress and makes me feel happy whenever I eat it.",
+                    "formatted": "→ My favorite food is <span class=\"sub-hl\">fried chicken</span> because it’s <span class=\"sub-hl\">delicious</span>. It helps me <span class=\"sub-hl\">reduce stress</span> and makes me feel <span class=\"sub-hl\">happy</span> whenever I eat it."
+                },
+                {
+                    "label": "Cách 2 (Dùng If I have to pick one)",
+                    "text": "If I have to pick one, I would choose pho as my favorite food. I really love it because it’s delicious and helps me stay healthy.",
+                    "formatted": "→ If I have to pick one, I would choose <span class=\"sub-hl\">pho</span> as my favorite <span class=\"sub-hl\">food</span>. I really love it because it’s <span class=\"sub-hl\">delicious</span> and helps me <span class=\"sub-hl\">stay healthy</span>."
+                }
+            ],
             "vocab": [
                 {
                     "type": "note",
@@ -3640,6 +3954,18 @@ document.addEventListener('DOMContentLoaded', () => {
             "exQ": "What are the benefits of <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>exercise</span>?",
             "exA": "One benefit of exercise is that it helps us stay healthy. It’s also a good way to improve our fitness and reduce stress.",
             "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → One benefit of exercise is that it helps us <span class=\"sub-hl\">stay healthy</span>. It’s also a good way to <span class=\"sub-hl\">improve our fitness</span> and <span class=\"sub-hl\">reduce stress</span>.</div><div><strong>- Cách 2:</strong> → There are many benefits of exercise. First, it helps us <span class=\"sub-hl\">stay healthy</span>. Second, it allows us to <span class=\"sub-hl\">improve our fitness</span>.</div>",
+            "samples": [
+                {
+                    "label": "Cách 1 (Nêu lợi ích nối tiếp)",
+                    "text": "One benefit of exercise is that it helps us stay healthy. It’s also a good way to improve our fitness and reduce stress.",
+                    "formatted": "→ One benefit of exercise is that it helps us <span class=\"sub-hl\">stay healthy</span>. It’s also a good way to <span class=\"sub-hl\">improve our fitness</span> and <span class=\"sub-hl\">reduce stress</span>."
+                },
+                {
+                    "label": "Cách 2 (Liệt kê First ... Second ...)",
+                    "text": "There are many benefits of exercise. First, it helps us stay healthy. Second, it allows us to improve our fitness.",
+                    "formatted": "→ There are many benefits of exercise. First, it helps us <span class=\"sub-hl\">stay healthy</span>. Second, it allows us to <span class=\"sub-hl\">improve our fitness</span>."
+                }
+            ],
             "vocab": [
                 {
                     "type": "benefit",
@@ -3657,7 +3983,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "who": [
         {
             "title": "1. Who’s your favorite [noun – danh từ chỉ người]?",
-            "formula": "→ My favorite <strong>[noun – danh từ chỉ người]</strong> is <strong>[tên]</strong>. I like him/her because <strong>[lý do chính]</strong>. Moreover, he/she is very <strong>[tính từ mô tả tính cách]</strong>.",
+            "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → My favorite <strong>[noun – danh từ chỉ người]</strong> is <strong>[tên]</strong>. I like him/her because <strong>[lý do chính]</strong>. Moreover, he/she is very <strong>[tính từ mô tả tính cách]</strong>.</div><div><strong>- Cách 2:</strong> → I really admire <strong>[tên]</strong> because he/she is very <strong>[tính từ mô tả tính cách]</strong> and <strong>[lý do chính]</strong>. He/She always inspires me to <strong>[lợi ích]</strong>.</div>",
             "examples": [
                 {
                     "q": "Who’s your favorite <span class='sub-hl'>singer</span>?",
@@ -3692,7 +4018,19 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             "exQ": "Who’s your favorite <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>singer</span>?",
             "exA": "→ My favorite singer is Justin Bieber. I like him because he has a beautiful voice. Moreover, he is very talented.",
-            "exAFormatted": "→ My favorite singer is <span class=\"sub-hl\">Justin Bieber</span>. I like him because <span class=\"sub-hl\">he has a beautiful voice</span>. Moreover, he is very <span class=\"sub-hl\">talented</span>.",
+            "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → My favorite singer is <span class=\"sub-hl\">Justin Bieber</span>. I like him because <span class=\"sub-hl\">he has a beautiful voice</span>. Moreover, he is very <span class=\"sub-hl\">talented</span>.</div><div><strong>- Cách 2:</strong> → I really admire <span class=\"sub-hl\">Justin Bieber</span> because he is very <span class=\"sub-hl\">talented</span> and <span class=\"sub-hl\">has a beautiful voice</span>. He always inspires me to <span class=\"sub-hl\">enjoy my life and stay positive</span>.</div>",
+            "samples": [
+                {
+                    "label": "Cách 1 (Trả lời trực tiếp)",
+                    "text": "My favorite singer is Justin Bieber. I like him because he has a beautiful voice. Moreover, he is very talented.",
+                    "formatted": "→ My favorite singer is <span class=\"sub-hl\">Justin Bieber</span>. I like him because <span class=\"sub-hl\">he has a beautiful voice</span>. Moreover, he is very <span class=\"sub-hl\">talented</span>."
+                },
+                {
+                    "label": "Cách 2 (Dùng I really admire)",
+                    "text": "I really admire Justin Bieber because he is very talented and has a beautiful voice. He always inspires me to enjoy my life and stay positive.",
+                    "formatted": "→ I really admire <span class=\"sub-hl\">Justin Bieber</span> because he is very <span class=\"sub-hl\">talented</span> and <span class=\"sub-hl\">has a beautiful voice</span>. He always inspires me to <span class=\"sub-hl\">enjoy my life and stay positive</span>."
+                }
+            ],
             "vocab": [
                 {
                     "type": "note",
@@ -3745,12 +4083,26 @@ document.addEventListener('DOMContentLoaded', () => {
                             "vn": "truyền cảm hứng"
                         }
                     ]
+                },
+                {
+                    "type": "note",
+                    "title": "Ghi chú từ vựng (Cách 2):",
+                    "items": [
+                        {
+                            "en": "really admire",
+                            "vn": "thực sự ngưỡng mộ"
+                        },
+                        {
+                            "en": "inspires me to",
+                            "vn": "truyền cảm hứng cho tôi..."
+                        }
+                    ]
                 }
             ]
         },
         {
             "title": "2. Who do you often [hoạt động – Vo] with?",
-            "formula": "→ I often <strong>[hoạt động – Vo]</strong> with my <strong>[đối tượng phù hợp]</strong> because <strong>[lý do]</strong>. It's more <strong>[tính từ phù hợp]</strong> when we spend time together.",
+            "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1 (Làm cùng người khác):</strong> → I often <strong>[hoạt động – Vo]</strong> with my <strong>[đối tượng phù hợp]</strong> because <strong>[lý do]</strong>. It's more <strong>[tính từ phù hợp]</strong> when we spend time together.</div><div><strong>- Cách 2 (Làm một mình):</strong> → Actually, I prefer to <strong>[hoạt động – Vo]</strong> alone because it’s more <strong>[comfortable / convenient / quiet]</strong>. It helps me <strong>[lợi ích]</strong> and makes me feel <strong>[tính từ cảm xúc]</strong>.</div>",
             "examples": [
                 {
                     "q": "Who do you often <span class='sub-hl'>go shopping</span> with?",
@@ -3785,7 +4137,19 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             "exQ": "Who do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go shopping</span> with?",
             "exA": "→ I often go shopping with my mother because we have the same hobbies. It’s more fun when we spend time together.",
-            "exAFormatted": "→ I often go shopping with <span class=\"sub-hl\">my mother</span> because <span class=\"sub-hl\">we have the same hobbies</span>. It’s more <span class=\"sub-hl\">fun</span> when we spend time together.",
+            "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Cách 1 (Đi cùng người thân):</strong> → I often go shopping with <span class=\"sub-hl\">my mother</span> because <span class=\"sub-hl\">we have the same hobbies</span>. It’s more <span class=\"sub-hl\">fun</span> when we spend time together.</div><div><strong>- Cách 2 (Đi một mình):</strong> → Actually, I prefer to <span class=\"sub-hl\">go shopping</span> alone because it’s more <span class=\"sub-hl\">convenient</span>. It helps me <span class=\"sub-hl\">save time</span> and makes me feel <span class=\"sub-hl\">comfortable</span>.</div>",
+            "samples": [
+                {
+                    "label": "Cách 1 (Làm cùng người khác)",
+                    "text": "I often go shopping with my mother because we have the same hobbies. It’s more fun when we spend time together.",
+                    "formatted": "→ I often go shopping with <span class=\"sub-hl\">my mother</span> because <span class=\"sub-hl\">we have the same hobbies</span>. It’s more <span class=\"sub-hl\">fun</span> when we spend time together."
+                },
+                {
+                    "label": "Cách 2 (Làm một mình)",
+                    "text": "Actually, I prefer to go shopping alone because it’s more convenient. It helps me save time and makes me feel comfortable.",
+                    "formatted": "→ Actually, I prefer to <span class=\"sub-hl\">go shopping</span> alone because it’s more <span class=\"sub-hl\">convenient</span>. It helps me <span class=\"sub-hl\">save time</span> and makes me feel <span class=\"sub-hl\">comfortable</span>."
+                }
+            ],
             "vocab": [
                 {
                     "type": "note",
@@ -3846,6 +4210,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             "en": "spend time together",
                             "vn": "dành thời gian cùng nhau"
+                        },
+                        {
+                            "en": "prefer to ... alone",
+                            "vn": "thích làm gì đó một mình hơn"
                         }
                     ]
                 }
@@ -3855,7 +4223,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "when": [
         {
             "title": "1. When do you often [hoạt động – Vo]?",
-            "formula": "→ I usually <strong>[hoạt động – Vo]</strong> <strong>[thời gian]</strong> because that’s when I have free time. It helps me <strong>[lợi ích]</strong> and makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.",
+            "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I usually <strong>[hoạt động – Vo]</strong> <strong>[thời gian]</strong> because that’s when I have free time. It helps me <strong>[lợi ích]</strong> and makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.</div><div><strong>- Cách 2:</strong> → My favorite time to <strong>[hoạt động – Vo]</strong> is <strong>[thời gian]</strong>. Doing it at that time helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.</div>",
             "examples": [
                 {
                     "q": "When do you often <span class='sub-hl'>listen to music</span>?",
@@ -3890,7 +4258,19 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             "exQ": "When do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>listen to music</span>?",
             "exA": "→ I often listen to music in the evening because that’s when I have free time. It helps me reduce stress and makes me feel relaxed.",
-            "exAFormatted": "→ I often listen to music <span class=\"sub-hl\">in the evening</span> because that’s when I have free time. It helps me <span class=\"sub-hl\">reduce stress</span> and makes me feel <span class=\"sub-hl\">relaxed</span>.",
+            "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I often listen to music <span class=\"sub-hl\">in the evening</span> because that’s when I have free time. It helps me <span class=\"sub-hl\">reduce stress</span> and makes me feel <span class=\"sub-hl\">relaxed</span>.</div><div><strong>- Cách 2:</strong> → My favorite time to <span class=\"sub-hl\">listen to music</span> is <span class=\"sub-hl\">in the evening before going to bed</span>. Doing it at that time helps me <span class=\"sub-hl\">clear my mind</span> and <span class=\"sub-hl\">sleep better</span>.</div>",
+            "samples": [
+                {
+                    "label": "Cách 1 (Nêu thời gian rảnh & cảm xúc)",
+                    "text": "I often listen to music in the evening because that’s when I have free time. It helps me reduce stress and makes me feel relaxed.",
+                    "formatted": "→ I often listen to music <span class=\"sub-hl\">in the evening</span> because that’s when I have free time. It helps me <span class=\"sub-hl\">reduce stress</span> and makes me feel <span class=\"sub-hl\">relaxed</span>."
+                },
+                {
+                    "label": "Cách 2 (Dùng My favorite time to ...)",
+                    "text": "My favorite time to listen to music is in the evening before going to bed. Doing it at that time helps me clear my mind and sleep better.",
+                    "formatted": "→ My favorite time to <span class=\"sub-hl\">listen to music</span> is <span class=\"sub-hl\">in the evening before going to bed</span>. Doing it at that time helps me <span class=\"sub-hl\">clear my mind</span> and <span class=\"sub-hl\">sleep better</span>."
+                }
+            ],
             "vocab": [
                 {
                     "type": "time",
@@ -3988,7 +4368,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "where": [
         {
             "title": "1. Where do you often [hoạt động – Vo]?",
-            "formula": "→ I usually <strong>[hoạt động – Vo]</strong> <strong>[cụm địa điểm]</strong> because it’s very <strong>[tính từ mô tả địa điểm]</strong>. It helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.",
+            "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I usually <strong>[hoạt động – Vo]</strong> <strong>[cụm địa điểm]</strong> because it’s very <strong>[tính từ mô tả địa điểm]</strong>. It helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.</div><div><strong>- Cách 2:</strong> → Whenever I want to <strong>[hoạt động – Vo]</strong>, I often go to <strong>[cụm địa điểm]</strong>. I love the space there because it’s <strong>[tính từ mô tả địa điểm]</strong> and makes me feel <strong>[tính từ cảm xúc]</strong>.</div>",
             "examples": [
                 {
                     "q": "Where do you often <span class='sub-hl'>read books</span>?",
@@ -4023,7 +4403,19 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             "exQ": "Where do you often <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>read books</span>?",
             "exA": "→ I often read books in the school library because it’s very quiet. It helps me focus better and stay motivated.",
-            "exAFormatted": "→ I often read books <span class=\"sub-hl\">in the school library</span> because it’s very <span class=\"sub-hl\">quiet</span>. It helps me <span class=\"sub-hl\">focus better</span> and <span class=\"sub-hl\">stay motivated</span>.",
+            "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I often read books <span class=\"sub-hl\">in the school library</span> because it’s very <span class=\"sub-hl\">quiet</span>. It helps me <span class=\"sub-hl\">focus better</span> and <span class=\"sub-hl\">stay motivated</span>.</div><div><strong>- Cách 2:</strong> → Whenever I want to <span class=\"sub-hl\">read books</span>, I often go to <span class=\"sub-hl\">a coffee shop near my house</span>. I love the space there because it’s <span class=\"sub-hl\">peaceful</span> and makes me feel <span class=\"sub-hl\">relaxed</span>.</div>",
+            "samples": [
+                {
+                    "label": "Cách 1 (Nêu địa điểm & 2 lợi ích)",
+                    "text": "I often read books in the school library because it’s very quiet. It helps me focus better and stay motivated.",
+                    "formatted": "→ I often read books <span class=\"sub-hl\">in the school library</span> because it’s very <span class=\"sub-hl\">quiet</span>. It helps me <span class=\"sub-hl\">focus better</span> and <span class=\"sub-hl\">stay motivated</span>."
+                },
+                {
+                    "label": "Cách 2 (Mô tả không gian & cảm xúc)",
+                    "text": "Whenever I want to read books, I often go to a coffee shop near my house. I love the space there because it’s peaceful and makes me feel relaxed.",
+                    "formatted": "→ Whenever I want to <span class=\"sub-hl\">read books</span>, I often go to <span class=\"sub-hl\">a coffee shop near my house</span>. I love the space there because it’s <span class=\"sub-hl\">peaceful</span> and makes me feel <span class=\"sub-hl\">relaxed</span>."
+                }
+            ],
             "vocab": [
                 {
                     "type": "note",
@@ -4121,7 +4513,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "why": [
         {
             "title": "1. Why do you like [hoạt động – Ving]?",
-            "formula": "→ I enjoy <strong>[hoạt động – Ving]</strong> because it’s very <strong>[tính từ mô tả hoạt động]</strong>. It helps me <strong>[lợi ích 1]</strong> and makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.",
+            "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I enjoy <strong>[hoạt động – Ving]</strong> because it’s very <strong>[tính từ mô tả hoạt động]</strong>. It helps me <strong>[lợi ích 1]</strong> and makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.</div><div><strong>- Cách 2:</strong> → The main reason I like <strong>[hoạt động – Ving]</strong> is that it helps me <strong>[lợi ích 1]</strong>. Besides, it’s also a good way for me to <strong>[lợi ích 2]</strong>.</div>",
             "note": "LƯU Ý: Nếu không muốn mô tả cảm xúc thì có thể thay bằng 1 lợi ích khác.",
             "examples": [
                 {
@@ -4157,7 +4549,19 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             "exQ": "Why do you like <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>swimming</span>?",
             "exA": "→ I enjoy swimming because it’s very interesting. It helps me stay healthy and makes me feel relaxed.",
-            "exAFormatted": "→ I enjoy swimming because it’s very <span class=\"sub-hl\">interesting</span>. It helps me <span class=\"sub-hl\">stay healthy</span> and makes me feel <span class=\"sub-hl\">relaxed</span>.",
+            "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I enjoy swimming because it’s very <span class=\"sub-hl\">interesting</span>. It helps me <span class=\"sub-hl\">stay healthy</span> and makes me feel <span class=\"sub-hl\">relaxed</span>.</div><div><strong>- Cách 2:</strong> → The main reason I like <span class=\"sub-hl\">swimming</span> is that it helps me <span class=\"sub-hl\">stay in good shape</span>. Besides, it’s also a good way for me to <span class=\"sub-hl\">reduce stress after a busy day</span>.</div>",
+            "samples": [
+                {
+                    "label": "Cách 1 (Nêu tính từ & cảm xúc)",
+                    "text": "I enjoy swimming because it’s very interesting. It helps me stay healthy and makes me feel relaxed.",
+                    "formatted": "→ I enjoy swimming because it’s very <span class=\"sub-hl\">interesting</span>. It helps me <span class=\"sub-hl\">stay healthy</span> and makes me feel <span class=\"sub-hl\">relaxed</span>."
+                },
+                {
+                    "label": "Cách 2 (Dùng The main reason ... Besides ...)",
+                    "text": "The main reason I like swimming is that it helps me stay in good shape. Besides, it’s also a good way for me to reduce stress after a busy day.",
+                    "formatted": "→ The main reason I like <span class=\"sub-hl\">swimming</span> is that it helps me <span class=\"sub-hl\">stay in good shape</span>. Besides, it’s also a good way for me to <span class=\"sub-hl\">reduce stress after a busy day</span>."
+                }
+            ],
             "vocab": [
                 {
                     "type": "activity",
@@ -4255,7 +4659,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "how": [
         {
             "title": "1. How do you [go/get/commute/travel] to [địa điểm]?",
-            "formula": "→ I usually <strong>[go/get/commute/travel]</strong> there by <strong>[phương tiện]</strong> because it’s very <strong>[tính từ mô tả phương tiện]</strong>. It also helps me <strong>[lợi ích]</strong>.",
+            "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I usually <strong>[go/get/commute/travel]</strong> there by <strong>[phương tiện]</strong> because it’s very <strong>[tính từ mô tả phương tiện]</strong>. It also helps me <strong>[lợi ích]</strong>.</div><div><strong>- Cách 2:</strong> → Most of the time, I choose to <strong>[go/get/commute/travel]</strong> to <strong>[địa điểm]</strong> by <strong>[phương tiện]</strong>. It is a great choice for me because it helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.</div>",
             "examples": [
                 {
                     "q": "How do you go to school <span class='sub-hl'>every day</span>?",
@@ -4290,7 +4694,19 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             "exQ": "How do you go to <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>school</span> every day?",
             "exA": "→ I usually go to school by motorbike because it’s very fast and convenient. It also helps me save time.",
-            "exAFormatted": "→ I usually go to school by <span class=\"sub-hl\">motorbike</span> because it’s very <span class=\"sub-hl\">fast and convenient</span>. It also helps me <span class=\"sub-hl\">save time</span>.",
+            "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I usually go to school by <span class=\"sub-hl\">motorbike</span> because it’s very <span class=\"sub-hl\">fast and convenient</span>. It also helps me <span class=\"sub-hl\">save time</span>.</div><div><strong>- Cách 2:</strong> → Most of the time, I choose to <span class=\"sub-hl\">go to school</span> by <span class=\"sub-hl\">bus</span>. It is a great choice for me because it helps me <span class=\"sub-hl\">save money</span> and <span class=\"sub-hl\">protect the environment</span>.</div>",
+            "samples": [
+                {
+                    "label": "Cách 1 (Nêu tính từ & lợi ích)",
+                    "text": "I usually go to school by motorbike because it’s very fast and convenient. It also helps me save time.",
+                    "formatted": "→ I usually go to school by <span class=\"sub-hl\">motorbike</span> because it’s very <span class=\"sub-hl\">fast and convenient</span>. It also helps me <span class=\"sub-hl\">save time</span>."
+                },
+                {
+                    "label": "Cách 2 (Dùng Most of the time, I choose to ...)",
+                    "text": "Most of the time, I choose to go to school by bus. It is a great choice for me because it helps me save money and protect the environment.",
+                    "formatted": "→ Most of the time, I choose to <span class=\"sub-hl\">go to school</span> by <span class=\"sub-hl\">bus</span>. It is a great choice for me because it helps me <span class=\"sub-hl\">save money</span> and <span class=\"sub-hl\">protect the environment</span>."
+                }
+            ],
             "vocab": [
                 {
                     "type": "note",
@@ -4386,7 +4802,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             "title": "2. How often do you [hoạt động – Vo]?",
-            "formula": "→ Although I'm busy, I try to <strong>[hoạt động – Vo]</strong> <strong>[tần suất]</strong> because it helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.",
+            "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → Although I'm busy, I try to <strong>[hoạt động – Vo]</strong> <strong>[tần suất]</strong> because it helps me <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.</div><div><strong>- Cách 2:</strong> → I usually <strong>[hoạt động – Vo]</strong> <strong>[tần suất]</strong> when I have free time. Keeping this habit helps me <strong>[lợi ích]</strong> and makes me feel <strong>[tính từ cảm xúc]</strong>.</div>",
             "examples": [
                 {
                     "q": "How often do you go to the library <span class='sub-hl'>every week</span>?",
@@ -4421,7 +4837,19 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             "exQ": "How often do you <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>go to the library</span> every week?",
             "exA": "→ Although I’m busy, I still try to go to the library twice a week because it helps me focus better and study more effectively.",
-            "exAFormatted": "→ Although I’m busy, I still try to go to the library <span class=\"sub-hl\">twice a week</span> because it helps me <span class=\"sub-hl\">focus better</span> and <span class=\"sub-hl\">study more effectively</span>.",
+            "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → Although I’m busy, I still try to go to the library <span class=\"sub-hl\">twice a week</span> because it helps me <span class=\"sub-hl\">focus better</span> and <span class=\"sub-hl\">study more effectively</span>.</div><div><strong>- Cách 2:</strong> → I usually <span class=\"sub-hl\">go to the library</span> <span class=\"sub-hl\">twice a week</span> when I have free time. Keeping this habit helps me <span class=\"sub-hl\">widen my knowledge</span> and makes me feel <span class=\"sub-hl\">motivated</span>.</div>",
+            "samples": [
+                {
+                    "label": "Cách 1 (Dùng Although I'm busy)",
+                    "text": "Although I’m busy, I still try to go to the library twice a week because it helps me focus better and study more effectively.",
+                    "formatted": "→ Although I’m busy, I still try to go to the library <span class=\"sub-hl\">twice a week</span> because it helps me <span class=\"sub-hl\">focus better</span> and <span class=\"sub-hl\">study more effectively</span>."
+                },
+                {
+                    "label": "Cách 2 (Nhấn mạnh thói quen & cảm xúc)",
+                    "text": "I usually go to the library twice a week when I have free time. Keeping this habit helps me widen my knowledge and makes me feel motivated.",
+                    "formatted": "→ I usually <span class=\"sub-hl\">go to the library</span> <span class=\"sub-hl\">twice a week</span> when I have free time. Keeping this habit helps me <span class=\"sub-hl\">widen my knowledge</span> and makes me feel <span class=\"sub-hl\">motivated</span>."
+                }
+            ],
             "vocab": [
                 {
                     "type": "benefit",
@@ -4470,6 +4898,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             "en": "I try to",
                             "vn": "Tôi cố gắng"
+                        },
+                        {
+                            "en": "Keeping this habit",
+                            "vn": "Duy trì thói quen này"
                         }
                     ]
                 }
@@ -4477,7 +4909,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             "title": "3. How much time do you spend [hoạt động – Ving]?",
-            "formula": "→ Although I have a busy schedule, I still spend about <strong>[lượng thời gian]</strong> <strong>[hoạt động – Ving]</strong> every day because it helps me <strong>[lợi ích]</strong>. It also makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.",
+            "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → Although I have a busy schedule, I still spend about <strong>[lượng thời gian]</strong> <strong>[hoạt động – Ving]</strong> every day because it helps me <strong>[lợi ích]</strong>. It also makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.</div><div><strong>- Cách 2:</strong> → Every day, I usually spend around <strong>[lượng thời gian]</strong> <strong>[hoạt động – Ving]</strong>. I think that’s enough time for me to <strong>[lợi ích 1]</strong> and <strong>[lợi ích 2]</strong>.</div>",
             "examples": [
                 {
                     "q": "How much time do you spend <span class='sub-hl'>studying English</span>?",
@@ -4512,7 +4944,19 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             "exQ": "How much time do you spend <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>studying English</span>?",
             "exA": "→ Although I have a busy schedule, I still spend about two hours studying English every day because it helps me improve my vocabulary. It also makes me feel confident.",
-            "exAFormatted": "→ Although I have a busy schedule, I still spend about <span class=\"sub-hl\">two hours</span> studying English every day because it helps me <span class=\"sub-hl\">improve my vocabulary</span>. It also makes me feel <span class=\"sub-hl\">confident</span>.",
+            "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → Although I have a busy schedule, I still spend about <span class=\"sub-hl\">two hours</span> studying English every day because it helps me <span class=\"sub-hl\">improve my vocabulary</span>. It also makes me feel <span class=\"sub-hl\">confident</span>.</div><div><strong>- Cách 2:</strong> → Every day, I usually spend around <span class=\"sub-hl\">two hours</span> studying English. I think that’s enough time for me to <span class=\"sub-hl\">improve my vocabulary</span> and <span class=\"sub-hl\">practice speaking</span>.</div>",
+            "samples": [
+                {
+                    "label": "Cách 1 (Mặc dù bận rộn + Cảm xúc)",
+                    "text": "Although I have a busy schedule, I still spend about two hours studying English every day because it helps me improve my vocabulary. It also makes me feel confident.",
+                    "formatted": "→ Although I have a busy schedule, I still spend about <span class=\"sub-hl\">two hours</span> studying English every day because it helps me <span class=\"sub-hl\">improve my vocabulary</span>. It also makes me feel <span class=\"sub-hl\">confident</span>."
+                },
+                {
+                    "label": "Cách 2 (Lượng thời gian hợp lý + 2 Lợi ích)",
+                    "text": "Every day, I usually spend around two hours studying English. I think that’s enough time for me to improve my vocabulary and practice speaking.",
+                    "formatted": "→ Every day, I usually spend around <span class=\"sub-hl\">two hours</span> studying English. I think that’s enough time for me to <span class=\"sub-hl\">improve my vocabulary</span> and <span class=\"sub-hl\">practice speaking</span>."
+                }
+            ],
             "vocab": [
                 {
                     "type": "time",
@@ -4543,6 +4987,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             "en": "busy schedule",
                             "vn": "lịch trình bận rộn"
+                        },
+                        {
+                            "en": "enough time for me to",
+                            "vn": "đủ thời gian để tôi..."
                         }
                     ]
                 },
@@ -4598,7 +5046,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             "title": "4. How much money do you spend on [thứ gì đó – noun] every month?",
-            "formula": "→ I’m still a student, so I need to save money. I only spend about <strong>[số tiền]</strong> on <strong>[thứ gì đó]</strong> every month because I think it’s reasonable for me.",
+            "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I’m still a student, so I need to save money. I only spend about <strong>[số tiền]</strong> on <strong>[thứ gì đó]</strong> every month because I think it’s reasonable for me.</div><div><strong>- Cách 2:</strong> → Usually, I spend around <strong>[số tiền]</strong> on <strong>[thứ gì đó]</strong> every month. It helps me <strong>[mục đích / lợi ích]</strong> while still saving money for other things.</div>",
             "examples": [
                 {
                     "q": "How much money do you spend on <span class='sub-hl'>clothes</span> every month?",
@@ -4633,7 +5081,19 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             "exQ": "How much money do you spend on <span class='sub-hl' style='font-style: italic; padding: 0.05rem 0.35rem; border-radius: 4px;'>clothes</span> every month?",
             "exA": "→ I’m still a student, so I need to save money. I only spend about 20 dollars on clothes every month because I think it’s reasonable for me.",
-            "exAFormatted": "→ I’m still a student, so I need to save money. I only spend about <span class=\"sub-hl\">20 dollars</span> on <span class=\"sub-hl\">clothes</span> every month because I think it’s reasonable for me.",
+            "exAFormatted": "<div style='margin-bottom: 8px;'><strong>- Cách 1:</strong> → I’m still a student, so I need to save money. I only spend about <span class=\"sub-hl\">20 dollars</span> on <span class=\"sub-hl\">clothes</span> every month because I think it’s reasonable for me.</div><div><strong>- Cách 2:</strong> → Usually, I spend around <span class=\"sub-hl\">20 dollars</span> on <span class=\"sub-hl\">clothes</span> every month. It helps me <span class=\"sub-hl\">buy necessary outfits</span> while still saving money for other things.</div>",
+            "samples": [
+                {
+                    "label": "Cách 1 (Tiết kiệm vì là học sinh/sinh viên)",
+                    "text": "I’m still a student, so I need to save money. I only spend about 20 dollars on clothes every month because I think it’s reasonable for me.",
+                    "formatted": "→ I’m still a student, so I need to save money. I only spend about <span class=\"sub-hl\">20 dollars</span> on <span class=\"sub-hl\">clothes</span> every month because I think it’s reasonable for me."
+                },
+                {
+                    "label": "Cách 2 (Chi tiêu có kế hoạch hợp lý)",
+                    "text": "Usually, I spend around 20 dollars on clothes every month. It helps me buy necessary outfits while still saving money for other things.",
+                    "formatted": "→ Usually, I spend around <span class=\"sub-hl\">20 dollars</span> on <span class=\"sub-hl\">clothes</span> every month. It helps me <span class=\"sub-hl\">buy necessary outfits</span> while still saving money for other things."
+                }
+            ],
             "vocab": [
                 {
                     "type": "note",
@@ -4650,6 +5110,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             "en": "dollars",
                             "vn": "đô la (đơn vị tiền tệ)"
+                        },
+                        {
+                            "en": "while still saving money for other things",
+                            "vn": "trong khi vẫn tiết kiệm tiền cho những việc khác"
                         }
                     ]
                 }
@@ -4703,10 +5167,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                             <i class="fa-solid fa-eye"></i> Nhấn xem câu trả lời mẫu
                                         </button>
                                         <div class="fade-in" style="display:none; margin-top:0.75rem; padding-top:0.75rem; border-top:1px dashed var(--border);">
-                                            <div class="ex-text" style="color:var(--secondary); font-weight:500; font-size:1.05rem; line-height:1.8;">${item.exAFormatted || item.exA}</div>
-                                            <button class="btn-audio-sample mt-2" onclick="speakText('${item.exA.replace(/<[^>]*>/g, '').replace(/→/g, '').replace(/'/g, "\\'").trim()}')">
-                                                <i class="fa-solid fa-volume-high"></i> Nghe Audio phát âm
-                                            </button>
+                                            ${renderSampleAnswersContent(item)}
                                         </div>
                                     </div>
                                 </div>
@@ -4899,9 +5360,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div>
                             <div class="hint-content fade-in" style="display:none; margin-top:0.5rem; font-size:1.05rem; line-height:1.6; text-align: left;">
                                 <div style="margin-bottom: 0.75rem;">
-                                    <strong style="color: #059669;">💡 Áp dụng Cấu trúc:</strong><br/> 
-                                    <div style="background: rgba(16, 185, 129, 0.05); padding: 0.75rem; border-left: 3px solid #10b981; margin-top: 0.5rem; border-radius: 4px;">
-                                        ${final.formula || ''}
+                                    <strong style="color: #059669;">💡 Áp dụng Cấu trúc:</strong>
+                                    <div style="margin-top: 0.5rem;">
+                                        ${formatFormulaHighlight(final.formula || final.form || '')}
                                     </div>
                                 </div>
                                 <div>

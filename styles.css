@@ -2324,3 +2324,212 @@ body.dark-theme .teacher-brand-heading {
         justify-content: center;
     }
 }
+
+/* =========================================================
+   MODERN MULTI-WAY FORMULA CARDS SYSTEM (CÁCH 1, CÁCH 2, CÁCH 3)
+========================================================= */
+.accordion-box.open .accordion-content {
+    max-height: 4500px;
+}
+
+.formula-cards-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+    margin: 0.4rem 0 0.85rem 0;
+}
+
+.formula-card {
+    position: relative;
+    border-radius: 14px;
+    padding: 1.15rem 1.35rem;
+    background: var(--bg-card);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+.formula-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* Card 1: Royal Blue (Cách 1 / Trả lời CÓ / Phương án 1) */
+.formula-card.card-c1 {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.045) 0%, rgba(59, 130, 246, 0.015) 100%);
+    border: 1.5px solid rgba(37, 99, 235, 0.25);
+    border-left: 5px solid #2563eb;
+}
+.formula-card.card-c1 strong {
+    color: #1e40af;
+}
+
+/* Card NO: Crimson / Rose (Trả lời KHÔNG / CHƯA TỪNG / Phủ định) */
+.formula-card.card-c2-no {
+    background: linear-gradient(135deg, rgba(225, 29, 72, 0.045) 0%, rgba(244, 63, 94, 0.015) 100%);
+    border: 1.5px solid rgba(225, 29, 72, 0.25);
+    border-left: 5px solid #e11d48;
+}
+.formula-card.card-c2-no strong {
+    color: #be123c;
+}
+
+/* Card Green / Alternative: Emerald (Cách 2 kết hợp / Lựa chọn thay thế) */
+.formula-card.card-c2-green {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.045) 0%, rgba(5, 150, 105, 0.015) 100%);
+    border: 1.5px solid rgba(16, 185, 129, 0.25);
+    border-left: 5px solid #059669;
+}
+.formula-card.card-c2-green strong {
+    color: #047857;
+}
+
+/* Formula Card Header & Badges */
+.formula-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.65rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.formula-card-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.88rem;
+    font-weight: 800;
+    padding: 0.28rem 0.85rem;
+    border-radius: 8px;
+    letter-spacing: 0.2px;
+}
+.formula-card-badge.badge-c1 {
+    background: rgba(37, 99, 235, 0.1);
+    color: #1d4ed8;
+    border: 1px solid rgba(37, 99, 235, 0.25);
+}
+.formula-card-badge.badge-c2-no {
+    background: rgba(225, 29, 72, 0.1);
+    color: #be123c;
+    border: 1px solid rgba(225, 29, 72, 0.25);
+}
+.formula-card-badge.badge-c2-green {
+    background: rgba(16, 185, 129, 0.1);
+    color: #047857;
+    border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+/* Formula Card Body */
+.formula-card-body {
+    font-size: 1.06rem;
+    line-height: 2.1;
+    color: var(--text-main);
+    text-align: justify;
+    text-justify: inter-word;
+}
+.formula-card-body u {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1.5px;
+    font-weight: 600;
+}
+.formula-card .formula-arrow {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-right: 0.35rem;
+    vertical-align: middle;
+}
+.card-c1 .formula-arrow { color: #2563eb; }
+.card-c2-no .formula-arrow { color: #e11d48; }
+.card-c2-green .formula-arrow { color: #059669; }
+
+/* Formula Bracket Highlight Pills per Card Type */
+.formula-bracket-hl.bracket-c1 {
+    background: #dbeafe;
+    color: #1e40af;
+    border: 1px solid #bfdbfe;
+    box-shadow: 0 1px 2px rgba(191, 219, 254, 0.4);
+}
+.formula-bracket-hl.bracket-c2-no {
+    background: #ffe4e6;
+    color: #9f1239;
+    border: 1px solid #fecdd3;
+    box-shadow: 0 1px 2px rgba(254, 205, 211, 0.4);
+}
+.formula-bracket-hl.bracket-c2-green {
+    background: #d1fae5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+    box-shadow: 0 1px 2px rgba(167, 243, 208, 0.4);
+}
+
+/* Dark Theme Support for Multi-Way Formula Cards */
+body.dark-theme .formula-card.card-c1 {
+    background: rgba(37, 99, 235, 0.08);
+    border-color: rgba(59, 130, 246, 0.3);
+    border-left-color: #3b82f6;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+body.dark-theme .formula-card.card-c1 strong {
+    color: #93c5fd;
+}
+body.dark-theme .formula-card.card-c2-no {
+    background: rgba(225, 29, 72, 0.08);
+    border-color: rgba(244, 63, 94, 0.3);
+    border-left-color: #f43f5e;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+body.dark-theme .formula-card.card-c2-no strong {
+    color: #fda4af;
+}
+body.dark-theme .formula-card.card-c2-green {
+    background: rgba(16, 185, 129, 0.08);
+    border-color: rgba(16, 185, 129, 0.3);
+    border-left-color: #10b981;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+body.dark-theme .formula-card.card-c2-green strong {
+    color: #6ee7b7;
+}
+
+body.dark-theme .formula-card-badge.badge-c1 {
+    background: rgba(59, 130, 246, 0.2);
+    color: #93c5fd;
+    border-color: rgba(59, 130, 246, 0.35);
+}
+body.dark-theme .formula-card-badge.badge-c2-no {
+    background: rgba(244, 63, 94, 0.2);
+    color: #fda4af;
+    border-color: rgba(244, 63, 94, 0.35);
+}
+body.dark-theme .formula-card-badge.badge-c2-green {
+    background: rgba(16, 185, 129, 0.2);
+    color: #6ee7b7;
+    border-color: rgba(16, 185, 129, 0.35);
+}
+
+body.dark-theme .formula-bracket-hl.bracket-c1 {
+    background: rgba(59, 130, 246, 0.25);
+    color: #bfdbfe;
+    border-color: rgba(59, 130, 246, 0.45);
+    box-shadow: none;
+}
+body.dark-theme .formula-bracket-hl.bracket-c2-no {
+    background: rgba(244, 63, 94, 0.25);
+    color: #fecdd3;
+    border-color: rgba(244, 63, 94, 0.45);
+    box-shadow: none;
+}
+body.dark-theme .formula-bracket-hl.bracket-c2-green {
+    background: rgba(16, 185, 129, 0.25);
+    color: #a7f3d0;
+    border-color: rgba(16, 185, 129, 0.45);
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .formula-cards-wrap { gap: 0.85rem; }
+    .formula-card { padding: 0.95rem 1.05rem; border-radius: 12px; }
+    .formula-card-badge { font-size: 0.8rem; padding: 0.22rem 0.65rem; }
+    .formula-card-body { font-size: 0.98rem; line-height: 1.9; }
+}
