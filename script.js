@@ -1542,7 +1542,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
         "title": "3. Do you like/love/enjoy [hoạt động – Ving]?",
-        "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1 (Trả lời có):</strong> → Yes, I do. I’m really into <strong>[hoạt động – Ving]</strong> because it’s very <strong>[tính từ mô tả hoạt động]</strong>. It helps me <strong>[lợi ích]</strong> and makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.</div><div><strong>- Cách 2 (Trả lời không):</strong> → Not really. I’m not a big fan of <strong>[hoạt động – Ving]</strong> because I find it quite <strong>[boring / tiring / difficult]</strong>. Instead, I prefer <strong>[hoạt động khác – Ving]</strong> because it helps me <strong>[lợi ích]</strong>.</div>",
+        "formula": "<div style='margin-bottom: 8px;'><strong>- Cách 1 (Trả lời có):</strong> → Yes, I do. I’m really into <strong>[hoạt động – Ving]</strong> because it’s very <strong>[tính từ mô tả hoạt động]</strong>. It helps me <strong>[lợi ích]</strong> and makes me feel <strong>[tính từ mô tả cảm xúc]</strong>.</div><div><strong>- Cách 2 (Trả lời không):</strong> → Not really. I’m not a big fan of <strong>[hoạt động – Ving]</strong> because I find it quite <strong>[tính từ mô tả hoạt động]</strong>. Instead, I prefer <strong>[hoạt động khác – Ving]</strong> because it helps me <strong>[lợi ích]</strong>.</div>",
         "examples": [
             {
                 "q": "Do you like <span class='sub-hl'>reading books</span>?",
@@ -1604,14 +1604,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         "vn": "không thực sự thích"
                     },
                     {
-                        "en": "find it quite boring / tiring / difficult",
-                        "vn": "thấy nó khá nhàm chán / mệt / khó"
+                        "en": "find it quite",
+                        "vn": "thấy nó khá..."
                     }
                 ]
             },
             {
                 "type": "activity",
-                "title": "Tính từ mô tả hoạt động:",
+                "title": "🌟 Tính từ mô tả hoạt động (Thích):",
                 "items": [
                     {
                         "en": "interesting",
@@ -1648,6 +1648,32 @@ document.addEventListener('DOMContentLoaded', () => {
                     {
                         "en": "great / wonderful",
                         "vn": "tuyệt vời"
+                    }
+                ]
+            },
+            {
+                "type": "dislike",
+                "title": "❌ Tính từ mô tả hoạt động (Không thích):",
+                "items": [
+                    {
+                        "en": "boring",
+                        "vn": "nhàm chán"
+                    },
+                    {
+                        "en": "tiring",
+                        "vn": "mệt mỏi"
+                    },
+                    {
+                        "en": "difficult",
+                        "vn": "khó khăn"
+                    },
+                    {
+                        "en": "stressful",
+                        "vn": "căng thẳng"
+                    },
+                    {
+                        "en": "wasteful",
+                        "vn": "lãng phí / tốn thời gian"
                     }
                 ]
             },
@@ -2293,6 +2319,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 bg = 'rgba(217, 119, 6, 0.06)';
                 border = 'rgba(217, 119, 6, 0.25)';
                 icon = 'fa-solid fa-wand-magic-sparkles';
+            } else if (group.type === 'dislike') {
+                col = '#e11d48';
+                bg = 'rgba(225, 29, 72, 0.06)';
+                border = 'rgba(225, 29, 72, 0.25)';
+                icon = 'fa-solid fa-thumbs-down';
             } else if (group.type === 'time') {
                 icon = 'fa-regular fa-clock';
             } else if (group.type === 'emotion') {
