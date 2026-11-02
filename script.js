@@ -600,11 +600,35 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function cleanBenefitVnText(en, vn) {
+        const cleanEn = (en || '').replace(/\s+/g, ' ').trim();
+        let cleanVn = (vn || '')
+            .replace(/Đã chọn để trả bài/gi, '')
+            .replace(/\s+/g, ' ')
+            .trim();
+        if (cleanEn && cleanVn) {
+            const lowerEn = cleanEn.toLowerCase();
+            const lowerVn = cleanVn.toLowerCase();
+            if (lowerVn.startsWith(lowerEn) && cleanVn.length > cleanEn.length) {
+                cleanVn = cleanVn.slice(cleanEn.length).replace(/^[\s:–—-]+/, '').trim();
+            }
+        }
+        return cleanVn;
+    }
+
     function loadLearningProgress() {
         try {
             const raw = localStorage.getItem(PROGRESS_KEY);
             if (!raw) return null;
-            return JSON.parse(raw);
+            const parsed = JSON.parse(raw);
+            if (parsed && Array.isArray(parsed.favoriteBenefits)) {
+                parsed.favoriteBenefits = parsed.favoriteBenefits.map(item => {
+                    const en = (typeof item === 'string' ? item : (item?.en || '')).replace(/\s+/g, ' ').trim();
+                    const vn = cleanBenefitVnText(en, typeof item === 'string' ? '' : (item?.vn || ''));
+                    return { en, vn };
+                }).filter(item => item.en);
+            }
+            return parsed;
         } catch (e) {
             return null;
         }
@@ -708,14 +732,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const benefitsTab = document.getElementById('benefits');
         if (!benefitsTab) return;
 
+        const cleanBenefitMap = new Map();
         const cards = benefitsTab.querySelectorAll('div[style*="display: flex; align-items: center; justify-content: space-between"]');
         cards.forEach(card => {
-            const enEl = card.querySelector('strong');
-            const vnEl = card.querySelector('div > div');
+            const enEl = card.querySelector('.vocab-en') || card.querySelector('strong');
             if (!enEl) return;
+            const vnEl = card.querySelector('.vocab-vn') || (enEl.nextElementSibling && !enEl.nextElementSibling.classList.contains('fav-badge') ? enEl.nextElementSibling : null);
 
-            const enText = enEl.textContent.trim();
-            const vnText = vnEl ? vnEl.textContent.trim() : '';
+            const enText = enEl.textContent.replace(/\s+/g, ' ').trim();
+            const vnText = cleanBenefitVnText(enText, vnEl ? vnEl.textContent : '');
+            if (enText && vnText) {
+                cleanBenefitMap.set(enText.toLowerCase(), vnText);
+            }
 
             card.dataset.benefitEn = enText;
             card.dataset.benefitVn = vnText;
@@ -745,7 +773,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             // Sync visual state from state.favoriteBenefits
-            const isFav = (state.favoriteBenefits || []).some(b => b.en.toLowerCase() === enText.toLowerCase());
+            const isFav = (state.favoriteBenefits || []).some(b => (b.en || '').toLowerCase() === enText.toLowerCase());
             if (isFav) {
                 card.classList.add('benefit-favorited');
                 favBtn.classList.add('active');
@@ -758,6 +786,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 showBenefitFavBadge(card, false);
             }
         });
+
+        // Auto-heal any previously corrupted favoriteBenefits in state & localStorage
+        if (Array.isArray(state.favoriteBenefits) && state.favoriteBenefits.length > 0) {
+            let healed = false;
+            state.favoriteBenefits = state.favoriteBenefits.map(item => {
+                const itemEn = (typeof item === 'string' ? item : (item?.en || '')).replace(/\s+/g, ' ').trim();
+                const mappedVn = cleanBenefitMap.get(itemEn.toLowerCase());
+                const itemVn = mappedVn || cleanBenefitVnText(itemEn, typeof item === 'string' ? '' : (item?.vn || ''));
+                if (!item || typeof item === 'string' || item.en !== itemEn || item.vn !== itemVn) {
+                    healed = true;
+                }
+                return { en: itemEn, vn: itemVn };
+            }).filter(item => item.en && item.vn);
+            if (healed) {
+                saveLearningProgress(true);
+            }
+        }
 
         updateFavoriteBenefitsUI();
     }
@@ -4958,24 +5003,69 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     let reviewWords = [];
     
+    function maskSpellingPrompt(vn, en) {
+        const cleanVn = (vn || '').replace(/\s+/g, ' ').trim();
+        const cleanEn = (en || '').replace(/\s+/g, ' ').trim();
+        if (!cleanVn || !cleanEn) return cleanVn;
+        const baseEn = cleanEn.replace(/\s*\([^)]*\)\s*/g, '').trim();
+        const terms = [cleanEn];
+        if (baseEn && baseEn.length >= 2 && baseEn.toLowerCase() !== cleanEn.toLowerCase()) {
+            terms.push(baseEn);
+        }
+        let masked = cleanVn;
+        for (const term of terms) {
+            const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            try {
+                const regex = new RegExp(`(^|[^\\p{L}\\p{N}])(${escaped})(?=[^\\p{L}\\p{N}]|$)`, 'giu');
+                masked = masked.replace(regex, '$1___');
+            } catch (e) {
+                const fallbackRegex = new RegExp(escaped, 'gi');
+                masked = masked.replace(fallbackRegex, '___');
+            }
+        }
+        if (masked.replace(/[_\s()/,.:;–—-]/g, '').trim().length === 0) {
+            return '___ (Nhấn nút loa 🔊 bên dưới để nghe và gõ từ)';
+        }
+        return masked;
+    }
+
     function extractReviewWords(tabId) {
         if (tabId === 'benefits') {
             const mode = state.benefitsReviewMode || 'fav';
             if (mode === 'fav' && state.favoriteBenefits && state.favoriteBenefits.length > 0) {
-                return [...state.favoriteBenefits];
+                return state.favoriteBenefits
+                    .map(b => ({
+                        en: (b.en || '').replace(/\s+/g, ' ').trim(),
+                        vn: cleanBenefitVnText(b.en, b.vn)
+                    }))
+                    .filter(b => b.en && b.vn);
             }
         }
         let currentWords = [];
+        const seen = new Set();
         const cards = document.querySelectorAll('#' + tabId + ' .icon-btn');
         cards.forEach(btn => {
-            const container = btn.parentElement;
+            if (btn.closest('.game-content, .review-section, #review-section')) return;
+            const container = btn.closest('.benefit-card-wrapper, .benefit-card') || btn.parentElement;
+            if (!container) return;
             const enEl = container.querySelector('.vocab-en') || container.querySelector('strong');
-            const vnEl = container.querySelector('.vocab-vn') || (enEl ? enEl.nextElementSibling : null);
+            let vnEl = container.querySelector('.vocab-vn');
+            if (!vnEl && enEl) {
+                if (enEl.nextElementSibling && !enEl.nextElementSibling.classList.contains('fav-badge') && !enEl.nextElementSibling.classList.contains('benefit-fav-tag')) {
+                    vnEl = enEl.nextElementSibling;
+                } else if (enEl.parentElement && enEl.parentElement !== container && enEl.parentElement.nextElementSibling) {
+                    vnEl = enEl.parentElement.nextElementSibling;
+                }
+            }
             if (enEl && vnEl) {
-                currentWords.push({
-                    en: enEl.textContent.trim(),
-                    vn: vnEl.textContent.trim()
-                });
+                const en = enEl.textContent.replace(/\s+/g, ' ').trim();
+                const rawVn = vnEl.textContent.replace(/Đã chọn để trả bài/gi, '').replace(/\s+/g, ' ').trim();
+                const vn = tabId === 'benefits' ? cleanBenefitVnText(en, rawVn) : rawVn;
+                const key = en.toLowerCase();
+                if (en && vn && !seen.has(key)) {
+                    seen.add(key);
+                    currentWords.push({ en, vn });
+                }
             }
         });
         return currentWords;
@@ -5063,7 +5153,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function initMatchingGame(allWords, container, tabId) {
-        let pool = [...allWords].sort(() => 0.5 - Math.random()).slice(0, 6);
+        let pool = [...allWords].sort(() => 0.5 - Math.random()).slice(0, Math.min(allWords.length, 6));
         let items = [];
         pool.forEach((w, i) => {
             items.push({ id: i, text: w.en, type: 'en', word: w });
@@ -5109,7 +5199,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             selectedItem = null;
                             matchedCount++;
                             animating = false;
-                            if (matchedCount === 6) {
+                            if (matchedCount === pool.length) {
                                 sfx.win();
                                 shootConfetti();
                                 setTimeout(() => {
@@ -5237,6 +5327,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             
             const currentWord = words[currentIndex];
+            const promptVn = maskSpellingPrompt(currentWord.vn, currentWord.en);
             
             container.innerHTML = `
                 <div class="quiz-container fade-in" style="max-width: 500px;">
@@ -5246,7 +5337,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div class="quiz-question" style="margin-bottom:1.5rem; position:relative;">
                         <div style="color:var(--text-muted); font-size:1rem; margin-bottom:0.5rem;">Nghĩa tiếng Việt:</div>
-                        <div style="color:var(--text-main); font-size:1.6rem; margin-bottom:1.5rem; line-height:1.4;">"${currentWord.vn}"</div>
+                        <div style="color:var(--text-main); font-size:1.6rem; margin-bottom:1.5rem; line-height:1.4;">"${promptVn}"</div>
                         <button class="icon-btn" onclick="speakText('${currentWord.en.replace(/'/g, "\\'")}')" style="margin: 0 auto; background:var(--bg-body); width: 45px; height: 45px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" title="Nghe gợi ý"><i class="fa-solid fa-volume-high"></i></button>
                     </div>
                     <div style="display:flex; flex-direction:column; gap:1rem;">
