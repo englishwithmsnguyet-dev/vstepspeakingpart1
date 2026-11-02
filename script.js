@@ -23713,7 +23713,7 @@ window.openFullTopicExamModal = (topicId, topicId2 = null) => {
         <div class="topic-full-exam-modal fade-in">
             <div class="topic-full-exam-header">
                 <div style="display: flex; align-items: center; gap: 0.85rem;">
-                    <img src="assets/images/brand-circle.png" alt="Miss Nguyet" style="width: 44px; height: 44px; border-radius: 50%; box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3); border: 2px solid #ffffff; flex-shrink: 0;">
+                    <img src="assets/images/miss_nguyet.jpg" alt="Miss Nguyet" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; object-position: center 20%; box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3); border: 2px solid #ef4444; flex-shrink: 0; display: block; box-sizing: border-box;">
                     <div>
                         <div style="font-size: 0.82rem; font-weight: 700; color: #ef4444; letter-spacing: 0.5px; text-transform: uppercase;">
                             <i class="fa-solid fa-microphone-lines"></i> ${badgeText}
