@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Tab Titles Mapping
     const titles = {
+        'flower-garden': 'CHĂM HOA CHĂM HỌC',
         'overview': 'OVERVIEW',
         'yes-no': 'YES/NO QUESTIONS',
         'choice': 'CHOICE QUESTIONS',
@@ -1046,7 +1047,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (state.studentClass === 'CB219') {
-                const allowed = ['overview', 'yes-no', 'choice'];
+                const allowed = ['overview', 'flower-garden', 'yes-no', 'choice'];
                 navItems.forEach(item => {
                     const target = item.getAttribute('data-target');
                     if (!allowed.includes(target)) {
@@ -1242,7 +1243,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function activateTab(target, item) {
         if (typeof stopAllActive25sTimers === 'function') stopAllActive25sTimers();
-        const allowed = ['overview', 'yes-no', 'choice'];
+        const allowed = ['overview', 'flower-garden', 'yes-no', 'choice'];
         if (state.studentClass === 'CB219' && !allowed.includes(target)) {
             alert('🔒 Mục này chưa được mở cho lớp CB219.\nHiện tại bạn được mở: Phần Tổng Quan, Yes/No Questions và Choice Questions.');
             return;
@@ -1263,6 +1264,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (topTitle) topTitle.textContent = titles[target] || target.toUpperCase();
+        if (target === 'flower-garden' && window.FlowerGarden) {
+            window.FlowerGarden.render();
+        }
         if (target === 'topics') {
             const activeBtn = document.querySelector('.sub-tab-btn.active') || document.querySelector('.sub-tab-btn');
             if (activeBtn) {
@@ -1288,7 +1292,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     window.switchTab = function(target) {
-        const allowed = ['overview', 'yes-no', 'choice'];
+        const allowed = ['overview', 'flower-garden', 'yes-no', 'choice'];
         if (state.studentClass === 'CB219' && !allowed.includes(target)) {
             alert('🔒 Mục này chưa được mở cho lớp CB219.\nHiện tại bạn được mở: Phần Tổng Quan, Yes/No Questions và Choice Questions.');
             return;
