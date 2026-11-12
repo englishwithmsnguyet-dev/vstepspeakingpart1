@@ -287,11 +287,11 @@ body.dark-theme .f-title { color: #fbbf24; background: rgba(245, 158, 11, 0.18);
 .suggested-badge { color: var(--primary); }
 .tpl-note { font-size: 0.95rem; color: #92400e; background: #fffbeb; padding: 0.85rem 1.15rem; border-radius: 12px; margin-top: 0.85rem; margin-bottom: 0.85rem; display: block; font-weight: 500; line-height: 1.6; border: 1px solid #fde68a; border-left: 4px solid #f59e0b; }
 body.dark-theme .tpl-note { color: #fde68a; background: rgba(245, 158, 11, 0.12); border-color: rgba(245, 158, 11, 0.3); border-left-color: #f59e0b; }
-.f-formula-box { background: rgba(67, 97, 238, 0.05); border: 2px dashed rgba(67, 97, 238, 0.3); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem; font-size: 1.1rem; line-height: 2.15; text-align: left; }
+.f-formula-box { background: rgba(67, 97, 238, 0.05); border: 2px dashed rgba(67, 97, 238, 0.3); padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem; font-size: 1.1rem; line-height: 2.15; text-align: justify; text-justify: inter-word; text-align-last: left; }
 .f-formula-box strong { color: var(--primary); font-weight: 800; }
 .f-example-box { background: var(--bg-light); padding: 1.5rem; border-radius: 16px; border: 1px solid var(--border); }
 .ex-label { font-size: 0.8rem; font-weight: 600; color: var(--text-muted); margin-bottom: 0.5rem; text-transform: none; }
-.ex-text { font-size: 1.05rem; margin-bottom: 1rem; text-align: left; }
+.ex-text { font-size: 1.05rem; margin-bottom: 1rem; text-align: justify; text-justify: inter-word; text-align-last: left; }
 .btn-audio-sample { background: var(--primary); color: white; padding: 0.5rem 1rem; border-radius: 10px; font-size: 0.85rem; font-weight: 500; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.2s; }
 .btn-audio-sample:hover { background: var(--primary-hover); }
 
@@ -322,15 +322,17 @@ body.dark-theme .title-bracket-hl {
     background: #dbeafe;
     color: #1d4ed8;
     border: 1px solid #bfdbfe;
-    padding: 0.12rem 0.48rem;
+    padding: 0.12rem 0.44rem;
     border-radius: 6px;
     font-weight: 700;
     font-size: 0.94em;
-    display: inline-block;
+    display: inline;
     vertical-align: baseline;
-    line-height: 1.35;
+    line-height: 1.45;
     margin: 0;
-    white-space: nowrap;
+    white-space: normal;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 body.dark-theme .formula-bracket-hl {
@@ -411,6 +413,8 @@ body.dark-theme .hl-keyword { color: #60a5fa; background: rgba(96, 165, 250, 0.1
     font-weight: 700;
     border-bottom: 2px solid #eab308;
     display: inline;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
 body.dark-theme .sub-hl {
     background: rgba(234, 179, 8, 0.25);
@@ -442,7 +446,7 @@ body.dark-theme .sub-hl {
 
     /* Question cards & Form */
     .f-title { font-size: 1.05rem; padding: 0.75rem 1rem; line-height: 1.6; }
-    .f-formula-box { padding: 1rem 0.85rem; font-size: 1rem; line-height: 1.9; text-align: left; }
+    .f-formula-box { padding: 1rem 0.85rem; font-size: 1rem; line-height: 1.9; text-align: justify; text-justify: inter-word; text-align-last: left; }
     .f-example-box { padding: 1rem 0.85rem; }
 
     /* Accordion styles */
@@ -586,6 +590,9 @@ body.dark-theme .quiz-option.wrong { background: #7f1d1d; color: #fecaca; }
 }
 .subtab-pane.active {
     display: block !important;
+}
+#topics .benefits-grid {
+    display: block;
 }
 
 /* =========================================================
@@ -813,7 +820,9 @@ body.dark-theme .topic-formula-badge.way-2 i {
     line-height: 2.15;
     color: var(--text-main);
     padding-left: 0.15rem;
-    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: left;
 }
 
 /* Formula Arrow */
@@ -850,15 +859,17 @@ body.dark-theme .topic-formula-badge.way-2 i {
     background: #dbeafe;
     color: #1d4ed8;
     border: 1px solid #bfdbfe;
-    padding: 0.12rem 0.48rem;
+    padding: 0.12rem 0.44rem;
     border-radius: 6px;
     font-weight: 800;
     font-size: 0.94em;
-    display: inline-block;
+    display: inline;
     margin: 0;
     vertical-align: baseline;
-    line-height: 1.35;
-    white-space: nowrap;
+    line-height: 1.45;
+    white-space: normal;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 .formula-bracket-hl.way-1,
@@ -1465,6 +1476,15 @@ body.dark-theme .topic-formula-row:nth-of-type(3) .formula-bracket-hl {
 .benefit-card-wrapper {
     position: relative;
     transition: all 0.25s ease;
+    gap: 0.5rem;
+}
+.benefit-card-wrapper > div:first-child {
+    flex: 1;
+    min-width: 0;
+}
+.benefit-card-wrapper > button.icon-btn {
+    margin-left: 0 !important;
+    flex-shrink: 0;
 }
 .benefit-card-wrapper:hover {
     border-color: rgba(245, 158, 11, 0.5) !important;
@@ -1480,15 +1500,20 @@ body.dark-theme .topic-formula-row:nth-of-type(3) .formula-bracket-hl {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0.35rem 0.5rem;
-    font-size: 1.25rem;
+    width: 36px;
+    height: 40px;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1;
     color: var(--text-muted);
     transition: transform 0.2s, color 0.2s;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    margin-right: 0.25rem;
+    margin-left: auto;
+    margin-right: 0;
+    flex-shrink: 0;
 }
 .benefit-fav-btn:hover {
     transform: scale(1.2);
@@ -2421,7 +2446,9 @@ body.dark-theme .teacher-brand-heading {
     font-size: 1.06rem;
     line-height: 2.1;
     color: var(--text-main);
-    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: left;
 }
 .formula-card-body u {
     text-decoration: underline;
