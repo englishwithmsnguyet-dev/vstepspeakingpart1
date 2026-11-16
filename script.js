@@ -542,6 +542,9 @@ document.addEventListener('DOMContentLoaded', () => {
             "Võ Huỳnh Thảo Nguyên", "Đặng Dũ Nguyên", "Nguyễn Gia Nguyễn", "Trương Thị Thảo Như",
             "Huỳnh Nhật Phát", "Nguyễn Huỳnh Thanh Sơn", "Thái Nhựt Thịnh", "Trần Nguyễn Huỳnh Trâm",
             "Nguyễn Thị Tường Vi", "Lê Tường Vy", "Bùi Ngọc Như Ý"
+        ],
+        "B2": [
+            "Gia Tuệ"
         ]
     };
 
@@ -1087,7 +1090,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (state.studentClass === 'CB220') {
-                const allowed = ['overview', 'flower-garden', 'yes-no'];
+                const allowed = ['overview', 'flower-garden', 'yes-no', 'benefits', 'activities'];
                 navItems.forEach(item => {
                     const target = item.getAttribute('data-target');
                     if (!allowed.includes(target)) {
@@ -1115,7 +1118,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (overviewItem) activateTab('overview', overviewItem);
                 }
 
-                if (state.ynIndex > 3) state.ynIndex = 0;
                 renderYnSlide();
             }
 
@@ -1126,9 +1128,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 state.completedTopics = saved.completedTopics || [];
                 if (saved.ynIndex !== undefined) {
                     state.ynIndex = saved.ynIndex;
-                    if (state.studentClass === 'CB220' && state.ynIndex > 3) {
-                        state.ynIndex = 0;
-                    }
                 }
                 state.benefitsReviewMode = saved.benefitsReviewMode || 'fav';
                 if (saved.currentPracticeTopicId && typeof renderPracticeTopic === 'function') {
@@ -1160,7 +1159,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const validClasses = ['2026', 'CB211', 'CB213', 'ONB103', 'B212', 'CB219', 'CB210', 'CB220'];
+        const validClasses = ['2026', 'CB211', 'CB213', 'ONB103', 'B212', 'CB219', 'CB210', 'CB220', 'B2'];
         const partialClasses = ['CB213'];
         const formattedClass = classVal.toUpperCase().replace(/\s+/g, '');
         const normClass = normalizeStr(classVal);
@@ -1191,13 +1190,16 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (validClasses.includes(formattedClass)) {
             const roster = CLASS_STUDENTS[formattedClass];
             if (roster) {
-                const matchedStudent = roster.find(s => normalizeStr(s) === normName);
+                const matchedStudent = roster.find(s => {
+                    const normS = normalizeStr(s);
+                    return normS === normName || normName.endsWith(' ' + normS) || normS.endsWith(' ' + normName);
+                });
                 if (!matchedStudent) {
                     loginError.textContent = `Họ và Tên không thuộc danh sách lớp ${formattedClass}. Vui lòng kiểm tra lại!`;
                     loginError.style.display = 'block';
                     return;
                 }
-                state.studentName = matchedStudent;
+                state.studentName = (formattedClass === 'B2' && nameVal.trim().length > matchedStudent.length) ? nameVal.trim() : matchedStudent;
             } else {
                 state.studentName = nameVal;
             }
@@ -1288,9 +1290,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function activateTab(target, item) {
         if (typeof stopAllActive25sTimers === 'function') stopAllActive25sTimers();
         if (state.studentClass === 'CB220') {
-            const allowed = ['overview', 'flower-garden', 'yes-no'];
+            const allowed = ['overview', 'flower-garden', 'yes-no', 'benefits', 'activities'];
             if (!allowed.includes(target)) {
-                alert('🔒 Mục này chưa được mở cho lớp CB220.\nHiện tại lớp CB220 được mở: Phần Tổng Quan và 4 câu hỏi đầu của Yes/No Questions.');
+                alert('🔒 Mục này chưa được mở cho lớp CB220.\nHiện tại lớp CB220 được mở: Tổng quan, Yes/No Questions, Bảng Lợi Ích và Bảng Hoạt Động.');
                 return;
             }
         }
@@ -1348,9 +1350,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.switchTab = function(target) {
         if (state.studentClass === 'CB220') {
-            const allowed = ['overview', 'flower-garden', 'yes-no'];
+            const allowed = ['overview', 'flower-garden', 'yes-no', 'benefits', 'activities'];
             if (!allowed.includes(target)) {
-                alert('🔒 Mục này chưa được mở cho lớp CB220.\nHiện tại lớp CB220 được mở: Phần Tổng Quan và 4 câu hỏi đầu của Yes/No Questions.');
+                alert('🔒 Mục này chưa được mở cho lớp CB220.\nHiện tại lớp CB220 được mở: Tổng quan, Yes/No Questions, Bảng Lợi Ích và Bảng Hoạt Động.');
                 return;
             }
         }
@@ -2735,52 +2737,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const renderYnSlide = () => {
         if (!ynStage) return;
 
-        const isCB220 = (state.studentClass === 'CB220');
-        if (isCB220) {
-            if (state.ynIndex > 3) state.ynIndex = 0;
-            if (ynTotalEl) ynTotalEl.textContent = '4';
-            if (ynPrevBtn) {
-                ynPrevBtn.disabled = (state.ynIndex === 0);
-                ynPrevBtn.style.opacity = (state.ynIndex === 0) ? '0.5' : '1';
-                ynPrevBtn.style.cursor = (state.ynIndex === 0) ? 'not-allowed' : 'pointer';
-            }
-            if (ynNextBtn) {
-                ynNextBtn.disabled = (state.ynIndex >= 3);
-                ynNextBtn.style.opacity = (state.ynIndex >= 3) ? '0.5' : '1';
-                ynNextBtn.style.cursor = (state.ynIndex >= 3) ? 'not-allowed' : 'pointer';
-                ynNextBtn.title = (state.ynIndex >= 3) ? 'Các câu hỏi từ 5 đến 7 chưa mở cho lớp CB220' : 'Câu tiếp';
-            }
-        } else {
-            if (ynTotalEl) ynTotalEl.textContent = `${ynFormulas.length}`;
-            if (ynPrevBtn) {
-                ynPrevBtn.disabled = false;
-                ynPrevBtn.style.opacity = '1';
-                ynPrevBtn.style.cursor = 'pointer';
-            }
-            if (ynNextBtn) {
-                ynNextBtn.disabled = false;
-                ynNextBtn.style.opacity = '1';
-                ynNextBtn.style.cursor = 'pointer';
-                ynNextBtn.title = 'Câu tiếp';
-            }
+        if (ynTotalEl) ynTotalEl.textContent = `${ynFormulas.length}`;
+        if (ynPrevBtn) {
+            ynPrevBtn.disabled = false;
+            ynPrevBtn.style.opacity = '1';
+            ynPrevBtn.style.cursor = 'pointer';
+        }
+        if (ynNextBtn) {
+            ynNextBtn.disabled = false;
+            ynNextBtn.style.opacity = '1';
+            ynNextBtn.style.cursor = 'pointer';
+            ynNextBtn.title = 'Câu tiếp';
         }
 
         const d = ynFormulas[state.ynIndex];
         if (ynNumEl) ynNumEl.textContent = state.ynIndex + 1;
 
         let cbNoticeHtml = '';
-        if (isCB220) {
-            cbNoticeHtml = `
-                <div style="margin-bottom: 1.25rem; background: rgba(59, 130, 246, 0.08); border: 1.5px dashed #3b82f6; border-radius: 10px; padding: 0.75rem 1rem; display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap;">
-                    <div style="display: flex; align-items: center; gap: 0.5rem; color: #1d4ed8; font-weight: 700; font-size: 0.95rem;">
-                        <i class="fa-solid fa-circle-info"></i> Lớp CB220: Mở 4 câu hỏi đầu tiên (Câu ${state.ynIndex + 1} / 4)
-                    </div>
-                    <div style="font-size: 0.85rem; color: #64748b; font-weight: 500;">
-                        Các câu hỏi từ 5 đến 7 và các dạng bài khác sẽ được mở theo tiến độ bài học
-                    </div>
-                </div>
-            `;
-        }
 
         ynStage.innerHTML = `
             <div class="f-card-clean fade-in">
@@ -2827,27 +2800,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('yn-prev')?.addEventListener('click', () => {
         if (typeof stopAllActive25sTimers === 'function') stopAllActive25sTimers();
-        if (state.studentClass === 'CB220') {
-            if (state.ynIndex > 0) {
-                state.ynIndex--;
-                renderYnSlide();
-            }
-            return;
-        }
         state.ynIndex = (state.ynIndex - 1 + ynFormulas.length) % ynFormulas.length;
         renderYnSlide();
     });
     document.getElementById('yn-next')?.addEventListener('click', () => {
         if (typeof stopAllActive25sTimers === 'function') stopAllActive25sTimers();
-        if (state.studentClass === 'CB220') {
-            if (state.ynIndex < 3) {
-                state.ynIndex++;
-                renderYnSlide();
-            } else {
-                alert('🔒 Các câu hỏi từ 5 đến 7 chưa được mở cho lớp CB220.\nHiện tại bạn được mở 4 câu đầu tiên.');
-            }
-            return;
-        }
         state.ynIndex = (state.ynIndex + 1) % ynFormulas.length;
         renderYnSlide();
     });
@@ -5363,7 +5320,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     window.spinWheel = (type) => {
         if (state.studentClass === 'CB220' && type !== 'yn') {
-            alert('🔒 Phần luyện tập này chưa được mở cho lớp CB220.');
+            alert('🔒 Phần luyện tập này chưa được mở cho lớp CB220.\nHiện tại lớp CB220 được mở: Tổng quan, Yes/No Questions, Bảng Lợi Ích và Bảng Hoạt Động.');
             return;
         }
         if (state.studentClass === 'CB219' && type !== 'yn' && type !== 'choice') {
@@ -5384,7 +5341,7 @@ document.addEventListener('DOMContentLoaded', () => {
             btn = document.getElementById('spin-btn');
         } else if (type === 'yn') {
             const rawYn = typeof ynFormulas !== 'undefined' ? ynFormulas : [];
-            pool = (state.studentClass === 'CB220') ? rawYn.slice(0, 4) : rawYn;
+            pool = rawYn;
             qEl = document.getElementById('wheel-q-yn');
             hintEl = document.getElementById('wheel-hint-yn');
             btn = document.getElementById('spin-btn-yn');
