@@ -1058,7 +1058,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (state.studentClass === 'CB219') {
-                const allowed = ['overview', 'flower-garden', 'yes-no', 'choice'];
+                const allowed = ['overview', 'flower-garden', 'yes-no', 'choice', 'wh-questions', 'benefits', 'activities'];
                 navItems.forEach(item => {
                     const target = item.getAttribute('data-target');
                     if (!allowed.includes(target)) {
@@ -1086,7 +1086,32 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (overviewItem) activateTab('overview', overviewItem);
                 }
 
+                // Cập nhật trạng thái pills trong Wh-questions cho CB219
+                const whPills = document.querySelectorAll('.w-pill');
+                whPills.forEach(pill => {
+                    const text = pill.textContent.trim().toUpperCase();
+                    if (!text.startsWith('WHAT')) {
+                        pill.classList.add('locked-pill');
+                        pill.style.opacity = '0.5';
+                        pill.style.cursor = 'not-allowed';
+                        if (!pill.querySelector('.pill-lock')) {
+                            const lockI = document.createElement('i');
+                            lockI.className = 'fa-solid fa-lock pill-lock';
+                            lockI.style.fontSize = '0.75rem';
+                            lockI.style.marginLeft = '4px';
+                            pill.appendChild(lockI);
+                        }
+                    } else {
+                        pill.classList.remove('locked-pill');
+                        pill.style.opacity = '1';
+                        pill.style.cursor = 'pointer';
+                        const lockI = pill.querySelector('.pill-lock');
+                        if (lockI) lockI.remove();
+                    }
+                });
+
                 renderYnSlide();
+                if (typeof window.filterWh === 'function') window.filterWh('what');
             }
 
             if (state.studentClass === 'CB220') {
@@ -1296,10 +1321,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
         }
-        const allowed = ['overview', 'flower-garden', 'yes-no', 'choice'];
-        if (state.studentClass === 'CB219' && !allowed.includes(target)) {
-            alert('🔒 Mục này chưa được mở cho lớp CB219.\nHiện tại bạn được mở: Phần Tổng Quan, Yes/No Questions và Choice Questions.');
-            return;
+        if (state.studentClass === 'CB219') {
+            const allowed = ['overview', 'flower-garden', 'yes-no', 'choice', 'wh-questions', 'benefits', 'activities'];
+            if (!allowed.includes(target)) {
+                alert('🔒 Mục này chưa được mở cho lớp CB219.\nHiện tại lớp CB219 được mở: Tổng quan, Yes/No, Choice, Wh-Questions (đến câu hỏi "What kinds of..."), Bảng Lợi Ích và Bảng Hoạt Động.');
+                return;
+            }
         }
 
         navItems.forEach(i => i.classList.remove('active'));
@@ -1356,10 +1383,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
         }
-        const allowed = ['overview', 'flower-garden', 'yes-no', 'choice'];
-        if (state.studentClass === 'CB219' && !allowed.includes(target)) {
-            alert('🔒 Mục này chưa được mở cho lớp CB219.\nHiện tại bạn được mở: Phần Tổng Quan, Yes/No Questions và Choice Questions.');
-            return;
+        if (state.studentClass === 'CB219') {
+            const allowed = ['overview', 'flower-garden', 'yes-no', 'choice', 'wh-questions', 'benefits', 'activities'];
+            if (!allowed.includes(target)) {
+                alert('🔒 Mục này chưa được mở cho lớp CB219.\nHiện tại lớp CB219 được mở: Tổng quan, Yes/No, Choice, Wh-Questions (đến câu hỏi "What kinds of..."), Bảng Lợi Ích và Bảng Hoạt Động.');
+                return;
+            }
         }
         const item = document.querySelector(`.nav-item[data-target="${target}"]`);
         if (item) activateTab(target, item);
@@ -5184,14 +5213,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const whShowcase = document.getElementById('wh-showcase');
 
     window.filterWh = (cat) => {
+        if (state.studentClass === 'CB219' && cat !== 'what') {
+            alert('🔒 Nhóm câu hỏi này chưa được mở cho lớp CB219.\nHiện tại lớp CB219 được học đến câu hỏi "4. What kinds of [danh từ] do you like?".');
+            return;
+        }
         document.querySelectorAll('.w-pill').forEach(p => p.classList.remove('active'));
         if (typeof window !== 'undefined' && window.event && window.event.currentTarget && window.event.currentTarget.classList) {
             window.event.currentTarget.classList.add('active');
+        } else {
+            const targetPill = Array.from(document.querySelectorAll('.w-pill')).find(p => p.textContent.trim().toLowerCase().startsWith(cat));
+            if (targetPill) targetPill.classList.add('active');
         }
         if (typeof stopAllActive25sTimers === 'function') stopAllActive25sTimers();
         if (!whShowcase) return;
-        const list = whBank[cat] || [];
+        let list = whBank[cat] || [];
+        const isCB219 = (state.studentClass === 'CB219');
+        let cbNoticeHtml = '';
+        if (isCB219 && cat === 'what') {
+            list = list.slice(0, 4);
+            cbNoticeHtml = `
+                <div style="margin-bottom: 1.25rem; background: rgba(59, 130, 246, 0.08); border: 1.5px dashed #3b82f6; border-radius: 10px; padding: 0.75rem 1rem; display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem; color: #1d4ed8; font-weight: 700; font-size: 0.95rem;">
+                        <i class="fa-solid fa-circle-info"></i> Lớp CB219: Mở các câu hỏi từ 1 đến 4 (đến câu hỏi "What kinds of...")
+                    </div>
+                    <div style="font-size: 0.85rem; color: #64748b; font-weight: 500;">
+                        Các câu hỏi từ 5 đến 6 và các dạng Wh- khác sẽ được mở theo tiến độ bài học
+                    </div>
+                </div>
+            `;
+        }
         whShowcase.innerHTML = `
+            ${cbNoticeHtml}
             <div class="wh-grid fade-in" style="grid-template-columns: 1fr; gap: 1.5rem;">
                 ${list.map((item, idx) => `
                     <div class="f-card-clean" style="max-width:100%; margin:0; background:var(--bg-card); padding:1.5rem; border-radius:20px; border:1px solid var(--border); box-shadow:var(--shadow-sm);">
@@ -5323,8 +5375,8 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('🔒 Phần luyện tập này chưa được mở cho lớp CB220.\nHiện tại lớp CB220 được mở: Tổng quan, Yes/No Questions, Bảng Lợi Ích và Bảng Hoạt Động.');
             return;
         }
-        if (state.studentClass === 'CB219' && type !== 'yn' && type !== 'choice') {
-            alert('🔒 Phần luyện tập này chưa được mở cho lớp CB219.');
+        if (state.studentClass === 'CB219' && type !== 'yn' && type !== 'choice' && type !== 'wh') {
+            alert('🔒 Phần luyện tập này chưa được mở cho lớp CB219.\nHiện tại lớp CB219 được mở: Tổng quan, Yes/No, Choice, Wh-Questions (đến câu hỏi "What kinds of..."), Bảng Lợi Ích và Bảng Hoạt Động.');
             return;
         }
 
@@ -5333,9 +5385,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (type === 'wh') {
             const safeWhBank = typeof whBank !== 'undefined' ? whBank : {};
-            const whValues = Object.values(safeWhBank);
-            // Fallback for browsers that don't support .flat()
-            pool = whValues.flat ? whValues.flat() : whValues.reduce((acc, val) => acc.concat(val), []);
+            let whList = [];
+            if (state.studentClass === 'CB219') {
+                whList = safeWhBank['what'] ? safeWhBank['what'].slice(0, 4) : [];
+            } else {
+                const whValues = Object.values(safeWhBank);
+                whList = whValues.flat ? whValues.flat() : whValues.reduce((acc, val) => acc.concat(val), []);
+            }
+            pool = whList;
             qEl = document.getElementById('wheel-q');
             hintEl = document.getElementById('wheel-hint');
             btn = document.getElementById('spin-btn');
