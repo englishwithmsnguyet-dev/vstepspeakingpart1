@@ -32,6 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
         selectedVoiceURI: initVoiceURI,
         unlockedTabs: window.state?.unlockedTabs || {},
         favoriteBenefits: window.state?.favoriteBenefits || [],
+        favoriteActivities: window.state?.favoriteActivities || [],
+        favoriteTopicWords: window.state?.favoriteTopicWords || [],
+        currentActivitiesFilter: window.state?.currentActivitiesFilter || 'all',
+        currentTopicsFilter: window.state?.currentTopicsFilter || 'all',
         completedTopics: window.state?.completedTopics || [],
         benefitsReviewMode: window.state?.benefitsReviewMode || 'fav',
         currentBenefitsFilter: window.state?.currentBenefitsFilter || 'all',
@@ -594,6 +598,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentPracticeTopicId: curTopic,
                 completedTopics: state.completedTopics || [],
                 favoriteBenefits: state.favoriteBenefits || [],
+                favoriteActivities: state.favoriteActivities || [],
+                favoriteTopicWords: state.favoriteTopicWords || [],
                 benefitsReviewMode: state.benefitsReviewMode || 'fav',
                 theme: state.isDark ? 'dark' : 'light',
                 voiceMode: 'studio',
@@ -638,6 +644,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     return { en, vn };
                 }).filter(item => item.en);
             }
+            if (parsed && Array.isArray(parsed.favoriteActivities)) {
+                parsed.favoriteActivities = parsed.favoriteActivities.map(item => {
+                    const en = (typeof item === 'string' ? item : (item?.en || '')).replace(/\s+/g, ' ').trim();
+                    const vn = (typeof item === 'string' ? '' : (item?.vn || '')).replace(/\s+/g, ' ').trim();
+                    return { en, vn };
+                }).filter(item => item.en);
+            }
+            if (parsed && Array.isArray(parsed.favoriteTopicWords)) {
+                parsed.favoriteTopicWords = parsed.favoriteTopicWords.map(item => {
+                    const en = (typeof item === 'string' ? item : (item?.en || '')).replace(/\s+/g, ' ').trim();
+                    const vn = (typeof item === 'string' ? '' : (item?.vn || '')).replace(/\s+/g, ' ').trim();
+                    const subtab = item?.subtab || '';
+                    return { en, vn, subtab };
+                }).filter(item => item.en);
+            }
             return parsed;
         } catch (e) {
             return null;
@@ -663,6 +684,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (confirm('⚠️ Bạn có chắc chắn muốn đặt lại toàn bộ tiến độ học tập và cụm từ yêu thích không?')) {
             localStorage.removeItem(PROGRESS_KEY);
             state.favoriteBenefits = [];
+            state.favoriteActivities = [];
+            state.favoriteTopicWords = [];
             state.completedTopics = [];
             state.lastSavedTime = null;
             alert('🗑 Đã đặt lại toàn bộ tiến độ!');
@@ -974,6 +997,327 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+
+    // ========================================================
+    // FAVORITE ACTIVITIES SYSTEM (BẢNG HOẠT ĐỘNG)
+    // ========================================================
+    function setupActivityCards() {
+        const activitiesTab = document.getElementById('activities');
+        if (!activitiesTab) return;
+
+        const cards = activitiesTab.querySelectorAll('div[style*="display: flex; align-items: center; justify-content: space-between"]');
+        cards.forEach(card => {
+            if (card.closest('.activities-fav-toolbar') || card.closest('.review-section') || card.closest('.game-content') || !card.querySelector('button.icon-btn')) return;
+            const enEl = card.querySelector('.vocab-en') || card.querySelector('strong');
+            if (!enEl) return;
+            const vnEl = card.querySelector('.vocab-vn') || (enEl.nextElementSibling && !enEl.nextElementSibling.classList.contains('fav-badge') ? enEl.nextElementSibling : null);
+
+            const enText = enEl.textContent.replace(/\s+/g, ' ').trim();
+            const vnText = vnEl ? vnEl.textContent.replace(/Đã chọn để trả bài/gi, '').replace(/\s+/g, ' ').trim() : '';
+
+            card.dataset.activityEn = enText;
+            card.dataset.activityVn = vnText;
+            card.style.cursor = 'pointer';
+            card.classList.add('benefit-card-wrapper');
+
+            let favBtn = card.querySelector('.activity-fav-btn');
+            if (!favBtn) {
+                favBtn = document.createElement('button');
+                favBtn.type = 'button';
+                favBtn.className = 'benefit-fav-btn activity-fav-btn';
+                favBtn.title = 'Bấm để chọn / bỏ chọn cụm hoạt động này để trả bài';
+                favBtn.innerHTML = '<i class="fa-regular fa-star"></i>';
+
+                const rightBtn = card.querySelector('button.icon-btn');
+                if (rightBtn && rightBtn.parentElement === card) {
+                    card.insertBefore(favBtn, rightBtn);
+                } else {
+                    card.appendChild(favBtn);
+                }
+
+                card.addEventListener('click', (e) => {
+                    if (e.target.closest('button.icon-btn')) return;
+                    toggleActivityCard(card, enText, vnText);
+                });
+            }
+
+            const isFav = (state.favoriteActivities || []).some(b => (b.en || '').toLowerCase() === enText.toLowerCase());
+            if (isFav) {
+                card.classList.add('benefit-favorited');
+                favBtn.classList.add('active');
+                favBtn.innerHTML = '<i class="fa-solid fa-star" style="color: #f59e0b;"></i>';
+                showBenefitFavBadge(card, true);
+            } else {
+                card.classList.remove('benefit-favorited');
+                favBtn.classList.remove('active');
+                favBtn.innerHTML = '<i class="fa-regular fa-star"></i>';
+                showBenefitFavBadge(card, false);
+            }
+        });
+
+        updateFavoriteActivitiesUI();
+    }
+
+    function toggleActivityCard(card, en, vn) {
+        if (!state.favoriteActivities) state.favoriteActivities = [];
+        const idx = state.favoriteActivities.findIndex(b => b.en.toLowerCase() === en.toLowerCase());
+        const favBtn = card.querySelector('.activity-fav-btn');
+
+        if (idx >= 0) {
+            state.favoriteActivities.splice(idx, 1);
+            card.classList.remove('benefit-favorited');
+            if (favBtn) {
+                favBtn.classList.remove('active');
+                favBtn.innerHTML = '<i class="fa-regular fa-star"></i>';
+            }
+            showBenefitFavBadge(card, false);
+            showToast(`Đã bỏ chọn cụm hoạt động: "${en}"`);
+        } else {
+            state.favoriteActivities.push({ en, vn });
+            card.classList.add('benefit-favorited');
+            if (favBtn) {
+                favBtn.classList.add('active');
+                favBtn.innerHTML = '<i class="fa-solid fa-star" style="color: #f59e0b;"></i>';
+            }
+            showBenefitFavBadge(card, true);
+            showToast(`⭐ Đã chọn cụm hoạt động: "${en}" để trả bài`);
+        }
+
+        saveLearningProgress(true);
+        updateFavoriteActivitiesUI();
+
+        if (state.currentActivitiesFilter === 'fav') {
+            window.filterActivitiesMode('fav');
+        }
+    }
+
+    function updateFavoriteActivitiesUI() {
+        const count = (state.favoriteActivities || []).length;
+        const countEl = document.getElementById('fav-activity-count');
+        if (countEl) countEl.textContent = `${count} cụm`;
+
+        const filterNumEl = document.getElementById('filter-fav-act-num');
+        if (filterNumEl) filterNumEl.textContent = String(count);
+    }
+
+    window.filterActivitiesMode = function(mode) {
+        state.currentActivitiesFilter = mode;
+        const allBtn = document.getElementById('filter-all-activities-btn');
+        const favBtn = document.getElementById('filter-fav-activities-btn');
+
+        if (mode === 'fav') {
+            if (favBtn) {
+                favBtn.style.background = '#f59e0b';
+                favBtn.style.color = 'white';
+            }
+            if (allBtn) {
+                allBtn.style.background = 'transparent';
+                allBtn.style.color = 'var(--text-muted)';
+            }
+        } else {
+            if (allBtn) {
+                allBtn.style.background = 'var(--primary)';
+                allBtn.style.color = 'white';
+            }
+            if (favBtn) {
+                favBtn.style.background = 'rgba(245, 158, 11, 0.1)';
+                favBtn.style.color = '#d97706';
+            }
+        }
+
+        const activitiesTab = document.getElementById('activities');
+        if (!activitiesTab) return;
+        const cards = activitiesTab.querySelectorAll('.benefit-card-wrapper');
+        cards.forEach(c => {
+            if (c.closest('.activities-fav-toolbar') || c.closest('.review-section') || c.closest('.game-content')) return;
+            const en = c.dataset.activityEn || c.querySelector('strong')?.textContent.trim() || '';
+            if (mode === 'all') {
+                c.style.display = 'flex';
+            } else {
+                const isFav = (state.favoriteActivities || []).some(b => (b.en || '').toLowerCase() === en.toLowerCase());
+                c.style.display = isFav ? 'flex' : 'none';
+            }
+        });
+    };
+
+    // ========================================================
+    // FAVORITE TOPICS VOCABULARY SYSTEM (TỪ VỰNG THEO CHỦ ĐỀ)
+    // ========================================================
+    function setupTopicCards(specificSubtab) {
+        const topicsTab = document.getElementById('topics');
+        if (!topicsTab) return;
+
+        let subtabs = [];
+        if (specificSubtab) {
+            const sid = specificSubtab.startsWith('subtab-') ? specificSubtab : 'subtab-' + specificSubtab;
+            const targetEl = document.getElementById(sid);
+            if (targetEl) subtabs.push(targetEl);
+        } else {
+            subtabs = Array.from(topicsTab.querySelectorAll('.subtab-pane'));
+        }
+
+        subtabs.forEach(subtabEl => {
+            if (!subtabEl) return;
+            const subtabId = subtabEl.id;
+            const cards = subtabEl.querySelectorAll('div[style*="display: flex; align-items: center; justify-content: space-between"]');
+            cards.forEach(card => {
+                if (card.closest('.topics-fav-toolbar') || card.closest('.review-section') || card.closest('.game-content') || !card.querySelector('button.icon-btn')) return;
+                const enEl = card.querySelector('.vocab-en') || card.querySelector('strong');
+                if (!enEl) return;
+                const vnEl = card.querySelector('.vocab-vn') || (enEl.nextElementSibling && !enEl.nextElementSibling.classList.contains('fav-badge') ? enEl.nextElementSibling : null);
+
+                const enText = enEl.textContent.replace(/\s+/g, ' ').trim();
+                const vnText = vnEl ? vnEl.textContent.replace(/Đã chọn để trả bài/gi, '').replace(/\s+/g, ' ').trim() : '';
+
+                card.dataset.topicEn = enText;
+                card.dataset.topicVn = vnText;
+                card.dataset.subtab = subtabId;
+                card.style.cursor = 'pointer';
+                card.classList.add('benefit-card-wrapper');
+
+                let favBtn = card.querySelector('.topic-fav-btn');
+                if (!favBtn) {
+                    favBtn = document.createElement('button');
+                    favBtn.type = 'button';
+                    favBtn.className = 'benefit-fav-btn topic-fav-btn';
+                    favBtn.title = 'Bấm để chọn / bỏ chọn từ này để trả bài';
+                    favBtn.innerHTML = '<i class="fa-regular fa-star"></i>';
+
+                    const rightBtn = card.querySelector('button.icon-btn');
+                    if (rightBtn && rightBtn.parentElement === card) {
+                        card.insertBefore(favBtn, rightBtn);
+                    } else {
+                        card.appendChild(favBtn);
+                    }
+
+                    card.addEventListener('click', (e) => {
+                        if (e.target.closest('button.icon-btn')) return;
+                        toggleTopicCard(card, enText, vnText, subtabId);
+                    });
+                }
+
+                const isFav = (state.favoriteTopicWords || []).some(w => 
+                    (w.en || '').toLowerCase() === enText.toLowerCase() && 
+                    (!w.subtab || w.subtab === subtabId)
+                );
+                if (isFav) {
+                    card.classList.add('benefit-favorited');
+                    favBtn.classList.add('active');
+                    favBtn.innerHTML = '<i class="fa-solid fa-star" style="color: #f59e0b;"></i>';
+                    showBenefitFavBadge(card, true);
+                } else {
+                    card.classList.remove('benefit-favorited');
+                    favBtn.classList.remove('active');
+                    favBtn.innerHTML = '<i class="fa-regular fa-star"></i>';
+                    showBenefitFavBadge(card, false);
+                }
+            });
+        });
+
+        updateFavoriteTopicsUI(specificSubtab);
+    }
+
+    function toggleTopicCard(card, en, vn, subtabId) {
+        if (!state.favoriteTopicWords) state.favoriteTopicWords = [];
+        const idx = state.favoriteTopicWords.findIndex(w => 
+            w.en.toLowerCase() === en.toLowerCase() && (!w.subtab || w.subtab === subtabId)
+        );
+        const favBtn = card.querySelector('.topic-fav-btn');
+
+        if (idx >= 0) {
+            state.favoriteTopicWords.splice(idx, 1);
+            card.classList.remove('benefit-favorited');
+            if (favBtn) {
+                favBtn.classList.remove('active');
+                favBtn.innerHTML = '<i class="fa-regular fa-star"></i>';
+            }
+            showBenefitFavBadge(card, false);
+            showToast(`Đã bỏ chọn từ: "${en}"`);
+        } else {
+            state.favoriteTopicWords.push({ en, vn, subtab: subtabId });
+            card.classList.add('benefit-favorited');
+            if (favBtn) {
+                favBtn.classList.add('active');
+                favBtn.innerHTML = '<i class="fa-solid fa-star" style="color: #f59e0b;"></i>';
+            }
+            showBenefitFavBadge(card, true);
+            showToast(`⭐ Đã chọn từ: "${en}" để trả bài`);
+        }
+
+        saveLearningProgress(true);
+        updateFavoriteTopicsUI(subtabId);
+
+        if (state.currentTopicsFilter === 'fav') {
+            window.filterTopicsMode('fav');
+        }
+    }
+
+    function updateFavoriteTopicsUI(subtabId) {
+        const activeSubtab = subtabId 
+            ? (document.getElementById(subtabId.startsWith('subtab-') ? subtabId : 'subtab-' + subtabId))
+            : (document.querySelector('#topics .subtab-pane.active') || document.querySelector('#topics .subtab-pane:not(.hidden)'));
+        
+        const curSubId = activeSubtab ? activeSubtab.id : (subtabId || 'subtab-hobbies');
+        const subFavs = (state.favoriteTopicWords || []).filter(w => !w.subtab || w.subtab === curSubId);
+        const count = subFavs.length;
+
+        const countEl = document.getElementById('fav-topic-count');
+        if (countEl) countEl.textContent = `${count} từ`;
+
+        const filterNumEl = document.getElementById('filter-fav-topic-num');
+        if (filterNumEl) filterNumEl.textContent = String(count);
+
+        if (activeSubtab) {
+            const totalCards = activeSubtab.querySelectorAll('.benefit-card-wrapper').length;
+            const totalNumEl = document.getElementById('filter-all-topic-num');
+            if (totalNumEl && totalCards > 0) totalNumEl.textContent = String(totalCards);
+        }
+    }
+
+    window.filterTopicsMode = function(mode) {
+        state.currentTopicsFilter = mode;
+        const allBtn = document.getElementById('filter-all-topic-btn');
+        const favBtn = document.getElementById('filter-fav-topic-btn');
+
+        if (mode === 'fav') {
+            if (favBtn) {
+                favBtn.style.background = '#f59e0b';
+                favBtn.style.color = 'white';
+            }
+            if (allBtn) {
+                allBtn.style.background = 'transparent';
+                allBtn.style.color = 'var(--text-muted)';
+            }
+        } else {
+            if (allBtn) {
+                allBtn.style.background = 'var(--primary)';
+                allBtn.style.color = 'white';
+            }
+            if (favBtn) {
+                favBtn.style.background = 'rgba(245, 158, 11, 0.1)';
+                favBtn.style.color = '#d97706';
+            }
+        }
+
+        const activeSubtab = document.querySelector('#topics .subtab-pane.active') || document.querySelector('#topics .subtab-pane:not(.hidden)');
+        if (!activeSubtab) return;
+        const subtabId = activeSubtab.id;
+        const cards = activeSubtab.querySelectorAll('.benefit-card-wrapper');
+        cards.forEach(c => {
+            if (c.closest('.topics-fav-toolbar') || c.closest('.review-section') || c.closest('.game-content')) return;
+            const en = c.dataset.topicEn || c.querySelector('strong')?.textContent.trim() || '';
+            if (mode === 'all') {
+                c.style.display = 'flex';
+            } else {
+                const isFav = (state.favoriteTopicWords || []).some(w => 
+                    (w.en || '').toLowerCase() === en.toLowerCase() && 
+                    (!w.subtab || w.subtab === subtabId)
+                );
+                c.style.display = isFav ? 'flex' : 'none';
+            }
+        });
+    };
+
     // ========================================================
     // TOPIC COMPLETION & PRACTICE TRACKING
     // ========================================================
@@ -1150,6 +1494,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const saved = loadLearningProgress();
             if (saved && saved.studentName === (state.studentName || val)) {
                 state.favoriteBenefits = saved.favoriteBenefits || [];
+                state.favoriteActivities = saved.favoriteActivities || [];
+                state.favoriteTopicWords = saved.favoriteTopicWords || [];
                 state.completedTopics = saved.completedTopics || [];
                 if (saved.ynIndex !== undefined) {
                     state.ynIndex = saved.ynIndex;
@@ -1163,6 +1509,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             setupBenefitCards();
             updateFavoriteBenefitsUI();
+            setupActivityCards();
+            updateFavoriteActivitiesUI();
+            setupTopicCards();
+            updateFavoriteTopicsUI();
             updateTopicSelectCompletedMarks();
             saveLearningProgress(true);
         } catch (err) {
@@ -1369,6 +1719,16 @@ document.addEventListener('DOMContentLoaded', () => {
         if (target === 'benefits') {
             setupBenefitCards();
             updateFavoriteBenefitsUI();
+        }
+        if (target === 'activities') {
+            setupActivityCards();
+            updateFavoriteActivitiesUI();
+        }
+        if (target === 'topics') {
+            const activeSub = document.querySelector('#topics .subtab-pane.active');
+            const subId = activeSub ? activeSub.id.replace('subtab-', '') : 'hobbies';
+            setupTopicCards(subId);
+            updateFavoriteTopicsUI('subtab-' + subId);
         }
         saveLearningProgress(true);
         if (window.innerWidth <= 768) sidebar.classList.remove('open');
@@ -5622,6 +5982,31 @@ document.addEventListener('DOMContentLoaded', () => {
                     .filter(b => b.en && b.vn);
             }
         }
+        if (tabId === 'activities') {
+            if (state.favoriteActivities && state.favoriteActivities.length > 0) {
+                return state.favoriteActivities
+                    .map(a => ({
+                        en: (a.en || '').replace(/\s+/g, ' ').trim(),
+                        vn: cleanBenefitVnText(a.en, a.vn)
+                    }))
+                    .filter(a => a.en && a.vn);
+            }
+        }
+        if (tabId && (tabId.startsWith('subtab-') || tabId === 'topics')) {
+            const targetSubtab = tabId === 'topics' ? null : tabId;
+            const matchingFavs = (state.favoriteTopicWords || []).filter(item => {
+                if (!targetSubtab) return true;
+                return !item.subtab || item.subtab === targetSubtab;
+            });
+            if (matchingFavs.length > 0) {
+                return matchingFavs
+                    .map(t => ({
+                        en: (t.en || '').replace(/\s+/g, ' ').trim(),
+                        vn: cleanBenefitVnText(t.en, t.vn)
+                    }))
+                    .filter(t => t.en && t.vn);
+            }
+        }
         let currentWords = [];
         const seen = new Set();
         const cards = document.querySelectorAll('#' + tabId + ' .icon-btn');
@@ -5653,6 +6038,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     window.startReviewGame = (type, tabId) => {
+        const isActivityFav = (tabId === 'activities' && state.favoriteActivities && state.favoriteActivities.length > 0);
+        const isTopicFav = ((tabId && (tabId.startsWith('subtab-') || tabId === 'topics')) && (state.favoriteTopicWords || []).some(w => tabId === 'topics' || !w.subtab || w.subtab === tabId));
+
+        if (tabId === 'activities') {
+            if (!isActivityFav) {
+                showToast('💡 Đang ôn tập tất cả cụm hoạt động. Hãy nhấp ⭐ trên thẻ từ để chỉ ôn những cụm bạn muốn học!');
+            } else {
+                showToast(`🎯 Trả bài ${state.favoriteActivities.length} cụm hoạt động bạn đã chọn!`);
+            }
+        } else if (tabId && (tabId.startsWith('subtab-') || tabId === 'topics')) {
+            const count = (state.favoriteTopicWords || []).filter(w => tabId === 'topics' || !w.subtab || w.subtab === tabId).length;
+            if (!isTopicFav) {
+                showToast('💡 Đang ôn tập tất cả từ vựng trong chủ đề này. Hãy nhấp ⭐ trên thẻ từ để chỉ ôn những từ bạn muốn học!');
+            } else {
+                showToast(`🎯 Trả bài ${count} từ vựng bạn đã chọn trong chủ đề này!`);
+            }
+        }
+
         const words = extractReviewWords(tabId);
         if (words.length === 0) return;
         const tabEl = document.getElementById(tabId);
@@ -5681,8 +6084,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (currentIndex >= words.length) {
                 sfx.win();
                 shootConfetti();
-                const isFavBenefits = (tabId === 'benefits' && (state.benefitsReviewMode || 'fav') === 'fav' && state.favoriteBenefits && state.favoriteBenefits.length > 0);
-                const titleMsg = isFavBenefits 
+                const isFav = (
+                    (tabId === 'benefits' && (state.benefitsReviewMode || 'fav') === 'fav' && state.favoriteBenefits && state.favoriteBenefits.length > 0) ||
+                    (tabId === 'activities' && state.favoriteActivities && state.favoriteActivities.length > 0) ||
+                    ((tabId && (tabId.startsWith('subtab-') || tabId === 'topics')) && (state.favoriteTopicWords || []).some(w => tabId === 'topics' || !w.subtab || w.subtab === tabId))
+                );
+                const titleMsg = isFav 
                     ? `🎉 Xuất sắc! Bạn đã trả bài xong ${words.length} cụm từ yêu thích!`
                     : 'Tuyệt vời! Bạn đã ôn xong tất cả các từ.';
                 container.innerHTML = `
@@ -6014,6 +6421,14 @@ window.switchSubTab = function(tabId, btnElement) {
         activeBtn.style.background = 'var(--primary)';
         activeBtn.style.color = '#ffffff';
         activeBtn.style.boxShadow = '0 4px 12px rgba(67, 97, 238, 0.3)';
+    }
+
+    if (typeof setupTopicCards === 'function') {
+        setupTopicCards(tabId);
+        updateFavoriteTopicsUI('subtab-' + tabId);
+        if (state.currentTopicsFilter === 'fav' && typeof window.filterTopicsMode === 'function') {
+            window.filterTopicsMode('fav');
+        }
     }
 };
 
@@ -24166,7 +24581,7 @@ const practiceTopicsData = [
                 "qNum": 1,
                 "question": "Do you like eating street food?",
                 "qType": "Yes/No Question: Do you like [V-ing]?",
-                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (YES - Thích vì thơm ngon, giá rẻ và giúp thư giãn):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, of course. I really enjoy <span class=\"formula-bracket-hl\">[hoạt động - Ving]</span> because it is very <span class=\"formula-bracket-hl\">[tính từ món ăn]</span>. It helps me <span class=\"formula-bracket-hl\">[lợi ích - Vo]</span> and makes me feel <span class=\"formula-bracket-hl\">[tính từ cảm xúc]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (NO / DÈ DẶT - Ngại vấn đề vệ sinh, ưu tiên cơm nhà):</div>\n                    <div class=\"topic-formula-text\">\n                        → To be honest, not really. I rarely <span class=\"formula-bracket-hl\">[hoạt động - Vo]</span> because I worry about <span class=\"formula-bracket-hl\">[vấn đề vệ sinh]</span>. Instead, I prefer <span class=\"formula-bracket-hl\">[hoạt động thay thế - Ving]</span> to <span class=\"formula-bracket-hl\">[lợi ích - Vo]</span>.\n                    </div>\n                </div>",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (YES - Thích vì thơm ngon, giá rẻ và giúp thư giãn):</div>\n                    <div class=\"topic-formula-text\">\n                        → Yes, of course. I really enjoy <span class=\"formula-bracket-hl\">[hoạt động - Ving]</span> because the food is very <span class=\"formula-bracket-hl\">[tính từ món ăn]</span>. It helps me <span class=\"formula-bracket-hl\">[lợi ích - Vo]</span> and makes me feel <span class=\"formula-bracket-hl\">[tính từ cảm xúc]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (NO / DÈ DẶT - Ngại vấn đề vệ sinh, ưu tiên cơm nhà):</div>\n                    <div class=\"topic-formula-text\">\n                        → To be honest, not really. I rarely <span class=\"formula-bracket-hl\">[hoạt động - Vo]</span> because I worry about <span class=\"formula-bracket-hl\">[vấn đề vệ sinh]</span>. Instead, I prefer <span class=\"formula-bracket-hl\">[hoạt động thay thế - Ving]</span> to <span class=\"formula-bracket-hl\">[lợi ích - Vo]</span>.\n                    </div>\n                </div>",
                 "vocabGroups": [
                     {
                         "title": "🍜 [Hoạt động - Ving / Vo]",
@@ -24315,8 +24730,8 @@ const practiceTopicsData = [
                 "samples": [
                     {
                         "label": "Bài mẫu Cách 1 (Thích ăn vỉa hè vì ngon, rẻ và thư giãn - 27 từ)",
-                        "text": "Yes, of course. I really enjoy eating street food because it is very delicious and flavorful. It helps me relax after a busy day and makes me feel happy and satisfied.",
-                        "formatted": "→ Yes, of course. I really enjoy <span class=\"sub-hl\">eating street food</span> because it is very <span class=\"sub-hl\">delicious and flavorful</span>. It helps me <span class=\"sub-hl\">relax after a busy day</span> and makes me feel <span class=\"sub-hl\">happy and satisfied</span>."
+                        "text": "Yes, of course. I really enjoy eating street food because the food is very delicious and flavorful. It helps me relax after a busy day and makes me feel happy and satisfied.",
+                        "formatted": "→ Yes, of course. I really enjoy <span class=\"sub-hl\">eating street food</span> because the food is very <span class=\"sub-hl\">delicious and flavorful</span>. It helps me <span class=\"sub-hl\">relax after a busy day</span> and makes me feel <span class=\"sub-hl\">happy and satisfied</span>."
                     },
                     {
                         "label": "Bài mẫu Cách 2 (Ngại bụi bẩn, thích ăn cơm nhà bảo vệ sức khỏe - 29 từ)",
@@ -24463,7 +24878,7 @@ const practiceTopicsData = [
                 "qNum": 3,
                 "question": "What are the benefits of eating street food?",
                 "qType": "Wh-Question: What are the benefits of eating street food?",
-                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Nhanh chóng, tiết kiệm chi phí và thời gian):</div>\n                    <div class=\"topic-formula-text\">\n                        → One major benefit of street food is that it is very <span class=\"formula-bracket-hl\">[đặc tính nổi bật]</span>. It allows people to <span class=\"formula-bracket-hl\">[lợi ích 1 - Vo]</span> and <span class=\"formula-bracket-hl\">[lợi ích 2 - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Khám phá văn hóa ẩm thực và gắn kết bạn bè):</div>\n                    <div class=\"topic-formula-text\">\n                        → In addition, eating street food is a fantastic way to <span class=\"formula-bracket-hl\">[lợi ích 1 - Vo]</span>. Sitting by the sidewalk also helps friends <span class=\"formula-bracket-hl\">[lợi ích 2 - Vo]</span>.\n                    </div>\n                </div>",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Nhanh chóng, tiết kiệm chi phí và thời gian):</div>\n                    <div class=\"topic-formula-text\">\n                        → One major benefit of street food is that it's very <span class=\"formula-bracket-hl\">[đặc tính nổi bật]</span>. It allows people to <span class=\"formula-bracket-hl\">[lợi ích 1 - Vo]</span> and <span class=\"formula-bracket-hl\">[lợi ích 2 - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Khám phá văn hóa ẩm thực và gắn kết bạn bè):</div>\n                    <div class=\"topic-formula-text\">\n                        → In addition, eating street food is a fantastic way to <span class=\"formula-bracket-hl\">[lợi ích 1 - Vo]</span>. Sitting by the sidewalk also helps friends <span class=\"formula-bracket-hl\">[lợi ích 2 - Vo]</span>.\n                    </div>\n                </div>",
                 "vocabGroups": [
                     {
                         "title": "⚡ [Đặc tính nổi bật của đồ ăn đường phố]",
@@ -24516,8 +24931,8 @@ const practiceTopicsData = [
                 "samples": [
                     {
                         "label": "Bài mẫu Cách 1 (Tiết kiệm thời gian, tiết kiệm tiền bạc - 24 từ)",
-                        "text": "One major benefit of street food is that it is very budget-friendly and time-saving. It allows people to save money and grab a satisfying meal quickly.",
-                        "formatted": "→ One major benefit of street food is that it is very <span class=\"sub-hl\">budget-friendly and time-saving</span>. It allows people to <span class=\"sub-hl\">save money</span> and <span class=\"sub-hl\">grab a satisfying meal quickly</span>."
+                        "text": "One major benefit of street food is that it's very budget-friendly and time-saving. It allows people to save money and grab a satisfying meal quickly.",
+                        "formatted": "→ One major benefit of street food is that it's very <span class=\"sub-hl\">budget-friendly and time-saving</span>. It allows people to <span class=\"sub-hl\">save money</span> and <span class=\"sub-hl\">grab a satisfying meal quickly</span>."
                     },
                     {
                         "label": "Bài mẫu Cách 2 (Gắn kết tình bạn, giải tỏa áp lực - 26 từ)",
@@ -24693,7 +25108,7 @@ const practiceTopicsData = [
                 "qNum": 2,
                 "question": "Who do you often go there with?",
                 "qType": "Wh-Question: Who do you often [Vo] with?",
-                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Đi cùng bạn thân / đồng nghiệp để trò chuyện, gắn kết):</div>\n                    <div class=\"topic-formula-text\">\n                        → I usually go to coffee shops with <span class=\"formula-bracket-hl\">[đối tượng đi cùng]</span> because it is a great chance to <span class=\"formula-bracket-hl\">[hoạt động chung - Vo]</span>. That helps us <span class=\"formula-bracket-hl\">[lợi ích - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Đi một mình để tập trung học tập / làm việc yên tĩnh):</div>\n                    <div class=\"topic-formula-text\">\n                        → Most of the time, I prefer going to cafes <span class=\"formula-bracket-hl\">[trạng thái đi một mình]</span>. Sitting in a quiet corner allows me to <span class=\"formula-bracket-hl\">[lợi ích 1 - Vo]</span> and <span class=\"formula-bracket-hl\">[lợi ích 2 - Vo]</span>.\n                    </div>\n                </div>",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Đi cùng bạn thân / đồng nghiệp để trò chuyện, gắn kết):</div>\n                    <div class=\"topic-formula-text\">\n                        → I usually go to coffee shops with <span class=\"formula-bracket-hl\">[đối tượng đi cùng]</span> because it's a great chance to <span class=\"formula-bracket-hl\">[hoạt động chung - Vo]</span>. That helps us <span class=\"formula-bracket-hl\">[lợi ích - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Đi một mình để tập trung học tập / làm việc yên tĩnh):</div>\n                    <div class=\"topic-formula-text\">\n                        → Most of the time, I prefer going to cafes <span class=\"formula-bracket-hl\">[trạng thái đi một mình]</span>. Sitting in a quiet corner allows me to <span class=\"formula-bracket-hl\">[lợi ích 1 - Vo]</span> and <span class=\"formula-bracket-hl\">[lợi ích 2 - Vo]</span>.\n                    </div>\n                </div>",
                 "vocabGroups": [
                     {
                         "title": "👥 [Đối tượng đi cùng]",
@@ -24784,8 +25199,8 @@ const practiceTopicsData = [
                 "samples": [
                     {
                         "label": "Bài mẫu Cách 1 (Đi cùng bạn thân trò chuyện chia sẻ, giảm căng thẳng - 28 từ)",
-                        "text": "I usually go to coffee shops with my close friends and classmates because it is a great chance to chat and share daily stories. That helps us reduce stress after class.",
-                        "formatted": "→ I usually go to coffee shops with <span class=\"sub-hl\">my close friends and classmates</span> because it is a great chance to <span class=\"sub-hl\">chat and share daily stories</span>. That helps us <span class=\"sub-hl\">reduce stress</span> after class."
+                        "text": "I usually go to coffee shops with my close friends and classmates because it's a great chance to chat and share daily stories. That helps us reduce stress after class.",
+                        "formatted": "→ I usually go to coffee shops with <span class=\"sub-hl\">my close friends and classmates</span> because it's a great chance to <span class=\"sub-hl\">chat and share daily stories</span>. That helps us <span class=\"sub-hl\">reduce stress</span> after class."
                     },
                     {
                         "label": "Bài mẫu Cách 2 (Đi một mình với laptop để tập trung học tập - 26 từ)",
@@ -24798,7 +25213,7 @@ const practiceTopicsData = [
                 "qNum": 3,
                 "question": "What do you usually do at a coffee shop?",
                 "qType": "Wh-Question: What do you usually do at...? ",
-                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Học bài, làm việc trên laptop hiệu quả):</div>\n                    <div class=\"topic-formula-text\">\n                        → When I am at a coffee shop, I usually <span class=\"formula-bracket-hl\">[hoạt động học tập / làm việc - Vo]</span>. The comfortable environment helps me <span class=\"formula-bracket-hl\">[lợi ích 1 - Vo]</span> and <span class=\"formula-bracket-hl\">[lợi ích 2 - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Thư giãn, nghe nhạc nhẹ và trò chuyện với bạn bè):</div>\n                    <div class=\"topic-formula-text\">\n                        → In my free time, I often go there to <span class=\"formula-bracket-hl\">[hoạt động giải trí - Vo]</span>. It is a wonderful way to <span class=\"formula-bracket-hl\">[lợi ích - Vo]</span>.\n                    </div>\n                </div>",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Học bài, làm việc trên laptop hiệu quả):</div>\n                    <div class=\"topic-formula-text\">\n                        → When I am at a coffee shop, I usually <span class=\"formula-bracket-hl\">[hoạt động học tập / làm việc - Vo]</span>. The comfortable environment helps me <span class=\"formula-bracket-hl\">[lợi ích 1 - Vo]</span> and <span class=\"formula-bracket-hl\">[lợi ích 2 - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Thư giãn, nghe nhạc nhẹ và trò chuyện với bạn bè):</div>\n                    <div class=\"topic-formula-text\">\n                        → In my free time, I often go there to <span class=\"formula-bracket-hl\">[hoạt động giải trí - Vo]</span>. This is a great way to <span class=\"formula-bracket-hl\">[lợi ích - Vo]</span>.\n                    </div>\n                </div>",
                 "vocabGroups": [
                     {
                         "title": "💻 [Hoạt động học tập / làm việc - Vo]",
@@ -24825,8 +25240,8 @@ const practiceTopicsData = [
                         "title": "🎵 [Hoạt động giải trí - Vo]",
                         "items": [
                             {
-                                "en": "sip a delicious iced latte and listen to music",
-                                "vn": "nhâm nhi ly latte đá thơm ngon và nghe nhạc"
+                                "en": "enjoy delicious iced coffee and listen to music",
+                                "vn": "thưởng thức cà phê đá thơm ngon và nghe nhạc"
                             },
                             {
                                 "en": "chat and take photos with friends",
@@ -24872,9 +25287,9 @@ const practiceTopicsData = [
                         "formatted": "→ When I am at a coffee shop, I usually <span class=\"sub-hl\">study and do homework on my laptop</span>. The comfortable environment helps me <span class=\"sub-hl\">clear my mind</span> and <span class=\"sub-hl\">boost my work productivity</span>."
                     },
                     {
-                        "label": "Bài mẫu Cách 2 (Uống latte nghe nhạc thư giãn xua tan căng thẳng - 26 từ)",
-                        "text": "In my free time, I often go there to sip a delicious iced latte and listen to music. It is a wonderful way to relax after a busy day.",
-                        "formatted": "→ In my free time, I often go there to <span class=\"sub-hl\">sip a delicious iced latte and listen to music</span>. It is a wonderful way to <span class=\"sub-hl\">relax after a busy day</span>."
+                        "label": "Bài mẫu Cách 2 (Uống cà phê nghe nhạc thư giãn xua tan căng thẳng - 25 từ)",
+                        "text": "In my free time, I often go there to enjoy delicious iced coffee and listen to music. This is a great way to relax after a busy day.",
+                        "formatted": "→ In my free time, I often go there to <span class=\"sub-hl\">enjoy delicious iced coffee and listen to music</span>. This is a great way to <span class=\"sub-hl\">relax after a busy day</span>."
                     }
                 ]
             }
@@ -25560,7 +25975,7 @@ const practiceTopicsData = [
                 "qNum": 1,
                 "question": "What gameshow do you often watch?",
                 "qType": "Wh-Question: What gameshow do you often watch?",
-                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Gameshow trí tuệ - Olympia, Ai là triệu phú):</div>\n                    <div class=\"topic-formula-text\">\n                        → The game show I watch most frequently is <span class=\"formula-bracket-hl\">[gameshow trí tuệ]</span> because it is extremely <span class=\"formula-bracket-hl\">[tính chất chương trình]</span>. Watching it helps me <span class=\"formula-bracket-hl\">[lợi ích - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Gameshow hài hước, vận động - 2 Ngày 1 Đêm, Running Man):</div>\n                    <div class=\"topic-formula-text\">\n                        → I often tune in to <span class=\"formula-bracket-hl\">[gameshow giải trí]</span> because the funny challenges make me feel <span class=\"formula-bracket-hl\">[tính từ cảm xúc]</span>. It is a wonderful way to <span class=\"formula-bracket-hl\">[lợi ích - Vo]</span>.\n                    </div>\n                </div>",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Gameshow trí tuệ - Olympia, Ai là triệu phú):</div>\n                    <div class=\"topic-formula-text\">\n                        → The game show I watch most frequently is <span class=\"formula-bracket-hl\">[gameshow trí tuệ]</span> because it is extremely <span class=\"formula-bracket-hl\">[tính chất chương trình]</span>. Watching it helps me <span class=\"formula-bracket-hl\">[lợi ích - Vo]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Gameshow hài hước, vận động - 2 Ngày 1 Đêm, Running Man):</div>\n                    <div class=\"topic-formula-text\">\n                        → I often tune in to <span class=\"formula-bracket-hl\">[gameshow giải trí]</span> because the funny challenges make me feel <span class=\"formula-bracket-hl\">[tính từ cảm xúc]</span>. This is a great way to <span class=\"formula-bracket-hl\">[lợi ích - Vo]</span>.\n                    </div>\n                </div>",
                 "vocabGroups": [
                     {
                         "title": "💡 [Gameshow trí tuệ]",
@@ -31697,6 +32112,39 @@ function buildTopicQuestionCardHtml(q, qNum, topicId, curState) {
             let favPillsHtml = '';
             const curFavs = curState.favoriteBenefits || [];
             if ((vg.note.includes('Lợi Ích') || vg.note.includes('lợi ích')) && curFavs && curFavs.length > 0) {
+                favPillsHtml = `
+                    <div style="margin-top: 0.65rem; padding-top: 0.5rem; border-top: 1px dashed rgba(217, 70, 239, 0.35); font-size: 0.9rem;">
+                        <div style="font-weight: 700; color: #a21caf; margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.4rem;">
+                            <i class="fa-solid fa-star" style="color: #f59e0b;"></i> Cụm lợi ích bạn đã chọn trong BẢNG LỢI ÍCH:
+                        </div>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.45rem;">
+                            ${curFavs.map(b => `
+                                <span style="background: #fdf4ff; border: 1px solid #f0abfc; color: #86198f; padding: 0.2rem 0.65rem; border-radius: 6px; font-weight: 700; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.3rem;" onclick="speakText('${b.en.replace(/'/g, "\\'")}')" title="Nhấp để nghe phát âm">
+                                    <i class="fa-solid fa-volume-high" style="font-size: 0.75rem; color: #d946ef;"></i> ${b.en}
+                                </span>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+            const curActFavs = curState.favoriteActivities || [];
+            if ((vg.note.includes('Hoạt Động') || vg.note.includes('hoạt động')) && curActFavs && curActFavs.length > 0) {
+                favPillsHtml = `
+                    <div style="margin-top: 0.65rem; padding-top: 0.5rem; border-top: 1px dashed rgba(59, 130, 246, 0.35); font-size: 0.9rem;">
+                        <div style="font-weight: 700; color: #2563eb; margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.4rem;">
+                            <i class="fa-solid fa-star" style="color: #f59e0b;"></i> Cụm hoạt động bạn đã chọn trong BẢNG HOẠT ĐỘNG:
+                        </div>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.45rem;">
+                            ${curActFavs.map(b => `
+                                <span style="background: #eff6ff; border: 1px solid #bfdbfe; color: #1d4ed8; padding: 0.2rem 0.65rem; border-radius: 6px; font-weight: 700; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.3rem;" onclick="speakText('${b.en.replace(/'/g, "\\'")}')" title="Nhấp để nghe phát âm">
+                                    <i class="fa-solid fa-volume-high" style="font-size: 0.75rem; color: #3b82f6;"></i> ${b.en}
+                                </span>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+            if (false) {
                 favPillsHtml = `
                     <div style="margin-top: 0.65rem; padding-top: 0.5rem; border-top: 1px dashed rgba(217, 70, 239, 0.35); font-size: 0.9rem;">
                         <div style="font-weight: 700; color: #a21caf; margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.4rem;">

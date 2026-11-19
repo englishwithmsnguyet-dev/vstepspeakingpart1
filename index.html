@@ -1612,6 +1612,28 @@
                         <h2>BẢNG HOẠT ĐỘNG</h2>
                         <p>Danh sách các cụm từ chỉ hoạt động thường ngày được phân loại theo chủ đề. Nhấp vào loa để nghe phát âm.</p>
                     </div>
+                    <!-- TOOLBAR CHỌN CỤM HOẠT ĐỘNG YÊU THÍCH ĐỂ TRẢ BÀI -->
+                    <div class="activities-fav-toolbar" style="background: var(--bg-card); border: 2px solid rgba(59, 130, 246, 0.35); border-radius: 16px; padding: 1.25rem 1.5rem; margin: 1.5rem 0 2rem; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.08); position: sticky; top: 75px; z-index: 40; backdrop-filter: blur(12px);">
+                        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+                            <div>
+                                <div style="font-size: 1.12rem; font-weight: 800; color: var(--text-main); display: flex; align-items: center; gap: 0.5rem;">
+                                    <i class="fa-solid fa-star" style="color: #f59e0b; font-size: 1.25rem;"></i> CỤM HOẠT ĐỘNG ĐÃ CHỌN ĐỂ TRẢ BÀI:
+                                    <span id="fav-activity-count" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white; padding: 0.2rem 0.85rem; border-radius: 50px; font-size: 0.95rem; font-weight: 800; box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);">0 cụm</span>
+                                </div>
+                                <div style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.35rem; line-height: 1.5;">
+                                    💡 <strong>Hướng dẫn:</strong> Bấm trực tiếp vào các thẻ cụm từ bên dưới (hoặc biểu tượng <i class="fa-regular fa-star" style="color: #f59e0b;"></i>) để chọn cụm bạn muốn học. Hệ thống sẽ <strong>tự động lưu</strong> và xuống phần <strong>GÓC ÔN TẬP</strong> sẽ <strong>chỉ hỏi những cụm bạn đã chọn</strong>!
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;">
+                                <button type="button" class="btn" id="filter-all-activities-btn" onclick="filterActivitiesMode('all')" style="padding: 0.55rem 0.95rem; font-size: 0.88rem; font-weight: 700; border-radius: 10px; border: 1.5px solid var(--border); background: var(--primary); color: white; cursor: pointer;">
+                                    Tất cả (<span id="total-activities-count">46</span>)
+                                </button>
+                                <button type="button" class="btn" id="filter-fav-activities-btn" onclick="filterActivitiesMode('fav')" style="padding: 0.55rem 0.95rem; font-size: 0.88rem; font-weight: 700; border-radius: 10px; border: 1.5px solid #f59e0b; background: rgba(245, 158, 11, 0.1); color: #d97706; cursor: pointer;">
+                                    <i class="fa-solid fa-star"></i> Đã chọn (<span id="filter-fav-act-num">0</span>)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
                     <div style="padding-bottom: 2rem;">
                         <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: #3b82f6; border-bottom: 2px solid #3b82f6; padding-bottom: 0.5rem; display: inline-block;">🏠 INDOOR ACTIVITIES</h3>
@@ -2097,6 +2119,29 @@
                             <button class="sub-tab-btn" onclick="switchSubTab('community', this)" style="padding: 0.6rem 1.4rem; border-radius: 50px; border: 1.5px solid var(--primary); background: transparent; color: var(--primary); cursor: pointer; white-space: nowrap; font-weight: 700; font-size: 0.95rem; transition: all 0.25s ease;">COMMUNITY SERVICE</button>
                             <!-- Thêm các chủ đề khác ở đây -->
                         </div>
+
+                    <!-- TOOLBAR CHỌN TỪ VỰNG THEO CHỦ ĐỀ ĐỂ TRẢ BÀI -->
+                    <div class="topics-fav-toolbar" style="background: var(--bg-card); border: 2px solid rgba(139, 92, 246, 0.35); border-radius: 16px; padding: 1.25rem 1.5rem; margin: 0 0 2rem; box-shadow: 0 4px 15px rgba(139, 92, 246, 0.08); position: sticky; top: 75px; z-index: 40; backdrop-filter: blur(12px);">
+                        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+                            <div>
+                                <div style="font-size: 1.12rem; font-weight: 800; color: var(--text-main); display: flex; align-items: center; gap: 0.5rem;">
+                                    <i class="fa-solid fa-star" style="color: #f59e0b; font-size: 1.25rem;"></i> TỪ VỰNG ĐÃ CHỌN ĐỂ TRẢ BÀI:
+                                    <span id="fav-topic-count" style="background: linear-gradient(135deg, #8b5cf6, #6d28d9); color: white; padding: 0.2rem 0.85rem; border-radius: 50px; font-size: 0.95rem; font-weight: 800; box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3);">0 từ</span>
+                                </div>
+                                <div style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.35rem; line-height: 1.5;">
+                                    💡 <strong>Hướng dẫn:</strong> Bấm trực tiếp vào các thẻ từ vựng bên dưới (hoặc biểu tượng <i class="fa-regular fa-star" style="color: #f59e0b;"></i>) để chọn từ bạn muốn học. Xuống phần <strong>GÓC ÔN TẬP</strong> sẽ <strong>chỉ hỏi những từ bạn đã chọn</strong>!
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;">
+                                <button type="button" class="btn" id="filter-all-topic-btn" onclick="filterTopicsMode('all')" style="padding: 0.55rem 0.95rem; font-size: 0.88rem; font-weight: 700; border-radius: 10px; border: 1.5px solid var(--border); background: var(--primary); color: white; cursor: pointer;">
+                                    Tất cả (<span id="filter-all-topic-num">0</span>)
+                                </button>
+                                <button type="button" class="btn" id="filter-fav-topic-btn" onclick="filterTopicsMode('fav')" style="padding: 0.55rem 0.95rem; font-size: 0.88rem; font-weight: 700; border-radius: 10px; border: 1.5px solid #f59e0b; background: rgba(245, 158, 11, 0.1); color: #d97706; cursor: pointer;">
+                                    <i class="fa-solid fa-star"></i> Đã chọn (<span id="filter-fav-topic-num">0</span>)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
                                                 <!-- Sub-tab content cho Hobbies & Interests -->
                         <div class="subtab-pane fade-in active" id="subtab-hobbies" style="display: block;">
